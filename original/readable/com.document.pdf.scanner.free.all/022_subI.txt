@@ -1,0 +1,29 @@
+    public final void I(List list) {
+        List list2 = list;
+        if (list2 == null || list2.isEmpty()) {
+            this.f32016y = true;
+            list = s.c(new ja.a(33L, "month_sub_12.99", "month_sub_12.99", 3, 0), new ja.a(11L, "year_sub_39.99", "year_sub_39.99", 6, 1));
+        }
+        ArrayList arrayList = new ArrayList();
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            String productId = ((ja.a) it.next()).getProductId();
+            if (productId != null) {
+                arrayList.add(productId);
+            }
+        }
+        if (arrayList.isEmpty()) {
+            E(list);
+            return;
+        }
+        d dVar = this.B;
+        if (dVar != null) {
+            ((AtomicReference) dVar.f51637u).set(null);
+        }
+        this.B = null;
+        HashSet hashSet = p0.f48313a;
+        AtomicReference atomicReference = new AtomicReference(new j9.b(this, list));
+        z7.b bVar = z7.b.f66397l;
+        bVar.f66398a.f66435e.d(new m0(arrayList, atomicReference, 0));
+        this.B = new d(atomicReference, 18);
+    }

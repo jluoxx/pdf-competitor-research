@@ -1,0 +1,12 @@
+    public final void b(String str, Function0 function0) {
+        j1d.a(new byte[]{21, -6, 110, -35, 119, 42}, new byte[]{116, -98, 32, -68, 26, Field.AUTOTEXT, Field.INCLUDETEXT, Field.SHAPE});
+        j1d.a(new byte[]{-74, 110, Field.GLOSSARY, 21, -50, Field.ASK}, new byte[]{-41, 13, Field.HTMLCONTROL, 124, -95, Field.NOTEREF, -115, Field.AUTONUM});
+        kw7.d(j1d.a(new byte[]{-16, Field.HYPERLINK, Field.HYPERLINK, -116, -125, Field.FORMDROPDOWN, Field.FORMCHECKBOX, 58, -63, Field.INCLUDETEXT, Field.BIDIOUTLINE, -121, -119, 64}, new byte[]{-96, 42, 61, -32, -20, Field.GOTOBUTTON, Field.QUOTE, 119}), j1d.a(new byte[]{-83, -117, 16, -18, 78, -86, -8, -11, -85, -76, 17, -30, 82, -93, -13}, new byte[]{-50, -25, 121, -115, Field.PAGEREF, -30, -105, -104}));
+        Activity activityP = as.f.b().p();
+        if (activityP != null) {
+            d76.a.d(a64.a, str, activityP, null, true, new a(function0), new b(function0), 4, null);
+        } else {
+            kw7.d(j1d.a(new byte[]{-115, 34, -2, -46, -67, Field.GLOSSARY, -60, -92, -68, Field.USERADDRESS, -6, -39, -73, 60}, new byte[]{-35, 80, -101, -66, -46, 78, -96, -23}), j1d.a(new byte[]{33, 108, -95, -10, 102, 48, -100, -115, Field.FILLIN, Field.FORMDROPDOWN, -96, -6, 122, Field.SYMBOL, -105, -64, 98, 108, -87, -26, 121, 42, -106, -109, Field.IMPORT, 109, -83, -44, 110, 12, -102, -106, 43, 116, -79, -75, 100, 11, -45, -114, Field.IMPORT, 108, -92}, new byte[]{Field.SECTIONPAGES, 0, -56, -107, 13, 120, -13, -32}));
+            function0.invoke();
+        }
+    }

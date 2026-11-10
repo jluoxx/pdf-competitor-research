@@ -1,0 +1,98 @@
+    /* JADX WARN: Code duplicated, block: B:4:0x0015  */
+    @Override // ip.a
+    public final Object k(Object obj) {
+        String str;
+        SubscriptionActivity subscriptionActivity;
+        hp.a aVar = hp.a.f47860n;
+        cp.q.a(obj);
+        boolean z10 = SubscriptionActivity.D;
+        SubscriptionActivity subscriptionActivity2 = this.f49863y;
+        subscriptionActivity2.getClass();
+        boolean z11 = this.f49862x;
+        if (z11) {
+            Object obj2 = ja.a.f49910i;
+            ja.a aVar2 = this.f49864z;
+            int period = aVar2.getPeriod();
+            if (period != 2) {
+                str = period != 3 ? "year" : com.anythink.core.common.e.a.C0073a.f10838j;
+            } else {
+                str = "week";
+            }
+            StringBuilder sbO = com.tradplus.ads.mgr.banner.b.o("paid=", str, ";page=");
+            sbO.append(subscriptionActivity2.B());
+            com.google.gson.p pVarR = y2.e.r(sbO.toString());
+            oh.g gVar = oh.g.f54187p;
+            gVar.getClass();
+            gVar.d("vip_subscription_success_type", pVarR, 0L, false);
+            String productId = aVar2.getProductId();
+            if (productId != null) {
+                x xVar = x.f44845n;
+                try {
+                    cp.o.Companion companion = cp.o.INSTANCE;
+                    String string = kotlin.text.q.J(kotlin.text.q.H(productId, "_")).toString();
+                    subscriptionActivity = subscriptionActivity2;
+                    try {
+                        Map mapE = k0.e(new Pair("1.99", new Pair(Double.valueOf(1.99d), "199")), new Pair("2.99", new Pair(Double.valueOf(2.99d), "299")), new Pair("3.99", new Pair(Double.valueOf(3.99d), "399")), new Pair("4.99", new Pair(Double.valueOf(4.99d), "499")), new Pair("8.99", new Pair(Double.valueOf(8.99d), "899")), new Pair("9.99", new Pair(Double.valueOf(9.99d), "999")), new Pair("12.99", new Pair(Double.valueOf(12.99d), "1299")), new Pair("29.99", new Pair(Double.valueOf(29.99d), "2999")), new Pair("39.99", new Pair(Double.valueOf(29.99d), "3999")), new Pair("49.99", new Pair(Double.valueOf(49.99d), "4999")), new Pair("69.99", new Pair(Double.valueOf(69.99d), "6999")));
+                        Map mapE2 = k0.e(new Pair("weekly_subscription", new Pair(Double.valueOf(1.99d), "199")), new Pair("monthly_subscription", new Pair(Double.valueOf(4.99d), "499")), new Pair("annual_subscription", new Pair(Double.valueOf(29.99d), "2999")), new Pair("year_sub_39.99", new Pair(Double.valueOf(39.99d), "3999")), new Pair("month_sub_12.99", new Pair(Double.valueOf(12.99d), "1299")));
+                        Pair pair = (Pair) mapE.get(string);
+                        if (pair == null) {
+                            pair = (Pair) mapE2.get(productId);
+                        }
+                        if (pair != null) {
+                            String str2 = "Sub_value_" + ((String) pair.f51125u);
+                            double dDoubleValue = ((Number) pair.f51124n).doubleValue();
+                            x.q(dDoubleValue, str2, com.anythink.core.common.d.j.i.f10480a);
+                            x.r(dDoubleValue, str2, com.anythink.core.common.d.j.i.f10480a);
+                            Unit unit = Unit.f51126a;
+                        }
+                        cp.o.Companion companion2 = cp.o.INSTANCE;
+                    } catch (Throwable unused) {
+                        cp.o.Companion companion3 = cp.o.INSTANCE;
+                    }
+                } catch (Throwable unused2) {
+                    subscriptionActivity = subscriptionActivity2;
+                }
+                x xVar2 = x.f44845n;
+                float f6 = aVar2.f49917g / 1000000.0f;
+                String str3 = aVar2.h;
+                try {
+                    double d3 = Double.parseDouble(String.format("%.2f", Arrays.copyOf(new Object[]{Double.valueOf(((double) f6) / 4.0d)}, 1)));
+                    x.q(d3, "Sub_value_div4", str3);
+                    x.r(d3, "Sub_value_div4", str3);
+                    Unit unit2 = Unit.f51126a;
+                } catch (Throwable unused3) {
+                    cp.o.Companion companion4 = cp.o.INSTANCE;
+                }
+                x xVar3 = x.f44845n;
+                x.k(Math.rint((((double) (aVar2.f49917g / 1000000.0f)) * 0.7d) * ((double) 100)) / 100.0d, aVar2.h);
+            } else {
+                subscriptionActivity = subscriptionActivity2;
+            }
+        } else {
+            subscriptionActivity = subscriptionActivity2;
+        }
+        String str4 = this.A;
+        if (str4 != null) {
+            com.google.gson.p pVarR2 = y2.e.r(str4);
+            oh.g gVar2 = oh.g.f54187p;
+            gVar2.getClass();
+            gVar2.d("vip_subscription_success_source", pVarR2, 0L, false);
+        }
+        if (!h4.c.q("")) {
+            com.google.gson.p pVarR3 = y2.e.r("");
+            oh.g gVar3 = oh.g.f54187p;
+            gVar3.getClass();
+            gVar3.d("vip_subscription_success_by_retain", pVarR3, 0L, false);
+        }
+        SubscriptionActivity subscriptionActivity3 = subscriptionActivity;
+        if (z11) {
+            subscriptionActivity3.f32015x = z11;
+            z0 z0Var = z0.f49213n;
+            ps.e eVar = m0.f49173a;
+            b0.q(z0Var, ps.d.f55267u, null, new f(2, null), 2);
+        }
+        subscriptionActivity3.H(false);
+        subscriptionActivity3.A(false);
+        subscriptionActivity3.finish();
+        return Unit.f51126a;
+    }

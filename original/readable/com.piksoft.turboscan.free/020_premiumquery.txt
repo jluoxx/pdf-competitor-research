@@ -1,0 +1,22 @@
+    private void onTransact() {
+        int i = 2 % 2;
+        this.onTransact = new FragmentTagUsageViolation();
+        Gravity.getAbsoluteGravity(0, 0);
+        this.onTransact.asInterface = this;
+        new ArrayList(1).add("premium");
+        FragmentTagUsageViolation fragmentTagUsageViolation = this.onTransact;
+        fragmentTagUsageViolation.asInterface(fragmentTagUsageViolation.new AnonymousClass4(new Runnable() { // from class: o.getRequestCode.3
+            @Override // java.lang.Runnable
+            public final void run() {
+                FragmentTagUsageViolation.asBinder asbinder = getRequestCode.asInterface(getRequestCode.this).asBinder;
+                if (asbinder != null) {
+                    getRequestCode.onTransact(getRequestCode.this, asbinder);
+                }
+            }
+        }));
+        int i2 = MediaBrowserCompatCustomActionResultReceiver + 123;
+        MediaBrowserCompatMediaItem = i2 % 128;
+        if (i2 % 2 == 0) {
+            int i3 = 37 / 0;
+        }
+    }

@@ -1,0 +1,37 @@
+    /* JADX WARN: Code duplicated, block: B:7:0x0013  */
+    public final Object QQBd4ER(A1CUaEp.vfwZ vfwz) {
+        OtIqepUx otIqepUx;
+        if (vfwz instanceof OtIqepUx) {
+            otIqepUx = (OtIqepUx) vfwz;
+            int i = otIqepUx.f38871Dy0BWjG;
+            if ((i & IntCompanionObject.MIN_VALUE) != 0) {
+                otIqepUx.f38871Dy0BWjG = i - IntCompanionObject.MIN_VALUE;
+            } else {
+                otIqepUx = new OtIqepUx(vfwz);
+            }
+        } else {
+            otIqepUx = new OtIqepUx(vfwz);
+        }
+        Object obj = otIqepUx.f38873kHcWr;
+        Object objQQBd4ER = DJopB5K.vfwZ.QQBd4ER();
+        int i2 = otIqepUx.f38871Dy0BWjG;
+        if (i2 == 0) {
+            l7bor5.Oc.OtIqepUx(obj);
+            m889n();
+            Task taskDfcC8P2 = Wmk().dfcC8P2();
+            x7J2LX9.Bb.SGigKD6vM("/5O7e/jJK6TYlbtx5ukxpbHY4Ta5\n", "mfbPGJCIRcA=\n");
+            otIqepUx.f38871Dy0BWjG = 1;
+            if (TSr6CL(taskDfcC8P2, otIqepUx) == objQQBd4ER) {
+                return objQQBd4ER;
+            }
+        } else {
+            if (i2 != 1) {
+                throw new IllegalStateException(x7J2LX9.Bb.SGigKD6vM("xQVxso7WuWiBFnit28+zb4YGeLjB0LNogQ1zqMHJs2+GE3SqxoK1J9QLaKrHzLM=\n", "pmQd3q6i1kg=\n"));
+            }
+            l7bor5.Oc.OtIqepUx(obj);
+        }
+        HhHei.SGigKD6vM sGigKD6vM = HhHei.f38840Wmk;
+        String strF8 = Wmk().f8(x7J2LX9.Bb.SGigKD6vM("0BHaWlyaCG7pEM1NbLVc\n", "tnioPwPqbAg=\n"));
+        x7J2LX9.Bb.SGigKD6vM("dLjIhw1LUgZ09ZL6VxA=\n", "E9281Hk5O2g=\n");
+        return sGigKD6vM.SGigKD6vM(strF8);
+    }

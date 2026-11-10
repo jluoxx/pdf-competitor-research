@@ -1,0 +1,84 @@
+    @Override // androidx.fragment.app.FragmentActivity, androidx.activity.ComponentActivity, defpackage.pk1, android.app.Activity
+    public void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
+        setContentView(txa.activity_pdf_viewer);
+        this.u0 = (Toolbar) findViewById(gwa.toolbar_home);
+        this.w0 = (ProgressBar) findViewById(gwa.progress_bar_open_pdf);
+        this.Z = (TextView) findViewById(gwa.page_numbers);
+        this.t0 = (PDFView) findViewById(gwa.pdfView);
+        this.v0 = (LinearLayout) findViewById(gwa.pdf_container);
+        this.e0 = this;
+        Toolbar toolbar = this.u0;
+        PDFView pDFView = null;
+        if (toolbar == null) {
+            Intrinsics.throwUninitializedPropertyAccessException(j1d.a(new byte[]{-10, -20, -115, -44, -45, 125, -95}, new byte[]{-126, -125, -30, -72, -79, Field.NUMCHARS, -45, 120}));
+            toolbar = null;
+        }
+        setSupportActionBar(toolbar);
+        o7 supportActionBar = getSupportActionBar();
+        if (supportActionBar != null) {
+            supportActionBar.s(true);
+            supportActionBar.t(true);
+        } else {
+            supportActionBar = null;
+        }
+        this.x0 = supportActionBar;
+        Toolbar toolbar2 = this.u0;
+        if (toolbar2 == null) {
+            Intrinsics.throwUninitializedPropertyAccessException(j1d.a(new byte[]{76, -99, 100, -96, -121, 59, 6}, new byte[]{56, -14, 11, -52, -27, Field.LISTNUM, 116, 122}));
+            toolbar2 = null;
+        }
+        toolbar2.setNavigationOnClickListener(new View.OnClickListener() { // from class: u14
+            @Override // android.view.View.OnClickListener
+            public final void onClick(View view) {
+                whvobxpxklvkxxgg.u0(this.X, view);
+            }
+        });
+        db4 db4Var = db4.a;
+        this.m0 = db4Var.a(j1d.a(new byte[]{Field.TOA, -41, Field.NOTEREF, -79, 7, 4, 44, Field.FILESIZE, Field.HYPERLINK, -36, 114, -74, 3, 58, Field.AUTONUMOUT, Field.ADVANCE}, new byte[]{Field.SYMBOL, -91, Field.DDE, -41, 116, Field.HTMLCONTROL, Field.SHAPE, Field.EQ}), true);
+        this.n0 = db4Var.a(j1d.a(new byte[]{-45, -60, 21, 122, -94, Field.SECTION, -26, 126, -50, -45, 29, 126, -76, 108, -53, 119, -62, -59, 4, Field.INCLUDEPICTURE, -95, ByteCompanionObject.MAX_VALUE, -13, 126}, new byte[]{-93, -74, 112, Field.NUMCHARS, -47, 30, -108, Field.NUMWORDS}), true);
+        int iV = 0;
+        this.o0 = db4Var.a(j1d.a(new byte[]{102, 78, Field.ADDRESSBLOCK, Field.FORMDROPDOWN, -119, -60, -52, -38, 98, Field.FORMDROPDOWN, 103, Field.FORMDROPDOWN, -113, -9, -63, -16, 101, Field.SHAPE, 74, 80, -97, -11}, new byte[]{22, 60, 56, Field.AUTONUMLGL, -6, -101, -83, -81}), false);
+        this.k0 = db4Var.a(j1d.a(new byte[]{-77, 126, -102, -2, 115, -96, 21, -41, -86, 124, -102, -57, 104, -112, 20, -55, -71, 99, -111, -20, 97, -109, Field.SYMBOL, -59, -83, 109, -99, -12, 101, -101}, new byte[]{-61, 12, -1, -104, 0, -1, 102, -96}), false);
+        this.j0 = db4Var.a(j1d.a(new byte[]{-41, -22, Field.USERADDRESS, 103, -87, -33, ByteCompanionObject.MAX_VALUE, Field.GOTOBUTTON, -64, -16, Field.GLOSSARY, Field.GREETINGLINE, -73, -17, 117, Field.USERADDRESS, -8, -3, Field.AUTONUMLGL, 96, -72, -20, 116, 63, -8, -24, 63, 103, -84, -23, 116, 44}, new byte[]{-89, -104, Field.HTMLCONTROL, 1, -38, -128, 17, Field.HTMLCONTROL}), false);
+        tt1.b = 0.7f;
+        this.g0 = getIntent().getStringExtra(j1d.a(new byte[]{82, Field.IMPORT, Field.MERGESEQ, -50, 121, Field.BIDIOUTLINE, -44, -111, 80, Field.AUTONUMOUT, 74, -124, 121, Field.TOA, -119, -17, 117, 30, 121, -84, Field.AUTOTEXTLIST, 105, -26, -21, 120, 23, 104}, new byte[]{Field.EQ, Field.HYPERLINK, Field.ASK, -32, 22, 42, -89, -65}));
+        this.q0 = getIntent().getBooleanExtra(j1d.a(new byte[]{-20, 9, 2, -55, Field.HYPERLINK, 5, 43, Field.DDE, -18, 10, 3, -125, Field.HYPERLINK, 16, 118, 97, -18, 5, 4, -113, Field.HYPERLINK, 30, 61}, new byte[]{-113, 102, 111, -25, Field.IMPORT, 115, Field.HYPERLINK, 3}), false);
+        this.p0 = getIntent().getBooleanExtra(j1d.a(new byte[]{-70, -31, -122, 76, 77, -51, 12, 105, -72, -30, -121, 6, 77, -40, Field.ADDIN, 20, -111, -63, -68, 61, 112, -2, Field.GOTOBUTTON, 8, -113, -53, -76, Field.QUOTE, 102, -24}, new byte[]{-39, -114, -21, 98, 34, -69, ByteCompanionObject.MAX_VALUE, Field.FORMCHECKBOX}), false);
+        this.r0 = getIntent().getData();
+        this.f0 = zs9.j0.a(this);
+        PDFView pDFView2 = this.t0;
+        if (pDFView2 == null) {
+            Intrinsics.throwUninitializedPropertyAccessException(j1d.a(new byte[]{-2, -32, -60, -8, 58, 24, -116}, new byte[]{-114, -124, -94, -82, Field.FORMDROPDOWN, 125, -5, 8}));
+            pDFView2 = null;
+        }
+        pDFView2.setKeepScreenOn(this.m0);
+        if (this.n0) {
+            zs9 zs9Var = this.f0;
+            if (zs9Var == null) {
+                Intrinsics.throwUninitializedPropertyAccessException(j1d.a(new byte[]{-45, 31}, new byte[]{-73, 125, Field.AUTONUMOUT, -41, -23, -47, -111, -12}));
+                zs9Var = null;
+            }
+            String str = this.g0;
+            if (str == null) {
+                str = "";
+            }
+            iV = zs9Var.v(str);
+        }
+        this.l0 = iV;
+        z35 z35Var = (vs9.a.g(this) || this.k0) ? z35.HEIGHT : z35.WIDTH;
+        this.h0 = z35Var;
+        x0(this.i0, this.l0, this.k0, this.j0, z35Var);
+        PDFView pDFView3 = this.t0;
+        if (pDFView3 == null) {
+            Intrinsics.throwUninitializedPropertyAccessException(j1d.a(new byte[]{124, -40, -85, 110, -56, -70, -70}, new byte[]{12, -68, -51, 56, -95, -33, -51, -25}));
+        } else {
+            pDFView = pDFView3;
+        }
+        pDFView.setOnClickListener(new View.OnClickListener() { // from class: v14
+            @Override // android.view.View.OnClickListener
+            public final void onClick(View view) {
+                whvobxpxklvkxxgg.v0(this.X, view);
+            }
+        });
+    }

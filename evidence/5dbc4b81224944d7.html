@@ -1,0 +1,97 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>060_openad.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>060_openad.txt</h1><p><strong>D01 · 文件点击链进入插屏；网络/Activity/单元ID无效时继续业务</strong></p><p>OpenFileInterAd.a(Context,Runnable)</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.pdfeditor.documentviewer.pdfstudio.docworks/060_openad.txt" download>下载原始文件</a></div><pre class="source-pre">/* JADX INFO: loaded from: classes6.dex */
+
+public final class OpenFileInterAd {
+
+    public static void a(Context context, final Runnable runnable) {
+
+        final Activity activity;
+
+        NetworkInfo activeNetworkInfo;
+
+        Context baseContext = context;
+
+        while (true) {
+
+            if (!(baseContext instanceof ContextWrapper)) {
+
+                activity = null;
+
+                break;
+
+            } else {
+
+                if (baseContext instanceof Activity) {
+
+                    activity = (Activity) baseContext;
+
+                    break;
+
+                }
+
+                baseContext = ((ContextWrapper) baseContext).getBaseContext();
+
+            }
+
+        }
+
+        if (activity != null &amp;&amp; !activity.isFinishing() &amp;&amp; !activity.isDestroyed()) {
+
+            try {
+
+                ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(&quot;connectivity&quot;);
+
+                if (connectivityManager != null &amp;&amp; (activeNetworkInfo = connectivityManager.getActiveNetworkInfo()) != null &amp;&amp; activeNetworkInfo.isConnected()) {
+
+                    RemoteConfigBridge.a().getClass();
+
+                    String strA = RemoteConfigBridge.Config.a(AdKey.INTER_ALL);
+
+                    if (strA == null || strA.isEmpty()) {
+
+                        runnable.run();
+
+                        return;
+
+                    }
+
+                    Admob.getInstance().setOpenActivityAfterShowInterAds(false);
+
+                    final boolean[] zArr = {false};
+
+                    Admob.getInstance().loadAndShowInter(activity, strA, true, new AdCallback() { // from class: com.pdfeditor.documentviewer.pdfstudio.docworks.ads.OpenFileInterAd.1
+
+                        @Override // com.nlbn.ads.callback.AdCallback
+
+                        public final void onNextAction() {
+
+                            super.onNextAction();
+
+                            Admob.getInstance().setOpenActivityAfterShowInterAds(true);
+
+                            if (zArr[0] || activity.isFinishing() || activity.isDestroyed()) {
+
+                                return;
+
+                            }
+
+                            zArr[0] = true;
+
+                            runnable.run();
+
+                        }
+
+                    });
+
+                    return;
+
+                }
+
+            } catch (Exception unused) {
+
+            }
+
+        }
+
+        runnable.run();
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

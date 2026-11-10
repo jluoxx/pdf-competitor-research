@@ -1,0 +1,118 @@
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* JADX WARN: Code duplicated, block: B:23:0x00a3  */
+    public final zyd k(String str) {
+        bq7.b bVarA;
+        zyd zydVar;
+        j1d.a(new byte[]{117, -109, -81, 123, 100, -108}, new byte[]{20, -9, -5, 2, 20, -15, -11, 34});
+        boolean z = e;
+        bq7 bq7VarI = zh4.a.i();
+        switch (str.hashCode()) {
+            case -1396342996:
+                if (!str.equals(j1d.a(new byte[]{123, -18, -43, -33, Field.HTMLCONTROL, -24}, new byte[]{25, -113, -69, -79, Field.USERADDRESS, -102, Field.DDE, 122}))) {
+                    bVarA = null;
+                } else {
+                    bVarA = bq7VarI.a();
+                }
+                break;
+            case -985760068:
+                if (!str.equals(j1d.a(new byte[]{-38, -52, -124, -77, -13, Field.BIDIOUTLINE}, new byte[]{-86, -96, -27, -62, -122, Field.SYMBOL, Field.HTMLCONTROL, Field.FILLIN}))) {
+                    bVarA = null;
+                } else {
+                    bVarA = bq7VarI.d();
+                }
+                break;
+            case -895866265:
+                if (!str.equals(j1d.a(new byte[]{7, -89, -26, Field.NUMCHARS, -68, -30}, new byte[]{116, -41, -118, 125, -49, -118, -47, Field.ADDIN}))) {
+                    bVarA = null;
+                } else {
+                    bVarA = bq7VarI.e();
+                }
+                break;
+            case 108417:
+                if (!str.equals(j1d.a(new byte[]{-53, 12, -24}, new byte[]{-90, ByteCompanionObject.MAX_VALUE, -113, 123, 58, -79, 122, -84}))) {
+                    bVarA = null;
+                } else {
+                    bVarA = bq7VarI.c();
+                }
+                break;
+            case 112202875:
+                if (!str.equals(j1d.a(new byte[]{-74, 80, 96, Field.SECTIONPAGES, 82}, new byte[]{-64, Field.SYMBOL, 4, Field.FILLIN, 61, -101, -116, 12}))) {
+                    bVarA = null;
+                } else {
+                    bVarA = bq7VarI.f();
+                }
+                break;
+            default:
+                bVarA = null;
+                break;
+        }
+        jxc jxcVar = jxc.a;
+        long jH = jxcVar.h();
+        if (z) {
+            zydVar = null;
+            kw7.d(j1d.a(new byte[]{-32, 56, -42}, new byte[]{-127, Field.BIDIOUTLINE, -66, -52, -90, 32, -51, -107}), j1d.a(new byte[]{-86, -73, -99, -20, -75, Field.MACROBUTTON, Field.AUTOTEXTLIST, 107, -95, -78, -111, -27, -12, 60, 22, 125, -93, -81, -46, -43}, new byte[]{-51, -37, -14, -114, -44, Field.SHAPE, 121, 8}) + jH + ']');
+        } else {
+            zydVar = null;
+        }
+        if (bq7VarI.b().b() > 0 && jH >= bq7VarI.b().b()) {
+            return new zyd(j1d.a(new byte[]{114, Field.AUTOTEXTLIST, 64, -96, -103, -100}, new byte[]{Field.INCLUDEPICTURE, 104, 113, -106, -87, -81, -52, 32}), j1d.a(new byte[]{-65, 118, Field.AUTONUM, -38, 126, -69, Field.MACROBUTTON, 82, -76, 115, 58, -45, 63, -69, 122, Field.BIDIOUTLINE, -79, 110, 121, -29}, new byte[]{-40, 26, Field.AUTOTEXTLIST, -72, 31, -41, 19, Field.EQ}) + jH + ']');
+        }
+        long jA = jxcVar.a(str);
+        if (z) {
+            kw7.d(j1d.a(new byte[]{33, 22, -16}, new byte[]{64, 114, -104, 13, Field.PAGEREF, -88, 104, -91}), j1d.a(new byte[]{-103, -123, 3, -64, -88, Field.IMPORT, -49, Field.GLOSSARY, -114, -105, Field.FORMDROPDOWN, -58, -25, 33, -51, Field.GOTOBUTTON, -51, -44}, new byte[]{-19, -4, 115, -91, -120, Field.ADVANCE, -93, Field.FORMTEXT}) + str + j1d.a(new byte[]{Field.FORMDROPDOWN, Field.GREETINGLINE, 99}, new byte[]{122, 126, 56, 1, -32, Field.NUMCHARS, 29, 26}) + jA + ']');
+        }
+        if (bVarA != null && bVarA.b() > 0 && jA >= bVarA.b()) {
+            return new zyd(j1d.a(new byte[]{-29, -54, -91, Field.AUTONUM, -2, -47}, new byte[]{-46, -5, -108, 0, -49, -30, -115, 7}), j1d.a(new byte[]{-55, -37, -22, Field.QUOTE, 10, -92, Field.DDE, -101, -34, -55, -70, 42, Field.INCLUDEPICTURE, -86, Field.DATA, -122, -99, -118}, new byte[]{-67, -94, -102, Field.FORMTEXT, 42, -57, Field.SECTION, -14}) + str + j1d.a(new byte[]{121, -68, -115}, new byte[]{80, -100, -42, 118, 99, -30, -77, Field.FORMCHECKBOX}) + jA + ']');
+        }
+        int iJ = jxcVar.j();
+        if (z) {
+            kw7.d(j1d.a(new byte[]{-6, -64, 101}, new byte[]{-101, -92, 13, Field.DATA, Field.BIDIOUTLINE, -46, -81, -107}), j1d.a(new byte[]{-26, -9, -24, -98, 106, 11, -8, Field.DDEAUTO, -32, -14, -21, -123, 43, 4, -76, Field.QUOTE, -30, -16, -89, -97, 100, 18, -74, Field.USERADDRESS, -95, -64}, new byte[]{-127, -101, -121, -4, 11, 103, -40, 74}) + iJ + ']');
+        }
+        if (bq7VarI.b().a() > 0 && iJ >= bq7VarI.b().a()) {
+            return new zyd(j1d.a(new byte[]{4, -1, -40, -98, Field.CONTROL, -84}, new byte[]{Field.AUTONUMLGL, -50, -23, -88, 103, -104, -17, -118}), j1d.a(new byte[]{1, -64, 3, 78, -45, -4, -99, -51, 7, -59, 0, Field.DOCPROPERTY, -110, -13, -47, -64, 5, -57, 76, 64, -37, -3, -44, -35, Field.FORMTEXT, -9}, new byte[]{102, -84, 108, 44, -78, -112, -67, -87}) + iJ + ']');
+        }
+        int iC = jxcVar.c(str);
+        if (z) {
+            kw7.d(j1d.a(new byte[]{17, -36, -5}, new byte[]{112, -72, -109, -114, -29, -120, 13, -101}), j1d.a(new byte[]{Field.ADDRESSBLOCK, 105, -91, -83, -49, -10, Field.CONTROL, 18, Field.FILESIZE, 105, -11, -85, -125, -5, Field.DOCPROPERTY, 16, 9, 115, -70, -67, -127, -26, 22, Field.FORMDROPDOWN}, new byte[]{41, 16, -43, -56, -17, -110, Field.AUTONUM, 123}) + str + j1d.a(new byte[]{-98, -13, Field.DDE}, new byte[]{-73, -45, 118, -125, -112, Field.DDE, 30, 122}) + iC + ']');
+        }
+        if (bVarA != null && bVarA.a() > 0 && iC >= bVarA.a()) {
+            return new zyd(j1d.a(new byte[]{117, -106, Field.TOA, -32, 123, 43}, new byte[]{Field.INCLUDETEXT, -89, 120, -42, 74, 31, -88, -20}), j1d.a(new byte[]{-58, 100, -42, 59, -97, 60, 115, Field.AUTONUMOUT, -34, 100, -122, 61, -45, Field.EQ, 113, Field.AUTONUM, -110, 113, -49, Field.MACROBUTTON, -42, 44, Field.GOTOBUTTON, 117}, new byte[]{-78, 29, -90, Field.GREETINGLINE, -65, Field.HYPERLINK, 18, Field.ADDRESSBLOCK}) + str + j1d.a(new byte[]{-30, 18, Field.CONTROL}, new byte[]{-53, Field.GOTOBUTTON, 12, -27, -28, Field.ASK, -17, 125}) + iC + ']');
+        }
+        long jL = jxcVar.l();
+        if (z) {
+            kw7.d(j1d.a(new byte[]{-16, -94, Field.AUTOTEXT}, new byte[]{-111, -58, Field.FILLIN, -47, 18, -92, -18, 34}), j1d.a(new byte[]{-2, 121, Field.HTMLCONTROL, 106, -91, -100, -115, 17, -15, 122, Field.INCLUDEPICTURE, Field.DATA, -89, -97, -40, 12, -19, Field.AUTONUMLGL, 111}, new byte[]{-103, 21, Field.AUTONUMOUT, 8, -60, -16, -83, 98}) + jL + ']');
+        }
+        if (bq7VarI.b().g() > 0 && jL >= bq7VarI.b().g()) {
+            return new zyd(j1d.a(new byte[]{-99, 114, Field.CONTROL, 99, 117, Field.FORMDROPDOWN}, new byte[]{-84, Field.INCLUDEPICTURE, 102, Field.DOCPROPERTY, Field.FILESIZE, 98, -9, -19}), j1d.a(new byte[]{107, 8, -48, -126, 101, -99, -32, -116, 100, 11, -56, -64, 104, -104, -83, -106, 120, Field.INCLUDETEXT, -28}, new byte[]{12, 100, -65, -32, 4, -15, -64, -1}) + jL + ']');
+        }
+        long jF = jxcVar.f(str);
+        if (z) {
+            kw7.d(j1d.a(new byte[]{10, 24, -25}, new byte[]{107, 124, -113, -119, -64, Field.FORMTEXT, -121, -86}), j1d.a(new byte[]{101, 15, -119, -111, -119, -76, -128, Field.TOA, 102, 86, -102, -101, -36, -87, -100, 6, Field.SYMBOL}, new byte[]{17, 118, -7, -12, -87, -57, -24, Field.ASK}) + str + j1d.a(new byte[]{-52, -42, -27}, new byte[]{-27, -10, -66, 111, 18, 108, -122, Field.GLOSSARY}) + jF + ']');
+        }
+        if (bVarA != null && bVarA.g() > 0 && jF >= bVarA.g()) {
+            return new zyd(j1d.a(new byte[]{56, -1, 13, -88, -81, -75}, new byte[]{9, -50, 60, -98, -98, -124, Field.DATA, -70}), j1d.a(new byte[]{-1, 118, 26, 58, 59, 3, 34, -55, -4, Field.GLOSSARY, 6, Field.AUTONUM, 118, 25, Field.USERADDRESS, -122, -93}, new byte[]{-117, 15, 106, Field.SHAPE, Field.NUMWORDS, 112, 74, -90}) + str + j1d.a(new byte[]{-97, 60, -62}, new byte[]{-74, Field.NUMCHARS, -103, 126, -116, 60, 118, 4}) + jF + ']');
+        }
+        int iK = jxcVar.k();
+        if (z) {
+            kw7.d(j1d.a(new byte[]{121, -66, 80}, new byte[]{24, -38, 56, -54, Field.MACROBUTTON, -81, -104, -116}), j1d.a(new byte[]{21, -21, Field.DATA, 60, -119, Field.TOA, Field.HTMLCONTROL, 22, 19, -18, 43, Field.FILLIN, -56, 86, 19, 29, 5, -89, 36, Field.EQ, -99, Field.MERGESEQ, 15, 82, 41}, new byte[]{114, -121, Field.FORMCHECKBOX, Field.GREETINGLINE, -24, Field.PAGEREF, 123, 114}) + iK + ']');
+        }
+        if (bq7VarI.b().f() > 0 && iK >= bq7VarI.b().f()) {
+            return new zyd(j1d.a(new byte[]{-100, -121, -64, -108, -19, -17}, new byte[]{-83, -74, -15, -94, -35, -35, -107, -71}), j1d.a(new byte[]{Field.FILLIN, -65, -4, 26, -79, -104, 76, -88, 33, -70, -1, 1, -16, -121, 4, -93, Field.IMPORT, -13, -1, 17, -67, -99, 24, -20, Field.NUMWORDS}, new byte[]{64, -45, -109, 120, -48, -12, 108, -52}) + iK + ']');
+        }
+        int iD = jxcVar.d(str);
+        if (z) {
+            kw7.d(j1d.a(new byte[]{1, 122, Field.NOTEREF}, new byte[]{96, 30, 32, -112, -99, -107, -77, 24}), j1d.a(new byte[]{-72, 63, 124, -39, -57, Field.ADVANCE, 9, 86, -96, 63, 44, -49, -113, Field.SHAPE, 31, 31, -81, 41, 121, -46, -109, 16, 64}, new byte[]{-52, Field.FORMTEXT, 12, -68, -25, 48, 104, 63}) + str + j1d.a(new byte[]{Field.ADVANCE, -37, 101}, new byte[]{125, -5, Field.USERADDRESS, -8, -26, -50, Field.QUOTE, Field.AUTOTEXTLIST}) + iD + ']');
+        }
+        if (bVarA != null && bVarA.f() > 0 && iD >= bVarA.f()) {
+            return new zyd(j1d.a(new byte[]{-63, Field.AUTOTEXT, -112, -51, Field.SECTION, -60}, new byte[]{-16, 126, -95, -5, 112, -10, Field.INCLUDEPICTURE, -7}), j1d.a(new byte[]{-78, -63, -54, 56, 103, -33, 17, -116, -86, -63, -102, Field.DDEAUTO, Field.GLOSSARY, -44, 7, -59, -86, -47, -41, Field.AUTONUMOUT, Field.MACROBUTTON, -101, Field.HYPERLINK}, new byte[]{-58, -72, -70, Field.ADDRESSBLOCK, Field.FORMCHECKBOX, -69, 112, -27}) + str + j1d.a(new byte[]{-53, -89, -59}, new byte[]{-30, -121, -98, -80, Field.MERGESEQ, Field.SYMBOL, 17, Field.AUTOTEXTLIST}) + iD + ']');
+        }
+        long jE = jxcVar.e(str);
+        if (z) {
+            kw7.d(j1d.a(new byte[]{-60, -18, 3}, new byte[]{-91, -118, 107, -19, 105, -93, 98, Field.IMPORT}), j1d.a(new byte[]{-115, 96, -20, Field.AUTONUMOUT, Field.GLOSSARY, -30, 105, -34, -115, Field.SYMBOL, -17, Field.SYMBOL, 96, -7, Field.DATA, -39, -112, 116, -7, 113, Field.FILLIN}, new byte[]{-7, 25, -100, Field.ADDIN, 15, -114, 8, -83}) + str + j1d.a(new byte[]{-45, Field.FORMDROPDOWN, 113}, new byte[]{-6, 115, 42, -71, -79, Field.FORMDROPDOWN, -37, Field.IMPORT}) + jE + ']');
+        }
+        long jAbs = Math.abs(System.currentTimeMillis() - jE);
+        if (bVarA == null || bVarA.d() <= 0 || jAbs >= ((long) bVarA.d()) * 1000) {
+            return zydVar;
+        }
+        return new zyd(j1d.a(new byte[]{-50, -36, -37, 125, -121, 26}, new byte[]{-1, -19, -22, Field.MERGESEQ, -74, Field.GLOSSARY, 106, -5}), j1d.a(new byte[]{-88, -48, 48, 107, 6, 105, -100, -50, -71, -37, Field.AUTONUM, 111, 74, 32, -111, -34, -4, -127}, new byte[]{-36, -87, 64, 14, Field.ASK, 0, -14, -70}) + str + j1d.a(new byte[]{-61, 104, Field.HTMLCONTROL}, new byte[]{-22, Field.NOTEREF, 0, Field.DATA, 29, -102, -8, 41}) + jE + ']');
+    }

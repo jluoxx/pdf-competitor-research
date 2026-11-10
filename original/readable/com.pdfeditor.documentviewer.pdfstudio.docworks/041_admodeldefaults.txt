@@ -1,0 +1,35 @@
+.method public constructor <init>()V
+    .registers 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->openSplash:Z
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->interSplash1:Z
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->interSplash2:Z
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->nativeLanguage1:Z
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->nativeLanguage2:Z
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->nativeIntro1:Z
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->nativeIntro3:Z
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->openAd:Z
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->nativeAll:Z
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->nativeHome:Z
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->nativeFileSaved:Z
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->interChooseFile:Z
+
+    iput-boolean v0, p0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/AdsConfigModel;->interChooseFolder:Z
+
+    return-void
+.end method

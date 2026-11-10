@@ -1,0 +1,593 @@
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // o.startAsSupportActionMode, android.app.Application
+    public void onCreate() throws Throwable {
+        Object[] objArr;
+        Object[] objArr2;
+        boolean z;
+        int i;
+        super.onCreate();
+        Object[] objArr3 = new Object[1];
+        a(((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", new Class[0]).invoke(null, null)).getApplicationContext().getResources().getString(R.string._res_0x7f1201d9).substring(0, 1).length() + 17920, new char[]{25486, 9604, 61328, 45446, 31694, 15757, 51075, 35213, 21387, 5571, 57274, 24967, 11162, 60812, 46987, 31119}, objArr3);
+        Class<?> cls = Class.forName((String) objArr3[0]);
+        Object[] objArr4 = new Object[1];
+        a(((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", new Class[0]).invoke(null, null)).getApplicationContext().getPackageName().length() + 53063, new char[]{25479, 44272, 64852, 3509, 24069, 28527, 49110, 51223, 6276, 10751, 31307, 35502, 56076}, objArr4);
+        Thread thread = (Thread) cls.getMethod((String) objArr4[0], new Class[0]).invoke(null, new Object[0]);
+        Object[] objArr5 = new Object[1];
+        a(((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", new Class[0]).invoke(null, null)).getApplicationContext().getResources().getString(R.string._res_0x7f120154).substring(0, 5).length() + 17916, new char[]{25486, 9604, 61328, 45446, 31694, 15757, 51075, 35213, 21387, 5571, 57274, 24967, 11162, 60812, 46987, 31119}, objArr5);
+        Class<?> cls2 = Class.forName((String) objArr5[0]);
+        Object[] objArr6 = new Object[1];
+        a((ViewConfiguration.getMinimumFlingVelocity() >> 16) + 4211, new char[]{25475, 29682, 17270, 21230, 8796, 12730, 309, 4266, 57384, 63389, 51195, 55158, 42725}, objArr6);
+        StackTraceElement[] stackTraceElementArr = (StackTraceElement[]) cls2.getMethod((String) objArr6[0], new Class[0]).invoke(thread, new Object[0]);
+        try {
+            Object objAsInterface = getStrictModePolicy.read(1067470849);
+            if (objAsInterface == null) {
+                int iMyPid = 510 - (Process.myPid() >> 22);
+                char cBlue = (char) Color.blue(0);
+                int modifierMetaStateMask = ((byte) KeyEvent.getModifierMetaStateMask()) + 47;
+                byte b = $$a[11];
+                byte b2 = b;
+                Object[] objArr7 = new Object[1];
+                b(b2, (byte) (b2 | 26), b, objArr7);
+                objAsInterface = getStrictModePolicy.asInterface(iMyPid, cBlue, modifierMetaStateMask, -778623646, false, (String) objArr7[0], new Class[0]);
+            }
+            Object[] objArr8 = (Object[]) ((Method) objAsInterface).invoke(null, null);
+            Object[] objArr9 = new Object[1];
+            a(((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", new Class[0]).invoke(null, null)).getApplicationContext().getPackageName().codePointAt(7) + 25048, new char[]{25486, 462, 42756, 17764, 60134, 35071, 11847, 54151, 29147, 5993, 46425, 23209, 63489, 40520, 917, 41429, 18214, 58750, 35521, 10256, 52861, 29615, 4595, 46900, 21641, 64217, 38926}, objArr9);
+            Class<?> cls3 = Class.forName((String) objArr9[0]);
+            Object[] objArr10 = new Object[1];
+            a(((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", new Class[0]).invoke(null, null)).getApplicationContext().getApplicationInfo().targetSdkVersion + 61826, new char[]{25475, 37412, 32986, 46920, 42268, 56252, 51785, 63508, 61058, 7496, 5115, 406}, objArr10);
+            Method method = cls3.getMethod((String) objArr10[0], new Class[0]);
+            Object objAsInterface2 = getStrictModePolicy.read(-505555937);
+            if (objAsInterface2 == null) {
+                int maximumDrawingCacheSize = (ViewConfiguration.getMaximumDrawingCacheSize() >> 24) + 430;
+                char c = (char) ((SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1)) + 49677);
+                int i2 = 35 - (SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1));
+                byte[] bArr = $$a;
+                byte b3 = (byte) (bArr[20] + 1);
+                Object[] objArr11 = new Object[1];
+                b(b3, (byte) (b3 + 2), (byte) (-bArr[31]), objArr11);
+                objAsInterface2 = getStrictModePolicy.asInterface(maximumDrawingCacheSize, c, i2, 267035004, false, (String) objArr11[0], null);
+            }
+            ((Field) objAsInterface2).setInt(null, 0);
+            loop0: for (StackTraceElement stackTraceElement : stackTraceElementArr) {
+                for (Object obj : objArr8) {
+                    if (obj.equals((String) method.invoke(stackTraceElement, new Object[0]))) {
+                        Object objAsInterface3 = getStrictModePolicy.read(-505555937);
+                        if (objAsInterface3 == null) {
+                            int iIndexOf = TextUtils.indexOf((CharSequence) "", '0', 0) + 431;
+                            char c2 = (char) ((AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)) + 49678);
+                            int i3 = (ExpandableListView.getPackedPositionForGroup(0) > 0L ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == 0L ? 0 : -1)) + 34;
+                            byte[] bArr2 = $$a;
+                            byte b4 = (byte) (bArr2[20] + 1);
+                            Object[] objArr12 = new Object[1];
+                            b(b4, (byte) (b4 + 2), (byte) (-bArr2[31]), objArr12);
+                            objAsInterface3 = getStrictModePolicy.asInterface(iIndexOf, c2, i3, 267035004, false, (String) objArr12[0], null);
+                        }
+                        ((Field) objAsInterface3).setInt(null, 1);
+                        break loop0;
+                    }
+                }
+            }
+            Object objAsInterface4 = getStrictModePolicy.read(-1811945525);
+            if (objAsInterface4 == null) {
+                int scrollBarSize = (ViewConfiguration.getScrollBarSize() >> 8) + 510;
+                char trimmedLength = (char) TextUtils.getTrimmedLength("");
+                int iLastIndexOf = TextUtils.lastIndexOf("", '0') + 47;
+                byte[] bArr3 = $$a;
+                byte b5 = bArr3[11];
+                byte b6 = bArr3[10];
+                Object[] objArr13 = new Object[1];
+                b(b5, b6, (byte) (b6 - 4), objArr13);
+                objAsInterface4 = getStrictModePolicy.asInterface(scrollBarSize, trimmedLength, iLastIndexOf, 2110296744, false, (String) objArr13[0], null);
+            }
+            ((Field) objAsInterface4).set(null, -1L);
+            FirebaseAnalytics.getInstance(this);
+            getPivotY.asBinder();
+            FragmentStrictModeFlag.asBinder(new getGroupName());
+            onPolicyViolation.RemoteActionCompatParcelizer.MediaControllerCompatMediaControllerImplApi21ExtraBinderRequestResultReceiver();
+            onPolicyViolation.RemoteActionCompatParcelizer.MediaBrowserCompatCustomActionResultReceiver();
+            onPolicyViolation.RemoteActionCompatParcelizer.MediaMetadataCompat();
+            onPolicyViolation.RemoteActionCompatParcelizer.IconCompatParcelizer();
+            onPolicyViolation.RemoteActionCompatParcelizer.RatingCompat();
+            onPolicyViolation.RemoteActionCompatParcelizer.MediaBrowserCompatMediaItem();
+            onPolicyViolation.asBinder(this);
+            getLocalMatrix.read = FirebaseRemoteConfig.read();
+            final dispatchLowMemory dispatchlowmemory = new dispatchLowMemory(new dispatchLowMemory.read(), null == true ? 1 : 0);
+            final FirebaseRemoteConfig firebaseRemoteConfig = getLocalMatrix.read;
+            clearInvisibleActions.asBinder(firebaseRemoteConfig.asInterface, new Callable() { // from class: o.dispatchActivityCreated
+                @Override // java.util.concurrent.Callable
+                public final Object call() {
+                    return firebaseRemoteConfig.asBinder(dispatchlowmemory);
+                }
+            });
+            FirebaseRemoteConfig firebaseRemoteConfig2 = getLocalMatrix.read;
+            firebaseRemoteConfig2.asInterface(retainNestedNonConfig.asBinder(firebaseRemoteConfig2.RemoteActionCompatParcelizer, R.xml._res_0x7f150009));
+            final execPendingActions execpendingactions = getLocalMatrix.read.MediaBrowserCompatItemReceiver;
+            final HashMap map = new HashMap(execpendingactions.asBinder);
+            StringBuilder sb = new StringBuilder();
+            sb.append(execPendingActions.asInterface.BASE.asBinder);
+            sb.append("/1");
+            map.put("X-Firebase-RC-Fetch-Type", sb.toString());
+            final long j = 3600;
+            execpendingactions.asInterface.asBinder().onTransact(execpendingactions.onTransact, new setDesiredHeightResId(j, map) { // from class: o.doLoaderStop
+                private /* synthetic */ long RemoteActionCompatParcelizer = 3600;
+                private /* synthetic */ Map asInterface;
+
+                {
+                    this.asInterface = map;
+                }
+
+                @Override // o.setDesiredHeightResId
+                public final Object RemoteActionCompatParcelizer(createHeadsUpContentView createheadsupcontentview) {
+                    return this.onTransact.RemoteActionCompatParcelizer(createheadsupcontentview, this.RemoteActionCompatParcelizer, this.asInterface);
+                }
+            }).asBinder(FirebaseExecutors.directExecutor(), new clearPeople() { // from class: o.dispatchCreateOptionsMenu
+                @Override // o.clearPeople
+                public final createHeadsUpContentView asInterface(Object obj2) {
+                    return FirebaseRemoteConfig.asBinder();
+                }
+            }).onTransact(new addPerson() { // from class: o.getPivotX
+                @Override // o.addPerson
+                public final void asBinder(createHeadsUpContentView createheadsupcontentview) {
+                    if (createheadsupcontentview.read()) {
+                        final FirebaseRemoteConfig firebaseRemoteConfig3 = getLocalMatrix.read;
+                        final createHeadsUpContentView<dispatchStop> createheadsupcontentviewAsBinder = firebaseRemoteConfig3.MediaBrowserCompatCustomActionResultReceiver.asBinder();
+                        final createHeadsUpContentView<dispatchStop> createheadsupcontentviewAsBinder2 = firebaseRemoteConfig3.asBinder.asBinder();
+                        clearInvisibleActions.asInterface((createHeadsUpContentView<?>[]) new createHeadsUpContentView[]{createheadsupcontentviewAsBinder, createheadsupcontentviewAsBinder2}).onTransact(firebaseRemoteConfig3.asInterface, new setDesiredHeightResId() { // from class: o.startViewTransition
+                            @Override // o.setDesiredHeightResId
+                            public final Object RemoteActionCompatParcelizer(createHeadsUpContentView createheadsupcontentview2) {
+                                dispatchStop dispatchstop;
+                                final FirebaseRemoteConfig firebaseRemoteConfig4 = firebaseRemoteConfig3;
+                                createHeadsUpContentView createheadsupcontentview3 = createheadsupcontentviewAsBinder;
+                                createHeadsUpContentView createheadsupcontentview4 = createheadsupcontentviewAsBinder2;
+                                boolean z2 = createheadsupcontentview3.read();
+                                Boolean bool = Boolean.FALSE;
+                                if (!z2 || createheadsupcontentview3.asBinder() == null) {
+                                    setForegroundServiceBehavior setforegroundservicebehavior = new setForegroundServiceBehavior();
+                                    setforegroundservicebehavior.asBinder(bool);
+                                    return setforegroundservicebehavior;
+                                }
+                                dispatchStop dispatchstop2 = (dispatchStop) createheadsupcontentview3.asBinder();
+                                if (!createheadsupcontentview4.read() || (dispatchstop = (dispatchStop) createheadsupcontentview4.asBinder()) == null || !dispatchstop2.asBinder.equals(dispatchstop.asBinder)) {
+                                    return firebaseRemoteConfig4.asBinder.onTransact(dispatchstop2).read(firebaseRemoteConfig4.asInterface, new setDesiredHeightResId() { // from class: o.dispatchConfigurationChanged
+                                        @Override // o.setDesiredHeightResId
+                                        public final Object RemoteActionCompatParcelizer(createHeadsUpContentView createheadsupcontentview5) {
+                                            return Boolean.valueOf(FirebaseRemoteConfig.asInterface(firebaseRemoteConfig4, createheadsupcontentview5));
+                                        }
+                                    });
+                                }
+                                setForegroundServiceBehavior setforegroundservicebehavior2 = new setForegroundServiceBehavior();
+                                setforegroundservicebehavior2.asBinder(bool);
+                                return setforegroundservicebehavior2;
+                            }
+                        });
+                    }
+                }
+            });
+            try {
+                ViewConfiguration viewConfiguration = ViewConfiguration.get(this);
+                Field declaredField = ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey");
+                if (declaredField != null) {
+                    declaredField.setAccessible(true);
+                    declaredField.setBoolean(viewConfiguration, false);
+                }
+            } catch (Exception unused) {
+            }
+            Object objAsInterface5 = getStrictModePolicy.read(1609275880);
+            if (objAsInterface5 == null) {
+                int gidForName = Process.getGidForName("") + 465;
+                char maximumDrawingCacheSize2 = (char) ((ViewConfiguration.getMaximumDrawingCacheSize() >> 24) + 46603);
+                int packedPositionType = ExpandableListView.getPackedPositionType(0L) + 46;
+                byte b7 = $$a[11];
+                byte b8 = b7;
+                Object[] objArr14 = new Object[1];
+                b(b8, (byte) (b8 | 26), b7, objArr14);
+                objAsInterface5 = getStrictModePolicy.asInterface(gidForName, maximumDrawingCacheSize2, packedPositionType, -1310921589, false, (String) objArr14[0], null);
+            }
+            long j2 = ((Field) objAsInterface5).getLong(null);
+            long jLongValue = ((Long) Class.forName("android.os.SystemClock").getDeclaredMethod("elapsedRealtime", new Class[0]).invoke(null, new Object[0])).longValue();
+            Object objAsInterface6 = getStrictModePolicy.read(127216521);
+            if (objAsInterface6 == null) {
+                int keyRepeatTimeout = (ViewConfiguration.getKeyRepeatTimeout() >> 16) + 464;
+                char cIndexOf = (char) (TextUtils.indexOf("", "") + 46603);
+                int iAxisFromString = MotionEvent.axisFromString("") + 47;
+                byte[] bArr4 = $$a;
+                byte b9 = bArr4[11];
+                byte b10 = bArr4[10];
+                Object[] objArr15 = new Object[1];
+                b(b9, b10, (byte) (b10 - 4), objArr15);
+                objAsInterface6 = getStrictModePolicy.asInterface(keyRepeatTimeout, cIndexOf, iAxisFromString, -375234838, false, (String) objArr15[0], null);
+            }
+            if (j2 == ((jLongValue - ((((Field) objAsInterface6).getLong(null) << 52) >>> 52)) >> 12)) {
+                Object objAsInterface7 = getStrictModePolicy.read(1782057718);
+                if (objAsInterface7 == null) {
+                    int i4 = (AudioTrack.getMaxVolume() > 0.0f ? 1 : (AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) + 463;
+                    char scrollBarSize2 = (char) (46603 - (ViewConfiguration.getScrollBarSize() >> 8));
+                    int packedPositionType2 = 46 - ExpandableListView.getPackedPositionType(0L);
+                    byte[] bArr5 = $$a;
+                    byte b11 = (byte) (bArr5[20] + 1);
+                    Object[] objArr16 = new Object[1];
+                    b(b11, (byte) (b11 + 2), (byte) (-bArr5[31]), objArr16);
+                    objAsInterface7 = getStrictModePolicy.asInterface(i4, scrollBarSize2, packedPositionType2, -2079359083, false, (String) objArr16[0], null);
+                }
+                Object[] objArr17 = (Object[]) ((Field) objAsInterface7).get(null);
+                objArr = new Object[]{new int[1], new int[]{i}, strArr, new int[]{i}};
+                int i5 = ((int[]) objArr17[3])[0];
+                int i6 = ((int[]) objArr17[1])[0];
+                String[] strArr = (String[]) objArr17[2];
+                int iIdentityHashCode = System.identityHashCode(this);
+                int i7 = ~iIdentityHashCode;
+                int i8 = 118834185 + (((~(1022328717 | i7)) | 34603072) * (-108)) + (((~(i7 | 507338696)) | (~((-507338697) | iIdentityHashCode)) | 549593093) * 54) + ((iIdentityHashCode | 549593093) * 54) + 1457036757;
+                int i9 = (i8 << 13) ^ i8;
+                int i10 = i9 ^ (i9 >>> 17);
+                ((int[]) objArr[0])[0] = i10 ^ (i10 << 5);
+            } else {
+                Context applicationContext = (Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", new Class[0]).invoke(null, null);
+                if (applicationContext != null) {
+                    applicationContext = ((applicationContext instanceof ContextWrapper) && ((ContextWrapper) applicationContext).getBaseContext() == null) ? null : applicationContext.getApplicationContext();
+                }
+                try {
+                    byte[] bArr6 = $$d;
+                    byte b12 = bArr6[68];
+                    byte b13 = bArr6[52];
+                    Object[] objArr18 = new Object[1];
+                    c(b12, b13, (byte) (b13 | 29), objArr18);
+                    Class<?> cls4 = Class.forName((String) objArr18[0]);
+                    byte b14 = bArr6[34];
+                    Object[] objArr19 = new Object[1];
+                    c(b14, b14, bArr6[8], objArr19);
+                    Object[] objArr20 = (Object[]) cls4.getMethod((String) objArr19[0], Class.forName("android.content.Context"), String[].class, Integer.TYPE, Integer.TYPE, Integer.TYPE).invoke(null, applicationContext, new String[]{"4378c202a2d367a25c0aeb9525a23562efebeeb6b31aa1edbf03139512563cc8"}, 0, 17, 1457036757);
+                    int i11 = ((int[]) objArr20[1])[0];
+                    int i12 = ((int[]) objArr20[3])[0];
+                    if (applicationContext != null) {
+                        Object objAsInterface8 = getStrictModePolicy.read(1782057718);
+                        if (objAsInterface8 == null) {
+                            int jumpTapTimeout = 464 - (ViewConfiguration.getJumpTapTimeout() >> 16);
+                            char cIndexOf2 = (char) (TextUtils.indexOf("", "", 0, 0) + 46603);
+                            int iArgb = 46 - Color.argb(0, 0, 0, 0);
+                            byte[] bArr7 = $$a;
+                            byte b15 = (byte) (bArr7[20] + 1);
+                            Object[] objArr21 = new Object[1];
+                            b(b15, (byte) (b15 + 2), (byte) (-bArr7[31]), objArr21);
+                            objAsInterface8 = getStrictModePolicy.asInterface(jumpTapTimeout, cIndexOf2, iArgb, -2079359083, false, (String) objArr21[0], null);
+                        }
+                        ((Field) objAsInterface8).set(null, objArr20);
+                        try {
+                            long jLongValue2 = ((Long) Class.forName("android.os.SystemClock").getDeclaredMethod("elapsedRealtime", new Class[0]).invoke(null, new Object[0])).longValue();
+                            Long lValueOf = Long.valueOf(jLongValue2);
+                            Object objAsInterface9 = getStrictModePolicy.read(127216521);
+                            if (objAsInterface9 == null) {
+                                int keyRepeatTimeout2 = (ViewConfiguration.getKeyRepeatTimeout() >> 16) + 464;
+                                char maximumFlingVelocity = (char) ((ViewConfiguration.getMaximumFlingVelocity() >> 16) + 46603);
+                                int iMyTid = 46 - (Process.myTid() >> 22);
+                                byte[] bArr8 = $$a;
+                                byte b16 = bArr8[11];
+                                byte b17 = bArr8[10];
+                                Object[] objArr22 = new Object[1];
+                                b(b16, b17, (byte) (b17 - 4), objArr22);
+                                objAsInterface9 = getStrictModePolicy.asInterface(keyRepeatTimeout2, maximumFlingVelocity, iMyTid, -375234838, false, (String) objArr22[0], null);
+                            }
+                            ((Field) objAsInterface9).set(null, lValueOf);
+                            Long lValueOf2 = Long.valueOf(jLongValue2 >> 12);
+                            Object objAsInterface10 = getStrictModePolicy.read(1609275880);
+                            if (objAsInterface10 == null) {
+                                int i13 = 464 - (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1));
+                                char defaultSize = (char) (View.getDefaultSize(0, 0) + 46603);
+                                int maximumFlingVelocity2 = 46 - (ViewConfiguration.getMaximumFlingVelocity() >> 16);
+                                byte b18 = $$a[11];
+                                byte b19 = b18;
+                                Object[] objArr23 = new Object[1];
+                                b(b19, (byte) (b19 | 26), b18, objArr23);
+                                objAsInterface10 = getStrictModePolicy.asInterface(i13, defaultSize, maximumFlingVelocity2, -1310921589, false, (String) objArr23[0], null);
+                            }
+                            ((Field) objAsInterface10).set(null, lValueOf2);
+                        } catch (Exception unused2) {
+                            throw new RuntimeException();
+                        }
+                    }
+                    objArr = objArr20;
+                } catch (Throwable th) {
+                    Throwable cause = th.getCause();
+                    if (cause == null) {
+                        throw th;
+                    }
+                    throw cause;
+                }
+            }
+            int i14 = ((int[]) objArr[1])[0];
+            int i15 = ((int[]) objArr[3])[0];
+            if (i15 == i14) {
+                Object[] objArr24 = {new int[1], new int[]{i}, strArr, new int[]{i}};
+                int i16 = ((int[]) objArr[0])[0];
+                int i17 = ((int[]) objArr[3])[0];
+                int i18 = ((int[]) objArr[1])[0];
+                String[] strArr2 = (String[]) objArr[2];
+                int iMyTid2 = Process.myTid();
+                int i19 = i16 + 2075387336 + (((~((-676190020) | iMyTid2)) | 541917186) * 345) + (((~((-676190020) | (~iMyTid2))) | 311560208) * 345) + ((~(iMyTid2 | (-541917187))) * 345);
+                int i20 = (i19 << 13) ^ i19;
+                int i21 = i20 ^ (i20 >>> 17);
+                ((int[]) objArr24[0])[0] = i21 ^ (i21 << 5);
+            } else {
+                ArrayList arrayList = new ArrayList();
+                String[] strArr3 = (String[]) objArr[2];
+                if (strArr3 != null) {
+                    for (String str : strArr3) {
+                        arrayList.add(str);
+                    }
+                }
+                Toast.makeText((Context) null, i15 / (((i15 - 1) * i15) % 2), 0).show();
+                Object[] objArr25 = {new int[1], new int[]{i}, strArr, new int[]{i}};
+                int i22 = ((int[]) objArr[0])[0];
+                int i23 = ((int[]) objArr[3])[0];
+                int i24 = ((int[]) objArr[1])[0];
+                String[] strArr4 = (String[]) objArr[2];
+                int iCodePointAt = ((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", new Class[0]).invoke(null, null)).getApplicationContext().getResources().getString(R.string._res_0x7f120037).substring(0, 13).codePointAt(11) - 1747045009;
+                int i25 = i22 + ((((~(iCodePointAt | 188134568)) | 1341532845) * 56) - 413812019) + (((~((~iCodePointAt) | 1341532845)) | 188134568) * 56);
+                int i26 = (i25 << 13) ^ i25;
+                int i27 = i26 ^ (i26 >>> 17);
+                ((int[]) objArr25[0])[0] = i27 ^ (i27 << 5);
+            }
+            Object objAsInterface11 = getStrictModePolicy.read(-1811945525);
+            if (objAsInterface11 == null) {
+                int i28 = (ExpandableListView.getPackedPositionForGroup(0) > 0L ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == 0L ? 0 : -1)) + 510;
+                char packedPositionType3 = (char) ExpandableListView.getPackedPositionType(0L);
+                int iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, 0) + 46;
+                byte[] bArr9 = $$a;
+                byte b20 = bArr9[11];
+                byte b21 = bArr9[10];
+                Object[] objArr26 = new Object[1];
+                b(b20, b21, (byte) (b21 - 4), objArr26);
+                objAsInterface11 = getStrictModePolicy.asInterface(i28, packedPositionType3, iMakeMeasureSpec, 2110296744, false, (String) objArr26[0], null);
+            }
+            long j3 = ((Field) objAsInterface11).getLong(null);
+            long jLongValue3 = ((Long) Class.forName("android.os.SystemClock").getDeclaredMethod("elapsedRealtime", new Class[0]).invoke(null, new Object[0])).longValue();
+            Object objAsInterface12 = getStrictModePolicy.read(-1600346139);
+            if (objAsInterface12 == null) {
+                int iAxisFromString2 = MotionEvent.axisFromString("") + FrameMetricsAggregator.EVERY_DURATION;
+                char packedPositionGroup = (char) ExpandableListView.getPackedPositionGroup(0L);
+                int iMyPid2 = (Process.myPid() >> 22) + 46;
+                byte b22 = (byte) ($$b & 115);
+                byte[] bArr10 = $$a;
+                Object[] objArr27 = new Object[1];
+                b(b22, bArr10[11], bArr10[10], objArr27);
+                objAsInterface12 = getStrictModePolicy.asInterface(iAxisFromString2, packedPositionGroup, iMyPid2, 1319883398, false, (String) objArr27[0], null);
+            }
+            if (j3 == ((jLongValue3 - ((((Field) objAsInterface12).getLong(null) << 52) >>> 52)) >> 12)) {
+                Object objAsInterface13 = getStrictModePolicy.read(-2031829320);
+                if (objAsInterface13 == null) {
+                    int bitsPerPixel = 509 - ImageFormat.getBitsPerPixel(0);
+                    char keyRepeatDelay = (char) (ViewConfiguration.getKeyRepeatDelay() >> 16);
+                    int i29 = (SystemClock.elapsedRealtimeNanos() > 0L ? 1 : (SystemClock.elapsedRealtimeNanos() == 0L ? 0 : -1)) + 45;
+                    byte[] bArr11 = $$a;
+                    byte b23 = (byte) (bArr11[20] + 1);
+                    Object[] objArr28 = new Object[1];
+                    b(b23, (byte) (b23 + 2), (byte) (-bArr11[31]), objArr28);
+                    objAsInterface13 = getStrictModePolicy.asInterface(bitsPerPixel, keyRepeatDelay, i29, 1758710747, false, (String) objArr28[0], null);
+                }
+                Object[] objArr29 = (Object[]) ((Field) objAsInterface13).get(null);
+                int i30 = ((int[]) objArr29[2])[0];
+                int i31 = ((int[]) objArr29[1])[0];
+                String[] strArr5 = (String[]) objArr29[3];
+                int[] iArr = {i31};
+                int iIdentityHashCode2 = System.identityHashCode(this);
+                int i32 = ~iIdentityHashCode2;
+                int i33 = (((861807598 + (((~((-610116965) | i32)) | 538715172) * 98)) + ((((~(i32 | (-255970258))) | (-610116965)) | (~(255970257 | iIdentityHashCode2))) * (-49))) + (((~(iIdentityHashCode2 | (-610116965))) | (-794685430)) * 49)) - 237235107;
+                int i34 = (i33 << 13) ^ i33;
+                int i35 = i34 ^ (i34 >>> 17);
+                ((int[]) objArr2[0])[0] = i35 ^ (i35 << 5);
+                objArr2 = new Object[]{new int[1], iArr, new int[]{i30}, strArr5};
+            } else {
+                Context applicationContext2 = (Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", new Class[0]).invoke(null, null);
+                if (applicationContext2 != null) {
+                    applicationContext2 = ((applicationContext2 instanceof ContextWrapper) && ((ContextWrapper) applicationContext2).getBaseContext() == null) ? null : applicationContext2.getApplicationContext();
+                }
+                Object[] objArr30 = {applicationContext2, 0, 0, -237235107};
+                byte[] bArr12 = $$d;
+                int i36 = $$e;
+                Object[] objArr31 = new Object[1];
+                c(bArr12[14], (byte) 56, (byte) (i36 & 121), objArr31);
+                Class<?> cls5 = Class.forName((String) objArr31[0]);
+                Object[] objArr32 = new Object[1];
+                c((byte) 70, (byte) i36, bArr12[52], objArr32);
+                objArr2 = (Object[]) cls5.getMethod((String) objArr32[0], Class.forName("android.content.Context"), Integer.TYPE, Integer.TYPE, Integer.TYPE).invoke(null, objArr30);
+                Object objAsInterface14 = getStrictModePolicy.read(-2031829320);
+                if (objAsInterface14 == null) {
+                    int capsMode = 510 - TextUtils.getCapsMode("", 0, 0);
+                    char c3 = (char) ((AudioTrack.getMaxVolume() > 0.0f ? 1 : (AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) - 1);
+                    int jumpTapTimeout2 = 46 - (ViewConfiguration.getJumpTapTimeout() >> 16);
+                    byte[] bArr13 = $$a;
+                    byte b24 = (byte) (bArr13[20] + 1);
+                    Object[] objArr33 = new Object[1];
+                    b(b24, (byte) (b24 + 2), (byte) (-bArr13[31]), objArr33);
+                    objAsInterface14 = getStrictModePolicy.asInterface(capsMode, c3, jumpTapTimeout2, 1758710747, false, (String) objArr33[0], null);
+                }
+                ((Field) objAsInterface14).set(null, objArr2);
+                try {
+                    long jLongValue4 = ((Long) Class.forName("android.os.SystemClock").getDeclaredMethod("elapsedRealtime", new Class[0]).invoke(null, new Object[0])).longValue();
+                    Long lValueOf3 = Long.valueOf(jLongValue4);
+                    Object objAsInterface15 = getStrictModePolicy.read(-1600346139);
+                    if (objAsInterface15 == null) {
+                        int offsetAfter = 510 - TextUtils.getOffsetAfter("", 0);
+                        char cBlue2 = (char) Color.blue(0);
+                        int maximumFlingVelocity3 = 46 - (ViewConfiguration.getMaximumFlingVelocity() >> 16);
+                        byte b25 = (byte) ($$b & 115);
+                        byte[] bArr14 = $$a;
+                        Object[] objArr34 = new Object[1];
+                        b(b25, bArr14[11], bArr14[10], objArr34);
+                        objAsInterface15 = getStrictModePolicy.asInterface(offsetAfter, cBlue2, maximumFlingVelocity3, 1319883398, false, (String) objArr34[0], null);
+                    }
+                    ((Field) objAsInterface15).set(null, lValueOf3);
+                    Long lValueOf4 = Long.valueOf(jLongValue4 >> 12);
+                    Object objAsInterface16 = getStrictModePolicy.read(-1811945525);
+                    if (objAsInterface16 == null) {
+                        int minimumFlingVelocity = (ViewConfiguration.getMinimumFlingVelocity() >> 16) + 510;
+                        char cKeyCodeFromString = (char) KeyEvent.keyCodeFromString("");
+                        int iAlpha = Color.alpha(0) + 46;
+                        byte[] bArr15 = $$a;
+                        byte b26 = bArr15[11];
+                        byte b27 = bArr15[10];
+                        Object[] objArr35 = new Object[1];
+                        b(b26, b27, (byte) (b27 - 4), objArr35);
+                        objAsInterface16 = getStrictModePolicy.asInterface(minimumFlingVelocity, cKeyCodeFromString, iAlpha, 2110296744, false, (String) objArr35[0], null);
+                    }
+                    ((Field) objAsInterface16).set(null, lValueOf4);
+                } catch (Exception unused3) {
+                    throw new RuntimeException();
+                }
+            }
+            if (((int[]) objArr2[2])[0] == ((int[]) objArr2[1])[0]) {
+                int i37 = ((int[]) objArr2[0])[0];
+                int i38 = ((int[]) objArr2[2])[0];
+                int i39 = ((int[]) objArr2[1])[0];
+                String[] strArr6 = (String[]) objArr2[3];
+                int[] iArr2 = {i38};
+                int[] iArr3 = {i39};
+                int i40 = ((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", new Class[0]).invoke(null, null)).getResources().getConfiguration().mnc;
+                int i41 = (~((-762589211) | i40)) | 69206042;
+                int i42 = i37 + 783555205 + (i41 * 992) + ((i41 | (~((~i40) | 796881179))) * (-496)) + ((i40 | 103498011) * 496);
+                int i43 = (i42 << 13) ^ i42;
+                int i44 = i43 ^ (i43 >>> 17);
+                ((int[]) objArr[0])[0] = i44 ^ (i44 << 5);
+                Object[] objArr36 = {new int[1], iArr3, iArr2, strArr6};
+                this.IconCompatParcelizer = new CheckBoxPreference(this);
+                this.RatingCompat = new getParentContainer(this);
+                SeekBarPreference.asBinder(this);
+                try {
+                    try {
+                        Object objInvoke = Class.forName("android.content.pm.PackageManager").getMethod("getPackageInfo", String.class, Integer.TYPE).invoke(getPackageManager(), getPackageName(), 0);
+                        if (onInterceptTouchEvent.read(this.RatingCompat.asBinder).contains("app_version_code") && (i = onInterceptTouchEvent.read(this.RatingCompat.asBinder).getInt("app_version_code", Class.forName("android.content.pm.PackageInfo").getField("versionCode").getInt(objInvoke))) < Class.forName("android.content.pm.PackageInfo").getField("versionCode").getInt(objInvoke)) {
+                            Class.forName("android.content.pm.PackageInfo").getField("versionCode").getInt(objInvoke);
+                            if (i < 5 && !getListenerfragment_release.read()) {
+                                SharedPreferences.Editor editorEdit = onInterceptTouchEvent.read(this.RatingCompat.asBinder).edit();
+                                editorEdit.putBoolean("flash_during_af", false);
+                                editorEdit.commit();
+                            }
+                            if (i < 54) {
+                                setTranslateY.asInterface();
+                            }
+                            if (i < 66 && Locale.getDefault() != null && !Locale.US.equals(Locale.getDefault())) {
+                                if ("myself".equals(onInterceptTouchEvent.read(this.RatingCompat.asBinder).getString("email_label", null))) {
+                                    this.RatingCompat.onTransact("email_label", getString(R.string._res_0x7f120155));
+                                }
+                                if ("Scanned with TurboScan.".equals(onInterceptTouchEvent.read(this.RatingCompat.asBinder).getString("email_reg_body", null))) {
+                                    this.RatingCompat.onTransact("email_reg_body", getString(R.string._res_0x7f1201c7));
+                                }
+                            }
+                            if (i < 78) {
+                                setTranslateY.RemoteActionCompatParcelizer();
+                            }
+                            if (SetRetainInstanceUsageViolation.asBinder == null) {
+                                SetRetainInstanceUsageViolation.asBinder = new GetTargetFragmentUsageViolation();
+                            }
+                            SetRetainInstanceUsageViolation.asBinder.asBinder(this, i);
+                        }
+                        SharedPreferences.Editor editorEdit2 = onInterceptTouchEvent.read(this.RatingCompat.asBinder).edit();
+                        editorEdit2.putInt("app_version_code", Class.forName("android.content.pm.PackageInfo").getField("versionCode").getInt(objInvoke));
+                        editorEdit2.commit();
+                    } catch (Throwable th2) {
+                        Throwable cause2 = th2.getCause();
+                        if (cause2 == null) {
+                            throw th2;
+                        }
+                        throw cause2;
+                    }
+                } catch (Exception e) {
+                    FragmentStrictModeFlag.asBinder(e);
+                }
+                detectSetUserVisibleHint detectsetuservisiblehint = new detectSetUserVisibleHint(this);
+                this.onTransact = detectsetuservisiblehint;
+                detectSetUserVisibleHint.asBinder();
+                detectsetuservisiblehint.asInterface = FirebaseAnalytics.getInstance(detectsetuservisiblehint.onTransact);
+                ApplicationController applicationController = detectsetuservisiblehint.onTransact;
+                File file = new File(setDefaultPolicy.asBinder.getExternalFilesDir(null), ".free");
+                if (!file.exists()) {
+                    try {
+                        file.createNewFile();
+                        if (SetRetainInstanceUsageViolation.asBinder == null) {
+                            SetRetainInstanceUsageViolation.asBinder = new GetTargetFragmentUsageViolation();
+                        }
+                        ApplicationController applicationController2 = detectsetuservisiblehint.onTransact;
+                    } catch (IOException e2) {
+                        FragmentStrictModeFlag.asBinder(e2);
+                    }
+                }
+                if (SetRetainInstanceUsageViolation.asBinder == null) {
+                    SetRetainInstanceUsageViolation.asBinder = new GetTargetFragmentUsageViolation();
+                }
+                SetRetainInstanceUsageViolation.asBinder.read(this);
+                viewModels.onTransact ontransact = new viewModels.onTransact(getApplicationContext());
+                if (ontransact.MediaMetadataCompat == null) {
+                    ontransact.MediaMetadataCompat = activityViewModelsdefault.onTransact(ontransact.PlaybackStateCompat, ontransact.MediaSessionCompatQueueItem, ontransact.ParcelableVolumeInfo);
+                    z = true;
+                } else {
+                    z = true;
+                    ontransact.onTransact = true;
+                }
+                if (ontransact.MediaControllerCompatMediaControllerImplApi21ExtraBinderRequestResultReceiver == null) {
+                    ontransact.MediaControllerCompatMediaControllerImplApi21ExtraBinderRequestResultReceiver = activityViewModelsdefault.onTransact(ontransact.PlaybackStateCompat, ontransact.MediaSessionCompatQueueItem, ontransact.ParcelableVolumeInfo);
+                } else {
+                    ontransact.asInterface = z;
+                }
+                if (ontransact.write == null) {
+                    if (ontransact.MediaBrowserCompatItemReceiver == null) {
+                        ontransact.MediaBrowserCompatItemReceiver = new setCurrentState();
+                    }
+                    Context context = ontransact.read;
+                    activityViewModels activityviewmodels = ontransact.MediaBrowserCompatItemReceiver;
+                    int i45 = ontransact.MediaBrowserCompatCustomActionResultReceiver;
+                    int i46 = ontransact.MediaBrowserCompatMediaItem;
+                    ontransact.write = new performRestore(markPostponedState.asInterface(context, true), activityviewmodels);
+                }
+                if (ontransact.RatingCompat == null) {
+                    int i47 = ontransact.MediaBrowserCompatSearchResultReceiver;
+                    ontransact.RatingCompat = new performSave((int) (Runtime.getRuntime().maxMemory() / 8));
+                }
+                boolean z2 = ontransact.IconCompatParcelizer;
+                if (ontransact.MediaDescriptionCompat == null) {
+                    ontransact.MediaDescriptionCompat = new findPendingOperation(ontransact.read);
+                }
+                if (ontransact.asBinder == null) {
+                    boolean z3 = ontransact.MediaSessionCompatResultReceiverWrapper;
+                    ontransact.asBinder = new flushBuilder(false);
+                }
+                if (ontransact.RemoteActionCompatParcelizer == null) {
+                    ontransact.RemoteActionCompatParcelizer = new createViewModelLazy(new createViewModelLazy.asInterface(), null == true ? 1 : 0);
+                }
+                viewModels viewmodels = new viewModels(ontransact, null == true ? 1 : 0);
+                createViewModelLazydefault createviewmodellazydefault = createViewModelLazydefault.read();
+                synchronized (createviewmodellazydefault) {
+                    if (createviewmodellazydefault.onTransact != null) {
+                        forcePostponedExecutePendingOperations.onTransact(5, null, "Try to initialize ImageLoader which had already been initialized before. To re-init ImageLoader with new configuration call ImageLoader.destroy() at first.", new Object[0]);
+                    } else {
+                        if (viewmodels.access100) {
+                            forcePostponedExecutePendingOperations.onTransact(3, null, "Initialize ImageLoader with configuration", new Object[0]);
+                        }
+                        createviewmodellazydefault.asBinder = new FragmentViewModelLazyKtactivityViewModels2(viewmodels);
+                        createviewmodellazydefault.onTransact = viewmodels;
+                    }
+                }
+                onWindowStartingActionMode onwindowstartingactionmodeRemoteActionCompatParcelizer = onWindowStartingActionMode.RemoteActionCompatParcelizer(this);
+                BroadcastReceiver broadcastReceiver = this.PlaybackStateCompat;
+                IntentFilter intentFilter = new IntentFilter("cloudUploadComplete");
+                intentFilter.addAction("documentRenamed");
+                intentFilter.addAction("documentChanged");
+                onwindowstartingactionmodeRemoteActionCompatParcelizer.read(broadcastReceiver, intentFilter);
+                GetRetainInstanceUsageViolation.asBinder();
+                return;
+            }
+            ArrayList arrayList2 = new ArrayList();
+            String[] strArr7 = (String[]) objArr2[3];
+            if (strArr7 != null) {
+                for (String str2 : strArr7) {
+                    arrayList2.add(str2);
+                }
+            }
+            throw null;
+        } catch (Throwable th3) {
+            Throwable cause3 = th3.getCause();
+            if (cause3 == null) {
+                throw th3;
+            }
+            throw cause3;
+        }
+    }

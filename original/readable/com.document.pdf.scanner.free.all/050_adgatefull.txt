@@ -1,0 +1,75 @@
+    public static Boolean d(Activity activity, i8.c cVar, i8.c cVar2, String str, boolean z10, boolean z11, Function0 function0) {
+        Boolean bool;
+        h8.d dVar = f44808b;
+        boolean zC = dVar.c(cVar);
+        boolean zC2 = l.f44811b.c(cVar2);
+        if (!zC && !zC2) {
+            if (function0 != null) {
+                function0.invoke();
+            }
+            return Boolean.FALSE;
+        }
+        x xVar = x.f44845n;
+        if (x.g()) {
+            i8.c.f48206v.getClass();
+            xe.d.L(str, "cooling");
+            if (function0 != null) {
+                function0.invoke();
+            }
+            return Boolean.FALSE;
+        }
+        if (x.p()) {
+            i8.c.f48206v.getClass();
+            xe.d.K(str);
+            if (function0 != null) {
+                function0.invoke();
+            }
+            return Boolean.FALSE;
+        }
+        i iVar = new i(function0);
+        try {
+            Pair pairB = b(cVar.f48211n, cVar2.f48211n);
+            if (((Number) pairB.f51125u).doubleValue() > -1.0d) {
+                h8.b bVar = (h8.b) pairB.f51124n;
+                if (bVar.f47629a == g8.c.f45612v) {
+                    f44809c = bVar;
+                    if (!z11) {
+                        kj.g.b(6, Intrinsics.a(str, "open_file") ? str : cVar2.f48211n);
+                    }
+                    bVar.g(cVar.f48211n);
+                    i iVar2 = NativeInterActivity.B;
+                    String str2 = cVar2.f48211n;
+                    NativeInterActivity.B = iVar;
+                    NativeInterActivity.C = bVar;
+                    activity.startActivity(new Intent(activity, (Class<?>) NativeInterActivity.class).putExtra("key_positionId", str2));
+                } else {
+                    if (!z11) {
+                        kj.g.b(6, Intrinsics.a(str, "open_file") ? str : cVar.f48211n);
+                    }
+                    bVar.g(cVar.f48211n);
+                    bVar.h(activity, cVar.f48211n, jh.g.INTER, iVar);
+                }
+                bool = Boolean.TRUE;
+            } else {
+                if (!z10) {
+                    if (!z11) {
+                        i8.c.f48206v.getClass();
+                        kj.g.b(6, "ad_" + str + "_error");
+                    }
+                    dVar.g(str);
+                    iVar.x(str, g8.d.f45616u, 0);
+                }
+                bool = null;
+            }
+        } catch (Throwable th2) {
+            th2.printStackTrace();
+            iVar.x(str, g8.d.f45619x, 0);
+            bool = Boolean.FALSE;
+        }
+        try {
+            l lVar = l.f44810a;
+        } catch (Throwable th3) {
+            th3.printStackTrace();
+        }
+        return bool;
+    }

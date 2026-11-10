@@ -1,0 +1,14 @@
+    public final AdRuntimePolicyProfile mf() {
+        String[] strArr = x7J2LX9.SGigKD6vM.f46856OtIqepUx;
+        x7J2LX9.Bb.SGigKD6vM("Zm4MbAvUfox6\n", "CR5pAl66F/g=\n");
+        List listHUxE = kotlin.collections.f8.hUxE(strArr);
+        String[] strArr2 = x7J2LX9.SGigKD6vM.f46857SGigKD6vM;
+        x7J2LX9.Bb.SGigKD6vM("Ec3aI3eXIR8M0A==\n", "eKOuRgXCT3Y=\n");
+        List listHUxE2 = kotlin.collections.f8.hUxE(strArr2);
+        fgIS.SGigKD6vM entries = AdSlotPolicyKey.getEntries();
+        LinkedHashMap linkedHashMap = new LinkedHashMap(kotlin.ranges.QQBd4ER.vfwZ(TGb3.TSr6CL(kotlin.collections.LkWl2pY3.CK60J(entries, 10)), 16));
+        for (Object obj : entries) {
+            linkedHashMap.put(obj, kotlin.collections.mpI.TSr6CL(AdSlotPolicyKey.home_launch).contains((AdSlotPolicyKey) obj) ? new AdSlotDisplayPolicy(1, 0, 0, 0, 14, null) : new AdSlotDisplayPolicy(0, 0, 0, 0, 15, null));
+        }
+        return new AdRuntimePolicyProfile(0, 0, 0, 0, 0, listHUxE, listHUxE2, linkedHashMap, 31, null);
+    }

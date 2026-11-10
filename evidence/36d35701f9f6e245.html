@@ -1,0 +1,33 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>056_buyclick.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>056_buyclick.txt</h1><p><strong>D09 · 年/月走相应base plan；其余选项读远端计划</strong></p><p>IapActivity.initListener$lambda$34</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.pdfeditor.documentviewer.pdfstudio.docworks/056_buyclick.txt" download>下载原始文件</a></div><pre class="source-pre">    /* JADX INFO: Access modifiers changed from: private */
+
+    public static final void initListener$lambda$34(IapActivity iapActivity, View view) {
+
+        iapActivity.logEvent(&quot;start_trial_IAP_pressed&quot;);
+
+        if (iapActivity.isAnnualSelected) {
+
+            iapActivity.logEvent(&quot;purchase_year_pressed&quot;);
+
+            IAPUtils iAPUtils = IAPUtils.INSTANCE;
+
+            iAPUtils.callSubscription(iapActivity, iAPUtils.getKEY_PREMIUM(), iAPUtils.getKEY_PREMIUM_YEARLY_PLAN());
+
+        } else if (iapActivity.isMonthlySeleted) {
+
+            iapActivity.logEvent(&quot;purchase_month_pressed&quot;);
+
+            IAPUtils iAPUtils2 = IAPUtils.INSTANCE;
+
+            iAPUtils2.callSubscription(iapActivity, iAPUtils2.getKEY_PREMIUM(), iAPUtils2.getKEY_PREMIUM_MONTHLY_PLAN());
+
+        } else {
+
+            iapActivity.logEvent(&quot;purchase_week_pressed2&quot;);
+
+            IAPUtils iAPUtils3 = IAPUtils.INSTANCE;
+
+            iAPUtils3.callSubscription(iapActivity, iAPUtils3.getKEY_PREMIUM(), FirebaseRemoteConfigUtil.INSTANCE.getInstance().getIapBasePlan());
+
+        }
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

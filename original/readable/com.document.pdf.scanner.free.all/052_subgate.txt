@@ -1,0 +1,52 @@
+    @Override // ia.y, y2.f
+    public final void w(String str) {
+        switch (this.f44804c) {
+            case 0:
+                if (f1.f53964a.contains(str)) {
+                    ns.c cVar = ga.d.f45636a;
+                    if (!ga.d.c()) {
+                        int iL = u0.l("KEY_NEED_SUBSCRIPTION", 0);
+                        int iL2 = u0.l("6erUIjAL", 1);
+                        if (iL2 <= 2) {
+                            u0.I("6erUIjAL", iL2 + 1);
+                        } else if (iL == 0) {
+                            f1.f53966c = false;
+                            f1.f53965b = true;
+                        }
+                    }
+                }
+                x xVar = x.f44845n;
+                this.f44805d = x.m();
+                long jCurrentTimeMillis = System.currentTimeMillis();
+                if (!TextUtils.isEmpty("f2_y3SstF")) {
+                    try {
+                        if (u0.f48367z == null) {
+                            synchronized (rh.a.class) {
+                                try {
+                                    if (u0.f48367z == null) {
+                                        rh.a.l();
+                                        u0.f48367z = MMKV.j();
+                                    }
+                                    Unit unit = Unit.f51126a;
+                                } catch (Throwable th2) {
+                                    throw th2;
+                                }
+                            }
+                        }
+                        MMKV mmkv = u0.f48367z;
+                        if (mmkv != null) {
+                            mmkv.m(jCurrentTimeMillis, "f2_y3SstF");
+                        }
+                    } catch (Throwable unused) {
+                    }
+                }
+                super.w(str);
+                return;
+            default:
+                super.w(str);
+                x xVar2 = x.f44845n;
+                this.f44805d = x.m();
+                ((ReaderTitlePageActivity) this.f44806e).f31968w = true;
+                return;
+        }
+    }

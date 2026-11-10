@@ -1,0 +1,248 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>020_premiumquery.stdout.json · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>020_premiumquery.stdout.json</h1><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/raw/com.piksoft.turboscan.free/craft/020_premiumquery.stdout.json" download>下载原始文件</a></div><pre class="source-pre">{
+  &quot;authority&quot;: &quot;original-files&quot;,
+  &quot;confidence&quot;: &quot;observed&quot;,
+  &quot;coverage&quot;: {
+    &quot;examined&quot;: 29,
+    &quot;status&quot;: &quot;complete&quot;,
+    &quot;total&quot;: 29
+  },
+  &quot;environment&quot;: {
+    &quot;clean_room&quot;: false,
+    &quot;engine&quot;: &quot;builtin&quot;,
+    &quot;engine_version&quot;: &quot;0.5.0&quot;,
+    &quot;host&quot;: &quot;windows-x86_64&quot;
+  },
+  &quot;id&quot;: &quot;ev_a2fff1dc8ecd6fcaa93d3d265aeb7dc64bda7f94d4c5cf2089d317c643a334a6&quot;,
+  &quot;limitations&quot;: [],
+  &quot;links&quot;: [],
+  &quot;locations&quot;: [
+    {
+      &quot;kind&quot;: &quot;path&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\asus\\Desktop\\竞品apk1\\com.piksoft.turboscan.free\\base.apk&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;method&quot;,
+      &quot;value&quot;: &quot;Lo/getRequestCode;-&gt;onTransact()V&quot;
+    }
+  ],
+  &quot;operation&quot;: &quot;android_method_show&quot;,
+  &quot;params&quot;: {
+    &quot;class_name&quot;: &quot;o.getRequestCode&quot;,
+    &quot;java_source&quot;: false,
+    &quot;limit&quot;: 2000,
+    &quot;method_name&quot;: &quot;onTransact&quot;,
+    &quot;offset&quot;: 0,
+    &quot;overload_index&quot;: 1,
+    &quot;path&quot;: &quot;C:\\Users\\asus\\Desktop\\竞品apk1\\com.piksoft.turboscan.free\\base.apk&quot;
+  },
+  &quot;result&quot;: {
+    &quot;access&quot;: [
+      &quot;private&quot;
+    ],
+    &quot;class&quot;: &quot;Lo/getRequestCode;&quot;,
+    &quot;dex&quot;: &quot;classes.dex&quot;,
+    &quot;ins&quot;: 1,
+    &quot;instructions&quot;: [
+      {
+        &quot;offset&quot;: &quot;0000&quot;,
+        &quot;opcode&quot;: &quot;0x12&quot;,
+        &quot;text&quot;: &quot;const/4 v0, 2&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0001&quot;,
+        &quot;opcode&quot;: &quot;0x94&quot;,
+        &quot;text&quot;: &quot;rem-int v1, v0, v0&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0003&quot;,
+        &quot;opcode&quot;: &quot;0x22&quot;,
+        &quot;text&quot;: &quot;new-instance v1, Lo/FragmentTagUsageViolation;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0005&quot;,
+        &quot;opcode&quot;: &quot;0x70&quot;,
+        &quot;text&quot;: &quot;invoke-direct {v1}, Lo/FragmentTagUsageViolation;-&gt;&lt;init&gt;()V&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0008&quot;,
+        &quot;opcode&quot;: &quot;0x5b&quot;,
+        &quot;text&quot;: &quot;iput-object v1, v5, Lo/getRequestCode;-&gt;onTransact:Lo/FragmentTagUsageViolation;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;000a&quot;,
+        &quot;opcode&quot;: &quot;0x12&quot;,
+        &quot;text&quot;: &quot;const/4 v1, 0&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;000b&quot;,
+        &quot;opcode&quot;: &quot;0x71&quot;,
+        &quot;text&quot;: &quot;invoke-static {v1, v1}, Landroid/view/Gravity;-&gt;getAbsoluteGravity(II)I&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;000e&quot;,
+        &quot;opcode&quot;: &quot;0x54&quot;,
+        &quot;text&quot;: &quot;iget-object v2, v5, Lo/getRequestCode;-&gt;onTransact:Lo/FragmentTagUsageViolation;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0010&quot;,
+        &quot;opcode&quot;: &quot;0x5b&quot;,
+        &quot;text&quot;: &quot;iput-object v5, v2, Lo/FragmentTagUsageViolation;-&gt;asInterface:Lo/setExitFadeDuration;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0012&quot;,
+        &quot;opcode&quot;: &quot;0x22&quot;,
+        &quot;text&quot;: &quot;new-instance v2, Ljava/util/ArrayList;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0014&quot;,
+        &quot;opcode&quot;: &quot;0x12&quot;,
+        &quot;text&quot;: &quot;const/4 v3, 1&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0015&quot;,
+        &quot;opcode&quot;: &quot;0x70&quot;,
+        &quot;text&quot;: &quot;invoke-direct {v2, v3}, Ljava/util/ArrayList;-&gt;&lt;init&gt;(I)V&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0018&quot;,
+        &quot;opcode&quot;: &quot;0x1a&quot;,
+        &quot;text&quot;: &quot;const-string v3, \&quot;premium\&quot;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;001a&quot;,
+        &quot;opcode&quot;: &quot;0x6e&quot;,
+        &quot;text&quot;: &quot;invoke-virtual {v2, v3}, Ljava/util/AbstractCollection;-&gt;add(Ljava/lang/Object;)Z&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;001d&quot;,
+        &quot;opcode&quot;: &quot;0x54&quot;,
+        &quot;text&quot;: &quot;iget-object v2, v5, Lo/getRequestCode;-&gt;onTransact:Lo/FragmentTagUsageViolation;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;001f&quot;,
+        &quot;opcode&quot;: &quot;0x22&quot;,
+        &quot;text&quot;: &quot;new-instance v3, Lo/getRequestCode$3;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0021&quot;,
+        &quot;opcode&quot;: &quot;0x70&quot;,
+        &quot;text&quot;: &quot;invoke-direct {v3, v5}, Lo/getRequestCode$3;-&gt;&lt;init&gt;(Lo/getRequestCode;)V&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0024&quot;,
+        &quot;opcode&quot;: &quot;0x22&quot;,
+        &quot;text&quot;: &quot;new-instance v4, Lo/FragmentTagUsageViolation$4;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0026&quot;,
+        &quot;opcode&quot;: &quot;0x70&quot;,
+        &quot;text&quot;: &quot;invoke-direct {v4, v2, v3}, Lo/FragmentTagUsageViolation$4;-&gt;&lt;init&gt;(Lo/FragmentTagUsageViolation;Ljava/lang/Runnable;)V&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0029&quot;,
+        &quot;opcode&quot;: &quot;0x6e&quot;,
+        &quot;text&quot;: &quot;invoke-virtual {v2, v4}, Lo/FragmentTagUsageViolation;-&gt;asInterface(Lo/FragmentTagUsageViolation$asInterface;)V&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;002c&quot;,
+        &quot;opcode&quot;: &quot;0x60&quot;,
+        &quot;text&quot;: &quot;sget v2, Lo/getRequestCode;-&gt;MediaBrowserCompatCustomActionResultReceiver:I&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;002e&quot;,
+        &quot;opcode&quot;: &quot;0xd8&quot;,
+        &quot;text&quot;: &quot;add-int/lit8 v2, v2, 0x7b&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0030&quot;,
+        &quot;opcode&quot;: &quot;0xd4&quot;,
+        &quot;text&quot;: &quot;rem-int/lit16 v3, v2, 0x80&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0032&quot;,
+        &quot;opcode&quot;: &quot;0x67&quot;,
+        &quot;text&quot;: &quot;sput v3, Lo/getRequestCode;-&gt;MediaBrowserCompatMediaItem:I&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0034&quot;,
+        &quot;opcode&quot;: &quot;0xb4&quot;,
+        &quot;text&quot;: &quot;rem-int/2addr v2, v0&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0035&quot;,
+        &quot;opcode&quot;: &quot;0x39&quot;,
+        &quot;text&quot;: &quot;if-nez v2, :003a&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0037&quot;,
+        &quot;opcode&quot;: &quot;0x13&quot;,
+        &quot;text&quot;: &quot;const/16 v0, 0x25&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0039&quot;,
+        &quot;opcode&quot;: &quot;0xb3&quot;,
+        &quot;text&quot;: &quot;div-int/2addr v0, v1&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;003a&quot;,
+        &quot;opcode&quot;: &quot;0x0e&quot;,
+        &quot;text&quot;: &quot;return-void&quot;,
+        &quot;units&quot;: 1
+      }
+    ],
+    &quot;instructions_total&quot;: 29,
+    &quot;java_source&quot;: {
+      &quot;status&quot;: &quot;not_requested&quot;
+    },
+    &quot;listing&quot;: &quot;0000: const/4 v0, 2\n0001: rem-int v1, v0, v0\n0003: new-instance v1, Lo/FragmentTagUsageViolation;\n0005: invoke-direct {v1}, Lo/FragmentTagUsageViolation;-&gt;&lt;init&gt;()V\n0008: iput-object v1, v5, Lo/getRequestCode;-&gt;onTransact:Lo/FragmentTagUsageViolation;\n000a: const/4 v1, 0\n000b: invoke-static {v1, v1}, Landroid/view/Gravity;-&gt;getAbsoluteGravity(II)I\n000e: iget-object v2, v5, Lo/getRequestCode;-&gt;onTransact:Lo/FragmentTagUsageViolation;\n0010: iput-object v5, v2, Lo/FragmentTagUsageViolation;-&gt;asInterface:Lo/setExitFadeDuration;\n0012: new-instance v2, Ljava/util/ArrayList;\n0014: const/4 v3, 1\n0015: invoke-direct {v2, v3}, Ljava/util/ArrayList;-&gt;&lt;init&gt;(I)V\n0018: const-string v3, \&quot;premium\&quot;\n001a: invoke-virtual {v2, v3}, Ljava/util/AbstractCollection;-&gt;add(Ljava/lang/Object;)Z\n001d: iget-object v2, v5, Lo/getRequestCode;-&gt;onTransact:Lo/FragmentTagUsageViolation;\n001f: new-instance v3, Lo/getRequestCode$3;\n0021: invoke-direct {v3, v5}, Lo/getRequestCode$3;-&gt;&lt;init&gt;(Lo/getRequestCode;)V\n0024: new-instance v4, Lo/FragmentTagUsageViolation$4;\n0026: invoke-direct {v4, v2, v3}, Lo/FragmentTagUsageViolation$4;-&gt;&lt;init&gt;(Lo/FragmentTagUsageViolation;Ljava/lang/Runnable;)V\n0029: invoke-virtual {v2, v4}, Lo/FragmentTagUsageViolation;-&gt;asInterface(Lo/FragmentTagUsageViolation$asInterface;)V\n002c: sget v2, Lo/getRequestCode;-&gt;MediaBrowserCompatCustomActionResultReceiver:I\n002e: add-int/lit8 v2, v2, 0x7b\n0030: rem-int/lit16 v3, v2, 0x80\n0032: sput v3, Lo/getRequestCode;-&gt;MediaBrowserCompatMediaItem:I\n0034: rem-int/2addr v2, v0\n0035: if-nez v2, :003a\n0037: const/16 v0, 0x25\n0039: div-int/2addr v0, v1\n003a: return-void&quot;,
+    &quot;method&quot;: &quot;Lo/getRequestCode;-&gt;onTransact()V&quot;,
+    &quot;outs&quot;: 3,
+    &quot;overload_index&quot;: 1,
+    &quot;overloads&quot;: [
+      &quot;public static synthetic java.lang.Object onTransact(int, int, int, int, int, int, java.lang.Object[])&quot;,
+      &quot;private void onTransact()&quot;,
+      &quot;private synthetic void onTransact(android.app.Activity, o.isAutoMirrored)&quot;,
+      &quot;static synthetic void onTransact(o.getRequestCode, o.FragmentTagUsageViolation$asBinder)&quot;,
+      &quot;public static synthetic void onTransact(o.getRequestCode, o.onBoundsChange)&quot;,
+      &quot;private synthetic void onTransact(o.onBoundsChange)&quot;,
+      &quot;public final void onTransact(o.onBoundsChange, java.util.List)&quot;
+    ],
+    &quot;registers&quot;: 6,
+    &quot;signature&quot;: &quot;private void onTransact()&quot;,
+    &quot;tries&quot;: []
+  },
+  &quot;subject&quot;: {
+    &quot;kind&quot;: &quot;apk&quot;,
+    &quot;name&quot;: &quot;base.apk&quot;,
+    &quot;sha256&quot;: &quot;7256a15ca3e34e1aa3da89650bf74158468c61139272303bd210b1eec82d7727&quot;
+  },
+  &quot;summary&quot;: &quot;Lo/getRequestCode;-&gt;onTransact()V (classes.dex): 29 instructions.&quot;
+}</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

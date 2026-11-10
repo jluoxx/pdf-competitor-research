@@ -1,0 +1,83 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>040_adgating.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>040_adgating.txt</h1><p><strong>H05 · 全局条件及限额通过后执行点位策略</strong></p><p>lOy.vfwZ.btJrWGZ</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.pdfhero.dclor.avtlo/040_adgating.txt" download>下载原始文件</a></div><pre class="source-pre">    public final boolean btJrWGZ() {
+
+        boolean z = false;
+
+        if (!HZB.SGigKD6vM.f3458SGigKD6vM.QQBd4ER()) {
+
+            CK60J(Bb.SGigKD6vM(&quot;DY3P91NhASkIhcTwFw==\n&quot;, &quot;fuSomXMPbgk=\n&quot;));
+
+            return false;
+
+        }
+
+        if (!LkWl2pY3()) {
+
+            CK60J(Bb.SGigKD6vM(&quot;8Y32E6FBRv35hv4dpQ0J7/A=\n&quot;, &quot;luGZccAtZok=\n&quot;));
+
+            return false;
+
+        }
+
+        if (this.f41588SGigKD6vM != null) {
+
+            boolean zHhHei = HhHei(nMet());
+
+            if (!zHhHei) {
+
+                CK60J(this.f41588SGigKD6vM + &quot; toggle off&quot;);
+
+            }
+
+            return zHhHei;
+
+        }
+
+        fgIS.SGigKD6vM entries = AdSlotPolicyKey.getEntries();
+
+        ArrayList arrayList = new ArrayList();
+
+        for (Object obj : entries) {
+
+            if (!mpI.TSr6CL(AdSlotPolicyKey.home_launch).contains((AdSlotPolicyKey) obj)) {
+
+                arrayList.add(obj);
+
+            }
+
+        }
+
+        if (!arrayList.isEmpty()) {
+
+            int size = arrayList.size();
+
+            int i = 0;
+
+            while (i &lt; size) {
+
+                Object obj2 = arrayList.get(i);
+
+                i++;
+
+                AdSlotDisplayPolicy adSlotDisplayPolicy = a8a.f40233SGigKD6vM.WK().getPlacementRules().get((AdSlotPolicyKey) obj2);
+
+                if (adSlotDisplayPolicy != null ? HhHei(adSlotDisplayPolicy) : false) {
+
+                    z = true;
+
+                    break;
+
+                }
+
+            }
+
+        }
+
+        if (!z) {
+
+            CK60J(Bb.SGigKD6vM(&quot;VgeEtcIbMYVQBpzwxDUyslMM0L/WPA==\n&quot;, &quot;P2nw0LBaVdU=\n&quot;));
+
+        }
+
+        return z;
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

@@ -1,0 +1,37 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>040_configfetch.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>040_configfetch.txt</h1><p><strong>S04 · 配置拉取及完成回调</strong></p><p>ia.g.b</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.document.pdf.scanner.free.all/040_configfetch.txt" download>下载原始文件</a></div><pre class="source-pre">    public static void b() throws Throwable {
+
+        if (f48250b.compareAndSet(false, true)) {
+
+            p002if.f fVar = new p002if.f();
+
+            long j8 = jf.g.f50054j;
+
+            fVar.f48820a = j8;
+
+            p002if.f fVar2 = new p002if.f();
+
+            fVar2.f48820a = fVar.f48820a;
+
+            p002if.a aVarA = ((p002if.i) sd.g.c().b(p002if.i.class)).a();
+
+            aVarA.getClass();
+
+            c3.e eVar = new c3.e(4, aVarA, fVar2);
+
+            Executor executor = aVarA.f48812c;
+
+            Tasks.call(executor, eVar);
+
+            jf.g gVar = aVarA.f48815f;
+
+            long j10 = gVar.h.f50089a.getLong(&quot;minimum_fetch_interval_in_seconds&quot;, j8);
+
+            HashMap map = new HashMap(gVar.f50063i);
+
+            map.put(&quot;X-Firebase-RC-Fetch-Type&quot;, &quot;BASE/1&quot;);
+
+            gVar.f50061f.b().continueWithTask(gVar.f50058c, new ce.a(gVar, j10, map)).onSuccessTask(ae.l.f646n, new com.vungle.ads.internal.util.a(9)).onSuccessTask(executor, new f(aVarA)).addOnCompleteListener(new f(aVarA));
+
+        }
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

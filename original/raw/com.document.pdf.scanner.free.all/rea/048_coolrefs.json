@@ -1,0 +1,378 @@
+{
+  "job": {
+    "id": "048_coolrefs",
+    "package": "com.document.pdf.scanner.free.all",
+    "tool": "trace_android_references",
+    "args": {
+      "path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.document.pdf.scanner.free.all\\base.apk",
+      "class_name": "f8.x"
+    }
+  },
+  "start": "2026-11-10T06:56:24.067Z",
+  "end": "2026-11-10T06:56:24.488Z",
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_77035e2f62796c4130cbeb9781da4209aaed982b8a987a27a06814e412fe3052\",\"subject\":{\"name\":\"base.apk\",\"digest\":{\"sha256\":\"588d5d5b41a8033d7879626fd89846f6316d1e2741469cb5d5b3486ed0b9ba58\"},\"local_path\":\"C:\\\\Users\\\\asus\\\\Desktop\\\\竞品apk1\\\\com.document.pdf.scanner.free.all\\\\base.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"trace_android_references\",\"parameters\":{\"path\":\"C:\\\\Users\\\\asus\\\\Desktop\\\\竞品apk1\\\\com.document.pdf.scanner.free.all\\\\base.apk\",\"class_name\":\"f8.x\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"7\"},\"bridge_sha256\":\"e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Temp\\\\rea-android-3f91a9a15ed0f1cdd490851ef18bef87\\\\target.apk\",\"class_count\":33733,\"resource_count\":3206,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":3221225472,\\\"java_version\\\":\\\"17.0.12\\\",\\\"available_processors\\\":3,\\\"engine_reported_version\\\":\\\"0.7.1\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"f8.x\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"inner_class_count\\\":0,\\\"name\\\":\\\"x\\\",\\\"field_count\\\":12,\\\"full_name\\\":\\\"f8.x\\\",\\\"method_count\\\":19,\\\"raw_name\\\":\\\"f8.x\\\",\\\"fields\\\":[{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"A\\\"},{\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"B\\\"},{\\\"type\\\":\\\"java.lang.Float[]\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"C\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"D\\\"},{\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"E\\\"},{\\\"type\\\":\\\"f8.x\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f44845n\\\"},{\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f44846u\\\"},{\\\"type\\\":\\\"is.u1\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f44847v\\\"},{\\\"type\\\":\\\"k8.a\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f44848w\\\"},{\\\"type\\\":\\\"kotlin.Pair[]\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f44849x\\\"},{\\\"type\\\":\\\"kotlin.Pair[]\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f44850y\\\"},{\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f44851z\\\"}],\\\"methods\\\":[{\\\"signature\\\":\\\"\\\\u003cclinit\\\\u003e(): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"\\\\u003cclinit\\\\u003e\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\"},{\\\"signature\\\":\\\"a(com.document.pdf.scanner.App, ip.c): java.lang.Object\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"a\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/document/pdf/scanner/App;Lip/c;)Ljava/lang/Object;\\\"},{\\\"signature\\\":\\\"b(kotlin.Pair, kotlin.Pair): kotlin.Pair\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"b\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lkotlin/Pair;Lkotlin/Pair;)Lkotlin/Pair;\\\"},{\\\"signature\\\":\\\"c(java.lang.String, double, double): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"c\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;DD)V\\\"},{\\\"signature\\\":\\\"d(java.lang.Integer): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"d\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/Integer;)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"e(boolean): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"e\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Z)V\\\"},{\\\"signature\\\":\\\"f(): boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Z\\\"},{\\\"signature\\\":\\\"g(): boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"g\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Z\\\"},{\\\"signature\\\":\\\"h(): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"h\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\"},{\\\"signature\\\":\\\"i(double): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"i\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(D)V\\\"},{\\\"signature\\\":\\\"j(double): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"j\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(D)V\\\"},{\\\"signature\\\":\\\"k(double, java.lang.String): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"k\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(DLjava/lang/String;)V\\\"},{\\\"signature\\\":\\\"l(): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"l\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\"},{\\\"signature\\\":\\\"m(): is.u1\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"m\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Lis/u1;\\\"},{\\\"signature\\\":\\\"n(is.u1): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"n\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lis/u1;)V\\\"},{\\\"signature\\\":\\\"o(): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"o\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\"},{\\\"signature\\\":\\\"p(): boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"p\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Z\\\"},{\\\"signature\\\":\\\"q(double, java.lang.String, java.lang.String): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"q\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(DLjava/lang/String;Ljava/lang/String;)V\\\"},{\\\"signature\\\":\\\"r(double, java.lang.String, java.lang.String): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"r\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(DLjava/lang/String;Ljava/lang/String;)V\\\"}],\\\"inner_classes\\\":[]}\"}],\"isError\":false}},{\"operation\":\"get_xrefs_to_class\",\"input\":{\"class_name\":\"f8.x\",\"limit\":2147483647,\"resolve_line\":false},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"target\\\":\\\"f8.x\\\",\\\"resolve_line\\\":false,\\\"total\\\":21,\\\"items\\\":[{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"a\\\",\\\"full_name\\\":\\\"a0.a\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"a0.a\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"App\\\",\\\"full_name\\\":\\\"com.document.pdf.scanner.App\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"com.document.pdf.scanner.App\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"ReaderTitlePageActivity\\\",\\\"full_name\\\":\\\"com.document.pdf.scanner.ui.ReaderTitlePageActivity\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"com.document.pdf.scanner.ui.ReaderTitlePageActivity\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"g\\\",\\\"full_name\\\":\\\"da.g\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"da.g\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"c\\\",\\\"full_name\\\":\\\"f8.c\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"f8.c\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"i\\\",\\\"full_name\\\":\\\"f8.i\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"f8.i\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"j\\\",\\\"full_name\\\":\\\"f8.j\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"f8.j\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"n\\\",\\\"full_name\\\":\\\"f8.n\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"f8.n\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"q\\\",\\\"full_name\\\":\\\"f8.q\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"f8.q\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"t\\\",\\\"full_name\\\":\\\"f8.t\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"f8.t\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"u\\\",\\\"full_name\\\":\\\"f8.u\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"f8.u\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"v\\\",\\\"full_name\\\":\\\"f8.v\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"f8.v\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"w\\\",\\\"full_name\\\":\\\"f8.w\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"f8.w\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"j4\\\",\\\"full_name\\\":\\\"gh.j4\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"gh.j4\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"a\\\",\\\"full_name\\\":\\\"h8.a\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"h8.a\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"b\\\",\\\"full_name\\\":\\\"ia.b\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"ia.b\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"f\\\",\\\"full_name\\\":\\\"ia.f\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"ia.f\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"z\\\",\\\"full_name\\\":\\\"ia.z\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"ia.z\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"g\\\",\\\"full_name\\\":\\\"j9.g\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"j9.g\\\",\\\"def_pos\\\":376},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"b\\\",\\\"full_name\\\":\\\"l7.b\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"l7.b\\\",\\\"def_pos\\\":0},{\\\"kind\\\":\\\"class\\\",\\\"name\\\":\\\"a1\\\",\\\"full_name\\\":\\\"o8.a1\\\",\\\"containing_class\\\":\\\"\\\",\\\"top_class\\\":\\\"o8.a1\\\",\\\"def_pos\\\":0}],\\\"count\\\":21}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":3072},\"class_name\":\"f8.x\",\"method_name\":null,\"overload_index\":null,\"reported_signature\":null,\"dex_descriptor\":null,\"total\":21,\"references\":[{\"kind\":\"class\",\"name\":\"a\",\"reported_full_name\":\"a0.a\",\"containing_class\":\"\",\"top_class\":\"a0.a\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"App\",\"reported_full_name\":\"com.document.pdf.scanner.App\",\"containing_class\":\"\",\"top_class\":\"com.document.pdf.scanner.App\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"ReaderTitlePageActivity\",\"reported_full_name\":\"com.document.pdf.scanner.ui.ReaderTitlePageActivity\",\"containing_class\":\"\",\"top_class\":\"com.document.pdf.scanner.ui.ReaderTitlePageActivity\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"g\",\"reported_full_name\":\"da.g\",\"containing_class\":\"\",\"top_class\":\"da.g\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"c\",\"reported_full_name\":\"f8.c\",\"containing_class\":\"\",\"top_class\":\"f8.c\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"i\",\"reported_full_name\":\"f8.i\",\"containing_class\":\"\",\"top_class\":\"f8.i\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"j\",\"reported_full_name\":\"f8.j\",\"containing_class\":\"\",\"top_class\":\"f8.j\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"n\",\"reported_full_name\":\"f8.n\",\"containing_class\":\"\",\"top_class\":\"f8.n\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"q\",\"reported_full_name\":\"f8.q\",\"containing_class\":\"\",\"top_class\":\"f8.q\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"t\",\"reported_full_name\":\"f8.t\",\"containing_class\":\"\",\"top_class\":\"f8.t\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"u\",\"reported_full_name\":\"f8.u\",\"containing_class\":\"\",\"top_class\":\"f8.u\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"v\",\"reported_full_name\":\"f8.v\",\"containing_class\":\"\",\"top_class\":\"f8.v\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"w\",\"reported_full_name\":\"f8.w\",\"containing_class\":\"\",\"top_class\":\"f8.w\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"j4\",\"reported_full_name\":\"gh.j4\",\"containing_class\":\"\",\"top_class\":\"gh.j4\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"a\",\"reported_full_name\":\"h8.a\",\"containing_class\":\"\",\"top_class\":\"h8.a\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"b\",\"reported_full_name\":\"ia.b\",\"containing_class\":\"\",\"top_class\":\"ia.b\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"f\",\"reported_full_name\":\"ia.f\",\"containing_class\":\"\",\"top_class\":\"ia.f\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"z\",\"reported_full_name\":\"ia.z\",\"containing_class\":\"\",\"top_class\":\"ia.z\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"g\",\"reported_full_name\":\"j9.g\",\"containing_class\":\"\",\"top_class\":\"j9.g\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"b\",\"reported_full_name\":\"l7.b\",\"containing_class\":\"\",\"top_class\":\"l7.b\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null},{\"kind\":\"class\",\"name\":\"a1\",\"reported_full_name\":\"o8.a1\",\"containing_class\":\"\",\"top_class\":\"o8.a1\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":null,\"direct_invokes\":null}],\"coverage\":\"complete\",\"reference_unit\":\"using_node\"},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_77035e2f62796c4130cbeb9781da4209aaed982b8a987a27a06814e412fe3052",
+      "subject": {
+        "name": "base.apk",
+        "digest": {
+          "sha256": "588d5d5b41a8033d7879626fd89846f6316d1e2741469cb5d5b3486ed0b9ba58"
+        },
+        "local_path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.document.pdf.scanner.free.all\\base.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "trace_android_references",
+      "parameters": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.document.pdf.scanner.free.all\\base.apk",
+        "class_name": "f8.x"
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "7"
+        },
+        "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "C:\\Users\\asus\\AppData\\Local\\Temp\\rea-android-3f91a9a15ed0f1cdd490851ef18bef87\\target.apk",
+          "class_count": 33733,
+          "resource_count": 3206,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":3221225472,\"java_version\":\"17.0.12\",\"available_processors\":3,\"engine_reported_version\":\"0.7.1\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_class_summary",
+            "input": {
+              "class_name": "f8.x"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"inner_class_count\":0,\"name\":\"x\",\"field_count\":12,\"full_name\":\"f8.x\",\"method_count\":19,\"raw_name\":\"f8.x\",\"fields\":[{\"type\":\"int\",\"def_pos\":0,\"name\":\"A\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"B\"},{\"type\":\"java.lang.Float[]\",\"def_pos\":0,\"name\":\"C\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"D\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"E\"},{\"type\":\"f8.x\",\"def_pos\":0,\"name\":\"f44845n\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"f44846u\"},{\"type\":\"is.u1\",\"def_pos\":0,\"name\":\"f44847v\"},{\"type\":\"k8.a\",\"def_pos\":0,\"name\":\"f44848w\"},{\"type\":\"kotlin.Pair[]\",\"def_pos\":0,\"name\":\"f44849x\"},{\"type\":\"kotlin.Pair[]\",\"def_pos\":0,\"name\":\"f44850y\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"f44851z\"}],\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"a(com.document.pdf.scanner.App, ip.c): java.lang.Object\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/document/pdf/scanner/App;Lip/c;)Ljava/lang/Object;\"},{\"signature\":\"b(kotlin.Pair, kotlin.Pair): kotlin.Pair\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"(Lkotlin/Pair;Lkotlin/Pair;)Lkotlin/Pair;\"},{\"signature\":\"c(java.lang.String, double, double): void\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;DD)V\"},{\"signature\":\"d(java.lang.Integer): java.lang.String\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Integer;)Ljava/lang/String;\"},{\"signature\":\"e(boolean): void\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\"},{\"signature\":\"f(): boolean\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\"},{\"signature\":\"g(): boolean\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\"},{\"signature\":\"h(): void\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"i(double): void\",\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"dex_descriptor\":\"(D)V\"},{\"signature\":\"j(double): void\",\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false,\"dex_descriptor\":\"(D)V\"},{\"signature\":\"k(double, java.lang.String): void\",\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false,\"dex_descriptor\":\"(DLjava/lang/String;)V\"},{\"signature\":\"l(): void\",\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"m(): is.u1\",\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false,\"dex_descriptor\":\"()Lis/u1;\"},{\"signature\":\"n(is.u1): void\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false,\"dex_descriptor\":\"(Lis/u1;)V\"},{\"signature\":\"o(): void\",\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"p(): boolean\",\"def_pos\":0,\"name\":\"p\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\"},{\"signature\":\"q(double, java.lang.String, java.lang.String): void\",\"def_pos\":0,\"name\":\"q\",\"is_constructor\":false,\"dex_descriptor\":\"(DLjava/lang/String;Ljava/lang/String;)V\"},{\"signature\":\"r(double, java.lang.String, java.lang.String): void\",\"def_pos\":0,\"name\":\"r\",\"is_constructor\":false,\"dex_descriptor\":\"(DLjava/lang/String;Ljava/lang/String;)V\"}],\"inner_classes\":[]}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_xrefs_to_class",
+            "input": {
+              "class_name": "f8.x",
+              "limit": 2147483647,
+              "resolve_line": false
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"target\":\"f8.x\",\"resolve_line\":false,\"total\":21,\"items\":[{\"kind\":\"class\",\"name\":\"a\",\"full_name\":\"a0.a\",\"containing_class\":\"\",\"top_class\":\"a0.a\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"App\",\"full_name\":\"com.document.pdf.scanner.App\",\"containing_class\":\"\",\"top_class\":\"com.document.pdf.scanner.App\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"ReaderTitlePageActivity\",\"full_name\":\"com.document.pdf.scanner.ui.ReaderTitlePageActivity\",\"containing_class\":\"\",\"top_class\":\"com.document.pdf.scanner.ui.ReaderTitlePageActivity\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"g\",\"full_name\":\"da.g\",\"containing_class\":\"\",\"top_class\":\"da.g\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"c\",\"full_name\":\"f8.c\",\"containing_class\":\"\",\"top_class\":\"f8.c\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"i\",\"full_name\":\"f8.i\",\"containing_class\":\"\",\"top_class\":\"f8.i\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"j\",\"full_name\":\"f8.j\",\"containing_class\":\"\",\"top_class\":\"f8.j\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"n\",\"full_name\":\"f8.n\",\"containing_class\":\"\",\"top_class\":\"f8.n\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"q\",\"full_name\":\"f8.q\",\"containing_class\":\"\",\"top_class\":\"f8.q\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"t\",\"full_name\":\"f8.t\",\"containing_class\":\"\",\"top_class\":\"f8.t\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"u\",\"full_name\":\"f8.u\",\"containing_class\":\"\",\"top_class\":\"f8.u\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"v\",\"full_name\":\"f8.v\",\"containing_class\":\"\",\"top_class\":\"f8.v\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"w\",\"full_name\":\"f8.w\",\"containing_class\":\"\",\"top_class\":\"f8.w\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"j4\",\"full_name\":\"gh.j4\",\"containing_class\":\"\",\"top_class\":\"gh.j4\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"a\",\"full_name\":\"h8.a\",\"containing_class\":\"\",\"top_class\":\"h8.a\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"b\",\"full_name\":\"ia.b\",\"containing_class\":\"\",\"top_class\":\"ia.b\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"f\",\"full_name\":\"ia.f\",\"containing_class\":\"\",\"top_class\":\"ia.f\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"z\",\"full_name\":\"ia.z\",\"containing_class\":\"\",\"top_class\":\"ia.z\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"g\",\"full_name\":\"j9.g\",\"containing_class\":\"\",\"top_class\":\"j9.g\",\"def_pos\":376},{\"kind\":\"class\",\"name\":\"b\",\"full_name\":\"l7.b\",\"containing_class\":\"\",\"top_class\":\"l7.b\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"a1\",\"full_name\":\"o8.a1\",\"containing_class\":\"\",\"top_class\":\"o8.a1\",\"def_pos\":0}],\"count\":21}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "f8.x",
+        "method_name": null,
+        "overload_index": null,
+        "reported_signature": null,
+        "dex_descriptor": null,
+        "total": 21,
+        "references": [
+          {
+            "kind": "class",
+            "name": "a",
+            "reported_full_name": "a0.a",
+            "containing_class": "",
+            "top_class": "a0.a",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "App",
+            "reported_full_name": "com.document.pdf.scanner.App",
+            "containing_class": "",
+            "top_class": "com.document.pdf.scanner.App",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "ReaderTitlePageActivity",
+            "reported_full_name": "com.document.pdf.scanner.ui.ReaderTitlePageActivity",
+            "containing_class": "",
+            "top_class": "com.document.pdf.scanner.ui.ReaderTitlePageActivity",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "g",
+            "reported_full_name": "da.g",
+            "containing_class": "",
+            "top_class": "da.g",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "c",
+            "reported_full_name": "f8.c",
+            "containing_class": "",
+            "top_class": "f8.c",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "i",
+            "reported_full_name": "f8.i",
+            "containing_class": "",
+            "top_class": "f8.i",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "j",
+            "reported_full_name": "f8.j",
+            "containing_class": "",
+            "top_class": "f8.j",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "n",
+            "reported_full_name": "f8.n",
+            "containing_class": "",
+            "top_class": "f8.n",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "q",
+            "reported_full_name": "f8.q",
+            "containing_class": "",
+            "top_class": "f8.q",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "t",
+            "reported_full_name": "f8.t",
+            "containing_class": "",
+            "top_class": "f8.t",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "u",
+            "reported_full_name": "f8.u",
+            "containing_class": "",
+            "top_class": "f8.u",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "v",
+            "reported_full_name": "f8.v",
+            "containing_class": "",
+            "top_class": "f8.v",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "w",
+            "reported_full_name": "f8.w",
+            "containing_class": "",
+            "top_class": "f8.w",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "j4",
+            "reported_full_name": "gh.j4",
+            "containing_class": "",
+            "top_class": "gh.j4",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "a",
+            "reported_full_name": "h8.a",
+            "containing_class": "",
+            "top_class": "h8.a",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "b",
+            "reported_full_name": "ia.b",
+            "containing_class": "",
+            "top_class": "ia.b",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "f",
+            "reported_full_name": "ia.f",
+            "containing_class": "",
+            "top_class": "ia.f",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "z",
+            "reported_full_name": "ia.z",
+            "containing_class": "",
+            "top_class": "ia.z",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "g",
+            "reported_full_name": "j9.g",
+            "containing_class": "",
+            "top_class": "j9.g",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "b",
+            "reported_full_name": "l7.b",
+            "containing_class": "",
+            "top_class": "l7.b",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          },
+          {
+            "kind": "class",
+            "name": "a1",
+            "reported_full_name": "o8.a1",
+            "containing_class": "",
+            "top_class": "o8.a1",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": null,
+            "direct_invokes": null
+          }
+        ],
+        "coverage": "complete",
+        "reference_unit": "using_node"
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  }
+}

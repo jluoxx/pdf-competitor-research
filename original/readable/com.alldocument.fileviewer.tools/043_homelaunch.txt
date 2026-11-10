@@ -1,0 +1,4 @@
+    public final void Z(boolean z) {
+        kw7.d(this.Y, j1d.a(new byte[]{112, -83, Field.AUTOTEXT, -25, 63, -115, -81, -41, ByteCompanionObject.MAX_VALUE, -66, Field.CONTROL, -18, Field.AUTONUMOUT, -5, -18, -58, 120, -68, Field.FORMDROPDOWN, -28, 33, -116, -95, -58, 116, -32}, new byte[]{17, -35, 63, -117, Field.FORMTEXT, -63, -50, -94}) + z);
+        getSupportFragmentManager().beginTransaction().p(R.id.content, FUPI.j0.a(new ncb(z))).h();
+    }

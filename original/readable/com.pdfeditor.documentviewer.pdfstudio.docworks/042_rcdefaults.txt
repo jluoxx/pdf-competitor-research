@@ -1,0 +1,16 @@
+    public RemoteConfigModel() {
+        AdsConfigModel adConfig = new AdsConfigModel();
+        Intrinsics.checkNotNullParameter(adConfig, "adConfig");
+        this.adConfig = adConfig;
+        this.interSplash = 2;
+        this.homeInterChooseFolder = 30;
+        this.interChooseFile = 30;
+        this.timePushNotiUnlock = 30;
+        this.timeClearCacheAdHome = 30;
+        this.widgetSheetEveryOpen = 2;
+        this.showBottomSheetEveryOpenApp = 0;
+        this.showIntro = 0;
+        this.languageLoading = 0;
+        this.languageLoadingTime = 0;
+        this.showAdInOnboarding = 0;
+    }

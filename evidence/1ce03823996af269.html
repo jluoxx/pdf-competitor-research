@@ -1,0 +1,33 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>061_remotefetch.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>061_remotefetch.txt</h1><p><strong>D03 · 设置默认值、拉取间隔并 fetchAndActivate</strong></p><p>RemoteConfigService.d</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.pdfeditor.documentviewer.pdfstudio.docworks/061_remotefetch.txt" download>下载原始文件</a></div><pre class="source-pre">    public final void d() {
+
+        FirebaseRemoteConfig firebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
+
+        this.mFirebaseRemoteConfig = firebaseRemoteConfig;
+
+        if (firebaseRemoteConfig != null) {
+
+            firebaseRemoteConfig.setDefaultsAsync(this.DEFAULT_CONFIG_MAP);
+
+        }
+
+        FirebaseRemoteConfigSettings firebaseRemoteConfigSettingsBuild = new FirebaseRemoteConfigSettings.Builder().setMinimumFetchIntervalInSeconds(this.FETCH_INTERVAL_IN_SECONDS).build();
+
+        Intrinsics.checkNotNullExpressionValue(firebaseRemoteConfigSettingsBuild, &quot;build(...)&quot;);
+
+        FirebaseRemoteConfig firebaseRemoteConfig2 = this.mFirebaseRemoteConfig;
+
+        if (firebaseRemoteConfig2 != null) {
+
+            firebaseRemoteConfig2.setConfigSettingsAsync(firebaseRemoteConfigSettingsBuild);
+
+        }
+
+        this._remoteConfigModel = new RemoteConfigModel();
+
+        FirebaseRemoteConfig firebaseRemoteConfig3 = this.mFirebaseRemoteConfig;
+
+        Intrinsics.checkNotNull(firebaseRemoteConfig3);
+
+        firebaseRemoteConfig3.fetchAndActivate().addOnCompleteListener(new c(this, 2));
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

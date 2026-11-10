@@ -1,0 +1,58 @@
+{
+  "engine": {
+    "name": "jadx-headless-mcp",
+    "version": "0.7.1",
+    "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+    "worker_count": 1,
+    "heap_limit_mib": 3072
+  },
+  "class_name": "com.pdfeditor.documentviewer.pdfstudio.docworks.ads.OpenFileInterAd",
+  "method_name": "a",
+  "overload_index": 0,
+  "reported_signature": "a(android.content.Context, java.lang.Runnable): void",
+  "dex_descriptor": "(Landroid/content/Context;Ljava/lang/Runnable;)V",
+  "total": 2,
+  "references": [
+    {
+      "kind": "method",
+      "name": "onClick",
+      "reported_full_name": "com.pdfeditor.documentviewer.pdfstudio.docworks.ui.activities.home.adapter.b.onClick",
+      "containing_class": "com.pdfeditor.documentviewer.pdfstudio.docworks.ui.activities.home.adapter.b",
+      "top_class": "com.pdfeditor.documentviewer.pdfstudio.docworks.ui.activities.home.adapter.b",
+      "source_line": null,
+      "dex_offset": null,
+      "direct_invokes_exhaustive": true,
+      "direct_invokes": [
+        {
+          "dex_entry": "classes6.dex",
+          "source_raw_method_id": "com.pdfeditor.documentviewer.pdfstudio.docworks.ui.activities.home.adapter.b.onClick(Landroid/view/View;)V",
+          "dex_code_unit_offset": 205,
+          "dex_method_index": 26536,
+          "opcode": "INVOKE_STATIC"
+        }
+      ]
+    },
+    {
+      "kind": "method",
+      "name": "b",
+      "reported_full_name": "com.pdfeditor.documentviewer.pdfstudio.docworks.ui.activities.home2.recent.adapter.TimeGroupedFileAdapter.b",
+      "containing_class": "com.pdfeditor.documentviewer.pdfstudio.docworks.ui.activities.home2.recent.adapter.TimeGroupedFileAdapter",
+      "top_class": "com.pdfeditor.documentviewer.pdfstudio.docworks.ui.activities.home2.recent.adapter.TimeGroupedFileAdapter",
+      "source_line": null,
+      "dex_offset": null,
+      "direct_invokes_exhaustive": true,
+      "direct_invokes": [
+        {
+          "dex_entry": "classes6.dex",
+          "source_raw_method_id": "com.pdfeditor.documentviewer.pdfstudio.docworks.ui.activities.home2.recent.adapter.TimeGroupedFileAdapter.b(ILandroid/view/View;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/home/models/ModelFile;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/home2/recent/adapter/TimeGroupedFileAdapter;)V",
+          "dex_code_unit_offset": 41,
+          "dex_method_index": 26536,
+          "opcode": "INVOKE_STATIC"
+        }
+      ]
+    }
+  ],
+  "coverage": "complete",
+  "reference_unit": "using_node"
+}

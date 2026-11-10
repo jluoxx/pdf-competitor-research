@@ -1,0 +1,17 @@
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void initListener$lambda$34(IapActivity iapActivity, View view) {
+        iapActivity.logEvent("start_trial_IAP_pressed");
+        if (iapActivity.isAnnualSelected) {
+            iapActivity.logEvent("purchase_year_pressed");
+            IAPUtils iAPUtils = IAPUtils.INSTANCE;
+            iAPUtils.callSubscription(iapActivity, iAPUtils.getKEY_PREMIUM(), iAPUtils.getKEY_PREMIUM_YEARLY_PLAN());
+        } else if (iapActivity.isMonthlySeleted) {
+            iapActivity.logEvent("purchase_month_pressed");
+            IAPUtils iAPUtils2 = IAPUtils.INSTANCE;
+            iAPUtils2.callSubscription(iapActivity, iAPUtils2.getKEY_PREMIUM(), iAPUtils2.getKEY_PREMIUM_MONTHLY_PLAN());
+        } else {
+            iapActivity.logEvent("purchase_week_pressed2");
+            IAPUtils iAPUtils3 = IAPUtils.INSTANCE;
+            iAPUtils3.callSubscription(iapActivity, iAPUtils3.getKEY_PREMIUM(), FirebaseRemoteConfigUtil.INSTANCE.getInstance().getIapBasePlan());
+        }
+    }

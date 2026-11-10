@@ -1,0 +1,41 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>053_adconfigvalue.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>053_adconfigvalue.txt</h1><p><strong>D05 · 远端广告JSON有键用远端，否则取本地JSON</strong></p><p>FirebaseRemoteConfigUtil.getAdsConfigValue</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.pdfeditor.documentviewer.pdfstudio.docworks/053_adconfigvalue.txt" download>下载原始文件</a></div><pre class="source-pre">    public final String getAdsConfigValue(String key) {
+
+        String strOptString = &quot;&quot;;
+
+        Intrinsics.checkNotNullParameter(key, &quot;key&quot;);
+
+        try {
+
+            try {
+
+                String string = this.firebaseRemoteConfig.getString(REMOTE_KEY_ADS_CONFIG);
+
+                Intrinsics.checkNotNullExpressionValue(string, &quot;getString(...)&quot;);
+
+                JSONObject jSONObject = new JSONObject(string);
+
+                String strOptString2 = jSONObject.has(key) ? jSONObject.optString(key, &quot;&quot;) : new JSONObject(defaultAdsConfigJson).optString(key, &quot;&quot;);
+
+                Intrinsics.checkNotNull(strOptString2);
+
+                return strOptString2;
+
+            } catch (Exception unused) {
+
+                Intrinsics.checkNotNull(strOptString);
+
+                return strOptString;
+
+            }
+
+        } catch (Exception unused2) {
+
+            strOptString = new JSONObject(defaultAdsConfigJson).optString(key, &quot;&quot;);
+
+            Intrinsics.checkNotNull(strOptString);
+
+            return strOptString;
+
+        }
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

@@ -1,0 +1,80 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>056_limitrefs_fixed.stdout.json · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>056_limitrefs_fixed.stdout.json</h1><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/raw/com.piksoft.turboscan.free/craft/056_limitrefs_fixed.stdout.json" download>下载原始文件</a></div><pre class="source-pre">{
+  &quot;authority&quot;: &quot;original-files&quot;,
+  &quot;confidence&quot;: &quot;observed&quot;,
+  &quot;coverage&quot;: {
+    &quot;examined&quot;: 3,
+    &quot;status&quot;: &quot;complete&quot;,
+    &quot;total&quot;: 3
+  },
+  &quot;environment&quot;: {
+    &quot;clean_room&quot;: false,
+    &quot;engine&quot;: &quot;builtin&quot;,
+    &quot;engine_version&quot;: &quot;0.5.0&quot;,
+    &quot;host&quot;: &quot;windows-x86_64&quot;
+  },
+  &quot;id&quot;: &quot;ev_1c71a24456f79b3b8e96d991341f2cc989dfc0959d3a9a397f396f7d6e67dc09&quot;,
+  &quot;limitations&quot;: [
+    {
+      &quot;code&quot;: &quot;static_references_only&quot;,
+      &quot;message&quot;: &quot;Only direct bytecode references are found; reflection, JNI, string-built class names and code loaded at run time are not.&quot;
+    }
+  ],
+  &quot;links&quot;: [],
+  &quot;locations&quot;: [
+    {
+      &quot;kind&quot;: &quot;path&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\asus\\Desktop\\竞品apk1\\com.piksoft.turboscan.free\\base.apk&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;class&quot;,
+      &quot;value&quot;: &quot;Lo/GetTargetFragmentUsageViolation;&quot;
+    }
+  ],
+  &quot;operation&quot;: &quot;android_class_users_find&quot;,
+  &quot;params&quot;: {
+    &quot;class_name&quot;: &quot;o.GetTargetFragmentUsageViolation&quot;,
+    &quot;limit&quot;: 100,
+    &quot;method_name&quot;: &quot;RemoteActionCompatParcelizer&quot;,
+    &quot;offset&quot;: 0,
+    &quot;path&quot;: &quot;C:\\Users\\asus\\Desktop\\竞品apk1\\com.piksoft.turboscan.free\\base.apk&quot;
+  },
+  &quot;result&quot;: {
+    &quot;callers&quot;: 3,
+    &quot;class&quot;: &quot;Lo/GetTargetFragmentUsageViolation;&quot;,
+    &quot;defined_in&quot;: &quot;classes.dex&quot;,
+    &quot;method_name&quot;: &quot;RemoteActionCompatParcelizer&quot;,
+    &quot;references&quot;: [
+      {
+        &quot;caller&quot;: &quot;Lo/GetTargetFragmentUsageViolation;-&gt;&lt;clinit&gt;()V&quot;,
+        &quot;dex&quot;: &quot;classes.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0000&quot;,
+        &quot;target&quot;: &quot;Lo/GetTargetFragmentUsageViolation;-&gt;RemoteActionCompatParcelizer()V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lo/GetTargetFragmentUsageViolation;-&gt;read(Lo/GetTargetFragmentUsageViolation;Landroid/app/Activity;)V&quot;,
+        &quot;dex&quot;: &quot;classes.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-direct&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;000c&quot;,
+        &quot;target&quot;: &quot;Lo/GetTargetFragmentUsageViolation;-&gt;RemoteActionCompatParcelizer(Landroid/app/Activity;)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lo/GetTargetFragmentUsageViolation;-&gt;asInterface(Landroid/app/Activity;Z)Z&quot;,
+        &quot;dex&quot;: &quot;classes.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-direct&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;004a&quot;,
+        &quot;target&quot;: &quot;Lo/GetTargetFragmentUsageViolation;-&gt;RemoteActionCompatParcelizer(I)Z&quot;
+      }
+    ],
+    &quot;references_total&quot;: 3
+  },
+  &quot;subject&quot;: {
+    &quot;kind&quot;: &quot;apk&quot;,
+    &quot;name&quot;: &quot;base.apk&quot;,
+    &quot;sha256&quot;: &quot;7256a15ca3e34e1aa3da89650bf74158468c61139272303bd210b1eec82d7727&quot;
+  },
+  &quot;summary&quot;: &quot;3 reference(s) to o.GetTargetFragmentUsageViolation.RemoteActionCompatParcelizer from 3 method(s) across 2 DEX file(s); defined in classes.dex.&quot;
+}</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

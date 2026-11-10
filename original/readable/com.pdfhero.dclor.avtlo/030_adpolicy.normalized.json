@@ -1,0 +1,224 @@
+{
+  "engine": {
+    "name": "jadx-headless-mcp",
+    "version": "0.7.1",
+    "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+    "worker_count": 1,
+    "heap_limit_mib": 3072
+  },
+  "class_name": "com.pdfhero.dclor.avtlo.domain.women.AdRuntimePolicyProfile",
+  "methods": [
+    {
+      "name": "<init>",
+      "reported_signature": "<init>(): void",
+      "overload_index": 0,
+      "is_constructor": true,
+      "dex_descriptor": "()V"
+    },
+    {
+      "name": "<init>",
+      "reported_signature": "<init>(int, int, int, int, int, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.Map<com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey, com.pdfhero.dclor.avtlo.domain.women.AdSlotDisplayPolicy>): void",
+      "overload_index": 1,
+      "is_constructor": true,
+      "dex_descriptor": "(IIIIILjava/util/List;Ljava/util/List;Ljava/util/Map;)V"
+    },
+    {
+      "name": "<init>",
+      "reported_signature": "<init>(int, int, int, int, int, java.util.List, java.util.List, java.util.Map, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+      "overload_index": 2,
+      "is_constructor": true,
+      "dex_descriptor": "(IIIIILjava/util/List;Ljava/util/List;Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+    },
+    {
+      "name": "component1",
+      "reported_signature": "component1(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()I"
+    },
+    {
+      "name": "component2",
+      "reported_signature": "component2(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()I"
+    },
+    {
+      "name": "component3",
+      "reported_signature": "component3(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()I"
+    },
+    {
+      "name": "component4",
+      "reported_signature": "component4(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()I"
+    },
+    {
+      "name": "component5",
+      "reported_signature": "component5(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()I"
+    },
+    {
+      "name": "component6",
+      "reported_signature": "component6(): java.util.List<java.lang.String>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()Ljava/util/List;"
+    },
+    {
+      "name": "component7",
+      "reported_signature": "component7(): java.util.List<java.lang.String>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()Ljava/util/List;"
+    },
+    {
+      "name": "component8",
+      "reported_signature": "component8(): java.util.Map<com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey, com.pdfhero.dclor.avtlo.domain.women.AdSlotDisplayPolicy>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()Ljava/util/Map;"
+    },
+    {
+      "name": "copy",
+      "reported_signature": "copy(int, int, int, int, int, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.Map<com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey, com.pdfhero.dclor.avtlo.domain.women.AdSlotDisplayPolicy>): com.pdfhero.dclor.avtlo.domain.women.AdRuntimePolicyProfile",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(IIIIILjava/util/List;Ljava/util/List;Ljava/util/Map;)Lcom/pdfhero/dclor/avtlo/domain/women/AdRuntimePolicyProfile;"
+    },
+    {
+      "name": "copy$default",
+      "reported_signature": "copy$default(com.pdfhero.dclor.avtlo.domain.women.AdRuntimePolicyProfile, int, int, int, int, int, java.util.List, java.util.List, java.util.Map, int, java.lang.Object): com.pdfhero.dclor.avtlo.domain.women.AdRuntimePolicyProfile",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lcom/pdfhero/dclor/avtlo/domain/women/AdRuntimePolicyProfile;IIIIILjava/util/List;Ljava/util/List;Ljava/util/Map;ILjava/lang/Object;)Lcom/pdfhero/dclor/avtlo/domain/women/AdRuntimePolicyProfile;"
+    },
+    {
+      "name": "equals",
+      "reported_signature": "equals(java.lang.Object): boolean",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/Object;)Z"
+    },
+    {
+      "name": "getAudienceEnableA",
+      "reported_signature": "getAudienceEnableA(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()I"
+    },
+    {
+      "name": "getAudienceEnableB",
+      "reported_signature": "getAudienceEnableB(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()I"
+    },
+    {
+      "name": "getGraceDays",
+      "reported_signature": "getGraceDays(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()I"
+    },
+    {
+      "name": "getInterUnitIds",
+      "reported_signature": "getInterUnitIds(): java.util.List<java.lang.String>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()Ljava/util/List;"
+    },
+    {
+      "name": "getOpenUnitIds",
+      "reported_signature": "getOpenUnitIds(): java.util.List<java.lang.String>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()Ljava/util/List;"
+    },
+    {
+      "name": "getPlacementRules",
+      "reported_signature": "getPlacementRules(): java.util.Map<com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey, com.pdfhero.dclor.avtlo.domain.women.AdSlotDisplayPolicy>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()Ljava/util/Map;"
+    },
+    {
+      "name": "getTapLimit",
+      "reported_signature": "getTapLimit(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()I"
+    },
+    {
+      "name": "getViewLimit",
+      "reported_signature": "getViewLimit(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()I"
+    },
+    {
+      "name": "hashCode",
+      "reported_signature": "hashCode(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()I"
+    },
+    {
+      "name": "toString",
+      "reported_signature": "toString(): java.lang.String",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()Ljava/lang/String;"
+    }
+  ],
+  "fields": [
+    {
+      "name": "audienceEnableA",
+      "reported_type": "int",
+      "dex_static_value": null
+    },
+    {
+      "name": "audienceEnableB",
+      "reported_type": "int",
+      "dex_static_value": null
+    },
+    {
+      "name": "graceDays",
+      "reported_type": "int",
+      "dex_static_value": null
+    },
+    {
+      "name": "interUnitIds",
+      "reported_type": "java.util.List<java.lang.String>",
+      "dex_static_value": null
+    },
+    {
+      "name": "openUnitIds",
+      "reported_type": "java.util.List<java.lang.String>",
+      "dex_static_value": null
+    },
+    {
+      "name": "placementRules",
+      "reported_type": "java.util.Map<com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey, com.pdfhero.dclor.avtlo.domain.women.AdSlotDisplayPolicy>",
+      "dex_static_value": null
+    },
+    {
+      "name": "tapLimit",
+      "reported_type": "int",
+      "dex_static_value": null
+    },
+    {
+      "name": "viewLimit",
+      "reported_type": "int",
+      "dex_static_value": null
+    }
+  ],
+  "inner_classes": []
+}

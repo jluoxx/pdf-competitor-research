@@ -1,0 +1,21 @@
+    public final String getAdsConfigValue(String key) {
+        String strOptString = "";
+        Intrinsics.checkNotNullParameter(key, "key");
+        try {
+            try {
+                String string = this.firebaseRemoteConfig.getString(REMOTE_KEY_ADS_CONFIG);
+                Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
+                JSONObject jSONObject = new JSONObject(string);
+                String strOptString2 = jSONObject.has(key) ? jSONObject.optString(key, "") : new JSONObject(defaultAdsConfigJson).optString(key, "");
+                Intrinsics.checkNotNull(strOptString2);
+                return strOptString2;
+            } catch (Exception unused) {
+                Intrinsics.checkNotNull(strOptString);
+                return strOptString;
+            }
+        } catch (Exception unused2) {
+            strOptString = new JSONObject(defaultAdsConfigJson).optString(key, "");
+            Intrinsics.checkNotNull(strOptString);
+            return strOptString;
+        }
+    }

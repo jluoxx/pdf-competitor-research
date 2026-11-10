@@ -1,0 +1,65 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>030_limitpredicate.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>030_limitpredicate.txt</h1><p><strong>T04 · 非高级用户的10页阈值分支</strong></p><p>RemoteActionCompatParcelizer(int)</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.piksoft.turboscan.free/030_limitpredicate.txt" download>下载原始文件</a></div><pre class="source-pre">    /* JADX WARN: Code duplicated, block: B:11:0x0024  */
+
+    /* JADX WARN: Code duplicated, block: B:13:0x002f A[RETURN] */
+
+    /* JADX WARN: Code duplicated, block: B:14:0x0030  */
+
+    /* JADX WARN: Code duplicated, block: B:9:0x0020  */
+
+    private boolean RemoteActionCompatParcelizer(int i) {
+
+        int i2;
+
+        int i3 = 2 % 2;
+
+        int i4 = MediaBrowserCompatItemReceiver + 57;
+
+        MediaBrowserCompatCustomActionResultReceiver = i4 % 128;
+
+        if (i4 % 2 == 0) {
+
+            int i5 = 22 / 0;
+
+            if (!MediaBrowserCompatCustomActionResultReceiver()) {
+
+                if (i &gt;= 10) {
+
+                    i2 = MediaBrowserCompatItemReceiver + 71;
+
+                    MediaBrowserCompatCustomActionResultReceiver = i2 % 128;
+
+                    if (i2 % 2 != 0) {
+
+                        return true;
+
+                    }
+
+                    throw null;
+
+                }
+
+            }
+
+        } else if (!MediaBrowserCompatCustomActionResultReceiver()) {
+
+            if (i &gt;= 10) {
+
+                i2 = MediaBrowserCompatItemReceiver + 71;
+
+                MediaBrowserCompatCustomActionResultReceiver = i2 % 128;
+
+                if (i2 % 2 != 0) {
+
+                    return true;
+
+                }
+
+                throw null;
+
+            }
+
+        }
+
+        return false;
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

@@ -1,0 +1,26 @@
+    @Override // o.SetRetainInstanceUsageViolation
+    public final boolean asInterface(Activity activity, boolean z) {
+        int i = 2 % 2;
+        ApplicationController applicationController = ApplicationController.getInstance();
+        if (z && IconCompatParcelizer()) {
+            int i2 = MediaBrowserCompatCustomActionResultReceiver + 13;
+            MediaBrowserCompatItemReceiver = i2 % 128;
+            int i3 = i2 % 2;
+            Object[] objArr = {this, activity, Integer.valueOf(com.piksoft.turboscan.free.R.string._res_0x7f1200cd)};
+            int iRemoteActionCompatParcelizer = com.google.android.gms.measurement.internal.zzbn.RemoteActionCompatParcelizer();
+            int iRemoteActionCompatParcelizer2 = com.google.android.gms.measurement.internal.zzbn.RemoteActionCompatParcelizer();
+            asInterface(com.google.android.gms.measurement.internal.zzbn.RemoteActionCompatParcelizer(), com.google.android.gms.measurement.internal.zzbn.RemoteActionCompatParcelizer(), objArr, iRemoteActionCompatParcelizer2, iRemoteActionCompatParcelizer, -1111390047, 1111390050);
+            return false;
+        }
+        if (z || applicationController.read == null || !RemoteActionCompatParcelizer(applicationController.read.PlaybackStateCompat())) {
+            int i4 = MediaBrowserCompatItemReceiver + 53;
+            MediaBrowserCompatCustomActionResultReceiver = i4 % 128;
+            int i5 = i4 % 2;
+            return true;
+        }
+        Object[] objArr2 = {this, activity, Integer.valueOf(com.piksoft.turboscan.free.R.string._res_0x7f1200cf)};
+        int iRemoteActionCompatParcelizer3 = com.google.android.gms.measurement.internal.zzbn.RemoteActionCompatParcelizer();
+        int iRemoteActionCompatParcelizer4 = com.google.android.gms.measurement.internal.zzbn.RemoteActionCompatParcelizer();
+        asInterface(com.google.android.gms.measurement.internal.zzbn.RemoteActionCompatParcelizer(), com.google.android.gms.measurement.internal.zzbn.RemoteActionCompatParcelizer(), objArr2, iRemoteActionCompatParcelizer4, iRemoteActionCompatParcelizer3, -1111390047, 1111390050);
+        return false;
+    }

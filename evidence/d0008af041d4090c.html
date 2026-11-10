@@ -1,0 +1,61 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>044_subfail.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>044_subfail.txt</h1><p><strong>S08 · 失败关闭加载态并记录失败原因</strong></p><p>j9.d.k</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.document.pdf.scanner.free.all/044_subfail.txt" download>下载原始文件</a></div><pre class="source-pre">    @Override // ip.a
+
+    public final Object k(Object obj) {
+
+        String strValueOf;
+
+        hp.a aVar = hp.a.f47860n;
+
+        cp.q.a(obj);
+
+        boolean z10 = SubscriptionActivity.D;
+
+        SubscriptionActivity subscriptionActivity = this.f49858x;
+
+        subscriptionActivity.H(false);
+
+        subscriptionActivity.A(false);
+
+        int i6 = this.f49859y;
+
+        int i9 = this.f49860z;
+
+        if (i6 == 0 || i9 == i6) {
+
+            strValueOf = String.valueOf(i9);
+
+        } else {
+
+            StringBuilder sb2 = new StringBuilder();
+
+            sb2.append(i9);
+
+            sb2.append(&#x27;,&#x27;);
+
+            sb2.append(i6);
+
+            strValueOf = sb2.toString();
+
+        }
+
+        com.google.gson.p pVarR = y2.e.r(strValueOf);
+
+        oh.g gVar = oh.g.f54187p;
+
+        gVar.getClass();
+
+        gVar.d(&quot;vip_subscription_fail&quot;, pVarR, 0L, false);
+
+        StringBuilder sbV = defpackage.a.v(strValueOf, &quot;: &quot;);
+
+        sbV.append(this.A);
+
+        com.google.gson.p pVarR2 = y2.e.r(sbV.toString());
+
+        gVar.getClass();
+
+        gVar.d(&quot;vip_subscription_fail_detail&quot;, pVarR2, 0L, false);
+
+        return Unit.f51126a;
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

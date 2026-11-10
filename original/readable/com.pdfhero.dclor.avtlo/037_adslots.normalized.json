@@ -1,0 +1,188 @@
+{
+  "engine": {
+    "name": "jadx-headless-mcp",
+    "version": "0.7.1",
+    "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+    "worker_count": 1,
+    "heap_limit_mib": 3072
+  },
+  "class_name": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+  "methods": [
+    {
+      "name": "$values",
+      "reported_signature": "$values(): com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey[]",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()[Lcom/pdfhero/dclor/avtlo/domain/cook/AdSlotPolicyKey;"
+    },
+    {
+      "name": "<clinit>",
+      "reported_signature": "<clinit>(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()V"
+    },
+    {
+      "name": "<init>",
+      "reported_signature": "<init>(java.lang.String, int): void",
+      "overload_index": 0,
+      "is_constructor": true,
+      "dex_descriptor": "(Ljava/lang/String;I)V"
+    },
+    {
+      "name": "getEntries",
+      "reported_signature": "getEntries(): fgIS.SGigKD6vM",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()LfgIS/SGigKD6vM;"
+    },
+    {
+      "name": "valueOf",
+      "reported_signature": "valueOf(java.lang.String): com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;)Lcom/pdfhero/dclor/avtlo/domain/cook/AdSlotPolicyKey;"
+    },
+    {
+      "name": "values",
+      "reported_signature": "values(): com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey[]",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()[Lcom/pdfhero/dclor/avtlo/domain/cook/AdSlotPolicyKey;"
+    }
+  ],
+  "fields": [
+    {
+      "name": "$ENTRIES",
+      "reported_type": "fgIS.SGigKD6vM",
+      "dex_static_value": null
+    },
+    {
+      "name": "$VALUES",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey[]",
+      "dex_static_value": null
+    },
+    {
+      "name": "home_launch",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_back",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_down",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_fileper",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_image",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_image_suc",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_merge",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_merge_suc",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_pdf",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_pdf_suc",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_photo",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_pushper",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_search",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_select",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_setting",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_sign",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_split",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_split_suc",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_tool_word",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_uninstall",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_view",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_view_word",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_winper",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    },
+    {
+      "name": "panel_word_suc",
+      "reported_type": "com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey",
+      "dex_static_value": null
+    }
+  ],
+  "inner_classes": []
+}

@@ -1,0 +1,51 @@
+E: defaults (line=2)
+  E: entry (line=3)
+    E: key (line=4)
+      C: "time_load_interstitial_ads_on_start_app"
+    E: value (line=5)
+      C: "10000"
+  E: entry (line=7)
+    E: key (line=8)
+      C: "time_out_native_privacy_policy"
+    E: value (line=9)
+      C: "5000"
+  E: entry (line=11)
+    E: key (line=12)
+      C: "time_out_native_permission"
+    E: value (line=13)
+      C: "5000"
+  E: entry (line=15)
+    E: key (line=16)
+      C: "time_out_native_select_language"
+    E: value (line=17)
+      C: "5000"
+  E: entry (line=19)
+    E: key (line=20)
+      C: "rate_us_show_after_time"
+    E: value (line=21)
+      C: "24"
+  E: entry (line=23)
+    E: key (line=24)
+      C: "rate_us_show_after_open_app"
+    E: value (line=25)
+      C: "3"
+  E: entry (line=27)
+    E: key (line=28)
+      C: "interstitial_ads_on_start_app_enable"
+    E: value (line=29)
+      C: "true"
+  E: entry (line=31)
+    E: key (line=32)
+      C: "interstitial_ads_enable"
+    E: value (line=33)
+      C: "true"
+  E: entry (line=35)
+    E: key (line=36)
+      C: "show_ads_after_open_file"
+    E: value (line=37)
+      C: "1"
+  E: entry (line=39)
+    E: key (line=40)
+      C: "interstitial_ads_category_home_enable"
+    E: value (line=41)
+      C: "false"

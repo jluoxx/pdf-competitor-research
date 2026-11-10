@@ -1,0 +1,9 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>055_iapbaseplan.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>055_iapbaseplan.txt</h1><p><strong>D10 · 远端基础计划字符串可影响购买选择</strong></p><p>FirebaseRemoteConfigUtil.getIapBasePlan</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.pdfeditor.documentviewer.pdfstudio.docworks/055_iapbaseplan.txt" download>下载原始文件</a></div><pre class="source-pre">    public final String getIapBasePlan() {
+
+        String string = this.firebaseRemoteConfig.getString(REMOTE_KEY_IAP_BASE_PLAN);
+
+        Intrinsics.checkNotNullExpressionValue(string, &quot;getString(...)&quot;);
+
+        return StringsKt.F(string) ? x.a(&quot;PwAIDAAwCkkSBjNTJxxUUSEECg==&quot;) : string;
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

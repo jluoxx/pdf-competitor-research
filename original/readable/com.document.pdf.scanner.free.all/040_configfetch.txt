@@ -1,0 +1,19 @@
+    public static void b() throws Throwable {
+        if (f48250b.compareAndSet(false, true)) {
+            p002if.f fVar = new p002if.f();
+            long j8 = jf.g.f50054j;
+            fVar.f48820a = j8;
+            p002if.f fVar2 = new p002if.f();
+            fVar2.f48820a = fVar.f48820a;
+            p002if.a aVarA = ((p002if.i) sd.g.c().b(p002if.i.class)).a();
+            aVarA.getClass();
+            c3.e eVar = new c3.e(4, aVarA, fVar2);
+            Executor executor = aVarA.f48812c;
+            Tasks.call(executor, eVar);
+            jf.g gVar = aVarA.f48815f;
+            long j10 = gVar.h.f50089a.getLong("minimum_fetch_interval_in_seconds", j8);
+            HashMap map = new HashMap(gVar.f50063i);
+            map.put("X-Firebase-RC-Fetch-Type", "BASE/1");
+            gVar.f50061f.b().continueWithTask(gVar.f50058c, new ce.a(gVar, j10, map)).onSuccessTask(ae.l.f646n, new com.vungle.ads.internal.util.a(9)).onSuccessTask(executor, new f(aVarA)).addOnCompleteListener(new f(aVarA));
+        }
+    }

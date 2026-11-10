@@ -1,0 +1,2047 @@
+CLASS Lcom/brian/base_application/BaseApplication;
+FIELD $stable 0
+FIELD Companion None
+FIELD d BaseApplication
+FIELD e 
+FIELD a 
+FIELD b 
+FIELD c 
+
+METHOD <clinit> ()V
+000000: new-instance v0, Lcom/brian/base_application/BaseApplication$Companion;
+000004: const/4 v1, 0
+000006: invoke-direct v0, v1, Lcom/brian/base_application/BaseApplication$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+00000c: sput-object v0, Lcom/brian/base_application/BaseApplication;->Companion Lcom/brian/base_application/BaseApplication$Companion;
+000010: const/16 v0, 8
+000014: sput v0, Lcom/brian/base_application/BaseApplication;->$stable I
+000018: const-string v0, "356A0A4EA32F6A74B9C049897F4DC01C"
+00001c: invoke-static v0, Lkotlin/collections/z;->listOf(Ljava/lang/Object;)Ljava/util/List;
+000022: move-result-object v0
+000024: sput-object v0, Lcom/brian/base_application/BaseApplication;->e Ljava/util/List;
+000028: return-void 
+
+METHOD <init> ()V
+000000: invoke-direct v1, Lcom/nlbn/ads/util/AdsApplication;-><init>()V
+000006: new-instance v0, Lu/c;
+00000a: invoke-direct v0, Ljava/lang/Object;-><init>()V
+000010: iput-object v0, v1, Lcom/brian/base_application/BaseApplication;->a Lu/c;
+000014: return-void 
+
+METHOD A ()Z
+000000: invoke-static Lcom/brian/base_application/BaseApplication;->r()Z
+000006: move-result v0
+000008: return v0
+
+METHOD B (Ljava/lang/String; Z)Lkotlin/Unit;
+000000: invoke-static v1, v0, Lcom/brian/base_application/BaseApplication;->a(Z Ljava/lang/String;)Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD a (Landroid/content/Context;)Landroid/content/Context;
+000000: const-string v0, "ctx"
+000004: invoke-static v1, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: invoke-static v1, Lf4/a;->h(Landroid/content/Context;)Landroid/content/Context;
+000010: move-result-object v1
+000012: return-object v1
+
+METHOD a (Lcom/brian/base_application/IapBranding;)Lcom/brian/base_iap/iap/g;
+000000: new-instance v0, Lcom/brian/base_iap/iap/g;
+000004: invoke-virtual v4, Lcom/brian/base_application/IapBranding;->getAppName()Ljava/lang/String;
+00000a: move-result-object v1
+00000c: invoke-virtual v4, Lcom/brian/base_application/IapBranding;->getPrivacyPolicyUrl()Ljava/lang/String;
+000012: move-result-object v2
+000014: invoke-virtual v4, Lcom/brian/base_application/IapBranding;->getTermsOfUseUrl()Ljava/lang/String;
+00001a: move-result-object v4
+00001c: invoke-direct v0, v1, v2, v4, Lcom/brian/base_iap/iap/g;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+000022: return-object v0
+
+METHOD a (Lcom/brian/base_application/IapFeature;)Lcom/brian/base_iap/iap/k;
+000000: new-instance v0, Lcom/brian/base_iap/iap/k;
+000004: invoke-virtual v5, Lcom/brian/base_application/IapFeature;->getText()I
+00000a: move-result v1
+00000c: invoke-virtual v5, Lcom/brian/base_application/IapFeature;->getIconRes()I
+000012: move-result v2
+000014: invoke-virtual v5, Lcom/brian/base_application/IapFeature;->getProEnabled()Z
+00001a: move-result v3
+00001c: invoke-virtual v5, Lcom/brian/base_application/IapFeature;->getBasicEnabled()Z
+000022: move-result v5
+000024: invoke-direct v0, v1, v2, v3, v5, Lcom/brian/base_iap/iap/k;-><init>(I I Z Z)V
+00002a: return-object v0
+
+METHOD a (Lcom/brian/base_application/FullScreenItemConfig;)Lcom/brian/base_notification/common/c;
+000000: new-instance v0, Lcom/brian/base_notification/common/c;
+000004: invoke-virtual v3, Lcom/brian/base_application/FullScreenItemConfig;->getImageRes()I
+00000a: move-result v1
+00000c: invoke-virtual v3, Lcom/brian/base_application/FullScreenItemConfig;->getTextRes()I
+000012: move-result v3
+000014: invoke-direct v0, v1, v3, Lcom/brian/base_notification/common/c;-><init>(I I)V
+00001a: return-object v0
+
+METHOD a (Ljava/lang/String;)Lkotlin/Unit;
+000000: sget-object v0, Lkotlin/Unit;->a Lkotlin/Unit;
+000004: return-object v0
+
+METHOD a (Z)Lkotlin/Unit;
+000000: sget-object v0, Lkotlin/Unit;->a Lkotlin/Unit;
+000004: return-object v0
+
+METHOD a (Z Ljava/lang/String;)Lkotlin/Unit;
+000000: const-string v0, "message"
+000004: invoke-static v1, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sget-object v0, Lkotlin/Unit;->a Lkotlin/Unit;
+00000e: return-object v0
+
+METHOD a ()V
+000000: invoke-static Landroid/app/Application;->getProcessName()Ljava/lang/String;
+000006: move-result-object v0
+000008: invoke-virtual v4, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+00000e: move-result-object v1
+000010: invoke-static v1, v0, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000016: move-result v1
+000018: if-nez v1, +005h
+00001c: invoke-static v0, Landroid/webkit/WebView;->setDataDirectorySuffix(Ljava/lang/String;)V
+000022: new-instance v0, Lcom/google/android/gms/ads/RequestConfiguration$Builder;
+000026: invoke-direct v0, Lcom/google/android/gms/ads/RequestConfiguration$Builder;-><init>()V
+00002c: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->buildTestDeviceIds$base_application_release()Ljava/util/List;
+000032: move-result-object v1
+000034: invoke-virtual v0, v1, Lcom/google/android/gms/ads/RequestConfiguration$Builder;->setTestDeviceIds(Ljava/util/List;)Lcom/google/android/gms/ads/RequestConfiguration$Builder;
+00003a: move-result-object v0
+00003c: invoke-virtual v0, Lcom/google/android/gms/ads/RequestConfiguration$Builder;->build()Lcom/google/android/gms/ads/RequestConfiguration;
+000042: move-result-object v0
+000044: invoke-static v0, Lcom/google/android/gms/ads/MobileAds;->setRequestConfiguration(Lcom/google/android/gms/ads/RequestConfiguration;)V
+00004a: new-instance v0, Lcom/google/android/gms/ads/RequestConfiguration$Builder;
+00004e: invoke-direct v0, Lcom/google/android/gms/ads/RequestConfiguration$Builder;-><init>()V
+000054: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->buildTestDeviceIds$base_application_release()Ljava/util/List;
+00005a: move-result-object v1
+00005c: invoke-virtual v0, v1, Lcom/google/android/gms/ads/RequestConfiguration$Builder;->setTestDeviceIds(Ljava/util/List;)Lcom/google/android/gms/ads/RequestConfiguration$Builder;
+000062: move-result-object v0
+000064: invoke-virtual v0, Lcom/google/android/gms/ads/RequestConfiguration$Builder;->build()Lcom/google/android/gms/ads/RequestConfiguration;
+00006a: move-result-object v0
+00006c: const-string v1, "build(...)"
+000070: invoke-static v0, v1, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object; Ljava/lang/String;)V
+000076: invoke-static v0, Lcom/google/android/gms/ads/MobileAds;->setRequestConfiguration(Lcom/google/android/gms/ads/RequestConfiguration;)V
+00007c: sget-object v0, Lv7/l0;->a Lc8/e;
+000080: sget-object v0, Lc8/d;->a Lc8/d;
+000084: invoke-static v0, Lv7/b0;->b(Lkotlin/coroutines/CoroutineContext;)La8/c;
+00008a: move-result-object v0
+00008c: new-instance v1, Lcom/brian/base_application/a;
+000090: const/4 v2, 0
+000092: invoke-direct v1, v4, v2, Lcom/brian/base_application/a;-><init>(Lcom/brian/base_application/BaseApplication; Lb7/c;)V
+000098: const/4 v3, 3
+00009a: invoke-static v0, v2, v2, v1, v3, Lv7/b0;->w(Lv7/y; Lkotlin/coroutines/CoroutineContext; Lv7/z; Lkotlin/jvm/functions/Function2; I)Lv7/u1;
+0000a0: const-string v0, "5ea02202-adb6-4eaa-8761-d4b29ad58851"
+0000a4: invoke-static v0, Lcom/facebook/ads/AdSettings;->addTestDevice(Ljava/lang/String;)V
+0000aa: return-void 
+
+METHOD a (I)V
+000000: sget-object v0, Lcom/brian/base_notification/notification/NotificationManager;->INSTANCE Lcom/brian/base_notification/notification/NotificationManager;
+000004: invoke-virtual v0, v2, Lcom/brian/base_notification/notification/NotificationManager;->setNotificationIconRes(I)Lcom/brian/base_notification/notification/NotificationManager;
+00000a: return-void 
+
+METHOD a (I I I)V
+000000: sget-object v0, Lcom/brian/base_notification/notification/NotificationManager;->INSTANCE Lcom/brian/base_notification/notification/NotificationManager;
+000004: invoke-virtual v0, v2, v3, v4, Lcom/brian/base_notification/notification/NotificationManager;->setMediaNotificationConfig(I I I)Lcom/brian/base_notification/notification/NotificationManager;
+00000a: return-void 
+
+METHOD a (I I I I)V
+000000: sget-object v0, Lcom/brian/base_notification/notification/NotificationManager;->INSTANCE Lcom/brian/base_notification/notification/NotificationManager;
+000004: invoke-virtual v0, v2, v3, v4, v5, Lcom/brian/base_notification/notification/NotificationManager;->setWidgetNotificationConfig(I I I I)Lcom/brian/base_notification/notification/NotificationManager;
+00000a: return-void 
+
+METHOD a (Lcom/brian/base_application/CallUseAppNotiConfig;)V
+000000: sget-object v0, Lcom/brian/base_notification/notification/NotificationManager;->INSTANCE Lcom/brian/base_notification/notification/NotificationManager;
+000004: invoke-direct v1, v2, Lcom/brian/base_application/BaseApplication;->b(Lcom/brian/base_application/CallUseAppNotiConfig;)Lcom/brian/base_notification/common/a;
+00000a: move-result-object v2
+00000c: invoke-virtual v0, v2, Lcom/brian/base_notification/notification/NotificationManager;->setNotificationCallUseApp(Lcom/brian/base_notification/common/a;)V
+000012: return-void 
+
+METHOD a (Lcom/brian/base_application/DailyFullScreenConfig;)V
+000000: sget-object v0, Lcom/brian/base_notification/notification/NotificationManager;->INSTANCE Lcom/brian/base_notification/notification/NotificationManager;
+000004: invoke-direct v1, v2, Lcom/brian/base_application/BaseApplication;->b(Lcom/brian/base_application/DailyFullScreenConfig;)Lcom/brian/base_notification/common/b;
+00000a: move-result-object v2
+00000c: invoke-virtual v0, v2, Lcom/brian/base_notification/notification/NotificationManager;->setDailyFullScreenConfig(Lcom/brian/base_notification/common/b;)Lcom/brian/base_notification/notification/NotificationManager;
+000012: return-void 
+
+METHOD a (Lcom/brian/base_application/IapBrandingProviderAlias;)V
+000000: if-eqz v1, +007h
+000004: invoke-direct v0, v1, Lcom/brian/base_application/BaseApplication;->b(Lcom/brian/base_application/IapBrandingProviderAlias;)Lcom/brian/base_iap/iap/h;
+00000a: move-result-object v1
+00000c: goto +2h
+00000e: const/4 v1, 0
+000010: sput-object v1, Lcom/brian/base_iap/iap/i;->a Lcom/brian/base_iap/iap/h;
+000014: return-void 
+
+METHOD a (Lcom/google/android/gms/tasks/Task;)V
+000000: const-string v0, "it"
+000004: invoke-static v1, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: return-void 
+
+METHOD a (Ljava/lang/Class;)V
+000000: invoke-virtual v2, Ljava/lang/Class;->getName()Ljava/lang/String;
+000006: move-result-object v2
+000008: const-string v0, "getName(...)"
+00000c: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object; Ljava/lang/String;)V
+000012: invoke-static v2, Lcom/brian/base_iap/utils/NativeCodecSnowFlakeCortexAI;->nativeAiStashContext(Ljava/lang/String;)V
+000018: new-instance v2, Lcom/brian/base_application/BaseApplication$initIapRouter$1;
+00001c: invoke-direct v2, Lcom/brian/base_application/BaseApplication$initIapRouter$1;-><init>()V
+000022: sput-object v2, Lcom/brian/base_iap/iap/m;->a Lcom/brian/base_application/BaseApplication$initIapRouter$1;
+000026: return-void 
+
+METHOD a (Lkotlin/jvm/functions/Function1; Ljava/lang/Object;)V
+000000: invoke-interface v0, v1, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+000006: return-void 
+
+METHOD a ([I)V
+000000: sget-object v0, Lcom/brian/base_notification/notification/NotificationManager;->INSTANCE Lcom/brian/base_notification/notification/NotificationManager;
+000004: invoke-virtual v0, v2, Lcom/brian/base_notification/notification/NotificationManager;->setImageResArray([I)Lcom/brian/base_notification/notification/NotificationManager;
+00000a: return-void 
+
+METHOD a (Lcom/brian/base_application/BaseApplication;)Z
+000000: invoke-virtual v0, Lcom/brian/base_application/BaseApplication;->enableAdsResume()Z
+000006: move-result v0
+000008: return v0
+
+METHOD access$toIapBranding (Lcom/brian/base_application/BaseApplication; Lcom/brian/base_application/IapBranding;)Lcom/brian/base_iap/iap/g;
+000000: invoke-direct v0, v1, Lcom/brian/base_application/BaseApplication;->a(Lcom/brian/base_application/IapBranding;)Lcom/brian/base_iap/iap/g;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD b (Lcom/brian/base_application/IapBrandingProviderAlias;)Lcom/brian/base_iap/iap/h;
+000000: new-instance v0, Lcom/brian/base_application/BaseApplication$toIapBrandingProvider$1;
+000004: invoke-direct v0, v1, v2, Lcom/brian/base_application/BaseApplication$toIapBrandingProvider$1;-><init>(Lcom/brian/base_application/BaseApplication; Lcom/brian/base_application/IapBrandingProviderAlias;)V
+00000a: return-object v0
+
+METHOD b (Lcom/brian/base_application/CallUseAppNotiConfig;)Lcom/brian/base_notification/common/a;
+000000: new-instance v0, Lcom/brian/base_notification/common/a;
+000004: invoke-virtual v4, Lcom/brian/base_application/CallUseAppNotiConfig;->getTitleRes()I
+00000a: move-result v1
+00000c: invoke-virtual v4, Lcom/brian/base_application/CallUseAppNotiConfig;->getMessageRes()I
+000012: move-result v2
+000014: invoke-virtual v4, Lcom/brian/base_application/CallUseAppNotiConfig;->getButtonRes()I
+00001a: move-result v4
+00001c: invoke-direct v0, v1, v2, v4, Lcom/brian/base_notification/common/a;-><init>(I I I)V
+000022: return-object v0
+
+METHOD b (Lcom/brian/base_application/DailyFullScreenConfig;)Lcom/brian/base_notification/common/b;
+000000: invoke-virtual v7, Lcom/brian/base_application/DailyFullScreenConfig;->getTitleRes()I
+000006: move-result v1
+000008: invoke-virtual v7, Lcom/brian/base_application/DailyFullScreenConfig;->getContentRes()I
+00000e: move-result v2
+000010: invoke-virtual v7, Lcom/brian/base_application/DailyFullScreenConfig;->getIconRes()I
+000016: move-result v3
+000018: invoke-virtual v7, Lcom/brian/base_application/DailyFullScreenConfig;->getButtonCheckTextRes()I
+00001e: move-result v4
+000020: invoke-virtual v7, Lcom/brian/base_application/DailyFullScreenConfig;->getItems()Ljava/util/List;
+000026: move-result-object v7
+000028: new-instance v5, Ljava/util/ArrayList;
+00002c: const/16 v0, 10
+000030: invoke-static v7, v0, Lkotlin/collections/c0;->collectionSizeOrDefault(Ljava/lang/Iterable; I)I
+000036: move-result v0
+000038: invoke-direct v5, v0, Ljava/util/ArrayList;-><init>(I)V
+00003e: invoke-interface v7, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+000044: move-result-object v7
+000046: invoke-interface v7, Ljava/util/Iterator;->hasNext()Z
+00004c: move-result v0
+00004e: if-eqz v0, +010h
+000052: invoke-interface v7, Ljava/util/Iterator;->next()Ljava/lang/Object;
+000058: move-result-object v0
+00005a: check-cast v0, Lcom/brian/base_application/FullScreenItemConfig;
+00005e: invoke-direct v6, v0, Lcom/brian/base_application/BaseApplication;->a(Lcom/brian/base_application/FullScreenItemConfig;)Lcom/brian/base_notification/common/c;
+000064: move-result-object v0
+000066: invoke-virtual v5, v0, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+00006c: goto -13h
+00006e: new-instance v0, Lcom/brian/base_notification/common/b;
+000072: invoke-direct/range v0 ... v5, Lcom/brian/base_notification/common/b;-><init>(I I I I Ljava/util/List;)V
+000078: return-object v0
+
+METHOD b ()V
+000000: sget-object v0, Lcom/nlbn/ads/util/AppOpenManager;->Companion Lcom/nlbn/ads/util/AppOpenManager$Companion;
+000004: invoke-virtual v0, Lcom/nlbn/ads/util/AppOpenManager$Companion;->getInstance()Lcom/nlbn/ads/util/AppOpenManager;
+00000a: move-result-object v1
+00000c: invoke-virtual v1, v3, Lcom/nlbn/ads/util/AppOpenManager;->init(Landroid/app/Application;)V
+000012: invoke-virtual v3, Lcom/brian/base_application/BaseApplication;->getResumeAdId()Ljava/lang/String;
+000018: move-result-object v1
+00001a: if-eqz v1, +009h
+00001e: invoke-virtual v0, Lcom/nlbn/ads/util/AppOpenManager$Companion;->getInstance()Lcom/nlbn/ads/util/AppOpenManager;
+000024: move-result-object v2
+000026: invoke-virtual v2, v1, Lcom/nlbn/ads/util/AppOpenManager;->setAppResumeAdId(Ljava/lang/String;)V
+00002c: invoke-virtual v0, Lcom/nlbn/ads/util/AppOpenManager$Companion;->getInstance()Lcom/nlbn/ads/util/AppOpenManager;
+000032: move-result-object v1
+000034: const-class v2, Lcom/brian/base_iap/iap/IapActivity;
+000038: invoke-virtual v1, v2, Lcom/nlbn/ads/util/AppOpenManager;->disableAppResumeWithActivity(Ljava/lang/Class;)V
+00003e: invoke-virtual v0, Lcom/nlbn/ads/util/AppOpenManager$Companion;->getInstance()Lcom/nlbn/ads/util/AppOpenManager;
+000044: move-result-object v1
+000046: const-class v2, Lcom/brian/base_application/start/SplashActivity;
+00004a: invoke-virtual v1, v2, Lcom/nlbn/ads/util/AppOpenManager;->disableAppResumeWithActivity(Ljava/lang/Class;)V
+000050: invoke-virtual v0, Lcom/nlbn/ads/util/AppOpenManager$Companion;->getInstance()Lcom/nlbn/ads/util/AppOpenManager;
+000056: move-result-object v0
+000058: const-class v1, Lcom/brian/base_application/start/SplashUninstallActivity;
+00005c: invoke-virtual v0, v1, Lcom/nlbn/ads/util/AppOpenManager;->disableAppResumeWithActivity(Ljava/lang/Class;)V
+000062: return-void 
+
+METHOD b (Lcom/google/android/gms/tasks/Task;)V
+000000: const-string v0, "it"
+000004: invoke-static v1, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: return-void 
+
+METHOD b (Ljava/lang/String;)V
+000000: sget-object v0, Lcom/brian/base_notification/notification/NotificationManager;->INSTANCE Lcom/brian/base_notification/notification/NotificationManager;
+000004: invoke-virtual v0, v2, Lcom/brian/base_notification/notification/NotificationManager;->setAppName(Ljava/lang/String;)Lcom/brian/base_notification/notification/NotificationManager;
+00000a: return-void 
+
+METHOD b (Lcom/brian/base_application/BaseApplication;)Z
+000000: invoke-virtual v1, Lcom/brian/base_application/BaseApplication;->getApplicationContext()Landroid/content/Context;
+000006: move-result-object v1
+000008: sget-boolean v0, Lcom/brian/base_iap/utils/e;->a Z
+00000c: invoke-static v1, v0, Lcom/brian/base_iap/utils/NativeCodecSnowFlakeCortexAI;->nativeAiEvaluatePrompt(Landroid/content/Context; Z)Z
+000012: move-result v1
+000014: return v1
+000016: const/4 v1, 1
+000018: return v1
+
+METHOD c ()V
+000000: invoke-virtual v4, Lcom/nlbn/ads/util/AdsApplication;->buildDebug()Ljava/lang/Boolean;
+000006: move-result-object v0
+000008: const/4 v1, 0
+00000a: if-eqz v0, +007h
+00000e: invoke-virtual v0, Ljava/lang/Boolean;->booleanValue()Z
+000014: move-result v0
+000016: goto +2h
+000018: move v0, v1
+00001a: sput-boolean v0, Lcom/brian/base_iap/utils/e;->a Z
+00001e: sget-object v0, Lcom/nlbn/ads/util/PreferenceManager;->Companion Lcom/nlbn/ads/util/PreferenceManager$Companion;
+000022: invoke-virtual v0, v4, Lcom/nlbn/ads/util/PreferenceManager$Companion;->init(Landroid/content/Context;)V
+000028: invoke-virtual v0, Lcom/nlbn/ads/util/PreferenceManager$Companion;->getInstance()Lcom/nlbn/ads/util/PreferenceManager;
+00002e: move-result-object v0
+000030: const-string v2, "8989c4d52a2df21f1e55b1faaa7cbb43"
+000034: const/4 v3, 1
+000036: invoke-virtual v0, v2, v3, Lcom/nlbn/ads/util/PreferenceManager;->putBoolean(Ljava/lang/String; Z)V
+00003c: invoke-static v4, Lcom/brian/base_iap/utils/PreferencesUtils;->init(Landroid/content/Context;)V
+000042: invoke-virtual v4, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+000048: move-result-object v0
+00004a: invoke-virtual v4, v0, v1, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+000050: move-result-object v0
+000052: sput-object v0, Lcom/brian/base_iap/utils/PreferencesHelper;->a Landroid/content/SharedPreferences;
+000056: sget-object v0, Ly6/r;->b Ly6/p;
+00005a: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->getApplicationContext()Landroid/content/Context;
+000060: move-result-object v0
+000062: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->enableHandleAFSource()Ljava/lang/Boolean;
+000068: move-result-object v1
+00006a: invoke-static v0, v1, Lcom/brian/base_notification/notification/AttentionRouter;->nativeAiCalibratePrior(Landroid/content/Context; Ljava/lang/Boolean;)V
+000070: sget-object v0, Lkotlin/Unit;->a Lkotlin/Unit;
+000074: return-void 
+000076: move-exception v0
+000078: sget-object v1, Ly6/r;->b Ly6/p;
+00007c: invoke-static v0, Lcom/bumptech/glide/c;->p(Ljava/lang/Throwable;)Ly6/q;
+000082: return-void 
+
+METHOD c (Lcom/google/android/gms/tasks/Task;)V
+000000: invoke-static v0, Lcom/brian/base_application/BaseApplication;->a(Lcom/google/android/gms/tasks/Task;)V
+000006: return-void 
+
+METHOD c (Ljava/lang/String;)V
+000000: sget-object v0, Lcom/brian/base_notification/notification/NotificationManager;->INSTANCE Lcom/brian/base_notification/notification/NotificationManager;
+000004: invoke-virtual v0, v2, Lcom/brian/base_notification/notification/NotificationManager;->setChannelPrefix(Ljava/lang/String;)Lcom/brian/base_notification/notification/NotificationManager;
+00000a: return-void 
+
+METHOD d (Landroid/content/Context;)Landroid/content/Context;
+000000: invoke-static v0, Lcom/brian/base_application/BaseApplication;->a(Landroid/content/Context;)Landroid/content/Context;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD d ()V
+000000: sget-object v0, Ly6/r;->b Ly6/p;
+000004: invoke-virtual v4, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
+00000a: move-result-object v0
+00000c: const-string v1, "default_ads_config.json"
+000010: invoke-virtual v0, v1, Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;
+000016: move-result-object v0
+000018: new-instance v1, Ljava/io/BufferedReader;
+00001c: new-instance v2, Ljava/io/InputStreamReader;
+000020: invoke-direct v2, v0, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
+000026: invoke-direct v1, v2, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+00002c: invoke-static v1, Lm1/c;->q(Ljava/io/Reader;)Ljava/lang/String;
+000032: move-result-object v2
+000034: invoke-virtual v1, Ljava/io/BufferedReader;->close()V
+00003a: const/4 v1, 0
+00003c: invoke-static v0, v1, Lf4/b;->c(Ljava/io/Closeable; Ljava/lang/Throwable;)V
+000042: goto +18h
+000044: move-exception v0
+000046: goto +10h
+000048: move-exception v1
+00004a: goto +8h
+00004c: move-exception v2
+00004e: throw v2
+000050: move-exception v3
+000052: invoke-static v1, v2, Lf4/b;->c(Ljava/io/Closeable; Ljava/lang/Throwable;)V
+000058: throw v3
+00005a: throw v1
+00005c: move-exception v2
+00005e: invoke-static v0, v1, Lf4/b;->c(Ljava/io/Closeable; Ljava/lang/Throwable;)V
+000064: throw v2
+000066: sget-object v1, Ly6/r;->b Ly6/p;
+00006a: invoke-static v0, Lcom/bumptech/glide/c;->p(Ljava/lang/Throwable;)Ly6/q;
+000070: move-result-object v2
+000072: invoke-static v2, Ly6/r;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+000078: move-result-object v0
+00007a: if-nez v0, +003h
+00007e: goto +3h
+000080: const-string v2, ""
+000084: check-cast v2, Ljava/lang/String;
+000088: sget-object v0, Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil;->Companion Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil$Companion;
+00008c: invoke-virtual v0, Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil$Companion;->getInstance()Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil;
+000092: move-result-object v0
+000094: invoke-virtual v0, v2, Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil;->setDefaultAdsConfigJson(Ljava/lang/String;)V
+00009a: return-void 
+
+METHOD e (Z)Lkotlin/Unit;
+000000: invoke-static v0, Lcom/brian/base_application/BaseApplication;->a(Z)Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD e ()V
+000000: invoke-static v4, Lcom/google/firebase/FirebaseApp;->initializeApp(Landroid/content/Context;)Lcom/google/firebase/FirebaseApp;
+000006: invoke-virtual v4, Lcom/nlbn/ads/util/AdsApplication;->buildDebug()Ljava/lang/Boolean;
+00000c: move-result-object v0
+00000e: sget-object v1, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+000012: invoke-static v0, v1, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000018: move-result v0
+00001a: if-nez v0, +025h
+00001e: invoke-static Lcom/google/firebase/appcheck/FirebaseAppCheck;->getInstance()Lcom/google/firebase/appcheck/FirebaseAppCheck;
+000024: move-result-object v0
+000026: invoke-static Lcom/google/firebase/appcheck/playintegrity/PlayIntegrityAppCheckProviderFactory;->getInstance()Lcom/google/firebase/appcheck/playintegrity/PlayIntegrityAppCheckProviderFactory;
+00002c: move-result-object v1
+00002e: invoke-virtual v0, v1, Lcom/google/firebase/appcheck/FirebaseAppCheck;->installAppCheckProviderFactory(Lcom/google/firebase/appcheck/AppCheckProviderFactory;)V
+000034: invoke-static Lcom/google/firebase/messaging/FirebaseMessaging;->getInstance()Lcom/google/firebase/messaging/FirebaseMessaging;
+00003a: move-result-object v0
+00003c: const-string v1, "release_devices"
+000040: invoke-virtual v0, v1, Lcom/google/firebase/messaging/FirebaseMessaging;->subscribeToTopic(Ljava/lang/String;)Lcom/google/android/gms/tasks/Task;
+000046: move-result-object v0
+000048: new-instance v1, Lw1/a;
+00004c: const/4 v2, 1
+00004e: invoke-direct v1, v2, Lw1/a;-><init>(I)V
+000054: invoke-virtual v0, v1, Lcom/google/android/gms/tasks/Task;->addOnCompleteListener(Lcom/google/android/gms/tasks/OnCompleteListener;)Lcom/google/android/gms/tasks/Task;
+00005a: move-result-object v0
+00005c: invoke-static v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+000062: goto +1ch
+000064: invoke-static Lcom/google/firebase/messaging/FirebaseMessaging;->getInstance()Lcom/google/firebase/messaging/FirebaseMessaging;
+00006a: move-result-object v0
+00006c: const-string v1, "debug_device"
+000070: invoke-virtual v0, v1, Lcom/google/firebase/messaging/FirebaseMessaging;->subscribeToTopic(Ljava/lang/String;)Lcom/google/android/gms/tasks/Task;
+000076: move-result-object v0
+000078: new-instance v1, Lw1/a;
+00007c: const/4 v2, 2
+00007e: invoke-direct v1, v2, Lw1/a;-><init>(I)V
+000084: invoke-virtual v0, v1, Lcom/google/android/gms/tasks/Task;->addOnCompleteListener(Lcom/google/android/gms/tasks/OnCompleteListener;)Lcom/google/android/gms/tasks/Task;
+00008a: invoke-static v4, Lcom/google/firebase/analytics/FirebaseAnalytics;->getInstance(Landroid/content/Context;)Lcom/google/firebase/analytics/FirebaseAnalytics;
+000090: move-result-object v0
+000092: const/4 v1, 0
+000094: invoke-virtual v0, v1, Lcom/google/firebase/analytics/FirebaseAnalytics;->setAnalyticsCollectionEnabled(Z)V
+00009a: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->u()V
+0000a0: sget-object v0, Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil;->Companion Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil$Companion;
+0000a4: invoke-virtual v0, Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil$Companion;->getInstance()Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil;
+0000aa: move-result-object v0
+0000ac: new-instance v1, Ly7/s;
+0000b0: const/4 v2, 2
+0000b2: invoke-direct v1, v2, Ly7/s;-><init>(I)V
+0000b8: invoke-virtual v0, v1, Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil;->fetchRemoteConfig(Lkotlin/jvm/functions/Function1;)V
+0000be: invoke-static Lcom/google/firebase/messaging/FirebaseMessaging;->getInstance()Lcom/google/firebase/messaging/FirebaseMessaging;
+0000c4: move-result-object v0
+0000c6: invoke-virtual v0, Lcom/google/firebase/messaging/FirebaseMessaging;->getToken()Lcom/google/android/gms/tasks/Task;
+0000cc: move-result-object v0
+0000ce: new-instance v1, Ly7/s;
+0000d2: const/4 v2, 3
+0000d4: invoke-direct v1, v2, Ly7/s;-><init>(I)V
+0000da: new-instance v2, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/image_management/c;
+0000de: const/16 v3, 11
+0000e2: invoke-direct v2, v1, v3, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/image_management/c;-><init>(Ljava/lang/Object; I)V
+0000e8: invoke-virtual v0, v2, Lcom/google/android/gms/tasks/Task;->addOnSuccessListener(Lcom/google/android/gms/tasks/OnSuccessListener;)Lcom/google/android/gms/tasks/Task;
+0000ee: invoke-static Lcom/google/firebase/firestore/FirebaseFirestore;->getInstance()Lcom/google/firebase/firestore/FirebaseFirestore;
+0000f4: return-void 
+
+METHOD f ()V
+000000: new-instance v0, Lcom/brian/base_application/BaseApplication$initIapBrandingRouter$1;
+000004: invoke-direct v0, v1, Lcom/brian/base_application/BaseApplication$initIapBrandingRouter$1;-><init>(Lcom/brian/base_application/BaseApplication;)V
+00000a: invoke-direct v1, v0, Lcom/brian/base_application/BaseApplication;->a(Lcom/brian/base_application/IapBrandingProviderAlias;)V
+000010: return-void 
+
+METHOD f (Lcom/google/android/gms/tasks/Task;)V
+000000: invoke-static v0, Lcom/brian/base_application/BaseApplication;->b(Lcom/google/android/gms/tasks/Task;)V
+000006: return-void 
+
+METHOD g ()V
+000000: new-instance v0, Ly7/s;
+000004: const/4 v1, 1
+000006: invoke-direct v0, v1, Ly7/s;-><init>(I)V
+00000c: sput-object v0, Lcom/brian/base_iap/iap/j;->b Lkotlin/jvm/functions/Function1;
+000010: new-instance v0, Lcom/brian/base_application/IapFeature;
+000014: invoke-virtual v9, Lcom/brian/base_application/BaseApplication;->getFeature1TextRes()Ljava/lang/Integer;
+00001a: move-result-object v1
+00001c: if-eqz v1, +007h
+000020: invoke-virtual v1, Ljava/lang/Integer;->intValue()I
+000026: move-result v1
+000028: goto +3h
+00002a: sget v1, Lcom/brian/base_application/R$string;->feature_default_1 I
+00002e: invoke-virtual v9, Lcom/brian/base_application/BaseApplication;->getFeature1IconRes()I
+000034: move-result v2
+000036: const/4 v3, 1
+000038: invoke-direct v0, v1, v2, v3, v3, Lcom/brian/base_application/IapFeature;-><init>(I I Z Z)V
+00003e: new-instance v1, Lcom/brian/base_application/IapFeature;
+000042: invoke-virtual v9, Lcom/brian/base_application/BaseApplication;->getFeature2TextRes()Ljava/lang/Integer;
+000048: move-result-object v2
+00004a: if-eqz v2, +007h
+00004e: invoke-virtual v2, Ljava/lang/Integer;->intValue()I
+000054: move-result v2
+000056: goto +3h
+000058: sget v2, Lcom/brian/base_application/R$string;->feature_default_2 I
+00005c: invoke-virtual v9, Lcom/brian/base_application/BaseApplication;->getFeature2IconRes()I
+000062: move-result v4
+000064: invoke-direct v1, v2, v4, v3, v3, Lcom/brian/base_application/IapFeature;-><init>(I I Z Z)V
+00006a: new-instance v2, Lcom/brian/base_application/IapFeature;
+00006e: invoke-virtual v9, Lcom/brian/base_application/BaseApplication;->getFeature3TextRes()Ljava/lang/Integer;
+000074: move-result-object v4
+000076: if-eqz v4, +007h
+00007a: invoke-virtual v4, Ljava/lang/Integer;->intValue()I
+000080: move-result v4
+000082: goto +3h
+000084: sget v4, Lcom/brian/base_application/R$string;->feature_default_3 I
+000088: invoke-virtual v9, Lcom/brian/base_application/BaseApplication;->getFeature3IconRes()I
+00008e: move-result v5
+000090: const/4 v6, 0
+000092: invoke-direct v2, v4, v5, v3, v6, Lcom/brian/base_application/IapFeature;-><init>(I I Z Z)V
+000098: new-instance v4, Lcom/brian/base_application/IapFeature;
+00009c: invoke-virtual v9, Lcom/brian/base_application/BaseApplication;->getFeature4TextRes()Ljava/lang/Integer;
+0000a2: move-result-object v5
+0000a4: if-eqz v5, +007h
+0000a8: invoke-virtual v5, Ljava/lang/Integer;->intValue()I
+0000ae: move-result v5
+0000b0: goto +3h
+0000b2: sget v5, Lcom/brian/base_application/R$string;->feature_default_4 I
+0000b6: invoke-virtual v9, Lcom/brian/base_application/BaseApplication;->getFeature4IconRes()I
+0000bc: move-result v7
+0000be: invoke-direct v4, v5, v7, v3, v6, Lcom/brian/base_application/IapFeature;-><init>(I I Z Z)V
+0000c4: new-instance v5, Lcom/brian/base_application/IapFeature;
+0000c8: invoke-virtual v9, Lcom/brian/base_application/BaseApplication;->getFeature5TextRes()Ljava/lang/Integer;
+0000ce: move-result-object v7
+0000d0: if-eqz v7, +007h
+0000d4: invoke-virtual v7, Ljava/lang/Integer;->intValue()I
+0000da: move-result v7
+0000dc: goto +3h
+0000de: sget v7, Lcom/brian/base_application/R$string;->feature_default_5 I
+0000e2: invoke-virtual v9, Lcom/brian/base_application/BaseApplication;->getFeature5IconRes()I
+0000e8: move-result v8
+0000ea: invoke-direct v5, v7, v8, v3, v6, Lcom/brian/base_application/IapFeature;-><init>(I I Z Z)V
+0000f0: filled-new-array v0, v1, v2, v4, v5, [Lcom/brian/base_application/IapFeature;
+0000f6: move-result-object v0
+0000f8: invoke-static v0, Lkotlin/collections/b0;->listOf([Ljava/lang/Object;)Ljava/util/List;
+0000fe: move-result-object v0
+000100: new-instance v1, Ljava/util/ArrayList;
+000104: const/16 v2, 10
+000108: invoke-static v0, v2, Lkotlin/collections/c0;->collectionSizeOrDefault(Ljava/lang/Iterable; I)I
+00010e: move-result v2
+000110: invoke-direct v1, v2, Ljava/util/ArrayList;-><init>(I)V
+000116: invoke-interface v0, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+00011c: move-result-object v0
+00011e: invoke-interface v0, Ljava/util/Iterator;->hasNext()Z
+000124: move-result v2
+000126: if-eqz v2, +010h
+00012a: invoke-interface v0, Ljava/util/Iterator;->next()Ljava/lang/Object;
+000130: move-result-object v2
+000132: check-cast v2, Lcom/brian/base_application/IapFeature;
+000136: invoke-direct v9, v2, Lcom/brian/base_application/BaseApplication;->a(Lcom/brian/base_application/IapFeature;)Lcom/brian/base_iap/iap/k;
+00013c: move-result-object v2
+00013e: invoke-virtual v1, v2, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+000144: goto -13h
+000146: const-string v0, "<set-?>"
+00014a: invoke-static v1, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+000150: sput-object v1, Lcom/brian/base_iap/iap/j;->a Ljava/util/List;
+000154: return-void 
+
+METHOD h ()V
+000000: const-string v0, "language"
+000004: invoke-static v0, Lcom/brian/base_iap/utils/PreferencesHelper;->getString(Ljava/lang/String;)Ljava/lang/String;
+00000a: move-result-object v1
+00000c: invoke-static v1, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+000012: move-result v1
+000014: if-eqz v1, +07dh
+000018: invoke-static v6, Lcom/brian/base_application/language/LocaleManager;->getInstance(Landroid/content/Context;)Lcom/brian/base_application/language/LocaleManager;
+00001e: move-result-object v1
+000020: const-string v2, "en"
+000024: invoke-virtual v1, v2, Lcom/brian/base_application/language/LocaleManager;->setPrefLanguage(Ljava/lang/String;)V
+00002a: invoke-virtual v6, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+000030: move-result-object v1
+000032: invoke-virtual v1, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+000038: move-result-object v1
+00003a: invoke-virtual v1, Landroid/content/res/Configuration;->getLocales()Landroid/os/LocaleList;
+000040: move-result-object v1
+000042: const/4 v2, 0
+000044: invoke-virtual v1, v2, Landroid/os/LocaleList;->get(I)Ljava/util/Locale;
+00004a: move-result-object v1
+00004c: invoke-virtual v1, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+000052: move-result-object v1
+000054: sget-object v3, Lcom/brian/base_application/language/LocaleManager;->lstCodeLanguage [Ljava/lang/String;
+000058: array-length v3, v3
+00005a: move v4, v2
+00005c: if-ge v4, v3, +059h
+000060: sget-object v5, Lcom/brian/base_application/language/LocaleManager;->lstCodeLanguage [Ljava/lang/String;
+000064: aget-object v5, v5, v4
+000068: invoke-static v1, v5, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+00006e: move-result v5
+000070: if-eqz v5, +04ch
+000074: invoke-static v0, v1, Lcom/brian/base_iap/utils/PreferencesHelper;->putString(Ljava/lang/String; Ljava/lang/String;)V
+00007a: iget-object v0, v6, Lcom/brian/base_application/BaseApplication;->a Lu/c;
+00007e: invoke-virtual v6, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+000084: move-result-object v1
+000086: invoke-virtual v1, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+00008c: move-result-object v1
+00008e: invoke-virtual v1, Landroid/content/res/Configuration;->getLocales()Landroid/os/LocaleList;
+000094: move-result-object v1
+000096: invoke-virtual v1, v2, Landroid/os/LocaleList;->get(I)Ljava/util/Locale;
+00009c: move-result-object v1
+00009e: const-string v3, "get(...)"
+0000a2: invoke-static v1, v3, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object; Ljava/lang/String;)V
+0000a8: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0000ae: const-string v0, "context"
+0000b2: invoke-static v6, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+0000b8: const-string v3, "locale"
+0000bc: invoke-static v1, v3, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+0000c2: invoke-static v6, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+0000c8: invoke-static v1, v3, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+0000ce: invoke-virtual v1, Ljava/util/Locale;->toString()Ljava/lang/String;
+0000d4: move-result-object v0
+0000d6: const-string v1, "locale.toString()"
+0000da: invoke-static v0, v1, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object; Ljava/lang/String;)V
+0000e0: const-string v1, "pref_language"
+0000e4: invoke-virtual v6, v1, v2, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+0000ea: move-result-object v1
+0000ec: invoke-interface v1, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+0000f2: move-result-object v1
+0000f4: const-string v2, "key_default_language"
+0000f8: invoke-interface v1, v2, v0, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String; Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+0000fe: move-result-object v0
+000100: invoke-interface v0, Landroid/content/SharedPreferences$Editor;->apply()V
+000106: return-void 
+000108: add-int/lit8 v4, v4, 1
+00010c: goto -58h
+00010e: return-void 
+
+METHOD i ()V
+000000: sget-object v0, Landroidx/lifecycle/ProcessLifecycleOwner;->Companion Landroidx/lifecycle/ProcessLifecycleOwner$Companion;
+000004: invoke-virtual v0, Landroidx/lifecycle/ProcessLifecycleOwner$Companion;->get()Landroidx/lifecycle/LifecycleOwner;
+00000a: move-result-object v0
+00000c: invoke-interface v0, Landroidx/lifecycle/LifecycleOwner;->getLifecycle()Landroidx/lifecycle/Lifecycle;
+000012: move-result-object v0
+000014: invoke-virtual v0, v1, Landroidx/lifecycle/Lifecycle;->addObserver(Landroidx/lifecycle/LifecycleObserver;)V
+00001a: return-void 
+
+METHOD j ()V
+000000: new-instance v0, Lcom/appsflyer/api/PurchaseClient$Builder;
+000004: sget-object v1, Lcom/appsflyer/api/Store;->GOOGLE Lcom/appsflyer/api/Store;
+000008: invoke-direct v0, v2, v1, Lcom/appsflyer/api/PurchaseClient$Builder;-><init>(Landroid/content/Context; Lcom/appsflyer/api/Store;)V
+00000e: const/4 v1, 1
+000010: invoke-virtual v0, v1, Lcom/appsflyer/api/PurchaseClient$Builder;->logSubscriptions(Z)Lcom/appsflyer/api/PurchaseClient$Builder;
+000016: move-result-object v0
+000018: invoke-virtual v2, Lcom/nlbn/ads/util/AdsApplication;->buildDebug()Ljava/lang/Boolean;
+00001e: move-result-object v1
+000020: if-eqz v1, +007h
+000024: invoke-virtual v1, Ljava/lang/Boolean;->booleanValue()Z
+00002a: move-result v1
+00002c: goto +2h
+00002e: const/4 v1, 0
+000030: invoke-virtual v0, v1, Lcom/appsflyer/api/PurchaseClient$Builder;->setSandbox(Z)Lcom/appsflyer/api/PurchaseClient$Builder;
+000036: move-result-object v0
+000038: new-instance v1, Lcom/brian/base_application/BaseApplication$initMMP$builder$1;
+00003c: invoke-direct v1, Lcom/brian/base_application/BaseApplication$initMMP$builder$1;-><init>()V
+000042: invoke-virtual v0, v1, Lcom/appsflyer/api/PurchaseClient$Builder;->setSubscriptionValidationResultListener(Lcom/appsflyer/api/PurchaseClient$SubscriptionPurchaseValidationResultListener;)Lcom/appsflyer/api/PurchaseClient$Builder;
+000048: move-result-object v0
+00004a: invoke-virtual v0, Lcom/appsflyer/api/PurchaseClient$Builder;->build()Lcom/appsflyer/api/PurchaseClient;
+000050: move-result-object v0
+000052: iput-object v0, v2, Lcom/brian/base_application/BaseApplication;->b Lcom/appsflyer/api/PurchaseClient;
+000056: if-eqz v0, +005h
+00005a: invoke-interface v0, Lcom/appsflyer/api/PurchaseClient;->startObservingTransactions()V
+000060: return-void 
+
+METHOD k ()V
+000000: sget-object v0, Lcom/brian/base_notification/notification/NotificationManager;->INSTANCE Lcom/brian/base_notification/notification/NotificationManager;
+000004: invoke-virtual v0, v1, Lcom/brian/base_notification/notification/NotificationManager;->init(Landroid/content/Context;)V
+00000a: invoke-virtual v0, Lcom/brian/base_notification/notification/NotificationManager;->createNotificationChannel()V
+000010: invoke-static v1, Lcom/brian/base_notification/gteg54g34b4t3/e;->a(Lcom/brian/base_application/BaseApplication;)V
+000016: return-void 
+
+METHOD l ()V
+000000: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getNotificationImages()[I
+000006: move-result-object v0
+000008: invoke-direct v10, v0, Lcom/brian/base_application/BaseApplication;->a([I)V
+00000e: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getAppNameRes()I
+000014: move-result v0
+000016: invoke-virtual v10, v0, Landroid/content/Context;->getString(I)Ljava/lang/String;
+00001c: move-result-object v0
+00001e: const-string v1, "getString(...)"
+000022: invoke-static v0, v1, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object; Ljava/lang/String;)V
+000028: invoke-direct v10, v0, Lcom/brian/base_application/BaseApplication;->b(Ljava/lang/String;)V
+00002e: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getNotificationIconRes()I
+000034: move-result v0
+000036: invoke-direct v10, v0, Lcom/brian/base_application/BaseApplication;->a(I)V
+00003c: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getNotificationChannelPrefix()Ljava/lang/String;
+000042: move-result-object v0
+000044: invoke-direct v10, v0, Lcom/brian/base_application/BaseApplication;->c(Ljava/lang/String;)V
+00004a: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getNewFileNotiContentRes()I
+000050: move-result v0
+000052: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getNewFileNotiContentRes()I
+000058: move-result v1
+00005a: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getScreenshotNotiTitleRes()I
+000060: move-result v2
+000062: invoke-direct v10, v0, v1, v2, Lcom/brian/base_application/BaseApplication;->a(I I I)V
+000068: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getRecentDocumentsTitleRes()I
+00006e: move-result v0
+000070: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getOpenTextRes()I
+000076: move-result v1
+000078: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getScanDocumentRes()I
+00007e: move-result v2
+000080: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getWidgetButtonBackgroundRes()I
+000086: move-result v3
+000088: invoke-direct v10, v0, v1, v2, v3, Lcom/brian/base_application/BaseApplication;->a(I I I I)V
+00008e: new-instance v4, Lcom/brian/base_application/DailyFullScreenConfig;
+000092: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getAppNameRes()I
+000098: move-result v5
+00009a: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getDailyCallOpenAppContentRes()I
+0000a0: move-result v6
+0000a2: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getIconSplashRes()I
+0000a8: move-result v7
+0000aa: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getCheckNowTextRes()I
+0000b0: move-result v8
+0000b2: new-instance v0, Lcom/brian/base_application/FullScreenItemConfig;
+0000b6: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getDocumentPreviewRes()I
+0000bc: move-result v1
+0000be: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getFullScreenNoti1Res()I
+0000c4: move-result v2
+0000c6: invoke-direct v0, v1, v2, Lcom/brian/base_application/FullScreenItemConfig;-><init>(I I)V
+0000cc: new-instance v1, Lcom/brian/base_application/FullScreenItemConfig;
+0000d0: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getDocumentPreviewRes()I
+0000d6: move-result v2
+0000d8: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getFullScreenNoti2Res()I
+0000de: move-result v3
+0000e0: invoke-direct v1, v2, v3, Lcom/brian/base_application/FullScreenItemConfig;-><init>(I I)V
+0000e6: filled-new-array v0, v1, [Lcom/brian/base_application/FullScreenItemConfig;
+0000ec: move-result-object v0
+0000ee: invoke-static v0, Lkotlin/collections/b0;->listOf([Ljava/lang/Object;)Ljava/util/List;
+0000f4: move-result-object v9
+0000f6: invoke-direct/range v4 ... v9, Lcom/brian/base_application/DailyFullScreenConfig;-><init>(I I I I Ljava/util/List;)V
+0000fc: invoke-direct v10, v4, Lcom/brian/base_application/BaseApplication;->a(Lcom/brian/base_application/DailyFullScreenConfig;)V
+000102: new-instance v0, Lcom/brian/base_application/CallUseAppNotiConfig;
+000106: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getNotificationTitles2ArrayRes()I
+00010c: move-result v1
+00010e: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getNotificationMessages2ArrayRes()I
+000114: move-result v2
+000116: invoke-virtual v10, Lcom/brian/base_application/BaseApplication;->getNotificationButtons2ArrayRes()I
+00011c: move-result v3
+00011e: invoke-direct v0, v1, v2, v3, Lcom/brian/base_application/CallUseAppNotiConfig;-><init>(I I I)V
+000124: invoke-direct v10, v0, Lcom/brian/base_application/BaseApplication;->a(Lcom/brian/base_application/CallUseAppNotiConfig;)V
+00012a: return-void 
+
+METHOD m ()V
+000000: sget-object v0, Lcom/brian/base_application/navigation/NotificationPermissionTextRouter;->INSTANCE Lcom/brian/base_application/navigation/NotificationPermissionTextRouter;
+000004: new-instance v1, Lcom/brian/base_application/BaseApplication$initNotificationPermissionTextRouter$1;
+000008: invoke-direct v1, v2, Lcom/brian/base_application/BaseApplication$initNotificationPermissionTextRouter$1;-><init>(Lcom/brian/base_application/BaseApplication;)V
+00000e: invoke-virtual v0, v1, Lcom/brian/base_application/navigation/NotificationPermissionTextRouter;->setProvider(Lcom/brian/base_application/navigation/NotificationPermissionTextProvider;)V
+000014: return-void 
+
+METHOD n ()V
+000000: sget-object v0, Lcom/brian/base_application/navigation/SplashBrandingRouter;->INSTANCE Lcom/brian/base_application/navigation/SplashBrandingRouter;
+000004: new-instance v1, Lcom/brian/base_application/BaseApplication$initSplashBrandingRouter$1;
+000008: invoke-direct v1, v2, Lcom/brian/base_application/BaseApplication$initSplashBrandingRouter$1;-><init>(Lcom/brian/base_application/BaseApplication;)V
+00000e: invoke-virtual v0, v1, Lcom/brian/base_application/navigation/SplashBrandingRouter;->setProvider(Lcom/brian/base_application/navigation/SplashBrandingProvider;)V
+000014: return-void 
+
+METHOD o ()V
+000000: invoke-virtual v0, Lcom/brian/base_application/BaseApplication;->setupKoin()V
+000006: return-void 
+
+METHOD p ()V
+000000: invoke-virtual v6, Lcom/brian/base_application/BaseApplication;->hasForegroundServicePermission()Z
+000006: move-result v0
+000008: if-eqz v0, +003h
+00000c: return-void 
+00000e: const-string v0, "context"
+000012: invoke-static v6, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+000018: new-instance v0, Landroidx/work/Constraints$Builder;
+00001c: invoke-direct v0, Landroidx/work/Constraints$Builder;-><init>()V
+000022: sget-object v1, Landroidx/work/NetworkType;->CONNECTED Landroidx/work/NetworkType;
+000026: invoke-virtual v0, v1, Landroidx/work/Constraints$Builder;->setRequiredNetworkType(Landroidx/work/NetworkType;)Landroidx/work/Constraints$Builder;
+00002c: move-result-object v0
+00002e: invoke-virtual v0, Landroidx/work/Constraints$Builder;->build()Landroidx/work/Constraints;
+000034: move-result-object v0
+000036: sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS Ljava/util/concurrent/TimeUnit;
+00003a: new-instance v2, Landroidx/work/PeriodicWorkRequest$Builder;
+00003e: const-class v3, Lcom/brian/base_notification/worker/FCMTopicCallUseAppResetWorker;
+000042: const-wide/16 v4, 3600
+000046: invoke-direct v2, v3, v4, v5, v1, Landroidx/work/PeriodicWorkRequest$Builder;-><init>(Ljava/lang/Class; J Ljava/util/concurrent/TimeUnit;)V
+00004c: const-wide/16 v3, 300
+000050: invoke-virtual v2, v3, v4, v1, Landroidx/work/WorkRequest$Builder;->setInitialDelay(J Ljava/util/concurrent/TimeUnit;)Landroidx/work/WorkRequest$Builder;
+000056: move-result-object v1
+000058: check-cast v1, Landroidx/work/PeriodicWorkRequest$Builder;
+00005c: invoke-virtual v1, v0, Landroidx/work/WorkRequest$Builder;->setConstraints(Landroidx/work/Constraints;)Landroidx/work/WorkRequest$Builder;
+000062: move-result-object v0
+000064: check-cast v0, Landroidx/work/PeriodicWorkRequest$Builder;
+000068: invoke-virtual v0, Landroidx/work/WorkRequest$Builder;->build()Landroidx/work/WorkRequest;
+00006e: move-result-object v0
+000070: check-cast v0, Landroidx/work/PeriodicWorkRequest;
+000074: sget-object v1, Landroidx/work/WorkManager;->Companion Landroidx/work/WorkManager$Companion;
+000078: invoke-virtual v1, v6, Landroidx/work/WorkManager$Companion;->getInstance(Landroid/content/Context;)Landroidx/work/WorkManager;
+00007e: move-result-object v1
+000080: sget-object v2, Landroidx/work/ExistingPeriodicWorkPolicy;->KEEP Landroidx/work/ExistingPeriodicWorkPolicy;
+000084: const-string v3, "check_ai_status"
+000088: invoke-virtual v1, v3, v2, v0, Landroidx/work/WorkManager;->enqueueUniquePeriodicWork(Ljava/lang/String; Landroidx/work/ExistingPeriodicWorkPolicy; Landroidx/work/PeriodicWorkRequest;)Landroidx/work/Operation;
+00008e: return-void 
+
+METHOD q ()V
+000000: invoke-virtual/range v17, Lcom/brian/base_application/BaseApplication;->iapPremiumKey()Ljava/lang/String;
+000006: move-result-object v0
+000008: invoke-virtual/range v17, Lcom/brian/base_application/BaseApplication;->iapPremiumWeeklyKey()Ljava/lang/String;
+00000e: move-result-object v1
+000010: invoke-virtual/range v17, Lcom/brian/base_application/BaseApplication;->iapPremiumMonthlyKey()Ljava/lang/String;
+000016: move-result-object v2
+000018: invoke-virtual/range v17, Lcom/brian/base_application/BaseApplication;->iapPremiumYearlyKey()Ljava/lang/String;
+00001e: move-result-object v3
+000020: invoke-virtual/range v17, Lcom/brian/base_application/BaseApplication;->iapPublicKey()Ljava/lang/String;
+000026: move-result-object v4
+000028: invoke-static v0, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+00002e: move-result v5
+000030: if-eqz v5, +007h
+000034: invoke-virtual/range v17, Lcom/brian/base_application/BaseApplication;->defaultIapPremiumKey()Ljava/lang/String;
+00003a: move-result-object v5
+00003c: goto +2h
+00003e: move-object v5, v0
+000040: invoke-static v1, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+000046: move-result v6
+000048: if-eqz v6, +007h
+00004c: invoke-virtual/range v17, Lcom/brian/base_application/BaseApplication;->defaultIapPremiumWeeklyKey()Ljava/lang/String;
+000052: move-result-object v6
+000054: goto +2h
+000056: move-object v6, v1
+000058: invoke-static v2, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+00005e: move-result v7
+000060: if-eqz v7, +007h
+000064: invoke-virtual/range v17, Lcom/brian/base_application/BaseApplication;->defaultIapPremiumMonthlyKey()Ljava/lang/String;
+00006a: move-result-object v7
+00006c: goto +2h
+00006e: move-object v7, v2
+000070: invoke-static v3, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+000076: move-result v8
+000078: if-eqz v8, +007h
+00007c: invoke-virtual/range v17, Lcom/brian/base_application/BaseApplication;->defaultIapPremiumYearlyKey()Ljava/lang/String;
+000082: move-result-object v8
+000084: goto +2h
+000086: move-object v8, v3
+000088: invoke-static v4, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+00008e: move-result v9
+000090: const-string v10, "MUST_BE_SET_TO_YOUR_OWN_KEY"
+000094: if-nez v9, +00bh
+000098: invoke-static v4, v10, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+00009e: move-result v9
+0000a0: if-eqz v9, +003h
+0000a4: goto +3h
+0000a6: move-object v9, v4
+0000a8: goto +3h
+0000aa: const-string v9, "no_iap_placeholder"
+0000ae: sget-object v11, Lcom/brian/base_iap/utils/AppUtils;->Companion Lcom/brian/base_iap/utils/a;
+0000b2: invoke-virtual v11, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0000b8: invoke-static v9, Lcom/brian/base_iap/utils/a;->a(Ljava/lang/String;)V
+0000be: sget-object v9, Lcom/brian/base_iap/utils/IAPUtils;->INSTANCE Lcom/brian/base_iap/utils/IAPUtils;
+0000c2: invoke-virtual v9, v5, Lcom/brian/base_iap/utils/IAPUtils;->setKEY_PREMIUM(Ljava/lang/String;)V
+0000c8: invoke-virtual v9, v6, Lcom/brian/base_iap/utils/IAPUtils;->setKEY_PREMIUM_WEEKLY_PLAN(Ljava/lang/String;)V
+0000ce: invoke-virtual v9, v7, Lcom/brian/base_iap/utils/IAPUtils;->setKEY_PREMIUM_MONTHLY_PLAN(Ljava/lang/String;)V
+0000d4: invoke-virtual v9, v8, Lcom/brian/base_iap/utils/IAPUtils;->setKEY_PREMIUM_YEARLY_PLAN(Ljava/lang/String;)V
+0000da: new-instance v11, Ljava/util/ArrayList;
+0000de: invoke-direct v11, Ljava/util/ArrayList;-><init>()V
+0000e4: invoke-static v0, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+0000ea: move-result v0
+0000ec: if-eqz v0, +007h
+0000f0: const-string v0, "iapPremiumKey"
+0000f4: invoke-virtual v11, v0, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+0000fa: invoke-static v1, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+000100: move-result v0
+000102: if-eqz v0, +007h
+000106: const-string v0, "iapPremiumWeeklyKey"
+00010a: invoke-virtual v11, v0, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+000110: invoke-static v2, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+000116: move-result v0
+000118: if-eqz v0, +007h
+00011c: const-string v0, "iapPremiumMonthlyKey"
+000120: invoke-virtual v11, v0, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+000126: invoke-static v3, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+00012c: move-result v0
+00012e: if-eqz v0, +007h
+000132: const-string v0, "iapPremiumYearlyKey"
+000136: invoke-virtual v11, v0, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+00013c: invoke-static v4, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+000142: move-result v0
+000144: if-nez v0, +008h
+000148: invoke-static v4, v10, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+00014e: move-result v0
+000150: if-eqz v0, +007h
+000154: const-string v0, "iapPublicKey"
+000158: invoke-virtual v11, v0, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+00015e: invoke-virtual v11, Ljava/util/ArrayList;->isEmpty()Z
+000164: move-result v0
+000166: if-nez v0, +00ch
+00016a: const/4 v15, 0
+00016c: const/16 v16, 62
+000170: const-string v12, ", "
+000174: const/4 v13, 0
+000176: const/4 v14, 0
+000178: invoke-static/range v11 ... v16, Lkotlin/collections/CollectionsKt;->i(Ljava/lang/Iterable; Ljava/lang/CharSequence; Ljava/lang/String; Ljava/lang/String; Lkotlin/jvm/functions/Function1; I)Ljava/lang/String;
+00017e: return-void 
+
+METHOD r ()Z
+000000: invoke-static Lcom/brian/base_iap/utils/IAPUtils;->isPremium()Z
+000006: move-result v0
+000008: return v0
+
+METHOD s ()Ljava/lang/String;
+000000: sget-object v0, Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil;->Companion Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil$Companion;
+000004: invoke-virtual v0, Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil$Companion;->getInstance()Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil;
+00000a: move-result-object v0
+00000c: const-string v1, "open_all"
+000010: invoke-virtual v0, v1, Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil;->getAdsConfigValue(Ljava/lang/String;)Ljava/lang/String;
+000016: move-result-object v0
+000018: return-object v0
+
+METHOD t ()V
+000000: sget-object v0, Lcom/brian/base_application/navigation/NextScreenRouter;->INSTANCE Lcom/brian/base_application/navigation/NextScreenRouter;
+000004: new-instance v1, Lcom/brian/base_application/BaseApplication$setNextScreenRouter$1;
+000008: invoke-direct v1, v2, Lcom/brian/base_application/BaseApplication$setNextScreenRouter$1;-><init>(Lcom/brian/base_application/BaseApplication;)V
+00000e: invoke-virtual v0, v1, Lcom/brian/base_application/navigation/NextScreenRouter;->setNavigationHandler(Lcom/brian/base_application/navigation/NextScreenNavigationHandler;)V
+000014: return-void 
+
+METHOD u ()V
+000000: invoke-static Landroid/icu/util/TimeZone;->getDefault()Landroid/icu/util/TimeZone;
+000006: move-result-object v0
+000008: invoke-virtual v0, Landroid/icu/util/TimeZone;->getRawOffset()I
+00000e: move-result v1
+000010: invoke-virtual v0, Landroid/icu/util/TimeZone;->getDSTSavings()I
+000016: move-result v0
+000018: add-int/2addr v0, v1
+00001a: const v1, 3600000
+000020: div-int/2addr v0, v1
+000022: const-string/jumbo v1, utc
+000028: invoke-static v0, v1, La5/c;->h(I Ljava/lang/String;)Ljava/lang/String;
+00002e: move-result-object v0
+000030: sget-object v1, Lv7/l0;->a Lc8/e;
+000034: sget-object v1, Lc8/d;->a Lc8/d;
+000038: invoke-static v1, Lv7/b0;->b(Lkotlin/coroutines/CoroutineContext;)La8/c;
+00003e: move-result-object v1
+000040: new-instance v2, Lcom/brian/base_application/b;
+000044: const/4 v3, 0
+000046: invoke-direct v2, v0, v3, Lcom/brian/base_application/b;-><init>(Ljava/lang/String; Lb7/c;)V
+00004c: const/4 v0, 3
+00004e: invoke-static v1, v3, v3, v2, v0, Lv7/b0;->w(Lv7/y; Lkotlin/coroutines/CoroutineContext; Lv7/z; Lkotlin/jvm/functions/Function2; I)Lv7/u1;
+000054: return-void 
+
+METHOD v ()Ljava/lang/String;
+000000: invoke-static Lcom/brian/base_application/BaseApplication;->s()Ljava/lang/String;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD w (Lcom/brian/base_application/BaseApplication;)Z
+000000: invoke-static v0, Lcom/brian/base_application/BaseApplication;->a(Lcom/brian/base_application/BaseApplication;)Z
+000006: move-result v0
+000008: return v0
+
+METHOD x (Lcom/brian/base_application/BaseApplication;)Z
+000000: invoke-static v0, Lcom/brian/base_application/BaseApplication;->b(Lcom/brian/base_application/BaseApplication;)Z
+000006: move-result v0
+000008: return v0
+
+METHOD y (Ljava/lang/String;)Lkotlin/Unit;
+000000: invoke-static v0, Lcom/brian/base_application/BaseApplication;->a(Ljava/lang/String;)Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD z (Ly7/s; Ljava/lang/Object;)V
+000000: invoke-static v0, v1, Lcom/brian/base_application/BaseApplication;->a(Lkotlin/jvm/functions/Function1; Ljava/lang/Object;)V
+000006: return-void 
+
+METHOD attachBaseContext (Landroid/content/Context;)V
+000000: if-eqz v4, +00fh
+000004: sget-object v0, Lcom/brian/base_application/utils/LocaleManager;->INSTANCE Lcom/brian/base_application/utils/LocaleManager;
+000008: invoke-virtual v0, v4, Lcom/brian/base_application/utils/LocaleManager;->init(Landroid/content/Context;)V
+00000e: invoke-virtual v0, v4, Lcom/brian/base_application/utils/LocaleManager;->setLocale(Landroid/content/Context;)Landroid/content/Context;
+000014: move-result-object v4
+000016: invoke-super v3, v4, Landroid/content/ContextWrapper;->attachBaseContext(Landroid/content/Context;)V
+00001c: goto +4h
+00001e: invoke-super v3, v4, Landroid/content/ContextWrapper;->attachBaseContext(Landroid/content/Context;)V
+000024: sget-object v4, Lcom/brian/base_iap/utils/SnowflakeCortexAI;->INSTANCE Lcom/brian/base_iap/utils/SnowflakeCortexAI;
+000028: const-string v0, "assets://cortex_license_subscription.xml"
+00002c: new-instance v1, La8/w;
+000030: const/16 v2, 15
+000034: invoke-direct v1, v2, La8/w;-><init>(I)V
+00003a: invoke-virtual v4, v3, v0, v1, Lcom/brian/base_iap/utils/SnowflakeCortexAI;->initWithPath(Landroid/content/Context; Ljava/lang/String; Lkotlin/jvm/functions/Function2;)Z
+000040: return-void 
+
+METHOD buildTestDeviceIds$base_application_release ()Ljava/util/List;
+000000: invoke-virtual v2, Lcom/nlbn/ads/util/AdsApplication;->getListTestDeviceId()Ljava/util/List;
+000006: move-result-object v0
+000008: if-nez v0, +006h
+00000c: invoke-static Lkotlin/collections/b0;->emptyList()Ljava/util/List;
+000012: move-result-object v0
+000014: invoke-interface v0, Ljava/util/List;->isEmpty()Z
+00001a: move-result v1
+00001c: if-eqz v1, +009h
+000020: sget-object v0, Lcom/brian/base_application/BaseApplication;->e Ljava/util/List;
+000024: invoke-static v0, Lkotlin/collections/CollectionsKt;->toList(Ljava/lang/Iterable;)Ljava/util/List;
+00002a: move-result-object v0
+00002c: return-object v0
+00002e: sget-object v1, Lcom/brian/base_application/BaseApplication;->e Ljava/util/List;
+000032: invoke-static v0, v1, Lkotlin/collections/CollectionsKt;->plus(Ljava/util/Collection; Ljava/lang/Iterable;)Ljava/util/List;
+000038: move-result-object v0
+00003a: invoke-static v0, Lkotlin/collections/CollectionsKt;->d(Ljava/util/List;)Ljava/util/List;
+000040: move-result-object v0
+000042: return-object v0
+
+METHOD defaultIapPremiumKey ()Ljava/lang/String;
+000000: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->INSTANCE Lcom/brian/base_iap/utils/IAPUtils;
+000004: invoke-virtual v0, Lcom/brian/base_iap/utils/IAPUtils;->getKEY_PREMIUM()Ljava/lang/String;
+00000a: move-result-object v0
+00000c: return-object v0
+
+METHOD defaultIapPremiumMonthlyKey ()Ljava/lang/String;
+000000: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->INSTANCE Lcom/brian/base_iap/utils/IAPUtils;
+000004: invoke-virtual v0, Lcom/brian/base_iap/utils/IAPUtils;->getKEY_PREMIUM_MONTHLY_PLAN()Ljava/lang/String;
+00000a: move-result-object v0
+00000c: return-object v0
+
+METHOD defaultIapPremiumWeeklyKey ()Ljava/lang/String;
+000000: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->INSTANCE Lcom/brian/base_iap/utils/IAPUtils;
+000004: invoke-virtual v0, Lcom/brian/base_iap/utils/IAPUtils;->getKEY_PREMIUM_WEEKLY_PLAN()Ljava/lang/String;
+00000a: move-result-object v0
+00000c: return-object v0
+
+METHOD defaultIapPremiumYearlyKey ()Ljava/lang/String;
+000000: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->INSTANCE Lcom/brian/base_iap/utils/IAPUtils;
+000004: invoke-virtual v0, Lcom/brian/base_iap/utils/IAPUtils;->getKEY_PREMIUM_YEARLY_PLAN()Ljava/lang/String;
+00000a: move-result-object v0
+00000c: return-object v0
+
+METHOD enableAdsResume ()Z
+000000: invoke-static Lcom/brian/base_iap/utils/IAPUtils;->isPremium()Z
+000006: move-result v0
+000008: xor-int/lit8 v0, v0, 1
+00000c: return v0
+
+METHOD enableHandleAFSource ()Ljava/lang/Boolean;
+000000: sget-object v0, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+000004: return-object v0
+
+METHOD getAppNameRes ()I
+
+
+METHOD getApplicationContext ()Landroid/content/Context;
+000000: return-object v0
+
+METHOD getCheckNowTextRes ()I
+
+
+METHOD getDailyCallOpenAppContentRes ()I
+
+
+METHOD getDocumentPreviewRes ()I
+
+
+METHOD getFeature1IconRes ()I
+
+
+METHOD getFeature1TextRes ()Ljava/lang/Integer;
+000000: const/4 v0, 0
+000002: return-object v0
+
+METHOD getFeature2IconRes ()I
+
+
+METHOD getFeature2TextRes ()Ljava/lang/Integer;
+000000: const/4 v0, 0
+000002: return-object v0
+
+METHOD getFeature3IconRes ()I
+
+
+METHOD getFeature3TextRes ()Ljava/lang/Integer;
+000000: const/4 v0, 0
+000002: return-object v0
+
+METHOD getFeature4IconRes ()I
+
+
+METHOD getFeature4TextRes ()Ljava/lang/Integer;
+000000: const/4 v0, 0
+000002: return-object v0
+
+METHOD getFeature5IconRes ()I
+
+
+METHOD getFeature5TextRes ()Ljava/lang/Integer;
+000000: const/4 v0, 0
+000002: return-object v0
+
+METHOD getFullScreenNoti1Res ()I
+
+
+METHOD getFullScreenNoti2Res ()I
+
+
+METHOD getHomeActivity ()Ljava/lang/Class;
+
+
+METHOD getIconSplashRes ()I
+
+
+METHOD getKeyRemoteIntervalShowInterstitial ()Ljava/lang/String;
+000000: const/4 v0, 0
+000002: return-object v0
+
+METHOD getNewFileNotiContentRes ()I
+
+
+METHOD getNotiContentRes ()I
+
+
+METHOD getNotiTitleRes ()I
+
+
+METHOD getNotificationButtons2ArrayRes ()I
+
+
+METHOD getNotificationChannelPrefix ()Ljava/lang/String;
+
+
+METHOD getNotificationIconRes ()I
+
+
+METHOD getNotificationImages ()[I
+
+
+METHOD getNotificationMessages2ArrayRes ()I
+
+
+METHOD getNotificationOutAppContentRes ()I
+
+
+METHOD getNotificationOutAppTitleRes ()I
+
+
+METHOD getNotificationTitles2ArrayRes ()I
+
+
+METHOD getOpenTextRes ()I
+
+
+METHOD getPrivacyPolicyUrl ()Ljava/lang/String;
+000000: const-string v0, ""
+000004: return-object v0
+
+METHOD getRecentDocumentsTitleRes ()I
+
+
+METHOD getResumeAdId ()Ljava/lang/String;
+000000: sget-object v0, Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil;->Companion Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil$Companion;
+000004: invoke-virtual v0, Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil$Companion;->getInstance()Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil;
+00000a: move-result-object v0
+00000c: const-string v1, "open_all"
+000010: invoke-virtual v0, v1, Lcom/brian/base_iap/utils/FirebaseRemoteConfigUtil;->getAdsConfigValue(Ljava/lang/String;)Ljava/lang/String;
+000016: move-result-object v0
+000018: return-object v0
+
+METHOD getScanDocumentRes ()I
+
+
+METHOD getScreenshotNotiTitleRes ()I
+
+
+METHOD getSplashAdFormat ()Lcom/brian/base_application/SplashAdFormat;
+000000: sget-object v0, Lcom/brian/base_application/SplashAdFormat;->OPEN Lcom/brian/base_application/SplashAdFormat;
+000004: return-object v0
+
+METHOD getSplashLoadingRes ()I
+
+
+METHOD getTermsOfUseUrl ()Ljava/lang/String;
+000000: const-string v0, ""
+000004: return-object v0
+
+METHOD getWidgetButtonBackgroundRes ()I
+
+
+METHOD hasForegroundServicePermission ()Z
+
+
+METHOD iapPremiumKey ()Ljava/lang/String;
+
+
+METHOD iapPremiumMonthlyKey ()Ljava/lang/String;
+
+
+METHOD iapPremiumWeeklyKey ()Ljava/lang/String;
+
+
+METHOD iapPremiumYearlyKey ()Ljava/lang/String;
+
+
+METHOD iapPublicKey ()Ljava/lang/String;
+
+
+METHOD initAppFlyerId ()V
+
+
+METHOD isForceShowFullAdsTest ()Ljava/lang/Boolean;
+000000: sget-object v0, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+000004: return-object v0
+
+METHOD isPurchased ()Z
+000000: invoke-static Lcom/brian/base_iap/utils/IAPUtils;->isPremium()Z
+000006: move-result v0
+000008: return v0
+
+METHOD notifyLanguageSaved (Ljava/lang/String;)V
+
+
+METHOD onConfigurationChanged (Landroid/content/res/Configuration;)V
+000000: const-string v0, "newConfig"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: invoke-super v1, v2, Landroid/app/Application;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+000010: sget-object v2, Lcom/brian/base_application/utils/LocaleManager;->INSTANCE Lcom/brian/base_application/utils/LocaleManager;
+000014: invoke-virtual v2, v1, Lcom/brian/base_application/utils/LocaleManager;->setLocale(Landroid/content/Context;)Landroid/content/Context;
+00001a: return-void 
+
+METHOD onCreate ()V
+000000: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->e()V
+000006: invoke-static Ljava/lang/System;->currentTimeMillis()J
+00000c: invoke-super v4, Landroid/app/Application;->onCreate()V
+000012: sget-object v0, Lcom/brian/base_application/_genroot/_KotlinDecoyTouch;->INSTANCE Lcom/brian/base_application/_genroot/_KotlinDecoyTouch;
+000016: invoke-virtual v0, Lcom/brian/base_application/_genroot/_KotlinDecoyTouch;->touch()J
+00001c: move-result-wide v0
+00001e: iput-wide v0, v4, Lcom/brian/base_application/BaseApplication;->c J
+000022: invoke-static v4, Lcom/brian/base_iap/utils/w;->a(Lcom/brian/base_application/BaseApplication;)V
+000028: new-instance v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/pdf_viewer/edit/b;
+00002c: const/16 v1, 13
+000030: invoke-direct v0, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/pdf_viewer/edit/b;-><init>(I)V
+000036: invoke-static v0, Lcom/nlbn/ads/util/AppUtil;->setPurchasedProvider(Lkotlin/jvm/functions/Function0;)V
+00003c: new-instance v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/pdf_viewer/edit/b;
+000040: const/16 v1, 14
+000044: invoke-direct v0, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/pdf_viewer/edit/b;-><init>(I)V
+00004a: invoke-static v0, Lcom/nlbn/ads/util/AppUtil;->setResumeAdIdProvider(Lkotlin/jvm/functions/Function0;)V
+000050: new-instance v0, Lz/a;
+000054: const/4 v1, 1
+000056: invoke-direct v0, v4, v1, Lz/a;-><init>(Lcom/brian/base_application/BaseApplication; I)V
+00005c: invoke-static v0, Lcom/nlbn/ads/util/AppUtil;->setResumeAdEnabledProvider(Lkotlin/jvm/functions/Function0;)V
+000062: new-instance v0, Lz/a;
+000066: const/4 v1, 0
+000068: invoke-direct v0, v4, v1, Lz/a;-><init>(Lcom/brian/base_application/BaseApplication; I)V
+00006e: invoke-static v0, Lcom/nlbn/ads/util/AppUtil;->setAiDecideToShowAds(Lkotlin/jvm/functions/Function0;)V
+000074: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->d()V
+00007a: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->q()V
+000080: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->c()V
+000086: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->a()V
+00008c: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->b()V
+000092: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->o()V
+000098: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->initAppFlyerId()V
+00009e: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->k()V
+0000a4: invoke-static Lcom/brian/base_iap/utils/PreferencesHelper;->a()J
+0000aa: move-result-wide v0
+0000ac: const-wide/16 v2, 0
+0000b0: cmp-long v0, v0, v2
+0000b4: if-nez v0, +009h
+0000b8: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0000be: move-result-wide v0
+0000c0: invoke-static v0, v1, Lcom/brian/base_iap/utils/PreferencesHelper;->a(J)V
+0000c6: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->h()V
+0000cc: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->i()V
+0000d2: new-instance v0, Lcom/google/android/gms/ads/RequestConfiguration$Builder;
+0000d6: invoke-direct v0, Lcom/google/android/gms/ads/RequestConfiguration$Builder;-><init>()V
+0000dc: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->buildTestDeviceIds$base_application_release()Ljava/util/List;
+0000e2: move-result-object v1
+0000e4: invoke-virtual v0, v1, Lcom/google/android/gms/ads/RequestConfiguration$Builder;->setTestDeviceIds(Ljava/util/List;)Lcom/google/android/gms/ads/RequestConfiguration$Builder;
+0000ea: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->p()V
+0000f0: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->j()V
+0000f6: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0000fc: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->g()V
+000102: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->t()V
+000108: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->m()V
+00010e: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->n()V
+000114: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->f()V
+00011a: invoke-direct v4, Lcom/brian/base_application/BaseApplication;->l()V
+000120: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->getHomeActivity()Ljava/lang/Class;
+000126: move-result-object v0
+000128: invoke-direct v4, v0, Lcom/brian/base_application/BaseApplication;->a(Ljava/lang/Class;)V
+00012e: return-void 
+
+METHOD onStart (Landroidx/lifecycle/LifecycleOwner;)V
+000000: const-string v0, "owner"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: return-void 
+
+METHOD onStop (Landroidx/lifecycle/LifecycleOwner;)V
+000000: const-string v0, "owner"
+000004: invoke-static v5, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->getApplicationContext()Landroid/content/Context;
+000010: move-result-object v5
+000012: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->getNotificationOutAppTitleRes()I
+000018: move-result v0
+00001a: invoke-virtual v4, v0, Landroid/content/Context;->getString(I)Ljava/lang/String;
+000020: move-result-object v0
+000022: const-string v1, "getString(...)"
+000026: invoke-static v0, v1, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object; Ljava/lang/String;)V
+00002c: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->getNotificationOutAppContentRes()I
+000032: move-result v2
+000034: invoke-virtual v4, v2, Landroid/content/Context;->getString(I)Ljava/lang/String;
+00003a: move-result-object v2
+00003c: invoke-static v2, v1, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object; Ljava/lang/String;)V
+000042: const-string v1, ""
+000046: const/4 v3, 0
+000048: invoke-static v5, v0, v1, v3, v2, Lcom/brian/base_notification/notification/AttentionRouter;->nativeAiScoreSignal(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+00004e: return-void 
+
+METHOD setupKoin ()V
+
+
+CLASS Lcom/brian/base_iap/utils/IAPUtils;
+FIELD INSTANCE 
+FIELD KEY_PREMIUM 
+FIELD KEY_PREMIUM_MONTHLY_PLAN 
+FIELD KEY_PREMIUM_WEEKLY_PLAN 
+FIELD KEY_PREMIUM_YEARLY_PLAN 
+FIELD TAG 
+FIELD billingInitialized 
+FIELD bp 
+FIELD internalHandler 
+FIELD listeners 
+
+METHOD <clinit> ()V
+000000: new-instance v0, Lcom/brian/base_iap/utils/IAPUtils;
+000004: invoke-direct v0, Lcom/brian/base_iap/utils/IAPUtils;-><init>()V
+00000a: sput-object v0, Lcom/brian/base_iap/utils/IAPUtils;->INSTANCE Lcom/brian/base_iap/utils/IAPUtils;
+00000e: const-string v0, "IAPUtils"
+000012: sput-object v0, Lcom/brian/base_iap/utils/IAPUtils;->TAG Ljava/lang/String;
+000016: new-instance v0, Ljava/util/concurrent/CopyOnWriteArraySet;
+00001a: invoke-direct v0, Ljava/util/concurrent/CopyOnWriteArraySet;-><init>()V
+000020: sput-object v0, Lcom/brian/base_iap/utils/IAPUtils;->listeners Ljava/util/concurrent/CopyOnWriteArraySet;
+000024: new-instance v0, Lcom/brian/base_iap/utils/s;
+000028: invoke-direct v0, Lcom/brian/base_iap/utils/s;-><init>()V
+00002e: sput-object v0, Lcom/brian/base_iap/utils/IAPUtils;->internalHandler Lcom/brian/base_iap/utils/s;
+000032: const-string v0, "release_premium_access"
+000036: sput-object v0, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM Ljava/lang/String;
+00003a: const-string v0, "release-yearly-plan"
+00003e: sput-object v0, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM_YEARLY_PLAN Ljava/lang/String;
+000042: const-string v0, "release-monthly-plan"
+000046: sput-object v0, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM_MONTHLY_PLAN Ljava/lang/String;
+00004a: const-string v0, "release-weekly-plan"
+00004e: sput-object v0, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM_WEEKLY_PLAN Ljava/lang/String;
+000052: return-void 
+
+METHOD <init> ()V
+000000: invoke-direct v0, Ljava/lang/Object;-><init>()V
+000006: return-void 
+
+METHOD access$getListeners$p ()Ljava/util/concurrent/CopyOnWriteArraySet;
+000000: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->listeners Ljava/util/concurrent/CopyOnWriteArraySet;
+000004: return-object v0
+
+METHOD access$setBillingInitialized$p (Z)V
+000000: sput-boolean v0, Lcom/brian/base_iap/utils/IAPUtils;->billingInitialized Z
+000004: return-void 
+
+METHOD isPremium ()Z
+000000: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+000004: if-eqz v0, +00ch
+000008: sget-object v1, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM Ljava/lang/String;
+00000c: invoke-virtual v0, v1, Lcom/brian/base_iap/iapLib/BillingProcessor;->isSubscribed(Ljava/lang/String;)Z
+000012: move-result v0
+000014: const/4 v1, 1
+000016: if-ne v0, v1, +003h
+00001a: goto +2h
+00001c: const/4 v1, 0
+00001e: return v1
+
+METHOD callSubscription (Landroid/app/Activity; Ljava/lang/String; Ljava/lang/String;)V
+000000: const-string v0, "activity"
+000004: invoke-static v3, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: const-string v0, "sku"
+00000e: invoke-static v4, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+000014: const-string v0, "baseIdPlan"
+000018: invoke-static v5, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00001e: sget-boolean v0, Lcom/brian/base_iap/utils/IAPUtils;->billingInitialized Z
+000022: if-eqz v0, +018h
+000026: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+00002a: if-eqz v0, +00ah
+00002e: invoke-virtual v0, Lcom/brian/base_iap/iapLib/BillingProcessor;->isSubscriptionUpdateSupported()Z
+000034: move-result v0
+000036: const/4 v1, 1
+000038: if-ne v0, v1, +003h
+00003c: goto +2h
+00003e: const/4 v1, 0
+000040: if-eqz v1, +009h
+000044: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+000048: if-eqz v0, +005h
+00004c: invoke-virtual v0, v3, v4, v5, Lcom/brian/base_iap/iapLib/BillingProcessor;->subscribeV7(Landroid/app/Activity; Ljava/lang/String; Ljava/lang/String;)Z
+000052: return-void 
+
+METHOD destroy ()V
+000000: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+000004: if-eqz v0, +005h
+000008: invoke-virtual v0, Lcom/brian/base_iap/iapLib/BillingProcessor;->release()V
+00000e: const/4 v0, 0
+000010: sput-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+000014: const/4 v0, 0
+000016: sput-boolean v0, Lcom/brian/base_iap/utils/IAPUtils;->billingInitialized Z
+00001a: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->listeners Ljava/util/concurrent/CopyOnWriteArraySet;
+00001e: invoke-virtual v0, Ljava/util/concurrent/CopyOnWriteArraySet;->clear()V
+000024: return-void 
+
+METHOD getKEY_PREMIUM ()Ljava/lang/String;
+000000: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM Ljava/lang/String;
+000004: return-object v0
+
+METHOD getKEY_PREMIUM_MONTHLY_PLAN ()Ljava/lang/String;
+000000: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM_MONTHLY_PLAN Ljava/lang/String;
+000004: return-object v0
+
+METHOD getKEY_PREMIUM_WEEKLY_PLAN ()Ljava/lang/String;
+000000: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM_WEEKLY_PLAN Ljava/lang/String;
+000004: return-object v0
+
+METHOD getKEY_PREMIUM_YEARLY_PLAN ()Ljava/lang/String;
+000000: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM_YEARLY_PLAN Ljava/lang/String;
+000004: return-object v0
+
+METHOD getPurchaseInfoDetails (Ljava/lang/String;)Lcom/brian/base_iap/iapLib/PurchaseInfo;
+000000: const-string v0, "productId"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+00000e: if-eqz v0, +007h
+000012: invoke-virtual v0, v2, Lcom/brian/base_iap/iapLib/BillingProcessor;->getPurchaseInfo(Ljava/lang/String;)Lcom/brian/base_iap/iapLib/PurchaseInfo;
+000018: move-result-object v2
+00001a: return-object v2
+00001c: const/4 v2, 0
+00001e: return-object v2
+
+METHOD getPurchaseListingDetails (Ljava/lang/String; Lkotlin/jvm/functions/Function1;)V
+000000: const-string v0, "productId"
+000004: invoke-static v3, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: const-string v0, "skuDetails"
+00000e: invoke-static v4, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+000014: sget-boolean v0, Lcom/brian/base_iap/utils/IAPUtils;->billingInitialized Z
+000018: if-eqz v0, +00eh
+00001c: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+000020: if-eqz v0, +00ah
+000024: new-instance v1, Lcom/brian/base_iap/utils/k;
+000028: invoke-direct v1, v3, v4, Lcom/brian/base_iap/utils/k;-><init>(Ljava/lang/String; Lkotlin/jvm/functions/Function1;)V
+00002e: invoke-virtual v0, v3, v1, Lcom/brian/base_iap/iapLib/BillingProcessor;->getPurchaseListingDetailsAsync(Ljava/lang/String; Lcom/brian/base_iap/iapLib/BillingProcessor$ISkuDetailsResponseListener;)V
+000034: return-void 
+
+METHOD getPurchaseListingDetails (Ljava/util/ArrayList;)V
+000000: const-string v0, "productIds"
+000004: invoke-static v3, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sget-boolean v0, Lcom/brian/base_iap/utils/IAPUtils;->billingInitialized Z
+00000e: if-eqz v0, +00eh
+000012: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+000016: if-eqz v0, +00ah
+00001a: new-instance v1, Lcom/brian/base_iap/utils/l;
+00001e: invoke-direct v1, Lcom/brian/base_iap/utils/l;-><init>()V
+000024: invoke-virtual v0, v3, v1, Lcom/brian/base_iap/iapLib/BillingProcessor;->getPurchaseListingDetailsAsync(Ljava/util/ArrayList; Lcom/brian/base_iap/iapLib/BillingProcessor$ISkuDetailsResponseListener;)V
+00002a: return-void 
+
+METHOD getSubscriptionListingDetails (Ljava/lang/String; Lkotlin/jvm/functions/Function1;)V
+000000: const-string v0, "subscriptionId"
+000004: invoke-static v3, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: const-string v0, "skuDetails"
+00000e: invoke-static v4, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+000014: sget-boolean v0, Lcom/brian/base_iap/utils/IAPUtils;->billingInitialized Z
+000018: if-eqz v0, +00eh
+00001c: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+000020: if-eqz v0, +00ah
+000024: new-instance v1, Lcom/brian/base_iap/utils/m;
+000028: invoke-direct v1, v3, v4, Lcom/brian/base_iap/utils/m;-><init>(Ljava/lang/String; Lkotlin/jvm/functions/Function1;)V
+00002e: invoke-virtual v0, v3, v1, Lcom/brian/base_iap/iapLib/BillingProcessor;->getSubscriptionListingDetailsAsyncV7(Ljava/lang/String; Lcom/brian/base_iap/iapLib/BillingProcessor$ISkuDetailsResponseListenerV7;)V
+000034: return-void 
+
+METHOD getSubscriptionListingDetails (Ljava/util/ArrayList;)V
+000000: const-string v0, "subscriptionIds"
+000004: invoke-static v3, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sget-boolean v0, Lcom/brian/base_iap/utils/IAPUtils;->billingInitialized Z
+00000e: if-eqz v0, +00eh
+000012: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+000016: if-eqz v0, +00ah
+00001a: new-instance v1, Lcom/brian/base_iap/utils/n;
+00001e: invoke-direct v1, Lcom/brian/base_iap/utils/n;-><init>()V
+000024: invoke-virtual v0, v3, v1, Lcom/brian/base_iap/iapLib/BillingProcessor;->getPurchaseListingDetailsAsync(Ljava/util/ArrayList; Lcom/brian/base_iap/iapLib/BillingProcessor$ISkuDetailsResponseListener;)V
+00002a: return-void 
+
+METHOD getSubscriptionPurchaseInfoDetails (Ljava/lang/String;)Lcom/brian/base_iap/iapLib/PurchaseInfo;
+000000: const-string v0, "subscriptionId"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+00000e: if-eqz v0, +007h
+000012: invoke-virtual v0, v2, Lcom/brian/base_iap/iapLib/BillingProcessor;->getSubscriptionPurchaseInfo(Ljava/lang/String;)Lcom/brian/base_iap/iapLib/PurchaseInfo;
+000018: move-result-object v2
+00001a: return-object v2
+00001c: const/4 v2, 0
+00001e: return-object v2
+
+METHOD getTAG ()Ljava/lang/String;
+000000: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->TAG Ljava/lang/String;
+000004: return-object v0
+
+METHOD init (Landroid/content/Context; Ljava/lang/String;)V
+000000: const-string v0, "context"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: const-string v0, "licenseKey"
+00000e: invoke-static v3, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+000014: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+000018: if-eqz v0, +003h
+00001c: goto +eh
+00001e: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->internalHandler Lcom/brian/base_iap/utils/s;
+000022: invoke-static v2, v3, v0, Lcom/brian/base_iap/iapLib/BillingProcessor;->newBillingProcessor(Landroid/content/Context; Ljava/lang/String; Lcom/brian/base_iap/iapLib/BillingProcessor$IBillingHandler;)Lcom/brian/base_iap/iapLib/BillingProcessor;
+000028: move-result-object v2
+00002a: sput-object v2, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+00002e: if-eqz v2, +005h
+000032: invoke-virtual v2, Lcom/brian/base_iap/iapLib/BillingProcessor;->initialize()V
+000038: return-void 
+
+METHOD initAndRegister (Landroid/content/Context; Ljava/lang/String; Lcom/brian/base_iap/iapLib/BillingProcessor$IBillingHandler;)V
+000000: const-string v0, "context"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: const-string v0, "licenseKey"
+00000e: invoke-static v3, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+000014: const-string v0, "handler"
+000018: invoke-static v4, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00001e: invoke-virtual v1, v4, Lcom/brian/base_iap/utils/IAPUtils;->registerListener(Lcom/brian/base_iap/iapLib/BillingProcessor$IBillingHandler;)V
+000024: invoke-virtual v1, v2, v3, Lcom/brian/base_iap/utils/IAPUtils;->init(Landroid/content/Context; Ljava/lang/String;)V
+00002a: return-void 
+
+METHOD isSubscribed (Ljava/lang/String;)Z
+000000: const-string v0, "productId"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+00000e: if-eqz v0, +00ah
+000012: invoke-virtual v0, v2, Lcom/brian/base_iap/iapLib/BillingProcessor;->isSubscribed(Ljava/lang/String;)Z
+000018: move-result v2
+00001a: const/4 v0, 1
+00001c: if-ne v2, v0, +003h
+000020: return v0
+000022: const/4 v2, 0
+000024: return v2
+
+METHOD isSubscriptionCanceled (Ljava/lang/String;)Z
+000000: const-string v0, "subscriptionId"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: invoke-virtual v1, v2, Lcom/brian/base_iap/utils/IAPUtils;->getSubscriptionPurchaseInfoDetails(Ljava/lang/String;)Lcom/brian/base_iap/iapLib/PurchaseInfo;
+000010: move-result-object v2
+000012: if-eqz v2, +009h
+000016: iget-object v2, v2, Lcom/brian/base_iap/iapLib/PurchaseInfo;->purchaseData Lcom/brian/base_iap/iapLib/PurchaseData;
+00001a: iget-boolean v2, v2, Lcom/brian/base_iap/iapLib/PurchaseData;->autoRenewing Z
+00001e: xor-int/lit8 v2, v2, 1
+000022: return v2
+000024: const/4 v2, 0
+000026: return v2
+
+METHOD loadOwnedPurchasesFromGoogleAsync (Lkotlin/jvm/functions/Function1;)V
+000000: const-string v0, "result"
+000004: invoke-static v3, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->bp Lcom/brian/base_iap/iapLib/BillingProcessor;
+00000e: if-eqz v0, +00bh
+000012: new-instance v1, Lcom/brian/base_iap/utils/t;
+000016: invoke-direct v1, v3, Lcom/brian/base_iap/utils/t;-><init>(Lkotlin/jvm/functions/Function1;)V
+00001c: invoke-virtual v0, v1, Lcom/brian/base_iap/iapLib/BillingProcessor;->loadOwnedSubFromGoogleAsyncV7(Lcom/brian/base_iap/iapLib/BillingProcessor$IPurchasesResponseListener;)V
+000022: return-void 
+000024: sget-object v0, Ljava/lang/Boolean;->FALSE Ljava/lang/Boolean;
+000028: invoke-interface v3, v0, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+00002e: return-void 
+
+METHOD registerListener (Lcom/brian/base_iap/iapLib/BillingProcessor$IBillingHandler;)V
+000000: const-string v0, "handler"
+000004: invoke-static v3, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->listeners Ljava/util/concurrent/CopyOnWriteArraySet;
+00000e: invoke-virtual v0, v3, Ljava/util/concurrent/CopyOnWriteArraySet;->contains(Ljava/lang/Object;)Z
+000014: move-result v1
+000016: if-nez v1, +005h
+00001a: invoke-virtual v0, v3, Ljava/util/concurrent/CopyOnWriteArraySet;->add(Ljava/lang/Object;)Z
+000020: sget-boolean v0, Lcom/brian/base_iap/utils/IAPUtils;->billingInitialized Z
+000024: if-eqz v0, +005h
+000028: invoke-interface v3, Lcom/brian/base_iap/iapLib/BillingProcessor$IBillingHandler;->onBillingInitialized()V
+00002e: return-void 
+
+METHOD setKEY_PREMIUM (Ljava/lang/String;)V
+000000: const-string v0, "<set-?>"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sput-object v2, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM Ljava/lang/String;
+00000e: return-void 
+
+METHOD setKEY_PREMIUM_MONTHLY_PLAN (Ljava/lang/String;)V
+000000: const-string v0, "<set-?>"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sput-object v2, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM_MONTHLY_PLAN Ljava/lang/String;
+00000e: return-void 
+
+METHOD setKEY_PREMIUM_WEEKLY_PLAN (Ljava/lang/String;)V
+000000: const-string v0, "<set-?>"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sput-object v2, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM_WEEKLY_PLAN Ljava/lang/String;
+00000e: return-void 
+
+METHOD setKEY_PREMIUM_YEARLY_PLAN (Ljava/lang/String;)V
+000000: const-string v0, "<set-?>"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sput-object v2, Lcom/brian/base_iap/utils/IAPUtils;->KEY_PREMIUM_YEARLY_PLAN Ljava/lang/String;
+00000e: return-void 
+
+METHOD unregisterListener (Lcom/brian/base_iap/iapLib/BillingProcessor$IBillingHandler;)V
+000000: const-string v0, "handler"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sget-object v0, Lcom/brian/base_iap/utils/IAPUtils;->listeners Ljava/util/concurrent/CopyOnWriteArraySet;
+00000e: invoke-virtual v0, v2, Ljava/util/concurrent/CopyOnWriteArraySet;->remove(Ljava/lang/Object;)Z
+000014: return-void 
+
+CLASS Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;
+FIELD Companion None
+FIELD INSTANCE None
+FIELD TAG DocumentReader
+FIELD checkedItem 
+FIELD currentActivity 
+FIELD prefs 
+FIELD startedActivities 
+
+METHOD <clinit> ()V
+000000: new-instance v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication$Companion;
+000004: invoke-direct v0, Ljava/lang/Object;-><init>()V
+00000a: sput-object v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->Companion Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication$Companion;
+00000e: return-void 
+
+METHOD <init> ()V
+000000: invoke-direct v0, Lcom/brian/base_application/BaseApplication;-><init>()V
+000006: return-void 
+
+METHOD buildDebug ()Ljava/lang/Boolean;
+000000: sget-object v0, Ljava/lang/Boolean;->FALSE Ljava/lang/Boolean;
+000004: return-object v0
+
+METHOD enableAdsResume ()Z
+000000: const/4 v0, 1
+000002: return v0
+
+METHOD getAppNameRes ()I
+000000: const v0, 2132017229
+000006: return v0
+
+METHOD getCheckNowTextRes ()I
+000000: const v0, 2132017293
+000006: return v0
+
+METHOD getDailyCallOpenAppContentRes ()I
+000000: const v0, 2132017412
+000006: return v0
+
+METHOD getDocumentPreviewRes ()I
+000000: const v0, 2131231710
+000006: return v0
+
+METHOD getFeature1IconRes ()I
+000000: const v0, 2131231694
+000006: return v0
+
+METHOD getFeature1TextRes ()Ljava/lang/Integer;
+000000: const v0, 2132017554
+000006: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+00000c: move-result-object v0
+00000e: return-object v0
+
+METHOD getFeature2IconRes ()I
+000000: const v0, 2131231702
+000006: return v0
+
+METHOD getFeature2TextRes ()Ljava/lang/Integer;
+000000: const v0, 2132017555
+000006: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+00000c: move-result-object v0
+00000e: return-object v0
+
+METHOD getFeature3IconRes ()I
+000000: const v0, 2131231671
+000006: return v0
+
+METHOD getFeature3TextRes ()Ljava/lang/Integer;
+000000: const v0, 2132017556
+000006: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+00000c: move-result-object v0
+00000e: return-object v0
+
+METHOD getFeature4IconRes ()I
+000000: const v0, 2131231700
+000006: return v0
+
+METHOD getFeature4TextRes ()Ljava/lang/Integer;
+000000: const v0, 2132017557
+000006: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+00000c: move-result-object v0
+00000e: return-object v0
+
+METHOD getFeature5IconRes ()I
+000000: const v0, 2131231677
+000006: return v0
+
+METHOD getFeature5TextRes ()Ljava/lang/Integer;
+000000: const v0, 2132017558
+000006: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+00000c: move-result-object v0
+00000e: return-object v0
+
+METHOD getFullScreenNoti1Res ()I
+000000: const v0, 2132017637
+000006: return v0
+
+METHOD getFullScreenNoti2Res ()I
+000000: const v0, 2132017638
+000006: return v0
+
+METHOD getHomeActivity ()Ljava/lang/Class;
+000000: invoke-static v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/sharedprefs/SharePrefV2;->b(Landroid/content/ContextWrapper;)Z
+000006: move-result v0
+000008: if-eqz v0, +005h
+00000c: const-class v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/home2/Home2Activity;
+000010: return-object v0
+000012: const-class v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/onboarding/intro/IntroActivity;
+000016: return-object v0
+
+METHOD getIconSplashRes ()I
+000000: const v0, 2131231330
+000006: return v0
+
+METHOD getListTestDeviceId ()Ljava/util/List;
+000000: invoke-static Lkotlin/collections/b0;->emptyList()Ljava/util/List;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD getNewFileNotiContentRes ()I
+000000: const v0, 2132018000
+000006: return v0
+
+METHOD getNotiContentRes ()I
+000000: const v0, 2132018028
+000006: return v0
+
+METHOD getNotiTitleRes ()I
+000000: const v0, 2132018066
+000006: return v0
+
+METHOD getNotificationButtons2ArrayRes ()I
+000000: const v0, 2130903043
+000006: return v0
+
+METHOD getNotificationChannelPrefix ()Ljava/lang/String;
+000000: const-string v0, "All_Document_Reader"
+000004: return-object v0
+
+METHOD getNotificationIconRes ()I
+000000: const v0, 2131231547
+000006: return v0
+
+METHOD getNotificationImages ()[I
+000000: const v0, 2131231690
+000006: const v1, 2131231691
+00000c: const v2, 2131231687
+000012: const v3, 2131231688
+000018: const v4, 2131231689
+00001e: filled-new-array v2, v3, v4, v0, v1, [I
+000024: move-result-object v0
+000026: return-object v0
+
+METHOD getNotificationMessages2ArrayRes ()I
+000000: const v0, 2130903044
+000006: return v0
+
+METHOD getNotificationOutAppContentRes ()I
+000000: const v0, 2132017304
+000006: return v0
+
+METHOD getNotificationOutAppTitleRes ()I
+000000: const v0, 2132018875
+000006: return v0
+
+METHOD getNotificationTitles2ArrayRes ()I
+000000: const v0, 2130903046
+000006: return v0
+
+METHOD getOpenTextRes ()I
+000000: const v0, 2132018124
+000006: return v0
+
+METHOD getRecentDocumentsTitleRes ()I
+000000: const v0, 2132018877
+000006: return v0
+
+METHOD getResumeAdId ()Ljava/lang/String;
+000000: invoke-static Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/RemoteConfigBridge;->a()Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/RemoteConfigBridge$Config;
+000006: move-result-object v0
+000008: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+00000e: const-string/jumbo v0, open_all
+000014: invoke-static v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/RemoteConfigBridge$Config;->a(Ljava/lang/String;)Ljava/lang/String;
+00001a: move-result-object v0
+00001c: return-object v0
+
+METHOD getScanDocumentRes ()I
+000000: const v0, 2132018359
+000006: return v0
+
+METHOD getScreenshotNotiTitleRes ()I
+000000: const v0, 2132018360
+000006: return v0
+
+METHOD getSplashLoadingRes ()I
+000000: const v0, 2131951632
+000006: return v0
+
+METHOD getWidgetButtonBackgroundRes ()I
+000000: const v0, 2131231124
+000006: return v0
+
+METHOD getWorkManagerConfiguration ()Landroidx/work/Configuration;
+000000: new-instance v0, Landroidx/work/Configuration$Builder;
+000004: invoke-direct v0, Landroidx/work/Configuration$Builder;-><init>()V
+00000a: const/4 v1, 6
+00000c: invoke-virtual v0, v1, Landroidx/work/Configuration$Builder;->setMinimumLoggingLevel(I)Landroidx/work/Configuration$Builder;
+000012: move-result-object v0
+000014: invoke-virtual v0, Landroidx/work/Configuration$Builder;->build()Landroidx/work/Configuration;
+00001a: move-result-object v0
+00001c: return-object v0
+
+METHOD hasForegroundServicePermission ()Z
+000000: const/4 v0, 0
+000002: return v0
+
+METHOD iapPremiumKey ()Ljava/lang/String;
+000000: invoke-virtual v1, Lcom/brian/base_application/BaseApplication;->defaultIapPremiumKey()Ljava/lang/String;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD iapPremiumMonthlyKey ()Ljava/lang/String;
+000000: invoke-virtual v1, Lcom/brian/base_application/BaseApplication;->defaultIapPremiumMonthlyKey()Ljava/lang/String;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD iapPremiumWeeklyKey ()Ljava/lang/String;
+000000: invoke-virtual v1, Lcom/brian/base_application/BaseApplication;->defaultIapPremiumWeeklyKey()Ljava/lang/String;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD iapPremiumYearlyKey ()Ljava/lang/String;
+000000: invoke-virtual v1, Lcom/brian/base_application/BaseApplication;->defaultIapPremiumYearlyKey()Ljava/lang/String;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD iapPublicKey ()Ljava/lang/String;
+000000: const-string v0, ""
+000004: return-object v0
+
+METHOD initAppFlyerId ()V
+000000: sget-object v0, Lcom/nlbn/ads/util/AppFlyer;->Companion Lcom/nlbn/ads/util/AppFlyer$Companion;
+000004: invoke-virtual v0, Lcom/nlbn/ads/util/AppFlyer$Companion;->getInstance()Lcom/nlbn/ads/util/AppFlyer;
+00000a: move-result-object v1
+00000c: const/high16 v0, 2132017152
+000010: invoke-virtual v7, v0, Landroid/content/Context;->getString(I)Ljava/lang/String;
+000016: move-result-object v3
+000018: const-string v0, "getString(...)"
+00001c: invoke-static v3, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object; Ljava/lang/String;)V
+000022: const/4 v5, 0
+000024: const/4 v6, 1
+000026: const/4 v4, 1
+000028: move-object v2, v7
+00002a: invoke-virtual/range v1 ... v6, Lcom/nlbn/ads/util/AppFlyer;->initAppFlyer(Landroid/app/Application; Ljava/lang/String; Z Z Z)V
+000030: return-void 
+
+METHOD isPurchased ()Z
+000000: const/4 v0, 0
+000002: return v0
+
+METHOD notifyLanguageSaved (Ljava/lang/String;)V
+000000: const-string v0, "languageCode"
+000004: invoke-static v3, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: sget-object v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->Companion Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication$Companion;
+00000e: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+000014: sget-object v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->INSTANCE Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;
+000018: if-nez v0, +003h
+00001c: goto +17h
+00001e: if-eqz v3, +00bh
+000022: invoke-static v3, Lkotlin/text/StringsKt;->S(Ljava/lang/String;)Ljava/lang/CharSequence;
+000028: move-result-object v3
+00002a: invoke-virtual v3, Ljava/lang/Object;->toString()Ljava/lang/String;
+000030: move-result-object v3
+000032: goto +2h
+000034: const/4 v3, 0
+000036: if-nez v3, +004h
+00003a: const-string v3, ""
+00003e: invoke-virtual v3, Ljava/lang/String;->length()I
+000044: move-result v1
+000046: if-nez v1, +003h
+00004a: return-void 
+00004c: invoke-virtual v0, Lcom/brian/base_application/BaseApplication;->getApplicationContext()Landroid/content/Context;
+000052: move-result-object v0
+000054: invoke-static v0, v3, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/util/LanguageManager;->d(Landroid/content/Context; Ljava/lang/String;)V
+00005a: return-void 
+
+METHOD onActivityCreated (Landroid/app/Activity; Landroid/os/Bundle;)V
+000000: const-string v2, "activity"
+000004: invoke-static v1, v2, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: invoke-virtual v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+000010: return-void 
+
+METHOD onActivityDestroyed (Landroid/app/Activity;)V
+000000: const-string v0, "activity"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: invoke-virtual v2, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+000010: iget-object v0, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->currentActivity Landroid/app/Activity;
+000014: invoke-static v0, v2, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+00001a: move-result v2
+00001c: if-eqz v2, +005h
+000020: const/4 v2, 0
+000022: iput-object v2, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->currentActivity Landroid/app/Activity;
+000026: return-void 
+
+METHOD onActivityPaused (Landroid/app/Activity;)V
+000000: const-string v0, "activity"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: return-void 
+
+METHOD onActivityResumed (Landroid/app/Activity;)V
+000000: const-string v0, "activity"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: invoke-virtual v2, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+000010: iput-object v2, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->currentActivity Landroid/app/Activity;
+000014: invoke-static Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/dialog/DialogService;->a()Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/dialog/DialogService;
+00001a: move-result-object v0
+00001c: invoke-virtual v0, v2, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/dialog/DialogService;->c(Landroid/app/Activity;)V
+000022: return-void 
+
+METHOD onActivitySaveInstanceState (Landroid/app/Activity; Landroid/os/Bundle;)V
+000000: const-string v0, "activity"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: const-string/jumbo v2, outState
+000010: invoke-static v3, v2, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+000016: return-void 
+
+METHOD onActivityStarted (Landroid/app/Activity;)V
+000000: const-string v0, "activity"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: iput-object v2, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->currentActivity Landroid/app/Activity;
+00000e: iget v2, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->startedActivities I
+000012: add-int/lit8 v2, v2, 1
+000016: iput v2, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->startedActivities I
+00001a: return-void 
+
+METHOD onActivityStopped (Landroid/app/Activity;)V
+000000: const-string v0, "activity"
+000004: invoke-static v2, v0, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object; Ljava/lang/String;)V
+00000a: iget v2, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->startedActivities I
+00000e: add-int/lit8 v2, v2, -1
+000012: iput v2, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->startedActivities I
+000016: if-gtz v2, +008h
+00001a: const/4 v2, 0
+00001c: iput v2, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->startedActivities I
+000020: invoke-static Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/ListNativeReloadGate;->a()V
+000026: return-void 
+
+METHOD onCreate ()V
+000000: const-class v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/language/LanguageActivity;
+000004: invoke-static v0, Lcom/brian/base_application/language/LanguageRouter;->setCustomActivityClass(Ljava/lang/Class;)V
+00000a: invoke-super v4, Lcom/brian/base_application/BaseApplication;->onCreate()V
+000010: sget-object v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->INSTANCE Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;
+000014: if-nez v0, +004h
+000018: sput-object v4, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->INSTANCE Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;
+00001c: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->getApplicationContext()Landroid/content/Context;
+000022: move-result-object v0
+000024: invoke-static v0, Lcom/artifex/sonui/MainApp;->init(Landroid/content/Context;)V
+00002a: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->getApplicationContext()Landroid/content/Context;
+000030: move-result-object v0
+000032: const-string v1, "app_prefs"
+000036: const/4 v2, 0
+000038: invoke-virtual v0, v1, v2, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+00003e: move-result-object v0
+000040: const-string v1, "first_open_time_noti"
+000044: invoke-interface v0, v1, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+00004a: move-result v2
+00004c: if-nez v2, +011h
+000050: invoke-interface v0, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+000056: move-result-object v0
+000058: invoke-static Ljava/lang/System;->currentTimeMillis()J
+00005e: move-result-wide v2
+000060: invoke-interface v0, v1, v2, v3, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String; J)Landroid/content/SharedPreferences$Editor;
+000066: move-result-object v0
+000068: invoke-interface v0, Landroid/content/SharedPreferences$Editor;->apply()V
+00006e: sget-object v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/RemoteConfigService;->Companion Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/RemoteConfigService$Companion;
+000072: invoke-static Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/RemoteConfigService;->b()Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/RemoteConfigService;
+000078: move-result-object v1
+00007a: if-nez v1, +018h
+00007e: monitor-enter v0
+000080: invoke-static Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/RemoteConfigService;->b()Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/RemoteConfigService;
+000086: move-result-object v1
+000088: if-nez v1, +00dh
+00008c: new-instance v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/RemoteConfigService;
+000090: invoke-direct v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/RemoteConfigService;-><init>()V
+000096: invoke-static v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/RemoteConfigService;->c(Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/RemoteConfigService;)V
+00009c: goto +3h
+00009e: move-exception v1
+0000a0: goto +3h
+0000a2: monitor-exit v0
+0000a4: goto +6h
+0000a6: monitor-exit v0
+0000a8: throw v1
+0000aa: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0000b0: invoke-virtual v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/service/remote_config/RemoteConfigService;->d()V
+0000b6: new-instance v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/sharedprefs/SharedPrefs;
+0000ba: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->getApplicationContext()Landroid/content/Context;
+0000c0: move-result-object v1
+0000c2: invoke-direct v0, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/sharedprefs/SharedPrefs;-><init>(Landroid/content/Context;)V
+0000c8: iput-object v0, v4, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->prefs Lcom/pdfeditor/documentviewer/pdfstudio/docworks/sharedprefs/SharedPrefs;
+0000cc: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->getApplicationContext()Landroid/content/Context;
+0000d2: move-result-object v0
+0000d4: invoke-static v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/sharedprefs/SharePrefV2;->a(Landroid/content/Context;)V
+0000da: iget-object v0, v4, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->prefs Lcom/pdfeditor/documentviewer/pdfstudio/docworks/sharedprefs/SharedPrefs;
+0000de: if-nez v0, +009h
+0000e2: const-string/jumbo v0, prefs
+0000e8: invoke-static v0, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+0000ee: const/4 v0, 0
+0000f0: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->getApplicationContext()Landroid/content/Context;
+0000f6: move-result-object v1
+0000f8: invoke-virtual v0, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/sharedprefs/SharedPrefs;->e(Landroid/content/Context;)I
+0000fe: move-result v0
+000100: iput v0, v4, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;->checkedItem I
+000104: if-eqz v0, +00eh
+000108: const/4 v1, 1
+00010a: if-eq v0, v1, +006h
+00010e: invoke-static v1, Landroidx/appcompat/app/AppCompatDelegate;->setDefaultNightMode(I)V
+000114: goto +ah
+000116: const/4 v0, 2
+000118: invoke-static v0, Landroidx/appcompat/app/AppCompatDelegate;->setDefaultNightMode(I)V
+00011e: goto +5h
+000120: const/4 v0, -1
+000122: invoke-static v0, Landroidx/appcompat/app/AppCompatDelegate;->setDefaultNightMode(I)V
+000128: invoke-virtual v4, v4, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
+00012e: sget-object v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/widgets/FileShortcutWidget;->Companion Lcom/pdfeditor/documentviewer/pdfstudio/docworks/widgets/FileShortcutWidget$Companion;
+000132: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+000138: invoke-static v4, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/widgets/FileShortcutWidget$Companion;->c(Landroid/content/Context;)V
+00013e: sget-object v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/NetworkConnectivityObserver;->Companion Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/NetworkConnectivityObserver$Companion;
+000142: invoke-virtual v4, Lcom/brian/base_application/BaseApplication;->getApplicationContext()Landroid/content/Context;
+000148: move-result-object v1
+00014a: invoke-virtual v0, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/NetworkConnectivityObserver$Companion;->a(Landroid/content/Context;)Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/NetworkConnectivityObserver;
+000150: return-void 
+
+METHOD onTerminate ()V
+000000: sget-object v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/NetworkConnectivityObserver;->Companion Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/NetworkConnectivityObserver$Companion;
+000004: invoke-virtual v2, Lcom/brian/base_application/BaseApplication;->getApplicationContext()Landroid/content/Context;
+00000a: move-result-object v1
+00000c: invoke-virtual v0, v1, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/NetworkConnectivityObserver$Companion;->a(Landroid/content/Context;)Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/NetworkConnectivityObserver;
+000012: move-result-object v0
+000014: invoke-virtual v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/NetworkConnectivityObserver;->h()V
+00001a: invoke-super v2, Landroid/app/Application;->onTerminate()V
+000020: return-void 
+
+METHOD setupKoin ()V
+000000: return-void 
+

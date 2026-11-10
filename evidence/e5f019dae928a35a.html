@@ -1,0 +1,59 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>038_reminderget.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>038_reminderget.txt</h1><p><strong>H10 · 通知策略从持久字符串解析，空值/异常使用默认对象</strong></p><p>dxK6.Bb.CK60J</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.pdfhero.dclor.avtlo/038_reminderget.txt" download>下载原始文件</a></div><pre class="source-pre">    public final ReminderSchedulePolicy CK60J() {
+
+        Object objOtIqepUx;
+
+        ReminderSchedulePolicy reminderSchedulePolicy;
+
+        String strQm = HZB.SOSvnaZBS.Qm();
+
+        if (Intrinsics.areEqual(strQm, f38785f8)) {
+
+            return f38789nMet;
+
+        }
+
+        try {
+
+            v5Cax.SGigKD6vM sGigKD6vM = v5Cax.f41478Cq;
+
+            if (StringsKt.NLcz(strQm)) {
+
+                reminderSchedulePolicy = new ReminderSchedulePolicy(0, 0, 0, 0, 0, 0, 0, 0, 0, 511, null);
+
+            } else {
+
+                reminderSchedulePolicy = (ReminderSchedulePolicy) AS1xdMc().fromJson(strQm, ReminderSchedulePolicy.class);
+
+                if (reminderSchedulePolicy == null) {
+
+                    reminderSchedulePolicy = new ReminderSchedulePolicy(0, 0, 0, 0, 0, 0, 0, 0, 0, 511, null);
+
+                }
+
+            }
+
+            objOtIqepUx = v5Cax.OtIqepUx(reminderSchedulePolicy);
+
+        } catch (Throwable th) {
+
+            v5Cax.SGigKD6vM sGigKD6vM2 = v5Cax.f41478Cq;
+
+            objOtIqepUx = v5Cax.OtIqepUx(Oc.SGigKD6vM(th));
+
+        }
+
+        ReminderSchedulePolicy reminderSchedulePolicy2 = new ReminderSchedulePolicy(0, 0, 0, 0, 0, 0, 0, 0, 0, 511, null);
+
+        if (v5Cax.Wmk(objOtIqepUx)) {
+
+            objOtIqepUx = reminderSchedulePolicy2;
+
+        }
+
+        f38789nMet = (ReminderSchedulePolicy) objOtIqepUx;
+
+        f38785f8 = strQm;
+
+        return f38789nMet;
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

@@ -1,0 +1,42 @@
+应用,参数,包内默认,消费链路,证据ID,缺口
+Docworks｜PDF Editor - Document Viewer,interstitial_ads_enable,true,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+Docworks｜PDF Editor - Document Viewer,interstitial_ads_on_start_app_enable,true,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+Docworks｜PDF Editor - Document Viewer,show_ads_after_open_file,1,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+Docworks｜PDF Editor - Document Viewer,interstitial_ads_category_home_enable,false,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+Docworks｜PDF Editor - Document Viewer,time_load_interstitial_ads_on_start_app,10000,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+Docworks｜PDF Editor - Document Viewer,time_out_native_select_language,5000,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+Docworks｜PDF Editor - Document Viewer,rate_us_show_after_time,24,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+Docworks｜PDF Editor - Document Viewer,rate_us_show_after_open_app,3,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+Docworks｜PDF Editor - Document Viewer,interSplash,2,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
+Docworks｜PDF Editor - Document Viewer,homeInterChooseFolder,30,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
+Docworks｜PDF Editor - Document Viewer,interChooseFile,30,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
+Docworks｜PDF Editor - Document Viewer,showIntro,0,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
+Docworks｜PDF Editor - Document Viewer,showAdInOnboarding,0,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
+Docworks｜PDF Editor - Document Viewer,widgetSheetEveryOpen,2,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
+Docworks｜PDF Editor - Document Viewer,广告JSON / INTER_ALL,本地JSON回退,远端JSON键→Bridge→文件打开插屏,D05,当前线上值未知
+Docworks｜PDF Editor - Document Viewer,iap_weekly_plan / REMOTE_KEY_IAP_BASE_PLAN,本地加密字符串回退,getIapBasePlan→周选项购买分支,D10,当前线上值未知
+Docworks｜PDF Editor - Document Viewer,REMOTE_KEY_IS_FREE_TRIAL_ENABLE,true,基础库试用配置,D12,不证明商店offer/试用天数
+Scanner｜PDF Reader - PDF Viewer,interstitial_ad_cool_time,本地冷却缺省30秒,MMKV key_remote_cooling→乘1000→f8.x.g→f8.j.d,S03,当前线上值未知
+Scanner｜PDF Reader - PDF Viewer,is_show_vip,未恢复,==1→KEY_SHOW_VIP_ICON,S03,当前线上值未知
+Scanner｜PDF Reader - PDF Viewer,filelist_num,未恢复,整数→key_remote_file_l,S03,当前线上值未知
+Scanner｜PDF Reader - PDF Viewer,user_country,未恢复,字符串→key_fr_user_country,S03,当前线上值未知
+PDF Hero & Doc Reader,fire_pdf_hero_0,解析/本地回退,fetch/activate→JSON分区→持久化,H02,当前线上值未知
+PDF Hero & Doc Reader,adRuntimeCfg,未完整列举,根JSON分区→本地持久化,H02,当前线上值未知
+PDF Hero & Doc Reader,noticeScheduleCfg,未完整列举,根JSON分区→本地持久化,H02,当前线上值未知
+PDF Hero & Doc Reader,referralRulesCfg,未完整列举,根JSON分区→本地持久化,H02,当前线上值未知
+PDF Hero & Doc Reader,signatureHashCfg,未完整列举,根JSON分区→本地持久化,H02,当前线上值未知
+PDF Hero & Doc Reader,placementRules.home_launch,"A=1,B=1,grace=0,back=0",全局判断后点位策略,H07,本地点位回退；线上覆盖未知
+PDF Hero & Doc Reader,placementRules.其他点位,"A=0,B=1,grace=0,back=0",全局判断后点位策略,H08,本地点位回退；人群A/B来源未确认
+PDF Hero & Doc Reader,tapLimit,本表不猜具体默认值,广告策略模型；部分限制消费已定位,H04,当前线上值未知
+PDF Hero & Doc Reader,viewLimit,本表不猜具体默认值,广告策略模型；部分限制消费已定位,H04,当前线上值未知
+PDF Hero & Doc Reader,interUnitIds,本表不猜具体默认值,广告策略模型；部分限制消费已定位,H04,当前线上值未知
+PDF Hero & Doc Reader,openUnitIds,本表不猜具体默认值,广告策略模型；部分限制消费已定位,H04,当前线上值未知
+TurboScan™: PDF scanner,backup_onboarding,false,ApplicationController加载lk.xml；getter未全部恢复,T07,默认已提取，业务消费及当前远端值未完全恢复
+TurboScan™: PDF scanner,backup_checker,true,ApplicationController加载lk.xml；getter未全部恢复,T07,默认已提取，业务消费及当前远端值未完全恢复
+TurboScan™: PDF scanner,content_uris_by_default,true,ApplicationController加载lk.xml；getter未全部恢复,T07,默认已提取，业务消费及当前远端值未完全恢复
+TurboScan™: PDF scanner,export_file_provider_app_exceptions,ru.mail.cloud,ApplicationController加载lk.xml；getter未全部恢复,T07,默认已提取，业务消费及当前远端值未完全恢复
+TurboScan™: PDF scanner,apps_requiring_content_uris,com.google.android.gm;com.yahoo.mobile.client.android.mail,ApplicationController加载lk.xml；getter未全部恢复,T07,默认已提取，业务消费及当前远端值未完全恢复
+TurboScan™: PDF scanner,use_google_drive_rest_client,true,ApplicationController加载lk.xml；getter未全部恢复,T07,默认已提取，业务消费及当前远端值未完全恢复
+All Document - File Viewer,动态v前缀根键,包内构造,h→读取→空/重复跳过→w更新,A06,确切根键和全部模型赋值未完整恢复
+All Document - File Viewer,return_rate,-1,n解析整数→z记录/缓存,A07,业务意义未恢复，不是已证实收入率
+All Document - File Viewer,ol:map:config:cache:key / map:config:cfgVer,未恢复,本地缓存/版本线索,A05,远端根配置到全部广告限制模型赋值有缺口

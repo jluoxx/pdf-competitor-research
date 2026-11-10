@@ -1,0 +1,32 @@
+    private void read(FragmentTagUsageViolation.asBinder asbinder) {
+        boolean z;
+        int i = 2 % 2;
+        setAlpha setalphaOnTransact = asbinder.onTransact("premium");
+        if (setalphaOnTransact != null) {
+            int i2 = MediaBrowserCompatMediaItem + 113;
+            MediaBrowserCompatCustomActionResultReceiver = i2 % 128;
+            if (i2 % 2 == 0) {
+                int i3 = com.google.android.material.search.SearchView.Behavior.read();
+                int i4 = com.google.android.material.search.SearchView.Behavior.read();
+                int i5 = com.google.android.material.search.SearchView.Behavior.read();
+                this.asBinder = ((setAlpha.asInterface) setAlpha.asInterface(com.google.android.material.search.SearchView.Behavior.read(), i3, new Object[]{setalphaOnTransact}, 705372967, i5, -705372966, i4)).onTransact;
+            } else {
+                int i6 = com.google.android.material.search.SearchView.Behavior.read();
+                int i7 = com.google.android.material.search.SearchView.Behavior.read();
+                int i8 = com.google.android.material.search.SearchView.Behavior.read();
+                this.asBinder = ((setAlpha.asInterface) setAlpha.asInterface(com.google.android.material.search.SearchView.Behavior.read(), i6, new Object[]{setalphaOnTransact}, 705372967, i8, -705372966, i7)).onTransact;
+                Object obj = null;
+                obj.hashCode();
+                throw null;
+            }
+        }
+        if (asbinder.read("premium") != null) {
+            int i9 = MediaBrowserCompatMediaItem + 93;
+            MediaBrowserCompatCustomActionResultReceiver = i9 % 128;
+            int i10 = i9 % 2;
+            z = true;
+        } else {
+            z = false;
+        }
+        asBinder(z);
+    }

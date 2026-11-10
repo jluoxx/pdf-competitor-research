@@ -1,0 +1,31 @@
+E: defaultsMap (line=2)
+  E: entry (line=3)
+    E: key (line=4)
+      C: "backup_onboarding"
+    E: value (line=5)
+      C: "false"
+  E: entry (line=7)
+    E: key (line=8)
+      C: "backup_checker"
+    E: value (line=9)
+      C: "true"
+  E: entry (line=11)
+    E: key (line=12)
+      C: "content_uris_by_default"
+    E: value (line=13)
+      C: "true"
+  E: entry (line=15)
+    E: key (line=16)
+      C: "export_file_provider_app_exceptions"
+    E: value (line=17)
+      C: "ru.mail.cloud"
+  E: entry (line=19)
+    E: key (line=20)
+      C: "apps_requiring_content_uris"
+    E: value (line=21)
+      C: "com.google.android.gm;com.yahoo.mobile.client.android.mail"
+  E: entry (line=23)
+    E: key (line=24)
+      C: "use_google_drive_rest_client"
+    E: value (line=25)
+      C: "true"

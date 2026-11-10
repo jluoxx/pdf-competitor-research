@@ -1,0 +1,39 @@
+    private final void q() {
+        String strIapPremiumKey = iapPremiumKey();
+        String strIapPremiumWeeklyKey = iapPremiumWeeklyKey();
+        String strIapPremiumMonthlyKey = iapPremiumMonthlyKey();
+        String strIapPremiumYearlyKey = iapPremiumYearlyKey();
+        String strIapPublicKey = iapPublicKey();
+        String strDefaultIapPremiumKey = TextUtils.isEmpty(strIapPremiumKey) ? defaultIapPremiumKey() : strIapPremiumKey;
+        String strDefaultIapPremiumWeeklyKey = TextUtils.isEmpty(strIapPremiumWeeklyKey) ? defaultIapPremiumWeeklyKey() : strIapPremiumWeeklyKey;
+        String strDefaultIapPremiumMonthlyKey = TextUtils.isEmpty(strIapPremiumMonthlyKey) ? defaultIapPremiumMonthlyKey() : strIapPremiumMonthlyKey;
+        String strDefaultIapPremiumYearlyKey = TextUtils.isEmpty(strIapPremiumYearlyKey) ? defaultIapPremiumYearlyKey() : strIapPremiumYearlyKey;
+        String str = (TextUtils.isEmpty(strIapPublicKey) || Intrinsics.areEqual(strIapPublicKey, "MUST_BE_SET_TO_YOUR_OWN_KEY")) ? "no_iap_placeholder" : strIapPublicKey;
+        AppUtils.Companion.getClass();
+        com.brian.base_iap.utils.a.a(str);
+        IAPUtils iAPUtils = IAPUtils.INSTANCE;
+        iAPUtils.setKEY_PREMIUM(strDefaultIapPremiumKey);
+        iAPUtils.setKEY_PREMIUM_WEEKLY_PLAN(strDefaultIapPremiumWeeklyKey);
+        iAPUtils.setKEY_PREMIUM_MONTHLY_PLAN(strDefaultIapPremiumMonthlyKey);
+        iAPUtils.setKEY_PREMIUM_YEARLY_PLAN(strDefaultIapPremiumYearlyKey);
+        ArrayList arrayList = new ArrayList();
+        if (TextUtils.isEmpty(strIapPremiumKey)) {
+            arrayList.add("iapPremiumKey");
+        }
+        if (TextUtils.isEmpty(strIapPremiumWeeklyKey)) {
+            arrayList.add("iapPremiumWeeklyKey");
+        }
+        if (TextUtils.isEmpty(strIapPremiumMonthlyKey)) {
+            arrayList.add("iapPremiumMonthlyKey");
+        }
+        if (TextUtils.isEmpty(strIapPremiumYearlyKey)) {
+            arrayList.add("iapPremiumYearlyKey");
+        }
+        if (TextUtils.isEmpty(strIapPublicKey) || Intrinsics.areEqual(strIapPublicKey, "MUST_BE_SET_TO_YOUR_OWN_KEY")) {
+            arrayList.add("iapPublicKey");
+        }
+        if (arrayList.isEmpty()) {
+            return;
+        }
+        CollectionsKt___CollectionsKt.joinToString$default(arrayList, ", ", null, null, 0, null, null, 62, null);
+    }

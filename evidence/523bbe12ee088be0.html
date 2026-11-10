@@ -1,0 +1,72 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>025_open_refs.stdout.json · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>025_open_refs.stdout.json</h1><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/raw/com.pdfeditor.documentviewer.pdfstudio.docworks/craft/025_open_refs.stdout.json" download>下载原始文件</a></div><pre class="source-pre">{
+  &quot;authority&quot;: &quot;original-files&quot;,
+  &quot;confidence&quot;: &quot;observed&quot;,
+  &quot;coverage&quot;: {
+    &quot;examined&quot;: 2,
+    &quot;status&quot;: &quot;complete&quot;,
+    &quot;total&quot;: 2
+  },
+  &quot;environment&quot;: {
+    &quot;clean_room&quot;: false,
+    &quot;engine&quot;: &quot;builtin&quot;,
+    &quot;engine_version&quot;: &quot;0.5.0&quot;,
+    &quot;host&quot;: &quot;windows-x86_64&quot;
+  },
+  &quot;id&quot;: &quot;ev_85130aa3f35f9df0acebcfbe69c1c3c4316787547621cdc3c69dc8c472741147&quot;,
+  &quot;limitations&quot;: [
+    {
+      &quot;code&quot;: &quot;static_references_only&quot;,
+      &quot;message&quot;: &quot;Only direct bytecode references are found; reflection, JNI, string-built class names and code loaded at run time are not.&quot;
+    }
+  ],
+  &quot;links&quot;: [],
+  &quot;locations&quot;: [
+    {
+      &quot;kind&quot;: &quot;path&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\asus\\Desktop\\竞品apk1\\com.pdfeditor.documentviewer.pdfstudio.docworks\\base.apk&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;class&quot;,
+      &quot;value&quot;: &quot;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/OpenFileInterAd;&quot;
+    }
+  ],
+  &quot;operation&quot;: &quot;android_class_users_find&quot;,
+  &quot;params&quot;: {
+    &quot;class_name&quot;: &quot;com.pdfeditor.documentviewer.pdfstudio.docworks.ads.OpenFileInterAd&quot;,
+    &quot;limit&quot;: 100,
+    &quot;method_name&quot;: &quot;a&quot;,
+    &quot;offset&quot;: 0,
+    &quot;path&quot;: &quot;C:\\Users\\asus\\Desktop\\竞品apk1\\com.pdfeditor.documentviewer.pdfstudio.docworks\\base.apk&quot;
+  },
+  &quot;result&quot;: {
+    &quot;callers&quot;: 2,
+    &quot;class&quot;: &quot;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/OpenFileInterAd;&quot;,
+    &quot;defined_in&quot;: &quot;classes6.dex&quot;,
+    &quot;method_name&quot;: &quot;a&quot;,
+    &quot;references&quot;: [
+      {
+        &quot;caller&quot;: &quot;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/home/adapter/b;-&gt;onClick(Landroid/view/View;)V&quot;,
+        &quot;dex&quot;: &quot;classes6.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;00cd&quot;,
+        &quot;target&quot;: &quot;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/OpenFileInterAd;-&gt;a(Landroid/content/Context;Ljava/lang/Runnable;)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/home2/recent/adapter/TimeGroupedFileAdapter;-&gt;b(ILandroid/view/View;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/home/models/ModelFile;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ui/activities/home2/recent/adapter/TimeGroupedFileAdapter;)V&quot;,
+        &quot;dex&quot;: &quot;classes6.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0029&quot;,
+        &quot;target&quot;: &quot;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/OpenFileInterAd;-&gt;a(Landroid/content/Context;Ljava/lang/Runnable;)V&quot;
+      }
+    ],
+    &quot;references_total&quot;: 2
+  },
+  &quot;subject&quot;: {
+    &quot;kind&quot;: &quot;apk&quot;,
+    &quot;name&quot;: &quot;base.apk&quot;,
+    &quot;sha256&quot;: &quot;fe5e16570f67e4c43ab1e9b6b09e49715d626cdfcc47fe4c636b1a9509abb1d0&quot;
+  },
+  &quot;summary&quot;: &quot;2 reference(s) to com.pdfeditor.documentviewer.pdfstudio.docworks.ads.OpenFileInterAd.a from 2 method(s) across 7 DEX file(s); defined in classes6.dex.&quot;
+}</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

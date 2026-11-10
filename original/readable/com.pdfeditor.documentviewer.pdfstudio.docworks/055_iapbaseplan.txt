@@ -1,0 +1,5 @@
+    public final String getIapBasePlan() {
+        String string = this.firebaseRemoteConfig.getString(REMOTE_KEY_IAP_BASE_PLAN);
+        Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
+        return StringsKt.F(string) ? x.a("PwAIDAAwCkkSBjNTJxxUUSEECg==") : string;
+    }

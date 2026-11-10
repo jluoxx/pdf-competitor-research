@@ -1,0 +1,189 @@
+{
+  "job": {
+    "id": "056_limitrefs_fixed",
+    "package": "com.piksoft.turboscan.free",
+    "tool": "trace_android_references",
+    "args": {
+      "path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.piksoft.turboscan.free\\base.apk",
+      "class_name": "o.GetTargetFragmentUsageViolation",
+      "method_name": "RemoteActionCompatParcelizer",
+      "overload_index": 3
+    }
+  },
+  "start": "2026-11-10T07:30:35.118Z",
+  "end": "2026-11-10T07:30:43.160Z",
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_421e6844275e262273f30cecd1e7efab32fe3401fa41d011e9d7db94b748e07d\",\"subject\":{\"name\":\"base.apk\",\"digest\":{\"sha256\":\"7256a15ca3e34e1aa3da89650bf74158468c61139272303bd210b1eec82d7727\"},\"local_path\":\"C:\\\\Users\\\\asus\\\\Desktop\\\\竞品apk1\\\\com.piksoft.turboscan.free\\\\base.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"trace_android_references\",\"parameters\":{\"path\":\"C:\\\\Users\\\\asus\\\\Desktop\\\\竞品apk1\\\\com.piksoft.turboscan.free\\\\base.apk\",\"class_name\":\"o.GetTargetFragmentUsageViolation\",\"method_name\":\"RemoteActionCompatParcelizer\",\"overload_index\":3},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"7\"},\"bridge_sha256\":\"e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Temp\\\\rea-android-e01e819295ba0157d9d5b8c17f1f5a5a\\\\target.apk\",\"class_count\":6211,\"resource_count\":1933,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"engine_reported_version\\\":\\\"0.7.1\\\",\\\"available_processors\\\":3,\\\"java_version\\\":\\\"17.0.12\\\",\\\"max_heap_bytes\\\":3221225472,\\\"metadata_scope\\\":\\\"parsed_members\\\"}\"}],\"isError\":false}},{\"operation\":\"load_apk\",\"input\":{\"path\":\"C:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Temp\\\\rea-android-e01e819295ba0157d9d5b8c17f1f5a5a\\\\target.apk\",\"threads\":1,\"resources\":\"full\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"state\\\":\\\"LOADED\\\",\\\"apk_path\\\":\\\"C:\\\\\\\\Users\\\\\\\\asus\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\rea-android-e01e819295ba0157d9d5b8c17f1f5a5a\\\\\\\\target.apk\\\",\\\"class_count\\\":6211,\\\"raw_class_count\\\":6211,\\\"resource_count\\\":1933,\\\"load_duration_ms\\\":4787,\\\"decompile_timeout_ms\\\":90000,\\\"threads\\\":1,\\\"code_cache_size\\\":64,\\\"resources\\\":\\\"full\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"o.GetTargetFragmentUsageViolation\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"inner_classes\\\":[\\\"o.GetTargetFragmentUsageViolation.AnonymousClass1\\\",\\\"o.GetTargetFragmentUsageViolation.AnonymousClass2\\\",\\\"o.GetTargetFragmentUsageViolation.AnonymousClass5\\\"],\\\"methods\\\":[{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"\\\\u003cclinit\\\\u003e\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"\\\\u003cclinit\\\\u003e(): void\\\"},{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":true,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(): void\\\"},{\\\"dex_descriptor\\\":\\\"()Z\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"IconCompatParcelizer\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"IconCompatParcelizer(): boolean\\\"},{\\\"dex_descriptor\\\":\\\"()Z\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"MediaBrowserCompatCustomActionResultReceiver\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"MediaBrowserCompatCustomActionResultReceiver(): boolean\\\"},{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"MediaBrowserCompatItemReceiver\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"MediaBrowserCompatItemReceiver(): void\\\"},{\\\"dex_descriptor\\\":\\\"()Z\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"MediaBrowserCompatMediaItem\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"MediaBrowserCompatMediaItem(): boolean\\\"},{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"RemoteActionCompatParcelizer\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"RemoteActionCompatParcelizer(): void\\\"},{\\\"dex_descriptor\\\":\\\"(Landroid/app/Activity;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"RemoteActionCompatParcelizer\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"RemoteActionCompatParcelizer(android.app.Activity): void\\\"},{\\\"dex_descriptor\\\":\\\"(Landroid/app/Activity;I)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"RemoteActionCompatParcelizer\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"RemoteActionCompatParcelizer(android.app.Activity, int): void\\\"},{\\\"dex_descriptor\\\":\\\"(I)Z\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"RemoteActionCompatParcelizer\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"RemoteActionCompatParcelizer(int): boolean\\\"},{\\\"dex_descriptor\\\":\\\"(Lo/setPreserveFocusAfterLayout;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"RemoteActionCompatParcelizer\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"RemoteActionCompatParcelizer(o.setPreserveFocusAfterLayout): void\\\"},{\\\"dex_descriptor\\\":\\\"(Lo/GetTargetFragmentUsageViolation;)Lo/getRequestCode;\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"asBinder\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"asBinder(o.GetTargetFragmentUsageViolation): o.getRequestCode\\\"},{\\\"dex_descriptor\\\":\\\"(Landroid/app/Activity;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"asBinder\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"asBinder(android.app.Activity): void\\\"},{\\\"dex_descriptor\\\":\\\"(Lo/setPreserveFocusAfterLayout;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"asBinder\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"asBinder(o.setPreserveFocusAfterLayout): void\\\"},{\\\"dex_descriptor\\\":\\\"()I\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"asBinder\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"asBinder(): int\\\"},{\\\"dex_descriptor\\\":\\\"(Lcom/piksoft/turboscan/ApplicationController;I)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"asBinder\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"asBinder(com.piksoft.turboscan.ApplicationController, int): void\\\"},{\\\"dex_descriptor\\\":\\\"(II[Ljava/lang/Object;IIII)Ljava/lang/Object;\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"asInterface\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"asInterface(int, int, java.lang.Object[], int, int, int, int): java.lang.Object\\\"},{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"asInterface\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"asInterface(): void\\\"},{\\\"dex_descriptor\\\":\\\"(Landroid/app/Activity;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"asInterface\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"asInterface(android.app.Activity): void\\\"},{\\\"dex_descriptor\\\":\\\"(Landroid/app/Activity;Z)Z\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"asInterface\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"asInterface(android.app.Activity, boolean): boolean\\\"},{\\\"dex_descriptor\\\":\\\"([Ljava/lang/Object;)Ljava/lang/Object;\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"onTransact\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"onTransact(java.lang.Object[]): java.lang.Object\\\"},{\\\"dex_descriptor\\\":\\\"(Lo/GetTargetFragmentUsageViolation;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"onTransact\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"onTransact(o.GetTargetFragmentUsageViolation): void\\\"},{\\\"dex_descriptor\\\":\\\"(Lo/GetTargetFragmentUsageViolation;Lo/setPreserveFocusAfterLayout;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"onTransact\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"onTransact(o.GetTargetFragmentUsageViolation, o.setPreserveFocusAfterLayout): void\\\"},{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"onTransact\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"onTransact(): void\\\"},{\\\"dex_descriptor\\\":\\\"()I\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"read\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"read(): int\\\"},{\\\"dex_descriptor\\\":\\\"(Lo/GetTargetFragmentUsageViolation;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"read\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"read(o.GetTargetFragmentUsageViolation): void\\\"},{\\\"dex_descriptor\\\":\\\"(Lo/GetTargetFragmentUsageViolation;Landroid/app/Activity;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"read\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"read(o.GetTargetFragmentUsageViolation, android.app.Activity): void\\\"},{\\\"dex_descriptor\\\":\\\"(Lcom/piksoft/turboscan/ApplicationController;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"read\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"read(com.piksoft.turboscan.ApplicationController): void\\\"},{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"write\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"write(): void\\\"}],\\\"fields\\\":[{\\\"name\\\":\\\"IconCompatParcelizer\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"int\\\"},{\\\"name\\\":\\\"MediaBrowserCompatCustomActionResultReceiver\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"int\\\"},{\\\"name\\\":\\\"MediaBrowserCompatItemReceiver\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"int\\\"},{\\\"name\\\":\\\"MediaBrowserCompatMediaItem\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"long\\\"},{\\\"name\\\":\\\"RemoteActionCompatParcelizer\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"o.getRequestCode\\\"},{\\\"name\\\":\\\"asInterface\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"java.lang.ref.WeakReference\\\\u003candroid.app.Activity\\\\u003e\\\"},{\\\"name\\\":\\\"onTransact\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"android.content.BroadcastReceiver\\\"},{\\\"name\\\":\\\"read\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"int\\\"},{\\\"name\\\":\\\"write\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"int\\\"}],\\\"raw_name\\\":\\\"o.GetTargetFragmentUsageViolation\\\",\\\"method_count\\\":29,\\\"full_name\\\":\\\"o.GetTargetFragmentUsageViolation\\\",\\\"field_count\\\":9,\\\"name\\\":\\\"GetTargetFragmentUsageViolation\\\",\\\"inner_class_count\\\":3}\"}],\"isError\":false}},{\"operation\":\"get_xrefs_to_method\",\"input\":{\"class_name\":\"o.GetTargetFragmentUsageViolation\",\"method_name\":\"RemoteActionCompatParcelizer\",\"overload_index\":3,\"limit\":2147483647,\"resolve_line\":false},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"items\\\":[{\\\"kind\\\":\\\"method\\\",\\\"name\\\":\\\"asInterface\\\",\\\"full_name\\\":\\\"o.GetTargetFragmentUsageViolation.asInterface\\\",\\\"containing_class\\\":\\\"o.GetTargetFragmentUsageViolation\\\",\\\"top_class\\\":\\\"o.GetTargetFragmentUsageViolation\\\",\\\"def_pos\\\":0,\\\"direct_invokes\\\":[{\\\"dex_method_index\\\":34059,\\\"source_raw_method_id\\\":\\\"o.GetTargetFragmentUsageViolation.asInterface(Landroid/app/Activity;Z)Z\\\",\\\"dex_entry\\\":\\\"classes.dex\\\",\\\"opcode\\\":\\\"INVOKE_DIRECT\\\",\\\"dex_code_unit_offset\\\":74}],\\\"direct_invokes_exhaustive\\\":true}],\\\"total\\\":1,\\\"resolve_line\\\":false,\\\"target\\\":\\\"o.GetTargetFragmentUsageViolation.RemoteActionCompatParcelizer\\\",\\\"count\\\":1,\\\"overload_index\\\":3,\\\"reported_signature\\\":\\\"RemoteActionCompatParcelizer(int): boolean\\\"}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":3072},\"class_name\":\"o.GetTargetFragmentUsageViolation\",\"method_name\":\"RemoteActionCompatParcelizer\",\"overload_index\":3,\"reported_signature\":\"RemoteActionCompatParcelizer(int): boolean\",\"dex_descriptor\":\"(I)Z\",\"total\":1,\"references\":[{\"kind\":\"method\",\"name\":\"asInterface\",\"reported_full_name\":\"o.GetTargetFragmentUsageViolation.asInterface\",\"containing_class\":\"o.GetTargetFragmentUsageViolation\",\"top_class\":\"o.GetTargetFragmentUsageViolation\",\"source_line\":null,\"dex_offset\":null,\"direct_invokes_exhaustive\":true,\"direct_invokes\":[{\"dex_entry\":\"classes.dex\",\"source_raw_method_id\":\"o.GetTargetFragmentUsageViolation.asInterface(Landroid/app/Activity;Z)Z\",\"dex_code_unit_offset\":74,\"dex_method_index\":34059,\"opcode\":\"INVOKE_DIRECT\"}]}],\"coverage\":\"complete\",\"reference_unit\":\"using_node\"},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_421e6844275e262273f30cecd1e7efab32fe3401fa41d011e9d7db94b748e07d",
+      "subject": {
+        "name": "base.apk",
+        "digest": {
+          "sha256": "7256a15ca3e34e1aa3da89650bf74158468c61139272303bd210b1eec82d7727"
+        },
+        "local_path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.piksoft.turboscan.free\\base.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "trace_android_references",
+      "parameters": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.piksoft.turboscan.free\\base.apk",
+        "class_name": "o.GetTargetFragmentUsageViolation",
+        "method_name": "RemoteActionCompatParcelizer",
+        "overload_index": 3
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "7"
+        },
+        "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "C:\\Users\\asus\\AppData\\Local\\Temp\\rea-android-e01e819295ba0157d9d5b8c17f1f5a5a\\target.apk",
+          "class_count": 6211,
+          "resource_count": 1933,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":3,\"java_version\":\"17.0.12\",\"max_heap_bytes\":3221225472,\"metadata_scope\":\"parsed_members\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "load_apk",
+            "input": {
+              "path": "C:\\Users\\asus\\AppData\\Local\\Temp\\rea-android-e01e819295ba0157d9d5b8c17f1f5a5a\\target.apk",
+              "threads": 1,
+              "resources": "full"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Temp\\\\rea-android-e01e819295ba0157d9d5b8c17f1f5a5a\\\\target.apk\",\"class_count\":6211,\"raw_class_count\":6211,\"resource_count\":1933,\"load_duration_ms\":4787,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_class_summary",
+            "input": {
+              "class_name": "o.GetTargetFragmentUsageViolation"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"inner_classes\":[\"o.GetTargetFragmentUsageViolation.AnonymousClass1\",\"o.GetTargetFragmentUsageViolation.AnonymousClass2\",\"o.GetTargetFragmentUsageViolation.AnonymousClass5\"],\"methods\":[{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cclinit\\u003e(): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"IconCompatParcelizer\",\"def_pos\":0,\"signature\":\"IconCompatParcelizer(): boolean\"},{\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"MediaBrowserCompatCustomActionResultReceiver\",\"def_pos\":0,\"signature\":\"MediaBrowserCompatCustomActionResultReceiver(): boolean\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"MediaBrowserCompatItemReceiver\",\"def_pos\":0,\"signature\":\"MediaBrowserCompatItemReceiver(): void\"},{\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"MediaBrowserCompatMediaItem\",\"def_pos\":0,\"signature\":\"MediaBrowserCompatMediaItem(): boolean\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"RemoteActionCompatParcelizer\",\"def_pos\":0,\"signature\":\"RemoteActionCompatParcelizer(): void\"},{\"dex_descriptor\":\"(Landroid/app/Activity;)V\",\"is_constructor\":false,\"name\":\"RemoteActionCompatParcelizer\",\"def_pos\":0,\"signature\":\"RemoteActionCompatParcelizer(android.app.Activity): void\"},{\"dex_descriptor\":\"(Landroid/app/Activity;I)V\",\"is_constructor\":false,\"name\":\"RemoteActionCompatParcelizer\",\"def_pos\":0,\"signature\":\"RemoteActionCompatParcelizer(android.app.Activity, int): void\"},{\"dex_descriptor\":\"(I)Z\",\"is_constructor\":false,\"name\":\"RemoteActionCompatParcelizer\",\"def_pos\":0,\"signature\":\"RemoteActionCompatParcelizer(int): boolean\"},{\"dex_descriptor\":\"(Lo/setPreserveFocusAfterLayout;)V\",\"is_constructor\":false,\"name\":\"RemoteActionCompatParcelizer\",\"def_pos\":0,\"signature\":\"RemoteActionCompatParcelizer(o.setPreserveFocusAfterLayout): void\"},{\"dex_descriptor\":\"(Lo/GetTargetFragmentUsageViolation;)Lo/getRequestCode;\",\"is_constructor\":false,\"name\":\"asBinder\",\"def_pos\":0,\"signature\":\"asBinder(o.GetTargetFragmentUsageViolation): o.getRequestCode\"},{\"dex_descriptor\":\"(Landroid/app/Activity;)V\",\"is_constructor\":false,\"name\":\"asBinder\",\"def_pos\":0,\"signature\":\"asBinder(android.app.Activity): void\"},{\"dex_descriptor\":\"(Lo/setPreserveFocusAfterLayout;)V\",\"is_constructor\":false,\"name\":\"asBinder\",\"def_pos\":0,\"signature\":\"asBinder(o.setPreserveFocusAfterLayout): void\"},{\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"asBinder\",\"def_pos\":0,\"signature\":\"asBinder(): int\"},{\"dex_descriptor\":\"(Lcom/piksoft/turboscan/ApplicationController;I)V\",\"is_constructor\":false,\"name\":\"asBinder\",\"def_pos\":0,\"signature\":\"asBinder(com.piksoft.turboscan.ApplicationController, int): void\"},{\"dex_descriptor\":\"(II[Ljava/lang/Object;IIII)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"asInterface\",\"def_pos\":0,\"signature\":\"asInterface(int, int, java.lang.Object[], int, int, int, int): java.lang.Object\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"asInterface\",\"def_pos\":0,\"signature\":\"asInterface(): void\"},{\"dex_descriptor\":\"(Landroid/app/Activity;)V\",\"is_constructor\":false,\"name\":\"asInterface\",\"def_pos\":0,\"signature\":\"asInterface(android.app.Activity): void\"},{\"dex_descriptor\":\"(Landroid/app/Activity;Z)Z\",\"is_constructor\":false,\"name\":\"asInterface\",\"def_pos\":0,\"signature\":\"asInterface(android.app.Activity, boolean): boolean\"},{\"dex_descriptor\":\"([Ljava/lang/Object;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"onTransact\",\"def_pos\":0,\"signature\":\"onTransact(java.lang.Object[]): java.lang.Object\"},{\"dex_descriptor\":\"(Lo/GetTargetFragmentUsageViolation;)V\",\"is_constructor\":false,\"name\":\"onTransact\",\"def_pos\":0,\"signature\":\"onTransact(o.GetTargetFragmentUsageViolation): void\"},{\"dex_descriptor\":\"(Lo/GetTargetFragmentUsageViolation;Lo/setPreserveFocusAfterLayout;)V\",\"is_constructor\":false,\"name\":\"onTransact\",\"def_pos\":0,\"signature\":\"onTransact(o.GetTargetFragmentUsageViolation, o.setPreserveFocusAfterLayout): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"onTransact\",\"def_pos\":0,\"signature\":\"onTransact(): void\"},{\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"read\",\"def_pos\":0,\"signature\":\"read(): int\"},{\"dex_descriptor\":\"(Lo/GetTargetFragmentUsageViolation;)V\",\"is_constructor\":false,\"name\":\"read\",\"def_pos\":0,\"signature\":\"read(o.GetTargetFragmentUsageViolation): void\"},{\"dex_descriptor\":\"(Lo/GetTargetFragmentUsageViolation;Landroid/app/Activity;)V\",\"is_constructor\":false,\"name\":\"read\",\"def_pos\":0,\"signature\":\"read(o.GetTargetFragmentUsageViolation, android.app.Activity): void\"},{\"dex_descriptor\":\"(Lcom/piksoft/turboscan/ApplicationController;)V\",\"is_constructor\":false,\"name\":\"read\",\"def_pos\":0,\"signature\":\"read(com.piksoft.turboscan.ApplicationController): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"write\",\"def_pos\":0,\"signature\":\"write(): void\"}],\"fields\":[{\"name\":\"IconCompatParcelizer\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"MediaBrowserCompatCustomActionResultReceiver\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"MediaBrowserCompatItemReceiver\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"MediaBrowserCompatMediaItem\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"RemoteActionCompatParcelizer\",\"def_pos\":0,\"type\":\"o.getRequestCode\"},{\"name\":\"asInterface\",\"def_pos\":0,\"type\":\"java.lang.ref.WeakReference\\u003candroid.app.Activity\\u003e\"},{\"name\":\"onTransact\",\"def_pos\":0,\"type\":\"android.content.BroadcastReceiver\"},{\"name\":\"read\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"write\",\"def_pos\":0,\"type\":\"int\"}],\"raw_name\":\"o.GetTargetFragmentUsageViolation\",\"method_count\":29,\"full_name\":\"o.GetTargetFragmentUsageViolation\",\"field_count\":9,\"name\":\"GetTargetFragmentUsageViolation\",\"inner_class_count\":3}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_xrefs_to_method",
+            "input": {
+              "class_name": "o.GetTargetFragmentUsageViolation",
+              "method_name": "RemoteActionCompatParcelizer",
+              "overload_index": 3,
+              "limit": 2147483647,
+              "resolve_line": false
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"items\":[{\"kind\":\"method\",\"name\":\"asInterface\",\"full_name\":\"o.GetTargetFragmentUsageViolation.asInterface\",\"containing_class\":\"o.GetTargetFragmentUsageViolation\",\"top_class\":\"o.GetTargetFragmentUsageViolation\",\"def_pos\":0,\"direct_invokes\":[{\"dex_method_index\":34059,\"source_raw_method_id\":\"o.GetTargetFragmentUsageViolation.asInterface(Landroid/app/Activity;Z)Z\",\"dex_entry\":\"classes.dex\",\"opcode\":\"INVOKE_DIRECT\",\"dex_code_unit_offset\":74}],\"direct_invokes_exhaustive\":true}],\"total\":1,\"resolve_line\":false,\"target\":\"o.GetTargetFragmentUsageViolation.RemoteActionCompatParcelizer\",\"count\":1,\"overload_index\":3,\"reported_signature\":\"RemoteActionCompatParcelizer(int): boolean\"}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "o.GetTargetFragmentUsageViolation",
+        "method_name": "RemoteActionCompatParcelizer",
+        "overload_index": 3,
+        "reported_signature": "RemoteActionCompatParcelizer(int): boolean",
+        "dex_descriptor": "(I)Z",
+        "total": 1,
+        "references": [
+          {
+            "kind": "method",
+            "name": "asInterface",
+            "reported_full_name": "o.GetTargetFragmentUsageViolation.asInterface",
+            "containing_class": "o.GetTargetFragmentUsageViolation",
+            "top_class": "o.GetTargetFragmentUsageViolation",
+            "source_line": null,
+            "dex_offset": null,
+            "direct_invokes_exhaustive": true,
+            "direct_invokes": [
+              {
+                "dex_entry": "classes.dex",
+                "source_raw_method_id": "o.GetTargetFragmentUsageViolation.asInterface(Landroid/app/Activity;Z)Z",
+                "dex_code_unit_offset": 74,
+                "dex_method_index": 34059,
+                "opcode": "INVOKE_DIRECT"
+              }
+            ]
+          }
+        ],
+        "coverage": "complete",
+        "reference_unit": "using_node"
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  }
+}

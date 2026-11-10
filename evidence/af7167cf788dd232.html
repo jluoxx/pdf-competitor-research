@@ -1,0 +1,31 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>042_rcdefaults.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>042_rcdefaults.txt</h1><p><strong>D07 · 引导、弹层、广告相关默认参数</strong></p><p>RemoteConfigModel.&lt;init&gt;</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.pdfeditor.documentviewer.pdfstudio.docworks/042_rcdefaults.txt" download>下载原始文件</a></div><pre class="source-pre">    public RemoteConfigModel() {
+
+        AdsConfigModel adConfig = new AdsConfigModel();
+
+        Intrinsics.checkNotNullParameter(adConfig, &quot;adConfig&quot;);
+
+        this.adConfig = adConfig;
+
+        this.interSplash = 2;
+
+        this.homeInterChooseFolder = 30;
+
+        this.interChooseFile = 30;
+
+        this.timePushNotiUnlock = 30;
+
+        this.timeClearCacheAdHome = 30;
+
+        this.widgetSheetEveryOpen = 2;
+
+        this.showBottomSheetEveryOpenApp = 0;
+
+        this.showIntro = 0;
+
+        this.languageLoading = 0;
+
+        this.languageLoadingTime = 0;
+
+        this.showAdInOnboarding = 0;
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

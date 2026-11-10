@@ -1,0 +1,6 @@
+    public final boolean HhHei(AdSlotDisplayPolicy adSlotDisplayPolicy) {
+        if (HZB.SOSvnaZBS.RarMJxcB()) {
+            return adSlotDisplayPolicy.getAudienceEnableB() == 1 || (adSlotDisplayPolicy.getGraceDays() > 0 && Long.parseLong(SOSvnaZBS.TSr6CL()) - Long.parseLong(SOSvnaZBS.N6m(HZB.SOSvnaZBS.Bb(), null, 2, null)) >= ((long) adSlotDisplayPolicy.getGraceDays()));
+        }
+        return adSlotDisplayPolicy.getAudienceEnableA() == 1;
+    }

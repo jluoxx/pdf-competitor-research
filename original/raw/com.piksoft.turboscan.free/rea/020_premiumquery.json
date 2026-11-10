@@ -1,0 +1,177 @@
+{
+  "job": {
+    "id": "020_premiumquery",
+    "package": "com.piksoft.turboscan.free",
+    "tool": "inspect_android_method",
+    "args": {
+      "path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.piksoft.turboscan.free\\base.apk",
+      "class_name": "o.getRequestCode",
+      "method_name": "onTransact",
+      "overload_index": 1
+    }
+  },
+  "start": "2026-11-10T06:46:17.243Z",
+  "end": "2026-11-10T06:46:22.908Z",
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_2f8f2e894a599cf7dd93142ec38fd4cad8eef44cea28b8420db33dc85583da75\",\"subject\":{\"name\":\"base.apk\",\"digest\":{\"sha256\":\"7256a15ca3e34e1aa3da89650bf74158468c61139272303bd210b1eec82d7727\"},\"local_path\":\"C:\\\\Users\\\\asus\\\\Desktop\\\\竞品apk1\\\\com.piksoft.turboscan.free\\\\base.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_method\",\"parameters\":{\"path\":\"C:\\\\Users\\\\asus\\\\Desktop\\\\竞品apk1\\\\com.piksoft.turboscan.free\\\\base.apk\",\"class_name\":\"o.getRequestCode\",\"method_name\":\"onTransact\",\"overload_index\":1},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"7\"},\"bridge_sha256\":\"e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Temp\\\\rea-android-3b031c3de40195c4c9729419e454ccd3\\\\target.apk\",\"class_count\":6211,\"resource_count\":1933,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"java_version\\\":\\\"17.0.12\\\",\\\"available_processors\\\":3,\\\"engine_reported_version\\\":\\\"0.7.1\\\",\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":3221225472}\"}],\"isError\":false}},{\"operation\":\"load_apk\",\"input\":{\"path\":\"C:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Temp\\\\rea-android-3b031c3de40195c4c9729419e454ccd3\\\\target.apk\",\"threads\":1,\"resources\":\"full\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"state\\\":\\\"LOADED\\\",\\\"apk_path\\\":\\\"C:\\\\\\\\Users\\\\\\\\asus\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\rea-android-3b031c3de40195c4c9729419e454ccd3\\\\\\\\target.apk\\\",\\\"class_count\\\":6211,\\\"raw_class_count\\\":6211,\\\"resource_count\\\":1933,\\\"load_duration_ms\\\":3103,\\\"decompile_timeout_ms\\\":90000,\\\"threads\\\":1,\\\"code_cache_size\\\":64,\\\"resources\\\":\\\"full\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"o.getRequestCode\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"method_count\\\":25,\\\"raw_name\\\":\\\"o.getRequestCode\\\",\\\"fields\\\":[{\\\"def_pos\\\":0,\\\"name\\\":\\\"IconCompatParcelizer\\\",\\\"type\\\":\\\"boolean\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"MediaBrowserCompatCustomActionResultReceiver\\\",\\\"type\\\":\\\"int\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"MediaBrowserCompatItemReceiver\\\",\\\"type\\\":\\\"boolean\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"MediaBrowserCompatMediaItem\\\",\\\"type\\\":\\\"int\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"RemoteActionCompatParcelizer\\\",\\\"type\\\":\\\"o.getRequestCode$RemoteActionCompatParcelizer\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"asBinder\\\",\\\"type\\\":\\\"java.lang.String\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"asInterface\\\",\\\"type\\\":\\\"char[]\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"onTransact\\\",\\\"type\\\":\\\"o.FragmentTagUsageViolation\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"read\\\",\\\"type\\\":\\\"boolean\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"write\\\",\\\"type\\\":\\\"int\\\"}],\\\"methods\\\":[{\\\"name\\\":\\\"\\\\u003cclinit\\\\u003e\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"signature\\\":\\\"\\\\u003cclinit\\\\u003e(): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"is_constructor\\\":true,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"RemoteActionCompatParcelizer\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"([Ljava/lang/Object;)Ljava/lang/Object;\\\",\\\"signature\\\":\\\"RemoteActionCompatParcelizer(java.lang.Object[]): java.lang.Object\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"RemoteActionCompatParcelizer\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lo/getRequestCode;Landroid/app/Activity;Lo/isAutoMirrored;)V\\\",\\\"signature\\\":\\\"RemoteActionCompatParcelizer(o.getRequestCode, android.app.Activity, o.isAutoMirrored): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"RemoteActionCompatParcelizer\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Ljava/lang/String;\\\",\\\"signature\\\":\\\"RemoteActionCompatParcelizer(): java.lang.String\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"RemoteActionCompatParcelizer\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lo/getRequestCode$RemoteActionCompatParcelizer;)V\\\",\\\"signature\\\":\\\"RemoteActionCompatParcelizer(o.getRequestCode$RemoteActionCompatParcelizer): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"asBinder\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"([Ljava/lang/Object;)Ljava/lang/Object;\\\",\\\"signature\\\":\\\"asBinder(java.lang.Object[]): java.lang.Object\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"asBinder\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lo/getRequestCode;Lo/setDither;Lo/isAutoMirrored;)V\\\",\\\"signature\\\":\\\"asBinder(o.getRequestCode, o.setDither, o.isAutoMirrored): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"asBinder\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lo/setDither;Lo/isAutoMirrored;)V\\\",\\\"signature\\\":\\\"asBinder(o.setDither, o.isAutoMirrored): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"asBinder\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Z)V\\\",\\\"signature\\\":\\\"asBinder(boolean): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"asBinder\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"signature\\\":\\\"asBinder(): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"asInterface\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lo/getRequestCode;)Lo/FragmentTagUsageViolation;\\\",\\\"signature\\\":\\\"asInterface(o.getRequestCode): o.FragmentTagUsageViolation\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"asInterface\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lo/setDither;Lo/isAutoMirrored;)V\\\",\\\"signature\\\":\\\"asInterface(o.setDither, o.isAutoMirrored): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"asInterface\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Z\\\",\\\"signature\\\":\\\"asInterface(): boolean\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"onTransact\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(IIIIII[Ljava/lang/Object;)Ljava/lang/Object;\\\",\\\"signature\\\":\\\"onTransact(int, int, int, int, int, int, java.lang.Object[]): java.lang.Object\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"onTransact\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"signature\\\":\\\"onTransact(): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"onTransact\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Landroid/app/Activity;Lo/isAutoMirrored;)V\\\",\\\"signature\\\":\\\"onTransact(android.app.Activity, o.isAutoMirrored): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"onTransact\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lo/getRequestCode;Lo/FragmentTagUsageViolation$asBinder;)V\\\",\\\"signature\\\":\\\"onTransact(o.getRequestCode, o.FragmentTagUsageViolation$asBinder): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"onTransact\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lo/getRequestCode;Lo/onBoundsChange;)V\\\",\\\"signature\\\":\\\"onTransact(o.getRequestCode, o.onBoundsChange): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"onTransact\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lo/onBoundsChange;)V\\\",\\\"signature\\\":\\\"onTransact(o.onBoundsChange): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"onTransact\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lo/onBoundsChange;Ljava/util/List;)V\\\",\\\"signature\\\":\\\"onTransact(o.onBoundsChange, java.util.List\\\\u003co.setDither\\\\u003e): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"read\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"([Ljava/lang/Object;)Ljava/lang/Object;\\\",\\\"signature\\\":\\\"read(java.lang.Object[]): java.lang.Object\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"read\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"signature\\\":\\\"read(): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"read\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lo/FragmentTagUsageViolation$asBinder;)V\\\",\\\"signature\\\":\\\"read(o.FragmentTagUsageViolation$asBinder): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"read\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Landroid/app/Activity;)V\\\",\\\"signature\\\":\\\"read(android.app.Activity): void\\\",\\\"def_pos\\\":0}],\\\"inner_classes\\\":[\\\"o.getRequestCode.AnonymousClass3\\\",\\\"o.getRequestCode.RemoteActionCompatParcelizer\\\"],\\\"inner_class_count\\\":2,\\\"name\\\":\\\"getRequestCode\\\",\\\"field_count\\\":10,\\\"full_name\\\":\\\"o.getRequestCode\\\"}\"}],\"isError\":false}},{\"operation\":\"get_method_body\",\"input\":{\"class_name\":\"o.getRequestCode\",\"method_name\":\"onTransact\",\"overload_index\":1,\"smali_fallback\":true},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"fell_back\\\":false,\\\"full_name\\\":\\\"o.getRequestCode.onTransact\\\",\\\"overload_index\\\":1,\\\"method_name\\\":\\\"onTransact\\\",\\\"overload_count\\\":7,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"class_name\\\":\\\"o.getRequestCode\\\",\\\"mode\\\":\\\"java\\\",\\\"body\\\":\\\"    private void onTransact() {\\\\r\\\\n        int i \\\\u003d 2 % 2;\\\\r\\\\n        this.onTransact \\\\u003d new FragmentTagUsageViolation();\\\\r\\\\n        Gravity.getAbsoluteGravity(0, 0);\\\\r\\\\n        this.onTransact.asInterface \\\\u003d this;\\\\r\\\\n        new ArrayList(1).add(\\\\\\\"premium\\\\\\\");\\\\r\\\\n        FragmentTagUsageViolation fragmentTagUsageViolation \\\\u003d this.onTransact;\\\\r\\\\n        fragmentTagUsageViolation.asInterface(fragmentTagUsageViolation.new AnonymousClass4(new Runnable() { // from class: o.getRequestCode.3\\\\r\\\\n            @Override // java.lang.Runnable\\\\r\\\\n            public final void run() {\\\\r\\\\n                FragmentTagUsageViolation.asBinder asbinder \\\\u003d getRequestCode.asInterface(getRequestCode.this).asBinder;\\\\r\\\\n                if (asbinder !\\\\u003d null) {\\\\r\\\\n                    getRequestCode.onTransact(getRequestCode.this, asbinder);\\\\r\\\\n                }\\\\r\\\\n            }\\\\r\\\\n        }));\\\\r\\\\n        int i2 \\\\u003d MediaBrowserCompatCustomActionResultReceiver + 123;\\\\r\\\\n        MediaBrowserCompatMediaItem \\\\u003d i2 % 128;\\\\r\\\\n        if (i2 % 2 \\\\u003d\\\\u003d 0) {\\\\r\\\\n            int i3 \\\\u003d 37 / 0;\\\\r\\\\n        }\\\\r\\\\n    }\\\",\\\"markers\\\":[]}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":3072},\"class_name\":\"o.getRequestCode\",\"method\":{\"name\":\"onTransact\",\"reported_signature\":\"onTransact(): void\",\"overload_index\":1,\"is_constructor\":false,\"dex_descriptor\":\"()V\"},\"overload_count\":7,\"representation\":\"java\",\"body_status\":\"available\",\"fell_back\":false,\"markers\":[],\"source\":{\"status\":\"complete\",\"text\":\"    private void onTransact() {\\r\\n        int i = 2 % 2;\\r\\n        this.onTransact = new FragmentTagUsageViolation();\\r\\n        Gravity.getAbsoluteGravity(0, 0);\\r\\n        this.onTransact.asInterface = this;\\r\\n        new ArrayList(1).add(\\\"premium\\\");\\r\\n        FragmentTagUsageViolation fragmentTagUsageViolation = this.onTransact;\\r\\n        fragmentTagUsageViolation.asInterface(fragmentTagUsageViolation.new AnonymousClass4(new Runnable() { // from class: o.getRequestCode.3\\r\\n            @Override // java.lang.Runnable\\r\\n            public final void run() {\\r\\n                FragmentTagUsageViolation.asBinder asbinder = getRequestCode.asInterface(getRequestCode.this).asBinder;\\r\\n                if (asbinder != null) {\\r\\n                    getRequestCode.onTransact(getRequestCode.this, asbinder);\\r\\n                }\\r\\n            }\\r\\n        }));\\r\\n        int i2 = MediaBrowserCompatCustomActionResultReceiver + 123;\\r\\n        MediaBrowserCompatMediaItem = i2 % 128;\\r\\n        if (i2 % 2 == 0) {\\r\\n            int i3 = 37 / 0;\\r\\n        }\\r\\n    }\",\"reported_total_bytes\":null}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_2f8f2e894a599cf7dd93142ec38fd4cad8eef44cea28b8420db33dc85583da75",
+      "subject": {
+        "name": "base.apk",
+        "digest": {
+          "sha256": "7256a15ca3e34e1aa3da89650bf74158468c61139272303bd210b1eec82d7727"
+        },
+        "local_path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.piksoft.turboscan.free\\base.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.piksoft.turboscan.free\\base.apk",
+        "class_name": "o.getRequestCode",
+        "method_name": "onTransact",
+        "overload_index": 1
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "7"
+        },
+        "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "C:\\Users\\asus\\AppData\\Local\\Temp\\rea-android-3b031c3de40195c4c9729419e454ccd3\\target.apk",
+          "class_count": 6211,
+          "resource_count": 1933,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"java_version\":\"17.0.12\",\"available_processors\":3,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":3221225472}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "load_apk",
+            "input": {
+              "path": "C:\\Users\\asus\\AppData\\Local\\Temp\\rea-android-3b031c3de40195c4c9729419e454ccd3\\target.apk",
+              "threads": 1,
+              "resources": "full"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Temp\\\\rea-android-3b031c3de40195c4c9729419e454ccd3\\\\target.apk\",\"class_count\":6211,\"raw_class_count\":6211,\"resource_count\":1933,\"load_duration_ms\":3103,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_class_summary",
+            "input": {
+              "class_name": "o.getRequestCode"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"method_count\":25,\"raw_name\":\"o.getRequestCode\",\"fields\":[{\"def_pos\":0,\"name\":\"IconCompatParcelizer\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"MediaBrowserCompatCustomActionResultReceiver\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"MediaBrowserCompatItemReceiver\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"MediaBrowserCompatMediaItem\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"RemoteActionCompatParcelizer\",\"type\":\"o.getRequestCode$RemoteActionCompatParcelizer\"},{\"def_pos\":0,\"name\":\"asBinder\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"asInterface\",\"type\":\"char[]\"},{\"def_pos\":0,\"name\":\"onTransact\",\"type\":\"o.FragmentTagUsageViolation\"},{\"def_pos\":0,\"name\":\"read\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"write\",\"type\":\"int\"}],\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"RemoteActionCompatParcelizer\",\"is_constructor\":false,\"dex_descriptor\":\"([Ljava/lang/Object;)Ljava/lang/Object;\",\"signature\":\"RemoteActionCompatParcelizer(java.lang.Object[]): java.lang.Object\",\"def_pos\":0},{\"name\":\"RemoteActionCompatParcelizer\",\"is_constructor\":false,\"dex_descriptor\":\"(Lo/getRequestCode;Landroid/app/Activity;Lo/isAutoMirrored;)V\",\"signature\":\"RemoteActionCompatParcelizer(o.getRequestCode, android.app.Activity, o.isAutoMirrored): void\",\"def_pos\":0},{\"name\":\"RemoteActionCompatParcelizer\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"RemoteActionCompatParcelizer(): java.lang.String\",\"def_pos\":0},{\"name\":\"RemoteActionCompatParcelizer\",\"is_constructor\":false,\"dex_descriptor\":\"(Lo/getRequestCode$RemoteActionCompatParcelizer;)V\",\"signature\":\"RemoteActionCompatParcelizer(o.getRequestCode$RemoteActionCompatParcelizer): void\",\"def_pos\":0},{\"name\":\"asBinder\",\"is_constructor\":false,\"dex_descriptor\":\"([Ljava/lang/Object;)Ljava/lang/Object;\",\"signature\":\"asBinder(java.lang.Object[]): java.lang.Object\",\"def_pos\":0},{\"name\":\"asBinder\",\"is_constructor\":false,\"dex_descriptor\":\"(Lo/getRequestCode;Lo/setDither;Lo/isAutoMirrored;)V\",\"signature\":\"asBinder(o.getRequestCode, o.setDither, o.isAutoMirrored): void\",\"def_pos\":0},{\"name\":\"asBinder\",\"is_constructor\":false,\"dex_descriptor\":\"(Lo/setDither;Lo/isAutoMirrored;)V\",\"signature\":\"asBinder(o.setDither, o.isAutoMirrored): void\",\"def_pos\":0},{\"name\":\"asBinder\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\",\"signature\":\"asBinder(boolean): void\",\"def_pos\":0},{\"name\":\"asBinder\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"asBinder(): void\",\"def_pos\":0},{\"name\":\"asInterface\",\"is_constructor\":false,\"dex_descriptor\":\"(Lo/getRequestCode;)Lo/FragmentTagUsageViolation;\",\"signature\":\"asInterface(o.getRequestCode): o.FragmentTagUsageViolation\",\"def_pos\":0},{\"name\":\"asInterface\",\"is_constructor\":false,\"dex_descriptor\":\"(Lo/setDither;Lo/isAutoMirrored;)V\",\"signature\":\"asInterface(o.setDither, o.isAutoMirrored): void\",\"def_pos\":0},{\"name\":\"asInterface\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"asInterface(): boolean\",\"def_pos\":0},{\"name\":\"onTransact\",\"is_constructor\":false,\"dex_descriptor\":\"(IIIIII[Ljava/lang/Object;)Ljava/lang/Object;\",\"signature\":\"onTransact(int, int, int, int, int, int, java.lang.Object[]): java.lang.Object\",\"def_pos\":0},{\"name\":\"onTransact\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"onTransact(): void\",\"def_pos\":0},{\"name\":\"onTransact\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/app/Activity;Lo/isAutoMirrored;)V\",\"signature\":\"onTransact(android.app.Activity, o.isAutoMirrored): void\",\"def_pos\":0},{\"name\":\"onTransact\",\"is_constructor\":false,\"dex_descriptor\":\"(Lo/getRequestCode;Lo/FragmentTagUsageViolation$asBinder;)V\",\"signature\":\"onTransact(o.getRequestCode, o.FragmentTagUsageViolation$asBinder): void\",\"def_pos\":0},{\"name\":\"onTransact\",\"is_constructor\":false,\"dex_descriptor\":\"(Lo/getRequestCode;Lo/onBoundsChange;)V\",\"signature\":\"onTransact(o.getRequestCode, o.onBoundsChange): void\",\"def_pos\":0},{\"name\":\"onTransact\",\"is_constructor\":false,\"dex_descriptor\":\"(Lo/onBoundsChange;)V\",\"signature\":\"onTransact(o.onBoundsChange): void\",\"def_pos\":0},{\"name\":\"onTransact\",\"is_constructor\":false,\"dex_descriptor\":\"(Lo/onBoundsChange;Ljava/util/List;)V\",\"signature\":\"onTransact(o.onBoundsChange, java.util.List\\u003co.setDither\\u003e): void\",\"def_pos\":0},{\"name\":\"read\",\"is_constructor\":false,\"dex_descriptor\":\"([Ljava/lang/Object;)Ljava/lang/Object;\",\"signature\":\"read(java.lang.Object[]): java.lang.Object\",\"def_pos\":0},{\"name\":\"read\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"read(): void\",\"def_pos\":0},{\"name\":\"read\",\"is_constructor\":false,\"dex_descriptor\":\"(Lo/FragmentTagUsageViolation$asBinder;)V\",\"signature\":\"read(o.FragmentTagUsageViolation$asBinder): void\",\"def_pos\":0},{\"name\":\"read\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/app/Activity;)V\",\"signature\":\"read(android.app.Activity): void\",\"def_pos\":0}],\"inner_classes\":[\"o.getRequestCode.AnonymousClass3\",\"o.getRequestCode.RemoteActionCompatParcelizer\"],\"inner_class_count\":2,\"name\":\"getRequestCode\",\"field_count\":10,\"full_name\":\"o.getRequestCode\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_method_body",
+            "input": {
+              "class_name": "o.getRequestCode",
+              "method_name": "onTransact",
+              "overload_index": 1,
+              "smali_fallback": true
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"fell_back\":false,\"full_name\":\"o.getRequestCode.onTransact\",\"overload_index\":1,\"method_name\":\"onTransact\",\"overload_count\":7,\"dex_descriptor\":\"()V\",\"class_name\":\"o.getRequestCode\",\"mode\":\"java\",\"body\":\"    private void onTransact() {\\r\\n        int i \\u003d 2 % 2;\\r\\n        this.onTransact \\u003d new FragmentTagUsageViolation();\\r\\n        Gravity.getAbsoluteGravity(0, 0);\\r\\n        this.onTransact.asInterface \\u003d this;\\r\\n        new ArrayList(1).add(\\\"premium\\\");\\r\\n        FragmentTagUsageViolation fragmentTagUsageViolation \\u003d this.onTransact;\\r\\n        fragmentTagUsageViolation.asInterface(fragmentTagUsageViolation.new AnonymousClass4(new Runnable() { // from class: o.getRequestCode.3\\r\\n            @Override // java.lang.Runnable\\r\\n            public final void run() {\\r\\n                FragmentTagUsageViolation.asBinder asbinder \\u003d getRequestCode.asInterface(getRequestCode.this).asBinder;\\r\\n                if (asbinder !\\u003d null) {\\r\\n                    getRequestCode.onTransact(getRequestCode.this, asbinder);\\r\\n                }\\r\\n            }\\r\\n        }));\\r\\n        int i2 \\u003d MediaBrowserCompatCustomActionResultReceiver + 123;\\r\\n        MediaBrowserCompatMediaItem \\u003d i2 % 128;\\r\\n        if (i2 % 2 \\u003d\\u003d 0) {\\r\\n            int i3 \\u003d 37 / 0;\\r\\n        }\\r\\n    }\",\"markers\":[]}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "o.getRequestCode",
+        "method": {
+          "name": "onTransact",
+          "reported_signature": "onTransact(): void",
+          "overload_index": 1,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        "overload_count": 7,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    private void onTransact() {\r\n        int i = 2 % 2;\r\n        this.onTransact = new FragmentTagUsageViolation();\r\n        Gravity.getAbsoluteGravity(0, 0);\r\n        this.onTransact.asInterface = this;\r\n        new ArrayList(1).add(\"premium\");\r\n        FragmentTagUsageViolation fragmentTagUsageViolation = this.onTransact;\r\n        fragmentTagUsageViolation.asInterface(fragmentTagUsageViolation.new AnonymousClass4(new Runnable() { // from class: o.getRequestCode.3\r\n            @Override // java.lang.Runnable\r\n            public final void run() {\r\n                FragmentTagUsageViolation.asBinder asbinder = getRequestCode.asInterface(getRequestCode.this).asBinder;\r\n                if (asbinder != null) {\r\n                    getRequestCode.onTransact(getRequestCode.this, asbinder);\r\n                }\r\n            }\r\n        }));\r\n        int i2 = MediaBrowserCompatCustomActionResultReceiver + 123;\r\n        MediaBrowserCompatMediaItem = i2 % 128;\r\n        if (i2 % 2 == 0) {\r\n            int i3 = 37 / 0;\r\n        }\r\n    }",
+          "reported_total_bytes": null
+        }
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  }
+}

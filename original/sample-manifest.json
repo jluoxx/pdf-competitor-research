@@ -1,0 +1,316 @@
+[
+  {
+    "package": "com.pdfeditor.documentviewer.pdfstudio.docworks",
+    "serial": "16101FDD4003AH",
+    "versions": [
+      "versionCode=100",
+      "versionName=1.0.0"
+    ],
+    "files": [
+      {
+        "file": "base.apk",
+        "bytes": 69830095,
+        "sha256": "fe5e16570f67e4c43ab1e9b6b09e49715d626cdfcc47fe4c636b1a9509abb1d0",
+        "source_device_path": "/data/app/~~qXxzwywiuMx7JjHJNbClXA==/com.pdfeditor.documentviewer.pdfstudio.docworks-6ca1ijQ8Bgn3LXvyNJuVdQ==/base.apk",
+        "actual_sha256": "fe5e16570f67e4c43ab1e9b6b09e49715d626cdfcc47fe4c636b1a9509abb1d0",
+        "matches": true
+      },
+      {
+        "file": "split_config.arm64_v8a.apk",
+        "bytes": 24945619,
+        "sha256": "3d11c8ef9c860a1a48558f8d99ec319ad637377f56ac05fb8ec6b73d6408c876",
+        "source_device_path": "/data/app/~~qXxzwywiuMx7JjHJNbClXA==/com.pdfeditor.documentviewer.pdfstudio.docworks-6ca1ijQ8Bgn3LXvyNJuVdQ==/split_config.arm64_v8a.apk",
+        "actual_sha256": "3d11c8ef9c860a1a48558f8d99ec319ad637377f56ac05fb8ec6b73d6408c876",
+        "matches": true
+      },
+      {
+        "file": "split_config.xxhdpi.apk",
+        "bytes": 163396,
+        "sha256": "a7fec10a020535add56c1f8ffc30716c64ee44190519010fac4ceec253408253",
+        "source_device_path": "/data/app/~~qXxzwywiuMx7JjHJNbClXA==/com.pdfeditor.documentviewer.pdfstudio.docworks-6ca1ijQ8Bgn3LXvyNJuVdQ==/split_config.xxhdpi.apk",
+        "actual_sha256": "a7fec10a020535add56c1f8ffc30716c64ee44190519010fac4ceec253408253",
+        "matches": true
+      }
+    ]
+  },
+  {
+    "package": "com.document.pdf.scanner.free.all",
+    "serial": "16101FDD4003AH",
+    "versions": [
+      "versionCode=10010709",
+      "versionName=1.7.9"
+    ],
+    "files": [
+      {
+        "file": "base.apk",
+        "bytes": 58362853,
+        "sha256": "588d5d5b41a8033d7879626fd89846f6316d1e2741469cb5d5b3486ed0b9ba58",
+        "source_device_path": "/data/app/~~mzytzf24pCLa4n1YuB4sFQ==/com.document.pdf.scanner.free.all-WhnjX-20XjAge1qlLVup0A==/base.apk",
+        "actual_sha256": "588d5d5b41a8033d7879626fd89846f6316d1e2741469cb5d5b3486ed0b9ba58",
+        "matches": true
+      },
+      {
+        "file": "split_config.arm64_v8a.apk",
+        "bytes": 48744146,
+        "sha256": "eebb75d4a86d89f89dbbfbe5d1d63c3b9cbeaa178bcd4857b8bfb239530e4003",
+        "source_device_path": "/data/app/~~mzytzf24pCLa4n1YuB4sFQ==/com.document.pdf.scanner.free.all-WhnjX-20XjAge1qlLVup0A==/split_config.arm64_v8a.apk",
+        "actual_sha256": "eebb75d4a86d89f89dbbfbe5d1d63c3b9cbeaa178bcd4857b8bfb239530e4003",
+        "matches": true
+      },
+      {
+        "file": "split_config.xxhdpi.apk",
+        "bytes": 190814,
+        "sha256": "5eef018aac35d44981d25ebc135b856a5533cee71b5012f7a6d3a3a754628a85",
+        "source_device_path": "/data/app/~~mzytzf24pCLa4n1YuB4sFQ==/com.document.pdf.scanner.free.all-WhnjX-20XjAge1qlLVup0A==/split_config.xxhdpi.apk",
+        "actual_sha256": "5eef018aac35d44981d25ebc135b856a5533cee71b5012f7a6d3a3a754628a85",
+        "matches": true
+      }
+    ]
+  },
+  {
+    "package": "com.pdfhero.dclor.avtlo",
+    "serial": "16101FDD4003AH",
+    "versions": [
+      "versionCode=120",
+      "versionName=1.2.0"
+    ],
+    "files": [
+      {
+        "file": "base.apk",
+        "bytes": 27756567,
+        "sha256": "271d5bd588b8a1a6b9bdedb28c1016c9990dde750d5ea7c7f2a11d9413367318",
+        "source_device_path": "/data/app/~~ER06x1sMCrkGdtcQgV3WKw==/com.pdfhero.dclor.avtlo-kbMGAphAJU0lkJWeTz4W8A==/base.apk",
+        "actual_sha256": "271d5bd588b8a1a6b9bdedb28c1016c9990dde750d5ea7c7f2a11d9413367318",
+        "matches": true
+      }
+    ]
+  },
+  {
+    "package": "com.piksoft.turboscan.free",
+    "serial": "16101FDD4003AH",
+    "versions": [
+      "versionCode=123",
+      "versionName=1.7.3"
+    ],
+    "files": [
+      {
+        "file": "base.apk",
+        "bytes": 14885126,
+        "sha256": "7256a15ca3e34e1aa3da89650bf74158468c61139272303bd210b1eec82d7727",
+        "source_device_path": "/data/app/~~7nXzJpy76R-4l-FpXi007A==/com.piksoft.turboscan.free-mJvF6QMTRb76iW367XDOFQ==/base.apk",
+        "actual_sha256": "7256a15ca3e34e1aa3da89650bf74158468c61139272303bd210b1eec82d7727",
+        "matches": true
+      }
+    ]
+  },
+  {
+    "package": "com.alldocument.fileviewer.tools",
+    "serial": "16101FDD4003AH",
+    "versions": [
+      "versionCode=11",
+      "versionName=1.0"
+    ],
+    "files": [
+      {
+        "file": "base.apk",
+        "bytes": 107638534,
+        "sha256": "7eda322286a3ecdaf7ab054db02b4e2d66a05c5fb5d329e2f9d08d0d7178376d",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/base.apk",
+        "actual_sha256": "7eda322286a3ecdaf7ab054db02b4e2d66a05c5fb5d329e2f9d08d0d7178376d",
+        "matches": true
+      },
+      {
+        "file": "split_config.ar.apk",
+        "bytes": 86425,
+        "sha256": "770557abf6c02a1ab90dd58795dd2d0b5cc02c5e4b996b1f67da702e416a8171",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.ar.apk",
+        "actual_sha256": "770557abf6c02a1ab90dd58795dd2d0b5cc02c5e4b996b1f67da702e416a8171",
+        "matches": true
+      },
+      {
+        "file": "split_config.arm64_v8a.apk",
+        "bytes": 21989529,
+        "sha256": "6e8128166d0179274f77a94f6fc3fc4608908cd5cc6098c84edc4a08795930da",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.arm64_v8a.apk",
+        "actual_sha256": "6e8128166d0179274f77a94f6fc3fc4608908cd5cc6098c84edc4a08795930da",
+        "matches": true
+      },
+      {
+        "file": "split_config.de.apk",
+        "bytes": 74137,
+        "sha256": "45e04ce294a35dc3231e2b0d13a2bf166a5eac998d33c6a6d527e6e332d9c081",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.de.apk",
+        "actual_sha256": "45e04ce294a35dc3231e2b0d13a2bf166a5eac998d33c6a6d527e6e332d9c081",
+        "matches": true
+      },
+      {
+        "file": "split_config.en.apk",
+        "bytes": 246352,
+        "sha256": "4c553abcefa50d2c8ed431f897b71d95f3569e90fa2889d70aed026fc8ce0261",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.en.apk",
+        "actual_sha256": "4c553abcefa50d2c8ed431f897b71d95f3569e90fa2889d70aed026fc8ce0261",
+        "matches": true
+      },
+      {
+        "file": "split_config.es.apk",
+        "bytes": 115097,
+        "sha256": "1df94b5e77083847e2e145f94f9ce5dd3987bc1242b089214db0b45050164618",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.es.apk",
+        "actual_sha256": "1df94b5e77083847e2e145f94f9ce5dd3987bc1242b089214db0b45050164618",
+        "matches": true
+      },
+      {
+        "file": "split_config.fa.apk",
+        "bytes": 61849,
+        "sha256": "299488d2b2cdc4590f3b6d523edaabb619eace2a348e19c94a3bb347d6a9315f",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.fa.apk",
+        "actual_sha256": "299488d2b2cdc4590f3b6d523edaabb619eace2a348e19c94a3bb347d6a9315f",
+        "matches": true
+      },
+      {
+        "file": "split_config.fr.apk",
+        "bytes": 111001,
+        "sha256": "f6d56bb4a92ad5d78ffb26023e4fcb7668f4ebcf85f42e318cb6a3136fea99e2",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.fr.apk",
+        "actual_sha256": "f6d56bb4a92ad5d78ffb26023e4fcb7668f4ebcf85f42e318cb6a3136fea99e2",
+        "matches": true
+      },
+      {
+        "file": "split_config.hi.apk",
+        "bytes": 98713,
+        "sha256": "287391121854e44a2236e583959b191963497d0f99e29c0535121e0112b22e8c",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.hi.apk",
+        "actual_sha256": "287391121854e44a2236e583959b191963497d0f99e29c0535121e0112b22e8c",
+        "matches": true
+      },
+      {
+        "file": "split_config.in.apk",
+        "bytes": 82329,
+        "sha256": "11b2030bae6b9e2374fad2cfd88441cfda04602bfc532224aa62ef18d7f826c8",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.in.apk",
+        "actual_sha256": "11b2030bae6b9e2374fad2cfd88441cfda04602bfc532224aa62ef18d7f826c8",
+        "matches": true
+      },
+      {
+        "file": "split_config.it.apk",
+        "bytes": 74137,
+        "sha256": "5cc956e2e7d78dc4e438fbb62c119881de9f8abdd056b36f39c535a39b0b1d5c",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.it.apk",
+        "actual_sha256": "5cc956e2e7d78dc4e438fbb62c119881de9f8abdd056b36f39c535a39b0b1d5c",
+        "matches": true
+      },
+      {
+        "file": "split_config.iw.apk",
+        "bytes": 86425,
+        "sha256": "efe24ccafcf3a3187d0b0478925744d3972a156fb852efab1b5e4079d535f900",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.iw.apk",
+        "actual_sha256": "efe24ccafcf3a3187d0b0478925744d3972a156fb852efab1b5e4079d535f900",
+        "matches": true
+      },
+      {
+        "file": "split_config.ja.apk",
+        "bytes": 86425,
+        "sha256": "6cbfd0877bae49f64f3fb392d870271d40cc0de2e11ff06f9333d1dbb1ebcded",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.ja.apk",
+        "actual_sha256": "6cbfd0877bae49f64f3fb392d870271d40cc0de2e11ff06f9333d1dbb1ebcded",
+        "matches": true
+      },
+      {
+        "file": "split_config.ko.apk",
+        "bytes": 82329,
+        "sha256": "0d30ca8b6e18299b73f2a1248f809f97b55bd6d23543941cfe25404113bd37bf",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.ko.apk",
+        "actual_sha256": "0d30ca8b6e18299b73f2a1248f809f97b55bd6d23543941cfe25404113bd37bf",
+        "matches": true
+      },
+      {
+        "file": "split_config.ms.apk",
+        "bytes": 57753,
+        "sha256": "7f7a84cc9dd681f4c902f96a1ca78b5866d4c9402aebfdae7b4e9440337b1797",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.ms.apk",
+        "actual_sha256": "7f7a84cc9dd681f4c902f96a1ca78b5866d4c9402aebfdae7b4e9440337b1797",
+        "matches": true
+      },
+      {
+        "file": "split_config.nl.apk",
+        "bytes": 70041,
+        "sha256": "c248b8b7399fbc28751b0fa2448ac1f2c2bad1da45bac39537612139e00895be",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.nl.apk",
+        "actual_sha256": "c248b8b7399fbc28751b0fa2448ac1f2c2bad1da45bac39537612139e00895be",
+        "matches": true
+      },
+      {
+        "file": "split_config.pl.apk",
+        "bytes": 74137,
+        "sha256": "ce817e848755d2c31b00a69e858454a6dcf4e93ba89a7d490ff65b58dbefed95",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.pl.apk",
+        "actual_sha256": "ce817e848755d2c31b00a69e858454a6dcf4e93ba89a7d490ff65b58dbefed95",
+        "matches": true
+      },
+      {
+        "file": "split_config.pt.apk",
+        "bytes": 115097,
+        "sha256": "2e35dd4bcc65c5fd7dba90f43d7c8ac17d758db9b2ba569f292c1f4e506f16a0",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.pt.apk",
+        "actual_sha256": "2e35dd4bcc65c5fd7dba90f43d7c8ac17d758db9b2ba569f292c1f4e506f16a0",
+        "matches": true
+      },
+      {
+        "file": "split_config.ro.apk",
+        "bytes": 70041,
+        "sha256": "16cdfb1d60951104a784978e2b0995a29736a666725e9d163b6b0a81ccef71a4",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.ro.apk",
+        "actual_sha256": "16cdfb1d60951104a784978e2b0995a29736a666725e9d163b6b0a81ccef71a4",
+        "matches": true
+      },
+      {
+        "file": "split_config.ru.apk",
+        "bytes": 90521,
+        "sha256": "53e7ed52f078b0d17818c15b37fee5a92b9cf462324973868af682f232f31c37",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.ru.apk",
+        "actual_sha256": "53e7ed52f078b0d17818c15b37fee5a92b9cf462324973868af682f232f31c37",
+        "matches": true
+      },
+      {
+        "file": "split_config.tr.apk",
+        "bytes": 94800,
+        "sha256": "428d67a04629ee746e4268c0287424fe187ad31ecafbdcb4e310bb1c77de9ca2",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.tr.apk",
+        "actual_sha256": "428d67a04629ee746e4268c0287424fe187ad31ecafbdcb4e310bb1c77de9ca2",
+        "matches": true
+      },
+      {
+        "file": "split_config.uz.apk",
+        "bytes": 70041,
+        "sha256": "f0b3aa49398ec0044427b69a19d07a1944dc70f9768388dc87d9e655f22168a5",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.uz.apk",
+        "actual_sha256": "f0b3aa49398ec0044427b69a19d07a1944dc70f9768388dc87d9e655f22168a5",
+        "matches": true
+      },
+      {
+        "file": "split_config.vi.apk",
+        "bytes": 78233,
+        "sha256": "9dc22ab5aa1086bb391783c534516baf44940b4625b07f99d975297ddd0bddb9",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.vi.apk",
+        "actual_sha256": "9dc22ab5aa1086bb391783c534516baf44940b4625b07f99d975297ddd0bddb9",
+        "matches": true
+      },
+      {
+        "file": "split_config.xxhdpi.apk",
+        "bytes": 255505,
+        "sha256": "12b961b973994cde45e90bb29904d7264efbd67d7a93cf4b11201627b847368d",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.xxhdpi.apk",
+        "actual_sha256": "12b961b973994cde45e90bb29904d7264efbd67d7a93cf4b11201627b847368d",
+        "matches": true
+      },
+      {
+        "file": "split_config.zh.apk",
+        "bytes": 189008,
+        "sha256": "3cc3a989dfa2e46ce31c6b9b21ce3674b7674b52dd2daa1b532710b5c1729728",
+        "source_device_path": "/data/app/~~tvHrCFp9xh-P9UAI-Xp9wA==/com.alldocument.fileviewer.tools-lck_1NMqjd6iDoFqYvcO_g==/split_config.zh.apk",
+        "actual_sha256": "3cc3a989dfa2e46ce31c6b9b21ce3674b7674b52dd2daa1b532710b5c1729728",
+        "matches": true
+      }
+    ]
+  }
+]

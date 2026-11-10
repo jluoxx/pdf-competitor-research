@@ -1,0 +1,158 @@
+{
+  "job": {
+    "id": "041_homead",
+    "package": "com.alldocument.fileviewer.tools",
+    "tool": "inspect_android_method",
+    "args": {
+      "path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.alldocument.fileviewer.tools\\base.apk",
+      "class_name": "ija",
+      "method_name": "b"
+    }
+  },
+  "start": "2026-11-10T06:55:57.971Z",
+  "end": "2026-11-10T06:55:58.513Z",
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_39baac56d47d7e58dfce9ba5fda704487271f0e498bbf7ce4df5a9664df9ce0b\",\"subject\":{\"name\":\"base.apk\",\"digest\":{\"sha256\":\"7eda322286a3ecdaf7ab054db02b4e2d66a05c5fb5d329e2f9d08d0d7178376d\"},\"local_path\":\"C:\\\\Users\\\\asus\\\\Desktop\\\\竞品apk1\\\\com.alldocument.fileviewer.tools\\\\base.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_method\",\"parameters\":{\"path\":\"C:\\\\Users\\\\asus\\\\Desktop\\\\竞品apk1\\\\com.alldocument.fileviewer.tools\\\\base.apk\",\"class_name\":\"ija\",\"method_name\":\"b\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"7\"},\"bridge_sha256\":\"e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Temp\\\\rea-android-9df6a81213d7bd3762a51093738f3aea\\\\target.apk\",\"class_count\":52435,\"resource_count\":4131,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"engine_reported_version\\\":\\\"0.7.1\\\",\\\"available_processors\\\":3,\\\"java_version\\\":\\\"17.0.12\\\",\\\"max_heap_bytes\\\":3221225472,\\\"metadata_scope\\\":\\\"parsed_members\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"ija\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"inner_classes\\\":[\\\"ija.a\\\",\\\"ija.b\\\",\\\"ija.c\\\",\\\"ija.d\\\",\\\"ija.e\\\",\\\"ija.f\\\"],\\\"methods\\\":[{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"\\\\u003cclinit\\\\u003e\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"\\\\u003cclinit\\\\u003e(): void\\\"},{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":true,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(): void\\\"},{\\\"dex_descriptor\\\":\\\"(Lija;Landroid/content/Context;Ljava/lang/String;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"a\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"a(ija, android.content.Context, java.lang.String): void\\\"},{\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"b\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"b(java.lang.String, kotlin.jvm.functions.Function0): void\\\"},{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"c\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"c(): void\\\"},{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"d\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"d(): void\\\"},{\\\"dex_descriptor\\\":\\\"(Landroid/content/Context;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"e\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"e(android.content.Context): void\\\"},{\\\"dex_descriptor\\\":\\\"(Landroid/content/Context;Ljava/lang/String;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"f\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"f(android.content.Context, java.lang.String): void\\\"}],\\\"fields\\\":[{\\\"name\\\":\\\"a\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"ija\\\"},{\\\"name\\\":\\\"b\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"java.lang.String\\\"},{\\\"name\\\":\\\"c\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"uy1\\\"}],\\\"raw_name\\\":\\\"ija\\\",\\\"method_count\\\":8,\\\"full_name\\\":\\\"defpackage.ija\\\",\\\"field_count\\\":3,\\\"name\\\":\\\"ija\\\",\\\"inner_class_count\\\":6}\"}],\"isError\":false}},{\"operation\":\"get_method_body\",\"input\":{\"class_name\":\"ija\",\"method_name\":\"b\",\"overload_index\":0,\"smali_fallback\":true},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"markers\\\":[],\\\"body\\\":\\\"    public final void b(String str, Function0 function0) {\\\\r\\\\n        j1d.a(new byte[]{21, -6, 110, -35, 119, 42}, new byte[]{116, -98, 32, -68, 26, Field.AUTOTEXT, Field.INCLUDETEXT, Field.SHAPE});\\\\r\\\\n        j1d.a(new byte[]{-74, 110, Field.GLOSSARY, 21, -50, Field.ASK}, new byte[]{-41, 13, Field.HTMLCONTROL, 124, -95, Field.NOTEREF, -115, Field.AUTONUM});\\\\r\\\\n        kw7.d(j1d.a(new byte[]{-16, Field.HYPERLINK, Field.HYPERLINK, -116, -125, Field.FORMDROPDOWN, Field.FORMCHECKBOX, 58, -63, Field.INCLUDETEXT, Field.BIDIOUTLINE, -121, -119, 64}, new byte[]{-96, 42, 61, -32, -20, Field.GOTOBUTTON, Field.QUOTE, 119}), j1d.a(new byte[]{-83, -117, 16, -18, 78, -86, -8, -11, -85, -76, 17, -30, 82, -93, -13}, new byte[]{-50, -25, 121, -115, Field.PAGEREF, -30, -105, -104}));\\\\r\\\\n        Activity activityP \\\\u003d as.f.b().p();\\\\r\\\\n        if (activityP !\\\\u003d null) {\\\\r\\\\n            d76.a.d(a64.a, str, activityP, null, true, new a(function0), new b(function0), 4, null);\\\\r\\\\n        } else {\\\\r\\\\n            kw7.d(j1d.a(new byte[]{-115, 34, -2, -46, -67, Field.GLOSSARY, -60, -92, -68, Field.USERADDRESS, -6, -39, -73, 60}, new byte[]{-35, 80, -101, -66, -46, 78, -96, -23}), j1d.a(new byte[]{33, 108, -95, -10, 102, 48, -100, -115, Field.FILLIN, Field.FORMDROPDOWN, -96, -6, 122, Field.SYMBOL, -105, -64, 98, 108, -87, -26, 121, 42, -106, -109, Field.IMPORT, 109, -83, -44, 110, 12, -102, -106, 43, 116, -79, -75, 100, 11, -45, -114, Field.IMPORT, 108, -92}, new byte[]{Field.SECTIONPAGES, 0, -56, -107, 13, 120, -13, -32}));\\\\r\\\\n            function0.invoke();\\\\r\\\\n        }\\\\r\\\\n    }\\\",\\\"mode\\\":\\\"java\\\",\\\"class_name\\\":\\\"defpackage.ija\\\",\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V\\\",\\\"overload_count\\\":1,\\\"method_name\\\":\\\"b\\\",\\\"overload_index\\\":0,\\\"full_name\\\":\\\"ija.b\\\",\\\"fell_back\\\":false}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":3072},\"class_name\":\"defpackage.ija\",\"method\":{\"name\":\"b\",\"reported_signature\":\"b(java.lang.String, kotlin.jvm.functions.Function0): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V\"},\"overload_count\":1,\"representation\":\"java\",\"body_status\":\"available\",\"fell_back\":false,\"markers\":[],\"source\":{\"status\":\"complete\",\"text\":\"    public final void b(String str, Function0 function0) {\\r\\n        j1d.a(new byte[]{21, -6, 110, -35, 119, 42}, new byte[]{116, -98, 32, -68, 26, Field.AUTOTEXT, Field.INCLUDETEXT, Field.SHAPE});\\r\\n        j1d.a(new byte[]{-74, 110, Field.GLOSSARY, 21, -50, Field.ASK}, new byte[]{-41, 13, Field.HTMLCONTROL, 124, -95, Field.NOTEREF, -115, Field.AUTONUM});\\r\\n        kw7.d(j1d.a(new byte[]{-16, Field.HYPERLINK, Field.HYPERLINK, -116, -125, Field.FORMDROPDOWN, Field.FORMCHECKBOX, 58, -63, Field.INCLUDETEXT, Field.BIDIOUTLINE, -121, -119, 64}, new byte[]{-96, 42, 61, -32, -20, Field.GOTOBUTTON, Field.QUOTE, 119}), j1d.a(new byte[]{-83, -117, 16, -18, 78, -86, -8, -11, -85, -76, 17, -30, 82, -93, -13}, new byte[]{-50, -25, 121, -115, Field.PAGEREF, -30, -105, -104}));\\r\\n        Activity activityP = as.f.b().p();\\r\\n        if (activityP != null) {\\r\\n            d76.a.d(a64.a, str, activityP, null, true, new a(function0), new b(function0), 4, null);\\r\\n        } else {\\r\\n            kw7.d(j1d.a(new byte[]{-115, 34, -2, -46, -67, Field.GLOSSARY, -60, -92, -68, Field.USERADDRESS, -6, -39, -73, 60}, new byte[]{-35, 80, -101, -66, -46, 78, -96, -23}), j1d.a(new byte[]{33, 108, -95, -10, 102, 48, -100, -115, Field.FILLIN, Field.FORMDROPDOWN, -96, -6, 122, Field.SYMBOL, -105, -64, 98, 108, -87, -26, 121, 42, -106, -109, Field.IMPORT, 109, -83, -44, 110, 12, -102, -106, 43, 116, -79, -75, 100, 11, -45, -114, Field.IMPORT, 108, -92}, new byte[]{Field.SECTIONPAGES, 0, -56, -107, 13, 120, -13, -32}));\\r\\n            function0.invoke();\\r\\n        }\\r\\n    }\",\"reported_total_bytes\":null}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_39baac56d47d7e58dfce9ba5fda704487271f0e498bbf7ce4df5a9664df9ce0b",
+      "subject": {
+        "name": "base.apk",
+        "digest": {
+          "sha256": "7eda322286a3ecdaf7ab054db02b4e2d66a05c5fb5d329e2f9d08d0d7178376d"
+        },
+        "local_path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.alldocument.fileviewer.tools\\base.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "ija",
+        "method_name": "b"
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "7"
+        },
+        "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "C:\\Users\\asus\\AppData\\Local\\Temp\\rea-android-9df6a81213d7bd3762a51093738f3aea\\target.apk",
+          "class_count": 52435,
+          "resource_count": 4131,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":3,\"java_version\":\"17.0.12\",\"max_heap_bytes\":3221225472,\"metadata_scope\":\"parsed_members\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_class_summary",
+            "input": {
+              "class_name": "ija"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"inner_classes\":[\"ija.a\",\"ija.b\",\"ija.c\",\"ija.d\",\"ija.e\",\"ija.f\"],\"methods\":[{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cclinit\\u003e(): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"dex_descriptor\":\"(Lija;Landroid/content/Context;Ljava/lang/String;)V\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(ija, android.content.Context, java.lang.String): void\"},{\"dex_descriptor\":\"(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(java.lang.String, kotlin.jvm.functions.Function0): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(): void\"},{\"dex_descriptor\":\"(Landroid/content/Context;)V\",\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(android.content.Context): void\"},{\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;)V\",\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(android.content.Context, java.lang.String): void\"}],\"fields\":[{\"name\":\"a\",\"def_pos\":0,\"type\":\"ija\"},{\"name\":\"b\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"c\",\"def_pos\":0,\"type\":\"uy1\"}],\"raw_name\":\"ija\",\"method_count\":8,\"full_name\":\"defpackage.ija\",\"field_count\":3,\"name\":\"ija\",\"inner_class_count\":6}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_method_body",
+            "input": {
+              "class_name": "ija",
+              "method_name": "b",
+              "overload_index": 0,
+              "smali_fallback": true
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"markers\":[],\"body\":\"    public final void b(String str, Function0 function0) {\\r\\n        j1d.a(new byte[]{21, -6, 110, -35, 119, 42}, new byte[]{116, -98, 32, -68, 26, Field.AUTOTEXT, Field.INCLUDETEXT, Field.SHAPE});\\r\\n        j1d.a(new byte[]{-74, 110, Field.GLOSSARY, 21, -50, Field.ASK}, new byte[]{-41, 13, Field.HTMLCONTROL, 124, -95, Field.NOTEREF, -115, Field.AUTONUM});\\r\\n        kw7.d(j1d.a(new byte[]{-16, Field.HYPERLINK, Field.HYPERLINK, -116, -125, Field.FORMDROPDOWN, Field.FORMCHECKBOX, 58, -63, Field.INCLUDETEXT, Field.BIDIOUTLINE, -121, -119, 64}, new byte[]{-96, 42, 61, -32, -20, Field.GOTOBUTTON, Field.QUOTE, 119}), j1d.a(new byte[]{-83, -117, 16, -18, 78, -86, -8, -11, -85, -76, 17, -30, 82, -93, -13}, new byte[]{-50, -25, 121, -115, Field.PAGEREF, -30, -105, -104}));\\r\\n        Activity activityP \\u003d as.f.b().p();\\r\\n        if (activityP !\\u003d null) {\\r\\n            d76.a.d(a64.a, str, activityP, null, true, new a(function0), new b(function0), 4, null);\\r\\n        } else {\\r\\n            kw7.d(j1d.a(new byte[]{-115, 34, -2, -46, -67, Field.GLOSSARY, -60, -92, -68, Field.USERADDRESS, -6, -39, -73, 60}, new byte[]{-35, 80, -101, -66, -46, 78, -96, -23}), j1d.a(new byte[]{33, 108, -95, -10, 102, 48, -100, -115, Field.FILLIN, Field.FORMDROPDOWN, -96, -6, 122, Field.SYMBOL, -105, -64, 98, 108, -87, -26, 121, 42, -106, -109, Field.IMPORT, 109, -83, -44, 110, 12, -102, -106, 43, 116, -79, -75, 100, 11, -45, -114, Field.IMPORT, 108, -92}, new byte[]{Field.SECTIONPAGES, 0, -56, -107, 13, 120, -13, -32}));\\r\\n            function0.invoke();\\r\\n        }\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.ija\",\"dex_descriptor\":\"(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V\",\"overload_count\":1,\"method_name\":\"b\",\"overload_index\":0,\"full_name\":\"ija.b\",\"fell_back\":false}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "defpackage.ija",
+        "method": {
+          "name": "b",
+          "reported_signature": "b(java.lang.String, kotlin.jvm.functions.Function0): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    public final void b(String str, Function0 function0) {\r\n        j1d.a(new byte[]{21, -6, 110, -35, 119, 42}, new byte[]{116, -98, 32, -68, 26, Field.AUTOTEXT, Field.INCLUDETEXT, Field.SHAPE});\r\n        j1d.a(new byte[]{-74, 110, Field.GLOSSARY, 21, -50, Field.ASK}, new byte[]{-41, 13, Field.HTMLCONTROL, 124, -95, Field.NOTEREF, -115, Field.AUTONUM});\r\n        kw7.d(j1d.a(new byte[]{-16, Field.HYPERLINK, Field.HYPERLINK, -116, -125, Field.FORMDROPDOWN, Field.FORMCHECKBOX, 58, -63, Field.INCLUDETEXT, Field.BIDIOUTLINE, -121, -119, 64}, new byte[]{-96, 42, 61, -32, -20, Field.GOTOBUTTON, Field.QUOTE, 119}), j1d.a(new byte[]{-83, -117, 16, -18, 78, -86, -8, -11, -85, -76, 17, -30, 82, -93, -13}, new byte[]{-50, -25, 121, -115, Field.PAGEREF, -30, -105, -104}));\r\n        Activity activityP = as.f.b().p();\r\n        if (activityP != null) {\r\n            d76.a.d(a64.a, str, activityP, null, true, new a(function0), new b(function0), 4, null);\r\n        } else {\r\n            kw7.d(j1d.a(new byte[]{-115, 34, -2, -46, -67, Field.GLOSSARY, -60, -92, -68, Field.USERADDRESS, -6, -39, -73, 60}, new byte[]{-35, 80, -101, -66, -46, 78, -96, -23}), j1d.a(new byte[]{33, 108, -95, -10, 102, 48, -100, -115, Field.FILLIN, Field.FORMDROPDOWN, -96, -6, 122, Field.SYMBOL, -105, -64, 98, 108, -87, -26, 121, 42, -106, -109, Field.IMPORT, 109, -83, -44, 110, 12, -102, -106, 43, 116, -79, -75, 100, 11, -45, -114, Field.IMPORT, 108, -92}, new byte[]{Field.SECTIONPAGES, 0, -56, -107, 13, 120, -13, -32}));\r\n            function0.invoke();\r\n        }\r\n    }",
+          "reported_total_bytes": null
+        }
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  }
+}

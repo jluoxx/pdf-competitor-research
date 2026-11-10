@@ -1,0 +1,434 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>060_openad.stdout.json · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>060_openad.stdout.json</h1><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/raw/com.pdfeditor.documentviewer.pdfstudio.docworks/craft/060_openad.stdout.json" download>下载原始文件</a></div><pre class="source-pre">{
+  &quot;authority&quot;: &quot;original-files&quot;,
+  &quot;confidence&quot;: &quot;observed&quot;,
+  &quot;coverage&quot;: {
+    &quot;examined&quot;: 59,
+    &quot;status&quot;: &quot;complete&quot;,
+    &quot;total&quot;: 59
+  },
+  &quot;environment&quot;: {
+    &quot;clean_room&quot;: false,
+    &quot;engine&quot;: &quot;builtin&quot;,
+    &quot;engine_version&quot;: &quot;0.5.0&quot;,
+    &quot;host&quot;: &quot;windows-x86_64&quot;
+  },
+  &quot;id&quot;: &quot;ev_c3e3ff2a37ab00bd7467570a852269671e07b16968250ccba16b59b3b022c994&quot;,
+  &quot;limitations&quot;: [],
+  &quot;links&quot;: [],
+  &quot;locations&quot;: [
+    {
+      &quot;kind&quot;: &quot;path&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\asus\\Desktop\\竞品apk1\\com.pdfeditor.documentviewer.pdfstudio.docworks\\base.apk&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;method&quot;,
+      &quot;value&quot;: &quot;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/OpenFileInterAd;-&gt;a(Landroid/content/Context;Ljava/lang/Runnable;)V&quot;
+    }
+  ],
+  &quot;operation&quot;: &quot;android_method_show&quot;,
+  &quot;params&quot;: {
+    &quot;class_name&quot;: &quot;com.pdfeditor.documentviewer.pdfstudio.docworks.ads.OpenFileInterAd&quot;,
+    &quot;java_source&quot;: false,
+    &quot;limit&quot;: 2000,
+    &quot;method_name&quot;: &quot;a&quot;,
+    &quot;offset&quot;: 0,
+    &quot;overload_index&quot;: 0,
+    &quot;path&quot;: &quot;C:\\Users\\asus\\Desktop\\竞品apk1\\com.pdfeditor.documentviewer.pdfstudio.docworks\\base.apk&quot;
+  },
+  &quot;result&quot;: {
+    &quot;access&quot;: [
+      &quot;public&quot;,
+      &quot;static&quot;
+    ],
+    &quot;class&quot;: &quot;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/OpenFileInterAd;&quot;,
+    &quot;dex&quot;: &quot;classes6.dex&quot;,
+    &quot;ins&quot;: 2,
+    &quot;instructions&quot;: [
+      {
+        &quot;offset&quot;: &quot;0000&quot;,
+        &quot;opcode&quot;: &quot;0x07&quot;,
+        &quot;text&quot;: &quot;move-object v0, v5&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0001&quot;,
+        &quot;opcode&quot;: &quot;0x20&quot;,
+        &quot;text&quot;: &quot;instance-of v1, v0, Landroid/content/ContextWrapper;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0003&quot;,
+        &quot;opcode&quot;: &quot;0x38&quot;,
+        &quot;text&quot;: &quot;if-eqz v1, :0013&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0005&quot;,
+        &quot;opcode&quot;: &quot;0x20&quot;,
+        &quot;text&quot;: &quot;instance-of v1, v0, Landroid/app/Activity;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0007&quot;,
+        &quot;opcode&quot;: &quot;0x38&quot;,
+        &quot;text&quot;: &quot;if-eqz v1, :000c&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0009&quot;,
+        &quot;opcode&quot;: &quot;0x1f&quot;,
+        &quot;text&quot;: &quot;check-cast v0, Landroid/app/Activity;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;000b&quot;,
+        &quot;opcode&quot;: &quot;0x28&quot;,
+        &quot;text&quot;: &quot;goto :0014&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;000c&quot;,
+        &quot;opcode&quot;: &quot;0x1f&quot;,
+        &quot;text&quot;: &quot;check-cast v0, Landroid/content/ContextWrapper;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;000e&quot;,
+        &quot;opcode&quot;: &quot;0x6e&quot;,
+        &quot;text&quot;: &quot;invoke-virtual {v0}, Landroid/content/ContextWrapper;-&gt;getBaseContext()Landroid/content/Context;&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0011&quot;,
+        &quot;opcode&quot;: &quot;0x0c&quot;,
+        &quot;text&quot;: &quot;move-result-object v0&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0012&quot;,
+        &quot;opcode&quot;: &quot;0x28&quot;,
+        &quot;text&quot;: &quot;goto :0001&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0013&quot;,
+        &quot;opcode&quot;: &quot;0x12&quot;,
+        &quot;text&quot;: &quot;const/4 v0, 0&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0014&quot;,
+        &quot;opcode&quot;: &quot;0x38&quot;,
+        &quot;text&quot;: &quot;if-eqz v0, :006d&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0016&quot;,
+        &quot;opcode&quot;: &quot;0x6e&quot;,
+        &quot;text&quot;: &quot;invoke-virtual {v0}, Landroid/app/Activity;-&gt;isFinishing()Z&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0019&quot;,
+        &quot;opcode&quot;: &quot;0x0a&quot;,
+        &quot;text&quot;: &quot;move-result v1&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;001a&quot;,
+        &quot;opcode&quot;: &quot;0x39&quot;,
+        &quot;text&quot;: &quot;if-nez v1, :006d&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;001c&quot;,
+        &quot;opcode&quot;: &quot;0x6e&quot;,
+        &quot;text&quot;: &quot;invoke-virtual {v0}, Landroid/app/Activity;-&gt;isDestroyed()Z&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;001f&quot;,
+        &quot;opcode&quot;: &quot;0x0a&quot;,
+        &quot;text&quot;: &quot;move-result v1&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0020&quot;,
+        &quot;opcode&quot;: &quot;0x39&quot;,
+        &quot;text&quot;: &quot;if-nez v1, :006d&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0022&quot;,
+        &quot;opcode&quot;: &quot;0x1a&quot;,
+        &quot;text&quot;: &quot;const-string v1, \&quot;connectivity\&quot;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0024&quot;,
+        &quot;opcode&quot;: &quot;0x6e&quot;,
+        &quot;text&quot;: &quot;invoke-virtual {v5, v1}, Landroid/content/Context;-&gt;getSystemService(Ljava/lang/String;)Ljava/lang/Object;&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0027&quot;,
+        &quot;opcode&quot;: &quot;0x0c&quot;,
+        &quot;text&quot;: &quot;move-result-object v5&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0028&quot;,
+        &quot;opcode&quot;: &quot;0x1f&quot;,
+        &quot;text&quot;: &quot;check-cast v5, Landroid/net/ConnectivityManager;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;002a&quot;,
+        &quot;opcode&quot;: &quot;0x39&quot;,
+        &quot;text&quot;: &quot;if-nez v5, :002d&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;002c&quot;,
+        &quot;opcode&quot;: &quot;0x28&quot;,
+        &quot;text&quot;: &quot;goto :006d&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;002d&quot;,
+        &quot;opcode&quot;: &quot;0x6e&quot;,
+        &quot;text&quot;: &quot;invoke-virtual {v5}, Landroid/net/ConnectivityManager;-&gt;getActiveNetworkInfo()Landroid/net/NetworkInfo;&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0030&quot;,
+        &quot;opcode&quot;: &quot;0x0c&quot;,
+        &quot;text&quot;: &quot;move-result-object v5&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0031&quot;,
+        &quot;opcode&quot;: &quot;0x38&quot;,
+        &quot;text&quot;: &quot;if-eqz v5, :006d&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0033&quot;,
+        &quot;opcode&quot;: &quot;0x6e&quot;,
+        &quot;text&quot;: &quot;invoke-virtual {v5}, Landroid/net/NetworkInfo;-&gt;isConnected()Z&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0036&quot;,
+        &quot;opcode&quot;: &quot;0x0a&quot;,
+        &quot;text&quot;: &quot;move-result v5&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0037&quot;,
+        &quot;opcode&quot;: &quot;0x38&quot;,
+        &quot;text&quot;: &quot;if-eqz v5, :006d&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0039&quot;,
+        &quot;opcode&quot;: &quot;0x71&quot;,
+        &quot;text&quot;: &quot;invoke-static {}, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/RemoteConfigBridge;-&gt;a()Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/RemoteConfigBridge$Config;&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;003c&quot;,
+        &quot;opcode&quot;: &quot;0x0c&quot;,
+        &quot;text&quot;: &quot;move-result-object v5&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;003d&quot;,
+        &quot;opcode&quot;: &quot;0x6e&quot;,
+        &quot;text&quot;: &quot;invoke-virtual {v5}, Ljava/lang/Object;-&gt;getClass()Ljava/lang/Class;&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0040&quot;,
+        &quot;opcode&quot;: &quot;0x1a&quot;,
+        &quot;text&quot;: &quot;const-string v5, \&quot;inter_all\&quot;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0042&quot;,
+        &quot;opcode&quot;: &quot;0x71&quot;,
+        &quot;text&quot;: &quot;invoke-static {v5}, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/RemoteConfigBridge$Config;-&gt;a(Ljava/lang/String;)Ljava/lang/String;&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0045&quot;,
+        &quot;opcode&quot;: &quot;0x0c&quot;,
+        &quot;text&quot;: &quot;move-result-object v5&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0046&quot;,
+        &quot;opcode&quot;: &quot;0x38&quot;,
+        &quot;text&quot;: &quot;if-eqz v5, :0069&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0048&quot;,
+        &quot;opcode&quot;: &quot;0x6e&quot;,
+        &quot;text&quot;: &quot;invoke-virtual {v5}, Ljava/lang/String;-&gt;isEmpty()Z&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;004b&quot;,
+        &quot;opcode&quot;: &quot;0x0a&quot;,
+        &quot;text&quot;: &quot;move-result v1&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;004c&quot;,
+        &quot;opcode&quot;: &quot;0x38&quot;,
+        &quot;text&quot;: &quot;if-eqz v1, :004f&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;004e&quot;,
+        &quot;opcode&quot;: &quot;0x28&quot;,
+        &quot;text&quot;: &quot;goto :0069&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;004f&quot;,
+        &quot;opcode&quot;: &quot;0x71&quot;,
+        &quot;text&quot;: &quot;invoke-static {}, Lcom/nlbn/ads/util/Admob;-&gt;getInstance()Lcom/nlbn/ads/util/Admob;&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0052&quot;,
+        &quot;opcode&quot;: &quot;0x0c&quot;,
+        &quot;text&quot;: &quot;move-result-object v1&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0053&quot;,
+        &quot;opcode&quot;: &quot;0x12&quot;,
+        &quot;text&quot;: &quot;const/4 v2, 0&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0054&quot;,
+        &quot;opcode&quot;: &quot;0x6e&quot;,
+        &quot;text&quot;: &quot;invoke-virtual {v1, v2}, Lcom/nlbn/ads/util/Admob;-&gt;setOpenActivityAfterShowInterAds(Z)V&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0057&quot;,
+        &quot;opcode&quot;: &quot;0x12&quot;,
+        &quot;text&quot;: &quot;const/4 v1, 1&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0058&quot;,
+        &quot;opcode&quot;: &quot;0x23&quot;,
+        &quot;text&quot;: &quot;new-array v3, v1, [Z&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;005a&quot;,
+        &quot;opcode&quot;: &quot;0x4e&quot;,
+        &quot;text&quot;: &quot;aput-boolean v2, v3, v2&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;005c&quot;,
+        &quot;opcode&quot;: &quot;0x71&quot;,
+        &quot;text&quot;: &quot;invoke-static {}, Lcom/nlbn/ads/util/Admob;-&gt;getInstance()Lcom/nlbn/ads/util/Admob;&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;005f&quot;,
+        &quot;opcode&quot;: &quot;0x0c&quot;,
+        &quot;text&quot;: &quot;move-result-object v2&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0060&quot;,
+        &quot;opcode&quot;: &quot;0x22&quot;,
+        &quot;text&quot;: &quot;new-instance v4, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/OpenFileInterAd$1;&quot;,
+        &quot;units&quot;: 2
+      },
+      {
+        &quot;offset&quot;: &quot;0062&quot;,
+        &quot;opcode&quot;: &quot;0x70&quot;,
+        &quot;text&quot;: &quot;invoke-direct {v4, v3, v0, v6}, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/OpenFileInterAd$1;-&gt;&lt;init&gt;([ZLandroid/app/Activity;Ljava/lang/Runnable;)V&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0065&quot;,
+        &quot;opcode&quot;: &quot;0x6e&quot;,
+        &quot;text&quot;: &quot;invoke-virtual {v2, v0, v5, v1, v4}, Lcom/nlbn/ads/util/Admob;-&gt;loadAndShowInter(Landroid/app/Activity;Ljava/lang/String;ZLcom/nlbn/ads/callback/AdCallback;)V&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0068&quot;,
+        &quot;opcode&quot;: &quot;0x0e&quot;,
+        &quot;text&quot;: &quot;return-void&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;0069&quot;,
+        &quot;opcode&quot;: &quot;0x72&quot;,
+        &quot;text&quot;: &quot;invoke-interface {v6}, Ljava/lang/Runnable;-&gt;run()V&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;006c&quot;,
+        &quot;opcode&quot;: &quot;0x0e&quot;,
+        &quot;text&quot;: &quot;return-void&quot;,
+        &quot;units&quot;: 1
+      },
+      {
+        &quot;offset&quot;: &quot;006d&quot;,
+        &quot;opcode&quot;: &quot;0x72&quot;,
+        &quot;text&quot;: &quot;invoke-interface {v6}, Ljava/lang/Runnable;-&gt;run()V&quot;,
+        &quot;units&quot;: 3
+      },
+      {
+        &quot;offset&quot;: &quot;0070&quot;,
+        &quot;opcode&quot;: &quot;0x0e&quot;,
+        &quot;text&quot;: &quot;return-void&quot;,
+        &quot;units&quot;: 1
+      }
+    ],
+    &quot;instructions_total&quot;: 59,
+    &quot;java_source&quot;: {
+      &quot;status&quot;: &quot;not_requested&quot;
+    },
+    &quot;listing&quot;: &quot;0000: move-object v0, v5\n0001: instance-of v1, v0, Landroid/content/ContextWrapper;\n0003: if-eqz v1, :0013\n0005: instance-of v1, v0, Landroid/app/Activity;\n0007: if-eqz v1, :000c\n0009: check-cast v0, Landroid/app/Activity;\n000b: goto :0014\n000c: check-cast v0, Landroid/content/ContextWrapper;\n000e: invoke-virtual {v0}, Landroid/content/ContextWrapper;-&gt;getBaseContext()Landroid/content/Context;\n0011: move-result-object v0\n0012: goto :0001\n0013: const/4 v0, 0\n0014: if-eqz v0, :006d\n0016: invoke-virtual {v0}, Landroid/app/Activity;-&gt;isFinishing()Z\n0019: move-result v1\n001a: if-nez v1, :006d\n001c: invoke-virtual {v0}, Landroid/app/Activity;-&gt;isDestroyed()Z\n001f: move-result v1\n0020: if-nez v1, :006d\n0022: const-string v1, \&quot;connectivity\&quot;\n0024: invoke-virtual {v5, v1}, Landroid/content/Context;-&gt;getSystemService(Ljava/lang/String;)Ljava/lang/Object;\n0027: move-result-object v5\n0028: check-cast v5, Landroid/net/ConnectivityManager;\n002a: if-nez v5, :002d\n002c: goto :006d\n002d: invoke-virtual {v5}, Landroid/net/ConnectivityManager;-&gt;getActiveNetworkInfo()Landroid/net/NetworkInfo;\n0030: move-result-object v5\n0031: if-eqz v5, :006d\n0033: invoke-virtual {v5}, Landroid/net/NetworkInfo;-&gt;isConnected()Z\n0036: move-result v5\n0037: if-eqz v5, :006d\n0039: invoke-static {}, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/RemoteConfigBridge;-&gt;a()Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/RemoteConfigBridge$Config;\n003c: move-result-object v5\n003d: invoke-virtual {v5}, Ljava/lang/Object;-&gt;getClass()Ljava/lang/Class;\n0040: const-string v5, \&quot;inter_all\&quot;\n0042: invoke-static {v5}, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/utils/RemoteConfigBridge$Config;-&gt;a(Ljava/lang/String;)Ljava/lang/String;\n0045: move-result-object v5\n0046: if-eqz v5, :0069\n0048: invoke-virtual {v5}, Ljava/lang/String;-&gt;isEmpty()Z\n004b: move-result v1\n004c: if-eqz v1, :004f\n004e: goto :0069\n004f: invoke-static {}, Lcom/nlbn/ads/util/Admob;-&gt;getInstance()Lcom/nlbn/ads/util/Admob;\n0052: move-result-object v1\n0053: const/4 v2, 0\n0054: invoke-virtual {v1, v2}, Lcom/nlbn/ads/util/Admob;-&gt;setOpenActivityAfterShowInterAds(Z)V\n0057: const/4 v1, 1\n0058: new-array v3, v1, [Z\n005a: aput-boolean v2, v3, v2\n005c: invoke-static {}, Lcom/nlbn/ads/util/Admob;-&gt;getInstance()Lcom/nlbn/ads/util/Admob;\n005f: move-result-object v2\n0060: new-instance v4, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/OpenFileInterAd$1;\n0062: invoke-direct {v4, v3, v0, v6}, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/OpenFileInterAd$1;-&gt;&lt;init&gt;([ZLandroid/app/Activity;Ljava/lang/Runnable;)V\n0065: invoke-virtual {v2, v0, v5, v1, v4}, Lcom/nlbn/ads/util/Admob;-&gt;loadAndShowInter(Landroid/app/Activity;Ljava/lang/String;ZLcom/nlbn/ads/callback/AdCallback;)V\n0068: return-void\n0069: invoke-interface {v6}, Ljava/lang/Runnable;-&gt;run()V\n006c: return-void\n006d: invoke-interface {v6}, Ljava/lang/Runnable;-&gt;run()V\n0070: return-void&quot;,
+    &quot;method&quot;: &quot;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/OpenFileInterAd;-&gt;a(Landroid/content/Context;Ljava/lang/Runnable;)V&quot;,
+    &quot;outs&quot;: 5,
+    &quot;overload_index&quot;: 0,
+    &quot;overloads&quot;: [
+      &quot;public static void a(android.content.Context, java.lang.Runnable)&quot;
+    ],
+    &quot;registers&quot;: 7,
+    &quot;signature&quot;: &quot;public static void a(android.content.Context, java.lang.Runnable)&quot;,
+    &quot;tries&quot;: [
+      {
+        &quot;end&quot;: 55,
+        &quot;handlers&quot;: [
+          {
+            &quot;address&quot;: 109,
+            &quot;exception&quot;: &quot;Ljava/lang/Exception;&quot;
+          }
+        ],
+        &quot;start&quot;: 34
+      }
+    ]
+  },
+  &quot;subject&quot;: {
+    &quot;kind&quot;: &quot;apk&quot;,
+    &quot;name&quot;: &quot;base.apk&quot;,
+    &quot;sha256&quot;: &quot;fe5e16570f67e4c43ab1e9b6b09e49715d626cdfcc47fe4c636b1a9509abb1d0&quot;
+  },
+  &quot;summary&quot;: &quot;Lcom/pdfeditor/documentviewer/pdfstudio/docworks/ads/OpenFileInterAd;-&gt;a(Landroid/content/Context;Ljava/lang/Runnable;)V (classes6.dex): 59 instructions, 1 try block(s).&quot;
+}</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

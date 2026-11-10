@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>032_rcinit.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>032_rcinit.txt</h1><p><strong>A07 · return_rate解析为整数，默认-1并缓存</strong></p><p>com.wg.iv.iCPK.n</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.alldocument.fileviewer.tools/032_rcinit.txt" download>下载原始文件</a></div><pre class="source-pre">    public final int n() {
+
+        if (o() == -1) {
+
+            String strM = m().m(j1d.a(new byte[]{-36, -123, 36, 16, Field.FILESIZE, -18, -104, Field.ADDRESSBLOCK, -49, -108, Field.AUTONUMLGL}, new byte[]{-82, -32, 80, 101, Field.IMPORT, -128, -57, Field.GLOSSARY}));
+
+            j1d.a(new byte[]{Field.DDE, 30, -28, Field.AUTOTEXTLIST, -15, Field.FORMDROPDOWN, -123, 22, Field.EQ, 29, -32, Field.ADDIN, -85, Field.ADDIN, -93, 13, 12, 15, -5, Field.SHAPE, -21, Field.ADDIN, -18, Field.HTMLCONTROL, Field.DDE, 30, -3, Field.INCLUDEPICTURE, -9, Field.HYPERLINK, -103, 11, Field.USERADDRESS, 15, -20, 20, -84}, new byte[]{Field.SHAPE, 123, -119, Field.AUTONUM, -123, Field.AUTONUM, -58, 121});
+
+            Integer intOrNull = StringsKt__StringNumberConversionsKt.toIntOrNull(strM);
+
+            int iIntValue = intOrNull != null ? intOrNull.intValue() : -1;
+
+            kt4.m(j1d.a(new byte[]{Field.SECTIONPAGES, 13, -72, 3}, new byte[]{48, 108, -52, 102, 108, 4, 104, 10}), j1d.a(new byte[]{Field.AUTOTEXT, 44, -43, 63, 18, -80, -52, -33, 3, Field.EQ, -41, 42, Field.NUMWORDS, -80, -50, -38, 3, 110, -121, 114, Field.GREETINGLINE, -2, -62, -52, Field.FORMCHECKBOX, 99, -47, 59, 10, -80, -43, -52, 78, 44, -62, 59, 61, -1, -55, -49, 74, 36, -106, 100, Field.GREETINGLINE}, new byte[]{Field.QUOTE, Field.INCLUDEPICTURE, -74, Field.GREETINGLINE, 126, -112, -89, -87}) + iIntValue);
+
+            x(iIntValue);
+
+        } else {
+
+            kt4.m(j1d.a(new byte[]{-89, -72, -42, -88}, new byte[]{-43, -39, -94, -51, -11, 123, 117, -79}), j1d.a(new byte[]{14, Field.ADDRESSBLOCK, 126, -14, 116, -42, -47, -92, Field.SECTIONPAGES, 64, 124, -25, 125, -52}, new byte[]{98, Field.GOTOBUTTON, 29, -109, 24, -10, -70, -46}) + o());
+
+        }
+
+        return o();
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

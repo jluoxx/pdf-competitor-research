@@ -1,0 +1,158 @@
+{
+  "job": {
+    "id": "041_adgating2",
+    "package": "com.pdfhero.dclor.avtlo",
+    "tool": "inspect_android_method",
+    "args": {
+      "path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.pdfhero.dclor.avtlo\\base.apk",
+      "class_name": "lOy.vfwZ",
+      "method_name": "HhHei"
+    }
+  },
+  "start": "2026-11-10T06:55:26.819Z",
+  "end": "2026-11-10T06:55:27.052Z",
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_a4e4a6ab7919c1c61a2d9b909e40f723dff41b5a55f9ae663eac8da5aeb25ab0\",\"subject\":{\"name\":\"base.apk\",\"digest\":{\"sha256\":\"271d5bd588b8a1a6b9bdedb28c1016c9990dde750d5ea7c7f2a11d9413367318\"},\"local_path\":\"C:\\\\Users\\\\asus\\\\Desktop\\\\竞品apk1\\\\com.pdfhero.dclor.avtlo\\\\base.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_method\",\"parameters\":{\"path\":\"C:\\\\Users\\\\asus\\\\Desktop\\\\竞品apk1\\\\com.pdfhero.dclor.avtlo\\\\base.apk\",\"class_name\":\"lOy.vfwZ\",\"method_name\":\"HhHei\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"7\"},\"bridge_sha256\":\"e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Temp\\\\rea-android-912131fe4fdc93edefaf828756997120\\\\target.apk\",\"class_count\":13642,\"resource_count\":1609,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"java_version\\\":\\\"17.0.12\\\",\\\"available_processors\\\":3,\\\"engine_reported_version\\\":\\\"0.7.1\\\",\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":3221225472}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"lOy.vfwZ\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"method_count\\\":41,\\\"raw_name\\\":\\\"lOy.vfwZ\\\",\\\"fields\\\":[{\\\"def_pos\\\":0,\\\"name\\\":\\\"f41584Wmk\\\",\\\"type\\\":\\\"lOy.vfwZ$SGigKD6vM\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"f41585f0yWS6\\\",\\\"type\\\":\\\"CKY.m889n[]\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"f41586OtIqepUx\\\",\\\"type\\\":\\\"l7bor5.pm8AQ5A\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"f41587QQBd4ER\\\",\\\"type\\\":\\\"kotlin.jvm.functions.Function0\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"f41588SGigKD6vM\\\",\\\"type\\\":\\\"com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"f41589SOSvnaZBS\\\",\\\"type\\\":\\\"HZB.TSr6CL\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"f41590TSr6CL\\\",\\\"type\\\":\\\"HZB.TSr6CL\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"f41591vfwZ\\\",\\\"type\\\":\\\"kotlin.collections.Bb\\\"}],\\\"methods\\\":[{\\\"name\\\":\\\"\\\\u003cclinit\\\\u003e\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"signature\\\":\\\"\\\\u003cclinit\\\\u003e(): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"is_constructor\\\":true,\\\"dex_descriptor\\\":\\\"(Lcom/pdfhero/dclor/avtlo/domain/cook/AdSlotPolicyKey;)V\\\",\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"AS1xdMc\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Ljava/lang/String;\\\",\\\"signature\\\":\\\"AS1xdMc(): java.lang.String\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"Bb\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"signature\\\":\\\"Bb(): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"CK60J\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;)V\\\",\\\"signature\\\":\\\"CK60J(java.lang.String): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"HhHei\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/pdfhero/dclor/avtlo/domain/women/AdSlotDisplayPolicy;)Z\\\",\\\"signature\\\":\\\"HhHei(com.pdfhero.dclor.avtlo.domain.women.AdSlotDisplayPolicy): boolean\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"J9UyFelX\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Z\\\",\\\"signature\\\":\\\"J9UyFelX(): boolean\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"KtQMwzv\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lkotlin/Pair;)V\\\",\\\"signature\\\":\\\"KtQMwzv(kotlin.Pair): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"LkWl2pY3\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Z\\\",\\\"signature\\\":\\\"LkWl2pY3(): boolean\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"N6m\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Z\\\",\\\"signature\\\":\\\"N6m(): boolean\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"NfWSiS8FA\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Lcom/google/android/gms/ads/AdRequest;\\\",\\\"signature\\\":\\\"NfWSiS8FA(): com.google.android.gms.ads.AdRequest\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"Oc\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Z\\\",\\\"signature\\\":\\\"Oc(): boolean\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"OtIqepUx\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Lkotlin/Unit;\\\",\\\"signature\\\":\\\"OtIqepUx(): kotlin.Unit\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"QQBd4ER\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lkotlin/jvm/functions/Function0;)V\\\",\\\"signature\\\":\\\"QQBd4ER(kotlin.jvm.functions.Function0): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"Qm\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;)V\\\",\\\"signature\\\":\\\"Qm(java.lang.String): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"Qy\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lkotlin/jvm/functions/Function0;)V\\\",\\\"signature\\\":\\\"Qy(kotlin.jvm.functions.Function0): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"RHc8SEuw9\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(LlOy/vfwZ;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V\\\",\\\"signature\\\":\\\"RHc8SEuw9(lOy.vfwZ, kotlin.jvm.functions.Function0, int, java.lang.Object): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"SGigKD6vM\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Lcom/google/android/gms/ads/AdRequest;\\\",\\\"signature\\\":\\\"SGigKD6vM(): com.google.android.gms.ads.AdRequest\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"SOSvnaZBS\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"signature\\\":\\\"SOSvnaZBS(): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"TSr6CL\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Ljava/lang/Object;\\\",\\\"signature\\\":\\\"TSr6CL(): java.lang.Object\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"WK\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Lcom/google/android/gms/ads/AdRequest;\\\",\\\"signature\\\":\\\"WK(): com.google.android.gms.ads.AdRequest\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"Wmk\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(LlOy/vfwZ;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V\\\",\\\"signature\\\":\\\"Wmk(lOy.vfwZ, kotlin.jvm.functions.Function0, int, java.lang.Object): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"ZMn0mBz\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"signature\\\":\\\"ZMn0mBz(): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"a8a\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Lkotlin/Unit;\\\",\\\"signature\\\":\\\"a8a(): kotlin.Unit\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"bUuvYD\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Z)V\\\",\\\"signature\\\":\\\"bUuvYD(boolean): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"btJrWGZ\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Z\\\",\\\"signature\\\":\\\"btJrWGZ(): boolean\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"bxCYMAf\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;)I\\\",\\\"signature\\\":\\\"bxCYMAf(java.lang.String): int\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"dfcC8P2\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Lkotlin/Pair;\\\",\\\"signature\\\":\\\"dfcC8P2(): kotlin.Pair\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"f0yWS6\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)Lcom/google/android/gms/ads/FullScreenContentCallback;\\\",\\\"signature\\\":\\\"f0yWS6(android.app.Activity, kotlin.jvm.functions.Function0, kotlin.jvm.functions.Function0): com.google.android.gms.ads.FullScreenContentCallback\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"f8\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Lcom/pdfhero/dclor/avtlo/domain/cook/AdSlotPolicyKey;\\\",\\\"signature\\\":\\\"f8(): com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"hHBsYI\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Z\\\",\\\"signature\\\":\\\"hHBsYI(): boolean\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"iwZAxN8\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/Object;)V\\\",\\\"signature\\\":\\\"iwZAxN8(java.lang.Object): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"kwJqiP\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;)V\\\",\\\"signature\\\":\\\"kwJqiP(java.lang.String): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"m889n\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Ljava/lang/String;\\\",\\\"signature\\\":\\\"m889n(): java.lang.String\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"mf\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"signature\\\":\\\"mf(): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"mpI\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;)Ljava/lang/String;\\\",\\\"signature\\\":\\\"mpI(java.lang.String): java.lang.String\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"nMet\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Lcom/pdfhero/dclor/avtlo/domain/women/AdSlotDisplayPolicy;\\\",\\\"signature\\\":\\\"nMet(): com.pdfhero.dclor.avtlo.domain.women.AdSlotDisplayPolicy\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"pm8AQ5A\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Ljava/lang/String;\\\",\\\"signature\\\":\\\"pm8AQ5A(): java.lang.String\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"v5Cax\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/google/android/gms/ads/LoadAdError;)V\\\",\\\"signature\\\":\\\"v5Cax(com.google.android.gms.ads.LoadAdError): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"vfwZ\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Ljava/lang/String;\\\",\\\"signature\\\":\\\"vfwZ(): java.lang.String\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"zix\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"signature\\\":\\\"zix(): void\\\",\\\"def_pos\\\":0}],\\\"inner_classes\\\":[\\\"lOy.vfwZ.OtIqepUx\\\",\\\"lOy.vfwZ.SGigKD6vM\\\"],\\\"inner_class_count\\\":2,\\\"name\\\":\\\"vfwZ\\\",\\\"field_count\\\":8,\\\"full_name\\\":\\\"lOy.vfwZ\\\"}\"}],\"isError\":false}},{\"operation\":\"get_method_body\",\"input\":{\"class_name\":\"lOy.vfwZ\",\"method_name\":\"HhHei\",\"overload_index\":0,\"smali_fallback\":true},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"fell_back\\\":false,\\\"full_name\\\":\\\"lOy.vfwZ.HhHei\\\",\\\"overload_index\\\":0,\\\"method_name\\\":\\\"HhHei\\\",\\\"overload_count\\\":1,\\\"dex_descriptor\\\":\\\"(Lcom/pdfhero/dclor/avtlo/domain/women/AdSlotDisplayPolicy;)Z\\\",\\\"class_name\\\":\\\"lOy.vfwZ\\\",\\\"mode\\\":\\\"java\\\",\\\"body\\\":\\\"    public final boolean HhHei(AdSlotDisplayPolicy adSlotDisplayPolicy) {\\\\r\\\\n        if (HZB.SOSvnaZBS.RarMJxcB()) {\\\\r\\\\n            return adSlotDisplayPolicy.getAudienceEnableB() \\\\u003d\\\\u003d 1 || (adSlotDisplayPolicy.getGraceDays() \\\\u003e 0 \\\\u0026\\\\u0026 Long.parseLong(SOSvnaZBS.TSr6CL()) - Long.parseLong(SOSvnaZBS.N6m(HZB.SOSvnaZBS.Bb(), null, 2, null)) \\\\u003e\\\\u003d ((long) adSlotDisplayPolicy.getGraceDays()));\\\\r\\\\n        }\\\\r\\\\n        return adSlotDisplayPolicy.getAudienceEnableA() \\\\u003d\\\\u003d 1;\\\\r\\\\n    }\\\",\\\"markers\\\":[]}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":3072},\"class_name\":\"lOy.vfwZ\",\"method\":{\"name\":\"HhHei\",\"reported_signature\":\"HhHei(com.pdfhero.dclor.avtlo.domain.women.AdSlotDisplayPolicy): boolean\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/pdfhero/dclor/avtlo/domain/women/AdSlotDisplayPolicy;)Z\"},\"overload_count\":1,\"representation\":\"java\",\"body_status\":\"available\",\"fell_back\":false,\"markers\":[],\"source\":{\"status\":\"complete\",\"text\":\"    public final boolean HhHei(AdSlotDisplayPolicy adSlotDisplayPolicy) {\\r\\n        if (HZB.SOSvnaZBS.RarMJxcB()) {\\r\\n            return adSlotDisplayPolicy.getAudienceEnableB() == 1 || (adSlotDisplayPolicy.getGraceDays() > 0 && Long.parseLong(SOSvnaZBS.TSr6CL()) - Long.parseLong(SOSvnaZBS.N6m(HZB.SOSvnaZBS.Bb(), null, 2, null)) >= ((long) adSlotDisplayPolicy.getGraceDays()));\\r\\n        }\\r\\n        return adSlotDisplayPolicy.getAudienceEnableA() == 1;\\r\\n    }\",\"reported_total_bytes\":null}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_a4e4a6ab7919c1c61a2d9b909e40f723dff41b5a55f9ae663eac8da5aeb25ab0",
+      "subject": {
+        "name": "base.apk",
+        "digest": {
+          "sha256": "271d5bd588b8a1a6b9bdedb28c1016c9990dde750d5ea7c7f2a11d9413367318"
+        },
+        "local_path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.pdfhero.dclor.avtlo\\base.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.pdfhero.dclor.avtlo\\base.apk",
+        "class_name": "lOy.vfwZ",
+        "method_name": "HhHei"
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "7"
+        },
+        "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "C:\\Users\\asus\\AppData\\Local\\Temp\\rea-android-912131fe4fdc93edefaf828756997120\\target.apk",
+          "class_count": 13642,
+          "resource_count": 1609,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"java_version\":\"17.0.12\",\"available_processors\":3,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":3221225472}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_class_summary",
+            "input": {
+              "class_name": "lOy.vfwZ"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"method_count\":41,\"raw_name\":\"lOy.vfwZ\",\"fields\":[{\"def_pos\":0,\"name\":\"f41584Wmk\",\"type\":\"lOy.vfwZ$SGigKD6vM\"},{\"def_pos\":0,\"name\":\"f41585f0yWS6\",\"type\":\"CKY.m889n[]\"},{\"def_pos\":0,\"name\":\"f41586OtIqepUx\",\"type\":\"l7bor5.pm8AQ5A\"},{\"def_pos\":0,\"name\":\"f41587QQBd4ER\",\"type\":\"kotlin.jvm.functions.Function0\"},{\"def_pos\":0,\"name\":\"f41588SGigKD6vM\",\"type\":\"com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey\"},{\"def_pos\":0,\"name\":\"f41589SOSvnaZBS\",\"type\":\"HZB.TSr6CL\"},{\"def_pos\":0,\"name\":\"f41590TSr6CL\",\"type\":\"HZB.TSr6CL\"},{\"def_pos\":0,\"name\":\"f41591vfwZ\",\"type\":\"kotlin.collections.Bb\"}],\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/pdfhero/dclor/avtlo/domain/cook/AdSlotPolicyKey;)V\",\"signature\":\"\\u003cinit\\u003e(com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey): void\",\"def_pos\":0},{\"name\":\"AS1xdMc\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"AS1xdMc(): java.lang.String\",\"def_pos\":0},{\"name\":\"Bb\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"Bb(): void\",\"def_pos\":0},{\"name\":\"CK60J\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"signature\":\"CK60J(java.lang.String): void\",\"def_pos\":0},{\"name\":\"HhHei\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/pdfhero/dclor/avtlo/domain/women/AdSlotDisplayPolicy;)Z\",\"signature\":\"HhHei(com.pdfhero.dclor.avtlo.domain.women.AdSlotDisplayPolicy): boolean\",\"def_pos\":0},{\"name\":\"J9UyFelX\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"J9UyFelX(): boolean\",\"def_pos\":0},{\"name\":\"KtQMwzv\",\"is_constructor\":false,\"dex_descriptor\":\"(Lkotlin/Pair;)V\",\"signature\":\"KtQMwzv(kotlin.Pair): void\",\"def_pos\":0},{\"name\":\"LkWl2pY3\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"LkWl2pY3(): boolean\",\"def_pos\":0},{\"name\":\"N6m\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"N6m(): boolean\",\"def_pos\":0},{\"name\":\"NfWSiS8FA\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/google/android/gms/ads/AdRequest;\",\"signature\":\"NfWSiS8FA(): com.google.android.gms.ads.AdRequest\",\"def_pos\":0},{\"name\":\"Oc\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"Oc(): boolean\",\"def_pos\":0},{\"name\":\"OtIqepUx\",\"is_constructor\":false,\"dex_descriptor\":\"()Lkotlin/Unit;\",\"signature\":\"OtIqepUx(): kotlin.Unit\",\"def_pos\":0},{\"name\":\"QQBd4ER\",\"is_constructor\":false,\"dex_descriptor\":\"(Lkotlin/jvm/functions/Function0;)V\",\"signature\":\"QQBd4ER(kotlin.jvm.functions.Function0): void\",\"def_pos\":0},{\"name\":\"Qm\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"signature\":\"Qm(java.lang.String): void\",\"def_pos\":0},{\"name\":\"Qy\",\"is_constructor\":false,\"dex_descriptor\":\"(Lkotlin/jvm/functions/Function0;)V\",\"signature\":\"Qy(kotlin.jvm.functions.Function0): void\",\"def_pos\":0},{\"name\":\"RHc8SEuw9\",\"is_constructor\":false,\"dex_descriptor\":\"(LlOy/vfwZ;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V\",\"signature\":\"RHc8SEuw9(lOy.vfwZ, kotlin.jvm.functions.Function0, int, java.lang.Object): void\",\"def_pos\":0},{\"name\":\"SGigKD6vM\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/google/android/gms/ads/AdRequest;\",\"signature\":\"SGigKD6vM(): com.google.android.gms.ads.AdRequest\",\"def_pos\":0},{\"name\":\"SOSvnaZBS\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"SOSvnaZBS(): void\",\"def_pos\":0},{\"name\":\"TSr6CL\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/Object;\",\"signature\":\"TSr6CL(): java.lang.Object\",\"def_pos\":0},{\"name\":\"WK\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/google/android/gms/ads/AdRequest;\",\"signature\":\"WK(): com.google.android.gms.ads.AdRequest\",\"def_pos\":0},{\"name\":\"Wmk\",\"is_constructor\":false,\"dex_descriptor\":\"(LlOy/vfwZ;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V\",\"signature\":\"Wmk(lOy.vfwZ, kotlin.jvm.functions.Function0, int, java.lang.Object): void\",\"def_pos\":0},{\"name\":\"ZMn0mBz\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"ZMn0mBz(): void\",\"def_pos\":0},{\"name\":\"a8a\",\"is_constructor\":false,\"dex_descriptor\":\"()Lkotlin/Unit;\",\"signature\":\"a8a(): kotlin.Unit\",\"def_pos\":0},{\"name\":\"bUuvYD\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\",\"signature\":\"bUuvYD(boolean): void\",\"def_pos\":0},{\"name\":\"btJrWGZ\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"btJrWGZ(): boolean\",\"def_pos\":0},{\"name\":\"bxCYMAf\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)I\",\"signature\":\"bxCYMAf(java.lang.String): int\",\"def_pos\":0},{\"name\":\"dfcC8P2\",\"is_constructor\":false,\"dex_descriptor\":\"()Lkotlin/Pair;\",\"signature\":\"dfcC8P2(): kotlin.Pair\",\"def_pos\":0},{\"name\":\"f0yWS6\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)Lcom/google/android/gms/ads/FullScreenContentCallback;\",\"signature\":\"f0yWS6(android.app.Activity, kotlin.jvm.functions.Function0, kotlin.jvm.functions.Function0): com.google.android.gms.ads.FullScreenContentCallback\",\"def_pos\":0},{\"name\":\"f8\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/pdfhero/dclor/avtlo/domain/cook/AdSlotPolicyKey;\",\"signature\":\"f8(): com.pdfhero.dclor.avtlo.domain.cook.AdSlotPolicyKey\",\"def_pos\":0},{\"name\":\"hHBsYI\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"hHBsYI(): boolean\",\"def_pos\":0},{\"name\":\"iwZAxN8\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)V\",\"signature\":\"iwZAxN8(java.lang.Object): void\",\"def_pos\":0},{\"name\":\"kwJqiP\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"signature\":\"kwJqiP(java.lang.String): void\",\"def_pos\":0},{\"name\":\"m889n\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"m889n(): java.lang.String\",\"def_pos\":0},{\"name\":\"mf\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"mf(): void\",\"def_pos\":0},{\"name\":\"mpI\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\",\"signature\":\"mpI(java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"nMet\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/pdfhero/dclor/avtlo/domain/women/AdSlotDisplayPolicy;\",\"signature\":\"nMet(): com.pdfhero.dclor.avtlo.domain.women.AdSlotDisplayPolicy\",\"def_pos\":0},{\"name\":\"pm8AQ5A\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"pm8AQ5A(): java.lang.String\",\"def_pos\":0},{\"name\":\"v5Cax\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/google/android/gms/ads/LoadAdError;)V\",\"signature\":\"v5Cax(com.google.android.gms.ads.LoadAdError): void\",\"def_pos\":0},{\"name\":\"vfwZ\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"vfwZ(): java.lang.String\",\"def_pos\":0},{\"name\":\"zix\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"zix(): void\",\"def_pos\":0}],\"inner_classes\":[\"lOy.vfwZ.OtIqepUx\",\"lOy.vfwZ.SGigKD6vM\"],\"inner_class_count\":2,\"name\":\"vfwZ\",\"field_count\":8,\"full_name\":\"lOy.vfwZ\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_method_body",
+            "input": {
+              "class_name": "lOy.vfwZ",
+              "method_name": "HhHei",
+              "overload_index": 0,
+              "smali_fallback": true
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"fell_back\":false,\"full_name\":\"lOy.vfwZ.HhHei\",\"overload_index\":0,\"method_name\":\"HhHei\",\"overload_count\":1,\"dex_descriptor\":\"(Lcom/pdfhero/dclor/avtlo/domain/women/AdSlotDisplayPolicy;)Z\",\"class_name\":\"lOy.vfwZ\",\"mode\":\"java\",\"body\":\"    public final boolean HhHei(AdSlotDisplayPolicy adSlotDisplayPolicy) {\\r\\n        if (HZB.SOSvnaZBS.RarMJxcB()) {\\r\\n            return adSlotDisplayPolicy.getAudienceEnableB() \\u003d\\u003d 1 || (adSlotDisplayPolicy.getGraceDays() \\u003e 0 \\u0026\\u0026 Long.parseLong(SOSvnaZBS.TSr6CL()) - Long.parseLong(SOSvnaZBS.N6m(HZB.SOSvnaZBS.Bb(), null, 2, null)) \\u003e\\u003d ((long) adSlotDisplayPolicy.getGraceDays()));\\r\\n        }\\r\\n        return adSlotDisplayPolicy.getAudienceEnableA() \\u003d\\u003d 1;\\r\\n    }\",\"markers\":[]}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "lOy.vfwZ",
+        "method": {
+          "name": "HhHei",
+          "reported_signature": "HhHei(com.pdfhero.dclor.avtlo.domain.women.AdSlotDisplayPolicy): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/pdfhero/dclor/avtlo/domain/women/AdSlotDisplayPolicy;)Z"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    public final boolean HhHei(AdSlotDisplayPolicy adSlotDisplayPolicy) {\r\n        if (HZB.SOSvnaZBS.RarMJxcB()) {\r\n            return adSlotDisplayPolicy.getAudienceEnableB() == 1 || (adSlotDisplayPolicy.getGraceDays() > 0 && Long.parseLong(SOSvnaZBS.TSr6CL()) - Long.parseLong(SOSvnaZBS.N6m(HZB.SOSvnaZBS.Bb(), null, 2, null)) >= ((long) adSlotDisplayPolicy.getGraceDays()));\r\n        }\r\n        return adSlotDisplayPolicy.getAudienceEnableA() == 1;\r\n    }",
+          "reported_total_bytes": null
+        }
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  }
+}

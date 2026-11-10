@@ -1,0 +1,58 @@
+{
+  "engine": {
+    "name": "jadx-headless-mcp",
+    "version": "0.7.1",
+    "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+    "worker_count": 1,
+    "heap_limit_mib": 3072
+  },
+  "class_name": "defpackage.ija",
+  "method_name": "b",
+  "overload_index": 0,
+  "reported_signature": "b(java.lang.String, kotlin.jvm.functions.Function0): void",
+  "dex_descriptor": "(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V",
+  "total": 2,
+  "references": [
+    {
+      "kind": "method",
+      "name": "X4",
+      "reported_full_name": "app.lawnchair.LawnchairLauncher.X4",
+      "containing_class": "app.lawnchair.LawnchairLauncher",
+      "top_class": "app.lawnchair.LawnchairLauncher",
+      "source_line": null,
+      "dex_offset": null,
+      "direct_invokes_exhaustive": true,
+      "direct_invokes": [
+        {
+          "dex_entry": "classes5.dex",
+          "source_raw_method_id": "app.lawnchair.LawnchairLauncher.X4()V",
+          "dex_code_unit_offset": 59,
+          "dex_method_index": 46386,
+          "opcode": "INVOKE_VIRTUAL"
+        }
+      ]
+    },
+    {
+      "kind": "method",
+      "name": "g",
+      "reported_full_name": "uod.g",
+      "containing_class": "defpackage.uod",
+      "top_class": "defpackage.uod",
+      "source_line": null,
+      "dex_offset": null,
+      "direct_invokes_exhaustive": true,
+      "direct_invokes": [
+        {
+          "dex_entry": "classes10.dex",
+          "source_raw_method_id": "uod.g(Lapp/lawnchair/LawnchairLauncher;)V",
+          "dex_code_unit_offset": 194,
+          "dex_method_index": 50079,
+          "opcode": "INVOKE_VIRTUAL"
+        }
+      ]
+    }
+  ],
+  "coverage": "complete",
+  "reference_unit": "using_node"
+}

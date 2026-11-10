@@ -1,0 +1,107 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>034_subsuccess.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>034_subsuccess.txt</h1><p><strong>S06 · 服务端时间决定订阅状态，同时处理云容量/流量</strong></p><p>ia.r1.u</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.document.pdf.scanner.free.all/034_subsuccess.txt" download>下载原始文件</a></div><pre class="source-pre">    public final void u(com.google.gson.p pVar) {
+
+        Long lP = u0.p(pVar, &quot;user_id&quot;);
+
+        long jLongValue = lP != null ? lP.longValue() : 0L;
+
+        if (jLongValue != 0) {
+
+            synchronized (this) {
+
+                if (!h) {
+
+                    h = true;
+
+                    if (!TextUtils.isEmpty(&quot;KEY_USER_ID&quot;)) {
+
+                        try {
+
+                            if (u0.f48367z == null) {
+
+                                synchronized (rh.a.class) {
+
+                                    try {
+
+                                        if (u0.f48367z == null) {
+
+                                            rh.a.l();
+
+                                            u0.f48367z = MMKV.j();
+
+                                        }
+
+                                        Unit unit = Unit.f51126a;
+
+                                    } catch (Throwable th2) {
+
+                                        throw th2;
+
+                                    }
+
+                                }
+
+                            }
+
+                            MMKV mmkv = u0.f48367z;
+
+                            if (mmkv != null) {
+
+                                mmkv.m(jLongValue, &quot;KEY_USER_ID&quot;);
+
+                            }
+
+                        } catch (Throwable unused) {
+
+                        }
+
+                    }
+
+                    HashSet hashSet = p0.f48313a;
+
+                    App app = App.f25816u;
+
+                    p0.d(com.facebook.appevents.n.x());
+
+                }
+
+            }
+
+        }
+
+        Long lP2 = u0.p(pVar, &quot;subscription_expire_time&quot;);
+
+        long jLongValue2 = lP2 != null ? lP2.longValue() : 0L;
+
+        Long lP3 = u0.p(pVar, &quot;now_time&quot;);
+
+        int i6 = jLongValue2 &gt; (lP3 != null ? lP3.longValue() : 0L) ? 1 : 0;
+
+        u0.J(&quot;KEY_SUBSCRIPTION_EXP_TIME&quot;, jLongValue2);
+
+        u0.I(&quot;KEY_SUBSCRIPTION_ENABLE&quot;, i6);
+
+        u0.J(&quot;KEY_SUBS_CHECK_TIME&quot;, System.currentTimeMillis());
+
+        androidx.lifecycle.m0 m0Var = f9.m.f44909a;
+
+        try {
+
+            f9.d dVar = (f9.d) xp.c.m().b(pVar, f9.d.class);
+
+            f9.m.c(new x8.b(dVar.getMaxCapacity(), dVar.getMaxFlow(), dVar.getUsedCapacity(), dVar.getUsedFlow()));
+
+            f9.m.i(dVar);
+
+            f9.m.a(dVar.getNowTime(), dVar.getExpireTime());
+
+        } catch (Throwable th3) {
+
+            th3.printStackTrace();
+
+        }
+
+        ns.c cVar = ga.d.f45636a;
+
+        ga.d.e(i6 == 1);
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

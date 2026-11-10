@@ -1,0 +1,30 @@
+    public final ReminderSchedulePolicy CK60J() {
+        Object objOtIqepUx;
+        ReminderSchedulePolicy reminderSchedulePolicy;
+        String strQm = HZB.SOSvnaZBS.Qm();
+        if (Intrinsics.areEqual(strQm, f38785f8)) {
+            return f38789nMet;
+        }
+        try {
+            v5Cax.SGigKD6vM sGigKD6vM = v5Cax.f41478Cq;
+            if (StringsKt.NLcz(strQm)) {
+                reminderSchedulePolicy = new ReminderSchedulePolicy(0, 0, 0, 0, 0, 0, 0, 0, 0, 511, null);
+            } else {
+                reminderSchedulePolicy = (ReminderSchedulePolicy) AS1xdMc().fromJson(strQm, ReminderSchedulePolicy.class);
+                if (reminderSchedulePolicy == null) {
+                    reminderSchedulePolicy = new ReminderSchedulePolicy(0, 0, 0, 0, 0, 0, 0, 0, 0, 511, null);
+                }
+            }
+            objOtIqepUx = v5Cax.OtIqepUx(reminderSchedulePolicy);
+        } catch (Throwable th) {
+            v5Cax.SGigKD6vM sGigKD6vM2 = v5Cax.f41478Cq;
+            objOtIqepUx = v5Cax.OtIqepUx(Oc.SGigKD6vM(th));
+        }
+        ReminderSchedulePolicy reminderSchedulePolicy2 = new ReminderSchedulePolicy(0, 0, 0, 0, 0, 0, 0, 0, 0, 511, null);
+        if (v5Cax.Wmk(objOtIqepUx)) {
+            objOtIqepUx = reminderSchedulePolicy2;
+        }
+        f38789nMet = (ReminderSchedulePolicy) objOtIqepUx;
+        f38785f8 = strQm;
+        return f38789nMet;
+    }

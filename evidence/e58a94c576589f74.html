@@ -1,0 +1,857 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>048_coolrefs.stdout.json · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>048_coolrefs.stdout.json</h1><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/raw/com.document.pdf.scanner.free.all/craft/048_coolrefs.stdout.json" download>下载原始文件</a></div><pre class="source-pre">{
+  &quot;authority&quot;: &quot;original-files&quot;,
+  &quot;confidence&quot;: &quot;observed&quot;,
+  &quot;coverage&quot;: {
+    &quot;examined&quot;: 100,
+    &quot;next_offset&quot;: 100,
+    &quot;status&quot;: &quot;partial&quot;,
+    &quot;total&quot;: 120
+  },
+  &quot;environment&quot;: {
+    &quot;clean_room&quot;: false,
+    &quot;engine&quot;: &quot;builtin&quot;,
+    &quot;engine_version&quot;: &quot;0.5.0&quot;,
+    &quot;host&quot;: &quot;windows-x86_64&quot;
+  },
+  &quot;id&quot;: &quot;ev_19fc15feea3fb063d0329abd941bf7f42997134e0eb22f78bed5ad85d6fbec5c&quot;,
+  &quot;limitations&quot;: [
+    {
+      &quot;code&quot;: &quot;static_references_only&quot;,
+      &quot;message&quot;: &quot;Only direct bytecode references are found; reflection, JNI, string-built class names and code loaded at run time are not.&quot;
+    }
+  ],
+  &quot;links&quot;: [],
+  &quot;locations&quot;: [
+    {
+      &quot;kind&quot;: &quot;path&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\asus\\Desktop\\竞品apk1\\com.document.pdf.scanner.free.all\\base.apk&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;class&quot;,
+      &quot;value&quot;: &quot;Lf8/x;&quot;
+    }
+  ],
+  &quot;operation&quot;: &quot;android_class_users_find&quot;,
+  &quot;params&quot;: {
+    &quot;class_name&quot;: &quot;f8.x&quot;,
+    &quot;limit&quot;: 100,
+    &quot;method_name&quot;: null,
+    &quot;offset&quot;: 0,
+    &quot;path&quot;: &quot;C:\\Users\\asus\\Desktop\\竞品apk1\\com.document.pdf.scanner.free.all\\base.apk&quot;
+  },
+  &quot;result&quot;: {
+    &quot;callers&quot;: 36,
+    &quot;class&quot;: &quot;Lf8/x;&quot;,
+    &quot;defined_in&quot;: &quot;classes3.dex&quot;,
+    &quot;method_name&quot;: null,
+    &quot;references&quot;: [
+      {
+        &quot;caller&quot;: &quot;La0/a;-&gt;run()V&quot;,
+        &quot;dex&quot;: &quot;classes.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;000c&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;La0/a;-&gt;run()V&quot;,
+        &quot;dex&quot;: &quot;classes.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-wide&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;002d&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;z:J&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;La0/a;-&gt;run()V&quot;,
+        &quot;dex&quot;: &quot;classes.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0037&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;g()Z&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lcom/document/pdf/scanner/App;-&gt;onCreate()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;01bd&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lcom/document/pdf/scanner/ui/ReaderTitlePageActivity;-&gt;D(Z)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0024&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lcom/document/pdf/scanner/ui/ReaderTitlePageActivity;-&gt;D(Z)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0026&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;g()Z&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lcom/document/pdf/scanner/ui/ReaderTitlePageActivity;-&gt;E(Lh8/b;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0037&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lcom/document/pdf/scanner/ui/ReaderTitlePageActivity;-&gt;E(Lh8/b;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0039&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;p()Z&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lcom/document/pdf/scanner/ui/ReaderTitlePageActivity;-&gt;E(Lh8/b;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;00b1&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lcom/document/pdf/scanner/ui/ReaderTitlePageActivity;-&gt;E(Lh8/b;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;00b3&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;h()V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lda/g;-&gt;d(Landroid/content/Context;Lz6/c;)Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;00ec&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;w:Lk8/a;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/c;-&gt;b()Ljava/lang/Boolean;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;000e&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/c;-&gt;b()Ljava/lang/Boolean;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0010&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;C:[Ljava/lang/Float;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/c;-&gt;b()Ljava/lang/Boolean;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0043&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;D:I&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/c;-&gt;b()Ljava/lang/Boolean;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0049&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;C:[Ljava/lang/Float;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/c;-&gt;c(FZ)Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;000b&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/c;-&gt;c(FZ)Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;000d&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;C:[Ljava/lang/Float;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/c;-&gt;c(FZ)Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;002a&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/c;-&gt;c(FZ)Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;002c&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;C:[Ljava/lang/Float;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/c;-&gt;c(FZ)Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0040&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/c;-&gt;c(FZ)Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0046&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;C:[Ljava/lang/Float;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/i;-&gt;u()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0007&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/i;-&gt;u()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;000b&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n(Lis/u1;)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/i;-&gt;u()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0016&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/i;-&gt;u()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;001a&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n(Lis/u1;)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/i;-&gt;w(Ljava/lang/String;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0009&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/i;-&gt;w(Ljava/lang/String;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;000b&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;m()Lis/u1;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/i;-&gt;w(Ljava/lang/String;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0044&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/i;-&gt;w(Ljava/lang/String;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0046&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;m()Lis/u1;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/j;-&gt;b(Ljava/lang/String;Ljava/lang/String;)Lkotlin/Pair;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;003f&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/j;-&gt;b(Ljava/lang/String;Ljava/lang/String;)Lkotlin/Pair;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0041&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;b(Lkotlin/Pair;Lkotlin/Pair;)Lkotlin/Pair;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/j;-&gt;d(Landroid/app/Activity;Li8/c;Li8/c;Ljava/lang/String;ZZLkotlin/jvm/functions/Function0;)Ljava/lang/Boolean;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0018&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/j;-&gt;d(Landroid/app/Activity;Li8/c;Li8/c;Ljava/lang/String;ZZLkotlin/jvm/functions/Function0;)Ljava/lang/Boolean;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;001a&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;g()Z&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/j;-&gt;d(Landroid/app/Activity;Li8/c;Li8/c;Ljava/lang/String;ZZLkotlin/jvm/functions/Function0;)Ljava/lang/Boolean;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0032&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;p()Z&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/n;-&gt;a(Landroid/app/Activity;Landroid/view/ViewGroup;Lf8/m;ZLy2/f;)Lgh/o4;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;003a&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/n;-&gt;a(Landroid/app/Activity;Landroid/view/ViewGroup;Lf8/m;ZLy2/f;)Lgh/o4;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;003c&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;b(Lkotlin/Pair;Lkotlin/Pair;)Lkotlin/Pair;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/q;-&gt;b()Lh8/b;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0000&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/q;-&gt;b()Lh8/b;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0026&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;b(Lkotlin/Pair;Lkotlin/Pair;)Lkotlin/Pair;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/q;-&gt;b()Lh8/b;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;003b&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;b(Lkotlin/Pair;Lkotlin/Pair;)Lkotlin/Pair;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/t;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0018&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/t;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;001e&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;a(Lcom/document/pdf/scanner/App;Lip/c;)Ljava/lang/Object;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/t;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0025&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;w:Lk8/a;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/t;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;002d&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/t;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0034&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;f()Z&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/t;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;004f&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;l()V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/t;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0052&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;o()V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/u;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0009&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/u;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;000c&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;a(Lcom/document/pdf/scanner/App;Lip/c;)Ljava/lang/Object;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/v;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0035&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/v;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0038&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n(Lis/u1;)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/w;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;002b&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;w:Lk8/a;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/w;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;003e&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/w;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0040&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;f()Z&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/w;-&gt;k(Ljava/lang/Object;)Ljava/lang/Object;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;005d&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;l()V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;&lt;clinit&gt;()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;new-instance&quot;,
+        &quot;kind&quot;: &quot;type&quot;,
+        &quot;offset&quot;: &quot;0001&quot;,
+        &quot;target&quot;: &quot;Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;&lt;clinit&gt;()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sput-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0006&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;&lt;clinit&gt;()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sput-wide&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;003b&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;u:J&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;&lt;clinit&gt;()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sput-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0049&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;w:Lk8/a;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;&lt;clinit&gt;()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sput-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0187&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;x:[Lkotlin/Pair;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;&lt;clinit&gt;()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sput-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;01cf&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;y:[Lkotlin/Pair;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;&lt;clinit&gt;()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sput-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;01e1&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;C:[Ljava/lang/Float;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;&lt;clinit&gt;()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sput&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;01e4&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;D:I&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;g()Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-wide&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0033&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;B:J&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;g()Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-wide&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;003a&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;u:J&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;g()Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0049&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;A:I&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;i(D)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;000a&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;x:[Lkotlin/Pair;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;j(D)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;000a&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;y:[Lkotlin/Pair;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;k(DLjava/lang/String;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0004&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;q(DLjava/lang/String;Ljava/lang/String;)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;k(DLjava/lang/String;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0007&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;r(DLjava/lang/String;Ljava/lang/String;)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;m()Lis/u1;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sput&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0002&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;A:I&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;m()Lis/u1;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sput-wide&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0008&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;B:J&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;m()Lis/u1;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;000a&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;D:I&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;m()Lis/u1;&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;000f&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;C:[Ljava/lang/Float;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;o()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0007&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;v:Lis/u1;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;o()V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sput-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;001f&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;v:Lis/u1;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;p()Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-wide&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0004&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;E:J&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;p()Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;000f&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;D:I&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;p()Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0015&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;D:I&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;p()Z&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0018&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;C:[Ljava/lang/Float;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;c(Ljava/lang/String;DD)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;004f&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;r(DLjava/lang/String;Ljava/lang/String;)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lf8/x;-&gt;e(Z)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;000d&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;h()V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lh8/a;-&gt;a(DLjh/d;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0000&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lh8/a;-&gt;a(DLjh/d;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0023&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;w:Lk8/a;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lh8/a;-&gt;a(DLjh/d;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;002b&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;i(D)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lh8/a;-&gt;a(DLjh/d;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0032&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;j(D)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lh8/a;-&gt;a(DLjh/d;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-virtual/range&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0041&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;c(Ljava/lang/String;DD)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lh8/a;-&gt;a(DLjh/d;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-virtual/range&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;004b&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;c(Ljava/lang/String;DD)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lh8/a;-&gt;a(DLjh/d;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-virtual/range&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0055&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;c(Ljava/lang/String;DD)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lh8/a;-&gt;a(DLjh/d;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-virtual/range&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;005f&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;c(Ljava/lang/String;DD)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lh8/a;-&gt;a(DLjh/d;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0068&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;q(DLjava/lang/String;Ljava/lang/String;)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lh8/a;-&gt;a(DLjh/d;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;006f&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;q(DLjava/lang/String;Ljava/lang/String;)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lh8/a;-&gt;a(DLjh/d;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;0091&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;k(DLjava/lang/String;)V&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lh8/a;-&gt;a(DLjh/d;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;invoke-static&quot;,
+        &quot;kind&quot;: &quot;method&quot;,
+        &quot;offset&quot;: &quot;00c3&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;d(Ljava/lang/Integer;)Ljava/lang/String;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lia/b;-&gt;a(Landroid/app/Activity;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;000e&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;n:Lf8/x;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lia/b;-&gt;a(Landroid/app/Activity;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-wide&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0014&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;E:J&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lia/b;-&gt;a(Landroid/app/Activity;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;001e&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;D:I&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lia/b;-&gt;a(Landroid/app/Activity;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget-object&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0020&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;C:[Ljava/lang/Float;&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lia/b;-&gt;a(Landroid/app/Activity;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sget&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0029&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;D:I&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lia/b;-&gt;a(Landroid/app/Activity;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sput&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;002f&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;D:I&quot;
+      },
+      {
+        &quot;caller&quot;: &quot;Lia/b;-&gt;a(Landroid/app/Activity;)V&quot;,
+        &quot;dex&quot;: &quot;classes3.dex&quot;,
+        &quot;instruction&quot;: &quot;sput-wide&quot;,
+        &quot;kind&quot;: &quot;field&quot;,
+        &quot;offset&quot;: &quot;0038&quot;,
+        &quot;target&quot;: &quot;Lf8/x;-&gt;E:J&quot;
+      }
+    ],
+    &quot;references_total&quot;: 120
+  },
+  &quot;subject&quot;: {
+    &quot;kind&quot;: &quot;apk&quot;,
+    &quot;name&quot;: &quot;base.apk&quot;,
+    &quot;sha256&quot;: &quot;588d5d5b41a8033d7879626fd89846f6316d1e2741469cb5d5b3486ed0b9ba58&quot;
+  },
+  &quot;summary&quot;: &quot;120 reference(s) to f8.x from 36 method(s) across 6 DEX file(s); defined in classes3.dex.&quot;
+}</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

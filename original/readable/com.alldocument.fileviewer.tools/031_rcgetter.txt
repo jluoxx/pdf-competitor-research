@@ -1,0 +1,25 @@
+    public final void h() {
+        z();
+        StringBuilder sb = new StringBuilder();
+        sb.append('v');
+        String strD = d28.d(h28.a);
+        j1d.a(new byte[]{-127, -17, -99, -64, -89, 19, -68, -115, -87, -52, -48, -27, -68, 77, -72, -41, -117, -21, -73, -42, -9}, new byte[]{-28, -127, -2, -78, -34, 99, -56, -91});
+        int i = StringsKt.a;
+        sb.append(o.H1(strD, 12));
+        String string = sb.toString();
+        String strM = m().m(string);
+        j1d.a(new byte[]{-106, -67, 110, 120, 115, Field.DDE, -15, -57, -118, -66, 106, 112, 41, Field.GLOSSARY, -41, -36, -73, -84, 113, 126, 105, Field.GLOSSARY, -102, -61, -127, -95, 42}, new byte[]{-28, -40, 3, 23, 7, Field.NOTEREF, -78, -88});
+        kt4.m(j1d.a(new byte[]{-47, -82, -60, Field.FORMCHECKBOX, -114, -25, Field.LISTNUM, 23, -12}, new byte[]{-122, -52, -119, Field.ASK, -32, -122, 61, 114}), j1d.a(new byte[]{77, -68, -81, 19, -47, -34, -119, 23, Field.FORMCHECKBOX, -113, -109, 9, -49, -36, -127, 4, 2, -4, -101, 3, -40, -128}, new byte[]{34, -48, -16, 102, -95, -70, -24, 99}) + string + j1d.a(new byte[]{-77, Field.DOCPROPERTY, 19, -30, -27, Field.FORMDROPDOWN, Field.ASK, -92, -53, Field.NUMCHARS, 11, -9, -69}, new byte[]{-97, 117, 102, -110, -127, Field.GOTOBUTTON, 82, -63}) + strM);
+        if (strM.length() == 0) {
+            kt4.m(j1d.a(new byte[]{-93, 0, 86, -34, 82, 20, -84, 5, -122}, new byte[]{-12, 98, Field.NUMWORDS, -65, 60, 117, -53, 96}), j1d.a(new byte[]{77, -90, Field.NUMWORDS, 126, -82, 97, 56, 10, 11, -96, 5, Field.INCLUDETEXT, -71, 112, Field.GLOSSARY, 14, Field.SHAPE, -86, Field.AUTONUM, 120, -93, 110, Field.DDE, 6, 76, -17, 7, 116, -20, 99, 36, 1, 77, -90, 14}, new byte[]{43, -49, 105, Field.NUMWORDS, -52, 0, Field.MERGESEQ, 111}));
+            return;
+        }
+        if (Intrinsics.areEqual(strM, k())) {
+            return;
+        }
+        kt4.m(j1d.a(new byte[]{Field.USERADDRESS, Field.MERGESEQ, 82, Field.LISTNUM, Field.EQ, 16, -67, 42, Field.NUMWORDS}, new byte[]{105, 41, 31, 59, Field.SHAPE, 113, -38, Field.AUTOTEXT}), j1d.a(new byte[]{26, -125, Field.DDEAUTO, 43, 9, -99, Field.ADDRESSBLOCK, -98, Field.BIDIOUTLINE, -123, 48, 17, 30, -116, 74, -102, 8, -113, 3, Field.DDE, 4, -110, Field.NOTEREF, -110, Field.NUMWORDS, -54, 112, 110, 13, -109, Field.BIDIOUTLINE, -104, 25, -54, 41, Field.USERADDRESS, 15, -99, Field.LISTNUM, -98, Field.BIDIOUTLINE, -119, Field.MACROBUTTON, 32, 13, -107, Field.TOA}, new byte[]{124, -22, Field.BIDIOUTLINE, 78, 107, -4, Field.DDEAUTO, -5}));
+        w(strM);
+        long jH = ((long) y0b.X.h(60)) * 1000;
+        cisB.Y.g(jH);
+        loxO.Y.g(jH);
+    }

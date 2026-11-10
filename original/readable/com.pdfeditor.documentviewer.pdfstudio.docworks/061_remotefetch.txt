@@ -1,0 +1,17 @@
+    public final void d() {
+        FirebaseRemoteConfig firebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
+        this.mFirebaseRemoteConfig = firebaseRemoteConfig;
+        if (firebaseRemoteConfig != null) {
+            firebaseRemoteConfig.setDefaultsAsync(this.DEFAULT_CONFIG_MAP);
+        }
+        FirebaseRemoteConfigSettings firebaseRemoteConfigSettingsBuild = new FirebaseRemoteConfigSettings.Builder().setMinimumFetchIntervalInSeconds(this.FETCH_INTERVAL_IN_SECONDS).build();
+        Intrinsics.checkNotNullExpressionValue(firebaseRemoteConfigSettingsBuild, "build(...)");
+        FirebaseRemoteConfig firebaseRemoteConfig2 = this.mFirebaseRemoteConfig;
+        if (firebaseRemoteConfig2 != null) {
+            firebaseRemoteConfig2.setConfigSettingsAsync(firebaseRemoteConfigSettingsBuild);
+        }
+        this._remoteConfigModel = new RemoteConfigModel();
+        FirebaseRemoteConfig firebaseRemoteConfig3 = this.mFirebaseRemoteConfig;
+        Intrinsics.checkNotNull(firebaseRemoteConfig3);
+        firebaseRemoteConfig3.fetchAndActivate().addOnCompleteListener(new c(this, 2));
+    }

@@ -1,0 +1,54 @@
+    public final void u(com.google.gson.p pVar) {
+        Long lP = u0.p(pVar, "user_id");
+        long jLongValue = lP != null ? lP.longValue() : 0L;
+        if (jLongValue != 0) {
+            synchronized (this) {
+                if (!h) {
+                    h = true;
+                    if (!TextUtils.isEmpty("KEY_USER_ID")) {
+                        try {
+                            if (u0.f48367z == null) {
+                                synchronized (rh.a.class) {
+                                    try {
+                                        if (u0.f48367z == null) {
+                                            rh.a.l();
+                                            u0.f48367z = MMKV.j();
+                                        }
+                                        Unit unit = Unit.f51126a;
+                                    } catch (Throwable th2) {
+                                        throw th2;
+                                    }
+                                }
+                            }
+                            MMKV mmkv = u0.f48367z;
+                            if (mmkv != null) {
+                                mmkv.m(jLongValue, "KEY_USER_ID");
+                            }
+                        } catch (Throwable unused) {
+                        }
+                    }
+                    HashSet hashSet = p0.f48313a;
+                    App app = App.f25816u;
+                    p0.d(com.facebook.appevents.n.x());
+                }
+            }
+        }
+        Long lP2 = u0.p(pVar, "subscription_expire_time");
+        long jLongValue2 = lP2 != null ? lP2.longValue() : 0L;
+        Long lP3 = u0.p(pVar, "now_time");
+        int i6 = jLongValue2 > (lP3 != null ? lP3.longValue() : 0L) ? 1 : 0;
+        u0.J("KEY_SUBSCRIPTION_EXP_TIME", jLongValue2);
+        u0.I("KEY_SUBSCRIPTION_ENABLE", i6);
+        u0.J("KEY_SUBS_CHECK_TIME", System.currentTimeMillis());
+        androidx.lifecycle.m0 m0Var = f9.m.f44909a;
+        try {
+            f9.d dVar = (f9.d) xp.c.m().b(pVar, f9.d.class);
+            f9.m.c(new x8.b(dVar.getMaxCapacity(), dVar.getMaxFlow(), dVar.getUsedCapacity(), dVar.getUsedFlow()));
+            f9.m.i(dVar);
+            f9.m.a(dVar.getNowTime(), dVar.getExpireTime());
+        } catch (Throwable th3) {
+            th3.printStackTrace();
+        }
+        ns.c cVar = ga.d.f45636a;
+        ga.d.e(i6 == 1);
+    }

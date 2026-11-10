@@ -1,0 +1,61 @@
+    public static void a(RemoteConfigService remoteConfigService, Task task) {
+        Intrinsics.checkNotNull(task);
+        if (!task.isSuccessful()) {
+            task.getException();
+            remoteConfigService.isInitialized = true;
+            remoteConfigService.exception = task.getException();
+            remoteConfigService._remoteConfigModel = new RemoteConfigModel();
+            RemoteConfigCallback remoteConfigCallback = remoteConfigService.remoteConfigCallback;
+            if (remoteConfigCallback != null) {
+                Intrinsics.checkNotNull(remoteConfigCallback);
+                remoteConfigCallback.a();
+                return;
+            }
+            return;
+        }
+        Object result = task.getResult();
+        Intrinsics.checkNotNull(result);
+        ((Boolean) result).getClass();
+        remoteConfigService.isInitialized = true;
+        HashMap map = new HashMap();
+        try {
+            FirebaseRemoteConfig firebaseRemoteConfig = remoteConfigService.mFirebaseRemoteConfig;
+            Intrinsics.checkNotNull(firebaseRemoteConfig);
+            Map<String, FirebaseRemoteConfigValue> all = firebaseRemoteConfig.getAll();
+            Intrinsics.checkNotNullExpressionValue(all, "getAll(...)");
+            for (Map.Entry<String, FirebaseRemoteConfigValue> entry : all.entrySet()) {
+                String key = entry.getKey();
+                FirebaseRemoteConfigValue value = entry.getValue();
+                Intrinsics.checkNotNull(value);
+                String strAsString = value.asString();
+                Intrinsics.checkNotNullExpressionValue(strAsString, "asString(...)");
+                try {
+                    map.put(key, new JSONObject(strAsString).toString());
+                } catch (JSONException unused) {
+                    map.put(key, strAsString);
+                }
+            }
+        } catch (Exception e) {
+            e.toString();
+        }
+        Gson gson = new Gson();
+        if (map.containsKey("st06_ad_config")) {
+            Object obj = map.get("st06_ad_config");
+            if (obj instanceof String) {
+                try {
+                    map.remove("st06_ad_config");
+                    map.put("st06_ad_config", (AdsConfigModel) gson.fromJson((String) obj, AdsConfigModel.class));
+                } catch (Exception e4) {
+                    e4.toString();
+                }
+            }
+        }
+        RemoteConfigModel remoteConfigModel = (RemoteConfigModel) gson.fromJson(gson.toJson(map), RemoteConfigModel.class);
+        Objects.toString(remoteConfigModel);
+        remoteConfigService._remoteConfigModel = remoteConfigModel;
+        RemoteConfigCallback remoteConfigCallback2 = remoteConfigService.remoteConfigCallback;
+        if (remoteConfigCallback2 != null) {
+            Intrinsics.checkNotNull(remoteConfigCallback2);
+            remoteConfigCallback2.onSuccess();
+        }
+    }

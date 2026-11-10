@@ -1,0 +1,42 @@
+    public final boolean btJrWGZ() {
+        boolean z = false;
+        if (!HZB.SGigKD6vM.f3458SGigKD6vM.QQBd4ER()) {
+            CK60J(Bb.SGigKD6vM("DY3P91NhASkIhcTwFw==\n", "fuSomXMPbgk=\n"));
+            return false;
+        }
+        if (!LkWl2pY3()) {
+            CK60J(Bb.SGigKD6vM("8Y32E6FBRv35hv4dpQ0J7/A=\n", "luGZccAtZok=\n"));
+            return false;
+        }
+        if (this.f41588SGigKD6vM != null) {
+            boolean zHhHei = HhHei(nMet());
+            if (!zHhHei) {
+                CK60J(this.f41588SGigKD6vM + " toggle off");
+            }
+            return zHhHei;
+        }
+        fgIS.SGigKD6vM entries = AdSlotPolicyKey.getEntries();
+        ArrayList arrayList = new ArrayList();
+        for (Object obj : entries) {
+            if (!mpI.TSr6CL(AdSlotPolicyKey.home_launch).contains((AdSlotPolicyKey) obj)) {
+                arrayList.add(obj);
+            }
+        }
+        if (!arrayList.isEmpty()) {
+            int size = arrayList.size();
+            int i = 0;
+            while (i < size) {
+                Object obj2 = arrayList.get(i);
+                i++;
+                AdSlotDisplayPolicy adSlotDisplayPolicy = a8a.f40233SGigKD6vM.WK().getPlacementRules().get((AdSlotPolicyKey) obj2);
+                if (adSlotDisplayPolicy != null ? HhHei(adSlotDisplayPolicy) : false) {
+                    z = true;
+                    break;
+                }
+            }
+        }
+        if (!z) {
+            CK60J(Bb.SGigKD6vM("VgeEtcIbMYVQBpzwxDUyslMM0L/WPA==\n", "P2nw0LBaVdU=\n"));
+        }
+        return z;
+    }

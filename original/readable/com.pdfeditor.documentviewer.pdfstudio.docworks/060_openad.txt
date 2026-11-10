@@ -1,0 +1,49 @@
+/* JADX INFO: loaded from: classes6.dex */
+public final class OpenFileInterAd {
+    public static void a(Context context, final Runnable runnable) {
+        final Activity activity;
+        NetworkInfo activeNetworkInfo;
+        Context baseContext = context;
+        while (true) {
+            if (!(baseContext instanceof ContextWrapper)) {
+                activity = null;
+                break;
+            } else {
+                if (baseContext instanceof Activity) {
+                    activity = (Activity) baseContext;
+                    break;
+                }
+                baseContext = ((ContextWrapper) baseContext).getBaseContext();
+            }
+        }
+        if (activity != null && !activity.isFinishing() && !activity.isDestroyed()) {
+            try {
+                ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService("connectivity");
+                if (connectivityManager != null && (activeNetworkInfo = connectivityManager.getActiveNetworkInfo()) != null && activeNetworkInfo.isConnected()) {
+                    RemoteConfigBridge.a().getClass();
+                    String strA = RemoteConfigBridge.Config.a(AdKey.INTER_ALL);
+                    if (strA == null || strA.isEmpty()) {
+                        runnable.run();
+                        return;
+                    }
+                    Admob.getInstance().setOpenActivityAfterShowInterAds(false);
+                    final boolean[] zArr = {false};
+                    Admob.getInstance().loadAndShowInter(activity, strA, true, new AdCallback() { // from class: com.pdfeditor.documentviewer.pdfstudio.docworks.ads.OpenFileInterAd.1
+                        @Override // com.nlbn.ads.callback.AdCallback
+                        public final void onNextAction() {
+                            super.onNextAction();
+                            Admob.getInstance().setOpenActivityAfterShowInterAds(true);
+                            if (zArr[0] || activity.isFinishing() || activity.isDestroyed()) {
+                                return;
+                            }
+                            zArr[0] = true;
+                            runnable.run();
+                        }
+                    });
+                    return;
+                }
+            } catch (Exception unused) {
+            }
+        }
+        runnable.run();
+    }

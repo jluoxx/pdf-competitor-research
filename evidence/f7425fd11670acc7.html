@@ -1,0 +1,73 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>043_firebase.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>043_firebase.txt</h1><p><strong>H01 · 异步拉取后读取并解析远端JSON</strong></p><p>eCKMtADQn.f0yWS6.QQBd4ER</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.pdfhero.dclor.avtlo/043_firebase.txt" download>下载原始文件</a></div><pre class="source-pre">    /* JADX WARN: Code duplicated, block: B:7:0x0013  */
+
+    public final Object QQBd4ER(A1CUaEp.vfwZ vfwz) {
+
+        OtIqepUx otIqepUx;
+
+        if (vfwz instanceof OtIqepUx) {
+
+            otIqepUx = (OtIqepUx) vfwz;
+
+            int i = otIqepUx.f38871Dy0BWjG;
+
+            if ((i &amp; IntCompanionObject.MIN_VALUE) != 0) {
+
+                otIqepUx.f38871Dy0BWjG = i - IntCompanionObject.MIN_VALUE;
+
+            } else {
+
+                otIqepUx = new OtIqepUx(vfwz);
+
+            }
+
+        } else {
+
+            otIqepUx = new OtIqepUx(vfwz);
+
+        }
+
+        Object obj = otIqepUx.f38873kHcWr;
+
+        Object objQQBd4ER = DJopB5K.vfwZ.QQBd4ER();
+
+        int i2 = otIqepUx.f38871Dy0BWjG;
+
+        if (i2 == 0) {
+
+            l7bor5.Oc.OtIqepUx(obj);
+
+            m889n();
+
+            Task taskDfcC8P2 = Wmk().dfcC8P2();
+
+            x7J2LX9.Bb.SGigKD6vM(&quot;/5O7e/jJK6TYlbtx5ukxpbHY4Ta5\n&quot;, &quot;mfbPGJCIRcA=\n&quot;);
+
+            otIqepUx.f38871Dy0BWjG = 1;
+
+            if (TSr6CL(taskDfcC8P2, otIqepUx) == objQQBd4ER) {
+
+                return objQQBd4ER;
+
+            }
+
+        } else {
+
+            if (i2 != 1) {
+
+                throw new IllegalStateException(x7J2LX9.Bb.SGigKD6vM(&quot;xQVxso7WuWiBFnit28+zb4YGeLjB0LNogQ1zqMHJs2+GE3SqxoK1J9QLaKrHzLM=\n&quot;, &quot;pmQd3q6i1kg=\n&quot;));
+
+            }
+
+            l7bor5.Oc.OtIqepUx(obj);
+
+        }
+
+        HhHei.SGigKD6vM sGigKD6vM = HhHei.f38840Wmk;
+
+        String strF8 = Wmk().f8(x7J2LX9.Bb.SGigKD6vM(&quot;0BHaWlyaCG7pEM1NbLVc\n&quot;, &quot;tnioPwPqbAg=\n&quot;));
+
+        x7J2LX9.Bb.SGigKD6vM(&quot;dLjIhw1LUgZ09ZL6VxA=\n&quot;, &quot;E9281Hk5O2g=\n&quot;);
+
+        return sGigKD6vM.SGigKD6vM(strF8);
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>

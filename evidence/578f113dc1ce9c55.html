@@ -1,0 +1,103 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>052_subgate.txt · PDF竞品研究</title><link rel="stylesheet" href="../assets/style.css"></head><body class="source-body"><main class="source-shell"><nav class="source-head"><a href="../index.html#library">返回研究报告</a><a href="../index.html#library">资料与证据</a><span>研究快照 · 2026.11.10</span></nav><article class="prose"><h1>052_subgate.txt</h1><p><strong>S09 · 非会员分支带持久计数和订阅提示状态</strong></p><p>f8.i.w</p><p class="mini">证据类型：静态代码/资源或研究原始资料。文件中的路径是分析时元数据。</p><div class="evidence-actions"><a class="btn" href="../original/readable/com.document.pdf.scanner.free.all/052_subgate.txt" download>下载原始文件</a></div><pre class="source-pre">    @Override // ia.y, y2.f
+
+    public final void w(String str) {
+
+        switch (this.f44804c) {
+
+            case 0:
+
+                if (f1.f53964a.contains(str)) {
+
+                    ns.c cVar = ga.d.f45636a;
+
+                    if (!ga.d.c()) {
+
+                        int iL = u0.l(&quot;KEY_NEED_SUBSCRIPTION&quot;, 0);
+
+                        int iL2 = u0.l(&quot;6erUIjAL&quot;, 1);
+
+                        if (iL2 &lt;= 2) {
+
+                            u0.I(&quot;6erUIjAL&quot;, iL2 + 1);
+
+                        } else if (iL == 0) {
+
+                            f1.f53966c = false;
+
+                            f1.f53965b = true;
+
+                        }
+
+                    }
+
+                }
+
+                x xVar = x.f44845n;
+
+                this.f44805d = x.m();
+
+                long jCurrentTimeMillis = System.currentTimeMillis();
+
+                if (!TextUtils.isEmpty(&quot;f2_y3SstF&quot;)) {
+
+                    try {
+
+                        if (u0.f48367z == null) {
+
+                            synchronized (rh.a.class) {
+
+                                try {
+
+                                    if (u0.f48367z == null) {
+
+                                        rh.a.l();
+
+                                        u0.f48367z = MMKV.j();
+
+                                    }
+
+                                    Unit unit = Unit.f51126a;
+
+                                } catch (Throwable th2) {
+
+                                    throw th2;
+
+                                }
+
+                            }
+
+                        }
+
+                        MMKV mmkv = u0.f48367z;
+
+                        if (mmkv != null) {
+
+                            mmkv.m(jCurrentTimeMillis, &quot;f2_y3SstF&quot;);
+
+                        }
+
+                    } catch (Throwable unused) {
+
+                    }
+
+                }
+
+                super.w(str);
+
+                return;
+
+            default:
+
+                super.w(str);
+
+                x xVar2 = x.f44845n;
+
+                this.f44805d = x.m();
+
+                ((ReaderTitlePageActivity) this.f44806e).f31968w = true;
+
+                return;
+
+        }
+
+    }</pre></article><footer class="report-footer">APK静态分析与公开资料 · 未执行真机验证</footer></main></body></html>
