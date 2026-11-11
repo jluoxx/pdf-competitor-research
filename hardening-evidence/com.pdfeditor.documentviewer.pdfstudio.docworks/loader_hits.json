@@ -1,0 +1,17 @@
+[
+  {
+    "class": "Lcom/pairip/application/Application;",
+    "method": "METHOD attachBaseContext (Landroid/content/Context;)V",
+    "line": "000000: invoke-static v1, Lcom/pairip/licensecheck/LicenseClient;->checkLicense(Landroid/content/Context;)V"
+  },
+  {
+    "class": "Lcom/pairip/licensecheck/LicenseClient;",
+    "method": "METHOD lambda$onServiceConnected$0 (Landroid/os/IBinder;)V",
+    "line": "000000: invoke-direct v2, v3, Lcom/pairip/licensecheck/LicenseClient;->checkLicenseInternal(Landroid/os/IBinder;)V"
+  },
+  {
+    "class": "Lcom/pairip/licensecheck/LicenseContentProvider;",
+    "method": "METHOD onCreate ()Z",
+    "line": "000008: invoke-static v0, Lcom/pairip/licensecheck/LicenseClient;->checkLicense(Landroid/content/Context;)V"
+  }
+]

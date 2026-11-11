@@ -1,0 +1,364 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>加固证据</title><style>body{font:15px system-ui;margin:24px;line-height:1.7}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><link rel="stylesheet" href="../../assets/reading-layout.css"></head><body class="reading-document"><main class="document-content"><h1>com.document.pdf.scanner.free.all\application_bytecode.txt</h1><pre>CLASS Lcom/document/pdf/scanner/App;
+FIELD u 
+FIELD n 
+
+METHOD &lt;init&gt; ()V
+000000: invoke-direct v0, Landroid/app/Application;-&gt;&lt;init&gt;()V
+000006: return-void 
+
+METHOD attachBaseContext (Landroid/content/Context;)V
+000000: invoke-super v3, v4, Landroid/content/ContextWrapper;-&gt;attachBaseContext(Landroid/content/Context;)V
+000006: sput-object v3, Lcom/document/pdf/scanner/App;-&gt;u Lcom/document/pdf/scanner/App;
+00000a: invoke-static v3, Lk1/a;-&gt;d(Lcom/document/pdf/scanner/App;)V
+000010: goto +5h
+000012: move-exception v4
+000014: invoke-virtual v4, Ljava/lang/Throwable;-&gt;printStackTrace()V
+00001a: sget-object v4, Lia/b;-&gt;n Lia/b;
+00001e: sget v4, Landroid/os/Build$VERSION;-&gt;SDK_INT I
+000022: const/16 v0, 28
+000026: if-lt v4, v0, +036h
+00002a: invoke-virtual v3, Landroid/content/Context;-&gt;getPackageName()Ljava/lang/String;
+000030: move-result-object v4
+000032: invoke-static La0/m;-&gt;q()Ljava/lang/String;
+000038: move-result-object v0
+00003a: invoke-static v4, v0, Lkotlin/jvm/internal/Intrinsics;-&gt;a(Ljava/lang/Object; Ljava/lang/Object;)Z
+000040: move-result v4
+000042: if-nez v4, +013h
+000046: if-eqz v0, +00bh
+00004a: invoke-virtual v0, Ljava/lang/String;-&gt;length()I
+000050: move-result v4
+000052: if-nez v4, +007h
+000056: goto +3h
+000058: move-exception v4
+00005a: goto +14h
+00005c: const-string v0, &quot;app_main:webview&quot;
+000060: invoke-static v0, Lcom/google/android/gms/common/a;-&gt;u(Ljava/lang/String;)V
+000066: goto +16h
+000068: sget-object v4, Lis/z0;-&gt;n Lis/z0;
+00006c: new-instance v0, Lia/a;
+000070: const/4 v1, 0
+000072: invoke-direct v0, v3, v1, Lia/a;-&gt;&lt;init&gt;(Lcom/document/pdf/scanner/App; Lgp/a;)V
+000078: const/4 v2, 3
+00007a: invoke-static v4, v1, v1, v0, v2, Lis/b0;-&gt;q(Lis/z; Lkotlin/coroutines/a; Lis/a0; Lkotlin/jvm/functions/Function2; I)Lis/u1;
+000080: goto +9h
+000082: invoke-virtual v4, Ljava/lang/Throwable;-&gt;printStackTrace()V
+000088: goto +5h
+00008a: move-exception v4
+00008c: invoke-virtual v4, Ljava/lang/Throwable;-&gt;printStackTrace()V
+000092: return-void 
+
+METHOD onCreate ()V
+000000: const/4 v0, 2
+000002: invoke-super v10, Landroid/app/Application;-&gt;onCreate()V
+000008: iget-object v1, v10, Lcom/document/pdf/scanner/App;-&gt;n Ljava/lang/Boolean;
+00000c: const/4 v2, 0
+00000e: const/16 v3, 28
+000012: if-nez v1, +057h
+000016: invoke-virtual v10, Landroid/content/Context;-&gt;getPackageName()Ljava/lang/String;
+00001c: move-result-object v1
+00001e: invoke-static v1, Landroid/text/TextUtils;-&gt;isEmpty(Ljava/lang/CharSequence;)Z
+000024: move-result v4
+000026: if-nez v4, +04dh
+00002a: sget-object v4, Lia/b;-&gt;n Lia/b;
+00002e: sget v4, Landroid/os/Build$VERSION;-&gt;SDK_INT I
+000032: if-lt v4, v3, +00eh
+000036: invoke-static La0/m;-&gt;q()Ljava/lang/String;
+00003c: move-result-object v4
+00003e: if-eqz v4, +008h
+000042: invoke-virtual v4, Ljava/lang/String;-&gt;length()I
+000048: move-result v5
+00004a: if-nez v5, +031h
+00004e: invoke-static Landroid/os/Process;-&gt;myPid()I
+000054: move-result v4
+000056: const-string v5, &quot;activity&quot;
+00005a: invoke-virtual v10, v5, Landroid/content/Context;-&gt;getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+000060: move-result-object v5
+000062: const-string v6, &quot;null cannot be cast to non-null type android.app.ActivityManager&quot;
+000066: invoke-static v5, v6, Lkotlin/jvm/internal/Intrinsics;-&gt;c(Ljava/lang/Object; Ljava/lang/String;)V
+00006c: check-cast v5, Landroid/app/ActivityManager;
+000070: invoke-virtual v5, Landroid/app/ActivityManager;-&gt;getRunningAppProcesses()Ljava/util/List;
+000076: move-result-object v5
+000078: invoke-interface v5, Ljava/util/List;-&gt;iterator()Ljava/util/Iterator;
+00007e: move-result-object v5
+000080: invoke-interface v5, Ljava/util/Iterator;-&gt;hasNext()Z
+000086: move-result v6
+000088: if-eqz v6, +011h
+00008c: invoke-interface v5, Ljava/util/Iterator;-&gt;next()Ljava/lang/Object;
+000092: move-result-object v6
+000094: check-cast v6, Landroid/app/ActivityManager$RunningAppProcessInfo;
+000098: if-eqz v6, -00ch
+00009c: iget v7, v6, Landroid/app/ActivityManager$RunningAppProcessInfo;-&gt;pid I
+0000a0: if-ne v7, v4, -010h
+0000a4: iget-object v4, v6, Landroid/app/ActivityManager$RunningAppProcessInfo;-&gt;processName Ljava/lang/String;
+0000a8: goto +2h
+0000aa: move-object v4, v2
+0000ac: invoke-static v1, v4, Lkotlin/jvm/internal/Intrinsics;-&gt;a(Ljava/lang/Object; Ljava/lang/Object;)Z
+0000b2: move-result v1
+0000b4: invoke-static v1, Ljava/lang/Boolean;-&gt;valueOf(Z)Ljava/lang/Boolean;
+0000ba: move-result-object v1
+0000bc: iput-object v1, v10, Lcom/document/pdf/scanner/App;-&gt;n Ljava/lang/Boolean;
+0000c0: iget-object v1, v10, Lcom/document/pdf/scanner/App;-&gt;n Ljava/lang/Boolean;
+0000c4: const/4 v4, 0
+0000c6: if-eqz v1, +007h
+0000ca: invoke-virtual v1, Ljava/lang/Boolean;-&gt;booleanValue()Z
+0000d0: move-result v1
+0000d2: goto +2h
+0000d4: move v1, v4
+0000d6: if-eqz v1, +1ech
+0000da: invoke-static v10, Lrh/a;-&gt;f(Landroid/content/Context;)V
+0000e0: sget-object v1, Lnh/a;-&gt;l Lnh/a;
+0000e4: const-string v5, &quot;https://pdfdata.pdfreaderfreeview.com/pdf/api&quot;
+0000e8: iput-object v5, v1, Lnh/a;-&gt;c Ljava/lang/String;
+0000ec: const-string v5, &quot;35P99fYpDuVVEke6oGGnh6&quot;
+0000f0: iput-object v5, v1, Lnh/a;-&gt;d Ljava/lang/String;
+0000f4: const/16 v5, 20279
+0000f8: iput v5, v1, Lnh/a;-&gt;a I
+0000fc: const-string v5, &quot;1eLSzOotyKKVLqT47iLlMfehT2ydAxnf&quot;
+000100: iput-object v5, v1, Lnh/a;-&gt;b Ljava/lang/String;
+000104: const/4 v5, 1
+000106: iput-boolean v5, v1, Lnh/a;-&gt;k Z
+00010a: const-string v6, &quot;ggps&quot;
+00010e: iput-object v6, v1, Lnh/a;-&gt;f Ljava/lang/String;
+000112: invoke-static v10, Lia/e0;-&gt;b(Landroid/app/Application;)Ljava/lang/String;
+000118: move-result-object v6
+00011a: iput-object v6, v1, Lnh/a;-&gt;g Ljava/lang/String;
+00011e: const-string v6, &quot;key_media_source&quot;
+000122: invoke-static v6, Landroid/text/TextUtils;-&gt;isEmpty(Ljava/lang/CharSequence;)Z
+000128: move-result v7
+00012a: const-string v8, &quot;&quot;
+00012e: if-nez v7, +02bh
+000132: sget-object v7, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+000136: if-nez v7, +01bh
+00013a: const-class v7, Lrh/a;
+00013e: monitor-enter v7
+000140: sget-object v9, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+000144: if-nez v9, +00eh
+000148: invoke-static Lrh/a;-&gt;l()V
+00014e: invoke-static Lcom/tencent/mmkv/MMKV;-&gt;j()Lcom/tencent/mmkv/MMKV;
+000154: move-result-object v9
+000156: sput-object v9, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+00015a: goto +3h
+00015c: move-exception v6
+00015e: goto +5h
+000160: sget-object v9, Lkotlin/Unit;-&gt;a Lkotlin/Unit;
+000164: monitor-exit v7
+000166: goto +3h
+000168: monitor-exit v7
+00016a: throw v6
+00016c: sget-object v7, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+000170: if-eqz v7, +00ah
+000174: invoke-virtual v7, v6, v8, Lcom/tencent/mmkv/MMKV;-&gt;h(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+00017a: move-result-object v6
+00017c: if-nez v6, +003h
+000180: goto +2h
+000182: move-object v8, v6
+000184: invoke-virtual v8, Ljava/lang/String;-&gt;length()I
+00018a: move-result v6
+00018c: if-nez v6, +00ch
+000190: new-instance v6, Lcom/google/firebase/messaging/b0;
+000194: const/16 v7, 20
+000198: invoke-direct v6, v10, v7, Lcom/google/firebase/messaging/b0;-&gt;&lt;init&gt;(Ljava/lang/Object; I)V
+00019e: sput-object v6, Lnh/d;-&gt;d Lcom/google/firebase/messaging/b0;
+0001a2: goto +6h
+0001a4: sget-object v6, Lia/r1;-&gt;a Lia/r1;
+0001a8: invoke-static v8, Lia/r1;-&gt;s(Ljava/lang/String;)V
+0001ae: sget-object v6, Ly2/e;-&gt;x Ly2/e;
+0001b2: invoke-virtual v6, v10, v1, Ly2/e;-&gt;f(Lcom/document/pdf/scanner/App; Lnh/a;)Z
+0001b8: goto +5h
+0001ba: move-exception v1
+0001bc: invoke-virtual v1, Ljava/lang/Throwable;-&gt;printStackTrace()V
+0001c2: new-instance v1, Lia/z;
+0001c6: invoke-direct v1, Ljava/lang/Object;-&gt;&lt;init&gt;()V
+0001cc: sget-object v6, Lnh/r;-&gt;x Lnh/r;
+0001d0: iget-object v6, v6, Lnh/r;-&gt;w Ljava/util/ArrayList;
+0001d4: invoke-virtual v6, v1, Ljava/util/ArrayList;-&gt;add(Ljava/lang/Object;)Z
+0001da: const-string v1, &quot;xrvvDqGZ&quot;
+0001de: invoke-static v1, v4, Lia/u0;-&gt;l(Ljava/lang/String; I)I
+0001e4: move-result v1
+0001e6: if-nez v1, +00ah
+0001ea: const-string v1, &quot;xrvvDqGZ&quot;
+0001ee: const v6, 10010709
+0001f4: invoke-static v1, v6, Lia/u0;-&gt;I(Ljava/lang/String; I)V
+0001fa: invoke-static v10, Lia/g;-&gt;a(Landroid/content/Context;)V
+000200: const-string v1, &quot;KEY_INSTALL_REFERRER&quot;
+000204: invoke-static v1, Landroid/text/TextUtils;-&gt;isEmpty(Ljava/lang/CharSequence;)Z
+00020a: move-result v6
+00020c: if-nez v6, +028h
+000210: sget-object v6, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+000214: if-nez v6, +01bh
+000218: const-class v6, Lrh/a;
+00021c: monitor-enter v6
+00021e: sget-object v7, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+000222: if-nez v7, +00eh
+000226: invoke-static Lrh/a;-&gt;l()V
+00022c: invoke-static Lcom/tencent/mmkv/MMKV;-&gt;j()Lcom/tencent/mmkv/MMKV;
+000232: move-result-object v7
+000234: sput-object v7, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+000238: goto +3h
+00023a: move-exception v1
+00023c: goto +5h
+00023e: sget-object v7, Lkotlin/Unit;-&gt;a Lkotlin/Unit;
+000242: monitor-exit v6
+000244: goto +3h
+000246: monitor-exit v6
+000248: throw v1
+00024a: sget-object v6, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+00024e: if-eqz v6, +007h
+000252: invoke-virtual v6, v1, Lcom/tencent/mmkv/MMKV;-&gt;c(Ljava/lang/String;)Z
+000258: move-result v1
+00025a: goto +2h
+00025c: move v1, v4
+00025e: if-eqz v1, +006h
+000262: invoke-static Li8/b;-&gt;b()V
+000268: goto +11h
+00026a: invoke-static v10, Lcom/android/installreferrer/api/InstallReferrerClient;-&gt;newBuilder(Landroid/content/Context;)Lcom/android/installreferrer/api/InstallReferrerClient$Builder;
+000270: move-result-object v1
+000272: invoke-virtual v1, Lcom/android/installreferrer/api/InstallReferrerClient$Builder;-&gt;build()Lcom/android/installreferrer/api/InstallReferrerClient;
+000278: move-result-object v1
+00027a: new-instance v6, Lcom/facebook/internal/d0;
+00027e: invoke-direct v6, v1, Lcom/facebook/internal/d0;-&gt;&lt;init&gt;(Lcom/android/installreferrer/api/InstallReferrerClient;)V
+000284: invoke-virtual v1, v6, Lcom/android/installreferrer/api/InstallReferrerClient;-&gt;startConnection(Lcom/android/installreferrer/api/InstallReferrerStateListener;)V
+00028a: const-string v1, &quot;sVeMdYV8&quot;
+00028e: invoke-static v1, Landroid/text/TextUtils;-&gt;isEmpty(Ljava/lang/CharSequence;)Z
+000294: move-result v6
+000296: if-nez v6, +028h
+00029a: sget-object v6, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+00029e: if-nez v6, +01bh
+0002a2: const-class v6, Lrh/a;
+0002a6: monitor-enter v6
+0002a8: sget-object v7, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+0002ac: if-nez v7, +00eh
+0002b0: invoke-static Lrh/a;-&gt;l()V
+0002b6: invoke-static Lcom/tencent/mmkv/MMKV;-&gt;j()Lcom/tencent/mmkv/MMKV;
+0002bc: move-result-object v7
+0002be: sput-object v7, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+0002c2: goto +3h
+0002c4: move-exception v1
+0002c6: goto +5h
+0002c8: sget-object v7, Lkotlin/Unit;-&gt;a Lkotlin/Unit;
+0002cc: monitor-exit v6
+0002ce: goto +3h
+0002d0: monitor-exit v6
+0002d2: throw v1
+0002d4: sget-object v6, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+0002d8: if-eqz v6, +007h
+0002dc: invoke-virtual v6, v1, v4, Lcom/tencent/mmkv/MMKV;-&gt;d(Ljava/lang/String; Z)Z
+0002e2: move-result v1
+0002e4: goto +2h
+0002e6: move v1, v4
+0002e8: if-nez v1, +010h
+0002ec: sget-object v1, Lis/z0;-&gt;n Lis/z0;
+0002f0: sget-object v6, Lis/m0;-&gt;a Lps/e;
+0002f4: sget-object v6, Lps/d;-&gt;u Lps/d;
+0002f8: new-instance v7, Lia/a0;
+0002fc: invoke-direct v7, v0, v2, Lip/g;-&gt;&lt;init&gt;(I Lgp/a;)V
+000302: invoke-static v1, v6, v2, v7, v0, Lis/b0;-&gt;q(Lis/z; Lkotlin/coroutines/a; Lis/a0; Lkotlin/jvm/functions/Function2; I)Lis/u1;
+000308: sput-object v10, Lcom/bumptech/glide/c;-&gt;b Lcom/document/pdf/scanner/App;
+00030c: sput-boolean v5, Lcom/bumptech/glide/c;-&gt;c Z
+000310: const-string v1, &quot;key_day_night_mode&quot;
+000314: invoke-static v1, Landroid/text/TextUtils;-&gt;isEmpty(Ljava/lang/CharSequence;)Z
+00031a: move-result v6
+00031c: if-nez v6, +027h
+000320: sget-object v6, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+000324: if-nez v6, +01bh
+000328: const-class v6, Lrh/a;
+00032c: monitor-enter v6
+00032e: sget-object v7, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+000332: if-nez v7, +00eh
+000336: invoke-static Lrh/a;-&gt;l()V
+00033c: invoke-static Lcom/tencent/mmkv/MMKV;-&gt;j()Lcom/tencent/mmkv/MMKV;
+000342: move-result-object v7
+000344: sput-object v7, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+000348: goto +3h
+00034a: move-exception v1
+00034c: goto +5h
+00034e: sget-object v7, Lkotlin/Unit;-&gt;a Lkotlin/Unit;
+000352: monitor-exit v6
+000354: goto +3h
+000356: monitor-exit v6
+000358: throw v1
+00035a: sget-object v6, Lia/u0;-&gt;z Lcom/tencent/mmkv/MMKV;
+00035e: if-eqz v6, +006h
+000362: invoke-virtual v6, v1, v4, Lcom/tencent/mmkv/MMKV;-&gt;d(Ljava/lang/String; Z)Z
+000368: move-result v4
+00036a: if-eqz v4, +004h
+00036e: move v1, v0
+000370: goto +2h
+000372: move v1, v5
+000374: invoke-static v1, Lg/o;-&gt;k(I)V
+00037a: sget-object v1, Lf8/x;-&gt;n Lf8/x;
+00037e: sget-object v4, Lga/d;-&gt;a Lns/c;
+000382: invoke-static v1, Lga/d;-&gt;b(Lga/e;)V
+000388: sget-object v1, Lis/z0;-&gt;n Lis/z0;
+00038c: new-instance v4, Lf8/t;
+000390: invoke-direct v4, v10, v2, Lf8/t;-&gt;&lt;init&gt;(Lcom/document/pdf/scanner/App; Lgp/a;)V
+000396: const/4 v6, 3
+000398: invoke-static v1, v2, v2, v4, v6, Lis/b0;-&gt;q(Lis/z; Lkotlin/coroutines/a; Lis/a0; Lkotlin/jvm/functions/Function2; I)Lis/u1;
+00039e: sget-object v1, Lia/b;-&gt;n Lia/b;
+0003a2: invoke-virtual v10, v1, Landroid/app/Application;-&gt;unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
+0003a8: invoke-virtual v10, v1, Landroid/app/Application;-&gt;registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
+0003ae: goto +5h
+0003b0: move-exception v1
+0003b2: invoke-virtual v1, Ljava/lang/Throwable;-&gt;printStackTrace()V
+0003b8: invoke-static Ljava/lang/Thread;-&gt;getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
+0003be: move-result-object v1
+0003c0: instance-of v4, v1, Lia/c0;
+0003c4: if-nez v4, +00ah
+0003c8: new-instance v4, Lia/c0;
+0003cc: invoke-direct v4, v1, Lia/c0;-&gt;&lt;init&gt;(Ljava/lang/Thread$UncaughtExceptionHandler;)V
+0003d2: invoke-static v4, Ljava/lang/Thread;-&gt;setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
+0003d8: new-instance v1, Ll7/b;
+0003dc: const/16 v4, 17
+0003e0: invoke-direct v1, v10, v4, Ll7/b;-&gt;&lt;init&gt;(Ljava/lang/Object; I)V
+0003e6: new-instance v4, Landroid/os/Handler;
+0003ea: invoke-static Landroid/os/Looper;-&gt;getMainLooper()Landroid/os/Looper;
+0003f0: move-result-object v6
+0003f2: invoke-direct v4, v6, Landroid/os/Handler;-&gt;&lt;init&gt;(Landroid/os/Looper;)V
+0003f8: invoke-virtual v4, v1, Landroid/os/Handler;-&gt;post(Ljava/lang/Runnable;)Z
+0003fe: sget-object v1, Lcp/o;-&gt;u Lcp/o$a;
+000402: invoke-static v10, Lh4/c;-&gt;p(Landroid/app/Application;)V
+000408: sget-object v1, Lkotlin/Unit;-&gt;a Lkotlin/Unit;
+00040c: goto +3h
+00040e: sget-object v1, Lcp/o;-&gt;u Lcp/o$a;
+000412: sget v1, Landroid/os/Build$VERSION;-&gt;SDK_INT I
+000416: if-le v1, v3, +003h
+00041a: goto +4ah
+00041c: const-class v1, Landroid/app/ActivityManager;
+000420: const-string v3, &quot;IActivityManagerSingleton&quot;
+000424: invoke-virtual v1, v3, Ljava/lang/Class;-&gt;getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+00042a: move-result-object v1
+00042c: invoke-virtual v1, v5, Ljava/lang/reflect/AccessibleObject;-&gt;setAccessible(Z)V
+000432: invoke-virtual v1, v2, Ljava/lang/reflect/Field;-&gt;get(Ljava/lang/Object;)Ljava/lang/Object;
+000438: move-result-object v1
+00043a: if-nez v1, +003h
+00043e: goto +38h
+000440: invoke-virtual v1, Ljava/lang/Object;-&gt;getClass()Ljava/lang/Class;
+000446: move-result-object v2
+000448: invoke-virtual v2, Ljava/lang/Class;-&gt;getSuperclass()Ljava/lang/Class;
+00044e: move-result-object v2
+000450: if-nez v2, +003h
+000454: goto +2dh
+000456: const-string v3, &quot;mInstance&quot;
+00045a: invoke-virtual v2, v3, Ljava/lang/Class;-&gt;getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+000460: move-result-object v2
+000462: invoke-virtual v2, v5, Ljava/lang/reflect/AccessibleObject;-&gt;setAccessible(Z)V
+000468: invoke-virtual v2, v1, Ljava/lang/reflect/Field;-&gt;get(Ljava/lang/Object;)Ljava/lang/Object;
+00046e: move-result-object v3
+000470: const-string v4, &quot;android.app.IActivityManager&quot;
+000474: invoke-static v4, Ljava/lang/Class;-&gt;forName(Ljava/lang/String;)Ljava/lang/Class;
+00047a: move-result-object v4
+00047c: filled-new-array v4, [Ljava/lang/Class;
+000482: move-result-object v5
+000484: invoke-virtual v4, Ljava/lang/Class;-&gt;getClassLoader()Ljava/lang/ClassLoader;
+00048a: move-result-object v4
+00048c: new-instance v6, Lbx/a;
+000490: invoke-direct v6, v3, v0, Lbx/a;-&gt;&lt;init&gt;(Ljava/lang/Object; I)V
+000496: invoke-static v4, v5, v6, Ljava/lang/reflect/Proxy;-&gt;newProxyInstance(Ljava/lang/ClassLoader; [Ljava/lang/Class; Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
+00049c: move-result-object v0
+00049e: invoke-virtual v2, v1, v0, Ljava/lang/reflect/Field;-&gt;set(Ljava/lang/Object; Ljava/lang/Object;)V
+0004a4: goto +5h
+0004a6: move-exception v0
+0004a8: invoke-virtual v0, Ljava/lang/Throwable;-&gt;printStackTrace()V
+0004ae: return-void 
+
+</pre></html></main><script src="../../assets/reading-navigation.js"></script></body></html>

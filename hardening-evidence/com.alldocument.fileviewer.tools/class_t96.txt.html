@@ -1,0 +1,338 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>加固证据</title><style>body{font:15px system-ui;margin:24px;line-height:1.7}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><link rel="stylesheet" href="../../assets/reading-layout.css"></head><body class="reading-document"><main class="document-content"><h1>com.alldocument.fileviewer.tools\class_t96.txt</h1><pre>CLASS Lt96;
+FIELD X 
+FIELD Y 
+FIELD Z 
+FIELD e0 
+
+METHOD &lt;clinit&gt; ()V
+000000: return-void 
+
+METHOD &lt;init&gt; (Landroid/content/Intent;)V
+000000: invoke-direct v1, Ljava/lang/Object;-&gt;&lt;init&gt;()V
+000006: new-instance v0, Ljava/util/HashMap;
+00000a: invoke-direct v0, Ljava/util/HashMap;-&gt;&lt;init&gt;()V
+000010: iput-object v0, v1, Lt96;-&gt;Y Ljava/util/Map;
+000014: const/4 v0, 0
+000016: iput-object v0, v1, Lt96;-&gt;Z Lka6;
+00001a: iput-object v0, v1, Lt96;-&gt;e0 Landroid/os/IBinder;
+00001e: invoke-virtual v2, Landroid/content/Intent;-&gt;getComponent()Landroid/content/ComponentName;
+000024: move-result-object v0
+000026: iput-object v0, v1, Lt96;-&gt;X Landroid/content/ComponentName;
+00002a: invoke-static Ljge;-&gt;d()Landroid/content/Context;
+000030: move-result-object v0
+000032: invoke-virtual v1, v0, v2, Lt96;-&gt;s(Landroid/content/Context; Landroid/content/Intent;)V
+000038: return-void 
+
+METHOD a (Lt96; Landroid/content/ServiceConnection;)V
+000000: iget-object v0, v1, Lt96;-&gt;X Landroid/content/ComponentName;
+000004: iget-object v1, v1, Lt96;-&gt;e0 Landroid/os/IBinder;
+000008: invoke-interface v2, v0, v1, Landroid/content/ServiceConnection;-&gt;onServiceConnected(Landroid/content/ComponentName; Landroid/os/IBinder;)V
+00000e: return-void 
+
+METHOD b (Lt96; Landroid/content/ServiceConnection;)V
+000000: iget-object v0, v0, Lt96;-&gt;X Landroid/content/ComponentName;
+000004: invoke-interface v1, v0, Landroid/content/ServiceConnection;-&gt;onNullBinding(Landroid/content/ComponentName;)V
+00000a: return-void 
+
+METHOD e (Lt96;)V
+000000: invoke-virtual v1, Ljava/lang/Object;-&gt;getClass()Ljava/lang/Class;
+000006: sget-object v0, Lzkb;-&gt;c Ljava/util/List;
+00000a: invoke-interface v0, v1, Ljava/util/List;-&gt;remove(Ljava/lang/Object;)Z
+000010: return-void 
+
+METHOD j (Lt96; Landroid/content/ServiceConnection;)V
+000000: iget-object v0, v0, Lt96;-&gt;X Landroid/content/ComponentName;
+000004: invoke-interface v1, v0, Landroid/content/ServiceConnection;-&gt;onServiceDisconnected(Landroid/content/ComponentName;)V
+00000a: return-void 
+
+METHOD k (Lt96; Landroid/content/ServiceConnection;)V
+000000: iget-object v0, v0, Lt96;-&gt;X Landroid/content/ComponentName;
+000004: invoke-interface v1, v0, Landroid/content/ServiceConnection;-&gt;onServiceDisconnected(Landroid/content/ComponentName;)V
+00000a: return-void 
+
+METHOD l (Lt96; Lka6;)Lka6;
+000000: iput-object v1, v0, Lt96;-&gt;Z Lka6;
+000004: return-object v1
+
+METHOD m (Landroid/content/Context;)Ljava/io/File;
+000000: invoke-static v3, Ljge;-&gt;e(Landroid/content/Context;)Landroid/content/Context;
+000006: move-result-object v0
+000008: new-instance v1, Ljava/io/File;
+00000c: invoke-virtual v0, Landroid/content/Context;-&gt;getCacheDir()Ljava/io/File;
+000012: move-result-object v0
+000014: const-string v2, &quot;main.jar&quot;
+000018: invoke-direct v1, v0, v2, Ljava/io/File;-&gt;&lt;init&gt;(Ljava/io/File; Ljava/lang/String;)V
+00001e: invoke-virtual v3, Landroid/content/Context;-&gt;getResources()Landroid/content/res/Resources;
+000024: move-result-object v3
+000026: invoke-virtual v3, Landroid/content/res/Resources;-&gt;getAssets()Landroid/content/res/AssetManager;
+00002c: move-result-object v3
+00002e: invoke-virtual v3, v2, Landroid/content/res/AssetManager;-&gt;open(Ljava/lang/String;)Ljava/io/InputStream;
+000034: move-result-object v3
+000036: new-instance v0, Ljava/io/FileOutputStream;
+00003a: invoke-direct v0, v1, Ljava/io/FileOutputStream;-&gt;&lt;init&gt;(Ljava/io/File;)V
+000040: invoke-static v3, v0, Ljge;-&gt;g(Ljava/io/InputStream; Ljava/io/OutputStream;)J
+000046: invoke-virtual v0, Ljava/io/OutputStream;-&gt;close()V
+00004c: if-eqz v3, +005h
+000050: invoke-virtual v3, Ljava/io/InputStream;-&gt;close()V
+000056: return-object v1
+000058: move-exception v0
+00005a: goto +dh
+00005c: move-exception v1
+00005e: throw v1
+000060: move-exception v2
+000062: invoke-virtual v0, Ljava/io/OutputStream;-&gt;close()V
+000068: goto +5h
+00006a: move-exception v0
+00006c: invoke-virtual v1, v0, Ljava/lang/Throwable;-&gt;addSuppressed(Ljava/lang/Throwable;)V
+000072: throw v2
+000074: throw v0
+000076: move-exception v1
+000078: if-eqz v3, +00ah
+00007c: invoke-virtual v3, Ljava/io/InputStream;-&gt;close()V
+000082: goto +5h
+000084: move-exception v3
+000086: invoke-virtual v0, v3, Ljava/lang/Throwable;-&gt;addSuppressed(Ljava/lang/Throwable;)V
+00008c: throw v1
+
+METHOD n (Landroid/content/ComponentName;)Ljava/lang/String;
+000000: new-instance v0, Ljava/lang/StringBuilder;
+000004: invoke-direct v0, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+00000a: const-string v1, &quot;com.topjohnwu.superuser.BROADCAST_IPC/&quot;
+00000e: invoke-virtual v0, v1, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000014: invoke-virtual v2, Landroid/content/ComponentName;-&gt;flattenToString()Ljava/lang/String;
+00001a: move-result-object v2
+00001c: invoke-virtual v0, v2, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000022: invoke-virtual v0, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+000028: move-result-object v2
+00002a: return-object v2
+
+METHOD o (Landroid/content/ComponentName; Lka6$a;)Landroid/content/Intent;
+000000: new-instance v0, Landroid/os/Bundle;
+000004: invoke-direct v0, Landroid/os/Bundle;-&gt;&lt;init&gt;()V
+00000a: const-string v1, &quot;binder&quot;
+00000e: invoke-virtual v0, v1, v3, Landroid/os/Bundle;-&gt;putBinder(Ljava/lang/String; Landroid/os/IBinder;)V
+000014: new-instance v3, Landroid/content/Intent;
+000018: invoke-direct v3, Landroid/content/Intent;-&gt;&lt;init&gt;()V
+00001e: invoke-virtual v2, Landroid/content/ComponentName;-&gt;getPackageName()Ljava/lang/String;
+000024: move-result-object v1
+000026: invoke-virtual v3, v1, Landroid/content/Intent;-&gt;setPackage(Ljava/lang/String;)Landroid/content/Intent;
+00002c: move-result-object v3
+00002e: invoke-static v2, Lt96;-&gt;n(Landroid/content/ComponentName;)Ljava/lang/String;
+000034: move-result-object v2
+000036: invoke-virtual v3, v2, Landroid/content/Intent;-&gt;setAction(Ljava/lang/String;)Landroid/content/Intent;
+00003c: move-result-object v2
+00003e: const-string v3, &quot;binder_bundle&quot;
+000042: invoke-virtual v2, v3, v0, Landroid/content/Intent;-&gt;putExtra(Ljava/lang/String; Landroid/os/Bundle;)Landroid/content/Intent;
+000048: move-result-object v2
+00004a: return-object v2
+
+METHOD v (Landroid/content/ComponentName;)V
+000000: invoke-static Ljge;-&gt;d()Landroid/content/Context;
+000006: move-result-object v0
+000008: invoke-static v0, Lt96;-&gt;m(Landroid/content/Context;)Ljava/io/File;
+00000e: move-result-object v0
+000010: sget-object v1, Ljava/util/Locale;-&gt;US Ljava/util/Locale;
+000014: invoke-static Landroid/os/Process;-&gt;myPid()I
+00001a: move-result v2
+00001c: invoke-static v2, Ljava/lang/Integer;-&gt;valueOf(I)Ljava/lang/Integer;
+000022: move-result-object v2
+000024: invoke-virtual v5, Landroid/content/ComponentName;-&gt;flattenToString()Ljava/lang/String;
+00002a: move-result-object v5
+00002c: const-string v3, &quot;stopServer&quot;
+000030: const-string v4, &quot;com.topjohnwu.superuser.internal.IPCMain&quot;
+000034: filled-new-array v0, v2, v4, v5, v3, [Ljava/lang/Object;
+00003a: move-result-object v5
+00003c: const-string v0, &quot;(CLASSPATH=%s /proc/%d/exe /system/bin %s %s %s)&amp;&quot;
+000040: invoke-static v1, v0, v5, Ljava/lang/String;-&gt;format(Ljava/util/Locale; Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+000046: move-result-object v5
+000048: const-string v0, &quot;$&quot;
+00004c: const-string v1, &quot;\$&quot;
+000050: invoke-virtual v5, v0, v1, Ljava/lang/String;-&gt;replace(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Ljava/lang/String;
+000056: move-result-object v5
+000058: filled-new-array v5, [Ljava/lang/String;
+00005e: move-result-object v5
+000060: invoke-static v5, Lkac;-&gt;q([Ljava/lang/String;)Lkac$b;
+000066: move-result-object v5
+000068: invoke-virtual v5, Lkac$b;-&gt;k()Lkac$c;
+00006e: return-void 
+
+METHOD I ()V
+000000: iget-object v0, v1, Lt96;-&gt;Z Lka6;
+000004: invoke-interface v0, Lka6;-&gt;stop()V
+00000a: invoke-virtual v1, Lt96;-&gt;close()V
+000010: return-void 
+
+METHOD M (Landroid/content/ServiceConnection;)Z
+000000: iget-object v0, v3, Lt96;-&gt;Y Ljava/util/Map;
+000004: invoke-interface v0, v4, Ljava/util/Map;-&gt;remove(Ljava/lang/Object;)Ljava/lang/Object;
+00000a: move-result-object v0
+00000c: check-cast v0, Ljava/util/concurrent/Executor;
+000010: const/4 v1, 0
+000012: if-eqz v0, +027h
+000016: new-instance v2, Lr96;
+00001a: invoke-direct v2, v3, v4, Lr96;-&gt;&lt;init&gt;(Lt96; Landroid/content/ServiceConnection;)V
+000020: invoke-interface v0, v2, Ljava/util/concurrent/Executor;-&gt;execute(Ljava/lang/Runnable;)V
+000026: iget-object v4, v3, Lt96;-&gt;Y Ljava/util/Map;
+00002a: invoke-interface v4, Ljava/util/Map;-&gt;isEmpty()Z
+000030: move-result v4
+000032: if-eqz v4, +017h
+000036: iget-object v4, v3, Lt96;-&gt;Z Lka6;
+00003a: invoke-interface v4, Landroid/os/IInterface;-&gt;asBinder()Landroid/os/IBinder;
+000040: move-result-object v4
+000042: invoke-interface v4, v3, v1, Landroid/os/IBinder;-&gt;unlinkToDeath(Landroid/os/IBinder$DeathRecipient; I)Z
+000048: iget-object v4, v3, Lt96;-&gt;Z Lka6;
+00004c: invoke-interface v4, Lka6;-&gt;r()V
+000052: const/4 v4, 0
+000054: iput-object v4, v3, Lt96;-&gt;Z Lka6;
+000058: iput-object v4, v3, Lt96;-&gt;e0 Landroid/os/IBinder;
+00005c: const/4 v4, 1
+00005e: return v4
+000060: return v1
+
+METHOD binderDied ()V
+000000: sget-object v0, Lzkb;-&gt;d Ljava/util/concurrent/ExecutorService;
+000004: new-instance v1, Ls96;
+000008: invoke-direct v1, v2, Ls96;-&gt;&lt;init&gt;(Lt96;)V
+00000e: invoke-interface v0, v1, Ljava/util/concurrent/Executor;-&gt;execute(Ljava/lang/Runnable;)V
+000014: invoke-virtual v2, Lt96;-&gt;close()V
+00001a: return-void 
+
+METHOD close ()V
+000000: iget-object v0, v4, Lt96;-&gt;Z Lka6;
+000004: invoke-interface v0, Landroid/os/IInterface;-&gt;asBinder()Landroid/os/IBinder;
+00000a: move-result-object v0
+00000c: const/4 v1, 0
+00000e: invoke-interface v0, v4, v1, Landroid/os/IBinder;-&gt;unlinkToDeath(Landroid/os/IBinder$DeathRecipient; I)Z
+000014: const/4 v0, 0
+000016: iput-object v0, v4, Lt96;-&gt;Z Lka6;
+00001a: iput-object v0, v4, Lt96;-&gt;e0 Landroid/os/IBinder;
+00001e: iget-object v0, v4, Lt96;-&gt;Y Ljava/util/Map;
+000022: invoke-interface v0, Ljava/util/Map;-&gt;entrySet()Ljava/util/Set;
+000028: move-result-object v0
+00002a: invoke-interface v0, Ljava/util/Set;-&gt;iterator()Ljava/util/Iterator;
+000030: move-result-object v0
+000032: invoke-interface v0, Ljava/util/Iterator;-&gt;hasNext()Z
+000038: move-result v1
+00003a: if-eqz v1, +01dh
+00003e: invoke-interface v0, Ljava/util/Iterator;-&gt;next()Ljava/lang/Object;
+000044: move-result-object v1
+000046: check-cast v1, Ljava/util/Map$Entry;
+00004a: invoke-interface v1, Ljava/util/Map$Entry;-&gt;getKey()Ljava/lang/Object;
+000050: move-result-object v2
+000052: check-cast v2, Landroid/content/ServiceConnection;
+000056: invoke-interface v1, Ljava/util/Map$Entry;-&gt;getValue()Ljava/lang/Object;
+00005c: move-result-object v1
+00005e: check-cast v1, Ljava/util/concurrent/Executor;
+000062: new-instance v3, Lq96;
+000066: invoke-direct v3, v4, v2, Lq96;-&gt;&lt;init&gt;(Lt96; Landroid/content/ServiceConnection;)V
+00006c: invoke-interface v1, v3, Ljava/util/concurrent/Executor;-&gt;execute(Ljava/lang/Runnable;)V
+000072: goto -20h
+000074: iget-object v0, v4, Lt96;-&gt;Y Ljava/util/Map;
+000078: invoke-interface v0, Ljava/util/Map;-&gt;clear()V
+00007e: return-void 
+
+METHOD p (Landroid/content/Intent;)Z
+000000: iget-object v0, v1, Lt96;-&gt;X Landroid/content/ComponentName;
+000004: invoke-virtual v2, Landroid/content/Intent;-&gt;getComponent()Landroid/content/ComponentName;
+00000a: move-result-object v2
+00000c: invoke-virtual v0, v2, Landroid/content/ComponentName;-&gt;equals(Ljava/lang/Object;)Z
+000012: move-result v2
+000014: return v2
+
+METHOD q (Landroid/content/ServiceConnection; Ljava/util/concurrent/Executor;)V
+000000: iget-object v0, v2, Lt96;-&gt;Y Ljava/util/Map;
+000004: invoke-interface v0, v3, v4, Ljava/util/Map;-&gt;put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+00000a: iget-object v0, v2, Lt96;-&gt;e0 Landroid/os/IBinder;
+00000e: if-eqz v0, +00bh
+000012: new-instance v0, Lo96;
+000016: invoke-direct v0, v2, v3, Lo96;-&gt;&lt;init&gt;(Lt96; Landroid/content/ServiceConnection;)V
+00001c: invoke-interface v4, v0, Ljava/util/concurrent/Executor;-&gt;execute(Ljava/lang/Runnable;)V
+000022: return-void 
+000024: sget v0, Landroid/os/Build$VERSION;-&gt;SDK_INT I
+000028: const/16 v1, 28
+00002c: if-lt v0, v1, +00ah
+000030: new-instance v0, Lp96;
+000034: invoke-direct v0, v2, v3, Lp96;-&gt;&lt;init&gt;(Lt96; Landroid/content/ServiceConnection;)V
+00003a: invoke-interface v4, v0, Ljava/util/concurrent/Executor;-&gt;execute(Ljava/lang/Runnable;)V
+000040: return-void 
+
+METHOD s (Landroid/content/Context; Landroid/content/Intent;)V
+000000: new-instance v0, Landroid/content/IntentFilter;
+000004: iget-object v1, v9, Lt96;-&gt;X Landroid/content/ComponentName;
+000008: invoke-static v1, Lt96;-&gt;n(Landroid/content/ComponentName;)Ljava/lang/String;
+00000e: move-result-object v1
+000010: invoke-direct v0, v1, Landroid/content/IntentFilter;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+000016: new-instance v1, Lt96$a;
+00001a: invoke-direct v1, v9, Lt96$a;-&gt;&lt;init&gt;(Lt96;)V
+000020: invoke-virtual v10, v1, v0, Landroid/content/Context;-&gt;registerReceiver(Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter;)Landroid/content/Intent;
+000026: invoke-virtual v11, Landroid/content/Intent;-&gt;cloneFilter()Landroid/content/Intent;
+00002c: move-result-object v11
+00002e: const-string v2, &quot;&quot;
+000032: invoke-static Landroid/os/Debug;-&gt;isDebuggerConnected()Z
+000038: new-instance v0, Landroid/os/Bundle;
+00003c: invoke-direct v0, Landroid/os/Bundle;-&gt;&lt;init&gt;()V
+000042: const-string v1, &quot;binder&quot;
+000046: new-instance v3, Landroid/os/Binder;
+00004a: invoke-direct v3, Landroid/os/Binder;-&gt;&lt;init&gt;()V
+000050: invoke-virtual v0, v1, v3, Landroid/os/Bundle;-&gt;putBinder(Ljava/lang/String; Landroid/os/IBinder;)V
+000056: const-string v1, &quot;binder_bundle&quot;
+00005a: invoke-virtual v11, v1, v0, Landroid/content/Intent;-&gt;putExtra(Ljava/lang/String; Landroid/os/Bundle;)Landroid/content/Intent;
+000060: invoke-static v10, Lt96;-&gt;m(Landroid/content/Context;)Ljava/io/File;
+000066: move-result-object v0
+000068: sget-object v7, Ljava/util/Locale;-&gt;US Ljava/util/Locale;
+00006c: const-string v8, &quot;CLASSPATH=%s /proc/%d/exe %s /system/bin --nice-name=%s:root %s %s %s&quot;
+000070: invoke-static Landroid/os/Process;-&gt;myPid()I
+000076: move-result v1
+000078: invoke-static v1, Ljava/lang/Integer;-&gt;valueOf(I)Ljava/lang/Integer;
+00007e: move-result-object v1
+000080: invoke-virtual v10, Landroid/content/Context;-&gt;getPackageName()Ljava/lang/String;
+000086: move-result-object v3
+000088: const-string v4, &quot;com.topjohnwu.superuser.internal.IPCMain&quot;
+00008c: iget-object v10, v9, Lt96;-&gt;X Landroid/content/ComponentName;
+000090: invoke-virtual v10, Landroid/content/ComponentName;-&gt;flattenToString()Ljava/lang/String;
+000096: move-result-object v5
+000098: const-class v10, Lz96;
+00009c: invoke-virtual v10, Ljava/lang/Class;-&gt;getName()Ljava/lang/String;
+0000a2: move-result-object v6
+0000a4: filled-new-array/range v0 ... v6, [Ljava/lang/Object;
+0000aa: move-result-object v10
+0000ac: invoke-static v7, v8, v10, Ljava/lang/String;-&gt;format(Ljava/util/Locale; Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+0000b2: move-result-object v10
+0000b4: const-string v0, &quot;$&quot;
+0000b8: const-string v1, &quot;\$&quot;
+0000bc: invoke-virtual v10, v0, v1, Ljava/lang/String;-&gt;replace(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Ljava/lang/String;
+0000c2: move-result-object v10
+0000c4: invoke-static Ljge;-&gt;h()Z
+0000ca: monitor-enter v9
+0000cc: new-instance v0, Ljava/lang/StringBuilder;
+0000d0: invoke-direct v0, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+0000d6: const-string v1, &quot;(&quot;
+0000da: invoke-virtual v0, v1, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000e0: invoke-virtual v0, v10, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000e6: const-string v10, &quot;)&amp;&quot;
+0000ea: invoke-virtual v0, v10, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000f0: invoke-virtual v0, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+0000f6: move-result-object v10
+0000f8: filled-new-array v10, [Ljava/lang/String;
+0000fe: move-result-object v10
+000100: invoke-static v10, Lkac;-&gt;q([Ljava/lang/String;)Lkac$b;
+000106: move-result-object v10
+000108: invoke-virtual v10, Lkac$b;-&gt;k()Lkac$c;
+00010e: invoke-virtual v9, Ljava/lang/Object;-&gt;wait()V
+000114: monitor-exit v9
+000116: iget-object v10, v9, Lt96;-&gt;Z Lka6;
+00011a: invoke-interface v10, Landroid/os/IInterface;-&gt;asBinder()Landroid/os/IBinder;
+000120: move-result-object v10
+000122: const/4 v0, 0
+000124: invoke-interface v10, v9, v0, Landroid/os/IBinder;-&gt;linkToDeath(Landroid/os/IBinder$DeathRecipient; I)V
+00012a: iget-object v10, v9, Lt96;-&gt;Z Lka6;
+00012e: invoke-interface v10, v11, Lka6;-&gt;N(Landroid/content/Intent;)Landroid/os/IBinder;
+000134: move-result-object v10
+000136: iput-object v10, v9, Lt96;-&gt;e0 Landroid/os/IBinder;
+00013a: return-void 
+00013c: move-exception v0
+00013e: move-object v10, v0
+000140: monitor-exit v9
+000142: throw v10
+
+</pre></html></main><script src="../../assets/reading-navigation.js"></script></body></html>

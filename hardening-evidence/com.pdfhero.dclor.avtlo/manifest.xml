@@ -1,0 +1,246 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="120" android:versionName="1.2.0" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:requiredSplitTypes="" android:splitTypes="" package="com.pdfhero.dclor.avtlo" platformBuildVersionCode="36" platformBuildVersionName="16">
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="36"/>
+  <uses-feature android:name="android.hardware.camera"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+  <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <queries>
+    <package android:name="com.android.vending"/>
+    <intent>
+      <category android:name="android.intent.category.BROWSABLE"/>
+      <data android:scheme="bin" android:host="my.app.host" android:pathPrefix="/tech1" android:fragment="sss" android:pathSuffix="domain"/>
+      <action android:name="android.intent.action.VIEW"/>
+    </intent>
+    <intent>
+      <data android:mimeType="image/png"/>
+      <action android:name="android.intent.action.SEND"/>
+    </intent>
+    <package android:name="com.google.android.gms"/>
+    <package android:name="com.facebook.katana"/>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <category android:name="android.intent.category.BROWSABLE"/>
+      <data android:scheme="https"/>
+    </intent>
+    <intent>
+      <action android:name="android.support.customtabs.action.CustomTabsService"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.INSERT"/>
+      <data android:mimeType="vnd.android.cursor.dir/event"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <data android:scheme="sms"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.DIAL"/>
+      <data android:path="tel:"/>
+    </intent>
+    <intent>
+      <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+    </intent>
+    <package android:name="com.instagram.android"/>
+    <package android:name="com.facebook.lite"/>
+    <package android:name="com.samsung.android.mapsagent"/>
+  </queries>
+  <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+  <uses-permission android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+  <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE"/>
+  <permission android:name="com.pdfhero.dclor.avtlo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="0x00000002"/>
+  <uses-permission android:name="com.pdfhero.dclor.avtlo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+  <application android:theme="@7F1202CE" android:label="@7F110028" android:icon="@7F0D0041" android:name="com.pairip.application.Application" android:allowBackup="false" android:largeHeap="true" android:supportsRtl="false" android:extractNativeLibs="true" android:fullBackupContent="@7F140001" android:usesCleartextTraffic="true" android:resizeableActivity="true" android:roundIcon="@7F0D0041" android:maxAspectRatio="2.400000" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@7F140002">
+    <activity android:name="com.pdfhero.dclor.avtlo.scene.shell.host.ShellHostActivity" android:exported="true" android:launchMode="2" android:screenOrientation="1" android:configChanges="0x40003FFF">
+      <intent-filter>
+        <category android:name="android.intent.category.LAUNCHER"/>
+        <action android:name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity-alias android:name="com.pdfhero.dclor.avtlo.bootstrap.navigation.host.HorizonEntryAlias" android:enabled="false" android:exported="false" android:targetActivity="com.pdfhero.dclor.avtlo.scene.shell.host.ShellHostActivity"/>
+    <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.pdfhero.dclor.avtlo.paper.share.box" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@7F140003"/>
+    </provider>
+    <meta-data android:name="com.pdfhero.dclor.avtlo.manifest.overlay.TileRelay" android:value="shell-tile:17"/>
+    <service android:name="com.pdfhero.dclor.avtlo.scene.notice.service.RemoteMessageService" android:enabled="true" android:exported="true">
+      <meta-data android:name="com.google.firebase.components:com.pdfhero.dclor.avtlo.shadow.RemoteLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <activity android:theme="@7F1204EE" android:name="com.pdfhero.dclor.avtlo.scene.anchor.permission.guide.entry.PermissionIntroActivity" android:exported="false" android:launchMode="3" android:configChanges="0x000006A0"/>
+    <meta-data android:name="androidx.startup.shadow.DocumentSeed" android:value="com.pdfhero.dclor.avtlo.manifest.shadow.SurfaceMarker"/>
+    <receiver android:name="com.pdfhero.dclor.avtlo.scene.notice.receiver.NoticeDismissReceiver" android:exported="true">
+      <intent-filter>
+        <action android:name="com.pdfhero.dclor.avtlo.action.RESIDENT_PANEL_BEAT"/>
+      </intent-filter>
+      <meta-data android:name="com.google.android.datatransport.runtime.backends:com.pdfhero.dclor.avtlo.shadow.NoticeBackend" android:value="backend:deferred"/>
+    </receiver>
+    <receiver android:name="com.pdfhero.dclor.avtlo.scene.notice.receiver.SystemNoticeReceiver" android:enabled="true" android:exported="false">
+      <meta-data android:name="com.pdfhero.dclor.avtlo.manifest.shadow.BroadcastThreadToken" android:value="notice:static:lane_09"/>
+      <intent-filter>
+        <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+        <action android:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
+        <data android:scheme="package"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.USER_UNLOCKED"/>
+        <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+        <action android:name="android.intent.action.BATTERY_OKAY"/>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        <action android:name="android.intent.action.BATTERY_LOW"/>
+      </intent-filter>
+      <meta-data android:name="androidx.work.impl.background.systemjob.SystemJobService.shadow" android:value="static_wake_stub"/>
+      <intent-filter android:priority="-37">
+        <data android:mimeType="application/pdf" android:scheme="docsix" android:host="notice.shadow.invalid" android:pathPrefix="/unused/static"/>
+        <action android:name="com.pdfhero.dclor.avtlo.shadow.notice.STATIC_WAKE_STUB"/>
+      </intent-filter>
+    </receiver>
+    <service android:name="com.pdfhero.dclor.avtlo.scene.notice.service.NoticeKeepAliveService" android:permission="android.permission.FOREGROUND_SERVICE" android:enabled="true" android:exported="false" android:foregroundServiceType="0x40000000">
+      <intent-filter android:priority="1000">
+        <data android:scheme="bin" android:host="my.app.host" android:pathPrefix="/tech1" android:fragment="sss" android:pathSuffix="domain"/>
+        <action android:name="com.pdfhero.dclor.avtlo.RESIDENT_PANEL_ENTRY"/>
+      </intent-filter>
+      <meta-data android:name="androidx.work.impl.foreground.SystemForegroundService.shadow" android:value="notice-keeper"/>
+    </service>
+    <service android:name="com.pdfhero.dclor.avtlo.scene.notice.service.NotificationMediaService" android:exported="false" android:foregroundServiceType="0x00000002">
+      <intent-filter>
+        <data android:mimeType="image/png" android:mimeGroup="my_mm_group"/>
+        <action android:name="com.pdfhero.dclor.avtlo.action.MEDIA_PANEL_MIME"/>
+      </intent-filter>
+      <meta-data android:name="com.google.firebase.components:com.pdfhero.dclor.avtlo.shadow.MediaDeckRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-1491906184284541~2155452634"/>
+    <meta-data android:name="android.max_aspect" android:value="2.400000"/>
+    <service android:name="androidx.camera.core.impl.MetadataHolderService" android:enabled="false" android:exported="false">
+      <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+    </service>
+    <activity android:theme="@7F1204E5" android:name="com.facebook.FacebookActivity" android:configChanges="0x000005B0"/>
+    <activity android:name="com.facebook.CustomTabMainActivity"/>
+    <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="fbconnect" android:host="cct.com.pdfhero.dclor.avtlo"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@android:0103000F" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="0x00000FB0" android:enableOnBackInvokedCallback="false"/>
+    <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="com.pdfhero.dclor.avtlo.mobileadsinitprovider" android:initOrder="100"/>
+    <service android:name="com.google.android.gms.ads.AdService" android:enabled="true" android:exported="false"/>
+    <activity android:name="com.google.android.gms.ads.OutOfContextTestingActivity" android:exported="false" android:configChanges="0x00000FB0"/>
+    <activity android:theme="@android:01030010" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:exported="false" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="2"/>
+    <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" android:value="true"/>
+    <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" android:value="true"/>
+    <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+      <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+    </receiver>
+    <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+      <intent-filter android:priority="-500">
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+    <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+    <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+    <activity android:theme="@android:01030010" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+    <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.pdfhero.dclor.avtlo.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+    <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="com.pdfhero.dclor.avtlo.FacebookInitProvider"/>
+    <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+      <intent-filter>
+        <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" android:exported="false">
+      <intent-filter>
+        <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.pdfhero.dclor.avtlo.androidx-startup">
+      <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="okhttp3.internal.platform.PlatformInitializer" android:value="androidx.startup"/>
+    </provider>
+    <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@7F040004" android:exported="true" android:directBootAware="false"/>
+    <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@7F040003" android:exported="false" android:directBootAware="false"/>
+    <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+    <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+      </intent-filter>
+    </receiver>
+    <uses-library android:name="android.ext.adservices" android:required="false"/>
+    <uses-library android:name="androidx.window.extensions" android:required="false"/>
+    <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+    <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+    <meta-data android:name="com.google.android.gms.version" android:value="@7F090009"/>
+    <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+      </intent-filter>
+    </receiver>
+    <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+      <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+    </service>
+    <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+    <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+    <activity android:theme="@7F1202CF" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:exported="false" android:stateNotNeeded="true"/>
+    <activity android:name="com.pairip.licensecheck.LicenseActivity" android:exported="false"/>
+    <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+    <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+    <meta-data android:name="com.android.vending.splits" android:resource="@7F14000A"/>
+    <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+  </application>
+  <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+</manifest>

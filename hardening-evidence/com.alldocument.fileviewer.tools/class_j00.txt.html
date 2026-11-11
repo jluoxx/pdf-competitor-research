@@ -1,0 +1,167 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>加固证据</title><style>body{font:15px system-ui;margin:24px;line-height:1.7}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><link rel="stylesheet" href="../../assets/reading-layout.css"></head><body class="reading-document"><main class="document-content"><h1>com.alldocument.fileviewer.tools\class_j00.txt</h1><pre>CLASS Lj00;
+FIELD a 
+FIELD b 
+FIELD c 
+FIELD d 
+
+METHOD &lt;clinit&gt; ()V
+000000: new-instance v0, Lj00;
+000004: invoke-direct v0, Lj00;-&gt;&lt;init&gt;()V
+00000a: sput-object v0, Lj00;-&gt;a Lj00;
+00000e: const/16 v0, 16
+000012: const/16 v1, 32
+000016: new-array v1, v1, [B
+00001a: fill-array-data v1, +0000033h
+000020: const/16 v2, 8
+000024: new-array v3, v2, [B
+000028: fill-array-data v3, +0000040h
+00002e: invoke-static v1, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+000034: move-result-object v1
+000036: sput-object v1, Lj00;-&gt;b Ljava/lang/String;
+00003a: const/16 v1, 20
+00003e: new-array v0, v0, [B
+000042: fill-array-data v0, +000003bh
+000048: new-array v3, v2, [B
+00004c: fill-array-data v3, +0000042h
+000052: invoke-static v0, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+000058: move-result-object v0
+00005a: sput-object v0, Lj00;-&gt;c Ljava/lang/String;
+00005e: new-array v0, v1, [B
+000062: fill-array-data v0, +000003fh
+000068: new-array v1, v2, [B
+00006c: fill-array-data v1, +0000048h
+000072: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+000078: move-result-object v0
+00007a: sput-object v0, Lj00;-&gt;d Ljava/lang/String;
+00007e: return-void 
+000080: fill-array-data-payload b&#x27;\xc9\xa8\xef\xc84\xb4\x1e\xbe\x83\x97\x9d\x95\x10\xc0^\x98\xe8\xcf\xad\xe1C\xf8&amp;\xda\xd2\xbb\xec\xc6/\xbd\x1d\xad&#x27; | \xc9\xa8\xef\xc8\x34\xb4\x1e\xbe\x83\x97\x9d\x95\x10\xc0\x5e\x98\xe8\xcf\xad\xe1\x43\xf8\x26\xda\xd2\xbb\xec\xc6\x2f\xbd\x1d\xad
+0000a8: fill-array-data-payload b&#x27;\xb1\xfa\xdb\xa3z\x8cn\xe9&#x27; | \xb1\xfa\xdb\xa3\x7a\x8c\x6e\xe9
+0000b8: fill-array-data-payload b&#x27;\xbf\xa0\xa4\xfd\x18\x14\xc2G\xe6\x9a\xc9\xa71n\x87w&#x27; | \xbf\xa0\xa4\xfd\x18\x14\xc2\x47\xe6\x9a\xc9\xa7\x31\x6e\x87\x77
+0000d0: fill-array-data-payload b&#x27;\xd4\xed\x91\x93H,\xb0\x13&#x27; | \xd4\xed\x91\x93\x48\x2c\xb0\x13
+0000e0: fill-array-data-payload b&#x27;\x15\xda\x03#uCB\xa6\x04\xd4\x13_\x03Q`\xed0\xf6&gt;k&#x27; | \x15\xda\x03\x23\x75\x43\x42\xa6\x04\xd4\x13\x5f\x03\x51\x60\xed\x30\xf6\x3e\x6b
+0000fc: fill-array-data-payload b&#x27;T\x9fP\x0c6\x01\x01\x89&#x27; | \x54\x9f\x50\x0c\x36\x01\x01\x89
+
+METHOD &lt;init&gt; ()V
+000000: invoke-direct v0, Ljava/lang/Object;-&gt;&lt;init&gt;()V
+000006: return-void 
+
+METHOD a ([B)[B
+000000: const/16 v0, 8
+000004: const/16 v1, 20
+000008: new-array v1, v1, [B
+00000c: fill-array-data v1, +000008ah
+000012: new-array v2, v0, [B
+000016: fill-array-data v2, +0000093h
+00001c: invoke-static v1, v2, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+000022: move-result-object v1
+000024: invoke-static v1, Ljavax/crypto/Cipher;-&gt;getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
+00002a: move-result-object v1
+00002c: new-instance v2, Ljavax/crypto/spec/SecretKeySpec;
+000030: const/16 v3, 32
+000034: new-array v3, v3, [B
+000038: fill-array-data v3, +000008ah
+00003e: new-array v4, v0, [B
+000042: fill-array-data v4, +0000099h
+000048: invoke-static v3, v4, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+00004e: move-result-object v3
+000050: sget-object v4, Lkotlin/text/Charsets;-&gt;UTF_8 Ljava/nio/charset/Charset;
+000054: invoke-virtual v3, v4, Ljava/lang/String;-&gt;getBytes(Ljava/nio/charset/Charset;)[B
+00005a: move-result-object v3
+00005c: const/16 v5, 13
+000060: new-array v5, v5, [B
+000064: fill-array-data v5, +0000090h
+00006a: new-array v6, v0, [B
+00006e: fill-array-data v6, +0000097h
+000074: invoke-static v5, v6, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+00007a: const/4 v5, 3
+00007c: new-array v5, v5, [B
+000080: fill-array-data v5, +0000096h
+000086: new-array v6, v0, [B
+00008a: fill-array-data v6, +0000097h
+000090: invoke-static v5, v6, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+000096: move-result-object v5
+000098: invoke-direct v2, v3, v5, Ljavax/crypto/spec/SecretKeySpec;-&gt;&lt;init&gt;([B Ljava/lang/String;)V
+00009e: new-instance v3, Ljavax/crypto/spec/IvParameterSpec;
+0000a2: const/16 v5, 16
+0000a6: new-array v5, v5, [B
+0000aa: fill-array-data v5, +000008fh
+0000b0: new-array v6, v0, [B
+0000b4: fill-array-data v6, +0000096h
+0000ba: invoke-static v5, v6, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+0000c0: move-result-object v5
+0000c2: invoke-virtual v5, v4, Ljava/lang/String;-&gt;getBytes(Ljava/nio/charset/Charset;)[B
+0000c8: move-result-object v4
+0000ca: const/16 v5, 13
+0000ce: new-array v5, v5, [B
+0000d2: fill-array-data v5, +000008fh
+0000d8: new-array v6, v0, [B
+0000dc: fill-array-data v6, +0000096h
+0000e2: invoke-static v5, v6, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+0000e8: invoke-direct v3, v4, Ljavax/crypto/spec/IvParameterSpec;-&gt;&lt;init&gt;([B)V
+0000ee: const/4 v4, 2
+0000f0: invoke-virtual v1, v4, v2, v3, Ljavax/crypto/Cipher;-&gt;init(I Ljava/security/Key; Ljava/security/spec/AlgorithmParameterSpec;)V
+0000f6: invoke-virtual v1, v8, Ljavax/crypto/Cipher;-&gt;doFinal([B)[B
+0000fc: move-result-object v8
+0000fe: const/16 v1, 12
+000102: new-array v1, v1, [B
+000106: fill-array-data v1, +0000089h
+00010c: new-array v0, v0, [B
+000110: fill-array-data v0, +000008eh
+000116: invoke-static v1, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+00011c: return-object v8
+00011e: nop 
+000120: fill-array-data-payload b&#x27;-&quot;\x8a\xb7\x1e\xa0\xb0y&lt;,\x9a\xcbh\xb2\x922\x08\x0e\xb7\xff&#x27; | \x2d\x22\x8a\xb7\x1e\xa0\xb0\x79\x3c\x2c\x9a\xcb\x68\xb2\x92\x32\x08\x0e\xb7\xff
+00013c: fill-array-data-payload b&#x27;lg\xd9\x98]\xe2\xf3V&#x27; | \x6c\x67\xd9\x98\x5d\xe2\xf3\x56
+00014c: fill-array-data-payload b&quot;4@\x9a\x01kZ,\x14~\x7f\xe8\\O.l2\x15&#x27;\xd8(\x1c\x16\x14p/S\x99\x0fpS/\x07&quot; | \x34\x40\x9a\x01\x6b\x5a\x2c\x14\x7e\x7f\xe8\x5c\x4f\x2e\x6c\x32\x15\x27\xd8\x28\x1c\x16\x14\x70\x2f\x53\x99\x0f\x70\x53\x2f\x07
+000174: fill-array-data-payload b&#x27;L\x12\xaej%b\\C&#x27; | \x4c\x12\xae\x6a\x25\x62\x5c\x43
+000184: fill-array-data-payload b&#x27;|\xd1\x8e\xe6\xf0\x03\xd8\xd03\x9a\xd4\x8a\xa0\x00&#x27; | \x7c\xd1\x8e\xe6\xf0\x03\xd8\xd0\x33\x9a\xd4\x8a\xa0\x00
+00019a: nop 
+00019c: fill-array-data-payload b&#x27;\x1b\xb4\xfa\xa4\x89w\xbd\xa3&#x27; | \x1b\xb4\xfa\xa4\x89\x77\xbd\xa3
+0001ac: fill-array-data-payload b&#x27;\x82O\xcb\x00&#x27; | \x82\x4f\xcb\x00
+0001b8: fill-array-data-payload b&#x27;\xc3\n\x98\xc4n{D\xcc&#x27; | \xc3\x0a\x98\xc4\x6e\x7b\x44\xcc
+0001c8: fill-array-data-payload b&#x27;\xa7\xa9\x0c\xef\xab\xc2\xaaw\xfe\x93a\xb5\x82\xb8\xefG&#x27; | \xa7\xa9\x0c\xef\xab\xc2\xaa\x77\xfe\x93\x61\xb5\x82\xb8\xef\x47
+0001e0: fill-array-data-payload b&#x27;\xcc\xe49\x81\xfb\xfa\xd8#&#x27; | \xcc\xe4\x39\x81\xfb\xfa\xd8\x23
+0001f0: fill-array-data-payload b&#x27;\xaej\xe2]BF\xfe\x9e\xe1!\xb81\x12\x00&#x27; | \xae\x6a\xe2\x5d\x42\x46\xfe\x9e\xe1\x21\xb8\x31\x12\x00
+000206: nop 
+000208: fill-array-data-payload b&#x27;\xc9\x0f\x96\x1f;2\x9b\xed&#x27; | \xc9\x0f\x96\x1f\x3b\x32\x9b\xed
+000218: fill-array-data-payload b&#x27;\xfb\xc0\xabc_\xa3\xd8R\xb1\x81\xc3#&#x27; | \xfb\xc0\xab\x63\x5f\xa3\xd8\x52\xb1\x81\xc3\x23
+00022c: fill-array-data-payload b&#x27;\x9f\xaf\xed\n1\xc2\xb4z&#x27; | \x9f\xaf\xed\x0a\x31\xc2\xb4\x7a
+
+METHOD b (Landroid/content/Context; Ljava/lang/String;)[B
+000000: const/4 v0, 7
+000002: new-array v0, v0, [B
+000006: fill-array-data v0, +000003bh
+00000c: const/16 v1, 8
+000010: new-array v2, v1, [B
+000014: fill-array-data v2, +000003ch
+00001a: invoke-static v0, v2, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+000020: const/16 v0, 9
+000024: new-array v0, v0, [B
+000028: fill-array-data v0, +000003ah
+00002e: new-array v1, v1, [B
+000032: fill-array-data v1, +000003fh
+000038: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+00003e: invoke-virtual v4, Landroid/content/Context;-&gt;getAssets()Landroid/content/res/AssetManager;
+000044: move-result-object v4
+000046: invoke-virtual v4, v5, Landroid/content/res/AssetManager;-&gt;open(Ljava/lang/String;)Ljava/io/InputStream;
+00004c: move-result-object v4
+00004e: invoke-static v4, Lkotlin/jvm/internal/Intrinsics;-&gt;checkNotNull(Ljava/lang/Object;)V
+000054: invoke-static v4, Ljt0;-&gt;c(Ljava/io/InputStream;)[B
+00005a: move-result-object v5
+00005c: const/4 v0, 0
+00005e: invoke-static v4, v0, Lld1;-&gt;a(Ljava/io/Closeable; Ljava/lang/Throwable;)V
+000064: invoke-virtual v3, v5, Lj00;-&gt;a([B)[B
+00006a: move-result-object v4
+00006c: return-object v4
+00006e: move-exception v5
+000070: throw v5
+000072: move-exception v0
+000074: invoke-static v4, v5, Lld1;-&gt;a(Ljava/io/Closeable; Ljava/lang/Throwable;)V
+00007a: throw v0
+00007c: fill-array-data-payload b&#x27;\xf4\xc1k\xa7\xff\xe6\xdf\x00&#x27; | \xf4\xc1\x6b\xa7\xff\xe6\xdf\x00
+00008c: fill-array-data-payload b&#x27;\x97\xae\x05\xd3\x9a\x9e\xabS&#x27; | \x97\xae\x05\xd3\x9a\x9e\xab\x53
+00009c: fill-array-data-payload b&#x27;\x91\xc6{\xec\xf7\xe3\x04\xe4\x98\x00&#x27; | \x91\xc6\x7b\xec\xf7\xe3\x04\xe4\x98\x00
+0000ae: nop 
+0000b0: fill-array-data-payload b&#x27;\xf0\xb5\x08\x89\x83\xb3e\x90&#x27; | \xf0\xb5\x08\x89\x83\xb3\x65\x90
+
+</pre></html></main><script src="../../assets/reading-navigation.js"></script></body></html>

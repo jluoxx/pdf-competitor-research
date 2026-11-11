@@ -1,0 +1,34 @@
+CLASS Lcom/xxnido/voxot/cswzvokzzp;
+
+METHOD <clinit> ()V
+000000: return-void 
+
+METHOD <init> ()V
+000000: invoke-direct v0, Landroid/app/Application;-><init>()V
+000006: return-void 
+
+METHOD onCreate ()V
+000000: invoke-super v4, Landroid/app/Application;->onCreate()V
+000006: invoke-static v4, Lvu;->g(Landroid/app/Application;)V
+00000c: sget-object v0, Ldb4;->a Ldb4;
+000010: invoke-virtual v0, v4, Ldb4;->e(Landroid/app/Application;)V
+000016: sget-object v0, Lbs;->g Lbs$c;
+00001a: invoke-virtual v0, Lbs$c;->b()Lbs;
+000020: move-result-object v0
+000022: invoke-virtual v0, v4, Lbs;->o(Landroid/app/Application;)V
+000028: sget-object v0, Lon6;->a Lon6;
+00002c: invoke-virtual v0, v4, Lon6;->a(Landroid/app/Application;)V
+000032: sget-object v0, Ldmb;->a Ldmb;
+000036: const/4 v1, 0
+000038: const/4 v2, 2
+00003a: const-class v3, Lv47;
+00003e: invoke-static v0, v3, v1, v2, v1, Ldmb;->c(Ldmb; Ljava/lang/Class; Ljava/lang/String; I Ljava/lang/Object;)Ljava/lang/Object;
+000044: move-result-object v0
+000046: invoke-static v0, Le98;->a(Ljava/lang/Object;)V
+00004c: invoke-static v4, Lul0;->d(Landroid/app/Application;)V
+000052: sget-object v0, Lt97;->a Lt97;
+000056: invoke-virtual v0, Lt97;->h()Ljava/util/Locale;
+00005c: move-result-object v0
+00005e: invoke-static v0, Lvu;->j(Ljava/util/Locale;)V
+000064: return-void 
+

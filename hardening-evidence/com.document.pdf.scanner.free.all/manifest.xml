@@ -1,0 +1,775 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="10010709" android:versionName="1.7.9" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.document.pdf.scanner.free.all" platformBuildVersionCode="36" platformBuildVersionName="16">
+  <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="36"/>
+  <queries>
+    <package android:name="com.android.email"/>
+    <package android:name="com.google.android.gm"/>
+    <intent>
+      <action android:name="android.intent.action.SEND"/>
+      <data android:mimeType="*/*"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.SENDTO"/>
+      <data android:scheme="mailto"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <data android:scheme="http"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <data android:scheme="https"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <data android:scheme="smsto"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.MAIN"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+    </intent>
+    <package android:name="com.facebook.katana"/>
+    <intent>
+      <action android:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+    </intent>
+    <intent>
+      <action android:name="android.support.customtabs.action.CustomTabsService"/>
+    </intent>
+    <intent>
+      <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+    </intent>
+    <intent>
+      <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <category android:name="android.intent.category.BROWSABLE"/>
+      <data android:scheme="https"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.INSERT"/>
+      <data android:mimeType="vnd.android.cursor.dir/event"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <data android:scheme="sms"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.DIAL"/>
+      <data android:path="tel:"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <data android:scheme="market"/>
+    </intent>
+    <intent>
+      <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+    </intent>
+    <package android:name="com.instagram.android"/>
+    <package android:name="com.facebook.lite"/>
+    <intent>
+      <action android:name="android.intent.action.MAIN"/>
+      <category android:name="android.intent.category.LAUNCHER"/>
+    </intent>
+  </queries>
+  <queries>
+    <package android:name="com.android.email"/>
+    <package android:name="com.google.android.gm"/>
+    <intent>
+      <action android:name="android.intent.action.SEND"/>
+      <data android:mimeType="*/*"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <category android:name="android.intent.category.BROWSABLE"/>
+      <data android:scheme="https"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <data android:mimeType="*/*"/>
+    </intent>
+  </queries>
+  <queries>
+    <package android:name="com.facebook.katana"/>
+  </queries>
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+  <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+  <uses-permission android:name="com.android.vending.BILLING"/>
+  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+  <permission android:name="com.document.pdf.scanner.free.all.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="0x00000002"/>
+  <uses-permission android:name="com.document.pdf.scanner.free.all.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+  <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+  <application android:theme="@7F14001F" android:label="@7F1301EE" android:icon="@7F100000" android:name="com.document.pdf.scanner.App" android:allowBackup="false" android:hardwareAccelerated="true" android:supportsRtl="true" android:extractNativeLibs="false" android:fullBackupContent="@7F160000" android:networkSecurityConfig="@7F160005" android:roundIcon="@7F100001" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true" android:dataExtractionRules="@7F160002">
+    <receiver android:name="com.document.pdf.scanner.user.value.UserValueQaReceiver" android:enabled="false" android:exported="true"/>
+    <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    <receiver android:name="com.document.pdf.scanner.ui.widget.QuickEntranceWidget" android:exported="true">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
+      <meta-data android:name="android.appwidget.provider" android:resource="@7F16000A"/>
+    </receiver>
+    <receiver android:name="com.document.pdf.scanner.ui.receiver.WidgetPinReceiver" android:enabled="true" android:exported="false"/>
+    <activity android:theme="@7F1401E1" android:name="com.document.pdf.scanner.ui.ReaderSplashActivity" android:exported="true" android:launchMode="2" android:screenOrientation="1">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="@7F1301C2" android:host="com.document.pdf.scanner.free.all" android:path="/applink"/>
+      </intent-filter>
+    </activity>
+    <activity-alias android:label="@7F130458" android:icon="@7F100000" android:name="com.document.pdf.scanner.PDFViewer6" android:enabled="true" android:exported="true" android:description="@7F1301C1" android:targetActivity="com.document.pdf.scanner.ui.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@7F100001">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="*"/>
+        <data android:scheme="file"/>
+        <data android:scheme="content"/>
+        <data android:pathPattern=".*\.pdf"/>
+        <data android:pathPattern=".*\..*\.pdf"/>
+        <data android:pathPattern=".*\..*\..*\.pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="*"/>
+        <data android:scheme="file"/>
+        <data android:scheme="content"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <data android:scheme="content"/>
+        <data android:scheme="file"/>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/msword"/>
+        <data android:mimeType="application/vnd.ms-word"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+        <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-excel"/>
+        <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+        <data android:mimeType="application/vnd.ms-powerpoint"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+        <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+        <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias android:label="@7F130456" android:icon="@7F100000" android:name="com.document.pdf.scanner.PDFViewer5" android:enabled="true" android:exported="true" android:description="@7F1301C1" android:targetActivity="com.document.pdf.scanner.ui.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@7F100001">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="*"/>
+        <data android:scheme="file"/>
+        <data android:scheme="content"/>
+        <data android:pathPattern=".*\.pdf"/>
+        <data android:pathPattern=".*\..*\.pdf"/>
+        <data android:pathPattern=".*\..*\..*\.pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="*"/>
+        <data android:scheme="file"/>
+        <data android:scheme="content"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <data android:scheme="content"/>
+        <data android:scheme="file"/>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/msword"/>
+        <data android:mimeType="application/vnd.ms-word"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+        <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-excel"/>
+        <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+        <data android:mimeType="application/vnd.ms-powerpoint"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+        <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+        <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias android:label="@7F130459" android:icon="@7F100000" android:name="com.document.pdf.scanner.PDFViewer4" android:enabled="true" android:exported="true" android:description="@7F1301C1" android:targetActivity="com.document.pdf.scanner.ui.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@7F100001">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="*"/>
+        <data android:scheme="file"/>
+        <data android:scheme="content"/>
+        <data android:pathPattern=".*\.pdf"/>
+        <data android:pathPattern=".*\..*\.pdf"/>
+        <data android:pathPattern=".*\..*\..*\.pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="*"/>
+        <data android:scheme="file"/>
+        <data android:scheme="content"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <data android:scheme="content"/>
+        <data android:scheme="file"/>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/msword"/>
+        <data android:mimeType="application/vnd.ms-word"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+        <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-excel"/>
+        <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+        <data android:mimeType="application/vnd.ms-powerpoint"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+        <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+        <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias android:label="@7F13045A" android:icon="@7F100000" android:name="com.document.pdf.scanner.PDFViewer3" android:enabled="true" android:exported="true" android:description="@7F1301C1" android:targetActivity="com.document.pdf.scanner.ui.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@7F100001">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="*"/>
+        <data android:scheme="file"/>
+        <data android:scheme="content"/>
+        <data android:pathPattern=".*\.pdf"/>
+        <data android:pathPattern=".*\..*\.pdf"/>
+        <data android:pathPattern=".*\..*\..*\.pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="*"/>
+        <data android:scheme="file"/>
+        <data android:scheme="content"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <data android:scheme="content"/>
+        <data android:scheme="file"/>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/msword"/>
+        <data android:mimeType="application/vnd.ms-word"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+        <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-excel"/>
+        <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+        <data android:mimeType="application/vnd.ms-powerpoint"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+        <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+        <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias android:label="@7F130457" android:icon="@7F100000" android:name="com.document.pdf.scanner.PDFViewer2" android:enabled="true" android:exported="true" android:description="@7F1301C1" android:targetActivity="com.document.pdf.scanner.ui.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@7F100001">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="*"/>
+        <data android:scheme="file"/>
+        <data android:scheme="content"/>
+        <data android:pathPattern=".*\.pdf"/>
+        <data android:pathPattern=".*\..*\.pdf"/>
+        <data android:pathPattern=".*\..*\..*\.pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="*"/>
+        <data android:scheme="file"/>
+        <data android:scheme="content"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <data android:scheme="content"/>
+        <data android:scheme="file"/>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/msword"/>
+        <data android:mimeType="application/vnd.ms-word"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+        <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-excel"/>
+        <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+        <data android:mimeType="application/vnd.ms-powerpoint"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+        <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+        <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias android:label="@7F1303A7" android:icon="@7F100000" android:name="com.document.pdf.scanner.ui.OpenReaderActivity" android:enabled="true" android:exported="true" android:description="@7F1301C1" android:targetActivity="com.document.pdf.scanner.ui.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@7F100001">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="*"/>
+        <data android:scheme="file"/>
+        <data android:scheme="content"/>
+        <data android:pathPattern=".*\.pdf"/>
+        <data android:pathPattern=".*\..*\.pdf"/>
+        <data android:pathPattern=".*\..*\..*\.pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="*"/>
+        <data android:scheme="file"/>
+        <data android:scheme="content"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+      <intent-filter>
+        <data android:scheme="content"/>
+        <data android:scheme="file"/>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/msword"/>
+        <data android:mimeType="application/vnd.ms-word"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+        <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-excel"/>
+        <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+        <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+        <data android:mimeType="application/vnd.ms-powerpoint"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+        <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+        <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+        <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+      </intent-filter>
+    </activity-alias>
+    <activity android:theme="@7F1401E1" android:name="com.document.pdf.scanner.ui.ReaderTitlePageActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.ReaderHomeActivity" android:exported="true" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.reader.DocScannerResultActivity" android:exported="true" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.search.DocSearchActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.reader.DocsReaderActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.office.OfficeReaderActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1" android:configChanges="0x00000DB0" android:windowSoftInputMode="0x00000010"/>
+    <activity android:name="com.document.pdf.scanner.ui.other.LanguageActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.cloud.CloudLoginGuideActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.cloud.CloudFilesActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.cloud.CloudShareActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.cloud.CloudLocalFilesActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.other.PermissionManagerActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.other.UpgradeActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:theme="@7F140158" android:name="com.document.pdf.scanner.ui.other.LaunchDefaultChooseActivity" android:exported="false"/>
+    <activity android:theme="@7F140158" android:name="com.document.pdf.scanner.ui.other.LaunchDefaultResetActivity" android:exported="false"/>
+    <activity android:name="com.document.pdf.scanner.compdf.ComPDFReaderActivity" android:exported="true" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.other.subscription.SubscriptionActivity" android:exported="true" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.setting.AboutActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.setting.FeedbackActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1" android:windowSoftInputMode="0x00000010"/>
+    <activity android:theme="@7F140184" android:name="com.document.pdf.scanner.ui.other.NativeAdOpenActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:theme="@7F140184" android:name="com.document.pdf.scanner.ui.other.NativeInterActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.reader.PDFSplitActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.reader.PDFMergeActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.reader.PDFChoiceActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.reader.PDFToolsActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.other.ai.AiSummaryActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.reader.ImagePreviewActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.scan.FoldsActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.scan.photo.PhotoPreviewActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.scan.photo.MultiplePhotoHandleActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.login.LoginActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.login.AccountActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.login.AccountManagerActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.document.pdf.scanner.ui.reader.SignMainActivity" android:exported="false" android:launchMode="2" android:screenOrientation="0"/>
+    <activity android:name="com.document.pdf.scanner.ui.login.AccountRemoveActivity" android:exported="false" android:launchMode="2" android:screenOrientation="1"/>
+    <receiver android:name="com.document.pdf.scanner.work.ScreenUnlockReceiver" android:exported="false">
+      <intent-filter>
+        <action android:name="android.intent.action.USER_PRESENT"/>
+        <action android:name="android.intent.action.SCREEN_ON"/>
+      </intent-filter>
+    </receiver>
+    <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="@7F130275"/>
+    <service android:name="com.document.pdf.scanner.work.FCMService" android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@7F08033D"/>
+    <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@7F06007D"/>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@7F1304A0"/>
+    <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@7F1304A2"/>
+    <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
+    <activity android:theme="@7F1404EE" android:label="@7F1301EE" android:name="com.facebook.FacebookActivity" android:exported="false" android:configChanges="0x000005B0"/>
+    <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="@7F1304A6"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="fbconnect" android:host="cct.com.document.pdf.scanner.free.all"/>
+      </intent-filter>
+    </activity>
+    <meta-data android:name="com.appsflyer.FacebookApplicationId" android:value="@7F1304A1"/>
+    <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" android:value="true"/>
+    <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" android:value="true"/>
+    <meta-data android:name="com.google.android.gms.ads.flag.NATIVE_AD_DEBUGGER_ENABLED" android:value="false"/>
+    <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+    <activity android:name="com.artifex.sonui.editor.SlideShowActivity" android:exported="false" android:screenOrientation="6"/>
+    <provider android:name="com.compdfkit.tools.common.provider.ComPDFKitToolsFileProvider" android:exported="false" android:authorities="com.document.pdf.scanner.free.all.fileprovider" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@7F160007"/>
+    </provider>
+    <activity android:theme="@7F140140" android:name="com.compdfkit.tools.annotation.pdfproperties.pdfsignature.CAddSignatureActivity" android:exported="false"/>
+    <activity android:theme="@7F140140" android:name="com.compdfkit.tools.annotation.pdfproperties.pdfstamp.CAddCustomStampActivity" android:exported="false"/>
+    <activity android:theme="@7F140144" android:name="com.compdfkit.tools.common.pdf.CPDFDocumentActivity" android:exported="true" android:configChanges="0x00001DA0" android:windowSoftInputMode="0x00000020" android:resizeableActivity="true"/>
+    <activity android:theme="@7F140159" android:name="com.karumi.dexter.DexterActivity" android:exported="false"/>
+    <meta-data android:name="com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION" android:value="false"/>
+    <activity android:theme="@7F140008" android:name="com.bytedance.sdk.openadsdk.activity.TTAppOpenAdActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F140009" android:name="com.bytedance.sdk.openadsdk.activity.TTInterstitialActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F140009" android:name="com.bytedance.sdk.openadsdk.activity.TTInterstitialExpressActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F14000A" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F140008" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F14000A" android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F14000A" android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F14000B" android:name="com.anythink.basead.ui.activity.ATMixSplashActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004B0"/>
+    <activity android:theme="@7F14000B" android:name="com.anythink.basead.ui.ATLandscapeActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <activity android:theme="@7F14000B" android:name="com.anythink.basead.ui.ATPortraitActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <activity android:theme="@7F14000C" android:name="com.anythink.basead.ui.ATLandscapeTranslucentActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <activity android:theme="@7F14000C" android:name="com.anythink.basead.ui.ATPortraitTranslucentActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <activity android:theme="@7F14000D" android:name="com.anythink.expressad.reward.player.ATRewardVideoActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <activity android:theme="@7F140004" android:name="sg.bigo.ads.api.AdActivity" android:exported="false" android:screenOrientation="1" android:configChanges="0x00000480" android:windowSoftInputMode="0x00000003"/>
+    <activity android:theme="@7F140006" android:name="com.mbridge.msdk.activity.MBCommonActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="0x00000090"/>
+    <activity android:theme="@7F140007" android:name="com.mbridge.msdk.reward.player.MBRewardVideoActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F14000E" android:name="com.tradplus.ads.mgr.interstitial.views.InterNativeActivity" android:exported="false" android:launchMode="2" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F14000F" android:name="com.tradplus.ads.mgr.interstitial.views.InterNativeAPI26Activity" android:exported="false" android:launchMode="2" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F140010" android:name="com.vungle.ads.internal.ui.VungleActivity" android:exported="false" android:launchMode="1" android:configChanges="0x00000FA0" android:hardwareAccelerated="true"/>
+    <activity android:theme="@7F140003" android:name="com.applovin.adview.AppLovinFullscreenActivity" android:exported="false" android:launchMode="1" android:screenOrientation="3" android:configChanges="0x40000FB4" android:hardwareAccelerated="true"/>
+    <activity android:theme="@7F140001" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:exported="false" android:configChanges="0x000004A0" android:windowSoftInputMode="0x00000003"/>
+    <activity android:theme="@7F140001" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:exported="false" android:multiprocess="true" android:configChanges="0x000004A0" android:windowSoftInputMode="0x00000003"/>
+    <provider android:name="com.blankj.utilcode.util.UtilsFileProvider" android:exported="false" android:authorities="com.document.pdf.scanner.free.all.utilcode.fileprovider" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@7F160009"/>
+    </provider>
+    <service android:name="com.blankj.utilcode.util.MessengerUtils$ServerService" android:exported="false">
+      <intent-filter>
+        <action android:name="com.document.pdf.scanner.free.all.messenger"/>
+      </intent-filter>
+    </service>
+    <activity android:name="com.facebook.CustomTabMainActivity" android:exported="false"/>
+    <activity android:theme="@android:0103000A" android:name="com.google.mlkit.vision.documentscanner.internal.GmsDocumentScanningDelegateActivity" android:exported="false" android:screenOrientation="1"/>
+    <service android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+      <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <provider android:name="com.google.mlkit.common.internal.MlKitInitProvider" android:exported="false" android:authorities="com.document.pdf.scanner.free.all.mlkitinitprovider" android:initOrder="99"/>
+    <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="com.document.pdf.scanner.free.all.FacebookInitProvider"/>
+    <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+      <intent-filter>
+        <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" android:exported="false">
+      <intent-filter>
+        <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <activity android:theme="@android:01030010" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+    <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true" android:visibleToInstantApps="true"/>
+    <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+      <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+    </receiver>
+    <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+      <intent-filter android:priority="-500">
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
+      <intent-filter>
+        <action android:name="com.android.vending.INSTALL_REFERRER"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+    <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+    <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+    <provider android:name="com.applovin.sdk.AppLovinInitProvider" android:exported="false" android:authorities="com.document.pdf.scanner.free.all.applovininitprovider" android:initOrder="101"/>
+    <activity android:name="com.applovin.sdk.AppLovinWebViewActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerDetailActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerCmpNetworksListActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerTcfInfoListActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerTcfStringActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerUnifiedFlowActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404DA" android:name="com.applovin.mediation.MaxDebuggerWaterfallSegmentsActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404D5" android:name="com.applovin.creative.MaxCreativeDebuggerActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1404D5" android:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity" android:exported="false" android:configChanges="0x40000FB4"/>
+    <service android:name="com.applovin.impl.adview.activity.FullscreenAdService" android:exported="false" android:stopWithTask="false"/>
+    <meta-data android:name="com.google.android.play.billingclient.version" android:value="9.1.0"/>
+    <activity android:theme="@android:01030010" android:name="com.android.billingclient.api.ProxyBillingActivity" android:exported="false" android:configChanges="0x000005B0"/>
+    <activity android:theme="@android:01030010" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:exported="false" android:configChanges="0x000005B0"/>
+    <activity android:theme="@android:01030010" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+    <activity android:theme="@android:01030010" android:name="com.facebook.ads.AudienceNetworkActivity" android:exported="false" android:configChanges="0x00000DA0"/>
+    <provider android:name="com.facebook.ads.AudienceNetworkContentProvider" android:exported="false" android:authorities="com.document.pdf.scanner.free.all.AudienceNetworkContentProvider"/>
+    <service android:name="com.google.firebase.sessions.SessionLifecycleService" android:enabled="true" android:exported="false"/>
+    <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.document.pdf.scanner.free.all.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+    <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+    <activity android:theme="@android:0103000F" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="0x00000FB0"/>
+    <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="com.document.pdf.scanner.free.all.mobileadsinitprovider" android:initOrder="100"/>
+    <service android:name="com.google.android.gms.ads.AdService" android:enabled="true" android:exported="false"/>
+    <activity android:name="com.google.android.gms.ads.OutOfContextTestingActivity" android:exported="false" android:configChanges="0x00000FB0"/>
+    <activity android:theme="@android:01030010" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:exported="false" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="2"/>
+    <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.document.pdf.scanner.free.all.androidx-startup">
+      <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+    </provider>
+    <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@7F050002" android:exported="false" android:directBootAware="false"/>
+    <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@7F050004" android:exported="true" android:directBootAware="false"/>
+    <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@7F050003" android:exported="false" android:directBootAware="false"/>
+    <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+    <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="android.intent.action.BATTERY_OKAY"/>
+        <action android:name="android.intent.action.BATTERY_LOW"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+        <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        <action android:name="android.intent.action.TIME_SET"/>
+        <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@7F050002" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+      </intent-filter>
+    </receiver>
+    <meta-data android:name="com.bytedance.sdk.pangle.version" android:value="7.2.0.6"/>
+    <activity android:name="com.bytedance.sdk.openadsdk.activity.TTCeilingLandingPageActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F140528" android:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F140528" android:name="com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F140528" android:name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageLink2Activity" android:exported="false" android:launchMode="0" android:configChanges="0x000004A0"/>
+    <activity android:theme="@android:01030010" android:name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity" android:exported="false" android:launchMode="0"/>
+    <activity android:theme="@7F14052A" android:name="com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity" android:exported="false" android:launchMode="0" android:screenOrientation="1"/>
+    <service android:name="com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService" android:exported="false"/>
+    <activity android:theme="@7F140527" android:name="com.bytedance.sdk.openadsdk.activity.TTAdActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004A0"/>
+    <uses-library android:name="android.ext.adservices" android:required="false"/>
+    <meta-data android:name="com.google.android.gms.version" android:value="@7F0B0008"/>
+    <provider android:name="com.vungle.ads.VungleProvider" android:exported="false" android:authorities="com.document.pdf.scanner.free.all.vungle-provider" android:initOrder="102"/>
+    <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+      <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+    </service>
+    <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+      </intent-filter>
+    </receiver>
+    <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+    <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+    <activity android:theme="@android:01030007" android:name="com.anythink.core.activity.AnyThinkGdprAuthActivity" android:exported="false" android:launchMode="2" android:configChanges="0x000005A0"/>
+    <activity android:theme="@android:0103000D" android:name="com.anythink.core.basead.ui.web.WebLandPageActivity" android:exported="false" android:launchMode="1" android:configChanges="0x000005A0" android:windowSoftInputMode="0x00000010"/>
+    <activity android:theme="@android:01030011" android:name="com.anythink.basead.ui.RewardExitConfirmDialogActivity" android:exported="false"/>
+    <activity android:theme="@android:01030005" android:name="sg.bigo.ads.ad.splash.AdSplashActivity" android:exported="false" android:screenOrientation="1"/>
+    <activity android:theme="@android:01030005" android:name="sg.bigo.ads.ad.splash.LandscapeAdSplashActivity" android:exported="false" android:screenOrientation="0"/>
+    <provider android:name="sg.bigo.ads.controller.provider.BigoAdsProvider" android:exported="false" android:authorities="com.document.pdf.scanner.free.all.BigoAdsProvider"/>
+    <activity android:name="sg.bigo.ads.controller.form.AdFormActivity" android:exported="false" android:windowSoftInputMode="0x00000020"/>
+    <activity android:theme="@7F14034D" android:name="sg.bigo.ads.api.PopupAdActivity" android:exported="false" android:screenOrientation="1" android:configChanges="0x00000480" android:windowSoftInputMode="0x00000003"/>
+    <activity android:theme="@android:01030075" android:name="sg.bigo.ads.api.LandingStyleableActivity" android:exported="false" android:screenOrientation="3" android:configChanges="0x00000480" android:windowSoftInputMode="0x00000003"/>
+    <activity android:theme="@android:010300F0" android:name="sg.bigo.ads.api.LandscapeAdActivity" android:exported="false" android:screenOrientation="0" android:configChanges="0x00000480" android:windowSoftInputMode="0x00000003"/>
+    <activity android:theme="@android:010300F0" android:name="sg.bigo.ads.api.CompanionAdActivity" android:exported="false" android:screenOrientation="1" android:configChanges="0x00000480" android:windowSoftInputMode="0x00000003"/>
+    <activity android:theme="@android:010300F0" android:name="sg.bigo.ads.api.LandscapeCompanionAdActivity" android:exported="false" android:screenOrientation="0" android:configChanges="0x00000480" android:windowSoftInputMode="0x00000003"/>
+    <activity android:theme="@android:01030007" android:name="sg.bigo.ads.core.mraid.MraidVideoActivity" android:exported="false" android:screenOrientation="1" android:configChanges="0x000004A0"/>
+    <activity android:name="com.mbridge.msdk.out.LoadingActivity" android:exported="false"/>
+    <activity android:theme="@android:01030010" android:name="com.mbridge.msdk.newreward.player.MBRewardVideoActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="0x000004A0"/>
+    <receiver android:name="com.mbridge.msdk.foundation.same.broadcast.NetWorkChangeReceiver" android:exported="true">
+      <intent-filter>
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <activity android:theme="@android:01030007" android:name="com.vungle.warren.ui.VungleActivity" android:exported="false" android:launchMode="1" android:configChanges="0x00000FA0"/>
+    <activity android:theme="@android:01030007" android:name="com.tradplus.crosspro.ui.CPAdActivity" android:exported="false" android:configChanges="0x000004B0"/>
+    <activity android:theme="@android:01030011" android:name="com.tradplus.crosspro.ui.ApkConfirmDialogActivity" android:exported="false"/>
+    <activity android:theme="@android:01030011" android:name="com.tradplus.crosspro.ui.ApkConfirmDialogCNActivity" android:exported="true"/>
+    <activity android:theme="@android:01030010" android:name="com.tp.adx.sdk.ui.InnerWebViewActivity" android:exported="false" android:configChanges="0x000004A0"/>
+    <activity android:theme="@android:01030006" android:name="com.tp.adx.sdk.ui.InnerActivity" android:exported="false" android:configChanges="0x000004A0"/>
+    <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+    <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+    <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+    <meta-data android:name="com.android.vending.splits" android:resource="@7F16000B"/>
+    <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+  </application>
+</manifest>

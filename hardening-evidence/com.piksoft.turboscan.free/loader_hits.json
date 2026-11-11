@@ -1,0 +1,7 @@
+[
+  {
+    "class": "Lo/dispatchKeyShortcutEvent;",
+    "method": "METHOD RemoteActionCompatParcelizer (Landroid/content/Context;)Ljava/lang/ClassLoader;",
+    "line": "00000a: instance-of v1, v2, Ldalvik/system/BaseDexClassLoader;"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "class": "Lfc7$b;",
+    "method": "METHOD onActivityCreated (Landroid/app/Activity; Landroid/os/Bundle;)V",
+    "line": "000030: fill-array-data-payload b'v\\xe29c\\x9c\\x8b\\x03\\x1d' | \\x76\\xe2\\x39\\x63\\x9c\\x8b\\x03\\x1d"
+  },
+  {
+    "class": "Lt96;",
+    "method": "METHOD m (Landroid/content/Context;)Ljava/io/File;",
+    "line": "000014: const-string v2, \"main.jar\""
+  },
+  {
+    "class": "Lcom/apm/insight/h/c;",
+    "method": "METHOD a (Landroid/content/Context; Ljava/lang/String; Ljava/io/File;)Ljava/lang/String;",
+    "line": "00004e: instance-of v2, v6, Ldalvik/system/BaseDexClassLoader;"
+  },
+  {
+    "class": "Lcom/apm/insight/h/c;",
+    "method": "METHOD a (Landroid/content/Context; Ljava/lang/String; Ljava/io/File;)Ljava/lang/String;",
+    "line": "00006c: instance-of v2, v6, Ldalvik/system/BaseDexClassLoader;"
+  },
+  {
+    "class": "Lcom/apm/insight/h/c;",
+    "method": "METHOD a (Landroid/content/Context; Ljava/lang/String; Ljava/io/File;)Ljava/lang/String;",
+    "line": "000074: const-class v0, Ldalvik/system/BaseDexClassLoader;"
+  },
+  {
+    "class": "Lga4;",
+    "method": "METHOD a ([Ljava/nio/ByteBuffer; Ljava/lang/ClassLoader;)Ldalvik/system/InMemoryDexClassLoader;",
+    "line": "METHOD a ([Ljava/nio/ByteBuffer; Ljava/lang/ClassLoader;)Ldalvik/system/InMemoryDexClassLoader;"
+  },
+  {
+    "class": "Lga4;",
+    "method": "METHOD a ([Ljava/nio/ByteBuffer; Ljava/lang/ClassLoader;)Ldalvik/system/InMemoryDexClassLoader;",
+    "line": "000000: new-instance v0, Ldalvik/system/InMemoryDexClassLoader;"
+  },
+  {
+    "class": "Lga4;",
+    "method": "METHOD a ([Ljava/nio/ByteBuffer; Ljava/lang/ClassLoader;)Ldalvik/system/InMemoryDexClassLoader;",
+    "line": "000004: invoke-direct v0, v1, v2, Ldalvik/system/InMemoryDexClassLoader;-><init>([Ljava/nio/ByteBuffer; Ljava/lang/ClassLoader;)V"
+  },
+  {
+    "class": "Lha4;",
+    "method": "METHOD a ()V",
+    "line": "000000: new-instance v0, Ldalvik/system/InMemoryDexClassLoader;"
+  }
+]

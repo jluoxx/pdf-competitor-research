@@ -1,0 +1,180 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="123" versionName="1.7.3" android:UNKNOWN_SYSTEM_ATTRIBUTE_01010572="35" android:UNKNOWN_SYSTEM_ATTRIBUTE_01010573="15" package="com.piksoft.turboscan.free" platformBuildVersionCode="35" platformBuildVersionName="15">
+  <uses-sdk minSdkVersion="26" targetSdkVersion="35"/>
+  <uses-permission name="com.android.vending.BILLING"/>
+  <uses-feature name="android.hardware.camera" required="true"/>
+  <uses-permission name="android.permission.CAMERA"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-feature name="android.hardware.camera.autofocus" required="true"/>
+  <uses-feature name="android.hardware.camera.flash" required="false"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="com.android.vending.CHECK_LICENSE"/>
+  <uses-permission name="com.piksoft.turbofax.IMPORT_SCANS"/>
+  <queries>
+    <package android:name="com.piksoft.turbofax"/>
+    <package android:name="com.dropbox.android"/>
+    <intent>
+      <action android:name="android.intent.action.SEND_MULTIPLE"/>
+      <data android:mimeType="message/rfc822"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.SEND"/>
+      <data android:mimeType="application/pdf"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.SEND"/>
+      <data android:mimeType="image/jpeg"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.GET_CONTENT"/>
+      <data android:mimeType="image/*"/>
+    </intent>
+    <intent>
+      <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+    </intent>
+    <intent>
+      <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+    </intent>
+  </queries>
+  <uses-permission name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission name="com.piksoft.turboscan.free.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+  <uses-permission name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+  <uses-permission name="com.google.android.gms.permission.AD_ID"/>
+  <uses-permission name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+  <uses-permission name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+  <permission name="com.piksoft.turboscan.free.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" protectionLevel="0x00000002"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <application theme="@7F13000D" label="@7F120021" android:icon="@7F0F0000" name="com.piksoft.turboscan.ApplicationController" allowBackup="true" logo="@7F0800D1" largeHeap="true" android:extractNativeLibs="false" android:UNKNOWN_SYSTEM_ATTRIBUTE_0101057a="androidx.core.app.CoreComponentFactory" android:UNKNOWN_SYSTEM_ATTRIBUTE_0101059a="true" android:UNKNOWN_SYSTEM_ATTRIBUTE_01010603="true" android:UNKNOWN_SYSTEM_ATTRIBUTE_01010614="true">
+    <meta-data android:name="android.max_aspect" android:value="2.100000"/>
+    <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
+    <activity theme="@7F13000D" android:name="com.piksoft.turboscan.ui.LauncherActivity" android:exported="true" configChanges="0x00000090">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+      <meta-data android:name="android.app.shortcuts" resource="@7F15000A"/>
+    </activity>
+    <activity theme="@7F1302A3" label="@7F120021" android:name="com.piksoft.turboscan.ui.MainActivity" screenOrientation="1" windowSoftInputMode="0x00000020"/>
+    <activity theme="@7F1302A3" android:name="o.Recreator" uiOptions="0x00000001" parentActivityName="com.piksoft.turboscan.ui.MainActivity">
+      <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.MainActivity"/>
+    </activity>
+    <activity theme="@7F1302B1" android:name="o.setShadowResource" uiOptions="0x00000001" parentActivityName="o.Recreator"/>
+    <activity theme="@7F1302A3" label="@7F1201E7" android:name="o.setShadowResourceRight"/>
+    <activity theme="@7F1302A3" label="@7F1201E3" android:name="o.setViewCacheExtension" parentActivityName="o.Recreator">
+      <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.DocumentActivity"/>
+    </activity>
+    <activity theme="@7F1302A3" label="@7F1200A2" android:name="com.piksoft.turboscan.ui.DocumentStorageActivity"/>
+    <activity theme="@7F1302A3" label="@7F1201E4" android:name="com.piksoft.turboscan.ui.EmailSettingsActivity"/>
+    <activity theme="@7F1302AA" android:name="o.setOnFlingListener" screenOrientation="1" configChanges="0x000004A0"/>
+    <activity theme="@7F1302A3" label="@7F1201E6" android:name="o.setAnimationListener"/>
+    <activity theme="@7F1302A3" label="@7F1201E1" android:name="o.PreferenceImageView"/>
+    <activity theme="@7F1302A3" label="@7F1201E5" android:name="o.SavedStateRegistryExternalSyntheticLambda0" parentActivityName="com.piksoft.turboscan.ui.MainActivity">
+      <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.MainActivity"/>
+    </activity>
+    <activity theme="@7F1302A3" label="@7F1201E0" android:name="o.RecyclerView"/>
+    <activity theme="@7F1302A3" label="@7F1201E2" android:name="o.suppressLayout"/>
+    <meta-data android:name="com.crashlytics.ApiKey" android:value="afc2da857de501525189e3924ca9a6711ee22a0a"/>
+    <activity theme="@7F1302A3" label="@7F120021" android:name="o.setShadowDrawable"/>
+    <activity theme="@7F1302AC" android:name="o.setScrollingTouchSlop" configChanges="0x000004A0"/>
+    <activity android:name="com.dropbox.core.android.AuthActivity" android:exported="true" launchMode="2" configChanges="0x00000090">
+      <intent-filter>
+        <data android:scheme="@7F1200A9"/>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="@7F1302A3" label="@7F1201E8" android:name="o.SwipeRefreshLayout" screenOrientation="1">
+      <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.SettingsActivity"/>
+    </activity>
+    <activity theme="@7F1302A3" label="" android:name="o.getStrokeWidth"/>
+    <activity theme="@7F1302A3" label="" android:name="o.setTrimPathEnd"/>
+    <activity theme="@7F1302A3" label="" android:name="o.getTrimPathOffset"/>
+    <activity theme="@7F1302A3" label="" android:name="o.setStrokeWidth"/>
+    <activity theme="@7F1302A3" label="" android:name="o.setStrokeAlpha"/>
+    <activity theme="@7F1302A3" label="@7F120031" android:name="o.ProfileInstallerInitializer"/>
+    <service name="com.piksoft.turboscan.jobs.FrameworkJobService" permission="android.permission.BIND_JOB_SERVICE" android:exported="true"/>
+    <service name="com.piksoft.turboscan.gcm.GcmJobService" permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" android:exported="true">
+      <intent-filter>
+        <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+      </intent-filter>
+    </service>
+    <provider name="o.CompositeGeneratedAdaptersObserver" android:exported="false" authorities="com.piksoft.turboscan.free.files" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="@7F150003"/>
+    </provider>
+    <provider name="o.FragmentStrictModePolicyCompanion" android:exported="true" authorities="com.piksoft.turboscan.free.export"/>
+    <receiver name="o.onLongClick" enabled="true" android:exported="false"/>
+    <service name="o.setShowFooterView" enabled="true" android:exported="false"/>
+    <service name="o.notifyOnDismissListener" permission="android.permission.BIND_JOB_SERVICE" enabled="true" android:exported="false"/>
+    <receiver name="com.google.firebase.iid.FirebaseInstanceIdReceiver" permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+      <meta-data name="a" value=""/>
+    </receiver>
+    <service name="o.lambdainit1androidxfragmentappFragmentActivity" android:exported="false" directBootAware="true">
+      <intent-filter priority="-500">
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <service name="o.getDisplayOrDefault" android:exported="false" directBootAware="true">
+      <meta-data name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <receiver name="com.google.android.gms.measurement.AppMeasurementReceiver" enabled="true" android:exported="false"/>
+    <service name="com.google.android.gms.measurement.AppMeasurementService" enabled="true" android:exported="false"/>
+    <service name="com.google.android.gms.measurement.AppMeasurementJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" android:exported="false"/>
+    <provider name="o.LayoutIncludeDetector" android:exported="false" authorities="com.piksoft.turboscan.free.androidx-startup">
+      <meta-data name="androidx.emoji2.text.EmojiCompatInitializer" value="androidx.startup"/>
+      <meta-data name="androidx.lifecycle.ProcessLifecycleInitializer" value="androidx.startup"/>
+      <meta-data name="androidx.profileinstaller.ProfileInstallerInitializer" value="androidx.startup"/>
+    </provider>
+    <meta-data android:name="com.google.android.play.billingclient.version" android:value="7.1.1"/>
+    <activity theme="@android:01030010" android:name="com.android.billingclient.api.ProxyBillingActivity" android:exported="false" configChanges="0x000005B0"/>
+    <activity theme="@android:01030010" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:exported="false" configChanges="0x000005B0"/>
+    <activity theme="@android:01030010" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" excludeFromRecents="true"/>
+    <service name="com.google.android.gms.auth.api.signin.RevocationBoundService" permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true" visibleToInstantApps="true"/>
+    <activity theme="@android:01030010" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+    <service name="o.findBackStackIndex" enabled="true" android:exported="false"/>
+    <property name="android.adservices.AD_SERVICES_CONFIG" resource="@7F150004"/>
+    <provider name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" authorities="com.piksoft.turboscan.free.firebaseinitprovider" initOrder="100" directBootAware="true"/>
+    <uses-library name="android.ext.adservices" required="false"/>
+    <uses-library name="androidx.window.extensions" required="false"/>
+    <uses-library name="androidx.window.sidecar" required="false"/>
+    <meta-data android:name="com.google.android.gms.version" android:value="12451000"/>
+    <receiver name="androidx.profileinstaller.ProfileInstallReceiver" permission="android.permission.DUMP" enabled="true" android:exported="true" directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+      <meta-data name="backend:com.google.android.datatransport.cct.CctBackendFactory" value="cct"/>
+    </service>
+    <service name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+    <receiver name="o.ActionMenuPresenterOverflowPopup" android:exported="false"/>
+  </application>
+</manifest>

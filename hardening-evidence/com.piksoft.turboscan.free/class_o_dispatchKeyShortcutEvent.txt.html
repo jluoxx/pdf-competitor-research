@@ -1,0 +1,327 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>加固证据</title><style>body{font:15px system-ui;margin:24px;line-height:1.7}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><link rel="stylesheet" href="../../assets/reading-layout.css"></head><body class="reading-document"><main class="document-content"><h1>com.piksoft.turboscan.free\class_o_dispatchKeyShortcutEvent.txt</h1><pre>CLASS Lo/dispatchKeyShortcutEvent;
+FIELD RemoteActionCompatParcelizer 
+FIELD asBinder 
+
+METHOD &lt;clinit&gt; ()V
+000000: new-instance v0, Ljava/util/HashSet;
+000004: invoke-direct v0, Ljava/util/HashSet;-&gt;&lt;init&gt;()V
+00000a: sput-object v0, Lo/dispatchKeyShortcutEvent;-&gt;RemoteActionCompatParcelizer Ljava/util/Set;
+00000e: const-string v0, &quot;java.vm.version&quot;
+000012: invoke-static v0, Ljava/lang/System;-&gt;getProperty(Ljava/lang/String;)Ljava/lang/String;
+000018: move-result-object v0
+00001a: invoke-static v0, Lo/dispatchKeyShortcutEvent;-&gt;onTransact(Ljava/lang/String;)Z
+000020: move-result v0
+000022: sput-boolean v0, Lo/dispatchKeyShortcutEvent;-&gt;asBinder Z
+000026: return-void 
+
+METHOD RemoteActionCompatParcelizer (Landroid/content/Context;)Ljava/lang/ClassLoader;
+000000: const/4 v0, 0
+000002: invoke-virtual v2, Landroid/content/Context;-&gt;getClassLoader()Ljava/lang/ClassLoader;
+000008: move-result-object v2
+00000a: instance-of v1, v2, Ldalvik/system/BaseDexClassLoader;
+00000e: if-eqz v1, +003h
+000012: return-object v2
+000014: return-object v0
+
+METHOD RemoteActionCompatParcelizer (Ljava/lang/Object; Ljava/lang/String;)Ljava/lang/reflect/Field;
+000000: invoke-static v0, v1, Lo/dispatchKeyShortcutEvent;-&gt;read(Ljava/lang/Object; Ljava/lang/String;)Ljava/lang/reflect/Field;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD RemoteActionCompatParcelizer (Ljava/io/File;)V
+000000: invoke-virtual v3, Ljava/io/File;-&gt;mkdir()Z
+000006: invoke-virtual v3, Ljava/io/File;-&gt;isDirectory()Z
+00000c: move-result v0
+00000e: if-nez v0, +036h
+000012: invoke-virtual v3, Ljava/io/File;-&gt;getParentFile()Ljava/io/File;
+000018: move-result-object v0
+00001a: if-nez v0, +006h
+00001e: invoke-virtual v3, Ljava/io/File;-&gt;getPath()Ljava/lang/String;
+000024: goto +13h
+000026: invoke-virtual v3, Ljava/io/File;-&gt;getPath()Ljava/lang/String;
+00002c: invoke-virtual v0, Ljava/io/File;-&gt;isDirectory()Z
+000032: invoke-virtual v0, Ljava/io/File;-&gt;isFile()Z
+000038: invoke-virtual v0, Ljava/io/File;-&gt;exists()Z
+00003e: invoke-virtual v0, Ljava/io/File;-&gt;canRead()Z
+000044: invoke-virtual v0, Ljava/io/File;-&gt;canWrite()Z
+00004a: new-instance v0, Ljava/io/IOException;
+00004e: new-instance v1, Ljava/lang/StringBuilder;
+000052: const-string v2, &quot;Failed to create directory &quot;
+000056: invoke-direct v1, v2, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+00005c: invoke-virtual v3, Ljava/io/File;-&gt;getPath()Ljava/lang/String;
+000062: move-result-object v3
+000064: invoke-virtual v1, v3, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00006a: invoke-virtual v1, Ljava/lang/Object;-&gt;toString()Ljava/lang/String;
+000070: move-result-object v3
+000072: invoke-direct v0, v3, Ljava/io/IOException;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+000078: throw v0
+00007a: return-void 
+
+METHOD asBinder (Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+000000: invoke-virtual v3, Ljava/lang/Object;-&gt;getClass()Ljava/lang/Class;
+000006: move-result-object v0
+000008: if-eqz v0, +016h
+00000c: invoke-virtual v0, v4, v5, Ljava/lang/Class;-&gt;getDeclaredMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+000012: move-result-object v1
+000014: invoke-virtual v1, Ljava/lang/reflect/AccessibleObject;-&gt;isAccessible()Z
+00001a: move-result v2
+00001c: if-nez v2, +006h
+000020: const/4 v2, 1
+000022: invoke-virtual v1, v2, Ljava/lang/reflect/AccessibleObject;-&gt;setAccessible(Z)V
+000028: return-object v1
+00002a: invoke-virtual v0, Ljava/lang/Class;-&gt;getSuperclass()Ljava/lang/Class;
+000030: move-result-object v0
+000032: goto -15h
+000034: new-instance v0, Ljava/lang/StringBuilder;
+000038: const-string v1, &quot;Method &quot;
+00003c: invoke-direct v0, v1, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+000042: invoke-virtual v0, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000048: const-string v4, &quot; with parameters &quot;
+00004c: invoke-virtual v0, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000052: new-instance v4, Ljava/lang/NoSuchMethodException;
+000056: invoke-static v5, Ljava/util/Arrays;-&gt;asList([Ljava/lang/Object;)Ljava/util/List;
+00005c: move-result-object v5
+00005e: invoke-virtual v0, v5, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+000064: const-string v5, &quot; not found in &quot;
+000068: invoke-virtual v0, v5, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00006e: invoke-virtual v3, Ljava/lang/Object;-&gt;getClass()Ljava/lang/Class;
+000074: move-result-object v3
+000076: invoke-virtual v0, v3, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+00007c: invoke-virtual v0, Ljava/lang/Object;-&gt;toString()Ljava/lang/String;
+000082: move-result-object v3
+000084: invoke-direct v4, v3, Ljava/lang/NoSuchMethodException;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+00008a: throw v4
+
+METHOD asBinder (Landroid/content/Context;)V
+000000: sget-boolean v0, Lo/dispatchKeyShortcutEvent;-&gt;asBinder Z
+000004: if-eqz v0, +003h
+000008: return-void 
+00000a: invoke-static v4, Lo/dispatchKeyShortcutEvent;-&gt;asInterface(Landroid/content/Context;)Landroid/content/pm/ApplicationInfo;
+000010: move-result-object v0
+000012: if-nez v0, +003h
+000016: return-void 
+000018: new-instance v1, Ljava/io/File;
+00001c: iget-object v2, v0, Landroid/content/pm/ApplicationInfo;-&gt;sourceDir Ljava/lang/String;
+000020: invoke-direct v1, v2, Ljava/io/File;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+000026: new-instance v2, Ljava/io/File;
+00002a: iget-object v0, v0, Landroid/content/pm/ApplicationInfo;-&gt;dataDir Ljava/lang/String;
+00002e: invoke-direct v2, v0, Ljava/io/File;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+000034: const-string v0, &quot;secondary-dexes&quot;
+000038: const-string v3, &quot;&quot;
+00003c: invoke-static v4, v1, v2, v0, v3, Lo/dispatchKeyShortcutEvent;-&gt;asInterface(Landroid/content/Context; Ljava/io/File; Ljava/io/File; Ljava/lang/String; Ljava/lang/String;)V
+000042: return-void 
+000044: move-exception v4
+000046: new-instance v0, Ljava/lang/RuntimeException;
+00004a: new-instance v1, Ljava/lang/StringBuilder;
+00004e: const-string v2, &quot;MultiDex installation failed (&quot;
+000052: invoke-direct v1, v2, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+000058: invoke-virtual v4, Ljava/lang/Throwable;-&gt;getMessage()Ljava/lang/String;
+00005e: move-result-object v4
+000060: invoke-virtual v1, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000066: const-string v4, &quot;).&quot;
+00006a: invoke-virtual v1, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000070: invoke-virtual v1, Ljava/lang/Object;-&gt;toString()Ljava/lang/String;
+000076: move-result-object v4
+000078: invoke-direct v0, v4, Ljava/lang/RuntimeException;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+00007e: throw v0
+
+METHOD asInterface (Landroid/content/Context;)Landroid/content/pm/ApplicationInfo;
+000000: invoke-virtual v0, Landroid/content/Context;-&gt;getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+000006: move-result-object v0
+000008: return-object v0
+00000a: const/4 v0, 0
+00000c: return-object v0
+
+METHOD asInterface (Landroid/content/Context; Ljava/io/File; Ljava/io/File; Ljava/lang/String; Ljava/lang/String;)V
+000000: sget-object v0, Lo/dispatchKeyShortcutEvent;-&gt;RemoteActionCompatParcelizer Ljava/util/Set;
+000004: monitor-enter v0
+000006: invoke-interface v0, v10, Ljava/util/Set;-&gt;contains(Ljava/lang/Object;)Z
+00000c: move-result v1
+00000e: if-eqz v1, +004h
+000012: monitor-exit v0
+000014: return-void 
+000016: invoke-interface v0, v10, Ljava/util/Set;-&gt;add(Ljava/lang/Object;)Z
+00001c: const-string v1, &quot;java.vm.version&quot;
+000020: invoke-static v1, Ljava/lang/System;-&gt;getProperty(Ljava/lang/String;)Ljava/lang/String;
+000026: invoke-static v9, Lo/dispatchKeyShortcutEvent;-&gt;RemoteActionCompatParcelizer(Landroid/content/Context;)Ljava/lang/ClassLoader;
+00002c: move-result-object v1
+00002e: if-nez v1, +004h
+000032: monitor-exit v0
+000034: return-void 
+000036: const/4 v2, 0
+000038: new-instance v3, Ljava/io/File;
+00003c: invoke-virtual v9, Landroid/content/Context;-&gt;getFilesDir()Ljava/io/File;
+000042: move-result-object v4
+000044: const-string v5, &quot;secondary-dexes&quot;
+000048: invoke-direct v3, v4, v5, Ljava/io/File;-&gt;&lt;init&gt;(Ljava/io/File; Ljava/lang/String;)V
+00004e: invoke-virtual v3, Ljava/io/File;-&gt;isDirectory()Z
+000054: move-result v4
+000056: if-eqz v4, +038h
+00005a: invoke-virtual v3, Ljava/io/File;-&gt;getPath()Ljava/lang/String;
+000060: invoke-virtual v3, Ljava/io/File;-&gt;listFiles()[Ljava/io/File;
+000066: move-result-object v4
+000068: if-nez v4, +006h
+00006c: invoke-virtual v3, Ljava/io/File;-&gt;getPath()Ljava/lang/String;
+000072: goto +2ah
+000074: array-length v5, v4
+000076: move v6, v2
+000078: if-ge v6, v5, +01ah
+00007c: aget-object v7, v4, v6
+000080: invoke-virtual v7, Ljava/io/File;-&gt;getPath()Ljava/lang/String;
+000086: invoke-virtual v7, Ljava/io/File;-&gt;length()J
+00008c: invoke-virtual v7, Ljava/io/File;-&gt;delete()Z
+000092: move-result v8
+000094: if-nez v8, +006h
+000098: invoke-virtual v7, Ljava/io/File;-&gt;getPath()Ljava/lang/String;
+00009e: goto +4h
+0000a0: invoke-virtual v7, Ljava/io/File;-&gt;getPath()Ljava/lang/String;
+0000a6: add-int/lit8 v6, v6, 1
+0000aa: goto -19h
+0000ac: invoke-virtual v3, Ljava/io/File;-&gt;delete()Z
+0000b2: move-result v4
+0000b4: if-nez v4, +006h
+0000b8: invoke-virtual v3, Ljava/io/File;-&gt;getPath()Ljava/lang/String;
+0000be: goto +4h
+0000c0: invoke-virtual v3, Ljava/io/File;-&gt;getPath()Ljava/lang/String;
+0000c6: invoke-static v9, v11, v12, Lo/dispatchKeyShortcutEvent;-&gt;onTransact(Landroid/content/Context; Ljava/io/File; Ljava/lang/String;)Ljava/io/File;
+0000cc: move-result-object v11
+0000ce: new-instance v12, Lo/AppCompatDelegateImplAutoBatteryNightModeManager;
+0000d2: invoke-direct v12, v10, v11, Lo/AppCompatDelegateImplAutoBatteryNightModeManager;-&gt;&lt;init&gt;(Ljava/io/File; Ljava/io/File;)V
+0000d8: invoke-virtual v12, v9, v13, v2, Lo/AppCompatDelegateImplAutoBatteryNightModeManager;-&gt;read(Landroid/content/Context; Ljava/lang/String; Z)Ljava/util/List;
+0000de: move-result-object v10
+0000e0: invoke-interface v10, Ljava/util/List;-&gt;isEmpty()Z
+0000e6: move-result v2
+0000e8: if-nez v2, +014h
+0000ec: invoke-static v1, v10, v11, Lo/dispatchKeyShortcutEvent$RemoteActionCompatParcelizer;-&gt;RemoteActionCompatParcelizer(Ljava/lang/ClassLoader; Ljava/util/List; Ljava/io/File;)V
+0000f2: goto +fh
+0000f4: const/4 v10, 1
+0000f6: invoke-virtual v12, v9, v13, v10, Lo/AppCompatDelegateImplAutoBatteryNightModeManager;-&gt;read(Landroid/content/Context; Ljava/lang/String; Z)Ljava/util/List;
+0000fc: move-result-object v9
+0000fe: invoke-interface v9, Ljava/util/List;-&gt;isEmpty()Z
+000104: move-result v10
+000106: if-nez v10, +005h
+00010a: invoke-static v1, v9, v11, Lo/dispatchKeyShortcutEvent$RemoteActionCompatParcelizer;-&gt;RemoteActionCompatParcelizer(Ljava/lang/ClassLoader; Ljava/util/List; Ljava/io/File;)V
+000110: invoke-virtual v12, Lo/AppCompatDelegateImplAutoBatteryNightModeManager;-&gt;close()V
+000116: const/4 v9, 0
+000118: goto +2h
+00011a: move-exception v9
+00011c: if-nez v9, +004h
+000120: monitor-exit v0
+000122: return-void 
+000124: throw v9
+000126: move-exception v9
+000128: invoke-virtual v12, Lo/AppCompatDelegateImplAutoBatteryNightModeManager;-&gt;close()V
+00012e: throw v9
+000130: move-exception v9
+000132: monitor-exit v0
+000134: throw v9
+
+METHOD asInterface (Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Object;)V
+000000: invoke-static v4, v5, Lo/dispatchKeyShortcutEvent;-&gt;read(Ljava/lang/Object; Ljava/lang/String;)Ljava/lang/reflect/Field;
+000006: move-result-object v5
+000008: invoke-virtual v5, v4, Ljava/lang/reflect/Field;-&gt;get(Ljava/lang/Object;)Ljava/lang/Object;
+00000e: move-result-object v0
+000010: check-cast v0, [Ljava/lang/Object;
+000014: invoke-virtual v0, Ljava/lang/Object;-&gt;getClass()Ljava/lang/Class;
+00001a: move-result-object v1
+00001c: invoke-virtual v1, Ljava/lang/Class;-&gt;getComponentType()Ljava/lang/Class;
+000022: move-result-object v1
+000024: array-length v2, v0
+000026: array-length v3, v6
+000028: add-int/2addr v2, v3
+00002a: invoke-static v1, v2, Ljava/lang/reflect/Array;-&gt;newInstance(Ljava/lang/Class; I)Ljava/lang/Object;
+000030: move-result-object v1
+000032: check-cast v1, [Ljava/lang/Object;
+000036: array-length v2, v0
+000038: const/4 v3, 0
+00003a: invoke-static v0, v3, v1, v3, v2, Ljava/lang/System;-&gt;arraycopy(Ljava/lang/Object; I Ljava/lang/Object; I I)V
+000040: array-length v0, v0
+000042: array-length v2, v6
+000044: invoke-static v6, v3, v1, v0, v2, Ljava/lang/System;-&gt;arraycopy(Ljava/lang/Object; I Ljava/lang/Object; I I)V
+00004a: invoke-virtual v5, v4, v1, Ljava/lang/reflect/Field;-&gt;set(Ljava/lang/Object; Ljava/lang/Object;)V
+000050: return-void 
+
+METHOD onTransact (Landroid/content/Context; Ljava/io/File; Ljava/lang/String;)Ljava/io/File;
+000000: new-instance v0, Ljava/io/File;
+000004: const-string v1, &quot;code_cache&quot;
+000008: invoke-direct v0, v3, v1, Ljava/io/File;-&gt;&lt;init&gt;(Ljava/io/File; Ljava/lang/String;)V
+00000e: invoke-static v0, Lo/dispatchKeyShortcutEvent;-&gt;RemoteActionCompatParcelizer(Ljava/io/File;)V
+000014: goto +dh
+000016: new-instance v0, Ljava/io/File;
+00001a: invoke-virtual v2, Landroid/content/Context;-&gt;getFilesDir()Ljava/io/File;
+000020: move-result-object v2
+000022: invoke-direct v0, v2, v1, Ljava/io/File;-&gt;&lt;init&gt;(Ljava/io/File; Ljava/lang/String;)V
+000028: invoke-static v0, Lo/dispatchKeyShortcutEvent;-&gt;RemoteActionCompatParcelizer(Ljava/io/File;)V
+00002e: new-instance v2, Ljava/io/File;
+000032: invoke-direct v2, v0, v4, Ljava/io/File;-&gt;&lt;init&gt;(Ljava/io/File; Ljava/lang/String;)V
+000038: invoke-static v2, Lo/dispatchKeyShortcutEvent;-&gt;RemoteActionCompatParcelizer(Ljava/io/File;)V
+00003e: return-object v2
+
+METHOD onTransact (Ljava/lang/String;)Z
+000000: const/4 v0, 0
+000002: if-eqz v4, +034h
+000006: new-instance v1, Ljava/util/StringTokenizer;
+00000a: const-string v2, &quot;.&quot;
+00000e: invoke-direct v1, v4, v2, Ljava/util/StringTokenizer;-&gt;&lt;init&gt;(Ljava/lang/String; Ljava/lang/String;)V
+000014: invoke-virtual v1, Ljava/util/StringTokenizer;-&gt;hasMoreTokens()Z
+00001a: move-result v4
+00001c: const/4 v2, 0
+00001e: if-eqz v4, +007h
+000022: invoke-virtual v1, Ljava/util/StringTokenizer;-&gt;nextToken()Ljava/lang/String;
+000028: move-result-object v4
+00002a: goto +2h
+00002c: move-object v4, v2
+00002e: invoke-virtual v1, Ljava/util/StringTokenizer;-&gt;hasMoreTokens()Z
+000034: move-result v3
+000036: if-eqz v3, +006h
+00003a: invoke-virtual v1, Ljava/util/StringTokenizer;-&gt;nextToken()Ljava/lang/String;
+000040: move-result-object v2
+000042: if-eqz v4, +014h
+000046: if-eqz v2, +012h
+00004a: invoke-static v4, Ljava/lang/Integer;-&gt;parseInt(Ljava/lang/String;)I
+000050: move-result v4
+000052: invoke-static v2, Ljava/lang/Integer;-&gt;parseInt(Ljava/lang/String;)I
+000058: move-result v1
+00005a: const/4 v2, 2
+00005c: if-gt v4, v2, +006h
+000060: if-ne v4, v2, +005h
+000064: if-lez v1, +003h
+000068: const/4 v0, 1
+00006a: return v0
+
+METHOD read (Ljava/lang/Object; Ljava/lang/String;)Ljava/lang/reflect/Field;
+000000: invoke-virtual v3, Ljava/lang/Object;-&gt;getClass()Ljava/lang/Class;
+000006: move-result-object v0
+000008: if-eqz v0, +016h
+00000c: invoke-virtual v0, v4, Ljava/lang/Class;-&gt;getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+000012: move-result-object v1
+000014: invoke-virtual v1, Ljava/lang/reflect/AccessibleObject;-&gt;isAccessible()Z
+00001a: move-result v2
+00001c: if-nez v2, +006h
+000020: const/4 v2, 1
+000022: invoke-virtual v1, v2, Ljava/lang/reflect/AccessibleObject;-&gt;setAccessible(Z)V
+000028: return-object v1
+00002a: invoke-virtual v0, Ljava/lang/Class;-&gt;getSuperclass()Ljava/lang/Class;
+000030: move-result-object v0
+000032: goto -15h
+000034: new-instance v0, Ljava/lang/NoSuchFieldException;
+000038: new-instance v1, Ljava/lang/StringBuilder;
+00003c: const-string v2, &quot;Field &quot;
+000040: invoke-direct v1, v2, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+000046: invoke-virtual v1, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00004c: const-string v4, &quot; not found in &quot;
+000050: invoke-virtual v1, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000056: invoke-virtual v3, Ljava/lang/Object;-&gt;getClass()Ljava/lang/Class;
+00005c: move-result-object v3
+00005e: invoke-virtual v1, v3, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+000064: invoke-virtual v1, Ljava/lang/Object;-&gt;toString()Ljava/lang/String;
+00006a: move-result-object v3
+00006c: invoke-direct v0, v3, Ljava/lang/NoSuchFieldException;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+000072: throw v0
+
+METHOD read (Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+000000: invoke-static v0, v1, v2, Lo/dispatchKeyShortcutEvent;-&gt;asBinder(Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+000006: move-result-object v0
+000008: return-object v0
+
+</pre></html></main><script src="../../assets/reading-navigation.js"></script></body></html>

@@ -1,0 +1,11 @@
+CLASS Lcom/pairip/application/Application;
+
+METHOD <init> ()V
+000000: invoke-direct v0, Lcom/pdfeditor/documentviewer/pdfstudio/docworks/DocumentReaderApplication;-><init>()V
+000006: return-void 
+
+METHOD attachBaseContext (Landroid/content/Context;)V
+000000: invoke-static v1, Lcom/pairip/licensecheck/LicenseClient;->checkLicense(Landroid/content/Context;)V
+000006: invoke-super v0, v1, Lcom/pairip/application/Application;->attachBaseContext(Landroid/content/Context;)V
+00000c: return-void 
+

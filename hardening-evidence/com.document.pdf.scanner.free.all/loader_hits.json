@@ -1,0 +1,67 @@
+[
+  {
+    "class": "Lcom/anythink/expressad/atsignalcommon/commonwebview/c;",
+    "method": "METHOD c ([Ljava/nio/ByteBuffer; Ljava/lang/ClassLoader;)Ldalvik/system/InMemoryDexClassLoader;",
+    "line": "METHOD c ([Ljava/nio/ByteBuffer; Ljava/lang/ClassLoader;)Ldalvik/system/InMemoryDexClassLoader;"
+  },
+  {
+    "class": "Lcom/anythink/expressad/atsignalcommon/commonwebview/c;",
+    "method": "METHOD c ([Ljava/nio/ByteBuffer; Ljava/lang/ClassLoader;)Ldalvik/system/InMemoryDexClassLoader;",
+    "line": "000000: new-instance v0, Ldalvik/system/InMemoryDexClassLoader;"
+  },
+  {
+    "class": "Lcom/anythink/expressad/atsignalcommon/commonwebview/c;",
+    "method": "METHOD c ([Ljava/nio/ByteBuffer; Ljava/lang/ClassLoader;)Ldalvik/system/InMemoryDexClassLoader;",
+    "line": "000004: invoke-direct v0, v1, v2, Ldalvik/system/InMemoryDexClassLoader;-><init>([Ljava/nio/ByteBuffer; Ljava/lang/ClassLoader;)V"
+  },
+  {
+    "class": "Lcom/apm/insight/h/c;",
+    "method": "METHOD a (Landroid/content/Context; Ljava/lang/String; Ljava/io/File;)Ljava/lang/String;",
+    "line": "00004e: instance-of v2, v6, Ldalvik/system/BaseDexClassLoader;"
+  },
+  {
+    "class": "Lcom/apm/insight/h/c;",
+    "method": "METHOD a (Landroid/content/Context; Ljava/lang/String; Ljava/io/File;)Ljava/lang/String;",
+    "line": "00006c: instance-of v2, v6, Ldalvik/system/BaseDexClassLoader;"
+  },
+  {
+    "class": "Lcom/apm/insight/h/c;",
+    "method": "METHOD a (Landroid/content/Context; Ljava/lang/String; Ljava/io/File;)Ljava/lang/String;",
+    "line": "000074: const-class v0, Ldalvik/system/BaseDexClassLoader;"
+  },
+  {
+    "class": "Lk1/a;",
+    "method": "METHOD b (Lcom/document/pdf/scanner/App; Ljava/io/File; Ljava/io/File;)V",
+    "line": "000084: instance-of v5, v4, Ldalvik/system/BaseDexClassLoader;"
+  },
+  {
+    "class": "Lk1/a;",
+    "method": "METHOD b (Lcom/document/pdf/scanner/App; Ljava/io/File; Ljava/io/File;)V",
+    "line": "00011e: check-cast v1, Ldalvik/system/BaseDexClassLoader;"
+  },
+  {
+    "class": "Lk1/a;",
+    "method": "METHOD b (Lcom/document/pdf/scanner/App; Ljava/io/File; Ljava/io/File;)V",
+    "line": "000122: invoke-static v1, v9, v8, Lk1/a;->e(Ldalvik/system/BaseDexClassLoader; Ljava/io/File; Ljava/util/ArrayList;)V"
+  },
+  {
+    "class": "Lk1/a;",
+    "method": "METHOD b (Lcom/document/pdf/scanner/App; Ljava/io/File; Ljava/io/File;)V",
+    "line": "000144: check-cast v4, Ldalvik/system/BaseDexClassLoader;"
+  },
+  {
+    "class": "Lk1/a;",
+    "method": "METHOD b (Lcom/document/pdf/scanner/App; Ljava/io/File; Ljava/io/File;)V",
+    "line": "000148: invoke-static v4, v9, v7, Lk1/a;->e(Ldalvik/system/BaseDexClassLoader; Ljava/io/File; Ljava/util/ArrayList;)V"
+  },
+  {
+    "class": "Lk1/a;",
+    "method": "METHOD e (Ldalvik/system/BaseDexClassLoader; Ljava/io/File; Ljava/util/ArrayList;)V",
+    "line": "METHOD e (Ldalvik/system/BaseDexClassLoader; Ljava/io/File; Ljava/util/ArrayList;)V"
+  },
+  {
+    "class": "Lae/j;",
+    "method": "METHOD B ()V",
+    "line": "000000: new-instance v0, Ldalvik/system/InMemoryDexClassLoader;"
+  }
+]

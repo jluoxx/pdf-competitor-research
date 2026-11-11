@@ -1,25 +1,25 @@
-应用,参数,包内默认,消费链路,证据ID,缺口
-Docworks｜PDF Editor - Document Viewer,interstitial_ads_enable,true,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
-Docworks｜PDF Editor - Document Viewer,interstitial_ads_on_start_app_enable,true,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
-Docworks｜PDF Editor - Document Viewer,show_ads_after_open_file,1,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
-Docworks｜PDF Editor - Document Viewer,interstitial_ads_category_home_enable,false,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
-Docworks｜PDF Editor - Document Viewer,time_load_interstitial_ads_on_start_app,10000,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
-Docworks｜PDF Editor - Document Viewer,time_out_native_select_language,5000,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
-Docworks｜PDF Editor - Document Viewer,rate_us_show_after_time,24,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
-Docworks｜PDF Editor - Document Viewer,rate_us_show_after_open_app,3,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
-Docworks｜PDF Editor - Document Viewer,interSplash,2,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
-Docworks｜PDF Editor - Document Viewer,homeInterChooseFolder,30,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
-Docworks｜PDF Editor - Document Viewer,interChooseFile,30,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
-Docworks｜PDF Editor - Document Viewer,showIntro,0,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
-Docworks｜PDF Editor - Document Viewer,showAdInOnboarding,0,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
-Docworks｜PDF Editor - Document Viewer,widgetSheetEveryOpen,2,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
-Docworks｜PDF Editor - Document Viewer,广告JSON / INTER_ALL,本地JSON回退,远端JSON键→Bridge→文件打开插屏,D05,当前线上值未知
-Docworks｜PDF Editor - Document Viewer,iap_weekly_plan / REMOTE_KEY_IAP_BASE_PLAN,本地加密字符串回退,getIapBasePlan→周选项购买分支,D10,当前线上值未知
-Docworks｜PDF Editor - Document Viewer,REMOTE_KEY_IS_FREE_TRIAL_ENABLE,true,基础库试用配置,D12,不证明商店offer/试用天数
-Scanner｜PDF Reader - PDF Viewer,interstitial_ad_cool_time,本地冷却缺省30秒,MMKV key_remote_cooling→乘1000→f8.x.g→f8.j.d,S03,当前线上值未知
-Scanner｜PDF Reader - PDF Viewer,is_show_vip,未恢复,==1→KEY_SHOW_VIP_ICON,S03,当前线上值未知
-Scanner｜PDF Reader - PDF Viewer,filelist_num,未恢复,整数→key_remote_file_l,S03,当前线上值未知
-Scanner｜PDF Reader - PDF Viewer,user_country,未恢复,字符串→key_fr_user_country,S03,当前线上值未知
+﻿应用,参数,包内默认,消费链路,证据ID,缺口
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,interstitial_ads_enable,true,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,interstitial_ads_on_start_app_enable,true,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,show_ads_after_open_file,1,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,interstitial_ads_category_home_enable,false,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,time_load_interstitial_ads_on_start_app,10000,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,time_out_native_select_language,5000,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,rate_us_show_after_time,24,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,rate_us_show_after_open_app,3,XML默认层；不是最终优先级,D08,当前线上值及部分单位/消费者未验证
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,interSplash,2,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,homeInterChooseFolder,30,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,interChooseFile,30,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,showIntro,0,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,showAdInOnboarding,0,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,widgetSheetEveryOpen,2,RemoteConfigModel构造回退,D07,单位/全部消费者未逐项还原
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,广告JSON / INTER_ALL,本地JSON回退,远端JSON键→Bridge→文件打开插屏,D05,当前线上值未知
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,iap_weekly_plan / REMOTE_KEY_IAP_BASE_PLAN,本地加密字符串回退,getIapBasePlan→周选项购买分支,D10,当前线上值未知
+PDF Editor - Document Viewer｜PDF Editor - Document Viewer,REMOTE_KEY_IS_FREE_TRIAL_ENABLE,true,基础库试用配置,D12,不证明商店offer/试用天数
+PDF Reader - PDF Viewer｜PDF Reader - PDF Viewer,interstitial_ad_cool_time,本地冷却缺省30秒,MMKV key_remote_cooling→乘1000→f8.x.g→f8.j.d,S03,当前线上值未知
+PDF Reader - PDF Viewer｜PDF Reader - PDF Viewer,is_show_vip,未恢复,==1→KEY_SHOW_VIP_ICON,S03,当前线上值未知
+PDF Reader - PDF Viewer｜PDF Reader - PDF Viewer,filelist_num,未恢复,整数→key_remote_file_l,S03,当前线上值未知
+PDF Reader - PDF Viewer｜PDF Reader - PDF Viewer,user_country,未恢复,字符串→key_fr_user_country,S03,当前线上值未知
 PDF Hero & Doc Reader,fire_pdf_hero_0,解析/本地回退,fetch/activate→JSON分区→持久化,H02,当前线上值未知
 PDF Hero & Doc Reader,adRuntimeCfg,未完整列举,根JSON分区→本地持久化,H02,当前线上值未知
 PDF Hero & Doc Reader,noticeScheduleCfg,未完整列举,根JSON分区→本地持久化,H02,当前线上值未知

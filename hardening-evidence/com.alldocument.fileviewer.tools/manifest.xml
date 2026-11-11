@@ -1,0 +1,624 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="11" android:versionName="1.0" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.alldocument.fileviewer.tools" platformBuildVersionCode="35" platformBuildVersionName="15">
+  <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+  <uses-permission android:name="android.permission.FLASHLIGHT"/>
+  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <queries>
+    <intent>
+      <action android:name="android.intent.action.MAIN"/>
+      <category android:name="android.intent.category.LAUNCHER"/>
+    </intent>
+    <intent>
+      <action android:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+    </intent>
+    <intent>
+      <action android:name="android.support.customtabs.action.CustomTabsService"/>
+    </intent>
+    <intent>
+      <action android:name="androidx.browser.customtabs.CustomTabsService"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <category android:name="android.intent.category.BROWSABLE"/>
+      <data android:scheme="https"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <category android:name="android.intent.category.BROWSABLE"/>
+      <data android:scheme="http"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <data android:scheme="market"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.INSERT"/>
+      <data android:mimeType="vnd.android.cursor.dir/event"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <data android:scheme="sms"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.DIAL"/>
+      <data android:path="tel:"/>
+    </intent>
+    <package android:name="com.facebook.katana"/>
+    <intent>
+      <action android:name="com.attribution.REFERRAL_PROVIDER"/>
+    </intent>
+    <package android:name="com.android.chrome"/>
+    <package android:name="com.google.android.webview"/>
+    <package android:name="com.android.webview"/>
+    <package android:name="com.android.vending"/>
+    <intent>
+      <action android:name="android.intent.action.MAIN"/>
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+    </intent>
+    <intent>
+      <action android:name="com.digitalturbine.ignite.cl.IgniteRemoteService"/>
+    </intent>
+    <intent>
+      <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+    </intent>
+    <package android:name="com.instagram.android"/>
+    <package android:name="com.facebook.lite"/>
+    <package android:name="com.samsung.android.mapsagent"/>
+  </queries>
+  <uses-permission android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+  <uses-permission android:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+  <permission android:name="com.alldocument.fileviewer.tools.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="0x00000002"/>
+  <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+  <uses-permission android:name="com.alldocument.fileviewer.tools.permission.READ_SETTINGS"/>
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="35"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+  <uses-permission android:name="com.alldocument.fileviewer.tools.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+  <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+  <uses-permission android:name="com.google.android.apps.nexuslauncher.permission.QSB"/>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="com.alldocument.fileviewer.tools.permission.WRITE_SETTINGS"/>
+  <uses-permission android:name="android.permission.MANAGE_ACCESSIBILITY"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+  <uses-feature android:name="android.hardware.camera" android:required="false"/>
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+  <application android:theme="@7F130011" android:label="@7F120076" android:icon="@7F0F0008" android:name="com.xxnido.voxot.cswzvokzzp" android:backupAgent="com.android.launcher3.LauncherBackupAgent" android:allowBackup="false" android:restoreAnyVersion="true" android:hardwareAccelerated="true" android:largeHeap="@7F050017" android:supportsRtl="true" android:fullBackupOnly="true" android:extractNativeLibs="false" android:fullBackupContent="@7F150003" android:usesCleartextTraffic="true" android:backupInForeground="true" android:roundIcon="@7F0F0008" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@7F150002">
+    <activity android:theme="@7F13031F" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:exported="false" android:stateNotNeeded="true"/>
+    <activity android:theme="@android:010300F0" android:name="sg.bigo.ads.api.LandscapeAdActivity" android:screenOrientation="0" android:configChanges="0x00000480" android:windowSoftInputMode="0x00000003"/>
+    <provider android:name="io.bidmachine.BidMachineInitProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.bidmachineinitprovider" android:initOrder="100"/>
+    <activity android:theme="@7F13031D" android:name="com.pvab.xyshmunz.whvobxpxklvkxxgg" android:exported="true" android:configChanges="0x00000480">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:scheme="file" android:host="*" android:pathPattern=".*\.pdf"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@android:01030006" android:name="com.inmobi.ads.rendering.InMobiAdActivity" android:configChanges="0x40000FB4" android:hardwareAccelerated="true"/>
+    <provider android:name="com.squareup.picasso.PicassoProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.com.squareup.picasso"/>
+    <activity android:theme="@7F13053A" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity" android:launchMode="0" android:configChanges="0x000004A0">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <activity android:theme="@android:01030007" android:name="com.smartdigimkt.sdk.basead.ui.ATLandscapeActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <provider android:name="com.reyun.solar.engine.lifecycle.SystemLifecycleContentProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.solar-enigne-lifecycle-provider"/>
+    <activity android:name="com.mbridge.msdk.out.LoadingActivity"/>
+    <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-3940256099942544~3347511713"/>
+    <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@7F050019" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+      </intent-filter>
+    </receiver>
+    <activity android:theme="@android:01030010" android:name="com.mbridge.msdk.config.activity.MBRewardVideoActivity" android:exported="false" android:excludeFromRecents="false" android:configChanges="0x000004A0"/>
+    <activity android:theme="@android:01030010" android:name="com.mbridge.msdk.reward.player.MBRewardVideoActivity" android:configChanges="0x000004A0"/>
+    <activity android:theme="@android:010300F0" android:name="sg.bigo.ads.api.LandscapeCompanionAdActivity" android:screenOrientation="0" android:configChanges="0x00000480" android:windowSoftInputMode="0x00000003"/>
+    <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+    <activity android:theme="@7F13016E" android:label="@7F120454" android:icon="@7F0806AB" android:name="com.voxot.tdbodpefbdujwjuzy" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <provider android:name="com.vungle.ads.VungleProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.vungle-provider" android:initOrder="102"/>
+    <activity android:theme="@7F13031E" android:name="com.pvab.niovwa.zdrxvkfguwjlttvjjrtkzmzkpi" android:exported="false"/>
+    <activity android:theme="@android:01030007" android:name="com.thinkup.core.activity.TUGdprAuthActivity" android:exported="false" android:launchMode="2" android:configChanges="0x000005A0"/>
+    <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@7F15000E"/>
+    <activity android:theme="@7F130130" android:name="com.hogtgbgc.vkvjpwrornajlcrerchq" android:exported="false" android:launchMode="1" android:screenOrientation="1"/>
+    <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+    <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+        <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+      </intent-filter>
+    </receiver>
+    <activity android:name="com.taurusx.tax.mraid.MraidVideoPlayerActivity" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerWaterfallSegmentsActivity" android:configChanges="0x40000FB4"/>
+    <receiver android:name="com.android.launcher3.AppWidgetsRestoredReceiver" android:exported="true">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_HOST_RESTORED"/>
+      </intent-filter>
+    </receiver>
+    <activity android:theme="@7F13031E" android:name="com.xyshmunz.alzqvmbifpqxzqfsfqvc" android:exported="false"/>
+    <activity android:name="com.google.android.gms.ads.OutOfContextTestingActivity" android:exported="false" android:configChanges="0x00000FB0"/>
+    <activity android:theme="@7F13031E" android:name="com.hogtgbgc.lccfzbsfbtboxzqfsfqvc" android:exported="false" android:windowSoftInputMode="0x00000010"/>
+    <service android:name="io.appmetrica.analytics.internal.AppMetricaService" android:enabled="true" android:exported="false">
+      <intent-filter>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <action android:name="io.appmetrica.analytics.IAppMetricaService"/>
+        <data android:scheme="appmetrica"/>
+      </intent-filter>
+    </service>
+    <receiver android:name="com.android.launcher3.SessionCommitReceiver" android:exported="true">
+      <intent-filter>
+        <action android:name="android.content.pm.action.SESSION_COMMITTED"/>
+      </intent-filter>
+    </receiver>
+    <provider android:name="io.appmetrica.analytics.internal.PreloadInfoContentProvider" android:enabled="true" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.appmetrica.preloadinfo.retail"/>
+    <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.mobileadsinitprovider" android:initOrder="100"/>
+    <activity android:theme="@android:01030007" android:name="io.bidmachine.iab.mraid.MraidActivity" android:configChanges="0x000004A0" android:hardwareAccelerated="true"/>
+    <meta-data android:name="preloaded_fonts" android:resource="@7F03000A"/>
+    <activity android:theme="@android:01030011" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" android:exported="false" android:configChanges="0x40000FFF" android:hardwareAccelerated="false"/>
+    <activity android:theme="@android:01030011" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" android:exported="false" android:configChanges="0x40000FFF" android:hardwareAccelerated="true"/>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerTcfStringActivity" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1302C9" android:name="com.pvab.vhdufkdfwlylwbw" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:name="com.artifex.mupdf.viewer.DocumentActivity" android:exported="false" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F1302CA" android:name="com.voxot.zihmofuhufkn"/>
+    <activity android:theme="@android:01030075" android:name="sg.bigo.ads.api.LandingStyleableActivity" android:screenOrientation="3" android:configChanges="0x00000480" android:windowSoftInputMode="0x00000003"/>
+    <service android:name="com.pvab.ccudknqk.xrfqqyttqxxjwanhju" android:enabled="true" android:exported="true" android:foregroundServiceType="0x40000000"/>
+    <activity android:theme="@7F1302C9" android:name="com.mqabjsgl.bapxyxf.jqognqcfkpicevkxkvax" android:exported="false" android:screenOrientation="1"/>
+    <activity android:theme="@7F1304EC" android:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@android:01030007" android:name="com.thinkup.core.common.inner.ui.TUPortraitActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="android.intent.action.BATTERY_OKAY"/>
+        <action android:name="android.intent.action.BATTERY_LOW"/>
+      </intent-filter>
+    </receiver>
+    <activity android:name="com.applovin.sdk.AppLovinWebViewActivity" android:configChanges="0x40000FB4"/>
+    <meta-data android:name="android.nfc.disable_beam_default" android:value="true"/>
+    <activity android:theme="@7F130171" android:name="com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.mraid.MraidActivity" android:exported="false" android:screenOrientation="10" android:configChanges="0x000005A0"/>
+    <activity android:theme="@7F1302C9" android:name="com.ccudknqk.xxnido.dlijvuahpulyhjapcpafs" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:theme="@7F1302CB" android:label="@7F120074" android:name="com.niovwa.bvikj.nkgvncxjiovdizmvxodqdote" android:exported="true" android:screenOrientation="1">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:name="com.taurusx.tax.mraid.MraidBrowser" android:configChanges="0x000004A0" android:hardwareAccelerated="true"/>
+    <activity android:theme="@android:01030007" android:name="com.vungle.ads.internal.ui.VungleActivity" android:launchMode="1" android:configChanges="0x00000FA0" android:hardwareAccelerated="true"/>
+    <activity android:name="com.bytedance.sdk.openadsdk.activity.TTCeilingLandingPageActivity" android:launchMode="0" android:configChanges="0x000004A0">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <activity android:theme="@7F1302C9" android:name="com.bapxyxf.mqbbfqwuhqffbyutqsjylyjoj" android:exported="false" android:screenOrientation="1"/>
+    <activity android:theme="@7F130171" android:name="com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.staticrenderer.StaticAdActivity" android:exported="false" android:screenOrientation="10" android:configChanges="0x000005A0"/>
+    <activity android:theme="@7F130194" android:name="com.yandex.mobile.ads.common.AdActivity" android:configChanges="0x00000FB0" android:enableOnBackInvokedCallback="false"/>
+    <activity android:name="com.ironsource.sdk.controller.ControllerActivity" android:exported="false" android:configChanges="0x00000480" android:hardwareAccelerated="true"/>
+    <meta-data android:name="com.bytedance.sdk.pangle.version" android:value="7.8.7.2"/>
+    <activity android:theme="@android:01030007" android:name="com.taurusx.tax.ui.TaxVideoActivity" android:screenOrientation="3" android:configChanges="0x000004A0"/>
+    <uses-library android:name="android.ext.adservices" android:required="false"/>
+    <activity android:theme="@android:01030011" android:name="com.smartdigimkt.expressad.reward.player.ATRewardVideoActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <activity android:name="com.fyber.inneractive.sdk.activities.FyberReportAdActivity" android:screenOrientation="13" android:configChanges="0x00000DA0" android:hardwareAccelerated="true"/>
+    <activity android:theme="@7F13013C" android:name="com.yandex.mobile.ads.features.debugpanel.ui.IntegrationInspectorActivity" android:exported="false" android:enableOnBackInvokedCallback="false"/>
+    <activity android:theme="@7F130130" android:name="com.pvab.mqabjsgl.zosynfuyvtugnpgvivglm" android:exported="false" android:launchMode="1" android:screenOrientation="1"/>
+    <activity android:theme="@android:010300F0" android:name="sg.bigo.ads.api.AdActivity" android:screenOrientation="1" android:configChanges="0x00000480" android:windowSoftInputMode="0x00000003"/>
+    <activity android:theme="@7F13031E" android:name="com.xxnido.vfrem.osgmkgxxgtmkyixkktt" android:exported="false"/>
+    <provider android:name="com.android.quickstep.LauncherSearchIndexablesProvider" android:permission="android.permission.READ_SEARCH_INDEXABLES" android:exported="true" android:multiprocess="true" android:authorities="com.alldocument.fileviewer.tools" android:grantUriPermissions="true">
+      <intent-filter>
+        <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
+      </intent-filter>
+    </provider>
+    <activity android:theme="@android:01030007" android:name="io.bidmachine.rendering.ad.view.ExpandActivity" android:configChanges="0x00000FB0" android:hardwareAccelerated="true"/>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@android:01030007" android:name="io.bidmachine.rendering.ad.fullscreen.FullScreenActivity" android:configChanges="0x00000FB0" android:hardwareAccelerated="true"/>
+    <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+      </intent-filter>
+    </receiver>
+    <activity android:theme="@android:01030055" android:name="com.android.launcher3.hybridhotseat.HotseatEduActivity" android:permission="com.alldocument.fileviewer.tools.permission.HOTSEAT_EDU" android:exported="true" android:clearTaskOnLaunch="true" android:launchMode="2" android:noHistory="true">
+      <intent-filter>
+        <action android:name="com.android.launcher3.action.SHOW_HYBRID_HOTSEAT_EDU"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <provider android:name="com.android.launcher3.graphics.GridCustomizationsProvider" android:exported="true" android:authorities="com.alldocument.fileviewer.tools.grid_control"/>
+    <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+      </intent-filter>
+    </receiver>
+    <activity android:theme="@7F130389" android:name="sg.bigo.ads.api.PopupAdActivity" android:screenOrientation="1" android:configChanges="0x00000480" android:windowSoftInputMode="0x00000003"/>
+    <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+      </intent-filter>
+    </receiver>
+    <meta-data android:name="xyz.paphonb.quickstepswitcher.minSdk" android:value="30"/>
+    <activity android:theme="@android:01030007" android:name="com.taurusx.tax.ui.TaurusxH5Activity" android:configChanges="0x000004A0"/>
+    <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+    <activity android:theme="@7F13016E" android:label="@7F120135" android:icon="@7F080631" android:name="com.vfrem.nzfazydlnetgtejo" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@7F130000" android:name="com.android.launcher3.dragndrop.AddItemActivity" android:exported="true" android:excludeFromRecents="false" android:autoRemoveFromRecents="true">
+      <intent-filter>
+        <action android:name="android.content.pm.action.CONFIRM_PIN_SHORTCUT"/>
+        <action android:name="android.content.pm.action.CONFIRM_PIN_APPWIDGET"/>
+      </intent-filter>
+    </activity>
+    <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+      <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+    </receiver>
+    <activity android:theme="@7F130175" android:label="@7F12052A" android:name="com.android.launcher3.settings.SettingsActivity" android:exported="true" android:autoRemoveFromRecents="true">
+      <intent-filter android:priority="-1">
+        <action android:name="android.intent.action.APPLICATION_PREFERENCES"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="com.alldocument.fileviewer.tools"/>
+    <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        <action android:name="android.intent.action.TIME_SET"/>
+        <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <activity android:theme="@7F13016E" android:name="com.ccudknqk.niovwa.nuskgizoutgizobozet" android:enabled="true" android:exported="true"/>
+    <provider android:name="com.yandex.mobile.ads.core.initializer.MobileAdsInitializeProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.MobileAdsInitializeProvider"/>
+    <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" android:value="true"/>
+    <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@7F05001B" android:exported="true" android:directBootAware="false"/>
+    <activity android:theme="@7F13016E" android:label="@7F1203A4" android:icon="@7F080697" android:name="com.ccudknqk.niovwa.hyqmuwncpcnsf" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <provider android:name="com.facebook.ads.AudienceNetworkContentProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.AudienceNetworkContentProvider"/>
+    <activity android:name="sg.bigo.ads.controller.form.AdFormActivity" android:windowSoftInputMode="0x00000020"/>
+    <activity android:theme="@android:01030007" android:name="io.bidmachine.iab.vast.activity.VastActivity" android:configChanges="0x000004A0" android:hardwareAccelerated="true"/>
+    <provider android:name="com.smartdigimkt.sdk.api.SDMInitializationProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.sdm.initatprovider"/>
+    <activity android:theme="@android:01030007" android:name="com.applovin.adview.AppLovinFullscreenActivity" android:exported="false" android:launchMode="1" android:screenOrientation="3" android:configChanges="0x40000FB4" android:hardwareAccelerated="true"/>
+    <uses-library android:name="androidx.window.extensions" android:required="false"/>
+    <meta-data android:name="com.google.android.gms.version" android:value="@7F0B001C"/>
+    <activity android:name="com.mqabjsgl.niovwa.vkdsbuwbsoqhwjwhml" android:exported="false" android:configChanges="0x000004A0"/>
+    <service android:name="com.google.android.gms.ads.AdService" android:enabled="true" android:exported="false"/>
+    <activity android:theme="@7F130521" android:name="com.smartdigimkt.sdk.basead.ui.ATPortraitTranslucentActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <activity android:name="com.artifex.mupdf.viewer.OutlineActivity" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F13053B" android:name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageLink2Activity" android:launchMode="0" android:configChanges="0x000004A0">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerActivity" android:configChanges="0x40000FB4"/>
+    <activity android:name="com.fyber.inneractive.sdk.activities.InneractiveInternalBrowserActivity" android:screenOrientation="13" android:configChanges="0x00000DA0" android:hardwareAccelerated="true"/>
+    <activity android:theme="@android:01030006" android:name="com.taurusx.tax.utils.webview.TaxBrowserActivity" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F1302C9" android:name="com.hogtgbgc.mqbbfqfuheluhlyumqsjylyjoj" android:exported="false" android:screenOrientation="1"/>
+    <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+      <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+    </service>
+    <receiver android:name="com.mbridge.msdk.foundation.same.broadcast.NetWorkChangeReceiver" android:exported="true">
+      <intent-filter>
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <activity android:theme="@7F130516" android:name="com.mbridge.msdk.activity.MBCommonActivity" android:exported="false" android:configChanges="0x00000090"/>
+    <activity android:theme="@android:01030007" android:name="com.unity3d.services.ads.adunit.AdUnitActivity" android:exported="false" android:configChanges="0x40000FFF" android:hardwareAccelerated="true"/>
+    <activity android:theme="@7F13031E" android:name="com.mqabjsgl.ittiqjufifhynanydu" android:exported="false"/>
+    <activity android:theme="@7F13031E" android:name="com.bapxyxf.lzbazepknwyperepud" android:exported="false" android:windowSoftInputMode="0x00000010"/>
+    <provider android:name="com.taurusx.tax.core.TaurusXProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.taurusxfileprovider" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@7F150013"/>
+    </provider>
+    <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@7F050019" android:exported="false" android:directBootAware="false"/>
+    <activity android:theme="@7F13016E" android:label="@7F120053" android:icon="@7F080600" android:name="com.vfrem.juujyybjlcrerchq" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@7F13016E" android:label="@7F120644" android:icon="@7F0806E9" android:name="com.hogtgbgc.ycnnrcrgtcevkxkvax" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@7F130533" android:name="com.bytedance.sdk.openadsdk.activity.TTAppOpenAdActivity" android:launchMode="0" android:configChanges="0x000004A0">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <activity android:name="com.bapxyxf.tievkpiqzvwvpwumr" android:enabled="true" android:exported="true" android:taskAffinity="" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:launchMode="2" android:screenOrientation="-1" android:configChanges="0x00003DF7" android:windowSoftInputMode="0x00000020" android:resumeWhilePausing="true" android:resizeableActivity="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data android:name="com.android.launcher3.grid.control" android:value="com.alldocument.fileviewer.tools.grid_control"/>
+    </activity>
+    <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+    <activity android:theme="@android:01030007" android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" android:exported="false" android:configChanges="0x40000FFF" android:hardwareAccelerated="false"/>
+    <activity android:theme="@7F130008" android:label="@7F120067" android:name="com.android.quickstep.interaction.AllSetActivity" android:permission="android.permission.REBOOT" android:exported="true" android:excludeFromRecents="false" android:screenOrientation="1" android:autoRemoveFromRecents="true">
+      <intent-filter>
+        <action android:name="com.android.quickstep.action.GESTURE_ONBOARDING_ALL_SET"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@7F13053D" android:name="com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity" android:launchMode="0" android:screenOrientation="1">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <activity android:theme="@7F13031E" android:name="com.niovwa.vfrem.quiombwxlnxzmdqmeikbqdqbgr" android:exported="false"/>
+    <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" android:value="true"/>
+    <activity android:theme="@7F130171" android:name="com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.templates.renderer.fullscreen.FullscreenWebviewActivity" android:exported="false" android:configChanges="0x000005A0"/>
+    <activity android:theme="@android:01030011" android:name="com.smartdigimkt.sdk.basead.ui.RewardExitConfirmDialogActivity" android:exported="false"/>
+    <activity android:name="androidx.compose.ui.tooling.PreviewActivity" android:exported="true"/>
+    <activity android:theme="@7F1302C9" android:name="com.mqabjsgl.vfrem.wlcmkxxsxqkmdsfsdip" android:exported="false" android:screenOrientation="1"/>
+    <activity android:theme="@android:01030005" android:name="sg.bigo.ads.ad.splash.AdSplashActivity" android:screenOrientation="1"/>
+    <activity android:theme="@7F13016E" android:label="@7F1201D4" android:icon="@7F080642" android:name="com.niovwa.ccudknqk.lrgynromnzgizobozet" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@7F13031E" android:name="com.bvikj.yjxnzvmxcvxodqdote" android:exported="false" android:windowSoftInputMode="0x00000014"/>
+    <activity android:theme="@android:0103000F" android:name="com.ironsource.sdk.controller.OpenUrlActivity" android:exported="false" android:configChanges="0x00000480" android:hardwareAccelerated="true"/>
+    <activity android:theme="@android:01030007" android:name="com.fyber.inneractive.sdk.activities.InneractiveRichMediaVideoPlayerActivityCore" android:configChanges="0x00000DA0" android:hardwareAccelerated="true"/>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" android:configChanges="0x40000FB4"/>
+    <service android:name="com.applovin.impl.adview.activity.FullscreenAdService" android:exported="false" android:stopWithTask="false"/>
+    <activity android:theme="@7F1302C9" android:name="com.x.im.dXnV" android:exported="false" android:screenOrientation="1"/>
+    <activity android:theme="@7F13031E" android:name="com.mqabjsgl.ccudknqk.sgiylhzhudfwlylwbw" android:exported="false" android:configChanges="0x000004A0" android:windowSoftInputMode="0x00000010"/>
+    <activity android:theme="@7F1302C9" android:name="com.ccudknqk.hogtgbgc.tgugvjqoguetggpcevkxkvax" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:theme="@android:01030007" android:name="sg.bigo.ads.core.mraid.MraidVideoActivity" android:screenOrientation="1" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerCmpNetworksListActivity" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@android:01030007" android:name="com.fyber.inneractive.sdk.activities.InneractiveFullscreenAdActivity" android:configChanges="0x00000DA0" android:hardwareAccelerated="true"/>
+    <activity android:theme="@android:01030005" android:name="sg.bigo.ads.ad.splash.LandscapeAdSplashActivity" android:screenOrientation="0"/>
+    <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+    <provider android:name="org.chickenhook.restrictionbypass.BypassProvider" android:enabled="true" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.restrictionbypass"/>
+    <activity android:theme="@7F1304E9" android:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" android:excludeFromRecents="false" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F13016E" android:label="@7F120148" android:icon="@7F0F0008" android:name="com.pvab.bapxyxf.rqqpbmsqmofuhufkn" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@7F130388" android:name="com.ccudknqk.voxot.ysgrrzuuryjugizoutgizobozet" android:exported="false" android:excludeFromRecents="false" android:screenOrientation="1"/>
+    <activity android:theme="@7F130320" android:name="com.vfrem.tgokpfgtcevkxkvax" android:exported="false"/>
+    <activity android:theme="@android:01030010" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+    <activity android:theme="@7F130534" android:name="com.bytedance.sdk.openadsdk.activity.TTAppOpenAdTransActivity" android:launchMode="0" android:configChanges="0x000004A0">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <activity android:theme="@7F13031D" android:label="@7F120074" android:name="com.pvab.hogtgbgc.drtzwghoqhwjwhml" android:launchMode="2" android:configChanges="0x00000480"/>
+    <activity android:theme="@7F1302C9" android:name="com.niovwa.voxot.ylpxtmaxkwxmtbetvmbobmrg" android:screenOrientation="1"/>
+    <provider android:name="com.mbridge.msdk.config.component.status.MBComponentLifecycleProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.mbcomponentlifcycleprovider"/>
+    <activity android:theme="@7F13053A" android:name="com.bytedance.sdk.openadsdk.activity.TTAdActivity" android:launchMode="0" android:configChanges="0x000004A0">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <meta-data android:name="com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION" android:value="false"/>
+    <activity android:theme="@7F1304EC" android:name="com.applovin.creative.MaxCreativeDebuggerActivity" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F1302C9" android:name="com.xxnido.mqabjsgl.bnccrwpyjpnjlcrerchq" android:exported="false" android:screenOrientation="1"/>
+    <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.overview.fileprovider" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@7F150014"/>
+    </provider>
+    <activity android:theme="@android:01030007" android:name="com.unity3d.ads.adplayer.FullScreenWebViewDisplay" android:exported="false" android:configChanges="0x40000FFF" android:hardwareAccelerated="true"/>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerTcfInfoListActivity" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@7F13016E" android:label="@7F120648" android:icon="@7F0806EB" android:name="com.xxnido.hogtgbgc.iqmftqdmofuhufkn" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@android:01030010" android:name="com.fyber.inneractive.sdk.activities.InternalStoreWebpageActivity" android:excludeFromRecents="false" android:screenOrientation="4" android:configChanges="0x00000DA0"/>
+    <activity android:theme="@7F1302C9" android:name="com.voxot.jylesyecyargtgrwb" android:exported="false" android:screenOrientation="1"/>
+    <activity android:name="com.android.quickstep.interaction.GestureSandboxActivity" android:exported="true" android:excludeFromRecents="false" android:screenOrientation="1" android:autoRemoveFromRecents="true">
+      <intent-filter>
+        <action android:name="com.android.quickstep.action.GESTURE_SANDBOX"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <service android:name="com.z.ply.JKlnL" android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <activity android:theme="@7F13031E" android:name="com.mqabjsgl.vfrem.ncvbokckxgizobozet" android:exported="false"/>
+    <activity android:theme="@android:01030011" android:name="com.android.launcher3.proxy.ProxyActivityStarter" android:exported="false" android:clearTaskOnLaunch="true" android:launchMode="2"/>
+    <activity android:theme="@7F13038A" android:name="com.voxot.crezvffvbaerdhrfgnpgvivglm" android:exported="false" android:excludeFromRecents="false" android:screenOrientation="1" android:noHistory="true"/>
+    <activity android:theme="@android:01030010" android:name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity" android:launchMode="0">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <provider android:name="com.yandex.mobile.ads.features.debugpanel.data.local.DebugPanelFileProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.monetization.ads.inspector.fileprovider" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@7F150004"/>
+    </provider>
+    <activity android:theme="@7F13052C" android:name="com.thinkup.core.common.inner.ui.TUPortraitTranslucentActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <activity android:name="com.xyshmunz.snxrynhapurenpgvivglm" android:enabled="false" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.HOME"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <service android:name="com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService"/>
+    <activity android:theme="@7F13031E" android:name="com.hogtgbgc.qegfyufsobmmpbejohbdujwjuzy" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="application/pdf"/>
+      </intent-filter>
+    </activity>
+    <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <provider android:name="com.ironsource.lifecycle.IronsourceLifecycleProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.IronsourceLifecycleProvider"/>
+    <activity android:theme="@7F13053B" android:name="com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity" android:launchMode="0" android:configChanges="0x000004A0">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <activity android:theme="@android:01030010" android:name="com.taurusx.tax.ui.TaxWebViewActivity" android:configChanges="0x000004A0"/>
+    <activity android:theme="@android:0103000F" android:name="com.ironsource.sdk.controller.InterstitialActivity" android:exported="false" android:configChanges="0x00000480" android:hardwareAccelerated="true"/>
+    <activity android:theme="@android:01030007" android:name="com.taurusx.tax.ui.AppOpenAdActivity" android:screenOrientation="3" android:configChanges="0x000004A0"/>
+    <activity android:theme="@android:010300F0" android:name="sg.bigo.ads.api.CompanionAdActivity" android:screenOrientation="1" android:configChanges="0x00000480" android:windowSoftInputMode="0x00000003"/>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity" android:configChanges="0x40000FB4"/>
+    <provider android:name="com.applovin.sdk.AppLovinInitProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.applovininitprovider" android:initOrder="101"/>
+    <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+      <intent-filter android:priority="-500">
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <activity android:theme="@android:01030010" android:name="com.facebook.ads.AudienceNetworkActivity" android:exported="false" android:configChanges="0x00000DA0"/>
+    <activity android:theme="@7F13031E" android:name="com.ccudknqk.pvab.ycqwuiubusjishuudj" android:exported="false"/>
+    <activity android:theme="@7F1302C9" android:name="com.pvab.bjgfhynanydu" android:launchMode="2" android:screenOrientation="1"/>
+    <activity android:theme="@android:01030007" android:name="com.smartdigimkt.sdk.basead.ui.ATPortraitActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+    <provider android:name="com.bvikj.paogyqzfbdahupqdn" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.fileprovider" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@7F15000C"/>
+    </provider>
+    <activity android:theme="@7F130179" android:name="com.android.quickstep.RecentsActivity" android:taskAffinity="" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:excludeFromRecents="false" android:launchMode="2" android:screenOrientation="-1" android:configChanges="0x00001DF3" android:resumeWhilePausing="true" android:resizeableActivity="true"/>
+    <activity android:theme="@7F13053B" android:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity" android:launchMode="0" android:screenOrientation="1" android:configChanges="0x000004A0">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <activity android:theme="@android:0103000A" android:name="io.bidmachine.nativead.view.VideoPlayerActivity"/>
+    <activity android:theme="@7F13053A" android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity" android:launchMode="0" android:configChanges="0x000004A0">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <activity android:name="app.lawnchair.LawnchairLauncher" android:enabled="true" android:exported="true" android:taskAffinity="" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:launchMode="2" android:screenOrientation="-1" android:configChanges="0x00003DF7" android:windowSoftInputMode="0x00000020" android:resumeWhilePausing="true" android:resizeableActivity="true"/>
+    <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" android:configChanges="0x40000FB4"/>
+    <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.androidx-startup">
+      <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="com.unity3d.services.core.configuration.AdsSdkInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="com.king.logx.initialize.LogXInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+    </provider>
+    <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+    <activity android:theme="@android:01030010" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:exported="false" android:taskAffinity="" android:excludeFromRecents="false" android:launchMode="2"/>
+    <service android:name="com.android.quickstep.TouchInteractionService" android:permission="android.permission.STATUS_BAR_SERVICE" android:exported="true" android:directBootAware="true">
+      <intent-filter>
+        <action android:name="android.intent.action.QUICKSTEP_SERVICE"/>
+      </intent-filter>
+    </service>
+    <activity android:theme="@7F13016E" android:label="@7F12020E" android:icon="@7F08065F" android:name="com.vfrem.fzldbdmsdqzbshuhsxa" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@7F130130" android:name="com.xxnido.hogtgbgc.pevfdqfrghdfwlylwbw" android:exported="false" android:launchMode="1" android:screenOrientation="1"/>
+    <meta-data android:name="xyz.paphonb.quickstepswitcher.maxSdk" android:value="31"/>
+    <receiver android:name="com.appsflyer.SingleInstallBroadcastReceiver" android:exported="true">
+      <intent-filter>
+        <action android:name="com.android.vending.INSTALL_REFERRER"/>
+      </intent-filter>
+    </receiver>
+    <activity android:theme="@7F130320" android:name="com.ccudknqk.mqabjsgl.ojjgnomvinazmvxodqdote" android:exported="false"/>
+    <activity android:theme="@7F130171" android:name="com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.vast.VastActivity" android:exported="false" android:screenOrientation="10" android:configChanges="0x000005A0"/>
+    <service android:name="androidx.camera.core.impl.MetadataHolderService" android:enabled="false" android:exported="false">
+      <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+    </service>
+    <provider android:name="com.thinkup.core.api.TUInitializationProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.thinkup.initatprovider"/>
+    <activity android:theme="@7F130388" android:name="com.voxot.klmhbsashbujolyapwzhjapcpafs" android:exported="false" android:excludeFromRecents="false" android:launchMode="3" android:configChanges="0x00000D80"/>
+    <activity android:name="androidx.slice.compat.SlicePermissionActivity" android:excludeFromRecents="false"/>
+    <activity android:theme="@7F13031E" android:name="com.voxot.dhvbzojkyaxjiqzmodibvxodqdote" android:exported="false"/>
+    <activity android:theme="@android:01030006" android:name="com.ironsource.mediationsdk.testSuite.TestSuiteActivity" android:exported="false" android:configChanges="0x00000480" android:hardwareAccelerated="true">
+      <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+    </activity>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerDetailActivity" android:configChanges="0x40000FB4"/>
+    <provider android:name="sg.bigo.ads.controller.provider.BigoAdsProvider" android:exported="false" android:authorities="com.alldocument.fileviewer.tools.BigoAdsProvider"/>
+    <activity android:name="com.bvikj.ncypejcktjqogx" android:enabled="false" android:exported="true" android:taskAffinity="" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:launchMode="2" android:screenOrientation="-1" android:configChanges="0x00003DF7" android:windowSoftInputMode="0x00000020" android:resumeWhilePausing="true" android:resizeableActivity="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.HOME"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data android:name="com.android.launcher3.grid.control" android:value="com.alldocument.fileviewer.tools.grid_control"/>
+    </activity>
+    <activity android:theme="@android:01030007" android:name="com.thinkup.core.common.inner.ui.activity.TUMixSplashActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000004B0"/>
+    <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    <activity android:theme="@7F1302C9" android:name="com.kwai.network.framework.adCommon.activity.AllianceEmptyShellActivity" android:exported="false" android:screenOrientation="1"/>
+    <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@7F05001A" android:exported="false" android:directBootAware="false"/>
+    <activity android:theme="@android:0103000D" android:name="com.smartdigimkt.sdk.basead.ui.web.WebLandPageActivity" android:exported="false" android:launchMode="1" android:configChanges="0x000005A0" android:windowSoftInputMode="0x00000010"/>
+    <activity android:theme="@android:01030007" android:name="com.taurusx.tax.ui.AppOpenNativeAdActivity" android:screenOrientation="3" android:configChanges="0x000004A0"/>
+    <activity android:theme="@7F1302D3" android:label="@7F120028" android:icon="@7F080666" android:name="app.lawnchair.ui.preferences.PreferenceActivity" android:exported="false" android:taskAffinity="com.alldocument.fileviewer.tools.tasks.SETTINGS" android:excludeFromRecents="false" android:screenOrientation="1" android:windowSoftInputMode="0x00000010" android:autoRemoveFromRecents="true">
+      <intent-filter android:priority="1">
+        <action android:name="android.intent.action.APPLICATION_PREFERENCES"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@7F130521" android:name="com.smartdigimkt.sdk.basead.ui.ATLandscapeTranslucentActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+    <activity android:theme="@7F1302C9" android:name="com.mqabjsgl.hogtgbgc.nctdbosftvmubdujwjuzy" android:exported="false" android:screenOrientation="1"/>
+    <activity android:theme="@7F130011" android:name="com.android.launcher3.secondarydisplay.SecondaryDisplayLauncher" android:enabled="true" android:exported="true" android:launchMode="1">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.SECONDARY_HOME"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerUnifiedFlowActivity" android:configChanges="0x40000FB4"/>
+    <service android:name="com.google.firebase.sessions.SessionLifecycleService" android:enabled="true" android:exported="false"/>
+    <activity android:theme="@7F1302C9" android:name="com.ccudknqk.mqabjsgl.osddvwlsadsulanalqh" android:exported="false" android:screenOrientation="1"/>
+    <activity android:theme="@7F13053A" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity" android:launchMode="0" android:configChanges="0x000004A0">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <activity android:theme="@7F13053A" android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity" android:launchMode="0" android:configChanges="0x000004A0">
+      <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+    </activity>
+    <activity android:theme="@7F1302C9" android:name="com.mqabjsgl.bapxyxf.qxgtxkgycevkxkvax" android:exported="false" android:screenOrientation="1"/>
+    <activity android:theme="@7F1302C9" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="0x00000FB0" android:enableOnBackInvokedCallback="false"/>
+    <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+    <provider android:name="com.android.launcher3.LauncherProvider" android:readPermission="com.alldocument.fileviewer.tools.permission.READ_SETTINGS" android:writePermission="com.alldocument.fileviewer.tools.permission.WRITE_SETTINGS" android:exported="true" android:authorities="com.alldocument.fileviewer.tools.settings"/>
+    <activity android:theme="@7F13031E" android:name="com.ccudknqk.mqabjsgl.avvshjapcpafs" android:exported="false" android:windowSoftInputMode="0x00000010"/>
+    <provider android:name="com.didi.drouter.store.LoadProvider" android:exported="false" android:multiprocess="true" android:authorities="com.alldocument.fileviewer.tools.drouter.init.provider"/>
+    <activity android:theme="@7F13052C" android:name="com.thinkup.core.common.inner.ui.TULandscapeTranslucentActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <activity android:theme="@7F1304F1" android:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" android:configChanges="0x40000FB4"/>
+    <activity android:theme="@android:01030007" android:name="com.thinkup.core.common.inner.ui.TULandscapeActivity" android:exported="false" android:launchMode="0" android:configChanges="0x000005A0"/>
+    <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+    <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+    <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+    <meta-data android:name="com.android.vending.splits" android:resource="@7F15001D"/>
+    <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+  </application>
+</manifest>

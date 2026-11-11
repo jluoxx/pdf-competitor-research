@@ -1,4 +1,4 @@
-package,engine,id,operation,arguments,started,ended,raw_path,usable,failure_reason
+﻿package,engine,id,operation,arguments,started,ended,raw_path,usable,failure_reason
 com.pdfeditor.documentviewer.pdfstudio.docworks,rea,001_package,inspect_android_package,"{""path"": ""C:\\Users\\asus\\Desktop\\竞品apk1\\com.pdfeditor.documentviewer.pdfstudio.docworks\\base.apk""}",2026-11-10T06:34:29.840Z,2026-11-10T06:34:52.925Z,raw\com.pdfeditor.documentviewer.pdfstudio.docworks\rea\001_package.json,True,
 com.document.pdf.scanner.free.all,rea,001_package,inspect_android_package,"{""path"": ""C:\\Users\\asus\\Desktop\\竞品apk1\\com.document.pdf.scanner.free.all\\base.apk""}",2026-11-10T06:39:41.908Z,2026-11-10T06:40:01.622Z,raw\com.document.pdf.scanner.free.all\rea\001_package.json,True,
 com.pdfhero.dclor.avtlo,rea,001_package,inspect_android_package,"{""path"": ""C:\\Users\\asus\\Desktop\\竞品apk1\\com.pdfhero.dclor.avtlo\\base.apk""}",2026-11-10T06:40:01.629Z,2026-11-10T06:40:08.708Z,raw\com.pdfhero.dclor.avtlo\rea\001_package.json,True,

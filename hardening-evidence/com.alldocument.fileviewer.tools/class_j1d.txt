@@ -1,0 +1,32 @@
+CLASS Lj1d;
+
+METHOD <clinit> ()V
+000000: return-void 
+
+METHOD a ([B [B)Ljava/lang/String;
+000000: new-instance v0, Ljava/lang/String;
+000004: invoke-static v1, v2, Lj1d;->b([B [B)[B
+00000a: move-result-object v1
+00000c: sget-object v2, Ljava/nio/charset/StandardCharsets;->UTF_8 Ljava/nio/charset/Charset;
+000010: invoke-direct v0, v1, v2, Ljava/lang/String;-><init>([B Ljava/nio/charset/Charset;)V
+000016: return-object v0
+
+METHOD b ([B [B)[B
+000000: array-length v0, v7
+000002: array-length v1, v8
+000004: const/4 v2, 0
+000006: move v3, v2
+000008: move v4, v3
+00000a: if-ge v3, v0, +012h
+00000e: if-lt v4, v1, +003h
+000012: move v4, v2
+000014: aget-byte v5, v7, v3
+000018: aget-byte v6, v8, v4
+00001c: xor-int/2addr v5, v6
+00001e: int-to-byte v5, v5
+000020: aput-byte v5, v7, v3
+000024: add-int/lit8 v3, v3, 1
+000028: add-int/lit8 v4, v4, 1
+00002c: goto -11h
+00002e: return-object v7
+

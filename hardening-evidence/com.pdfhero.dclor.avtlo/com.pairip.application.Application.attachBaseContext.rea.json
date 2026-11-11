@@ -1,0 +1,169 @@
+{
+  "args": {
+    "path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.pdfhero.dclor.avtlo\\base.apk",
+    "class_name": "com.pairip.application.Application",
+    "method_name": "attachBaseContext"
+  },
+  "started": "2026-11-10T10:17:55.415Z",
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_66dd87a3e0fe3ea4030bb5172421bdd2e681c794d90365496d01ff6dc4834bf4\",\"subject\":{\"name\":\"base.apk\",\"digest\":{\"sha256\":\"271d5bd588b8a1a6b9bdedb28c1016c9990dde750d5ea7c7f2a11d9413367318\"},\"local_path\":\"C:\\\\Users\\\\asus\\\\Desktop\\\\竞品apk1\\\\com.pdfhero.dclor.avtlo\\\\base.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_method\",\"parameters\":{\"path\":\"C:\\\\Users\\\\asus\\\\Desktop\\\\竞品apk1\\\\com.pdfhero.dclor.avtlo\\\\base.apk\",\"class_name\":\"com.pairip.application.Application\",\"method_name\":\"attachBaseContext\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"7\"},\"bridge_sha256\":\"e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Temp\\\\rea-android-dde005435cea97cacede277dc6cff722\\\\target.apk\",\"class_count\":13642,\"resource_count\":1609,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"engine_reported_version\\\":\\\"0.7.1\\\",\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":3221225472,\\\"java_version\\\":\\\"17.0.12\\\",\\\"available_processors\\\":3}\"}],\"isError\":false}},{\"operation\":\"load_apk\",\"input\":{\"path\":\"C:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Temp\\\\rea-android-dde005435cea97cacede277dc6cff722\\\\target.apk\",\"threads\":1,\"resources\":\"full\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"state\\\":\\\"LOADED\\\",\\\"apk_path\\\":\\\"C:\\\\\\\\Users\\\\\\\\asus\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\rea-android-dde005435cea97cacede277dc6cff722\\\\\\\\target.apk\\\",\\\"class_count\\\":13642,\\\"raw_class_count\\\":13642,\\\"resource_count\\\":1609,\\\"load_duration_ms\\\":5750,\\\"decompile_timeout_ms\\\":90000,\\\"threads\\\":1,\\\"code_cache_size\\\":64,\\\"resources\\\":\\\"full\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"com.pairip.application.Application\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"fields\\\":[],\\\"methods\\\":[{\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"is_constructor\\\":true,\\\"dex_descriptor\\\":\\\"()V\\\",\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(): void\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"attachBaseContext\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Landroid/content/Context;)V\\\",\\\"signature\\\":\\\"attachBaseContext(android.content.Context): void\\\",\\\"def_pos\\\":0}],\\\"inner_classes\\\":[],\\\"inner_class_count\\\":0,\\\"name\\\":\\\"Application\\\",\\\"field_count\\\":0,\\\"full_name\\\":\\\"com.pairip.application.Application\\\",\\\"method_count\\\":2,\\\"raw_name\\\":\\\"com.pairip.application.Application\\\"}\"}],\"isError\":false}},{\"operation\":\"get_method_body\",\"input\":{\"class_name\":\"com.pairip.application.Application\",\"method_name\":\"attachBaseContext\",\"overload_index\":0,\"smali_fallback\":true},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"overload_count\\\":1,\\\"dex_descriptor\\\":\\\"(Landroid/content/Context;)V\\\",\\\"class_name\\\":\\\"com.pairip.application.Application\\\",\\\"mode\\\":\\\"java\\\",\\\"body\\\":\\\"/* JADX INFO: loaded from: classes.dex */\\\\r\\\\npublic class Application extends DocumentHeroApplication {\\\\r\\\\n    /* JADX INFO: Access modifiers changed from: protected */\\\\r\\\\n    @Override // com.pdfhero.dclor.avtlo.scene.shell.runtime.DocumentHeroApplication, android.content.ContextWrapper\\\\r\\\\n    public void attachBaseContext(Context context) {\\\\r\\\\n        LicenseClient.checkLicense(context);\\\\r\\\\n        super.attachBaseContext(context);\\\\r\\\\n    }\\\",\\\"markers\\\":[],\\\"fell_back\\\":false,\\\"full_name\\\":\\\"com.pairip.application.Application.attachBaseContext\\\",\\\"overload_index\\\":0,\\\"method_name\\\":\\\"attachBaseContext\\\"}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":3072},\"class_name\":\"com.pairip.application.Application\",\"method\":{\"name\":\"attachBaseContext\",\"reported_signature\":\"attachBaseContext(android.content.Context): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;)V\"},\"overload_count\":1,\"representation\":\"java\",\"body_status\":\"available\",\"fell_back\":false,\"markers\":[],\"source\":{\"status\":\"complete\",\"text\":\"/* JADX INFO: loaded from: classes.dex */\\r\\npublic class Application extends DocumentHeroApplication {\\r\\n    /* JADX INFO: Access modifiers changed from: protected */\\r\\n    @Override // com.pdfhero.dclor.avtlo.scene.shell.runtime.DocumentHeroApplication, android.content.ContextWrapper\\r\\n    public void attachBaseContext(Context context) {\\r\\n        LicenseClient.checkLicense(context);\\r\\n        super.attachBaseContext(context);\\r\\n    }\",\"reported_total_bytes\":null}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_66dd87a3e0fe3ea4030bb5172421bdd2e681c794d90365496d01ff6dc4834bf4",
+      "subject": {
+        "name": "base.apk",
+        "digest": {
+          "sha256": "271d5bd588b8a1a6b9bdedb28c1016c9990dde750d5ea7c7f2a11d9413367318"
+        },
+        "local_path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.pdfhero.dclor.avtlo\\base.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk1\\com.pdfhero.dclor.avtlo\\base.apk",
+        "class_name": "com.pairip.application.Application",
+        "method_name": "attachBaseContext"
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "7"
+        },
+        "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "C:\\Users\\asus\\AppData\\Local\\Temp\\rea-android-dde005435cea97cacede277dc6cff722\\target.apk",
+          "class_count": 13642,
+          "resource_count": 1609,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":3221225472,\"java_version\":\"17.0.12\",\"available_processors\":3}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "load_apk",
+            "input": {
+              "path": "C:\\Users\\asus\\AppData\\Local\\Temp\\rea-android-dde005435cea97cacede277dc6cff722\\target.apk",
+              "threads": 1,
+              "resources": "full"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Temp\\\\rea-android-dde005435cea97cacede277dc6cff722\\\\target.apk\",\"class_count\":13642,\"raw_class_count\":13642,\"resource_count\":1609,\"load_duration_ms\":5750,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_class_summary",
+            "input": {
+              "class_name": "com.pairip.application.Application"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"fields\":[],\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"attachBaseContext\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;)V\",\"signature\":\"attachBaseContext(android.content.Context): void\",\"def_pos\":0}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"Application\",\"field_count\":0,\"full_name\":\"com.pairip.application.Application\",\"method_count\":2,\"raw_name\":\"com.pairip.application.Application\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_method_body",
+            "input": {
+              "class_name": "com.pairip.application.Application",
+              "method_name": "attachBaseContext",
+              "overload_index": 0,
+              "smali_fallback": true
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"overload_count\":1,\"dex_descriptor\":\"(Landroid/content/Context;)V\",\"class_name\":\"com.pairip.application.Application\",\"mode\":\"java\",\"body\":\"/* JADX INFO: loaded from: classes.dex */\\r\\npublic class Application extends DocumentHeroApplication {\\r\\n    /* JADX INFO: Access modifiers changed from: protected */\\r\\n    @Override // com.pdfhero.dclor.avtlo.scene.shell.runtime.DocumentHeroApplication, android.content.ContextWrapper\\r\\n    public void attachBaseContext(Context context) {\\r\\n        LicenseClient.checkLicense(context);\\r\\n        super.attachBaseContext(context);\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"com.pairip.application.Application.attachBaseContext\",\"overload_index\":0,\"method_name\":\"attachBaseContext\"}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.pairip.application.Application",
+        "method": {
+          "name": "attachBaseContext",
+          "reported_signature": "attachBaseContext(android.content.Context): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/content/Context;)V"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "/* JADX INFO: loaded from: classes.dex */\r\npublic class Application extends DocumentHeroApplication {\r\n    /* JADX INFO: Access modifiers changed from: protected */\r\n    @Override // com.pdfhero.dclor.avtlo.scene.shell.runtime.DocumentHeroApplication, android.content.ContextWrapper\r\n    public void attachBaseContext(Context context) {\r\n        LicenseClient.checkLicense(context);\r\n        super.attachBaseContext(context);\r\n    }",
+          "reported_total_bytes": null
+        }
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  }
+}

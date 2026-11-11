@@ -1,0 +1,156 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>加固证据</title><style>body{font:15px system-ui;margin:24px;line-height:1.7}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><link rel="stylesheet" href="../../assets/reading-layout.css"></head><body class="reading-document"><main class="document-content"><h1>com.alldocument.fileviewer.tools\main_jar_bytecode.txt</h1><pre>CLASS Lcom/topjohnwu/superuser/internal/IPCMain;
+METHOD &lt;clinit&gt;()V
+const-string v0, &quot;android.os.ServiceManager&quot;
+invoke-static v0, Ljava/lang/Class;-&gt;forName(Ljava/lang/String;)Ljava/lang/Class;
+move-result-object v0
+const-string v1, &quot;getService&quot;
+const/4 v2, 1
+new-array v3, v2, [Ljava/lang/Class;
+const-class v4, Ljava/lang/String;
+const/4 v5, 0
+aput-object v4, v3, v5
+invoke-virtual v0, v1, v3, Ljava/lang/Class;-&gt;getDeclaredMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+move-result-object v1
+sput-object v1, Lcom/topjohnwu/superuser/internal/IPCMain;-&gt;getService Ljava/lang/reflect/Method;
+const-string v1, &quot;addService&quot;
+const/4 v3, 2
+new-array v3, v3, [Ljava/lang/Class;
+const-class v4, Ljava/lang/String;
+aput-object v4, v3, v5
+const-class v4, Landroid/os/IBinder;
+aput-object v4, v3, v2
+invoke-virtual v0, v1, v3, Ljava/lang/Class;-&gt;getDeclaredMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+move-result-object v0
+sput-object v0, Lcom/topjohnwu/superuser/internal/IPCMain;-&gt;addService Ljava/lang/reflect/Method;
+return-void 
+move-exception v0
+new-instance v1, Ljava/lang/RuntimeException;
+invoke-direct v1, v0, Ljava/lang/RuntimeException;-&gt;&lt;init&gt;(Ljava/lang/Throwable;)V
+throw v1
+METHOD &lt;init&gt;()V
+invoke-direct v0, Ljava/lang/Object;-&gt;&lt;init&gt;()V
+return-void 
+METHOD getServiceName(Landroid/content/ComponentName;)Ljava/lang/String;
+invoke-virtual v2, Landroid/content/ComponentName;-&gt;flattenToString()Ljava/lang/String;
+move-result-object v2
+const-string v0, &quot;$&quot;
+const-string v1, &quot;.&quot;
+invoke-virtual v2, v0, v1, Ljava/lang/String;-&gt;replace(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Ljava/lang/String;
+move-result-object v2
+const-string v0, &quot;[^a-zA-Z0-9\/._\-]&quot;
+const-string v1, &quot;_&quot;
+invoke-virtual v2, v0, v1, Ljava/lang/String;-&gt;replaceAll(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+move-result-object v2
+return-object v2
+METHOD getSystemContext()Landroid/content/Context;
+const-class v0, Landroid/os/Looper;
+monitor-enter v0
+invoke-static Landroid/os/Looper;-&gt;getMainLooper()Landroid/os/Looper;
+move-result-object v1
+if-nez v1, +005h
+invoke-static Landroid/os/Looper;-&gt;prepareMainLooper()V
+monitor-exit v0
+const-string v0, &quot;android.app.ActivityThread&quot;
+invoke-static v0, Ljava/lang/Class;-&gt;forName(Ljava/lang/String;)Ljava/lang/Class;
+move-result-object v0
+const-string v1, &quot;systemMain&quot;
+const/4 v2, 0
+new-array v3, v2, [Ljava/lang/Class;
+invoke-virtual v0, v1, v3, Ljava/lang/Class;-&gt;getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+move-result-object v1
+const/4 v3, 0
+new-array v4, v2, [Ljava/lang/Object;
+invoke-virtual v1, v3, v4, Ljava/lang/reflect/Method;-&gt;invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+move-result-object v1
+const-string v3, &quot;getSystemContext&quot;
+new-array v4, v2, [Ljava/lang/Class;
+invoke-virtual v0, v3, v4, Ljava/lang/Class;-&gt;getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+move-result-object v0
+new-array v2, v2, [Ljava/lang/Object;
+invoke-virtual v0, v1, v2, Ljava/lang/reflect/Method;-&gt;invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+move-result-object v0
+check-cast v0, Landroid/content/Context;
+return-object v0
+move-exception v1
+monitor-exit v0
+throw v1
+move-exception v0
+new-instance v1, Ljava/lang/RuntimeException;
+invoke-direct v1, v0, Ljava/lang/RuntimeException;-&gt;&lt;init&gt;(Ljava/lang/Throwable;)V
+throw v1
+METHOD main([Ljava/lang/String;)V
+sget-object v0, Ljava/lang/System;-&gt;out Ljava/io/PrintStream;
+invoke-virtual v0, Ljava/io/PrintStream;-&gt;close()V
+sget-object v0, Ljava/lang/System;-&gt;err Ljava/io/PrintStream;
+invoke-virtual v0, Ljava/io/PrintStream;-&gt;close()V
+array-length v0, v7
+const/4 v1, 2
+const/4 v2, 0
+if-ge v0, v1, +005h
+invoke-static v2, Ljava/lang/System;-&gt;exit(I)V
+const/4 v0, 1
+aget-object v3, v7, v2
+invoke-static v3, Landroid/content/ComponentName;-&gt;unflattenFromString(Ljava/lang/String;)Landroid/content/ComponentName;
+move-result-object v3
+aget-object v4, v7, v0
+const-string v5, &quot;stopServer&quot;
+invoke-virtual v4, v5, Ljava/lang/String;-&gt;equals(Ljava/lang/Object;)Z
+move-result v4
+if-eqz v4, +005h
+invoke-static v3, Lcom/topjohnwu/superuser/internal/IPCMain;-&gt;stopRemoteService(Landroid/content/ComponentName;)V
+invoke-static Lcom/topjohnwu/superuser/internal/IPCMain;-&gt;getSystemContext()Landroid/content/Context;
+move-result-object v4
+invoke-virtual v3, Landroid/content/ComponentName;-&gt;getPackageName()Ljava/lang/String;
+move-result-object v5
+const/4 v6, 3
+invoke-virtual v4, v5, v6, Landroid/content/Context;-&gt;createPackageContext(Ljava/lang/String; I)Landroid/content/Context;
+move-result-object v4
+invoke-virtual v4, Landroid/content/Context;-&gt;getClassLoader()Ljava/lang/ClassLoader;
+move-result-object v5
+aget-object v7, v7, v0
+invoke-virtual v5, v7, Ljava/lang/ClassLoader;-&gt;loadClass(Ljava/lang/String;)Ljava/lang/Class;
+move-result-object v7
+new-array v5, v1, [Ljava/lang/Class;
+const-class v6, Landroid/content/Context;
+aput-object v6, v5, v2
+const-class v6, Landroid/content/ComponentName;
+aput-object v6, v5, v0
+invoke-virtual v7, v5, Ljava/lang/Class;-&gt;getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+move-result-object v7
+invoke-virtual v7, v0, Ljava/lang/reflect/Constructor;-&gt;setAccessible(Z)V
+new-array v1, v1, [Ljava/lang/Object;
+aput-object v4, v1, v2
+aput-object v3, v1, v0
+invoke-virtual v7, v1, Ljava/lang/reflect/Constructor;-&gt;newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+invoke-static v2, Ljava/lang/System;-&gt;exit(I)V
+goto +ch
+move-exception v7
+const-string v1, &quot;IPC&quot;
+const-string v2, &quot;Error in IPCMain&quot;
+invoke-static v1, v2, v7, Landroid/util/Log;-&gt;e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+invoke-static v0, Ljava/lang/System;-&gt;exit(I)V
+return-void 
+METHOD stopRemoteService(Landroid/content/ComponentName;)V
+sget-object v0, Lcom/topjohnwu/superuser/internal/IPCMain;-&gt;getService Ljava/lang/reflect/Method;
+const/4 v1, 1
+new-array v1, v1, [Ljava/lang/Object;
+invoke-static v4, Lcom/topjohnwu/superuser/internal/IPCMain;-&gt;getServiceName(Landroid/content/ComponentName;)Ljava/lang/String;
+move-result-object v4
+const/4 v2, 0
+aput-object v4, v1, v2
+const/4 v4, 0
+invoke-virtual v0, v4, v1, Ljava/lang/reflect/Method;-&gt;invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+move-result-object v0
+check-cast v0, Landroid/os/IBinder;
+if-eqz v0, +015h
+invoke-static Landroid/os/Parcel;-&gt;obtain()Landroid/os/Parcel;
+move-result-object v1
+const v3, 16777214
+invoke-interface v0, v3, v1, v4, v2, Landroid/os/IBinder;-&gt;transact(I Landroid/os/Parcel; Landroid/os/Parcel; I)Z
+invoke-virtual v1, Landroid/os/Parcel;-&gt;recycle()V
+goto +6h
+move-exception v4
+invoke-virtual v1, Landroid/os/Parcel;-&gt;recycle()V
+throw v4
+invoke-static v2, Ljava/lang/System;-&gt;exit(I)V
+return-void </pre></html></main><script src="../../assets/reading-navigation.js"></script></body></html>

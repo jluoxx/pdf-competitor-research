@@ -1,4 +1,4 @@
-id,package,evidence_type,source_path,locator,finding,excerpt,gaps
+﻿id,package,evidence_type,source_path,locator,finding,excerpt,gaps
 D01,com.pdfeditor.documentviewer.pdfstudio.docworks,包内代码,readable/com.pdfeditor.documentviewer.pdfstudio.docworks/060_openad.txt,"OpenFileInterAd.a(Context,Runnable)",文件点击链进入插屏；网络/Activity/单元ID无效时继续业务,RemoteConfigBridge.Config.a(AdKey.INTER_ALL); loadAndShowInter(...); runnable.run(),该方法没有直接会员判断；实际展示和上游会员拦截未验证
 D02,com.pdfeditor.documentviewer.pdfstudio.docworks,包内代码,readable/com.pdfeditor.documentviewer.pdfstudio.docworks/025_open_refs.normalized.json,home.adapter.b.onClick；TimeGroupedFileAdapter.b,首页和最近文件适配器调用打开文件广告方法,source_raw_method_id; dex_code_unit_offset 205 / 41,
 D03,com.pdfeditor.documentviewer.pdfstudio.docworks,包内代码,readable/com.pdfeditor.documentviewer.pdfstudio.docworks/061_remotefetch.txt,RemoteConfigService.d,设置默认值、拉取间隔并 fetchAndActivate,setDefaultsAsync(DEFAULT_CONFIG_MAP); fetchAndActivate(),

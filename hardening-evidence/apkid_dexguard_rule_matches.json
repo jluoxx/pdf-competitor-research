@@ -1,0 +1,463 @@
+[
+  {
+    "package": "com.alldocument.fileviewer.tools",
+    "file": "base.apk",
+    "rule": "dexguard_packer",
+    "matches": [
+      {
+        "offset": 2606784,
+        "id": "$enc_path",
+        "text": "b'/28445207a6f5af97c-\\x00'"
+      },
+      {
+        "offset": 2613480,
+        "id": "$enc_path",
+        "text": "b'/2b7867f15e66c02ea-\\x00'"
+      },
+      {
+        "offset": 2620867,
+        "id": "$enc_path",
+        "text": "b'/d1bb394ba89138f2d-\\x00'"
+      },
+      {
+        "offset": 2624444,
+        "id": "$enc_path",
+        "text": "b'/eebc3677933725bab-\\x00'"
+      },
+      {
+        "offset": 77855306,
+        "id": "$enc_path",
+        "text": "b'/4-\\x00'"
+      },
+      {
+        "offset": 2606755,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/28445207a6f5af97c-\\x00'"
+      },
+      {
+        "offset": 2613451,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/2b7867f15e66c02ea-\\x00'"
+      },
+      {
+        "offset": 2620838,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/d1bb394ba89138f2d-\\x00'"
+      }
+    ]
+  },
+  {
+    "package": "com.alldocument.fileviewer.tools",
+    "file": "base.apk",
+    "rule": "dexguard_packer",
+    "matches": [
+      {
+        "offset": 2606784,
+        "id": "$enc_path",
+        "text": "b'/28445207a6f5af97c-\\x00'"
+      },
+      {
+        "offset": 2613480,
+        "id": "$enc_path",
+        "text": "b'/2b7867f15e66c02ea-\\x00'"
+      },
+      {
+        "offset": 2620867,
+        "id": "$enc_path",
+        "text": "b'/d1bb394ba89138f2d-\\x00'"
+      },
+      {
+        "offset": 2624444,
+        "id": "$enc_path",
+        "text": "b'/eebc3677933725bab-\\x00'"
+      },
+      {
+        "offset": 77855306,
+        "id": "$enc_path",
+        "text": "b'/4-\\x00'"
+      },
+      {
+        "offset": 2606755,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/28445207a6f5af97c-\\x00'"
+      },
+      {
+        "offset": 2613451,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/2b7867f15e66c02ea-\\x00'"
+      },
+      {
+        "offset": 2620838,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/d1bb394ba89138f2d-\\x00'"
+      }
+    ]
+  },
+  {
+    "package": "com.document.pdf.scanner.free.all",
+    "file": "base.apk",
+    "rule": "dexguard_packer",
+    "matches": [
+      {
+        "offset": 7128259,
+        "id": "$enc_class",
+        "text": "b'\\x00\\xe3\\xbb\\xc8\\x8b\\x0be\\xe1\\x85\\\\r\\x19)\\xba\\xc8\\x1b\\x84\\xea\\xcf\\xb3\\xa5\\xef\\xc4\\x8d\\xdfL\\xd7\\x14aQ}\\x8a\\xc4NO\\xdd\\xf4r^\\x86\\xf2|\\xe2\\x84\\x12o\\xde\\xd0\\x0fY\\x10\\x05\\xe5/\\x99*\\xd8\\xd3\\x84\\xefw\\xf3\\xd3\\x84\\xa3=35\\xb5\\n\\xea(\\xcf\\xe9\\xf6\\x124/c-\\x00'"
+      },
+      {
+        "offset": 48964304,
+        "id": "$enc_class",
+        "text": "b'\\x00com/appsflyer/internal/a-\\x00'"
+      },
+      {
+        "offset": 48971549,
+        "id": "$enc_class",
+        "text": "b'\\x00com/appsflyer/internal/b-\\x00'"
+      },
+      {
+        "offset": 48983737,
+        "id": "$enc_class",
+        "text": "b'\\x00com/appsflyer/internal/c-\\x00'"
+      },
+      {
+        "offset": 48991029,
+        "id": "$enc_class",
+        "text": "b'\\x00com/appsflyer/internal/d-\\x00'"
+      },
+      {
+        "offset": 7128336,
+        "id": "$enc_path",
+        "text": "b'/c-\\x00'"
+      },
+      {
+        "offset": 48964327,
+        "id": "$enc_path",
+        "text": "b'/a-\\x00'"
+      },
+      {
+        "offset": 48971572,
+        "id": "$enc_path",
+        "text": "b'/b-\\x00'"
+      }
+    ]
+  },
+  {
+    "package": "com.document.pdf.scanner.free.all",
+    "file": "base.apk",
+    "rule": "dexguard_packer",
+    "matches": [
+      {
+        "offset": 7128259,
+        "id": "$enc_class",
+        "text": "b'\\x00\\xe3\\xbb\\xc8\\x8b\\x0be\\xe1\\x85\\\\r\\x19)\\xba\\xc8\\x1b\\x84\\xea\\xcf\\xb3\\xa5\\xef\\xc4\\x8d\\xdfL\\xd7\\x14aQ}\\x8a\\xc4NO\\xdd\\xf4r^\\x86\\xf2|\\xe2\\x84\\x12o\\xde\\xd0\\x0fY\\x10\\x05\\xe5/\\x99*\\xd8\\xd3\\x84\\xefw\\xf3\\xd3\\x84\\xa3=35\\xb5\\n\\xea(\\xcf\\xe9\\xf6\\x124/c-\\x00'"
+      },
+      {
+        "offset": 48964304,
+        "id": "$enc_class",
+        "text": "b'\\x00com/appsflyer/internal/a-\\x00'"
+      },
+      {
+        "offset": 48971549,
+        "id": "$enc_class",
+        "text": "b'\\x00com/appsflyer/internal/b-\\x00'"
+      },
+      {
+        "offset": 48983737,
+        "id": "$enc_class",
+        "text": "b'\\x00com/appsflyer/internal/c-\\x00'"
+      },
+      {
+        "offset": 48991029,
+        "id": "$enc_class",
+        "text": "b'\\x00com/appsflyer/internal/d-\\x00'"
+      },
+      {
+        "offset": 7128336,
+        "id": "$enc_path",
+        "text": "b'/c-\\x00'"
+      },
+      {
+        "offset": 48964327,
+        "id": "$enc_path",
+        "text": "b'/a-\\x00'"
+      },
+      {
+        "offset": 48971572,
+        "id": "$enc_path",
+        "text": "b'/b-\\x00'"
+      }
+    ]
+  },
+  {
+    "package": "com.document.pdf.scanner.free.all",
+    "file": "split_config.arm64_v8a.apk",
+    "rule": "dexguard_packer",
+    "matches": [
+      {
+        "offset": 9252974,
+        "id": "$enc_class",
+        "text": "b\"\\x00T`\\x82@\\xbd\\xe0\\x83\\x01\\x91J'@-L/A-\\x00\""
+      },
+      {
+        "offset": 4696024,
+        "id": "$enc_path",
+        "text": "b'/pkcs7-\\x00'"
+      }
+    ]
+  },
+  {
+    "package": "com.document.pdf.scanner.free.all",
+    "file": "split_config.arm64_v8a.apk",
+    "rule": "dexguard_packer",
+    "matches": [
+      {
+        "offset": 9252974,
+        "id": "$enc_class",
+        "text": "b\"\\x00T`\\x82@\\xbd\\xe0\\x83\\x01\\x91J'@-L/A-\\x00\""
+      },
+      {
+        "offset": 4696024,
+        "id": "$enc_path",
+        "text": "b'/pkcs7-\\x00'"
+      }
+    ]
+  },
+  {
+    "package": "com.pdfeditor.documentviewer.pdfstudio.docworks",
+    "file": "base.apk",
+    "rule": "dexguard_packer",
+    "matches": [
+      {
+        "offset": 3176955,
+        "id": "$enc_path",
+        "text": "b'/4fc712844b5d0709b-\\x00'"
+      },
+      {
+        "offset": 3190683,
+        "id": "$enc_path",
+        "text": "b'/6bfef82f3e0351f3d-\\x00'"
+      },
+      {
+        "offset": 3194255,
+        "id": "$enc_path",
+        "text": "b'/d239b3e9136392bc-\\x00'"
+      },
+      {
+        "offset": 3176926,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/4fc712844b5d0709b-\\x00'"
+      },
+      {
+        "offset": 3190654,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/6bfef82f3e0351f3d-\\x00'"
+      },
+      {
+        "offset": 3194226,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/d239b3e9136392bc-\\x00'"
+      }
+    ]
+  },
+  {
+    "package": "com.pdfeditor.documentviewer.pdfstudio.docworks",
+    "file": "base.apk",
+    "rule": "dexguard_packer",
+    "matches": [
+      {
+        "offset": 3176955,
+        "id": "$enc_path",
+        "text": "b'/4fc712844b5d0709b-\\x00'"
+      },
+      {
+        "offset": 3190683,
+        "id": "$enc_path",
+        "text": "b'/6bfef82f3e0351f3d-\\x00'"
+      },
+      {
+        "offset": 3194255,
+        "id": "$enc_path",
+        "text": "b'/d239b3e9136392bc-\\x00'"
+      },
+      {
+        "offset": 3176926,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/4fc712844b5d0709b-\\x00'"
+      },
+      {
+        "offset": 3190654,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/6bfef82f3e0351f3d-\\x00'"
+      },
+      {
+        "offset": 3194226,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/d239b3e9136392bc-\\x00'"
+      }
+    ]
+  },
+  {
+    "package": "com.pdfeditor.documentviewer.pdfstudio.docworks",
+    "file": "split_config.arm64_v8a.apk",
+    "rule": "dexguard_packer",
+    "matches": [
+      {
+        "offset": 17964726,
+        "id": "$enc_class",
+        "text": "b'\\x00\\xf9\\x8ai)8j\\x96W\\xb9\\xe9\\x03\\x1c2)\\x01\\nKi%\\xc9\\x1ai\"/yL-\\x00'"
+      }
+    ]
+  },
+  {
+    "package": "com.pdfeditor.documentviewer.pdfstudio.docworks",
+    "file": "split_config.arm64_v8a.apk",
+    "rule": "dexguard_packer",
+    "matches": [
+      {
+        "offset": 17964726,
+        "id": "$enc_class",
+        "text": "b'\\x00\\xf9\\x8ai)8j\\x96W\\xb9\\xe9\\x03\\x1c2)\\x01\\nKi%\\xc9\\x1ai\"/yL-\\x00'"
+      }
+    ]
+  },
+  {
+    "package": "com.pdfhero.dclor.avtlo",
+    "file": "base.apk",
+    "rule": "dexguard_packer",
+    "matches": [
+      {
+        "offset": 84010,
+        "id": "$enc_path",
+        "text": "b'/28445207a6f5af97c-\\x00'"
+      },
+      {
+        "offset": 90708,
+        "id": "$enc_path",
+        "text": "b'/2b7867f15e66c02ea-\\x00'"
+      },
+      {
+        "offset": 98095,
+        "id": "$enc_path",
+        "text": "b'/d1bb394ba89138f2d-\\x00'"
+      },
+      {
+        "offset": 101672,
+        "id": "$enc_path",
+        "text": "b'/eebc3677933725bab-\\x00'"
+      },
+      {
+        "offset": 83981,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/28445207a6f5af97c-\\x00'"
+      },
+      {
+        "offset": 90679,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/2b7867f15e66c02ea-\\x00'"
+      },
+      {
+        "offset": 98066,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/d1bb394ba89138f2d-\\x00'"
+      },
+      {
+        "offset": 101643,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/eebc3677933725bab-\\x00'"
+      }
+    ]
+  },
+  {
+    "package": "com.pdfhero.dclor.avtlo",
+    "file": "base.apk",
+    "rule": "dexguard_packer",
+    "matches": [
+      {
+        "offset": 84010,
+        "id": "$enc_path",
+        "text": "b'/28445207a6f5af97c-\\x00'"
+      },
+      {
+        "offset": 90708,
+        "id": "$enc_path",
+        "text": "b'/2b7867f15e66c02ea-\\x00'"
+      },
+      {
+        "offset": 98095,
+        "id": "$enc_path",
+        "text": "b'/d1bb394ba89138f2d-\\x00'"
+      },
+      {
+        "offset": 101672,
+        "id": "$enc_path",
+        "text": "b'/eebc3677933725bab-\\x00'"
+      },
+      {
+        "offset": 83981,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/28445207a6f5af97c-\\x00'"
+      },
+      {
+        "offset": 90679,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/2b7867f15e66c02ea-\\x00'"
+      },
+      {
+        "offset": 98066,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/d1bb394ba89138f2d-\\x00'"
+      },
+      {
+        "offset": 101643,
+        "id": "$enc_asset2",
+        "text": "b'assets/com/appsflyer/internal/eebc3677933725bab-\\x00'"
+      }
+    ]
+  },
+  {
+    "package": "com.piksoft.turboscan.free",
+    "file": "lib/arm64-v8a/libe29c.so",
+    "rule": "dexguard_native_arm64",
+    "matches": [
+      {
+        "offset": 110756,
+        "id": "$prolog_breakage1",
+        "text": "b'\\xe9\\x03\\tK\\n\\x00\\x80\\x12)\\x01\\nJ\\xea\\xc0\\x97R\\n\\x86\\xb4rI\\x01\\tK)\\x05\\x00Q)}@\\x93\\n\\x01\\x80\\xd2(!\\n\\x9b\\x08\\x01@\\xf9\\x00\\x01\\x1f\\xd6'"
+      },
+      {
+        "offset": 173408,
+        "id": "$prolog_breakage1",
+        "text": "b'\\xe9\\x03\\tK\\n\\x00\\x80\\x12)\\x01\\nJ*\\x10\\x84R\\xca\\x8d\\xa7rI\\x01\\tK)\\x05\\x00Q)}@\\x93\\nY\\x80\\xd2(!\\n\\x9b\\x08\\xc1\\x08\\x91\\x08\\x01@\\xf9\\x00\\x01\\x1f\\xd6'"
+      },
+      {
+        "offset": 200292,
+        "id": "$prolog_breakage1",
+        "text": "b'\\xe9\\x03\\tK\\n\\x00\\x80\\x12)\\x01\\nJjr\\x81R*d\\xaerI\\x01\\tK)\\x05\\x00Q)}@\\x93\\n\\x01\\x80\\xd2(!\\n\\x9b\\x08\\x01@\\xf9\\x00\\x01\\x1f\\xd6'"
+      },
+      {
+        "offset": 206172,
+        "id": "$prolog_breakage1",
+        "text": "b'\\xe9\\x03\\tK\\n\\x00\\x80\\x12)\\x01\\nJ\\n:\\x9aR*\\x1f\\xa6rI\\x01\\tK)\\x05\\x00Q)}@\\x93\\nd\\x80\\xd2(!\\n\\x9b\\x08!\\x04\\x91\\x08\\x01@\\xf9\\x00\\x01\\x1f\\xd6'"
+      },
+      {
+        "offset": 300904,
+        "id": "$prolog_breakage1",
+        "text": "b'\\xe9\\x03\\tK\\n\\x00\\x80\\x12)\\x01\\nJ\\xaa\\x93\\x8bRj\\xd4\\xb3rI\\x01\\tK)\\x05\\x00Q)}@\\x93\\n\\x01\\x80\\xd2(!\\n\\x9b\\x08\\x01@\\xf9\\x00\\x01\\x1f\\xd6'"
+      },
+      {
+        "offset": 304452,
+        "id": "$prolog_breakage1",
+        "text": "b'\\xe9\\x03\\tK\\n\\x00\\x80\\x12)\\x01\\nJ\\xaa\\x1e\\x9eRj?\\xbfrI\\x01\\tK)\\x05\\x00Q)}@\\x93\\n\\x01\\x80\\xd2(!\\n\\x9b\\x08\\x01@\\xf9\\x00\\x01\\x1f\\xd6'"
+      },
+      {
+        "offset": 322348,
+        "id": "$prolog_breakage1",
+        "text": "b'\\xe9\\x03\\tK\\n\\x00\\x80\\x12)\\x01\\nJ\\xca#\\x89R*\\xbf\\xa9rI\\x01\\tK)\\x05\\x00Q)}@\\x93\\nm\\x80\\xd2(!\\n\\x9b\\x08\\x81\\x01\\x91\\x08\\x01@\\xf9\\x00\\x01\\x1f\\xd6'"
+      },
+      {
+        "offset": 348272,
+        "id": "$prolog_breakage1",
+        "text": "b'\\xe9\\x03\\tK\\n\\x00\\x80\\x12)\\x01\\nJj2\\x98R\\xaa\\xfa\\xb8rI\\x01\\tK)\\x05\\x00Q)}@\\x93\\nl\\x80\\xd2(!\\n\\x9b\\x08\\xc1\\x01\\x91\\x08\\x01@\\xf9\\x00\\x01\\x1f\\xd6'"
+      }
+    ]
+  }
+]
