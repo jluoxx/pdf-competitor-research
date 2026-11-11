@@ -1,0 +1,299 @@
+[
+  {
+    "engine": "rea",
+    "job": {
+      "id": "acq_00",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "inspect_android_method",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "q77$a",
+        "method_name": "b"
+      }
+    },
+    "status": "error",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\rea\\acq_00.json",
+    "exception": "SdkError: Request timed out"
+  },
+  {
+    "engine": "rea",
+    "job": {
+      "id": "acq_01",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "inspect_android_method",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "bq6",
+        "method_name": "d"
+      }
+    },
+    "status": "usable",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\rea\\acq_01.json",
+    "representation": "java"
+  },
+  {
+    "engine": "rea",
+    "job": {
+      "id": "acq_02",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "inspect_android_method",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "q77$e$a",
+        "method_name": "b"
+      }
+    },
+    "status": "usable",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\rea\\acq_02.json",
+    "representation": "smali"
+  },
+  {
+    "engine": "rea",
+    "job": {
+      "id": "acq_03",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "inspect_android_method",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "eg",
+        "method_name": "s"
+      }
+    },
+    "status": "usable",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\rea\\acq_03.json",
+    "representation": "java"
+  },
+  {
+    "engine": "rea",
+    "job": {
+      "id": "acq_04",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "inspect_android_method",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "gmc",
+        "method_name": "q"
+      }
+    },
+    "status": "usable",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\rea\\acq_04.json",
+    "representation": "java"
+  },
+  {
+    "engine": "rea",
+    "job": {
+      "id": "follow_00",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "inspect_android_method",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "q77$a",
+        "method_name": "b"
+      }
+    },
+    "status": "error",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\rea\\follow_00.json",
+    "exception": "SdkError: Request timed out"
+  },
+  {
+    "engine": "rea",
+    "job": {
+      "id": "follow_01",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "inspect_android_method",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "hle",
+        "method_name": "k"
+      }
+    },
+    "status": "error",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\rea\\follow_01.json",
+    "exception": "SdkError: Request timed out"
+  },
+  {
+    "engine": "rea",
+    "job": {
+      "id": "follow_02",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "inspect_android_method",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "qx6",
+        "method_name": "m"
+      }
+    },
+    "status": "error",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\rea\\follow_02.json",
+    "exception": "SdkError: Request timed out"
+  },
+  {
+    "engine": "rea",
+    "job": {
+      "id": "follow_03",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "inspect_android_method",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "uod",
+        "method_name": "g"
+      }
+    },
+    "status": "not_completed"
+  },
+  {
+    "engine": "rea",
+    "job": {
+      "id": "follow_04",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "inspect_android_method",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "b87",
+        "method_name": "r"
+      }
+    },
+    "status": "not_completed"
+  },
+  {
+    "engine": "craft",
+    "job": {
+      "id": "acq_00",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "android-class-show",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "q77$a"
+      }
+    },
+    "status": "usable",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\craft\\acq_00.json",
+    "subject": {
+      "kind": "apk",
+      "name": "base.apk",
+      "sha256": "7eda322286a3ecdaf7ab054db02b4e2d66a05c5fb5d329e2f9d08d0d7178376d"
+    }
+  },
+  {
+    "engine": "craft",
+    "job": {
+      "id": "acq_01",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "android-class-show",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "bq6"
+      }
+    },
+    "status": "usable",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\craft\\acq_01.json",
+    "subject": {
+      "kind": "apk",
+      "name": "base.apk",
+      "sha256": "7eda322286a3ecdaf7ab054db02b4e2d66a05c5fb5d329e2f9d08d0d7178376d"
+    }
+  },
+  {
+    "engine": "craft",
+    "job": {
+      "id": "acq_02",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "android-class-show",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "q77$e$a"
+      }
+    },
+    "status": "usable",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\craft\\acq_02.json",
+    "subject": {
+      "kind": "apk",
+      "name": "base.apk",
+      "sha256": "7eda322286a3ecdaf7ab054db02b4e2d66a05c5fb5d329e2f9d08d0d7178376d"
+    }
+  },
+  {
+    "engine": "craft",
+    "job": {
+      "id": "method_00",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "android-method-show",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "q77$a",
+        "method_name": "b",
+        "limit": 5000
+      }
+    },
+    "status": "usable",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\craft\\method_00.json",
+    "subject": {
+      "kind": "apk",
+      "name": "base.apk",
+      "sha256": "7eda322286a3ecdaf7ab054db02b4e2d66a05c5fb5d329e2f9d08d0d7178376d"
+    }
+  },
+  {
+    "engine": "craft",
+    "job": {
+      "id": "method_01",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "android-method-show",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "bq6",
+        "method_name": "d",
+        "limit": 5000
+      }
+    },
+    "status": "usable",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\craft\\method_01.json",
+    "subject": {
+      "kind": "apk",
+      "name": "base.apk",
+      "sha256": "7eda322286a3ecdaf7ab054db02b4e2d66a05c5fb5d329e2f9d08d0d7178376d"
+    }
+  },
+  {
+    "engine": "craft",
+    "job": {
+      "id": "method_02",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "android-method-show",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "qx6",
+        "method_name": "m",
+        "limit": 5000
+      }
+    },
+    "status": "usable",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\craft\\method_02.json",
+    "subject": {
+      "kind": "apk",
+      "name": "base.apk",
+      "sha256": "7eda322286a3ecdaf7ab054db02b4e2d66a05c5fb5d329e2f9d08d0d7178376d"
+    }
+  },
+  {
+    "engine": "craft",
+    "job": {
+      "id": "method_03",
+      "package": "com.alldocument.fileviewer.tools",
+      "tool": "android-method-show",
+      "args": {
+        "path": "C:\\Users\\asus\\Desktop\\竞品apk\\2026-11-10竞品apk\\com.alldocument.fileviewer.tools\\base.apk",
+        "class_name": "uod",
+        "method_name": "g",
+        "limit": 5000
+      }
+    },
+    "status": "usable",
+    "raw": "raw\\com.alldocument.fileviewer.tools\\craft\\method_03.json",
+    "subject": {
+      "kind": "apk",
+      "name": "base.apk",
+      "sha256": "7eda322286a3ecdaf7ab054db02b4e2d66a05c5fb5d329e2f9d08d0d7178376d"
+    }
+  }
+]

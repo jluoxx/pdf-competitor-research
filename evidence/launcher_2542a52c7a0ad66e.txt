@@ -1,0 +1,1603 @@
+CLASS Lapp/lawnchair/LawnchairLauncher;
+FIELD h2 
+FIELD i2 
+FIELD j2 
+FIELD k2 
+FIELD l2 
+FIELD m2 
+FIELD P1 
+FIELD Q1 
+FIELD R1 
+FIELD S1 
+FIELD T1 
+FIELD U1 
+FIELD V1 
+FIELD W1 
+FIELD X1 
+FIELD Y1 
+FIELD Z1 
+FIELD a2 
+FIELD b2 
+FIELD c2 
+FIELD d2 
+FIELD e2 
+FIELD f2 
+FIELD g2 
+
+METHOD <clinit> ()V
+000000: new-instance v0, Lapp/lawnchair/LawnchairLauncher$a;
+000004: const/4 v1, 0
+000006: invoke-direct v0, v1, Lapp/lawnchair/LawnchairLauncher$a;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+00000c: sput-object v0, Lapp/lawnchair/LawnchairLauncher;->h2 Lapp/lawnchair/LawnchairLauncher$a;
+000010: const/16 v0, 8
+000014: sput v0, Lapp/lawnchair/LawnchairLauncher;->i2 I
+000018: const/16 v1, 13
+00001c: new-array v1, v1, [B
+000020: fill-array-data v1, +0000034h
+000026: new-array v2, v0, [B
+00002a: fill-array-data v2, +000003bh
+000030: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "home_check_cd"
+000036: move-result-object v1
+000038: sput-object v1, Lapp/lawnchair/LawnchairLauncher;->j2 Ljava/lang/String;
+00003c: const/16 v1, 34
+000040: new-array v1, v1, [B
+000044: fill-array-data v1, +0000036h
+00004a: new-array v2, v0, [B
+00004e: fill-array-data v2, +0000047h
+000054: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "saved_state_swipe_layout_left_open"
+00005a: move-result-object v1
+00005c: sput-object v1, Lapp/lawnchair/LawnchairLauncher;->k2 Ljava/lang/String;
+000060: const/16 v1, 26
+000064: new-array v1, v1, [B
+000068: fill-array-data v1, +0000042h
+00006e: new-array v0, v0, [B
+000072: fill-array-data v0, +000004fh
+000078: invoke-static v1, v0, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "saved_state_launcher_state"
+00007e: move-result-object v0
+000080: sput-object v0, Lapp/lawnchair/LawnchairLauncher;->l2 Ljava/lang/String;
+000084: return-void 
+000086: nop 
+00009e: nop 
+0000da: nop 
+00010e: nop 
+
+METHOD <init> ()V
+000000: invoke-direct v1, Ldta;-><init>()V
+000006: sget-object v0, Lwqb;->c Lwqb$a;
+00000a: invoke-virtual v0, v1, Lwqb$a;->b(Lzqb;)Lwqb;
+000010: move-result-object v0
+000012: iput-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->Q1 Lwqb;
+000016: new-instance v0, Landroidx/lifecycle/o;
+00001a: invoke-direct v0, v1, Landroidx/lifecycle/o;-><init>(Lsp7;)V
+000020: iput-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->R1 Landroidx/lifecycle/o;
+000024: new-instance v0, Lcf7;
+000028: invoke-direct v0, v1, Lcf7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+00002e: invoke-static v0, Lyk7;->b(Lkotlin/jvm/functions/Function0;)Lej7;
+000034: move-result-object v0
+000036: iput-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->S1 Lej7;
+00003a: new-instance v0, Lnf7;
+00003e: invoke-direct v0, v1, Lnf7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+000044: invoke-static v0, Lyk7;->b(Lkotlin/jvm/functions/Function0;)Lej7;
+00004a: move-result-object v0
+00004c: iput-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->T1 Lej7;
+000050: new-instance v0, Lyf7;
+000054: invoke-direct v0, v1, Lyf7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+00005a: invoke-static v0, Lyk7;->b(Lkotlin/jvm/functions/Function0;)Lej7;
+000060: move-result-object v0
+000062: iput-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->U1 Lej7;
+000066: new-instance v0, Lag7;
+00006a: invoke-direct v0, v1, Lag7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+000070: invoke-static v0, Lyk7;->b(Lkotlin/jvm/functions/Function0;)Lej7;
+000076: move-result-object v0
+000078: iput-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->V1 Lej7;
+00007c: new-instance v0, Lbg7;
+000080: invoke-direct v0, v1, Lbg7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+000086: invoke-static v0, Lyk7;->b(Lkotlin/jvm/functions/Function0;)Lej7;
+00008c: move-result-object v0
+00008e: iput-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->W1 Lej7;
+000092: new-instance v0, Lcg7;
+000096: invoke-direct v0, v1, Lcg7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+00009c: invoke-static v0, Lyk7;->b(Lkotlin/jvm/functions/Function0;)Lej7;
+0000a2: move-result-object v0
+0000a4: iput-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->X1 Lej7;
+0000a8: new-instance v0, Ldg7;
+0000ac: invoke-direct v0, v1, Ldg7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+0000b2: invoke-static v0, Lyk7;->b(Lkotlin/jvm/functions/Function0;)Lej7;
+0000b8: move-result-object v0
+0000ba: iput-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->Z1 Lej7;
+0000be: new-instance v0, Lapp/lawnchair/LawnchairLauncher$g;
+0000c2: invoke-direct v0, v1, Lapp/lawnchair/LawnchairLauncher$g;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+0000c8: iput-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->c2 Lapp/lawnchair/LawnchairLauncher$g;
+0000cc: new-instance v0, Lapp/lawnchair/LawnchairLauncher$c;
+0000d0: invoke-direct v0, v1, Lapp/lawnchair/LawnchairLauncher$c;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+0000d6: iput-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->d2 Lapp/lawnchair/LawnchairLauncher$c;
+0000da: return-void 
+
+METHOD A3 (Lapp/lawnchair/LawnchairLauncher;)Lood;
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->Z4(Lapp/lawnchair/LawnchairLauncher;)Lood;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD A4 ()Lkotlin/Unit;
+000000: sget-object v0, Ljt7;->a Ljt7;
+000004: const/16 v1, 22
+000008: new-array v1, v1, [B
+00000c: fill-array-data v1, +000001ah
+000012: const/16 v2, 8
+000016: new-array v2, v2, [B
+00001a: fill-array-data v2, +0000023h
+000020: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "key_show_floating_ball"
+000026: move-result-object v1
+000028: invoke-virtual v0, v1, Ljt7;->a(Ljava/lang/String;)Landroidx/lifecycle/s;
+00002e: move-result-object v0
+000030: sget-object v1, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+000034: invoke-virtual v0, v1, Landroidx/lifecycle/s;->o(Ljava/lang/Object;)V
+00003a: sget-object v0, Lkotlin/Unit;->a Lkotlin/Unit;
+00003e: return-object v0
+00005e: nop 
+
+METHOD B3 ()Lkotlin/Unit;
+000000: invoke-static Lapp/lawnchair/LawnchairLauncher;->r4()Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD B4 (Lapp/lawnchair/LawnchairLauncher;)Lu2f;
+000000: new-instance v0, Lu2f;
+000004: invoke-static v2, Lig7;->a(Landroid/content/Context;)Lapp/lawnchair/LawnchairLauncher;
+00000a: move-result-object v1
+00000c: invoke-virtual v1, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+000012: move-result-object v1
+000014: invoke-virtual v2, Lswc;->S0()Lcom/android/launcher3/LauncherRootView;
+00001a: move-result-object v2
+00001c: invoke-direct v0, v1, v2, Lu2f;-><init>(Landroid/view/Window; Landroid/view/View;)V
+000022: return-object v0
+
+METHOD C3 ()Lkotlin/Unit;
+000000: invoke-static Lapp/lawnchair/LawnchairLauncher;->v4()Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD C4 (Lapp/lawnchair/LawnchairLauncher;)Lcom/android/launcher3/n;
+000000: sget-object v0, Lcom/android/launcher3/n;->G Lcom/android/launcher3/util/c;
+000004: invoke-virtual v0, v1, Lcom/android/launcher3/util/c;->c(Landroid/content/Context;)Ljava/lang/Object;
+00000a: move-result-object v1
+00000c: check-cast v1, Lcom/android/launcher3/n;
+000010: return-object v1
+
+METHOD D3 (Lapp/lawnchair/LawnchairLauncher;)Z
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->x4(Lapp/lawnchair/LawnchairLauncher;)Z
+000006: move-result v0
+000008: return v0
+
+METHOD E3 (Z)V
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->J4(Z)V
+000006: return-void 
+
+METHOD E4 (Lapp/lawnchair/LawnchairLauncher; Landroid/content/Context; Ljava/util/Locale;)Lkotlin/Unit;
+000000: const/4 v0, 6
+000002: new-array v0, v0, [B
+000006: fill-array-data v0, +0000025h
+00000c: const/16 v1, 8
+000010: new-array v2, v1, [B
+000014: fill-array-data v2, +0000026h
+00001a: invoke-static v0, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "newCtx"
+000020: const/16 v0, 9
+000024: new-array v0, v0, [B
+000028: fill-array-data v0, +0000024h
+00002e: new-array v1, v1, [B
+000032: fill-array-data v1, +0000029h
+000038: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "newLocale"
+00003e: invoke-virtual v3, Lcom/android/launcher3/o;->t1()V
+000044: invoke-virtual v3, v4, v5, Lapp/lawnchair/LawnchairLauncher;->K4(Landroid/content/Context; Ljava/util/Locale;)V
+00004a: sget-object v3, Lkotlin/Unit;->a Lkotlin/Unit;
+00004e: return-object v3
+00005e: nop 
+000082: nop 
+
+METHOD F3 (Lapp/lawnchair/LawnchairLauncher; Ljava/lang/String; Landroid/os/UserHandle;)Lkotlin/Unit;
+000000: invoke-static v0, v1, v2, Lapp/lawnchair/LawnchairLauncher;->q4(Lapp/lawnchair/LawnchairLauncher; Ljava/lang/String; Landroid/os/UserHandle;)Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD F4 (I)V
+000000: int-to-float v0, v0
+000002: sput v0, Lrsa;->c F
+000006: return-void 
+
+METHOD G3 (Ljava/util/List;)Lkotlin/Unit;
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->s4(Ljava/util/List;)Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD G4 (Z)Lkotlin/Unit;
+000000: sput-boolean v0, Ltlb;->a Z
+000004: sget-object v0, Lkotlin/Unit;->a Lkotlin/Unit;
+000008: return-object v0
+
+METHOD H3 ()Lkotlin/Unit;
+000000: invoke-static Lapp/lawnchair/LawnchairLauncher;->Y4()Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD H4 (Lapp/lawnchair/LawnchairLauncher; Z Z)Lkotlin/Unit;
+000000: invoke-virtual v1, Lcom/android/launcher3/c;->k0()Lbcd;
+000006: move-result-object v1
+000008: const/4 v0, 0
+00000a: if-nez v2, +007h
+00000e: if-eqz v3, +003h
+000012: goto +3h
+000014: move v2, v0
+000016: goto +2h
+000018: const/4 v2, 1
+00001a: invoke-virtual v1, v0, v2, Lbcd;->c(I Z)V
+000020: sget-object v1, Lkotlin/Unit;->a Lkotlin/Unit;
+000024: return-object v1
+
+METHOD I3 (Lapp/lawnchair/LawnchairLauncher;)Lkga;
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->M4(Lapp/lawnchair/LawnchairLauncher;)Lkga;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD I4 (Lapp/lawnchair/LawnchairLauncher; F)V
+000000: sget-object v0, Lsh1;->Q Lr62;
+000004: invoke-interface v0, v2, Lqh1;->c(Landroid/content/Context;)I
+00000a: move-result v0
+00000c: const/16 v1, 255
+000010: int-to-float v1, v1
+000012: mul-float/2addr v3, v1
+000014: invoke-static v3, Ln58;->d(F)I
+00001a: move-result v3
+00001c: invoke-static v0, v3, Luh1;->q(I I)I
+000022: move-result v3
+000024: iput v3, v2, Lapp/lawnchair/LawnchairLauncher;->Y1 I
+000028: return-void 
+
+METHOD J3 (Z)Lkotlin/Unit;
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->G4(Z)Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD J4 (Z)V
+000000: sput-boolean v0, Lrsa;->b Z
+000004: return-void 
+
+METHOD K3 (Lapp/lawnchair/LawnchairLauncher;)Lu2f;
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->B4(Lapp/lawnchair/LawnchairLauncher;)Lu2f;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD L3 (Z Lcom/pvab/xxnido/oaeqxmtigwcbr;)V
+000000: invoke-static v0, v1, Lapp/lawnchair/LawnchairLauncher;->R4(Z Lcom/pvab/xxnido/oaeqxmtigwcbr;)V
+000006: return-void 
+
+METHOD L4 (Lapp/lawnchair/LawnchairLauncher;)Lnha;
+000000: sget-object v0, Lnha;->J Lnha$b;
+000004: invoke-virtual v0, v1, Lnha$b;->b(Landroid/content/Context;)Lnha;
+00000a: move-result-object v1
+00000c: return-object v1
+
+METHOD M3 (Lapp/lawnchair/LawnchairLauncher; Lrd7;)V
+000000: invoke-static v0, v1, Lapp/lawnchair/LawnchairLauncher;->S4(Lapp/lawnchair/LawnchairLauncher; Lrd7;)V
+000006: return-void 
+
+METHOD M4 (Lapp/lawnchair/LawnchairLauncher;)Lkga;
+000000: sget-object v0, Lkga;->R0 Lkga$a;
+000004: invoke-virtual v0, v1, Lkga$a;->a(Landroid/content/Context;)Lkga;
+00000a: move-result-object v1
+00000c: return-object v1
+
+METHOD N3 (Lapp/lawnchair/LawnchairLauncher;)Lvi9;
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->g4(Lapp/lawnchair/LawnchairLauncher;)Lvi9;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD O3 ()Lkotlin/Unit;
+000000: invoke-static Lapp/lawnchair/LawnchairLauncher;->A4()Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD P3 (Lapp/lawnchair/LawnchairLauncher;)Lap5;
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->h4(Lapp/lawnchair/LawnchairLauncher;)Lap5;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD Q3 (Lapp/lawnchair/LawnchairLauncher; Landroid/content/Context; Ljava/util/Locale;)Lkotlin/Unit;
+000000: invoke-static v0, v1, v2, Lapp/lawnchair/LawnchairLauncher;->E4(Lapp/lawnchair/LawnchairLauncher; Landroid/content/Context; Ljava/util/Locale;)Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD R3 (Lapp/lawnchair/LawnchairLauncher;)V
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->W4(Lapp/lawnchair/LawnchairLauncher;)V
+000006: return-void 
+
+METHOD R4 (Z Lcom/pvab/xxnido/oaeqxmtigwcbr;)V
+000000: if-eqz v1, +00ch
+000004: invoke-virtual v2, Lcom/pvab/xxnido/oaeqxmtigwcbr;->f()Z
+00000a: move-result v0
+00000c: if-nez v0, +006h
+000010: invoke-virtual v2, Lcom/pvab/xxnido/oaeqxmtigwcbr;->i()V
+000016: return-void 
+000018: if-nez v1, +00bh
+00001c: invoke-virtual v2, Lcom/pvab/xxnido/oaeqxmtigwcbr;->f()Z
+000022: move-result v1
+000024: if-eqz v1, +005h
+000028: invoke-virtual v2, Lcom/pvab/xxnido/oaeqxmtigwcbr;->a()V
+00002e: return-void 
+
+METHOD S3 ()Lkotlin/Unit;
+000000: invoke-static Lapp/lawnchair/LawnchairLauncher;->z4()Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD S4 (Lapp/lawnchair/LawnchairLauncher; Lrd7;)V
+000000: invoke-virtual v1, Lcom/android/launcher3/o;->U0()Lgwc;
+000006: move-result-object v0
+000008: invoke-virtual v0, Lgwc;->u()Lvf0;
+00000e: move-result-object v0
+000010: invoke-static v0, v2, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000016: move-result v0
+000018: if-nez v0, +00ah
+00001c: invoke-virtual v1, Lcom/android/launcher3/o;->U0()Lgwc;
+000022: move-result-object v1
+000024: const/4 v0, 0
+000026: invoke-virtual v1, v2, v0, Lgwc;->z(Lvf0; Z)V
+00002c: return-void 
+
+METHOD T3 (Lapp/lawnchair/LawnchairLauncher; Lrd7;)V
+000000: invoke-static v0, v1, Lapp/lawnchair/LawnchairLauncher;->T4(Lapp/lawnchair/LawnchairLauncher; Lrd7;)V
+000006: return-void 
+
+METHOD T4 (Lapp/lawnchair/LawnchairLauncher; Lrd7;)V
+000000: invoke-virtual v1, Lcom/android/launcher3/o;->U0()Lgwc;
+000006: move-result-object v0
+000008: invoke-virtual v0, Lgwc;->u()Lvf0;
+00000e: move-result-object v0
+000010: invoke-static v0, v2, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000016: move-result v0
+000018: if-nez v0, +00ah
+00001c: invoke-virtual v1, Lcom/android/launcher3/o;->U0()Lgwc;
+000022: move-result-object v1
+000024: const/4 v0, 0
+000026: invoke-virtual v1, v2, v0, Lgwc;->z(Lvf0; Z)V
+00002c: return-void 
+
+METHOD U3 (Lapp/lawnchair/LawnchairLauncher;)Lnha;
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->L4(Lapp/lawnchair/LawnchairLauncher;)Lnha;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD U4 (Landroid/os/Bundle;)V
+000000: const/16 v0, 26
+000004: const/16 v1, 8
+000008: iget-object v2, v5, Lapp/lawnchair/LawnchairLauncher;->P1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+00000c: if-eqz v2, +00bh
+000010: invoke-virtual v2, Lcom/pvab/xxnido/oaeqxmtigwcbr;->f()Z
+000016: move-result v2
+000018: invoke-static v2, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+00001e: move-result-object v2
+000020: goto +7h
+000022: iget-object v2, v5, Lcom/android/launcher3/o;->l1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+000026: if-eqz v2, +003h
+00002a: goto -dh
+00002c: const/4 v2, 0
+00002e: if-eqz v2, +019h
+000032: const/16 v3, 34
+000036: new-array v3, v3, [B
+00003a: fill-array-data v3, +000002bh
+000040: new-array v4, v1, [B
+000044: fill-array-data v4, +000003ch
+00004a: invoke-static v3, v4, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "saved_state_swipe_layout_left_open"
+000050: move-result-object v3
+000052: invoke-virtual v2, Ljava/lang/Boolean;->booleanValue()Z
+000058: move-result v2
+00005a: invoke-virtual v6, v3, v2, Landroid/os/Bundle;->putBoolean(Ljava/lang/String; Z)V
+000060: iget-object v2, v5, Lapp/lawnchair/LawnchairLauncher;->b2 Lrd7;
+000064: if-eqz v2, +015h
+000068: new-array v0, v0, [B
+00006c: fill-array-data v0, +0000030h
+000072: new-array v1, v1, [B
+000076: fill-array-data v1, +000003dh
+00007c: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "saved_state_launcher_state"
+000082: move-result-object v0
+000084: iget v1, v2, Lrd7;->a I
+000088: invoke-virtual v6, v0, v1, Landroid/os/Bundle;->putInt(Ljava/lang/String; I)V
+00008e: return-void 
+0000ba: nop 
+0000ee: nop 
+
+METHOD V3 (Lapp/lawnchair/LawnchairLauncher; I)V
+000000: invoke-static v0, v1, Lapp/lawnchair/LawnchairLauncher;->y4(Lapp/lawnchair/LawnchairLauncher; I)V
+000006: return-void 
+
+METHOD W3 (Lapp/lawnchair/LawnchairLauncher;)Lu2f;
+000000: invoke-virtual v0, Lapp/lawnchair/LawnchairLauncher;->k4()Lu2f;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD W4 (Lapp/lawnchair/LawnchairLauncher;)V
+000000: const/4 v0, 1
+000002: invoke-virtual v1, v0, Ldta;->S2(Z)V
+000008: return-void 
+
+METHOD X3 (Lapp/lawnchair/LawnchairLauncher;)Lrd7;
+000000: iget-object v0, v0, Lapp/lawnchair/LawnchairLauncher;->b2 Lrd7;
+000004: return-object v0
+
+METHOD Y3 (Lapp/lawnchair/LawnchairLauncher;)Lcom/android/launcher3/allapps/AllAppsContainerView;
+000000: iget-object v0, v0, Lcom/android/launcher3/o;->H0 Lcom/android/launcher3/allapps/AllAppsContainerView;
+000004: return-object v0
+
+METHOD Y4 ()Lkotlin/Unit;
+000000: sget-object v0, Lkotlin/Unit;->a Lkotlin/Unit;
+000004: return-object v0
+
+METHOD Z3 (Lapp/lawnchair/LawnchairLauncher;)Lcom/android/launcher3/Workspace;
+000000: iget-object v0, v0, Lcom/android/launcher3/o;->z0 Lcom/android/launcher3/Workspace;
+000004: return-object v0
+
+METHOD Z4 (Lapp/lawnchair/LawnchairLauncher;)Lood;
+000000: sget-object v0, Lood;->k Lcom/android/launcher3/util/c;
+000004: invoke-virtual v0, v1, Lcom/android/launcher3/util/c;->c(Landroid/content/Context;)Ljava/lang/Object;
+00000a: move-result-object v1
+00000c: check-cast v1, Lood;
+000010: return-object v1
+
+METHOD a4 (Lapp/lawnchair/LawnchairLauncher;)Lapp/lawnchair/LawnchairLauncher$c;
+000000: iget-object v0, v0, Lapp/lawnchair/LawnchairLauncher;->d2 Lapp/lawnchair/LawnchairLauncher$c;
+000004: return-object v0
+
+METHOD b4 (Lapp/lawnchair/LawnchairLauncher; Lrd7;)V
+000000: iput-object v1, v0, Lapp/lawnchair/LawnchairLauncher;->b2 Lrd7;
+000004: return-void 
+
+METHOD e4 (Lapp/lawnchair/LawnchairLauncher; Lzh8;)V
+000000: invoke-virtual v3, Landroid/app/Activity;->isFinishing()Z
+000006: move-result v0
+000008: if-nez v0, +01ah
+00000c: invoke-virtual v3, Landroid/app/Activity;->isDestroyed()Z
+000012: move-result v0
+000014: if-eqz v0, +003h
+000018: goto +12h
+00001a: invoke-interface v4, v3, Lzh8;->d(Landroid/content/Context;)V
+000020: iget-object v4, v3, Lapp/lawnchair/LawnchairLauncher;->P1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+000024: if-eqz v4, +00ch
+000028: new-instance v0, Lof7;
+00002c: invoke-direct v0, v3, Lof7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+000032: const-wide/16 v1, 800
+000036: invoke-virtual v4, v0, v1, v2, Landroid/widget/FrameLayout;->postDelayed(Ljava/lang/Runnable; J)Z
+00003c: return-void 
+
+METHOD f4 (Lapp/lawnchair/LawnchairLauncher;)V
+000000: invoke-virtual v1, Landroid/app/Activity;->isFinishing()Z
+000006: move-result v0
+000008: if-nez v0, +00eh
+00000c: invoke-virtual v1, Landroid/app/Activity;->isDestroyed()Z
+000012: move-result v0
+000014: if-eqz v0, +003h
+000018: goto +6h
+00001a: sget-object v0, Lcom/voxot/klmhbsashbujolyapwzhjapcpafs;->f0 Lcom/voxot/klmhbsashbujolyapwzhjapcpafs$a;
+00001e: invoke-virtual v0, v1, Lcom/voxot/klmhbsashbujolyapwzhjapcpafs$a;->a(Landroid/content/Context;)V
+000024: return-void 
+
+METHOD g4 (Lapp/lawnchair/LawnchairLauncher;)Lvi9;
+000000: new-instance v0, Lvi9;
+000004: invoke-direct v0, v1, Lvi9;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+00000a: return-object v0
+
+METHOD h4 (Lapp/lawnchair/LawnchairLauncher;)Lap5;
+000000: new-instance v0, Lap5;
+000004: invoke-direct v0, v1, Lap5;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+00000a: return-object v0
+
+METHOD l4 ()Lapp/lawnchair/LawnchairLauncher;
+000000: sget-object v0, Lapp/lawnchair/LawnchairLauncher;->h2 Lapp/lawnchair/LawnchairLauncher$a;
+000004: invoke-virtual v0, Lapp/lawnchair/LawnchairLauncher$a;->a()Lapp/lawnchair/LawnchairLauncher;
+00000a: move-result-object v0
+00000c: return-object v0
+
+METHOD q4 (Lapp/lawnchair/LawnchairLauncher; Ljava/lang/String; Landroid/os/UserHandle;)Lkotlin/Unit;
+000000: const/4 v0, 3
+000002: new-array v0, v0, [B
+000006: fill-array-data v0, +0000081h
+00000c: const/16 v1, 8
+000010: new-array v2, v1, [B
+000014: fill-array-data v2, +0000080h
+00001a: invoke-static v0, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "pkg"
+000020: const/4 v0, 4
+000022: new-array v0, v0, [B
+000026: fill-array-data v0, +000007fh
+00002c: new-array v2, v1, [B
+000030: fill-array-data v2, +0000080h
+000036: invoke-static v0, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "user"
+00003c: const/16 v0, 16
+000040: new-array v0, v0, [B
+000044: fill-array-data v0, +000007eh
+00004a: new-array v2, v1, [B
+00004e: fill-array-data v2, +0000085h
+000054: invoke-static v0, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "launcher add new"
+00005a: move-result-object v0
+00005c: new-instance v2, Ljava/lang/StringBuilder;
+000060: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+000066: const/16 v3, 9
+00006a: new-array v3, v3, [B
+00006e: fill-array-data v3, +000007dh
+000074: new-array v4, v1, [B
+000078: fill-array-data v4, +0000082h
+00007e: invoke-static v3, v4, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "install: "
+000084: move-result-object v3
+000086: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00008c: invoke-static v6, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+000092: move-result-object v6
+000094: invoke-virtual v2, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00009a: new-array v6, v1, [B
+00009e: fill-array-data v6, +0000077h
+0000a4: new-array v1, v1, [B
+0000a8: fill-array-data v1, +000007ah
+0000ae: invoke-static v6, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED ", user: "
+0000b4: move-result-object v6
+0000b6: invoke-virtual v2, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000bc: invoke-static v7, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+0000c2: move-result-object v6
+0000c4: invoke-virtual v2, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000ca: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0000d0: move-result-object v6
+0000d2: invoke-static v0, v6, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+0000d8: sget-object v6, Ljw;->a Ljw;
+0000dc: new-instance v7, Luf7;
+0000e0: invoke-direct v7, Luf7;-><init>()V
+0000e6: invoke-virtual v6, v5, v7, Ljw;->d(Landroid/content/Context; Lkotlin/jvm/functions/Function0;)V
+0000ec: sget-object v6, Llc7;->a Llc7;
+0000f0: new-instance v7, Lvf7;
+0000f4: invoke-direct v7, Lvf7;-><init>()V
+0000fa: invoke-virtual v6, v5, v7, Llc7;->c(Landroid/content/Context; Lkotlin/jvm/functions/Function1;)V
+000100: sget-object v5, Lkotlin/Unit;->a Lkotlin/Unit;
+000104: return-object v5
+000106: nop 
+00017a: nop 
+
+METHOD r4 ()Lkotlin/Unit;
+000000: sget-object v0, La64;->a La64;
+000004: const/16 v1, 11
+000008: new-array v1, v1, [B
+00000c: fill-array-data v1, +0000018h
+000012: const/16 v2, 8
+000016: new-array v2, v2, [B
+00001a: fill-array-data v2, +000001bh
+000020: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "vupdate_end"
+000026: move-result-object v1
+000028: invoke-static Lkotlin/collections/x;->k()Ljava/util/Map;
+00002e: move-result-object v2
+000030: invoke-virtual v0, v1, v2, La64;->a(Ljava/lang/String; Ljava/util/Map;)V
+000036: sget-object v0, Lkotlin/Unit;->a Lkotlin/Unit;
+00003a: return-object v0
+
+METHOD s3 (I)V
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->F4(I)V
+000006: return-void 
+
+METHOD s4 (Ljava/util/List;)Lkotlin/Unit;
+000000: const/4 v0, 6
+000002: const/16 v1, 8
+000006: move-object v2, v14
+000008: check-cast v2, Ljava/util/Collection;
+00000c: if-eqz v2, +079h
+000010: invoke-interface v2, Ljava/util/Collection;->isEmpty()Z
+000016: move-result v2
+000018: if-eqz v2, +003h
+00001c: goto +71h
+00001e: sget-object v2, La64;->a La64;
+000022: const/16 v3, 11
+000026: new-array v3, v3, [B
+00002a: fill-array-data v3, +000006dh
+000030: new-array v4, v1, [B
+000034: fill-array-data v4, +0000072h
+00003a: invoke-static v3, v4, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "new_install"
+000040: move-result-object v3
+000042: new-array v4, v0, [B
+000046: fill-array-data v4, +0000071h
+00004c: new-array v5, v1, [B
+000050: fill-array-data v5, +0000074h
+000056: invoke-static v4, v5, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "param1"
+00005c: move-result-object v4
+00005e: invoke-interface v14, Ljava/util/List;->size()I
+000064: move-result v5
+000066: invoke-static v5, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+00006c: move-result-object v5
+00006e: invoke-static v4, v5, Lj5e;->a(Ljava/lang/Object; Ljava/lang/Object;)Lkotlin/Pair;
+000074: move-result-object v4
+000076: new-array v0, v0, [B
+00007a: fill-array-data v0, +0000067h
+000080: new-array v5, v1, [B
+000084: fill-array-data v5, +000006ah
+00008a: invoke-static v0, v5, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "param2"
+000090: move-result-object v0
+000092: move-object v5, v14
+000094: check-cast v5, Ljava/lang/Iterable;
+000098: const/4 v14, 1
+00009a: new-array v14, v14, [B
+00009e: const/16 v6, -42
+0000a2: const/4 v7, 0
+0000a4: aput-byte v6, v14, v7
+0000a8: new-array v1, v1, [B
+0000ac: fill-array-data v1, +000005eh
+0000b2: invoke-static v14, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED ","
+0000b8: move-result-object v6
+0000ba: new-instance v11, Lzf7;
+0000be: invoke-direct v11, Lzf7;-><init>()V
+0000c4: const/16 v12, 30
+0000c8: const/4 v13, 0
+0000ca: const/4 v7, 0
+0000cc: const/4 v8, 0
+0000ce: const/4 v9, 0
+0000d0: const/4 v10, 0
+0000d2: invoke-static/range v5 ... v13, Lkotlin/collections/CollectionsKt;->A0(Ljava/lang/Iterable; Ljava/lang/CharSequence; Ljava/lang/CharSequence; Ljava/lang/CharSequence; I Ljava/lang/CharSequence; Lkotlin/jvm/functions/Function1; I Ljava/lang/Object;)Ljava/lang/String;
+0000d8: move-result-object v14
+0000da: invoke-static v0, v14, Lj5e;->a(Ljava/lang/Object; Ljava/lang/Object;)Lkotlin/Pair;
+0000e0: move-result-object v14
+0000e2: filled-new-array v4, v14, [Lkotlin/Pair;
+0000e8: move-result-object v14
+0000ea: invoke-static v14, Lkotlin/collections/x;->n([Lkotlin/Pair;)Ljava/util/Map;
+0000f0: move-result-object v14
+0000f2: invoke-virtual v2, v3, v14, La64;->a(Ljava/lang/String; Ljava/util/Map;)V
+0000f8: sget-object v14, Lkotlin/Unit;->a Lkotlin/Unit;
+0000fc: return-object v14
+0000fe: sget-object v14, Lkotlin/Unit;->a Lkotlin/Unit;
+000102: return-object v14
+000136: nop 
+000156: nop 
+
+METHOD t3 (Lapp/lawnchair/LawnchairLauncher; Lzh8;)V
+000000: invoke-static v0, v1, Lapp/lawnchair/LawnchairLauncher;->e4(Lapp/lawnchair/LawnchairLauncher; Lzh8;)V
+000006: return-void 
+
+METHOD t4 (Ldc7;)Ljava/lang/CharSequence;
+000000: const/4 v0, 2
+000002: new-array v0, v0, [B
+000006: fill-array-data v0, +000001bh
+00000c: const/16 v1, 8
+000010: new-array v1, v1, [B
+000014: fill-array-data v1, +000001ah
+00001a: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "it"
+000020: invoke-virtual v2, Ldc7;->a()Ljava/lang/String;
+000026: move-result-object v2
+000028: invoke-static v2, Lkotlin/text/StringsKt;->u1(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+00002e: move-result-object v2
+000030: invoke-virtual v2, Ljava/lang/Object;->toString()Ljava/lang/String;
+000036: move-result-object v2
+000038: return-object v2
+00003a: nop 
+000046: nop 
+
+METHOD u3 (Lapp/lawnchair/LawnchairLauncher;)V
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->f4(Lapp/lawnchair/LawnchairLauncher;)V
+000006: return-void 
+
+METHOD u4 (Lapp/lawnchair/LawnchairLauncher; Ljava/lang/String; Landroid/os/UserHandle;)Lkotlin/Unit;
+000000: const/4 v0, 3
+000002: new-array v0, v0, [B
+000006: fill-array-data v0, +0000077h
+00000c: const/16 v1, 15
+000010: const/16 v2, 8
+000014: new-array v3, v2, [B
+000018: fill-array-data v3, +0000074h
+00001e: invoke-static v0, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "pkg"
+000024: const/4 v0, 4
+000026: new-array v0, v0, [B
+00002a: fill-array-data v0, +0000073h
+000030: new-array v3, v2, [B
+000034: fill-array-data v3, +0000074h
+00003a: invoke-static v0, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "user"
+000040: new-array v0, v1, [B
+000044: fill-array-data v0, +0000074h
+00004a: new-array v1, v2, [B
+00004e: fill-array-data v1, +000007bh
+000054: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "launcher remove"
+00005a: move-result-object v0
+00005c: new-instance v1, Ljava/lang/StringBuilder;
+000060: invoke-direct v1, Ljava/lang/StringBuilder;-><init>()V
+000066: const/16 v3, 11
+00006a: new-array v3, v3, [B
+00006e: fill-array-data v3, +0000073h
+000074: new-array v4, v2, [B
+000078: fill-array-data v4, +0000078h
+00007e: invoke-static v3, v4, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "uninstall: "
+000084: move-result-object v3
+000086: invoke-virtual v1, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00008c: invoke-static v6, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+000092: move-result-object v6
+000094: invoke-virtual v1, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00009a: new-array v6, v2, [B
+00009e: fill-array-data v6, +000006dh
+0000a4: new-array v2, v2, [B
+0000a8: fill-array-data v2, +0000070h
+0000ae: invoke-static v6, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED ", user: "
+0000b4: move-result-object v6
+0000b6: invoke-virtual v1, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000bc: invoke-static v7, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+0000c2: move-result-object v6
+0000c4: invoke-virtual v1, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000ca: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0000d0: move-result-object v6
+0000d2: invoke-static v0, v6, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+0000d8: sget-object v6, Ljw;->a Ljw;
+0000dc: new-instance v7, Ltf7;
+0000e0: invoke-direct v7, Ltf7;-><init>()V
+0000e6: invoke-virtual v6, v5, v7, Ljw;->d(Landroid/content/Context; Lkotlin/jvm/functions/Function0;)V
+0000ec: sget-object v5, Lkotlin/Unit;->a Lkotlin/Unit;
+0000f0: return-object v5
+0000f2: nop 
+
+METHOD v3 (Lapp/lawnchair/LawnchairLauncher;)Lcom/android/launcher3/n;
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->C4(Lapp/lawnchair/LawnchairLauncher;)Lcom/android/launcher3/n;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD v4 ()Lkotlin/Unit;
+000000: sget-object v0, La64;->a La64;
+000004: const/16 v1, 11
+000008: new-array v1, v1, [B
+00000c: fill-array-data v1, +0000018h
+000012: const/16 v2, 8
+000016: new-array v2, v2, [B
+00001a: fill-array-data v2, +000001bh
+000020: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "vupdate_end"
+000026: move-result-object v1
+000028: invoke-static Lkotlin/collections/x;->k()Ljava/util/Map;
+00002e: move-result-object v2
+000030: invoke-virtual v0, v1, v2, La64;->a(Ljava/lang/String; Ljava/util/Map;)V
+000036: sget-object v0, Lkotlin/Unit;->a Lkotlin/Unit;
+00003a: return-object v0
+
+METHOD w3 (Lapp/lawnchair/LawnchairLauncher; Z Z)Lkotlin/Unit;
+000000: invoke-static v0, v1, v2, Lapp/lawnchair/LawnchairLauncher;->H4(Lapp/lawnchair/LawnchairLauncher; Z Z)Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD x3 (Lapp/lawnchair/LawnchairLauncher; F)V
+000000: invoke-static v0, v1, Lapp/lawnchair/LawnchairLauncher;->I4(Lapp/lawnchair/LawnchairLauncher; F)V
+000006: return-void 
+
+METHOD x4 (Lapp/lawnchair/LawnchairLauncher;)Z
+000000: invoke-virtual v1, Lcom/android/launcher3/o;->F()Lcom/android/launcher3/dragndrop/c;
+000006: move-result-object v0
+000008: invoke-virtual v0, Lcom/android/launcher3/dragndrop/c;->D()Z
+00000e: move-result v0
+000010: if-nez v0, +00fh
+000014: iget-object v1, v1, Lapp/lawnchair/LawnchairLauncher;->b2 Lrd7;
+000018: sget-object v0, Lrd7;->q Lrd7;
+00001c: invoke-static v1, v0, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000022: move-result v1
+000024: if-eqz v1, +003h
+000028: goto +3h
+00002a: const/4 v1, 0
+00002c: return v1
+00002e: const/4 v1, 1
+000030: return v1
+
+METHOD y3 (Lapp/lawnchair/LawnchairLauncher; Ljava/lang/String; Landroid/os/UserHandle;)Lkotlin/Unit;
+000000: invoke-static v0, v1, v2, Lapp/lawnchair/LawnchairLauncher;->u4(Lapp/lawnchair/LawnchairLauncher; Ljava/lang/String; Landroid/os/UserHandle;)Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD y4 (Lapp/lawnchair/LawnchairLauncher; I)V
+000000: const/4 v0, 0
+000002: const/16 v1, 8
+000006: sget-object v2, Lkgb;->Y Lkgb$a;
+00000a: iget-object v2, v3, Lcom/android/launcher3/o;->k1 Landroidx/fragment/app/Fragment;
+00000e: if-nez v4, +040h
+000012: sget-object v4, Lul0;->a Lul0;
+000016: const/4 v0, 1
+000018: invoke-virtual v4, v0, Lul0;->k(Z)V
+00001e: invoke-static Ljk4$b;->c()V
+000024: invoke-static Ltj4;->p()V
+00002a: sget-object v4, Landroidx/lifecycle/i$b;->f0 Landroidx/lifecycle/i$b;
+00002e: invoke-virtual v3, v2, v4, Lcom/android/launcher3/o;->U2(Landroidx/fragment/app/Fragment; Landroidx/lifecycle/i$b;)V
+000034: sget-object v4, Lija;->a Lija;
+000038: invoke-virtual v4, Lija;->d()V
+00003e: new-array v4, v1, [B
+000042: fill-array-data v4, +000004dh
+000048: new-array v0, v1, [B
+00004c: fill-array-data v0, +0000050h
+000052: invoke-static v4, v0, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "all_apps"
+000058: move-result-object v4
+00005a: invoke-static v4, Lwt5;->u(Ljava/lang/String;)Z
+000060: move-result v4
+000062: if-eqz v4, +00dh
+000066: sget-object v4, Lhle;->a Lhle;
+00006a: new-instance v0, Lrf7;
+00006e: invoke-direct v0, Lrf7;-><init>()V
+000074: invoke-virtual v4, v3, v0, Lhle;->i(Landroid/app/Activity; Lkotlin/jvm/functions/Function0;)V
+00007a: goto +1fh
+00007c: new-instance v4, Lsf7;
+000080: invoke-direct v4, Lsf7;-><init>()V
+000086: invoke-static v3, v4, Lhle;->j(Landroid/app/Activity; Lkotlin/jvm/functions/Function0;)V
+00008c: goto +16h
+00008e: sget-object v4, Lul0;->a Lul0;
+000092: invoke-virtual v4, v0, Lul0;->k(Z)V
+000098: sget-object v4, Landroidx/lifecycle/i$b;->e0 Landroidx/lifecycle/i$b;
+00009c: invoke-virtual v3, v2, v4, Lcom/android/launcher3/o;->U2(Landroidx/fragment/app/Fragment; Landroidx/lifecycle/i$b;)V
+0000a2: invoke-virtual v3, Lapp/lawnchair/LawnchairLauncher;->X4()V
+0000a8: invoke-virtual v3, Lapp/lawnchair/LawnchairLauncher;->V4()V
+0000ae: sget-object v3, Lija;->a Lija;
+0000b2: invoke-virtual v3, Lija;->c()V
+0000b8: sget-object v3, Lkotlin/Unit;->a Lkotlin/Unit;
+0000bc: invoke-static v3, Lkgb;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0000c2: return-void 
+0000c4: move-exception v3
+0000c6: sget-object v4, Lkgb;->Y Lkgb$a;
+0000ca: invoke-static v3, Lngb;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+0000d0: move-result-object v3
+0000d2: invoke-static v3, Lkgb;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0000d8: return-void 
+0000da: nop 
+
+METHOD z3 (Ldc7;)Ljava/lang/CharSequence;
+000000: invoke-static v0, Lapp/lawnchair/LawnchairLauncher;->t4(Ldc7;)Ljava/lang/CharSequence;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD z4 ()Lkotlin/Unit;
+000000: sget-object v0, Ljt7;->a Ljt7;
+000004: const/16 v1, 8
+000008: const/16 v2, 22
+00000c: new-array v2, v2, [B
+000010: fill-array-data v2, +0000018h
+000016: new-array v1, v1, [B
+00001a: fill-array-data v1, +0000023h
+000020: invoke-static v2, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "key_show_floating_ball"
+000026: move-result-object v1
+000028: invoke-virtual v0, v1, Ljt7;->a(Ljava/lang/String;)Landroidx/lifecycle/s;
+00002e: move-result-object v0
+000030: sget-object v1, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+000034: invoke-virtual v0, v1, Landroidx/lifecycle/s;->o(Ljava/lang/Object;)V
+00003a: sget-object v0, Lkotlin/Unit;->a Lkotlin/Unit;
+00003e: return-object v0
+00005e: nop 
+
+METHOD D4 ()Z
+000000: iget-object v0, v1, Lcom/android/launcher3/o;->l1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+000004: invoke-virtual v0, Lcom/pvab/xxnido/oaeqxmtigwcbr;->e()Z
+00000a: move-result v0
+00000c: return v0
+
+METHOD K4 (Landroid/content/Context; Ljava/util/Locale;)V
+000000: invoke-static Lcom/android/launcher3/s;->n()Lcom/android/launcher3/s;
+000006: move-result-object v5
+000008: invoke-virtual v5, Lcom/android/launcher3/s;->u()V
+00000e: sget-object v5, Ldmb;->a Ldmb;
+000012: const/4 v0, 0
+000014: const/4 v1, 2
+000016: const-class v2, Ltq5;
+00001a: invoke-static v5, v2, v0, v1, v0, Ldmb;->c(Ldmb; Ljava/lang/Class; Ljava/lang/String; I Ljava/lang/Object;)Ljava/lang/Object;
+000020: move-result-object v5
+000022: check-cast v5, Ltq5;
+000026: if-eqz v5, +005h
+00002a: invoke-interface v5, v4, Ltq5;->b(Landroid/content/Context;)V
+000030: return-void 
+
+METHOD N0 ()V
+000000: invoke-virtual v2, Lapp/lawnchair/LawnchairLauncher;->o4()Lood;
+000006: move-result-object v0
+000008: invoke-virtual v0, Lood;->h()Lrg1;
+00000e: move-result-object v0
+000010: iget-object v1, v2, Lapp/lawnchair/LawnchairLauncher;->a2 Lrg1;
+000014: invoke-static v0, v1, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+00001a: move-result v0
+00001c: if-nez v0, +006h
+000020: invoke-virtual v2, Landroid/app/Activity;->recreate()V
+000026: return-void 
+000028: invoke-super v2, Lcom/android/launcher3/d;->N0()V
+00002e: return-void 
+
+METHOD N4 ()V
+000000: sget v0, Lapp/lawnchair/LawnchairLauncher;->m2 I
+000004: if-nez v0, +005h
+000008: invoke-virtual v1, Landroid/app/Activity;->recreate()V
+00000e: return-void 
+
+METHOD O4 ()V
+000000: sget v0, Lapp/lawnchair/LawnchairLauncher;->m2 I
+000004: and-int/lit8 v1, v0, 2
+000008: const/4 v2, 0
+00000a: if-eqz v1, +00ah
+00000e: invoke-static v3, Lhe7;->a(Landroid/content/Context;)Lge7;
+000014: move-result-object v0
+000016: invoke-virtual v0, v2, Lge7;->o(Z)V
+00001c: return-void 
+00001e: and-int/lit8 v0, v0, 1
+000022: if-eqz v0, +007h
+000026: sput v2, Lapp/lawnchair/LawnchairLauncher;->m2 I
+00002a: invoke-virtual v3, Landroid/app/Activity;->recreate()V
+000030: return-void 
+
+METHOD P4 (Landroid/os/Bundle;)V
+000000: const/16 v0, 34
+000004: new-array v1, v0, [B
+000008: fill-array-data v1, +000005eh
+00000e: const/16 v2, 8
+000012: new-array v3, v2, [B
+000016: fill-array-data v3, +000006dh
+00001c: invoke-static v1, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "saved_state_swipe_layout_left_open"
+000022: move-result-object v1
+000024: invoke-virtual v5, v1, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+00002a: move-result v1
+00002c: if-eqz v1, +01ah
+000030: new-array v0, v0, [B
+000034: fill-array-data v0, +0000066h
+00003a: new-array v1, v2, [B
+00003e: fill-array-data v1, +0000077h
+000044: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "saved_state_swipe_layout_left_open"
+00004a: move-result-object v0
+00004c: invoke-virtual v5, v0, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+000052: move-result v0
+000054: invoke-static v0, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+00005a: move-result-object v0
+00005c: iput-object v0, v4, Lapp/lawnchair/LawnchairLauncher;->f2 Ljava/lang/Boolean;
+000060: const/16 v0, 26
+000064: new-array v0, v0, [B
+000068: fill-array-data v0, +000006ah
+00006e: new-array v1, v2, [B
+000072: fill-array-data v1, +0000077h
+000078: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "saved_state_launcher_state"
+00007e: move-result-object v0
+000080: invoke-virtual v5, v0, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+000086: move-result v0
+000088: if-eqz v0, +01ch
+00008c: const/16 v0, 26
+000090: new-array v0, v0, [B
+000094: fill-array-data v0, +000006eh
+00009a: new-array v1, v2, [B
+00009e: fill-array-data v1, +000007bh
+0000a4: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "saved_state_launcher_state"
+0000aa: move-result-object v0
+0000ac: invoke-virtual v5, v0, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+0000b2: move-result v5
+0000b4: invoke-static v5, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0000ba: move-result-object v5
+0000bc: iput-object v5, v4, Lapp/lawnchair/LawnchairLauncher;->g2 Ljava/lang/Integer;
+0000c0: return-void 
+0000c2: nop 
+0000ee: nop 
+00012a: nop 
+00015e: nop 
+000192: nop 
+
+METHOD Q0 (Ljava/util/List;)V
+000000: const/4 v0, 3
+000002: new-array v0, v0, [B
+000006: fill-array-data v0, +0000019h
+00000c: const/16 v1, 8
+000010: new-array v1, v1, [B
+000014: fill-array-data v1, +0000018h
+00001a: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "out"
+000020: invoke-super v2, v3, Lcom/android/launcher3/e;->Q0(Ljava/util/List;)V
+000026: new-instance v0, Lowb;
+00002a: invoke-direct v0, v2, Lowb;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+000030: invoke-interface v3, v0, Ljava/util/List;->add(Ljava/lang/Object;)Z
+000036: return-void 
+
+METHOD Q4 ()V
+000000: sget-object v0, Lkgb;->Y Lkgb$a;
+000004: iget-object v0, v3, Lapp/lawnchair/LawnchairLauncher;->f2 Ljava/lang/Boolean;
+000008: if-eqz v0, +019h
+00000c: invoke-virtual v0, Ljava/lang/Boolean;->booleanValue()Z
+000012: move-result v0
+000014: iget-object v1, v3, Lapp/lawnchair/LawnchairLauncher;->P1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+000018: if-nez v1, +007h
+00001c: iget-object v1, v3, Lcom/android/launcher3/o;->l1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+000020: goto +3h
+000022: move-exception v0
+000024: goto +3dh
+000026: if-eqz v1, +00ah
+00002a: new-instance v2, Lkf7;
+00002e: invoke-direct v2, v0, v1, Lkf7;-><init>(Z Lcom/pvab/xxnido/oaeqxmtigwcbr;)V
+000034: invoke-virtual v1, v2, Landroid/widget/FrameLayout;->post(Ljava/lang/Runnable;)Z
+00003a: iget-object v0, v3, Lapp/lawnchair/LawnchairLauncher;->g2 Ljava/lang/Integer;
+00003e: if-eqz v0, +02bh
+000042: invoke-virtual v0, Ljava/lang/Number;->intValue()I
+000048: move-result v0
+00004a: invoke-static Lrd7;->A()[Lrd7;
+000050: move-result-object v1
+000052: if-ltz v0, +01eh
+000056: array-length v2, v1
+000058: if-ge v0, v2, +01bh
+00005c: aget-object v0, v1, v0
+000060: iget-object v1, v3, Lapp/lawnchair/LawnchairLauncher;->P1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+000064: if-eqz v1, +00bh
+000068: new-instance v2, Llf7;
+00006c: invoke-direct v2, v3, v0, Llf7;-><init>(Lapp/lawnchair/LawnchairLauncher; Lrd7;)V
+000072: invoke-virtual v1, v2, Landroid/widget/FrameLayout;->post(Ljava/lang/Runnable;)Z
+000078: goto +bh
+00007a: iget-object v1, v3, Lcom/android/launcher3/o;->l1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+00007e: if-eqz v1, +008h
+000082: new-instance v2, Lmf7;
+000086: invoke-direct v2, v3, v0, Lmf7;-><init>(Lapp/lawnchair/LawnchairLauncher; Lrd7;)V
+00008c: goto -dh
+00008e: sget-object v0, Lkotlin/Unit;->a Lkotlin/Unit;
+000092: goto +2h
+000094: const/4 v0, 0
+000096: invoke-static v0, Lkgb;->b(Ljava/lang/Object;)Ljava/lang/Object;
+00009c: return-void 
+00009e: sget-object v1, Lkgb;->Y Lkgb$a;
+0000a2: invoke-static v0, Lngb;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+0000a8: move-result-object v0
+0000aa: invoke-static v0, Lkgb;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0000b0: return-void 
+
+METHOD R2 ()V
+000000: invoke-super v1, Ldta;->R2()V
+000006: invoke-virtual v1, Lapp/lawnchair/LawnchairLauncher;->w4()V
+00000c: sget v0, Lzva;->sl_swipe_container I
+000010: invoke-virtual v1, v0, Lswc;->findViewById(I)Landroid/view/View;
+000016: move-result-object v0
+000018: check-cast v0, Lcom/pvab/xxnido/oaeqxmtigwcbr;
+00001c: iput-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->P1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+000020: if-eqz v0, +005h
+000024: invoke-static v0, v1, Laqe;->b(Landroid/view/View; Lsp7;)V
+00002a: iget-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->P1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+00002e: if-eqz v0, +005h
+000032: invoke-static v0, v1, Leqe;->b(Landroid/view/View; Lzqb;)V
+000038: invoke-virtual v1, Lapp/lawnchair/LawnchairLauncher;->Q4()V
+00003e: return-void 
+
+METHOD V4 ()V
+000000: const/16 v0, 8
+000004: new-array v1, v0, [B
+000008: fill-array-data v1, +000002ch
+00000e: new-array v0, v0, [B
+000012: fill-array-data v0, +000002fh
+000018: invoke-static v1, v0, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "all_apps"
+00001e: move-result-object v0
+000020: invoke-static v0, Lwt5;->u(Ljava/lang/String;)Z
+000026: move-result v1
+000028: if-eqz v1, +01ah
+00002c: sget-object v1, Lpj4;->a Lpj4;
+000030: invoke-virtual v1, Lpj4;->a()V
+000036: sget v1, Loxa;->popup_guide_all_apps I
+00003a: new-instance v2, Lxf7;
+00003e: invoke-direct v2, v4, Lxf7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+000044: const/4 v3, 0
+000046: invoke-static v1, v3, v2, Lwt5;->v(I Landroid/view/View; Lwt5$b;)Lwt5;
+00004c: move-result-object v1
+00004e: invoke-virtual v4, Landroidx/fragment/app/FragmentActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
+000054: move-result-object v2
+000056: invoke-virtual v1, v2, v0, Landroidx/fragment/app/e;->show(Landroidx/fragment/app/FragmentManager; Ljava/lang/String;)V
+00005c: return-void 
+00005e: nop 
+
+METHOD X4 ()V
+000000: const/16 v0, 8
+000004: new-array v1, v0, [B
+000008: fill-array-data v1, +000003ch
+00000e: new-array v2, v0, [B
+000012: fill-array-data v2, +000003fh
+000018: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "all_apps"
+00001e: move-result-object v1
+000020: invoke-static v1, Lwt5;->u(Ljava/lang/String;)Z
+000026: move-result v1
+000028: if-nez v1, +02ah
+00002c: invoke-virtual v3, Lcom/android/launcher3/o;->U0()Lgwc;
+000032: move-result-object v1
+000034: invoke-virtual v1, Lgwc;->u()Lvf0;
+00003a: move-result-object v1
+00003c: sget-object v2, Lrd7;->o Lrd7;
+000040: invoke-static v1, v2, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000046: move-result v1
+000048: if-eqz v1, +01ah
+00004c: sget-object v1, Lija;->a Lija;
+000050: new-array v2, v0, [B
+000054: fill-array-data v2, +0000026h
+00005a: new-array v0, v0, [B
+00005e: fill-array-data v0, +0000029h
+000064: invoke-static v2, v0, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "23000025"
+00006a: move-result-object v0
+00006c: new-instance v2, Lwf7;
+000070: invoke-direct v2, Lwf7;-><init>()V
+000076: invoke-virtual v1, v0, v2, Lija;->b(Ljava/lang/String; Lkotlin/jvm/functions/Function0;)V
+00007c: return-void 
+00007e: nop 
+
+METHOD c4 ()V
+000000: invoke-static v4, Lp49;->c(Landroidx/activity/ComponentActivity;)V
+000006: sget-object v0, Lj55;->a Lj55;
+00000a: const v1, 16908290
+000010: invoke-virtual v4, v1, Lswc;->findViewById(I)Landroid/view/View;
+000016: move-result-object v1
+000018: const/16 v2, 17
+00001c: new-array v2, v2, [B
+000020: fill-array-data v2, +0000016h
+000026: const/16 v3, 8
+00002a: new-array v3, v3, [B
+00002e: fill-array-data v3, +000001dh
+000034: invoke-static v2, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "findViewById(...)"
+00003a: check-cast v1, Landroid/view/ViewGroup;
+00003e: invoke-virtual v0, v1, v4, Lj55;->b(Landroid/view/ViewGroup; Lsp7;)V
+000044: invoke-virtual v0, Lj55;->c()V
+00004a: return-void 
+000066: nop 
+
+METHOD d4 ()V
+000000: sget-object v0, Lqf9;->a Lqf9;
+000004: invoke-virtual v0, Lqf9;->c()J
+00000a: move-result-wide v0
+00000c: sget-object v2, Ljava/util/concurrent/TimeUnit;->SECONDS Ljava/util/concurrent/TimeUnit;
+000010: const/16 v3, 29
+000014: const/16 v4, 13
+000018: new-array v4, v4, [B
+00001c: fill-array-data v4, +0000060h
+000022: const/16 v5, 8
+000026: new-array v5, v5, [B
+00002a: fill-array-data v5, +0000065h
+000030: invoke-static v4, v5, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "home_check_cd"
+000036: move-result-object v4
+000038: invoke-static v0, v1, v2, v4, Lqu6;->a(J Ljava/util/concurrent/TimeUnit; Ljava/lang/String;)Z
+00003e: move-result v0
+000040: if-nez v0, +003h
+000044: goto +47h
+000046: iget-object v0, v6, Lapp/lawnchair/LawnchairLauncher;->P1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+00004a: const/4 v1, 1
+00004c: if-eqz v0, +009h
+000050: invoke-virtual v0, Lcom/pvab/xxnido/oaeqxmtigwcbr;->f()Z
+000056: move-result v0
+000058: if-ne v0, v1, +003h
+00005c: return-void 
+00005e: iget-object v0, v6, Lapp/lawnchair/LawnchairLauncher;->b2 Lrd7;
+000062: sget-object v2, Lrd7;->q Lrd7;
+000066: invoke-static v0, v2, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+00006c: move-result v0
+00006e: if-eqz v0, +003h
+000072: goto +30h
+000074: sget v0, Landroid/os/Build$VERSION;->SDK_INT I
+000078: if-ge v0, v3, +003h
+00007c: goto +2bh
+00007e: sget-object v0, Ldmb;->a Ldmb;
+000082: const-class v2, Lzh8;
+000086: const/4 v3, 2
+000088: const/4 v4, 0
+00008a: invoke-static v0, v2, v4, v3, v4, Ldmb;->c(Ldmb; Ljava/lang/Class; Ljava/lang/String; I Ljava/lang/Object;)Ljava/lang/Object;
+000090: move-result-object v0
+000092: check-cast v0, Lzh8;
+000096: if-nez v0, +003h
+00009a: goto +1ch
+00009c: iget-boolean v2, v6, Lapp/lawnchair/LawnchairLauncher;->e2 Z
+0000a0: if-nez v2, +01ah
+0000a4: invoke-interface v0, v6, Lzh8;->c(Landroid/content/Context;)Z
+0000aa: move-result v2
+0000ac: if-eqz v2, +003h
+0000b0: goto +12h
+0000b2: iput-boolean v1, v6, Lapp/lawnchair/LawnchairLauncher;->e2 Z
+0000b6: iget-object v1, v6, Lapp/lawnchair/LawnchairLauncher;->P1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+0000ba: if-eqz v1, +00ch
+0000be: new-instance v2, Lhf7;
+0000c2: invoke-direct v2, v6, v0, Lhf7;-><init>(Lapp/lawnchair/LawnchairLauncher; Lzh8;)V
+0000c8: const-wide/16 v3, 300
+0000cc: invoke-virtual v1, v2, v3, v4, Landroid/widget/FrameLayout;->postDelayed(Ljava/lang/Runnable; J)Z
+0000d2: return-void 
+0000d4: const/4 v0, 0
+0000d6: iput-boolean v0, v6, Lapp/lawnchair/LawnchairLauncher;->e2 Z
+0000da: return-void 
+0000f2: nop 
+
+METHOD i4 ()I
+000000: iget v0, v1, Lapp/lawnchair/LawnchairLauncher;->Y1 I
+000004: return v0
+
+METHOD j4 ()Lap5;
+000000: iget-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->S1 Lej7;
+000004: invoke-interface v0, Lej7;->getValue()Ljava/lang/Object;
+00000a: move-result-object v0
+00000c: check-cast v0, Lap5;
+000010: return-object v0
+
+METHOD k4 ()Lu2f;
+000000: iget-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->X1 Lej7;
+000004: invoke-interface v0, Lej7;->getValue()Ljava/lang/Object;
+00000a: move-result-object v0
+00000c: check-cast v0, Lu2f;
+000010: return-object v0
+
+METHOD m4 ()Lnha;
+000000: iget-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->V1 Lej7;
+000004: invoke-interface v0, Lej7;->getValue()Ljava/lang/Object;
+00000a: move-result-object v0
+00000c: check-cast v0, Lnha;
+000010: return-object v0
+
+METHOD n4 ()Lkga;
+000000: iget-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->U1 Lej7;
+000004: invoke-interface v0, Lej7;->getValue()Ljava/lang/Object;
+00000a: move-result-object v0
+00000c: check-cast v0, Lkga;
+000010: return-object v0
+
+METHOD o4 ()Lood;
+000000: iget-object v0, v1, Lapp/lawnchair/LawnchairLauncher;->Z1 Lej7;
+000004: invoke-interface v0, Lej7;->getValue()Ljava/lang/Object;
+00000a: move-result-object v0
+00000c: check-cast v0, Lood;
+000010: return-object v0
+
+METHOD onActivityResult (I I Landroid/content/Intent;)V
+000000: invoke-virtual v1, Landroidx/activity/ComponentActivity;->getActivityResultRegistry()Ly9;
+000006: move-result-object v0
+000008: invoke-virtual v0, v2, v3, v4, Ly9;->e(I I Landroid/content/Intent;)Z
+00000e: move-result v0
+000010: if-nez v0, +005h
+000014: invoke-super v1, v2, v3, v4, Lcom/android/launcher3/o;->onActivityResult(I I Landroid/content/Intent;)V
+00001a: return-void 
+
+METHOD onConfigurationChanged (Landroid/content/res/Configuration;)V
+000000: const/16 v0, 9
+000004: new-array v0, v0, [B
+000008: fill-array-data v0, +000001ch
+00000e: const/16 v1, 8
+000012: new-array v1, v1, [B
+000016: fill-array-data v1, +000001fh
+00001c: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "newConfig"
+000022: invoke-super v2, v3, Ldta;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+000028: sget-object v0, Les1;->a Les1;
+00002c: new-instance v1, Leg7;
+000030: invoke-direct v1, v2, Leg7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+000036: invoke-virtual v0, v2, v3, v1, Les1;->b(Landroid/content/Context; Landroid/content/res/Configuration; Lkotlin/jvm/functions/Function2;)V
+00003c: return-void 
+00003e: nop 
+000052: nop 
+
+METHOD onCreate (Landroid/os/Bundle;)V
+000000: const/16 v0, 22
+000004: const/16 v1, 21
+000008: const/16 v2, 8
+00000c: invoke-virtual v12, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
+000012: move-result-object v3
+000014: new-instance v4, Lkg7;
+000018: invoke-direct v4, v12, Lkg7;-><init>(Landroid/content/Context;)V
+00001e: invoke-virtual v3, v4, Landroid/view/LayoutInflater;->setFactory2(Landroid/view/LayoutInflater$Factory2;)V
+000024: iget-object v3, v12, Lapp/lawnchair/LawnchairLauncher;->Q1 Lwqb;
+000028: invoke-virtual v3, v13, Lwqb;->d(Landroid/os/Bundle;)V
+00002e: if-eqz v13, +005h
+000032: invoke-virtual v12, v13, Lapp/lawnchair/LawnchairLauncher;->P4(Landroid/os/Bundle;)V
+000038: invoke-super v12, v13, Lcom/android/launcher3/e;->onCreate(Landroid/os/Bundle;)V
+00003e: iget-object v13, v12, Lapp/lawnchair/LawnchairLauncher;->R1 Landroidx/lifecycle/o;
+000042: sget-object v3, Landroidx/lifecycle/i$a;->ON_CREATE Landroidx/lifecycle/i$a;
+000046: invoke-virtual v13, v3, Landroidx/lifecycle/o;->g(Landroidx/lifecycle/i$a;)V
+00004c: invoke-static v12, Lznb;->c(Landroid/content/Context;)Z
+000052: move-result v13
+000054: if-eqz v13, +008h
+000058: invoke-static Ltk4$b;->a()V
+00005e: invoke-static Ltk4$b;->b()V
+000064: sget-object v13, Ldmb;->a Ldmb;
+000068: const-class v3, Lzh8;
+00006c: const/4 v4, 2
+00006e: const/4 v5, 0
+000070: invoke-static v13, v3, v5, v4, v5, Ldmb;->c(Ldmb; Ljava/lang/Class; Ljava/lang/String; I Ljava/lang/Object;)Ljava/lang/Object;
+000076: move-result-object v13
+000078: check-cast v13, Lzh8;
+00007c: const/4 v3, 0
+00007e: if-eqz v13, +007h
+000082: invoke-interface v13, v12, Lzh8;->g(Landroid/content/Context;)Z
+000088: move-result v13
+00008a: goto +2h
+00008c: move v13, v3
+00008e: if-eqz v13, +006h
+000092: invoke-virtual v12, Landroid/app/Activity;->finish()V
+000098: return-void 
+00009a: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->p4()V
+0000a0: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->c4()V
+0000a6: sget-object v13, Les1;->a Les1;
+0000aa: invoke-virtual v12, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+0000b0: move-result-object v4
+0000b2: invoke-virtual v4, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+0000b8: move-result-object v4
+0000ba: new-array v1, v1, [B
+0000be: fill-array-data v1, +000010dh
+0000c4: new-array v6, v2, [B
+0000c8: fill-array-data v6, +0000118h
+0000ce: invoke-static v1, v6, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "getConfiguration(...)"
+0000d4: invoke-virtual v13, v4, Les1;->c(Landroid/content/res/Configuration;)V
+0000da: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->n4()Lkga;
+0000e0: move-result-object v13
+0000e2: invoke-virtual v13, Lkga;->E()Lxe0$i;
+0000e8: move-result-object v13
+0000ea: new-instance v1, Lfg7;
+0000ee: invoke-direct v1, v12, Lfg7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+0000f4: invoke-interface v13, v12, v1, Ldea;->a(Lsp7; Ljava/lang/Runnable;)V
+0000fa: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->n4()Lkga;
+000100: move-result-object v13
+000102: invoke-virtual v13, Lkga;->v()Lxe0$c;
+000108: move-result-object v13
+00010a: new-instance v1, Lgg7;
+00010e: invoke-direct v1, v12, Lgg7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+000114: invoke-interface v13, v12, v1, Ldea;->h(Lsp7; Lou1;)V
+00011a: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->n4()Lkga;
+000120: move-result-object v13
+000122: invoke-virtual v13, Lkga;->r()Lxe0$b;
+000128: move-result-object v13
+00012a: invoke-virtual v13, Lxe0$b;->s()Ljava/lang/Boolean;
+000130: move-result-object v13
+000132: invoke-virtual v13, Ljava/lang/Boolean;->booleanValue()Z
+000138: move-result v13
+00013a: if-eqz v13, +012h
+00013e: invoke-static v12, Ltp7;->a(Lsp7;)Landroidx/lifecycle/j;
+000144: move-result-object v6
+000146: new-instance v9, Lapp/lawnchair/LawnchairLauncher$d;
+00014a: invoke-direct v9, v12, v5, Lapp/lawnchair/LawnchairLauncher$d;-><init>(Lapp/lawnchair/LawnchairLauncher; Lgx1;)V
+000150: const/4 v10, 3
+000152: const/4 v11, 0
+000154: const/4 v7, 0
+000156: const/4 v8, 0
+000158: invoke-static/range v6 ... v11, Lnq0;->d(Luy1; Lkotlin/coroutines/CoroutineContext; Lyy1; Lkotlin/jvm/functions/Function2; I Ljava/lang/Object;)La17;
+00015e: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->m4()Lnha;
+000164: move-result-object v13
+000166: invoke-virtual v13, Lnha;->G0()Lfea;
+00016c: move-result-object v13
+00016e: invoke-interface v13, Lfea;->get()Lr75;
+000174: move-result-object v13
+000176: invoke-static v13, Lz75;->r(Lr75;)Lr75;
+00017c: move-result-object v13
+00017e: new-instance v1, Lapp/lawnchair/LawnchairLauncher$e;
+000182: invoke-direct v1, v12, v5, Lapp/lawnchair/LawnchairLauncher$e;-><init>(Lapp/lawnchair/LawnchairLauncher; Lgx1;)V
+000188: invoke-static v13, v1, Lz75;->O(Lr75; Lkotlin/jvm/functions/Function2;)Lr75;
+00018e: move-result-object v13
+000190: invoke-static v12, Ltp7;->a(Lsp7;)Landroidx/lifecycle/j;
+000196: move-result-object v1
+000198: invoke-static v13, v1, Lz75;->J(Lr75; Luy1;)La17;
+00019e: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->n4()Lkga;
+0001a4: move-result-object v13
+0001a6: invoke-virtual v13, Lkga;->F()Lxe0$b;
+0001ac: move-result-object v13
+0001ae: new-instance v1, Ldf7;
+0001b2: invoke-direct v1, Ldf7;-><init>()V
+0001b8: invoke-interface v13, v12, v1, Ldea;->h(Lsp7; Lou1;)V
+0001be: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->n4()Lkga;
+0001c4: move-result-object v13
+0001c6: invoke-virtual v13, Lkga;->Q()Lxe0$f;
+0001cc: move-result-object v13
+0001ce: new-instance v1, Lef7;
+0001d2: invoke-direct v1, Lef7;-><init>()V
+0001d8: invoke-interface v13, v12, v1, Ldea;->h(Lsp7; Lou1;)V
+0001de: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->m4()Lnha;
+0001e4: move-result-object v13
+0001e6: invoke-virtual v13, Lnha;->C0()Lfea;
+0001ec: move-result-object v13
+0001ee: invoke-static v12, Ltp7;->a(Lsp7;)Landroidx/lifecycle/j;
+0001f4: move-result-object v1
+0001f6: new-instance v4, Lff7;
+0001fa: invoke-direct v4, Lff7;-><init>()V
+000200: invoke-static v13, v1, v4, Lhfa;->c(Lfea; Luy1; Lkotlin/jvm/functions/Function1;)V
+000206: sget v13, Liua;->isWorkspaceDarkText I
+00020a: invoke-static v12, v13, Lrod;->d(Landroid/content/Context; I)Z
+000210: move-result v13
+000212: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->m4()Lnha;
+000218: move-result-object v1
+00021a: invoke-virtual v1, Lnha;->g0()Lfea;
+000220: move-result-object v1
+000222: invoke-static v12, Ltp7;->a(Lsp7;)Landroidx/lifecycle/j;
+000228: move-result-object v4
+00022a: new-instance v5, Lgf7;
+00022e: invoke-direct v5, v12, v13, Lgf7;-><init>(Lapp/lawnchair/LawnchairLauncher; Z)V
+000234: invoke-static v1, v4, v5, Lhfa;->c(Lfea; Luy1; Lkotlin/jvm/functions/Function1;)V
+00023a: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->n4()Lkga;
+000240: move-result-object v13
+000242: invoke-virtual v13, Lkga;->O()Lxe0$b;
+000248: move-result-object v13
+00024a: invoke-virtual v13, Lxe0$b;->s()Ljava/lang/Boolean;
+000250: move-result-object v13
+000252: invoke-virtual v13, Ljava/lang/Boolean;->booleanValue()Z
+000258: move-result v13
+00025a: if-eqz v13, +034h
+00025e: invoke-virtual v12, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
+000264: move-result-object v13
+000266: new-array v0, v0, [B
+00026a: fill-array-data v0, +000004fh
+000270: new-array v1, v2, [B
+000274: fill-array-data v1, +000005ah
+00027a: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "getPackageManager(...)"
+000280: const/16 v0, 23
+000284: new-array v0, v0, [B
+000288: fill-array-data v0, +0000058h
+00028e: new-array v1, v2, [B
+000292: fill-array-data v1, +0000063h
+000298: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "app.lawnchair.lawnicons"
+00029e: move-result-object v0
+0002a0: invoke-static v13, v0, Lbm9;->b(Landroid/content/pm/PackageManager; Ljava/lang/String;)Z
+0002a6: move-result v13
+0002a8: if-nez v13, +00dh
+0002ac: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->n4()Lkga;
+0002b2: move-result-object v13
+0002b4: invoke-virtual v13, Lkga;->O()Lxe0$b;
+0002ba: move-result-object v13
+0002bc: invoke-virtual v13, v3, Lxe0$b;->u(Z)V
+0002c2: invoke-virtual v12, Lapp/lawnchair/LawnchairLauncher;->o4()Lood;
+0002c8: move-result-object v13
+0002ca: invoke-virtual v13, Lood;->h()Lrg1;
+0002d0: move-result-object v13
+0002d2: iput-object v13, v12, Lapp/lawnchair/LawnchairLauncher;->a2 Lrg1;
+0002d6: return-void 
+0002f6: nop 
+000326: nop 
+
+METHOD onDestroy ()V
+000000: invoke-super v2, Ldta;->onDestroy()V
+000006: iget-object v0, v2, Lapp/lawnchair/LawnchairLauncher;->R1 Landroidx/lifecycle/o;
+00000a: sget-object v1, Landroidx/lifecycle/i$a;->ON_DESTROY Landroidx/lifecycle/i$a;
+00000e: invoke-virtual v0, v1, Landroidx/lifecycle/o;->g(Landroidx/lifecycle/i$a;)V
+000014: return-void 
+
+METHOD onPause ()V
+000000: invoke-super v2, Lcom/android/launcher3/o;->onPause()V
+000006: iget-object v0, v2, Lapp/lawnchair/LawnchairLauncher;->R1 Landroidx/lifecycle/o;
+00000a: sget-object v1, Landroidx/lifecycle/i$a;->ON_PAUSE Landroidx/lifecycle/i$a;
+00000e: invoke-virtual v0, v1, Landroidx/lifecycle/o;->g(Landroidx/lifecycle/i$a;)V
+000014: return-void 
+
+METHOD onResume ()V
+000000: invoke-super v2, Lcom/android/launcher3/o;->onResume()V
+000006: iget-object v0, v2, Lapp/lawnchair/LawnchairLauncher;->R1 Landroidx/lifecycle/o;
+00000a: sget-object v1, Landroidx/lifecycle/i$a;->ON_RESUME Landroidx/lifecycle/i$a;
+00000e: invoke-virtual v0, v1, Landroidx/lifecycle/o;->g(Landroidx/lifecycle/i$a;)V
+000014: invoke-virtual v2, Lapp/lawnchair/LawnchairLauncher;->O4()V
+00001a: invoke-static Ltj4;->n()V
+000020: sget-object v0, Luod;->a Luod;
+000024: invoke-virtual v0, v2, Luod;->g(Lapp/lawnchair/LawnchairLauncher;)V
+00002a: invoke-virtual v2, Lcom/android/launcher3/o;->d2()Lcom/android/launcher3/dragndrop/DragLayer;
+000030: move-result-object v0
+000032: invoke-virtual v0, Landroid/widget/FrameLayout;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+000038: move-result-object v0
+00003a: new-instance v1, Lapp/lawnchair/LawnchairLauncher$f;
+00003e: invoke-direct v1, v2, Lapp/lawnchair/LawnchairLauncher$f;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+000044: invoke-virtual v0, v1, Landroid/view/ViewTreeObserver;->addOnDrawListener(Landroid/view/ViewTreeObserver$OnDrawListener;)V
+00004a: sget-object v0, Las;->f Las$c;
+00004e: invoke-virtual v0, Las$c;->b()Las;
+000054: move-result-object v0
+000056: invoke-virtual v0, v2, Las;->l(Landroid/app/Activity;)V
+00005c: sget-object v0, Lija;->a Lija;
+000060: invoke-virtual v0, Lija;->c()V
+000066: invoke-virtual v0, v2, Lija;->e(Landroid/content/Context;)V
+00006c: invoke-virtual v2, Lapp/lawnchair/LawnchairLauncher;->d4()V
+000072: return-void 
+
+METHOD onSaveInstanceState (Landroid/os/Bundle;)V
+000000: const/16 v0, 8
+000004: new-array v1, v0, [B
+000008: fill-array-data v1, +0000018h
+00000e: new-array v0, v0, [B
+000012: fill-array-data v0, +000001bh
+000018: invoke-static v1, v0, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "outState"
+00001e: invoke-super v2, v3, Lcom/android/launcher3/o;->onSaveInstanceState(Landroid/os/Bundle;)V
+000024: iget-object v0, v2, Lapp/lawnchair/LawnchairLauncher;->Q1 Lwqb;
+000028: invoke-virtual v0, v3, Lwqb;->e(Landroid/os/Bundle;)V
+00002e: invoke-direct v2, v3, Lapp/lawnchair/LawnchairLauncher;->U4(Landroid/os/Bundle;)V
+000034: return-void 
+000036: nop 
+
+METHOD onStart ()V
+000000: invoke-super v2, Lcom/android/launcher3/o;->onStart()V
+000006: iget-object v0, v2, Lapp/lawnchair/LawnchairLauncher;->R1 Landroidx/lifecycle/o;
+00000a: sget-object v1, Landroidx/lifecycle/i$a;->ON_START Landroidx/lifecycle/i$a;
+00000e: invoke-virtual v0, v1, Landroidx/lifecycle/o;->g(Landroidx/lifecycle/i$a;)V
+000014: return-void 
+
+METHOD onStop ()V
+000000: invoke-super v2, Lcom/android/launcher3/o;->onStop()V
+000006: iget-object v0, v2, Lapp/lawnchair/LawnchairLauncher;->R1 Landroidx/lifecycle/o;
+00000a: sget-object v1, Landroidx/lifecycle/i$a;->ON_STOP Landroidx/lifecycle/i$a;
+00000e: invoke-virtual v0, v1, Landroidx/lifecycle/o;->g(Landroidx/lifecycle/i$a;)V
+000014: return-void 
+
+METHOD p4 ()V
+000000: invoke-static v3, Lig7;->a(Landroid/content/Context;)Lapp/lawnchair/LawnchairLauncher;
+000006: move-result-object v0
+000008: invoke-virtual v0, Lcom/android/launcher3/o;->U0()Lgwc;
+00000e: move-result-object v0
+000010: iget-object v1, v3, Lapp/lawnchair/LawnchairLauncher;->c2 Lapp/lawnchair/LawnchairLauncher$g;
+000014: invoke-virtual v0, v1, Lgwc;->K(Lgwc$g;)V
+00001a: invoke-static v3, Lig7;->a(Landroid/content/Context;)Lapp/lawnchair/LawnchairLauncher;
+000020: move-result-object v0
+000022: invoke-virtual v0, Lcom/android/launcher3/o;->U0()Lgwc;
+000028: move-result-object v0
+00002a: iget-object v1, v3, Lapp/lawnchair/LawnchairLauncher;->c2 Lapp/lawnchair/LawnchairLauncher$g;
+00002e: invoke-virtual v0, v1, Lgwc;->f(Lgwc$g;)V
+000034: new-instance v0, Llu;
+000038: new-instance v1, Lif7;
+00003c: invoke-direct v1, v3, Lif7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+000042: new-instance v2, Ljf7;
+000046: invoke-direct v2, v3, Ljf7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+00004c: invoke-direct v0, v3, v3, v1, v2, Llu;-><init>(Landroid/content/Context; Lsp7; Lkotlin/jvm/functions/Function2; Lkotlin/jvm/functions/Function2;)V
+000052: return-void 
+
+METHOD r2 ()Ljava/util/stream/Stream;
+000000: invoke-super v3, Ldta;->r2()Ljava/util/stream/Stream;
+000006: move-result-object v0
+000008: const/4 v1, 0
+00000a: new-array v1, v1, [Lcom/android/launcher3/popup/d$b;
+00000e: invoke-static v1, Ljava/util/stream/Stream;->of([Ljava/lang/Object;)Ljava/util/stream/Stream;
+000014: move-result-object v1
+000016: invoke-static v0, v1, Ljava/util/stream/Stream;->concat(Ljava/util/stream/Stream; Ljava/util/stream/Stream;)Ljava/util/stream/Stream;
+00001c: move-result-object v0
+00001e: const/16 v1, 11
+000022: new-array v1, v1, [B
+000026: fill-array-data v1, +000000fh
+00002c: const/16 v2, 8
+000030: new-array v2, v2, [B
+000034: fill-array-data v2, +0000012h
+00003a: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "concat(...)"
+000040: return-object v0
+000042: nop 
+
+METHOD w4 ()V
+000000: invoke-virtual v2, Lswc;->T0()Landroid/view/View;
+000006: move-result-object v0
+000008: sget v1, Lzva;->sl_swipe_container I
+00000c: invoke-virtual v0, v1, Landroid/view/View;->findViewById(I)Landroid/view/View;
+000012: move-result-object v0
+000014: check-cast v0, Lcom/pvab/xxnido/oaeqxmtigwcbr;
+000018: iput-object v0, v2, Lcom/android/launcher3/o;->l1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+00001c: new-instance v1, Lapp/lawnchair/LawnchairLauncher$b;
+000020: invoke-direct v1, v2, Lapp/lawnchair/LawnchairLauncher$b;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+000026: invoke-virtual v0, v1, Lcom/pvab/xxnido/oaeqxmtigwcbr;->setOnWorkSpacePageListener(Lcom/pvab/xxnido/oaeqxmtigwcbr$c;)V
+00002c: iget-object v0, v2, Lcom/android/launcher3/o;->l1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+000030: new-instance v1, Lpf7;
+000034: invoke-direct v1, v2, Lpf7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+00003a: invoke-virtual v0, v1, Lcom/pvab/xxnido/oaeqxmtigwcbr;->setOnDragStateListener(Lcom/pvab/xxnido/oaeqxmtigwcbr$a;)V
+000040: iget-object v0, v2, Lcom/android/launcher3/o;->l1 Lcom/pvab/xxnido/oaeqxmtigwcbr;
+000044: new-instance v1, Lqf7;
+000048: invoke-direct v1, v2, Lqf7;-><init>(Lapp/lawnchair/LawnchairLauncher;)V
+00004e: invoke-virtual v0, v1, Lcom/pvab/xxnido/oaeqxmtigwcbr;->setOnScreenChangedListener(Lcom/pvab/xxnido/oaeqxmtigwcbr$b;)V
+000054: return-void 
+
+METHOD y0 (Lcom/android/launcher3/allapps/AllAppsContainerView;)Lgwb;
+000000: const/4 v0, 7
+000002: new-array v0, v0, [B
+000006: fill-array-data v0, +0000013h
+00000c: const/16 v1, 8
+000010: new-array v1, v1, [B
+000014: fill-array-data v1, +0000014h
+00001a: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "allapps"
+000020: new-instance v0, Log7;
+000024: invoke-direct v0, v2, v3, Log7;-><init>(Lapp/lawnchair/LawnchairLauncher; Lcom/android/launcher3/allapps/AllAppsContainerView;)V
+00002a: return-object v0
+

@@ -1,0 +1,612 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>qx6.txt</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/reading-layout.css"></head><body class="source-body reading-document"><main class="document-content"><article class="prose"><h1>qx6.txt</h1><p>证据快照 · 2026-11-11 · 原文保留，不代表真机执行结果。</p><p><a download href="launcher_a7ff5718f1501662.txt">下载原文件</a></p><pre>CLASS Lqx6;
+FIELD a qx6
+FIELD b 
+
+METHOD &lt;clinit&gt; ()V
+000000: new-instance v0, Lnx6;
+000004: invoke-direct v0, Lnx6;-&gt;&lt;init&gt;()V
+00000a: sput-object v0, Lqx6;-&gt;b Landroid/view/View$OnClickListener;
+00000e: return-void 
+
+METHOD a (Lcom/android/launcher3/o; Ljava/lang/String; Landroid/os/UserHandle; Landroid/content/DialogInterface; I)V
+000000: invoke-virtual v0, Lcom/android/launcher3/o;-&gt;s2()Lcom/android/launcher3/Workspace;
+000006: move-result-object v0
+000008: invoke-virtual v0, v1, v2, Lcom/android/launcher3/Workspace;-&gt;t2(Ljava/lang/String; Landroid/os/UserHandle;)V
+00000e: return-void 
+
+METHOD b (Landroid/view/View;)V
+000000: invoke-static v0, Lqx6;-&gt;f(Landroid/view/View;)V
+000006: return-void 
+
+METHOD c (Landroid/view/View; Lcom/android/launcher3/o; Ljava/lang/String; Landroid/content/DialogInterface; I)V
+000000: invoke-static v0, v1, v2, Lqx6;-&gt;o(Landroid/view/View; Lcom/android/launcher3/o; Ljava/lang/String;)V
+000006: return-void 
+
+METHOD d (Landroid/view/View; Lfy6; Lcom/android/launcher3/o;)V
+000000: invoke-static v0, v1, v2, Lqx6;-&gt;n(Landroid/view/View; Lfy6; Lcom/android/launcher3/o;)V
+000006: return-void 
+
+METHOD e (Lv6f; Landroid/content/Context;)Z
+000000: iget v0, v4, Lpy6;-&gt;r0 I
+000004: and-int/lit8 v0, v0, 51
+000008: const/4 v1, 0
+00000a: if-nez v0, +003h
+00000e: return v1
+000010: iget-object v0, v4, Lv6f;-&gt;w0 Ljava/lang/CharSequence;
+000014: invoke-static v0, Landroid/text/TextUtils;-&gt;isEmpty(Ljava/lang/CharSequence;)Z
+00001a: move-result v0
+00001c: const/4 v2, 1
+00001e: if-nez v0, +00ch
+000022: iget-object v4, v4, Lv6f;-&gt;w0 Ljava/lang/CharSequence;
+000026: invoke-static v5, v4, v1, Landroid/widget/Toast;-&gt;makeText(Landroid/content/Context; Ljava/lang/CharSequence; I)Landroid/widget/Toast;
+00002c: move-result-object v4
+00002e: invoke-virtual v4, Landroid/widget/Toast;-&gt;show()V
+000034: return v2
+000036: sget v0, Ltya;-&gt;activity_not_available I
+00003a: iget v4, v4, Lpy6;-&gt;r0 I
+00003e: and-int/lit8 v3, v4, 1
+000042: if-eqz v3, +005h
+000046: sget v0, Ltya;-&gt;safemode_shortcut_error I
+00004a: goto +bh
+00004c: and-int/lit8 v3, v4, 16
+000050: if-nez v3, +006h
+000054: and-int/lit8 v4, v4, 32
+000058: if-eqz v4, +004h
+00005c: sget v0, Ltya;-&gt;shortcut_not_available I
+000060: invoke-static v5, v0, v1, Landroid/widget/Toast;-&gt;makeText(Landroid/content/Context; I I)Landroid/widget/Toast;
+000066: move-result-object v4
+000068: goto -1dh
+
+METHOD f (Landroid/view/View;)V
+000000: const/16 v0, 8
+000004: const/4 v1, 0
+000006: const/16 v2, -108
+00000a: const/4 v3, 1
+00000c: invoke-virtual v7, Landroid/view/View;-&gt;getWindowToken()Landroid/os/IBinder;
+000012: move-result-object v4
+000014: if-nez v4, +003h
+000018: goto +70h
+00001a: invoke-virtual v7, Landroid/view/View;-&gt;getContext()Landroid/content/Context;
+000020: move-result-object v4
+000022: invoke-static v4, Lcom/android/launcher3/o;-&gt;h2(Landroid/content/Context;)Lcom/android/launcher3/o;
+000028: move-result-object v4
+00002a: invoke-virtual v4, Lcom/android/launcher3/o;-&gt;s2()Lcom/android/launcher3/Workspace;
+000030: move-result-object v5
+000032: invoke-virtual v5, Lcom/android/launcher3/Workspace;-&gt;a2()Z
+000038: move-result v5
+00003a: if-nez v5, +003h
+00003e: goto +5dh
+000040: invoke-virtual v7, Landroid/view/View;-&gt;getTag()Ljava/lang/Object;
+000046: move-result-object v5
+000048: instance-of v6, v5, Lv6f;
+00004c: if-eqz v6, +018h
+000050: new-array v3, v3, [B
+000054: aput-byte v2, v3, v1
+000058: new-array v0, v0, [B
+00005c: fill-array-data v0, +0000050h
+000062: invoke-static v3, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;4&quot;
+000068: move-result-object v0
+00006a: invoke-static v0, Ltj4;-&gt;b(Ljava/lang/String;)V
+000070: check-cast v5, Lv6f;
+000074: invoke-static v7, v5, v4, Lqx6;-&gt;l(Landroid/view/View; Lv6f; Lcom/android/launcher3/o;)V
+00007a: return-void 
+00007c: instance-of v2, v5, Lwb5;
+000080: if-eqz v2, +00ah
+000084: instance-of v0, v7, Lcom/android/launcher3/folder/FolderIcon;
+000088: if-eqz v0, +038h
+00008c: invoke-static v7, Lqx6;-&gt;h(Landroid/view/View;)V
+000092: return-void 
+000094: instance-of v2, v5, Lzu;
+000098: if-eqz v2, +019h
+00009c: new-array v2, v3, [B
+0000a0: const/4 v3, 4
+0000a2: aput-byte v3, v2, v1
+0000a6: new-array v0, v0, [B
+0000aa: fill-array-data v0, +0000031h
+0000b0: invoke-static v2, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;2&quot;
+0000b6: move-result-object v0
+0000b8: invoke-static v0, Ltj4;-&gt;b(Ljava/lang/String;)V
+0000be: check-cast v5, Lzu;
+0000c2: invoke-static v7, v5, v4, Lqx6;-&gt;m(Landroid/view/View; Lfy6; Lcom/android/launcher3/o;)V
+0000c8: return-void 
+0000ca: instance-of v0, v5, Lyb7;
+0000ce: if-eqz v0, +00ch
+0000d2: instance-of v0, v7, Lcom/android/launcher3/widget/g;
+0000d6: if-eqz v0, +011h
+0000da: check-cast v7, Lcom/android/launcher3/widget/g;
+0000de: invoke-static v7, v4, Lqx6;-&gt;j(Lcom/android/launcher3/widget/g; Lcom/android/launcher3/o;)V
+0000e4: return-void 
+0000e6: instance-of v7, v5, Lxvb;
+0000ea: if-eqz v7, +007h
+0000ee: check-cast v5, Lxvb;
+0000f2: invoke-static v4, v5, Lqx6;-&gt;k(Lcom/android/launcher3/o; Lxvb;)V
+0000f8: return-void 
+0000fa: nop 
+
+METHOD g (Landroid/view/View; Lv6f; Lcom/android/launcher3/o;)V
+000000: invoke-virtual v3, Lpy6;-&gt;s()Z
+000006: move-result v0
+000008: if-eqz v0, +009h
+00000c: invoke-static v3, v4, Lqx6;-&gt;e(Lv6f; Landroid/content/Context;)Z
+000012: move-result v0
+000014: if-eqz v0, +003h
+000018: return-void 
+00001a: instance-of v0, v2, Lcom/android/launcher3/BubbleTextView;
+00001e: if-eqz v0, +03ah
+000022: invoke-virtual v3, Lv6f;-&gt;K()Z
+000028: move-result v0
+00002a: if-eqz v0, +034h
+00002e: invoke-virtual v3, Lv6f;-&gt;o()Landroid/content/Intent;
+000034: move-result-object v0
+000036: invoke-virtual v0, Landroid/content/Intent;-&gt;getComponent()Landroid/content/ComponentName;
+00003c: move-result-object v0
+00003e: if-eqz v0, +00fh
+000042: invoke-virtual v3, Lv6f;-&gt;o()Landroid/content/Intent;
+000048: move-result-object v0
+00004a: invoke-virtual v0, Landroid/content/Intent;-&gt;getComponent()Landroid/content/ComponentName;
+000050: move-result-object v0
+000052: invoke-virtual v0, Landroid/content/ComponentName;-&gt;getPackageName()Ljava/lang/String;
+000058: move-result-object v0
+00005a: goto +9h
+00005c: invoke-virtual v3, Lv6f;-&gt;o()Landroid/content/Intent;
+000062: move-result-object v0
+000064: invoke-virtual v0, Landroid/content/Intent;-&gt;getPackage()Ljava/lang/String;
+00006a: move-result-object v0
+00006c: invoke-static v0, Landroid/text/TextUtils;-&gt;isEmpty(Ljava/lang/CharSequence;)Z
+000072: move-result v1
+000074: if-nez v1, +00fh
+000078: iget v3, v3, Lpy6;-&gt;r0 I
+00007c: and-int/lit16 v3, v3, 1024
+000080: if-eqz v3, +004h
+000084: const/4 v3, 1
+000086: goto +2h
+000088: const/4 v3, 0
+00008a: invoke-static v2, v4, v0, v3, Lqx6;-&gt;i(Landroid/view/View; Lcom/android/launcher3/o; Ljava/lang/String; Z)V
+000090: return-void 
+000092: invoke-static v2, v3, v4, Lqx6;-&gt;n(Landroid/view/View; Lfy6; Lcom/android/launcher3/o;)V
+000098: return-void 
+
+METHOD h (Landroid/view/View;)V
+000000: move-object v0, v2
+000002: check-cast v0, Lcom/android/launcher3/folder/FolderIcon;
+000006: invoke-virtual v0, Lcom/android/launcher3/folder/FolderIcon;-&gt;getFolder()Lcom/android/launcher3/folder/Folder;
+00000c: move-result-object v0
+00000e: invoke-virtual v0, Lcom/android/launcher3/a;-&gt;Y()Z
+000014: move-result v1
+000016: if-nez v1, +022h
+00001a: invoke-virtual v0, Lcom/android/launcher3/folder/Folder;-&gt;K0()Z
+000020: move-result v1
+000022: if-nez v1, +01ch
+000026: invoke-virtual v0, Lcom/android/launcher3/folder/Folder;-&gt;u0()V
+00002c: invoke-virtual v2, Landroid/view/View;-&gt;getContext()Landroid/content/Context;
+000032: move-result-object v2
+000034: invoke-static v2, Lcom/android/launcher3/logging/StatsLogManager;-&gt;d(Landroid/content/Context;)Lcom/android/launcher3/logging/StatsLogManager;
+00003a: move-result-object v2
+00003c: invoke-virtual v2, Lcom/android/launcher3/logging/StatsLogManager;-&gt;c()Lcom/android/launcher3/logging/StatsLogManager$d;
+000042: move-result-object v2
+000044: iget-object v0, v0, Lcom/android/launcher3/folder/Folder;-&gt;L0 Lwb5;
+000048: invoke-interface v2, v0, Lcom/android/launcher3/logging/StatsLogManager$d;-&gt;h(Lfy6;)Lcom/android/launcher3/logging/StatsLogManager$d;
+00004e: move-result-object v2
+000050: sget-object v0, Lcom/android/launcher3/logging/StatsLogManager$c;-&gt;K0 Lcom/android/launcher3/logging/StatsLogManager$c;
+000054: invoke-interface v2, v0, Lcom/android/launcher3/logging/StatsLogManager$d;-&gt;k(Lcom/android/launcher3/logging/StatsLogManager$b;)V
+00005a: return-void 
+
+METHOD i (Landroid/view/View; Lcom/android/launcher3/o; Ljava/lang/String; Z)V
+000000: if-eqz v6, +006h
+000004: invoke-static v3, v4, v5, Lqx6;-&gt;o(Landroid/view/View; Lcom/android/launcher3/o; Ljava/lang/String;)V
+00000a: return-void 
+00000c: invoke-virtual v3, Landroid/view/View;-&gt;getTag()Ljava/lang/Object;
+000012: move-result-object v6
+000014: instance-of v6, v6, Lfy6;
+000018: if-eqz v6, +00bh
+00001c: invoke-virtual v3, Landroid/view/View;-&gt;getTag()Ljava/lang/Object;
+000022: move-result-object v6
+000024: check-cast v6, Lfy6;
+000028: iget-object v6, v6, Lfy6;-&gt;p0 Landroid/os/UserHandle;
+00002c: goto +5h
+00002e: invoke-static Landroid/os/Process;-&gt;myUserHandle()Landroid/os/UserHandle;
+000034: move-result-object v6
+000036: new-instance v0, Landroid/app/AlertDialog$Builder;
+00003a: invoke-direct v0, v4, Landroid/app/AlertDialog$Builder;-&gt;&lt;init&gt;(Landroid/content/Context;)V
+000040: sget v1, Ltya;-&gt;abandoned_promises_title I
+000044: invoke-virtual v0, v1, Landroid/app/AlertDialog$Builder;-&gt;setTitle(I)Landroid/app/AlertDialog$Builder;
+00004a: move-result-object v0
+00004c: sget v1, Ltya;-&gt;abandoned_promise_explanation I
+000050: invoke-virtual v0, v1, Landroid/app/AlertDialog$Builder;-&gt;setMessage(I)Landroid/app/AlertDialog$Builder;
+000056: move-result-object v0
+000058: sget v1, Ltya;-&gt;abandoned_search I
+00005c: new-instance v2, Lox6;
+000060: invoke-direct v2, v3, v4, v5, Lox6;-&gt;&lt;init&gt;(Landroid/view/View; Lcom/android/launcher3/o; Ljava/lang/String;)V
+000066: invoke-virtual v0, v1, v2, Landroid/app/AlertDialog$Builder;-&gt;setPositiveButton(I Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+00006c: move-result-object v3
+00006e: sget v0, Ltya;-&gt;abandoned_clean_this I
+000072: new-instance v1, Lpx6;
+000076: invoke-direct v1, v4, v5, v6, Lpx6;-&gt;&lt;init&gt;(Lcom/android/launcher3/o; Ljava/lang/String; Landroid/os/UserHandle;)V
+00007c: invoke-virtual v3, v0, v1, Landroid/app/AlertDialog$Builder;-&gt;setNeutralButton(I Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+000082: move-result-object v3
+000084: invoke-virtual v3, Landroid/app/AlertDialog$Builder;-&gt;create()Landroid/app/AlertDialog;
+00008a: move-result-object v3
+00008c: invoke-virtual v3, Landroid/app/AlertDialog;-&gt;show()V
+000092: return-void 
+
+METHOD j (Lcom/android/launcher3/widget/g; Lcom/android/launcher3/o;)V
+000000: invoke-virtual v5, Landroid/app/Activity;-&gt;getPackageManager()Landroid/content/pm/PackageManager;
+000006: move-result-object v0
+000008: invoke-virtual v0, Landroid/content/pm/PackageManager;-&gt;isSafeMode()Z
+00000e: move-result v0
+000010: const/4 v1, 0
+000012: if-eqz v0, +00ch
+000016: sget v4, Ltya;-&gt;safemode_widget_error I
+00001a: invoke-static v5, v4, v1, Landroid/widget/Toast;-&gt;makeText(Landroid/content/Context; I I)Landroid/widget/Toast;
+000020: move-result-object v4
+000022: invoke-virtual v4, Landroid/widget/Toast;-&gt;show()V
+000028: return-void 
+00002a: invoke-virtual v4, Landroid/appwidget/AppWidgetHostView;-&gt;getTag()Ljava/lang/Object;
+000030: move-result-object v0
+000032: check-cast v0, Lyb7;
+000036: invoke-virtual v4, Lcom/android/launcher3/widget/g;-&gt;U()Z
+00003c: move-result v2
+00003e: const/4 v3, 1
+000040: if-eqz v2, +034h
+000044: new-instance v4, Lyze;
+000048: invoke-direct v4, v5, Lyze;-&gt;&lt;init&gt;(Landroid/content/Context;)V
+00004e: iget-object v1, v0, Lyb7;-&gt;r0 Landroid/content/ComponentName;
+000052: iget-object v2, v0, Lfy6;-&gt;p0 Landroid/os/UserHandle;
+000056: invoke-virtual v4, v1, v2, Lyze;-&gt;d(Landroid/content/ComponentName; Landroid/os/UserHandle;)Lzb7;
+00005c: move-result-object v4
+00005e: if-nez v4, +003h
+000062: goto +14h
+000064: new-instance v1, Lpze;
+000068: invoke-direct v1, v4, Lpze;-&gt;&lt;init&gt;(Landroid/appwidget/AppWidgetProviderInfo;)V
+00006e: invoke-virtual v0, v3, Lyb7;-&gt;B(I)Z
+000074: move-result v4
+000076: if-eqz v4, +013h
+00007a: const/16 v4, 16
+00007e: invoke-virtual v0, v4, Lyb7;-&gt;B(I)Z
+000084: move-result v4
+000086: if-nez v4, +003h
+00008a: return-void 
+00008c: iget v4, v0, Lyb7;-&gt;q0 I
+000090: const/16 v2, 12
+000094: invoke-virtual v1, v5, v4, v0, v2, Lpze;-&gt;d(Lcom/android/launcher3/o; I Lfy6; I)V
+00009a: return-void 
+00009c: const/16 v4, 13
+0000a0: invoke-virtual v1, v5, v0, v4, Lpze;-&gt;f(Lcom/android/launcher3/o; Lyb7; I)Z
+0000a6: return-void 
+0000a8: iget-object v2, v0, Lyb7;-&gt;r0 Landroid/content/ComponentName;
+0000ac: invoke-virtual v2, Landroid/content/ComponentName;-&gt;getPackageName()Ljava/lang/String;
+0000b2: move-result-object v2
+0000b4: iget v0, v0, Lyb7;-&gt;t0 I
+0000b8: if-ltz v0, +003h
+0000bc: move v1, v3
+0000be: invoke-static v4, v5, v2, v1, Lqx6;-&gt;i(Landroid/view/View; Lcom/android/launcher3/o; Ljava/lang/String; Z)V
+0000c4: return-void 
+
+METHOD k (Lcom/android/launcher3/o; Lxvb;)V
+000000: invoke-virtual v9, Lxvb;-&gt;o()Landroid/content/Intent;
+000006: move-result-object v1
+000008: const/4 v7, 0
+00000a: const/4 v2, 6
+00000c: if-eqz v1, +018h
+000010: invoke-virtual v9, v2, Lxvb;-&gt;I(I)Z
+000016: move-result v1
+000018: if-eqz v1, +00ah
+00001c: invoke-virtual v9, Lxvb;-&gt;o()Landroid/content/Intent;
+000022: move-result-object v1
+000024: invoke-virtual v8, v1, v7, Landroidx/activity/ComponentActivity;-&gt;startActivityForResult(Landroid/content/Intent; I)V
+00002a: goto +50h
+00002c: invoke-virtual v9, Lxvb;-&gt;o()Landroid/content/Intent;
+000032: move-result-object v1
+000034: invoke-virtual v8, v1, Landroid/app/Activity;-&gt;startActivity(Landroid/content/Intent;)V
+00003a: goto +48h
+00003c: invoke-virtual v9, Lxvb;-&gt;H()Landroid/app/PendingIntent;
+000042: move-result-object v1
+000044: if-eqz v1, +043h
+000048: invoke-virtual v9, Lxvb;-&gt;H()Landroid/app/PendingIntent;
+00004e: move-result-object v1
+000050: const/4 v3, 2
+000052: invoke-virtual v9, v3, Lxvb;-&gt;I(I)Z
+000058: move-result v3
+00005a: if-nez v3, +006h
+00005e: invoke-virtual v1, Landroid/app/PendingIntent;-&gt;send()V
+000064: goto +33h
+000066: invoke-virtual v9, v2, Lxvb;-&gt;I(I)Z
+00006c: move-result v2
+00006e: if-eqz v2, +010h
+000072: invoke-virtual v1, Landroid/app/PendingIntent;-&gt;getIntentSender()Landroid/content/IntentSender;
+000078: move-result-object v1
+00007a: const/4 v5, 0
+00007c: const/4 v6, 0
+00007e: const/4 v2, 0
+000080: const/4 v3, 0
+000082: const/4 v4, 0
+000084: move-object v0, v8
+000086: invoke-virtual/range v0 ... v6, Landroidx/activity/ComponentActivity;-&gt;startIntentSenderForResult(Landroid/content/IntentSender; I Landroid/content/Intent; I I I)V
+00008c: goto +1fh
+00008e: invoke-virtual v1, Landroid/app/PendingIntent;-&gt;getIntentSender()Landroid/content/IntentSender;
+000094: move-result-object v1
+000096: const/4 v4, 0
+000098: const/4 v5, 0
+00009a: const/4 v2, 0
+00009c: const/4 v3, 0
+00009e: move-object v0, v8
+0000a0: invoke-virtual/range v0 ... v5, Landroid/app/Activity;-&gt;startIntentSender(Landroid/content/IntentSender; Landroid/content/Intent; I I I)V
+0000a6: goto +12h
+0000a8: invoke-virtual v8, Landroid/app/Activity;-&gt;getResources()Landroid/content/res/Resources;
+0000ae: move-result-object v1
+0000b0: sget v2, Ltya;-&gt;shortcut_not_available I
+0000b4: invoke-virtual v1, v2, Landroid/content/res/Resources;-&gt;getText(I)Ljava/lang/CharSequence;
+0000ba: move-result-object v1
+0000bc: invoke-static v8, v1, v7, Landroid/widget/Toast;-&gt;makeText(Landroid/content/Context; Ljava/lang/CharSequence; I)Landroid/widget/Toast;
+0000c2: move-result-object v1
+0000c4: invoke-virtual v1, Landroid/widget/Toast;-&gt;show()V
+0000ca: invoke-virtual v8, Lcom/android/launcher3/o;-&gt;j0()Lcom/android/launcher3/logging/StatsLogManager;
+0000d0: move-result-object v0
+0000d2: invoke-virtual v0, Lcom/android/launcher3/logging/StatsLogManager;-&gt;c()Lcom/android/launcher3/logging/StatsLogManager$d;
+0000d8: move-result-object v0
+0000da: invoke-interface v0, v9, Lcom/android/launcher3/logging/StatsLogManager$d;-&gt;h(Lfy6;)Lcom/android/launcher3/logging/StatsLogManager$d;
+0000e0: move-result-object v0
+0000e2: sget-object v1, Lcom/android/launcher3/logging/StatsLogManager$c;-&gt;Z Lcom/android/launcher3/logging/StatsLogManager$c;
+0000e6: invoke-interface v0, v1, Lcom/android/launcher3/logging/StatsLogManager$d;-&gt;k(Lcom/android/launcher3/logging/StatsLogManager$b;)V
+0000ec: return-void 
+
+METHOD l (Landroid/view/View; Lv6f; Lcom/android/launcher3/o;)V
+000000: const/16 v0, 8
+000004: invoke-virtual v5, Lv6f;-&gt;p()Landroid/content/ComponentName;
+00000a: move-result-object v1
+00000c: invoke-virtual v4, Landroid/view/View;-&gt;getContext()Landroid/content/Context;
+000012: move-result-object v2
+000014: invoke-static v2, v1, Llk4;-&gt;l(Landroid/content/Context; Landroid/content/ComponentName;)V
+00001a: if-eqz v1, +00ch
+00001e: invoke-static v1, Lrl1;-&gt;p(Landroid/content/ComponentName;)Z
+000024: move-result v2
+000026: if-eqz v2, +006h
+00002a: invoke-static v4, v5, v6, Lqx6;-&gt;g(Landroid/view/View; Lv6f; Lcom/android/launcher3/o;)V
+000030: return-void 
+000032: invoke-virtual v4, Landroid/view/View;-&gt;getContext()Landroid/content/Context;
+000038: move-result-object v2
+00003a: invoke-static v2, v1, Lrl1;-&gt;t(Landroid/content/Context; Landroid/content/ComponentName;)Z
+000040: move-result v2
+000042: if-eqz v2, +006h
+000046: invoke-virtual v6, Lcom/android/launcher3/o;-&gt;G2()V
+00004c: return-void 
+00004e: invoke-virtual v4, Landroid/view/View;-&gt;getContext()Landroid/content/Context;
+000054: move-result-object v2
+000056: invoke-static v2, v1, Lrl1;-&gt;y(Landroid/content/Context; Landroid/content/ComponentName;)Z
+00005c: move-result v1
+00005e: if-eqz v1, +01ah
+000062: const/4 v1, 1
+000064: new-array v1, v1, [B
+000068: const/16 v2, -20
+00006c: const/4 v3, 0
+00006e: aput-byte v2, v1, v3
+000072: new-array v0, v0, [B
+000076: fill-array-data v0, +0000027h
+00007c: invoke-static v1, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;2&quot;
+000082: move-result-object v0
+000084: invoke-static v0, Ltj4;-&gt;h(Ljava/lang/String;)V
+00008a: invoke-static v4, v5, v6, Lqx6;-&gt;g(Landroid/view/View; Lv6f; Lcom/android/launcher3/o;)V
+000090: return-void 
+000092: sget-object v1, Lhle;-&gt;a Lhle;
+000096: new-array v2, v0, [B
+00009a: fill-array-data v2, +000001dh
+0000a0: new-array v0, v0, [B
+0000a4: fill-array-data v0, +0000020h
+0000aa: invoke-static v2, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;31000005&quot;
+0000b0: move-result-object v0
+0000b2: new-instance v2, Lqx6$b;
+0000b6: invoke-direct v2, v4, v5, v6, Lqx6$b;-&gt;&lt;init&gt;(Landroid/view/View; Lv6f; Lcom/android/launcher3/o;)V
+0000bc: invoke-virtual v1, v6, v0, v2, Lhle;-&gt;k(Landroid/app/Activity; Ljava/lang/String; Lkotlin/jvm/functions/Function0;)V
+0000c2: return-void 
+
+METHOD m (Landroid/view/View; Lfy6; Lcom/android/launcher3/o;)V
+000000: sget-object v0, Lqx6;-&gt;a Ljava/lang/String;
+000004: new-instance v1, Ljava/lang/StringBuilder;
+000008: invoke-direct v1, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+00000e: const/16 v2, 22
+000012: new-array v2, v2, [B
+000016: fill-array-data v2, +000007fh
+00001c: const/16 v3, 8
+000020: new-array v4, v3, [B
+000024: fill-array-data v4, +0000088h
+00002a: invoke-static v2, v4, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;All apps icon onClick:&quot;
+000030: move-result-object v2
+000032: invoke-virtual v1, v2, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000038: invoke-virtual v6, Lfy6;-&gt;p()Landroid/content/ComponentName;
+00003e: move-result-object v2
+000040: invoke-virtual v1, v2, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+000046: invoke-virtual v1, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+00004c: move-result-object v1
+00004e: invoke-static v0, v1, Lkw7;-&gt;d(Ljava/lang/String; Ljava/lang/String;)I
+000054: invoke-virtual v6, Lfy6;-&gt;p()Landroid/content/ComponentName;
+00005a: move-result-object v0
+00005c: invoke-virtual v5, Landroid/view/View;-&gt;getContext()Landroid/content/Context;
+000062: move-result-object v1
+000064: invoke-static v1, v0, Llk4;-&gt;l(Landroid/content/Context; Landroid/content/ComponentName;)V
+00006a: if-eqz v0, +00ch
+00006e: invoke-static v0, Lrl1;-&gt;q(Landroid/content/ComponentName;)Z
+000074: move-result v1
+000076: if-eqz v1, +006h
+00007a: invoke-static v5, v6, v7, Lqx6;-&gt;n(Landroid/view/View; Lfy6; Lcom/android/launcher3/o;)V
+000080: return-void 
+000082: invoke-virtual v5, Landroid/view/View;-&gt;getContext()Landroid/content/Context;
+000088: move-result-object v1
+00008a: invoke-static v1, v0, Lrl1;-&gt;t(Landroid/content/Context; Landroid/content/ComponentName;)Z
+000090: move-result v1
+000092: if-eqz v1, +006h
+000096: invoke-static v5, v6, v7, Lqx6;-&gt;n(Landroid/view/View; Lfy6; Lcom/android/launcher3/o;)V
+00009c: return-void 
+00009e: invoke-virtual v5, Landroid/view/View;-&gt;getContext()Landroid/content/Context;
+0000a4: move-result-object v1
+0000a6: invoke-static v1, v0, Lrl1;-&gt;y(Landroid/content/Context; Landroid/content/ComponentName;)Z
+0000ac: move-result v0
+0000ae: if-eqz v0, +01ah
+0000b2: const/4 v0, 1
+0000b4: new-array v0, v0, [B
+0000b8: const/16 v1, -38
+0000bc: const/4 v2, 0
+0000be: aput-byte v1, v0, v2
+0000c2: new-array v1, v3, [B
+0000c6: fill-array-data v1, +000003fh
+0000cc: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;1&quot;
+0000d2: move-result-object v0
+0000d4: invoke-static v0, Ltj4;-&gt;h(Ljava/lang/String;)V
+0000da: invoke-static v5, v6, v7, Lqx6;-&gt;n(Landroid/view/View; Lfy6; Lcom/android/launcher3/o;)V
+0000e0: return-void 
+0000e2: sget-object v0, Lhle;-&gt;a Lhle;
+0000e6: new-array v1, v3, [B
+0000ea: fill-array-data v1, +0000035h
+0000f0: new-array v2, v3, [B
+0000f4: fill-array-data v2, +0000038h
+0000fa: invoke-static v1, v2, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;23000045&quot;
+000100: move-result-object v1
+000102: new-instance v2, Lqx6$a;
+000106: invoke-direct v2, v5, v6, v7, Lqx6$a;-&gt;&lt;init&gt;(Landroid/view/View; Lfy6; Lcom/android/launcher3/o;)V
+00010c: invoke-virtual v0, v7, v1, v2, Lhle;-&gt;k(Landroid/app/Activity; Ljava/lang/String; Lkotlin/jvm/functions/Function0;)V
+000112: return-void 
+000132: nop 
+
+METHOD n (Landroid/view/View; Lfy6; Lcom/android/launcher3/o;)V
+000000: const/4 v0, 4
+000002: new-array v0, v0, [B
+000006: fill-array-data v0, +000009dh
+00000c: const/16 v1, 8
+000010: new-array v2, v1, [B
+000014: fill-array-data v2, +000009ch
+00001a: invoke-static v0, v2, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;Main&quot;
+000020: move-result-object v0
+000022: const/16 v2, 37
+000026: new-array v2, v2, [B
+00002a: fill-array-data v2, +0000099h
+000030: new-array v3, v1, [B
+000034: fill-array-data v3, +00000ach
+00003a: invoke-static v2, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;start: startAppShortcutOrInfoActivity&quot;
+000040: move-result-object v2
+000042: invoke-static v0, v2, Lajd;-&gt;a(Ljava/lang/String; Ljava/lang/String;)V
+000048: instance-of v0, v5, Lpy6;
+00004c: if-eqz v0, +01dh
+000050: move-object v0, v5
+000052: check-cast v0, Lpy6;
+000056: iget v2, v0, Lpy6;-&gt;r0 I
+00005a: and-int/lit16 v2, v2, 1024
+00005e: if-eqz v2, +014h
+000062: new-instance v2, Lcm9;
+000066: invoke-direct v2, v6, Lcm9;-&gt;&lt;init&gt;(Landroid/content/Context;)V
+00006c: invoke-virtual v0, Lfy6;-&gt;p()Landroid/content/ComponentName;
+000072: move-result-object v0
+000074: invoke-virtual v0, Landroid/content/ComponentName;-&gt;getPackageName()Ljava/lang/String;
+00007a: move-result-object v0
+00007c: invoke-virtual v2, v0, Lcm9;-&gt;e(Ljava/lang/String;)Landroid/content/Intent;
+000082: move-result-object v0
+000084: goto +5h
+000086: invoke-virtual v5, Lfy6;-&gt;o()Landroid/content/Intent;
+00008c: move-result-object v0
+00008e: if-eqz v0, +043h
+000092: instance-of v2, v5, Lv6f;
+000096: if-eqz v2, +02fh
+00009a: move-object v2, v5
+00009c: check-cast v2, Lv6f;
+0000a0: invoke-virtual v2, v1, Lv6f;-&gt;L(I)Z
+0000a6: move-result v2
+0000a8: if-eqz v2, +026h
+0000ac: const/16 v2, 26
+0000b0: new-array v2, v2, [B
+0000b4: fill-array-data v2, +0000074h
+0000ba: new-array v1, v1, [B
+0000be: fill-array-data v1, +0000081h
+0000c4: invoke-static v2, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;android.intent.action.VIEW&quot;
+0000ca: move-result-object v1
+0000cc: invoke-virtual v0, Landroid/content/Intent;-&gt;getAction()Ljava/lang/String;
+0000d2: move-result-object v2
+0000d4: invoke-virtual v1, v2, Ljava/lang/String;-&gt;equals(Ljava/lang/Object;)Z
+0000da: move-result v1
+0000dc: if-eqz v1, +00ch
+0000e0: new-instance v1, Landroid/content/Intent;
+0000e4: invoke-direct v1, v0, Landroid/content/Intent;-&gt;&lt;init&gt;(Landroid/content/Intent;)V
+0000ea: const/4 v0, 0
+0000ec: invoke-virtual v1, v0, Landroid/content/Intent;-&gt;setPackage(Ljava/lang/String;)Landroid/content/Intent;
+0000f2: move-object v0, v1
+0000f4: if-eqz v4, +00ch
+0000f8: invoke-virtual v6, v4, Lcom/android/launcher3/o;-&gt;T2(Landroid/view/View;)Z
+0000fe: move-result v1
+000100: if-eqz v1, +006h
+000104: const/4 v1, 1
+000106: invoke-static v6, v4, v5, v1, Lcom/android/launcher3/views/FloatingIconView;-&gt;f(Lcom/android/launcher3/o; Landroid/view/View; Lfy6; Z)Lcom/android/launcher3/views/FloatingIconView$a;
+00010c: invoke-virtual v6, v4, v0, v5, Lcom/android/launcher3/o;-&gt;L0(Landroid/view/View; Landroid/content/Intent; Lfy6;)Z
+000112: return-void 
+000114: new-instance v4, Ljava/lang/IllegalArgumentException;
+000118: const/16 v5, 30
+00011c: new-array v5, v5, [B
+000120: fill-array-data v5, +0000058h
+000126: new-array v6, v1, [B
+00012a: fill-array-data v6, +0000067h
+000130: invoke-static v5, v6, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+000136: move-result-object v5
+000138: invoke-direct v4, v5, Ljava/lang/IllegalArgumentException;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+00013e: throw v4
+00018a: nop 
+0001be: nop 
+0001f6: nop 
+
+METHOD o (Landroid/view/View; Lcom/android/launcher3/o; Ljava/lang/String;)V
+000000: invoke-virtual v6, Landroid/view/View;-&gt;getTag()Ljava/lang/Object;
+000006: move-result-object v0
+000008: check-cast v0, Lfy6;
+00000c: sget-boolean v1, Lwfe;-&gt;m Z
+000010: if-eqz v1, +04eh
+000014: sget-object v1, Lyp6;-&gt;h Lcom/android/launcher3/util/c;
+000018: invoke-virtual v1, v7, Lcom/android/launcher3/util/c;-&gt;c(Landroid/content/Context;)Ljava/lang/Object;
+00001e: move-result-object v1
+000020: check-cast v1, Lyp6;
+000024: iget-object v2, v0, Lfy6;-&gt;p0 Landroid/os/UserHandle;
+000028: invoke-virtual v1, v2, v8, Lyp6;-&gt;a(Landroid/os/UserHandle; Ljava/lang/String;)Landroid/content/pm/PackageInstaller$SessionInfo;
+00002e: move-result-object v1
+000030: if-eqz v1, +03eh
+000034: const-class v2, Landroid/content/pm/LauncherApps;
+000038: invoke-virtual v7, v2, Landroid/app/Activity;-&gt;getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+00003e: move-result-object v2
+000040: check-cast v2, Landroid/content/pm/LauncherApps;
+000044: invoke-virtual v7, v6, v0, Lcom/android/launcher3/d;-&gt;z0(Landroid/view/View; Lfy6;)Li9;
+00004a: move-result-object v3
+00004c: invoke-virtual v3, Li9;-&gt;a()Landroid/os/Bundle;
+000052: move-result-object v3
+000054: const/4 v4, 0
+000056: invoke-virtual v2, v1, v4, v3, Landroid/content/pm/LauncherApps;-&gt;startPackageInstallerSessionDetailsActivity(Landroid/content/pm/PackageInstaller$SessionInfo; Landroid/graphics/Rect; Landroid/os/Bundle;)V
+00005c: return-void 
+00005e: move-exception v1
+000060: sget-object v2, Lqx6;-&gt;a Ljava/lang/String;
+000064: new-instance v3, Ljava/lang/StringBuilder;
+000068: invoke-direct v3, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+00006e: const/16 v4, 43
+000072: new-array v4, v4, [B
+000076: fill-array-data v4, +0000029h
+00007c: const/16 v5, 8
+000080: new-array v5, v5, [B
+000084: fill-array-data v5, +000003ch
+00008a: invoke-static v4, v5, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;Unable to launch market intent for package=&quot;
+000090: move-result-object v4
+000092: invoke-virtual v3, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000098: invoke-virtual v3, v8, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00009e: invoke-virtual v3, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+0000a4: move-result-object v3
+0000a6: invoke-static v2, v3, v1, Landroid/util/Log;-&gt;e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+0000ac: new-instance v1, Lcm9;
+0000b0: invoke-direct v1, v7, Lcm9;-&gt;&lt;init&gt;(Landroid/content/Context;)V
+0000b6: invoke-virtual v1, v8, Lcm9;-&gt;e(Ljava/lang/String;)Landroid/content/Intent;
+0000bc: move-result-object v8
+0000be: invoke-virtual v7, v6, v8, v0, Lcom/android/launcher3/o;-&gt;L0(Landroid/view/View; Landroid/content/Intent; Lfy6;)Z
+0000c4: return-void 
+0000c6: nop 
+
+</pre></article></main><script src="../assets/reading-navigation.js"></script></body></html>

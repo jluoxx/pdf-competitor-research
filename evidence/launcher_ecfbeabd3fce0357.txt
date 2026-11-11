@@ -1,0 +1,542 @@
+CLASS Luod;
+FIELD a 
+FIELD b 
+FIELD c 
+FIELD d 
+FIELD e 
+FIELD f 
+FIELD g 
+FIELD h 
+
+METHOD <clinit> ()V
+000000: new-instance v0, Luod;
+000004: invoke-direct v0, Luod;-><init>()V
+00000a: sput-object v0, Luod;->a Luod;
+00000e: const/16 v0, 10
+000012: new-array v0, v0, [B
+000016: fill-array-data v0, +0000063h
+00001c: const/16 v1, 8
+000020: new-array v2, v1, [B
+000024: fill-array-data v2, +0000066h
+00002a: invoke-static v0, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "com.google"
+000030: move-result-object v0
+000032: const/16 v2, 11
+000036: const/4 v3, 7
+000038: new-array v3, v3, [B
+00003c: fill-array-data v3, +0000062h
+000042: new-array v4, v1, [B
+000046: fill-array-data v4, +0000065h
+00004c: invoke-static v3, v4, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "android"
+000052: move-result-object v3
+000054: new-array v4, v2, [B
+000058: fill-array-data v4, +0000064h
+00005e: new-array v5, v1, [B
+000062: fill-array-data v5, +0000069h
+000068: invoke-static v4, v5, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "com.android"
+00006e: move-result-object v4
+000070: filled-new-array v0, v3, v4, [Ljava/lang/String;
+000076: move-result-object v0
+000078: sget v3, Lkotlin/collections/CollectionsKt;->a I
+00007c: invoke-static v0, Lkotlin/collections/m;->q([Ljava/lang/Object;)Ljava/util/List;
+000082: move-result-object v0
+000084: sput-object v0, Luod;->d Ljava/util/List;
+000088: new-instance v0, Ljava/util/LinkedHashSet;
+00008c: invoke-direct v0, Ljava/util/LinkedHashSet;-><init>()V
+000092: sput-object v0, Luod;->f Ljava/util/Set;
+000096: sput v1, Luod;->h I
+00009a: new-array v0, v2, [B
+00009e: fill-array-data v0, +0000053h
+0000a4: new-array v2, v1, [B
+0000a8: fill-array-data v2, +0000058h
+0000ae: invoke-static v0, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "drama:taat:"
+0000b4: move-result-object v0
+0000b6: sput-object v0, Luod;->b Ljava/lang/String;
+0000ba: new-array v0, v1, [B
+0000be: fill-array-data v0, +0000055h
+0000c4: new-array v1, v1, [B
+0000c8: fill-array-data v1, +0000058h
+0000ce: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "23000046"
+0000d4: move-result-object v0
+0000d6: sput-object v0, Luod;->c Ljava/lang/String;
+0000da: return-void 
+0000ee: nop 
+
+METHOD <init> ()V
+000000: invoke-direct v0, Ljava/lang/Object;-><init>()V
+000006: return-void 
+
+METHOD a ()Lkotlin/Unit;
+000000: invoke-static Luod;->h()Lkotlin/Unit;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD h ()Lkotlin/Unit;
+000000: sget-object v0, Lkotlin/Unit;->a Lkotlin/Unit;
+000004: return-object v0
+
+METHOD b ()Ljava/lang/String;
+000000: sget-object v0, Luod;->e Ljava/lang/String;
+000004: const/4 v1, 0
+000006: sput-object v1, Luod;->e Ljava/lang/String;
+00000a: const/16 v1, 11
+00000e: new-array v1, v1, [B
+000012: fill-array-data v1, +0000035h
+000018: const/16 v2, 8
+00001c: new-array v3, v2, [B
+000020: fill-array-data v3, +0000038h
+000026: invoke-static v1, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "drama:taat:"
+00002c: move-result-object v1
+00002e: new-instance v3, Ljava/lang/StringBuilder;
+000032: invoke-direct v3, Ljava/lang/StringBuilder;-><init>()V
+000038: const/16 v4, 9
+00003c: new-array v4, v4, [B
+000040: fill-array-data v4, +0000030h
+000046: new-array v2, v2, [B
+00004a: fill-array-data v2, +0000035h
+000050: invoke-static v4, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "consume: "
+000056: move-result-object v2
+000058: invoke-virtual v3, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00005e: invoke-static v0, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+000064: move-result-object v2
+000066: invoke-virtual v3, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00006c: invoke-virtual v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+000072: move-result-object v2
+000074: invoke-static v1, v2, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+00007a: return-object v0
+0000b2: nop 
+
+METHOD c (Landroid/content/Context;)V
+000000: const/16 v0, 8
+000004: sget-object v1, Luod;->g Landroid/content/Context;
+000008: if-eqz v1, +003h
+00000c: return-void 
+00000e: invoke-virtual v5, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+000014: move-result-object v1
+000016: sput-object v1, Luod;->g Landroid/content/Context;
+00001a: sget-object v1, Luod;->f Ljava/util/Set;
+00001e: invoke-virtual v5, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+000024: move-result-object v5
+000026: const/16 v2, 19
+00002a: new-array v2, v2, [B
+00002e: fill-array-data v2, +0000045h
+000034: new-array v3, v0, [B
+000038: fill-array-data v3, +000004eh
+00003e: invoke-static v2, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "getPackageName(...)"
+000044: invoke-interface v1, v5, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+00004a: const/16 v5, 11
+00004e: new-array v5, v5, [B
+000052: fill-array-data v5, +0000049h
+000058: new-array v2, v0, [B
+00005c: fill-array-data v2, +000004eh
+000062: invoke-static v5, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "drama:taat:"
+000068: move-result-object v5
+00006a: new-instance v2, Ljava/lang/StringBuilder;
+00006e: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+000074: const/16 v3, 23
+000078: new-array v3, v3, [B
+00007c: fill-array-data v3, +0000046h
+000082: new-array v0, v0, [B
+000086: fill-array-data v0, +0000051h
+00008c: invoke-static v3, v0, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "ensureInit, filterSet: "
+000092: move-result-object v0
+000094: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00009a: invoke-static v1, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+0000a0: move-result-object v0
+0000a2: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000a8: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0000ae: move-result-object v0
+0000b0: invoke-static v5, v0, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+0000b6: return-void 
+
+METHOD d ()V
+000000: const/16 v0, 11
+000004: const/16 v1, 8
+000008: sget-object v2, Las;->f Las$c;
+00000c: invoke-virtual v2, Las$c;->b()Las;
+000012: move-result-object v2
+000014: invoke-virtual v2, Las;->p()Landroid/app/Activity;
+00001a: move-result-object v2
+00001c: if-nez v2, +003h
+000020: return-void 
+000022: sget-object v3, Lna;->a Lna;
+000026: new-array v4, v1, [B
+00002a: fill-array-data v4, +0000037h
+000030: new-array v5, v1, [B
+000034: fill-array-data v5, +000003ah
+00003a: invoke-static v4, v5, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "23000046"
+000040: move-result-object v4
+000042: new-instance v5, Luod$a;
+000046: invoke-direct v5, Luod$a;-><init>()V
+00004c: const/4 v6, 0
+00004e: invoke-virtual v3, v2, v4, v6, v5, Lna;->y(Landroid/content/Context; Ljava/lang/String; Ljava/util/Map; Lz86;)V
+000054: new-array v0, v0, [B
+000058: fill-array-data v0, +0000030h
+00005e: new-array v2, v1, [B
+000062: fill-array-data v2, +0000035h
+000068: invoke-static v0, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "drama:taat:"
+00006e: move-result-object v0
+000070: const/16 v2, 20
+000074: new-array v2, v2, [B
+000078: fill-array-data v2, +0000032h
+00007e: new-array v1, v1, [B
+000082: fill-array-data v1, +000003bh
+000088: invoke-static v2, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "preload third app ad"
+00008e: move-result-object v1
+000090: invoke-static v0, v1, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+000096: return-void 
+
+METHOD e (Ljava/lang/String; Landroid/content/Context;)V
+000000: const/16 v0, 23
+000004: const/16 v1, 8
+000008: if-eqz v4, +046h
+00000c: invoke-interface v4, Ljava/lang/CharSequence;->length()I
+000012: move-result v2
+000014: if-nez v2, +003h
+000018: goto +3eh
+00001a: if-eqz v5, +007h
+00001e: sget-object v2, Luod;->a Luod;
+000022: invoke-virtual v2, v5, Luod;->c(Landroid/content/Context;)V
+000028: sput-object v4, Luod;->e Ljava/lang/String;
+00002c: const/16 v5, 11
+000030: new-array v5, v5, [B
+000034: fill-array-data v5, +0000032h
+00003a: new-array v2, v1, [B
+00003e: fill-array-data v2, +0000037h
+000044: invoke-static v5, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "drama:taat:"
+00004a: move-result-object v5
+00004c: new-instance v2, Ljava/lang/StringBuilder;
+000050: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+000056: new-array v0, v0, [B
+00005a: fill-array-data v0, +0000031h
+000060: new-array v1, v1, [B
+000064: fill-array-data v1, +000003ch
+00006a: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "recordLaunchedPackage: "
+000070: move-result-object v0
+000072: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000078: invoke-static v4, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+00007e: move-result-object v4
+000080: invoke-virtual v2, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000086: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+00008c: move-result-object v4
+00008e: invoke-static v5, v4, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+000094: return-void 
+000096: nop 
+
+METHOD f ()Z
+000000: const/4 v0, 1
+000002: const/16 v1, 41
+000006: const/16 v2, 11
+00000a: const/16 v3, 8
+00000e: sget-object v4, Luod;->e Ljava/lang/String;
+000012: const/4 v5, 0
+000014: if-eqz v4, +165h
+000018: invoke-interface v4, Ljava/lang/CharSequence;->length()I
+00001e: move-result v6
+000020: if-nez v6, +004h
+000024: goto/16 +15dh
+000028: sget-object v6, Luod;->f Ljava/util/Set;
+00002c: invoke-interface v6, v4, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+000032: move-result v6
+000034: if-eqz v6, +04ah
+000038: new-array v0, v2, [B
+00003c: fill-array-data v0, +0000172h
+000042: new-array v1, v3, [B
+000046: fill-array-data v1, +0000177h
+00004c: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "drama:taat:"
+000052: move-result-object v0
+000054: new-instance v1, Ljava/lang/StringBuilder;
+000058: invoke-direct v1, Ljava/lang/StringBuilder;-><init>()V
+00005e: const/16 v2, 31
+000062: new-array v2, v2, [B
+000066: fill-array-data v2, +000016fh
+00006c: new-array v6, v3, [B
+000070: fill-array-data v6, +000017eh
+000076: invoke-static v2, v6, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "shouldShowAd: false (filtered: "
+00007c: move-result-object v2
+00007e: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000084: invoke-static v4, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+00008a: move-result-object v2
+00008c: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000092: const/16 v2, 10
+000096: new-array v2, v2, [B
+00009a: fill-array-data v2, +0000171h
+0000a0: new-array v3, v3, [B
+0000a4: fill-array-data v3, +0000176h
+0000aa: invoke-static v2, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "  is self)"
+0000b0: move-result-object v2
+0000b2: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000b8: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0000be: move-result-object v1
+0000c0: invoke-static v0, v1, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+0000c6: return v5
+0000c8: sget-object v6, Luod;->d Ljava/util/List;
+0000cc: check-cast v6, Ljava/lang/Iterable;
+0000d0: instance-of v7, v6, Ljava/util/Collection;
+0000d4: const/4 v8, 0
+0000d6: const/4 v9, 2
+0000d8: if-eqz v7, +00ch
+0000dc: move-object v7, v6
+0000de: check-cast v7, Ljava/util/Collection;
+0000e2: invoke-interface v7, Ljava/util/Collection;->isEmpty()Z
+0000e8: move-result v7
+0000ea: if-eqz v7, +003h
+0000ee: goto +5eh
+0000f0: invoke-interface v6, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+0000f6: move-result-object v6
+0000f8: invoke-interface v6, Ljava/util/Iterator;->hasNext()Z
+0000fe: move-result v7
+000100: if-eqz v7, +055h
+000104: invoke-interface v6, Ljava/util/Iterator;->next()Ljava/lang/Object;
+00010a: move-result-object v7
+00010c: check-cast v7, Ljava/lang/String;
+000110: sget v10, Lkotlin/text/StringsKt;->a I
+000114: invoke-static v4, v7, v5, v9, v8, Lkotlin/text/k;->Z(Ljava/lang/String; Ljava/lang/String; Z I Ljava/lang/Object;)Z
+00011a: move-result v7
+00011c: if-eqz v7, -012h
+000120: new-array v2, v2, [B
+000124: fill-array-data v2, +000013eh
+00012a: new-array v6, v3, [B
+00012e: fill-array-data v6, +0000143h
+000134: invoke-static v2, v6, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "drama:taat"
+00013a: move-result-object v2
+00013c: new-instance v6, Ljava/lang/StringBuilder;
+000140: invoke-direct v6, Ljava/lang/StringBuilder;-><init>()V
+000146: new-array v1, v1, [B
+00014a: fill-array-data v1, +000013dh
+000150: new-array v7, v3, [B
+000154: fill-array-data v7, +0000152h
+00015a: invoke-static v1, v7, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "shouldSh"
+000160: move-result-object v1
+000162: invoke-virtual v6, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000168: invoke-static v4, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+00016e: move-result-object v1
+000170: invoke-virtual v6, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000176: new-array v0, v0, [B
+00017a: const/16 v1, -88
+00017e: aput-byte v1, v0, v5
+000182: new-array v1, v3, [B
+000186: fill-array-data v1, +0000141h
+00018c: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+000192: move-result-object v0
+000194: invoke-virtual v6, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00019a: invoke-virtual v6, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0001a0: move-result-object v0
+0001a2: invoke-static v2, v0, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+0001a8: return v5
+0001aa: invoke-static Lrl1;->n()Ljava/lang/String;
+0001b0: move-result-object v1
+0001b2: sget v6, Lkotlin/text/StringsKt;->a I
+0001b6: invoke-static v4, v1, v5, v9, v8, Lkotlin/text/k;->Z(Ljava/lang/String; Ljava/lang/String; Z I Ljava/lang/Object;)Z
+0001bc: move-result v1
+0001be: if-eqz v1, +04ah
+0001c2: new-array v0, v2, [B
+0001c6: fill-array-data v0, +0000129h
+0001cc: new-array v1, v3, [B
+0001d0: fill-array-data v1, +000012eh
+0001d6: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "drama:taat"
+0001dc: move-result-object v0
+0001de: new-instance v1, Ljava/lang/StringBuilder;
+0001e2: invoke-direct v1, Ljava/lang/StringBuilder;-><init>()V
+0001e8: const/16 v2, 26
+0001ec: new-array v2, v2, [B
+0001f0: fill-array-data v2, +0000126h
+0001f6: new-array v6, v3, [B
+0001fa: fill-array-data v6, +0000133h
+000200: invoke-static v2, v6, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "shouldShowAd: false (pkg: "
+000206: move-result-object v2
+000208: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00020e: invoke-static v4, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+000214: move-result-object v2
+000216: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00021c: const/16 v2, 18
+000220: new-array v2, v2, [B
+000224: fill-array-data v2, +0000126h
+00022a: new-array v3, v3, [B
+00022e: fill-array-data v3, +000012fh
+000234: invoke-static v2, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED ") is self function"
+00023a: move-result-object v2
+00023c: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000242: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+000248: move-result-object v1
+00024a: invoke-static v0, v1, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+000250: return v5
+000252: new-array v1, v2, [B
+000256: fill-array-data v1, +0000123h
+00025c: new-array v2, v3, [B
+000260: fill-array-data v2, +0000128h
+000266: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+00026c: move-result-object v1
+00026e: new-instance v2, Ljava/lang/StringBuilder;
+000272: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+000278: const/16 v6, 25
+00027c: new-array v6, v6, [B
+000280: fill-array-data v6, +0000120h
+000286: new-array v7, v3, [B
+00028a: fill-array-data v7, +000012dh
+000290: invoke-static v6, v7, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "shouldShowAd: true (pkg: "
+000296: move-result-object v6
+000298: invoke-virtual v2, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00029e: invoke-static v4, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+0002a4: move-result-object v4
+0002a6: invoke-virtual v2, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0002ac: new-array v4, v0, [B
+0002b0: const/4 v6, -1
+0002b2: aput-byte v6, v4, v5
+0002b6: new-array v3, v3, [B
+0002ba: fill-array-data v3, +000011dh
+0002c0: invoke-static v4, v3, Lj1d;->a([B [B)Ljava/lang/String;
+0002c6: move-result-object v3
+0002c8: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0002ce: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0002d4: move-result-object v2
+0002d6: invoke-static v1, v2, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+0002dc: return v0
+0002de: new-array v0, v2, [B
+0002e2: fill-array-data v0, +0000111h
+0002e8: new-array v2, v3, [B
+0002ec: fill-array-data v2, +0000116h
+0002f2: invoke-static v0, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "drama:ta"
+0002f8: move-result-object v0
+0002fa: new-array v1, v1, [B
+0002fe: fill-array-data v1, +0000115h
+000304: new-array v2, v3, [B
+000308: fill-array-data v2, +000012ah
+00030e: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "shouldShowAd"
+000314: move-result-object v1
+000316: invoke-static v0, v1, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+00031c: return v5
+00031e: nop 
+00038e: nop 
+0003f6: nop 
+00045e: nop 
+00048a: nop 
+0004e2: nop 
+00055a: nop 
+
+METHOD g (Lapp/lawnchair/LawnchairLauncher;)V
+000000: const/16 v0, 25
+000004: const/16 v1, 33
+000008: const/16 v2, 11
+00000c: const/16 v3, 8
+000010: new-array v4, v3, [B
+000014: fill-array-data v4, +00000bch
+00001a: new-array v5, v3, [B
+00001e: fill-array-data v5, +00000bfh
+000024: invoke-static v4, v5, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "launcher"
+00002a: invoke-virtual v6, Luod;->f()Z
+000030: move-result v4
+000032: if-nez v4, +006h
+000036: invoke-virtual v6, Luod;->b()Ljava/lang/String;
+00003c: return-void 
+00003e: invoke-virtual v7, Lcom/android/launcher3/o;->U0()Lgwc;
+000044: move-result-object v4
+000046: if-eqz v4, +009h
+00004a: invoke-virtual v4, Lgwc;->u()Lvf0;
+000050: move-result-object v4
+000052: check-cast v4, Lrd7;
+000056: goto +2h
+000058: const/4 v4, 0
+00005a: sget-object v5, Lrd7;->o Lrd7;
+00005e: invoke-static v4, v5, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000064: move-result v5
+000066: if-nez v5, +02dh
+00006a: sget-object v5, Lrd7;->q Lrd7;
+00006e: invoke-static v4, v5, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000074: move-result v4
+000076: if-nez v4, +025h
+00007a: new-array v7, v2, [B
+00007e: fill-array-data v7, +0000097h
+000084: new-array v0, v3, [B
+000088: fill-array-data v0, +000009ch
+00008e: invoke-static v7, v0, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "drama:taat:"
+000094: move-result-object v7
+000096: new-array v0, v1, [B
+00009a: fill-array-data v0, +000009bh
+0000a0: new-array v1, v3, [B
+0000a4: fill-array-data v1, +00000ach
+0000aa: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "launcher state is not home, break"
+0000b0: move-result-object v0
+0000b2: invoke-static v7, v0, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+0000b8: invoke-virtual v6, Luod;->b()Ljava/lang/String;
+0000be: return-void 
+0000c0: invoke-virtual v7, Lapp/lawnchair/LawnchairLauncher;->D4()Z
+0000c6: move-result v7
+0000c8: if-nez v7, +027h
+0000cc: new-array v7, v2, [B
+0000d0: fill-array-data v7, +000009eh
+0000d6: new-array v0, v3, [B
+0000da: fill-array-data v0, +00000a3h
+0000e0: invoke-static v7, v0, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "drama:taat:"
+0000e6: move-result-object v7
+0000e8: const/16 v0, 34
+0000ec: new-array v0, v0, [B
+0000f0: fill-array-data v0, +00000a0h
+0000f6: new-array v1, v3, [B
+0000fa: fill-array-data v1, +00000b1h
+000100: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "launcher state is minus one, break"
+000106: move-result-object v0
+000108: invoke-static v7, v0, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+00010e: invoke-virtual v6, Luod;->b()Ljava/lang/String;
+000114: return-void 
+000116: new-array v7, v2, [B
+00011a: fill-array-data v7, +00000a9h
+000120: new-array v1, v3, [B
+000124: fill-array-data v1, +00000aeh
+00012a: invoke-static v7, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "drama:taat:"
+000130: move-result-object v7
+000132: new-array v0, v0, [B
+000136: fill-array-data v0, +00000adh
+00013c: new-array v1, v3, [B
+000140: fill-array-data v1, +00000bah
+000146: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+00014c: move-result-object v0
+00014e: invoke-static v7, v0, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+000154: invoke-virtual v6, Luod;->b()Ljava/lang/String;
+00015a: sget-object v7, Lija;->a Lija;
+00015e: new-array v0, v3, [B
+000162: fill-array-data v0, +00000b1h
+000168: new-array v1, v3, [B
+00016c: fill-array-data v1, +00000b4h
+000172: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "23000046"
+000178: move-result-object v0
+00017a: new-instance v1, Ltod;
+00017e: invoke-direct v1, Ltod;-><init>()V
+000184: invoke-virtual v7, v0, v1, Lija;->b(Ljava/lang/String; Lkotlin/jvm/functions/Function0;)V
+00018a: return-void 
+0001fa: nop 
+00025a: nop 
+0002b2: nop 
+

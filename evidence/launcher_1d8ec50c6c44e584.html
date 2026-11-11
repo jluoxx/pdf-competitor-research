@@ -1,0 +1,343 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>el5.txt</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/reading-layout.css"></head><body class="source-body reading-document"><main class="document-content"><article class="prose"><h1>el5.txt</h1><p>证据快照 · 2026-11-11 · 原文保留，不代表真机执行结果。</p><p><a download href="launcher_1d8ec50c6c44e584.txt">下载原文件</a></p><pre>CLASS Lel5;
+FIELD Companion 
+FIELD a 
+FIELD b 
+FIELD c 
+FIELD d 
+FIELD e 
+FIELD f 
+FIELD g 
+FIELD h 
+FIELD i 
+
+METHOD &lt;clinit&gt; ()V
+000000: new-instance v0, Lel5$b;
+000004: const/4 v1, 0
+000006: invoke-direct v0, v1, Lel5$b;-&gt;&lt;init&gt;(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+00000c: sput-object v0, Lel5;-&gt;Companion Lel5$b;
+000010: return-void 
+
+METHOD &lt;init&gt; (I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ly2c;)V
+000000: and-int/lit16 v11, v2, 135
+000004: const/16 v0, 135
+000008: if-eq v0, v11, +00bh
+00000c: sget-object v11, Lel5$a;-&gt;a Lel5$a;
+000010: invoke-virtual v11, Lel5$a;-&gt;getDescriptor()Lkotlinx/serialization/descriptors/SerialDescriptor;
+000016: move-result-object v11
+000018: invoke-static v2, v0, v11, La8a;-&gt;a(I I Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+00001e: invoke-direct v1, Ljava/lang/Object;-&gt;&lt;init&gt;()V
+000024: iput-object v3, v1, Lel5;-&gt;a Ljava/lang/String;
+000028: iput-object v4, v1, Lel5;-&gt;b Ljava/lang/String;
+00002c: iput-object v5, v1, Lel5;-&gt;c Ljava/lang/String;
+000030: and-int/lit8 v3, v2, 8
+000034: const-string v4, &quot;&quot;
+000038: if-nez v3, +005h
+00003c: iput-object v4, v1, Lel5;-&gt;d Ljava/lang/String;
+000040: goto +3h
+000042: iput-object v6, v1, Lel5;-&gt;d Ljava/lang/String;
+000046: and-int/lit8 v3, v2, 16
+00004a: if-nez v3, +005h
+00004e: iput-object v4, v1, Lel5;-&gt;e Ljava/lang/String;
+000052: goto +3h
+000054: iput-object v7, v1, Lel5;-&gt;e Ljava/lang/String;
+000058: and-int/lit8 v3, v2, 32
+00005c: if-nez v3, +005h
+000060: iput-object v4, v1, Lel5;-&gt;f Ljava/lang/String;
+000064: goto +3h
+000066: iput-object v8, v1, Lel5;-&gt;f Ljava/lang/String;
+00006a: and-int/lit8 v2, v2, 64
+00006e: if-nez v2, +005h
+000072: iput-object v4, v1, Lel5;-&gt;g Ljava/lang/String;
+000076: goto +3h
+000078: iput-object v9, v1, Lel5;-&gt;g Ljava/lang/String;
+00007c: iput-object v10, v1, Lel5;-&gt;h Ljava/lang/String;
+000080: const/4 v2, 0
+000082: iput-object v2, v1, Lel5;-&gt;i Ljava/lang/Object;
+000086: return-void 
+
+METHOD &lt;init&gt; (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+000000: const/4 v0, 7
+000002: new-array v1, v0, [B
+000006: fill-array-data v1, +0000081h
+00000c: const/16 v2, 8
+000010: new-array v3, v2, [B
+000014: fill-array-data v3, +0000082h
+00001a: invoke-static v1, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;organic&quot;
+000020: new-array v1, v0, [B
+000024: fill-array-data v1, +0000082h
+00002a: new-array v3, v2, [B
+00002e: fill-array-data v3, +0000085h
+000034: invoke-static v1, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;network&quot;
+00003a: new-array v1, v2, [B
+00003e: fill-array-data v1, +0000085h
+000044: new-array v3, v2, [B
+000048: fill-array-data v3, +0000088h
+00004e: invoke-static v1, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;campaign&quot;
+000054: const/16 v1, 9
+000058: const/16 v3, 10
+00005c: new-array v3, v3, [B
+000060: fill-array-data v3, +0000084h
+000066: new-array v4, v2, [B
+00006a: fill-array-data v4, +0000089h
+000070: invoke-static v3, v4, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;campaignId&quot;
+000076: new-array v0, v0, [B
+00007a: fill-array-data v0, +0000089h
+000080: new-array v3, v2, [B
+000084: fill-array-data v3, +000008ch
+00008a: invoke-static v0, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;adGroup&quot;
+000090: new-array v0, v1, [B
+000094: fill-array-data v0, +000008ch
+00009a: new-array v1, v2, [B
+00009e: fill-array-data v1, +0000091h
+0000a4: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;adGroupId&quot;
+0000aa: new-array v0, v2, [B
+0000ae: fill-array-data v0, +0000091h
+0000b4: new-array v1, v2, [B
+0000b8: fill-array-data v1, +0000094h
+0000be: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;creative&quot;
+0000c4: const/4 v0, 4
+0000c6: new-array v0, v0, [B
+0000ca: fill-array-data v0, +0000093h
+0000d0: new-array v1, v2, [B
+0000d4: fill-array-data v1, +0000094h
+0000da: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;from&quot;
+0000e0: invoke-direct v5, Ljava/lang/Object;-&gt;&lt;init&gt;()V
+0000e6: iput-object v6, v5, Lel5;-&gt;a Ljava/lang/String;
+0000ea: iput-object v7, v5, Lel5;-&gt;b Ljava/lang/String;
+0000ee: iput-object v8, v5, Lel5;-&gt;c Ljava/lang/String;
+0000f2: iput-object v9, v5, Lel5;-&gt;d Ljava/lang/String;
+0000f6: iput-object v10, v5, Lel5;-&gt;e Ljava/lang/String;
+0000fa: iput-object v11, v5, Lel5;-&gt;f Ljava/lang/String;
+0000fe: iput-object v12, v5, Lel5;-&gt;g Ljava/lang/String;
+000102: iput-object v13, v5, Lel5;-&gt;h Ljava/lang/String;
+000106: return-void 
+00017a: nop 
+0001be: nop 
+
+METHOD k (Lel5; Lpp1; Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+000000: iget-object v0, v3, Lel5;-&gt;a Ljava/lang/String;
+000004: const/4 v1, 0
+000006: invoke-interface v4, v5, v1, v0, Lpp1;-&gt;p(Lkotlinx/serialization/descriptors/SerialDescriptor; I Ljava/lang/String;)V
+00000c: const/4 v0, 1
+00000e: iget-object v1, v3, Lel5;-&gt;b Ljava/lang/String;
+000012: invoke-interface v4, v5, v0, v1, Lpp1;-&gt;p(Lkotlinx/serialization/descriptors/SerialDescriptor; I Ljava/lang/String;)V
+000018: const/4 v0, 2
+00001a: iget-object v1, v3, Lel5;-&gt;c Ljava/lang/String;
+00001e: invoke-interface v4, v5, v0, v1, Lpp1;-&gt;p(Lkotlinx/serialization/descriptors/SerialDescriptor; I Ljava/lang/String;)V
+000024: const/4 v0, 3
+000026: invoke-interface v4, v5, v0, Lpp1;-&gt;r(Lkotlinx/serialization/descriptors/SerialDescriptor; I)Z
+00002c: move-result v1
+00002e: const-string v2, &quot;&quot;
+000032: if-eqz v1, +003h
+000036: goto +9h
+000038: iget-object v1, v3, Lel5;-&gt;d Ljava/lang/String;
+00003c: invoke-static v1, v2, Lkotlin/jvm/internal/Intrinsics;-&gt;areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000042: move-result v1
+000044: if-nez v1, +007h
+000048: iget-object v1, v3, Lel5;-&gt;d Ljava/lang/String;
+00004c: invoke-interface v4, v5, v0, v1, Lpp1;-&gt;p(Lkotlinx/serialization/descriptors/SerialDescriptor; I Ljava/lang/String;)V
+000052: const/4 v0, 4
+000054: invoke-interface v4, v5, v0, Lpp1;-&gt;r(Lkotlinx/serialization/descriptors/SerialDescriptor; I)Z
+00005a: move-result v1
+00005c: if-eqz v1, +003h
+000060: goto +9h
+000062: iget-object v1, v3, Lel5;-&gt;e Ljava/lang/String;
+000066: invoke-static v1, v2, Lkotlin/jvm/internal/Intrinsics;-&gt;areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+00006c: move-result v1
+00006e: if-nez v1, +007h
+000072: iget-object v1, v3, Lel5;-&gt;e Ljava/lang/String;
+000076: invoke-interface v4, v5, v0, v1, Lpp1;-&gt;p(Lkotlinx/serialization/descriptors/SerialDescriptor; I Ljava/lang/String;)V
+00007c: const/4 v0, 5
+00007e: invoke-interface v4, v5, v0, Lpp1;-&gt;r(Lkotlinx/serialization/descriptors/SerialDescriptor; I)Z
+000084: move-result v1
+000086: if-eqz v1, +003h
+00008a: goto +9h
+00008c: iget-object v1, v3, Lel5;-&gt;f Ljava/lang/String;
+000090: invoke-static v1, v2, Lkotlin/jvm/internal/Intrinsics;-&gt;areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000096: move-result v1
+000098: if-nez v1, +007h
+00009c: iget-object v1, v3, Lel5;-&gt;f Ljava/lang/String;
+0000a0: invoke-interface v4, v5, v0, v1, Lpp1;-&gt;p(Lkotlinx/serialization/descriptors/SerialDescriptor; I Ljava/lang/String;)V
+0000a6: const/4 v0, 6
+0000a8: invoke-interface v4, v5, v0, Lpp1;-&gt;r(Lkotlinx/serialization/descriptors/SerialDescriptor; I)Z
+0000ae: move-result v1
+0000b0: if-eqz v1, +003h
+0000b4: goto +9h
+0000b6: iget-object v1, v3, Lel5;-&gt;g Ljava/lang/String;
+0000ba: invoke-static v1, v2, Lkotlin/jvm/internal/Intrinsics;-&gt;areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+0000c0: move-result v1
+0000c2: if-nez v1, +007h
+0000c6: iget-object v1, v3, Lel5;-&gt;g Ljava/lang/String;
+0000ca: invoke-interface v4, v5, v0, v1, Lpp1;-&gt;p(Lkotlinx/serialization/descriptors/SerialDescriptor; I Ljava/lang/String;)V
+0000d0: const/4 v0, 7
+0000d2: iget-object v3, v3, Lel5;-&gt;h Ljava/lang/String;
+0000d6: invoke-interface v4, v5, v0, v3, Lpp1;-&gt;p(Lkotlinx/serialization/descriptors/SerialDescriptor; I Ljava/lang/String;)V
+0000dc: return-void 
+
+METHOD a ()Ljava/lang/String;
+000000: iget-object v0, v1, Lel5;-&gt;e Ljava/lang/String;
+000004: return-object v0
+
+METHOD b ()Ljava/lang/String;
+000000: iget-object v0, v1, Lel5;-&gt;f Ljava/lang/String;
+000004: return-object v0
+
+METHOD c ()Ljava/lang/String;
+000000: iget-object v0, v1, Lel5;-&gt;c Ljava/lang/String;
+000004: return-object v0
+
+METHOD d ()Ljava/lang/String;
+000000: iget-object v0, v1, Lel5;-&gt;d Ljava/lang/String;
+000004: return-object v0
+
+METHOD e ()Ljava/lang/String;
+000000: iget-object v0, v1, Lel5;-&gt;g Ljava/lang/String;
+000004: return-object v0
+
+METHOD f ()Ljava/lang/String;
+000000: iget-object v0, v1, Lel5;-&gt;h Ljava/lang/String;
+000004: return-object v0
+
+METHOD g ()Ljava/lang/String;
+000000: iget-object v0, v1, Lel5;-&gt;b Ljava/lang/String;
+000004: return-object v0
+
+METHOD h ()Ljava/lang/String;
+000000: iget-object v0, v1, Lel5;-&gt;a Ljava/lang/String;
+000004: return-object v0
+
+METHOD i ()Z
+000000: iget-object v0, v3, Lel5;-&gt;a Ljava/lang/String;
+000004: const/4 v1, 7
+000006: new-array v1, v1, [B
+00000a: fill-array-data v1, +0000017h
+000010: const/16 v2, 8
+000014: new-array v2, v2, [B
+000018: fill-array-data v2, +0000018h
+00001e: invoke-static v1, v2, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;Organic&quot;
+000024: move-result-object v1
+000026: sget v2, Lkotlin/text/StringsKt;-&gt;a I
+00002a: const/4 v2, 1
+00002c: invoke-static v0, v1, v2, Lkotlin/text/k;-&gt;M(Ljava/lang/String; Ljava/lang/String; Z)Z
+000032: move-result v0
+000034: return v0
+000036: nop 
+
+METHOD j (Lel5;)Z
+000000: const/4 v0, 0
+000002: if-nez v4, +003h
+000006: return v0
+000008: iget-object v1, v3, Lel5;-&gt;a Ljava/lang/String;
+00000c: iget-object v2, v4, Lel5;-&gt;a Ljava/lang/String;
+000010: invoke-static v1, v2, Lkotlin/jvm/internal/Intrinsics;-&gt;areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000016: move-result v1
+000018: if-eqz v1, +02ch
+00001c: iget-object v1, v3, Lel5;-&gt;b Ljava/lang/String;
+000020: iget-object v2, v4, Lel5;-&gt;b Ljava/lang/String;
+000024: invoke-static v1, v2, Lkotlin/jvm/internal/Intrinsics;-&gt;areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+00002a: move-result v1
+00002c: if-eqz v1, +022h
+000030: iget-object v1, v3, Lel5;-&gt;c Ljava/lang/String;
+000034: iget-object v2, v4, Lel5;-&gt;c Ljava/lang/String;
+000038: invoke-static v1, v2, Lkotlin/jvm/internal/Intrinsics;-&gt;areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+00003e: move-result v1
+000040: if-eqz v1, +018h
+000044: iget-object v1, v3, Lel5;-&gt;g Ljava/lang/String;
+000048: iget-object v2, v4, Lel5;-&gt;g Ljava/lang/String;
+00004c: invoke-static v1, v2, Lkotlin/jvm/internal/Intrinsics;-&gt;areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000052: move-result v1
+000054: if-eqz v1, +00eh
+000058: iget-object v1, v3, Lel5;-&gt;h Ljava/lang/String;
+00005c: iget-object v4, v4, Lel5;-&gt;h Ljava/lang/String;
+000060: invoke-static v1, v4, Lkotlin/jvm/internal/Intrinsics;-&gt;areEqual(Ljava/lang/Object; Ljava/lang/Object;)Z
+000066: move-result v4
+000068: if-eqz v4, +004h
+00006c: const/4 v4, 1
+00006e: return v4
+000070: return v0
+
+METHOD toString ()Ljava/lang/String;
+000000: new-instance v0, Ljava/lang/StringBuilder;
+000004: invoke-direct v0, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+00000a: const/4 v1, 3
+00000c: new-array v1, v1, [B
+000010: fill-array-data v1, +0000090h
+000016: const/16 v2, 8
+00001a: new-array v3, v2, [B
+00001e: fill-array-data v3, +000008fh
+000024: invoke-static v1, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;(o=&quot;
+00002a: move-result-object v1
+00002c: invoke-virtual v0, v1, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000032: iget-object v1, v6, Lel5;-&gt;a Ljava/lang/String;
+000036: invoke-virtual v0, v1, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00003c: const/4 v1, 4
+00003e: new-array v3, v1, [B
+000042: fill-array-data v3, +0000085h
+000048: new-array v4, v2, [B
+00004c: fill-array-data v4, +0000086h
+000052: invoke-static v3, v4, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;, n=&quot;
+000058: move-result-object v3
+00005a: invoke-virtual v0, v3, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000060: iget-object v3, v6, Lel5;-&gt;b Ljava/lang/String;
+000064: invoke-virtual v0, v3, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00006a: new-array v3, v1, [B
+00006e: fill-array-data v3, +000007dh
+000074: new-array v4, v2, [B
+000078: fill-array-data v4, +000007eh
+00007e: invoke-static v3, v4, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;, c=&quot;
+000084: move-result-object v3
+000086: invoke-virtual v0, v3, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00008c: iget-object v3, v6, Lel5;-&gt;c Ljava/lang/String;
+000090: invoke-virtual v0, v3, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000096: const/4 v3, 5
+000098: new-array v4, v3, [B
+00009c: fill-array-data v4, +0000074h
+0000a2: new-array v5, v2, [B
+0000a6: fill-array-data v5, +0000077h
+0000ac: invoke-static v4, v5, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;, ag=&quot;
+0000b2: move-result-object v4
+0000b4: invoke-virtual v0, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000ba: iget-object v4, v6, Lel5;-&gt;e Ljava/lang/String;
+0000be: invoke-virtual v0, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000c4: new-array v3, v3, [B
+0000c8: fill-array-data v3, +000006eh
+0000ce: new-array v4, v2, [B
+0000d2: fill-array-data v4, +0000071h
+0000d8: invoke-static v3, v4, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;, cr=&quot;
+0000de: move-result-object v3
+0000e0: invoke-virtual v0, v3, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000e6: iget-object v3, v6, Lel5;-&gt;g Ljava/lang/String;
+0000ea: invoke-virtual v0, v3, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000f0: new-array v1, v1, [B
+0000f4: fill-array-data v1, +0000068h
+0000fa: new-array v2, v2, [B
+0000fe: fill-array-data v2, +0000069h
+000104: invoke-static v1, v2, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;, f=&quot;
+00010a: move-result-object v1
+00010c: invoke-virtual v0, v1, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000112: iget-object v1, v6, Lel5;-&gt;h Ljava/lang/String;
+000116: invoke-virtual v0, v1, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00011c: const/16 v1, 41
+000120: invoke-virtual v0, v1, Ljava/lang/StringBuilder;-&gt;append(C)Ljava/lang/StringBuilder;
+000126: invoke-virtual v0, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+00012c: move-result-object v0
+00012e: return-object v0
+000192: nop 
+0001b2: nop 
+
+</pre></article></main><script src="../assets/reading-navigation.js"></script></body></html>

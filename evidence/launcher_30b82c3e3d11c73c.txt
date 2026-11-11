@@ -1,0 +1,9 @@
+    public static final boolean l() {
+        if (q77.a.m()) {
+            return false;
+        }
+        qf9 qf9Var = qf9.a;
+        String str = g28.X0;
+        j1d.a(new byte[]{Field.ASK, -77, 60, -95, Field.BIDIOUTLINE, 12, Field.GREETINGLINE, -28, 58, -77, Field.AUTONUM, -93, 112}, new byte[]{78, -38, Field.HYPERLINK, -60, 3, ByteCompanionObject.MAX_VALUE, 59, -112});
+        return qf9Var.n(str, 1L) == 1;
+    }

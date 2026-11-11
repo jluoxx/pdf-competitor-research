@@ -1,0 +1,24 @@
+{
+  "browser": "Edge via Playwright",
+  "network": "offline；从ZIP解压后测试",
+  "checks": [
+    "10个路由均有单一主标题与有效内容；6个主产品入口可见新增结论",
+    "参数23000045搜索→N05原文→返回，保留筛选",
+    "N04证据搜索→展开→原文→返回，保留搜索及展开状态",
+    "完整专项→业务配置原文→返回；相对链接离线可用",
+    "1440桌面、390手机无整页横向溢出；页面异常和控制台错误均为0"
+  ],
+  "local_html_links": "passed",
+  "pageerrors": [],
+  "console_errors": [],
+  "screenshots": [
+    "overview_desktop.png",
+    "config_desktop.png",
+    "library_desktop.png",
+    "overview_mobile.png",
+    "config_mobile.png",
+    "library_mobile.png"
+  ],
+  "apk_runtime": "未执行",
+  "policy_boundary": "高风险候选；未认定实际违规"
+}

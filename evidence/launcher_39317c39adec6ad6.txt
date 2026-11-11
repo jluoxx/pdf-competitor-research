@@ -1,0 +1,328 @@
+CLASS Lija;
+FIELD a 
+FIELD b 
+FIELD c 
+
+METHOD <clinit> ()V
+000000: new-instance v0, Lija;
+000004: invoke-direct v0, Lija;-><init>()V
+00000a: sput-object v0, Lija;->a Lija;
+00000e: const/4 v0, 0
+000010: const/4 v1, 1
+000012: invoke-static v0, v1, v0, Lk5d;->b(La17; I Ljava/lang/Object;)Lzj1;
+000018: move-result-object v0
+00001a: invoke-static Lb13;->b()Lly1;
+000020: move-result-object v1
+000022: invoke-interface v0, v1, Lkotlin/coroutines/CoroutineContext;->plus(Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
+000028: move-result-object v0
+00002a: invoke-static v0, Lvy1;->a(Lkotlin/coroutines/CoroutineContext;)Luy1;
+000030: move-result-object v0
+000032: sput-object v0, Lija;->c Luy1;
+000036: const/16 v0, 14
+00003a: new-array v0, v0, [B
+00003e: fill-array-data v0, +0000011h
+000044: const/16 v1, 8
+000048: new-array v1, v1, [B
+00004c: fill-array-data v1, +0000016h
+000052: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "PreloadManager"
+000058: move-result-object v0
+00005a: sput-object v0, Lija;->b Ljava/lang/String;
+00005e: return-void 
+000076: nop 
+
+METHOD <init> ()V
+000000: invoke-direct v0, Ljava/lang/Object;-><init>()V
+000006: return-void 
+
+METHOD a (Lija; Landroid/content/Context; Ljava/lang/String;)V
+000000: invoke-virtual v0, v1, v2, Lija;->f(Landroid/content/Context; Ljava/lang/String;)V
+000006: return-void 
+
+METHOD b (Ljava/lang/String; Lkotlin/jvm/functions/Function0;)V
+000000: const/4 v0, 6
+000002: new-array v1, v0, [B
+000006: fill-array-data v1, +0000083h
+00000c: const/16 v2, 8
+000010: new-array v3, v2, [B
+000014: fill-array-data v3, +0000084h
+00001a: invoke-static v1, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "adName"
+000020: new-array v0, v0, [B
+000024: fill-array-data v0, +0000084h
+00002a: new-array v1, v2, [B
+00002e: fill-array-data v1, +0000087h
+000034: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "action"
+00003a: const/16 v0, 14
+00003e: new-array v1, v0, [B
+000042: fill-array-data v1, +0000085h
+000048: new-array v3, v2, [B
+00004c: fill-array-data v3, +000008ch
+000052: invoke-static v1, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "PreloadManager"
+000058: move-result-object v1
+00005a: const/16 v3, 15
+00005e: new-array v3, v3, [B
+000062: fill-array-data v3, +0000089h
+000068: new-array v4, v2, [B
+00006c: fill-array-data v4, +0000090h
+000072: invoke-static v3, v4, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "clickHomeShowAd"
+000078: move-result-object v3
+00007a: invoke-static v1, v3, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+000080: sget-object v1, Las;->f Las$c;
+000084: invoke-virtual v1, Las$c;->b()Las;
+00008a: move-result-object v1
+00008c: invoke-virtual v1, Las;->p()Landroid/app/Activity;
+000092: move-result-object v5
+000094: if-nez v5, +027h
+000098: new-array v13, v0, [B
+00009c: fill-array-data v13, +0000080h
+0000a2: new-array v0, v2, [B
+0000a6: fill-array-data v0, +0000087h
+0000ac: invoke-static v13, v0, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "PreloadManager"
+0000b2: move-result-object v13
+0000b4: const/16 v0, 43
+0000b8: new-array v0, v0, [B
+0000bc: fill-array-data v0, +0000084h
+0000c2: new-array v1, v2, [B
+0000c6: fill-array-data v1, +0000099h
+0000cc: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "clickHomeShowAd  lastResumeActivity is null"
+0000d2: move-result-object v0
+0000d4: invoke-static v13, v0, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+0000da: invoke-interface v14, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+0000e0: return-void 
+0000e2: sget-object v3, La64;->a La64;
+0000e6: new-instance v8, Lija$a;
+0000ea: invoke-direct v8, v14, Lija$a;-><init>(Lkotlin/jvm/functions/Function0;)V
+0000f0: new-instance v9, Lija$b;
+0000f4: invoke-direct v9, v14, Lija$b;-><init>(Lkotlin/jvm/functions/Function0;)V
+0000fa: const/4 v10, 4
+0000fc: const/4 v11, 0
+0000fe: const/4 v6, 0
+000100: const/4 v7, 1
+000102: move-object v4, v13
+000104: invoke-static/range v3 ... v11, Ld76$a;->d(Ld76; Ljava/lang/String; Landroid/app/Activity; Lsp7; Z Lpb6; Lorg/xs/xne; I Ljava/lang/Object;)V
+00010a: return-void 
+00011a: nop 
+00013a: nop 
+000162: nop 
+0001b2: nop 
+
+METHOD c ()V
+000000: const/16 v0, 14
+000004: new-array v1, v0, [B
+000008: fill-array-data v1, +000007ch
+00000e: const/16 v2, 8
+000012: new-array v3, v2, [B
+000016: fill-array-data v3, +0000081h
+00001c: invoke-static v1, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "PreloadManager"
+000022: move-result-object v1
+000024: const/16 v3, 19
+000028: new-array v3, v3, [B
+00002c: fill-array-data v3, +000007eh
+000032: new-array v4, v2, [B
+000036: fill-array-data v4, +0000087h
+00003c: invoke-static v3, v4, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "loadEnterHomeScreen"
+000042: move-result-object v3
+000044: invoke-static v1, v3, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+00004a: sget-object v1, Las;->f Las$c;
+00004e: invoke-virtual v1, Las$c;->b()Las;
+000054: move-result-object v1
+000056: invoke-virtual v1, Las;->p()Landroid/app/Activity;
+00005c: move-result-object v1
+00005e: if-nez v1, +024h
+000062: new-array v0, v0, [B
+000066: fill-array-data v0, +0000077h
+00006c: new-array v1, v2, [B
+000070: fill-array-data v1, +000007eh
+000076: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "PreloadManager"
+00007c: move-result-object v0
+00007e: const/16 v1, 46
+000082: new-array v1, v1, [B
+000086: fill-array-data v1, +000007bh
+00008c: new-array v2, v2, [B
+000090: fill-array-data v2, +0000092h
+000096: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "loadEnterHomeScreen lastResumeActivity is null"
+00009c: move-result-object v1
+00009e: invoke-static v0, v1, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+0000a4: return-void 
+0000a6: sget-object v0, Lkgb;->Y Lkgb$a;
+0000aa: sget-object v2, Lija;->c Luy1;
+0000ae: new-instance v5, Lija$c;
+0000b2: const/4 v0, 0
+0000b4: invoke-direct v5, v8, v1, v0, Lija$c;-><init>(Lija; Landroid/app/Activity; Lgx1;)V
+0000ba: const/4 v6, 3
+0000bc: const/4 v7, 0
+0000be: const/4 v3, 0
+0000c0: const/4 v4, 0
+0000c2: invoke-static/range v2 ... v7, Lnq0;->d(Luy1; Lkotlin/coroutines/CoroutineContext; Lyy1; Lkotlin/jvm/functions/Function2; I Ljava/lang/Object;)La17;
+0000c8: move-result-object v0
+0000ca: invoke-static v0, Lkgb;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0000d0: move-result-object v0
+0000d2: goto +ch
+0000d4: move-exception v0
+0000d6: sget-object v1, Lkgb;->Y Lkgb$a;
+0000da: invoke-static v0, Lngb;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+0000e0: move-result-object v0
+0000e2: invoke-static v0, Lkgb;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0000e8: move-result-object v0
+0000ea: invoke-static v0, Lkgb;->e(Ljava/lang/Object;)Ljava/lang/Throwable;
+0000f0: move-result-object v0
+0000f2: if-eqz v0, +005h
+0000f6: invoke-virtual v0, Ljava/lang/Throwable;->printStackTrace()V
+0000fc: return-void 
+0000fe: nop 
+000116: nop 
+00016a: nop 
+0001b2: nop 
+
+METHOD d ()V
+000000: const/16 v0, 44
+000004: const/16 v1, 14
+000008: new-array v2, v1, [B
+00000c: fill-array-data v2, +000005eh
+000012: const/16 v3, 8
+000016: new-array v4, v3, [B
+00001a: fill-array-data v4, +0000063h
+000020: invoke-static v2, v4, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "PreloadManager"
+000026: move-result-object v2
+000028: const/16 v4, 17
+00002c: new-array v4, v4, [B
+000030: fill-array-data v4, +0000060h
+000036: new-array v5, v3, [B
+00003a: fill-array-data v5, +0000069h
+000040: invoke-static v4, v5, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "loadMinusBackHome"
+000046: move-result-object v4
+000048: invoke-static v2, v4, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+00004e: sget-object v2, Las;->f Las$c;
+000052: invoke-virtual v2, Las$c;->b()Las;
+000058: move-result-object v2
+00005a: invoke-virtual v2, Las;->p()Landroid/app/Activity;
+000060: move-result-object v2
+000062: if-nez v2, +022h
+000066: new-array v1, v1, [B
+00006a: fill-array-data v1, +0000059h
+000070: new-array v2, v3, [B
+000074: fill-array-data v2, +0000060h
+00007a: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "PreloadManager"
+000080: move-result-object v1
+000082: new-array v0, v0, [B
+000086: fill-array-data v0, +000005fh
+00008c: new-array v2, v3, [B
+000090: fill-array-data v2, +0000074h
+000096: invoke-static v0, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "loadMinusBackHome lastResumeActivity is null"
+00009c: move-result-object v0
+00009e: invoke-static v1, v0, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+0000a4: return-void 
+0000a6: move-object v0, v2
+0000a8: sget-object v2, Lija;->c Luy1;
+0000ac: new-instance v5, Lija$d;
+0000b0: const/4 v1, 0
+0000b2: invoke-direct v5, v0, v1, Lija$d;-><init>(Landroid/app/Activity; Lgx1;)V
+0000b8: const/4 v6, 3
+0000ba: const/4 v7, 0
+0000bc: const/4 v3, 0
+0000be: const/4 v4, 0
+0000c0: invoke-static/range v2 ... v7, Lnq0;->d(Luy1; Lkotlin/coroutines/CoroutineContext; Lyy1; Lkotlin/jvm/functions/Function2; I Ljava/lang/Object;)La17;
+0000c6: return-void 
+0000de: nop 
+00010a: nop 
+000132: nop 
+
+METHOD e (Landroid/content/Context;)V
+000000: const/4 v0, 7
+000002: new-array v0, v0, [B
+000006: fill-array-data v0, +000001dh
+00000c: const/16 v1, 8
+000010: new-array v1, v1, [B
+000014: fill-array-data v1, +000001eh
+00001a: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "context"
+000020: sget-object v2, Lija;->c Luy1;
+000024: new-instance v5, Lija$e;
+000028: const/4 v0, 0
+00002a: invoke-direct v5, v9, v0, Lija$e;-><init>(Landroid/content/Context; Lgx1;)V
+000030: const/4 v6, 3
+000032: const/4 v7, 0
+000034: const/4 v3, 0
+000036: const/4 v4, 0
+000038: invoke-static/range v2 ... v7, Lnq0;->d(Luy1; Lkotlin/coroutines/CoroutineContext; Lyy1; Lkotlin/jvm/functions/Function2; I Ljava/lang/Object;)La17;
+00003e: return-void 
+
+METHOD f (Landroid/content/Context; Ljava/lang/String;)V
+000000: const/16 v0, 8
+000004: sget-object v1, Lkgb;->Y Lkgb$a;
+000008: const/16 v1, 14
+00000c: new-array v1, v1, [B
+000010: fill-array-data v1, +0000074h
+000016: new-array v2, v0, [B
+00001a: fill-array-data v2, +000007bh
+000020: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "PreloadManager"
+000026: move-result-object v1
+000028: new-instance v2, Ljava/lang/StringBuilder;
+00002c: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+000032: const/16 v3, 22
+000036: new-array v3, v3, [B
+00003a: fill-array-data v3, +0000073h
+000040: new-array v4, v0, [B
+000044: fill-array-data v4, +000007eh
+00004a: invoke-static v3, v4, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "safePreload, context: "
+000050: move-result-object v3
+000052: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000058: invoke-static v6, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+00005e: move-result-object v3
+000060: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000066: const/16 v3, 10
+00006a: new-array v3, v3, [B
+00006e: fill-array-data v3, +0000071h
+000074: new-array v0, v0, [B
+000078: fill-array-data v0, +0000076h
+00007e: invoke-static v3, v0, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED ", adName: "
+000084: move-result-object v0
+000086: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00008c: invoke-static v7, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+000092: move-result-object v0
+000094: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00009a: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0000a0: move-result-object v0
+0000a2: invoke-static v1, v0, Lkw7;->d(Ljava/lang/String; Ljava/lang/String;)I
+0000a8: sget-object v0, La64;->a La64;
+0000ac: new-instance v1, Lija$f;
+0000b0: invoke-direct v1, v7, Lija$f;-><init>(Ljava/lang/String;)V
+0000b6: const/4 v2, 0
+0000b8: invoke-virtual v0, v6, v7, v2, v1, La64;->d(Landroid/content/Context; Ljava/lang/String; Ljava/util/Map; Lb96;)V
+0000be: sget-object v6, Lkotlin/Unit;->a Lkotlin/Unit;
+0000c2: invoke-static v6, Lkgb;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0000c8: move-result-object v6
+0000ca: goto +ch
+0000cc: move-exception v6
+0000ce: sget-object v7, Lkgb;->Y Lkgb$a;
+0000d2: invoke-static v6, Lngb;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+0000d8: move-result-object v6
+0000da: invoke-static v6, Lkgb;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0000e0: move-result-object v6
+0000e2: invoke-static v6, Lkgb;->e(Ljava/lang/Object;)Ljava/lang/Throwable;
+0000e8: move-result-object v6
+0000ea: if-eqz v6, +005h
+0000ee: invoke-virtual v6, Ljava/lang/Throwable;->printStackTrace()V
+0000f4: return-void 
+0000f6: nop 
+00010e: nop 
+00013e: nop 
+000162: nop 
+

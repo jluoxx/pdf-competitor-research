@@ -1,0 +1,55 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>买量／自然用户与广告风险专项</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/reading-layout.css"></head><body class="source-body reading-document"><main class="document-content"><article class="prose"><h1>All Document - File Viewer：买量／自然用户与广告风险专项</h1>
+<p>包名：<code>com.alldocument.fileviewer.tools</code>；versionName=1.0 / versionCode=11。base SHA-256：<code>7eda322286a3ecdaf7ab054db02b4e2d66a05c5fb5d329e2f9d08d0d7178376d</code>。</p>
+<h2>结论先看</h2>
+<p><strong>有在线参数控制自然与非自然来源的广告差异，而且不是单纯的自然量开关。</strong> 已还原链路：归因融合结果 → 来源与环境风险检查 → 内部org分组 → 逐场景广告限制。自然来源会进入受限分组；非自然来源也必须满足相关检查，才能脱离该组。因此“自然用户少广告，符合条件的买量用户进入更多广告流程”有代码及在线值支撑；“所有买量用户都展示、自然用户完全无广告”不成立。</p>
+<p><strong>存在明显值得核查的广告风险组合</strong>：应用抽屉点图标前的插屏流程、使用第三方应用后回到桌面的插屏调用，以及按同一风险分组改变部分图标和设置入口的隐藏行为。前两项属于优先核查的打断式广告风险；后一组合具有差异展示能力，但不能仅凭静态代码证明其目的就是躲避审核。</p>
+<p>本轮15:28（北京时间）重新请求业务与广告配置：均HTTP200、业务code200；仍为44项业务键、26场景、29路由记录。26场景规则和29路由与14:35快照一致；业务另有11个尚未确定含义的键发生变化，不能据此推断人群AB策略。沿用同一合成Android ID和安装时间，未伪造真实买量回调，未请求广告内容或上传曝光。</p>
+<h2>1. 控制买量／自然用户的究竟是什么</h2>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>控制层</th><th>参数／状态</th><th>本次在线值</th><th>已证实的用途</th></tr></thead><tbody><tr><td>场景配置总入口</td><td><code>hvxlh</code></td><td>Base64 JSON，26场景</td><td>解码后给各场景判定器设置规则</td></tr><tr><td>受限分组控制</td><td>各scene的<code>org_dly</code></td><td>21个场景=-1</td><td>内部org分组成立时，负数直接拦截该场景</td></tr><tr><td>风险条件入口</td><td><code>liefm</code>解出<code>limit_condition</code></td><td><code>1,2,3</code></td><td>启用ADB、时间及归因来源相关条件</td></tr><tr><td>投放活动匹配</td><td><code>ccsulso</code>（<code>g28.o0</code>）</td><td>本次44项未返回</td><td>非自然来源可按campaign关键词列表进一步筛选；缺失时此匹配层按空列表处理</td></tr><tr><td>媒体名称归一化</td><td><code>bojt</code>（<code>g28.R1</code>）</td><td>本次未返回</td><td>Base64后可更新媒体别名映射；不是已证实的广告开关</td></tr><tr><td>图标隐藏</td><td><code>eeffer</code> / hide_icon</td><td>1</td><td>结合内部org分组、本地item规则判断</td></tr><tr><td>设置入口隐藏</td><td><code>fzgtb</code> / hide_settings</td><td>1</td><td>org分组成立时不执行该隐藏判断；否则配置=1时隐藏判断成立</td></tr></tbody></table></div>
+<p><code>org_dly=-1</code>不是“等负一秒”，也不是仅首开延迟：在对应状态成立时，基本判定器直接返回<code>org disabled</code>。同一个字段为正数时，时间判定器才按秒换算，与首启时间比较。</p>
+<p><strong>计数口径：</strong>26场景中21个org_dly为负；其中4个已经被cd&lt;0对所有分组禁用。因此另有17个cd非负场景会受到org分组额外限制。17个里仍有缺广告路由或首日dly禁用的条目，不能把17直接当作实际可曝光点位数。</p>
+<p>证据：<a href="../evidence/launcher_57db2e62598c128a.html">新响应</a>、<a href="../evidence/launcher_78a1318ccdc219ef.html">新业务配置</a>、<a href="../evidence/launcher_9583ce75423ab1f8.html">26场景分组表</a>、<a href="../evidence/launcher_4f28f216a760a108.html">基本判定atb.b</a>、<a href="../evidence/launcher_ee758a7dc45b5912.html">时间判定zsb.b</a>、<a href="../evidence/launcher_de3b207ee1daacc6.html">字段映射</a>。</p>
+<h2>2. 归因是怎样传到广告判断的</h2>
+<h3>2.1 自然与非自然来源判定</h3>
+<p><code>jh0</code>中存在Install Referrer和第三方归因融合逻辑；融合模型<code>el5</code>包含organic、network、campaign等字段。<code>el5.i()</code>对organic字符串与<code>Organic</code>进行忽略大小写的相等比较。</p>
+<p><code>q77.e</code>合并归因结果流<code>jh0.J()</code>和在线配置流<code>scd.e()</code>，随后<code>q77$e$a.b</code>把网络、campaign以及解码后的限制参数交给<code>b87</code>。来源检测器<code>bq6</code>监听融合归因结果，编号为3。</p>
+<p>来源检测器的关键分支已被REA和字节码交叉核对：</p>
+<pre>没有融合归因结果 → UNKNOWN
+organic == Organic → RSK，说明为illegal-source
+非自然来源：
+    ccsulso为空／缺失／解析失败 → 空关键词表 → SAFE
+    关键词表非空且campaign包含任一关键词 → SAFE
+    否则 → RSK，说明为illegal-camp</pre>
+<p>这里的<code>RSK</code>是该应用SDK内部枚举，不代表自然用户真的存在欺诈或安全风险。<code>ccsulso</code>筛选的是campaign字符串，不能误写成网络平台白名单。<code>Non-Organic</code>也只是非自然归因标签，不独立证明发生过付费投放。</p>
+<p>证据：<a href="../evidence/launcher_17405116da5ce3df.html">REA读取bq6.d</a>、<a href="../evidence/launcher_a7037ee388ff412d.html">bq6解码字节码</a>、<a href="../evidence/launcher_16a1cf4c56b13f0e.html">Craft交叉读取</a>、<a href="../evidence/launcher_1d8ec50c6c44e584.html">融合模型</a>、<a href="../evidence/launcher_bdb352204d144821.html">归因融合</a>、<a href="../evidence/launcher_bbcdb0e7bff86fce.html">配置与归因连接</a>。</p>
+<h3>2.2 内部org比自然归因范围更大</h3>
+<p><code>q77.i</code>确实把<code>q77$a</code>作为<code>af1</code>回调注入广告控制器。<code>q77$a.b()</code>是场景判定器读取的org状态来源，其逻辑可概括为：</p>
+<pre>details为空 → true
+没有任何启用的条件，且有编号3的来源结果 → 来源状态 != SAFE
+其余情况 → 汇总风险状态 != SAFE</pre>
+<p>所以未获得结果、结果未知、自然来源或启用的其他条件未通过，都可能使org=true；不能把它直接等同于归因平台的isOrganic。</p>
+<p><code>b87.r</code>只汇总已启用的检查：有RSK则汇总为RSK；已启用检查全部SAFE且非空才为SAFE；其他情况为UNKNOWN。本次启用集合为1/2/3，故非自然来源也可能因为ADB或时间条件被划进受限组。</p>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>条件</th><th>证据与边界</th></tr></thead><tbody><tr><td>1：ADB</td><td><code>ve$a$a.emit</code>读取adb_enabled；值=1写RSK，否则SAFE；本次启用</td></tr><tr><td>2：系统时间</td><td>监听auto_time、手动设置时间／时区，结合时间变化条件处理；本次启用，但没有测任何设备是否命中</td></tr><tr><td>3：来源／campaign</td><td>自然来源RSK，非自然来源按上述匹配规则；本次启用</td></tr><tr><td>4：包安装检查</td><td>包内有PackageManager及包变化监听；本次未启用。虽然limit_package含org.wireshark.android，不能说当前正在检查该包</td></tr><tr><td>84：测试环境检查</td><td>包内t15类包含Firebase Test Lab相关读取，但本链路的b87$a初始注册列表只有1/2/3/4，且当前启用集合也没有84；不认定当前已检测审核／Test Lab环境</td></tr></tbody></table></div>
+<p>证据：<a href="../evidence/launcher_33d48c3000054581.html">org回调</a>、<a href="../evidence/launcher_3d6a5006d35bca7b.html">回调注入</a>、<a href="../evidence/launcher_a82d47f8270111dd.html">Craft方法原始指令</a>、<a href="../evidence/launcher_898c033bdc0361a4.html">枚举SAFE/RSK/UNKNOWN</a>、<a href="../evidence/launcher_4b8dedf570d7750d.html">汇总规则</a>、<a href="../evidence/launcher_6104917cdf32ab66.html">ADB检查</a>、<a href="../evidence/launcher_8261bca7088538e2.html">注册列表</a>、<a href="../evidence/launcher_1a70de03e9dc78b3.html">条件打包解码</a>。</p>
+<h3>2.3 dly是另一条时间／首日限制，不是买量判定</h3>
+<p><code>q77$a.c()</code>读取<code>first_time_niuma</code>，<code>gu.a()</code>首次写当前时间。<code>q77$a.e()</code>在该时间缺失／异常小，或首启日期与当天DAY_OF_YEAR相同时返回true。基本判定器在此状态下检查dly&lt;0；时间判定器把正dly乘1000，与距首启的时长比较。</p>
+<p>因此<code>23000045.dly=1</code>是这层首启后1秒门槛，不能解释成安装一天后才展示，也不能用它证明规避审核。<code>44000036.dly=-1</code>则还受首日状态拦截。</p>
+<p>证据：<a href="../evidence/launcher_2d3e287a1ddf2756.html">首启写入</a>、<a href="../evidence/launcher_33d48c3000054581.html">首日判断</a>、<a href="../evidence/launcher_83d6a3dd08ec0c08.html">字段解析</a>。</p>
+<h2>3. 最值得关注的在线广告配置</h2>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>场景／行为</th><th>本次参数</th><th>实际追到的代码动作</th><th>判断</th></tr></thead><tbody><tr><td>23000045：应用抽屉图标点击</td><td>cd=60、dly=1、org_dly=-1；有plaque路由</td><td>qx6.m在若干直接启动例外以外调用hle.k，启动目标应用动作通过回调传入；hle$e可进入插屏展示接口</td><td>高风险候选：用户要打开目标应用，却先经过广告流程</td></tr><tr><td>23000046：第三方应用后回到桌面</td><td>cd=300、dly=0、org_dly=-1；有plaque路由</td><td>LawnchairLauncher.onResume→uod.g；符合桌面状态及记录包条件时调用ija.b→广告展示接口</td><td>高风险候选：回桌面时出现非预期插屏</td></tr><tr><td>23000035／36：启动／引导</td><td>cd=0、dly=0、org_dly=0</td><td>有启动／引导相关调用与广告路由</td><td>这层对org组也未禁用；是否发生加载页前广告、连续插屏需真机证据</td></tr><tr><td>eeffer=1、fzgtb=1</td><td>部分图标／设置入口隐藏开关</td><td>px5.j／l复用q77.m的分组；org=true时保留设置入口，org=false且开关为1时隐藏判断成立</td><td>高关注：人群与环境状态能改变可见入口；用户知情、可恢复性未知</td></tr><tr><td>wfazza=3600</td><td>重设首选桌面相关间隔1小时</td><td>接收器还有默认桌面、前台等条件</td><td>需核查：不等于每小时强制夺回桌面；若未经同意改变设置才涉及相应政策问题</td></tr><tr><td>wvkns解码{}；全部场景次数上限字段0</td><td>该层无正数全局／场景次数上限</td><td>仍受cd、org、首日、路由和广告就绪限制</td><td>频控较宽松线索；没有每日正数上限本身不能直接认定违规</td></tr></tbody></table></div>
+<p><strong>23000045触发链：</strong>点击应用抽屉图标 → 部分系统／特殊项走直接启动例外 → 普通分支<code>hle.k(...23000045, callback)</code> → 就绪时插屏展示接口 → 流程结果回调关联目标应用启动。这里既有展示分支也有失败／无缓存的回退，不能写成每次点击都强制看广告。</p>
+<p><strong>23000046触发链：</strong>记录前次启动包 → Launcher.onResume → 排除自身及部分系统包／自身功能 → 确认处在主桌面且不是负一屏 → 消费记录 → 23000046广告调用。它是在桌面恢复时触发，不能据此写成正在第三方App前台时覆盖其界面。</p>
+<p>证据：<a href="../evidence/launcher_a7ff5718f1501662.html">图标点击</a>、<a href="../evidence/launcher_617b37ec49c09e8f.html">目标动作回调</a>、<a href="../evidence/launcher_643dd1e7a13321bf.html">广告流程</a>、<a href="../evidence/launcher_f535312e216bf0d3.html">插屏展示分支</a>、<a href="../evidence/launcher_2542a52c7a0ad66e.html">桌面onResume</a>、<a href="../evidence/launcher_ecfbeabd3fce0357.html">第三方包与桌面分支</a>、<a href="../evidence/launcher_39317c39adec6ad6.html">展示调用</a>、<a href="../evidence/launcher_204fd0d4ffa5a588.html">图标隐藏判断</a>、<a href="../evidence/launcher_30b82c3e3d11c73c.html">设置隐藏判断</a>、<a href="../evidence/launcher_3a3d6690f97f0e0a.html">29路由新响应</a>。</p>
+<h2>4. 哪些可能违规，哪些只能说可疑</h2>
+<p>本轮已实际读取Google Play官方政策，保存HTML、正文和抓取时间。以下是根据政策与代码作出的风险评估，不是Google的处罚结论。</p>
+<p>• <strong>打断用户打开应用／回到桌面的插屏：高风险。</strong> 官方禁止在用户选择其他操作时突然出现全屏插屏，以及干扰其他应用和设备操作的广告。23000045与23000046应优先验证触发时机、广告是否全屏、是否明确可关闭、目标动作是否被阻断。来源：<a href="https://support.google.com/googleplay/android-developer/answer/9857753?hl=en">Ads</a>。</p>
+<p>• <strong>按环境和归因改变可见入口、压制广告：具有规避审核的可疑组合，但动机未证实。</strong> 在线条件能把自然来源、ADB等状态纳入受限分组，且同一组影响广告与设置／图标隐藏。官方禁止审核规避、未披露的核心功能差异和远程激活的隐蔽功能；但常规反作弊或广告分层本身不能直接等同于审核规避。仍缺商店完整披露核对、实际人群UI对照、审核环境差异运行证据。来源：<a href="https://support.google.com/googleplay/android-developer/answer/17006354?hl=en">Deceptive Behavior，尤其Behavior Transparency</a>。</p>
+<p>• <strong>隐藏设置／图标及重设桌面：需核查知情同意与恢复方式。</strong> 官方要求用户知情同意地改变相关设备设置，并可方便恢复；本次只证明控制与判断链，未观察到真实设备设置变化或用户协议流程。来源同上。</p>
+<p>Launcher桌面本身可以是该App的界面，<strong>不能因为广告出现在桌面就自动判成应用外广告</strong>。重点是是否在用户没有预期的操作点打断正常使用、干扰其他App或系统操作，以及是否透明披露。</p>
+<p>以下尚无足够证据，不能认定：自动点击广告／伪造曝光、强制跳转商店、假关闭按钮、无法关闭超过15秒、锁屏广告已启用、后台覆盖其他App、检测到审核身份后藏广告。不存在这些结论不代表功能不存在，而是本轮未观察到足够证据。</p>
+<p>政策原文证据：<a href="../evidence/launcher_2882cfda1e5a28f0.html">Ads正文</a>、<a href="../evidence/launcher_c93e63b834703c53.html">Deceptive Behavior正文</a>、<a href="../evidence/launcher_a34b5c03657b7c55.html">抓取记录</a>。</p>
+<h2>5. 证据覆盖与未执行项</h2>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>问题</th><th>本轮状态</th><th>边界</th></tr></thead><tbody><tr><td>是否有自然／非自然来源分层</td><td>已确认代码消费链及线上场景值</td><td>不是两台真实用户设备的对照实验</td></tr><tr><td>当前场景参数是否仍一致</td><td>15:28重新请求两套配置，已验证</td><td>合成标识、同一请求条件；此次网络经本机已有代理，未改变系统代理设置</td></tr><tr><td>自然用户是否完全无广告</td><td>不能支持；部分启动／引导场景org_dly=0</td><td>实际能否显示仍受其他层约束</td></tr><tr><td>买量用户是否必定开放所有广告</td><td>不能支持；风险检查、首日、场景禁用及路由仍生效</td><td>未知真实设备归因及检查结果</td></tr><tr><td>广告违规是否已经坐实</td><td>尚未</td><td>没有真机截图、录像、关闭交互或impression回调</td></tr><tr><td>本轮工具</td><td>REA有效4项；Craft有效7项，含类与实际方法指令</td><td>REA另外4项超时、2项未完成；错误已保留，未冒充成功</td></tr></tbody></table></div>
+<p>REA成功结果包含Java与smali回退，表示形式按原始结果保留；<code>acq_02.java.txt</code>扩展名不保证内容一定为Java。字节码解码用于定位，分支与返回值以原指令交叉判断；线性解码遇寄存器跨分支复用时，个别调试字符串可能不完整，不用其乱码部分支撑结论。</p>
+<p>下一阶段若做运行验证，最有价值的是在明确设备及操作范围后采集两类已真实归因用户的当前配置、风险汇总结果、桌面入口截图，连续验证应用图标点击及从第三方App返回的广告行为。ADB本身就在启用条件内，因此测试连接状态会影响分组，不能把调试环境看不到广告直接当成生产人群也没有。本轮未修改设备、未篡改归因、未尝试绕过检查。</p>
+<p><a href="../evidence/launcher_d20ef0e09159d684.html">刷新对比记录</a> · <a href="../evidence/launcher_bfb557665f0774ba.html">分组计数和关键字节独立核对</a> · <a href="../evidence/launcher_ccb699e98d06881a.html">本轮工具审计</a> · <a href="../evidence/launcher_36fbc14e677c8776.html">上一轮完整参数报告</a>。</p></article></main><script src="../assets/reading-navigation.js"></script></body></html>

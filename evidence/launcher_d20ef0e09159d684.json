@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://s.sognhubgames.com/flop",
+    "method": "POST",
+    "identifier_kind": "synthetic_same_as_previous",
+    "time_utc": "2026-11-11T07:28:36.518110+00:00",
+    "status": 200,
+    "content_type": "text/plain;charset=UTF-8",
+    "code": 200,
+    "changed_keys": [
+      "yrrm",
+      "zwju",
+      "namq",
+      "ojddy",
+      "wsbm",
+      "vico",
+      "fwechd",
+      "sjnip",
+      "swcf",
+      "vgrtty",
+      "kurt"
+    ],
+    "keys": 44,
+    "scene_config_unchanged": true
+  },
+  {
+    "url": "https://tools.sognhubgames.com/flop",
+    "method": "POST",
+    "identifier_kind": "synthetic_same_as_previous",
+    "time_utc": "2026-11-11T07:28:40.207509+00:00",
+    "status": 200,
+    "content_type": "application/json",
+    "code": 200,
+    "space_count": 29,
+    "ad_config_unchanged": true
+  }
+]

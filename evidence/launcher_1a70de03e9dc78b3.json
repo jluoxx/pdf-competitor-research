@@ -1,0 +1,4 @@
+{
+  "limit_condition": "1,2,3",
+  "limit_package": "org.wireshark.android"
+}

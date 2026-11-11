@@ -1,0 +1,8 @@
+    public static final boolean j(int i) {
+        long jF = qf9.a.f();
+        boolean zM = q77.a.m();
+        if (m(i)) {
+            return true;
+        }
+        return !zM && jF == 1;
+    }

@@ -1,0 +1,183 @@
+
+Ads - Play Console Help
+Skip to main content
+Google Help
+Help Center
+Play Console Help
+Policy Center
+Community
+Play Console
+Privacy Policy
+Terms of Service
+Submit feedback
+Send feedback on...
+This help content & information
+General Help Center experience
+Close
+Next
+Help Center
+Community
+Announcements
+Play Console
+Notification
+You can now request help from the 
+Help
+ page in your Play Console account.  If you don't have access to Play Console, ask your account admin for an invite.
+Ads
+Help us improve this policy article by taking a
+2-minute survey
+.
+To maintain a quality experience, we take into account your ad’s content, audience, user experience, behavior, as well as security and privacy. We consider ads and associated offers as part of your app, they must also follow all other Google Play policies. We also have additional requirements for ads if you’re monetizing an app that targets children on Google Play.
+You can also read more about our App Promotion and Store Listing policies 
+here
+, including how we address 
+deceptive promotion practices
+.
+COLLAPSE ALL
+EXPAND ALL
+Ad Content
+The ads and associated offers are part of your app and must follow our 
+Restricted Content
+ policies. Additional requirements apply if your app is a 
+gambling
+ app.
+Inappropriate Ads
+The ads and their associated offers (for example, the ad is promoting the download of another app) shown within your app must be appropriate for the 
+content rating
+ of your app, even if the content by itself is otherwise compliant with our policies.
+Examples of common violations
+Ads that are inappropriate for the content rating of the app
+① This ad is inappropriate (Teen) for the content rating of the app (Everyone)
+  ② This ad is inappropriate (Mature) for the content rating of the app (Teen)
+  ③ The offer of the ad (promoting the download of a Mature app) is inappropriate for the content rating of the game app in which the ad was displayed (Everyone)
+Families Ads Requirements
+If you’re monetizing an app that targets children on Google Play, it’s important that your app follows the 
+Families Ads and Monetization Policy Requirements
+.
+Deceptive Ads
+Ads must not simulate or impersonate the user interface of any app feature, such as notifications or warning elements of an operating system. It must be clear to the user which app is serving each ad.
+Examples of common violations
+Ads that mimic an app's UI:
+① The question mark icon in this app is an ad that takes the user to an external landing page.
+Ads that mimic a system notification:
+① ② The examples above illustrate ads mimicking various system notifications.
+      ① The example above illustrates a feature section that mimics other features but only leads the user to an ad or ads.
+Disruptive Ads
+Disruptive ads are ads that are displayed to users in unexpected ways, that may result in inadvertent clicks, or impairing or interfering with the usability of device functions.
+Your app cannot force a user to click an ad or submit personal information for advertising purposes before they can fully use an app. Ads may only be displayed inside of the app serving them and must not interfere with other apps, ads, or the operation of the device, including system or device buttons and ports. This includes overlays, companion functionality, and widgetized ad units. If your app displays ads or other ads that interfere with normal use, they must be easily dismissible without penalty.
+Examples of common violations
+Ads that take up the entire screen or interfere with normal use and do not provide a clear means to dismiss the ad:
+① This ad does not have a dismiss button.
+Ads that force the user to click-through by using a false dismiss button, or by making ads suddenly appear in areas of the app where the user usually taps for another function:
+① This ad uses a false dismiss button.
+② This ad suddenly appears in an area where the user is used to tapping for in-app functions.
+Ads that display outside of the app serving them:
+① The user navigates to the home screen from this app, and suddenly an ad appears on the homescreen.
+Ads that are triggered by the home button or other features explicitly designed for exiting the app:
+① The user attempts to exit the app and navigate to the home screen, but instead, the expected flow is interrupted by an ad.
+Better Ads Experiences
+Developers are required to comply with the following ads guidelines to ensure high quality experiences for users when they are using Google Play apps. Your ads may not be shown in the following unexpected ways for users:
+Full screen interstitial ads of all formats (video, GIF, static, etc.) that show unexpectedly, typically when the user has chosen to do something else, are not allowed. 
+Ads that appear during game play at the beginning of a level or during the beginning of a content segment are not allowed. 
+Full screen video interstitial ads that appear before an app’s loading screen (splash screen) are not allowed.
+Full screen interstitial ads of all formats that are not closeable after 15 seconds are not allowed. Opt-in full screen interstitials or full screen interstitials that do not interrupt users in their actions (for example, after the score screen in a game app) may persist more than 15 seconds.
+This policy does not apply to rewarded ads which are explicitly opted-in by users (for example, an ad that developers explicitly offer a user to watch in exchange for unlocking a specific game feature or a piece of content). This policy also does not apply to monetization and advertising that does not interfere with normal app use or game play (for example, video content with integrated ads, non-full screen banner ads).
+These guidelines are inspired by the 
+Better Ads Standards - Mobile Apps Experiences
+ guidelines. For more information on Better Ads Standards, please refer to 
+Coalition of Better Ads
+.
+Examples of common violations
+Unexpected ads that appear during game play or during the beginning of a content segment (for example, after a user has clicked on a button, and before the action intended by the button click has taken effect). These ads are unexpected for users, as users expect to begin a game or engage in content instead.
+    ① Unexpected static ad appears during game play at the beginning of a level.
+    ② Unexpected video ad appears during beginning of a content segment.
+A full-screen ad that appears during game play and cannot be closed after 15 seconds.
+    ①  An interstitial ads appears during game play, and does not offer users an option to skip within 15 seconds.
+Made for Ads
+We don’t allow apps that display interstitial ads repeatedly to distract users from interacting with an app and performing in-app tasks.
+Examples of common violations
+Apps where an interstitial ad is placed after a user action (including but not limited to clicks, swipes, etc.) in a consecutive manner.
+① The first in-app page has multiple buttons to interact with. When the user clicks 
+Start app
+ to use the app, an interstitial ad pops up. After the ad is closed, the user returns to the app and clicks 
+Service
+ to start using the service, but another interstitial ad appears.
+② On the first page, the user is led to click 
+Play
+ as it is the only button available to use the app. When the user clicks it, an interstitial ad shows up. After the ad is closed, the user clicks 
+Launch
+ as it is the only button to interact with, and another interstitial ad pops up.
+Lockscreen Monetization
+Unless the exclusive purpose of the app is that of a lockscreen, apps may not introduce ads or features that monetize the locked display of a device.
+Ad Fraud
+Ad fraud is strictly prohibited. For more information, refer to our 
+Ad Fraud policy
+.
+Use of Location Data for Ads
+Apps that extend usage of permission based device location data for serving ads are subject to the 
+Personal and Sensitive Information
+ policy, and must also comply with the following requirements:
+Use or collection of permission based device location data for advertising purposes must be clear to the user and documented in the app’s mandatory privacy policy, including linking to any relevant ad network privacy policies addressing location data use.
+In accordance with 
+Location Permissions
+ requirements, location permissions may only be requested to implement current features or services within your app, and may not request device location permissions solely for the use of ads.
+Usage of Android Advertising ID
+Google Play Services version 4.0 introduced new APIs and an ID for use by advertising and analytics providers. Terms for the use of this ID are below.
+Usage
+. The Android advertising identifier (AAID) must only be used for advertising and user analytics. The status of the “Opt out of Interest-based Advertising” or “Opt out of Ads Personalization” setting must be verified on each access of the ID.
+Association with personally-identifiable information or other identifiers
+.
+Advertising use: The advertising identifier may not be connected to persistent device Identifiers (for example: SSAID, MAC address, IMEI, etc.) for any advertising purpose. The advertising identifier may only be connected to personally-identifiable information with the explicit consent of the user.
+Analytics use: The advertising identifier may not be connected to personally-identifiable information or associated with any persistent device identifier (for example: SSAID, MAC address, IMEI, etc.) for any analytics purpose. Please read the 
+User Dat
+a policy
+for additional guidelines on persistent device identifiers.
+Respecting users' selections
+.
+If reset, a new advertising identifier must not be connected to a previous advertising identifier or data derived from a previous advertising identifier without the explicit consent of the user.
+You must abide by a user’s “Opt out of Interest-based Advertising” or “Opt out of Ads Personalization” setting. If a user has enabled this setting, you may not use the advertising identifier for creating user profiles for advertising purposes or for targeting users with personalized advertising. Allowed activities include contextual advertising, frequency capping, conversion tracking, reporting and security and fraud detection.
+On newer devices, when a user deletes the Android advertising identifier, the identifier will be removed. Any attempts to access the identifier will receive a string of zeros. A device without an advertising identifier must not be connected to data linked to or derived from a previous advertising identifier.
+Transparency to users
+. The collection and use of the advertising identifier and commitment to these terms must be disclosed to users in a legally adequate privacy notification. To learn more about our privacy standards, please review our 
+User Data
+ policy.
+Abiding by the terms of use
+. The advertising identifier may only be used in accordance with the Google Play Developer Program Policy, including by any party that you may share it with in the course of your business. All apps uploaded or published to Google Play must use the advertising ID (when available on a device) in lieu of any other device identifiers for any advertising purposes.
+For more information, refer to our 
+User Data policy
+.
+Help us improve this policy article by taking a
+2-minute survey
+.
+Was this helpful?
+How can we improve it?
+Yes
+No
+Submit
+Need more help?
+Try these next steps:
+ Post to the help community 
+ Get answers from community members 
+Contact us
+Tell us more and we’ll help you get there
+true
+Search
+Clear search
+Close search
+Google apps
+Main menu
+9498143595572032279
+true
+Search Help Center
+false
+true
+true
+true
+true
+true
+92637
+false
+false
+false
+false
+false

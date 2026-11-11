@@ -1,0 +1,93 @@
+CLASS Lgu;
+FIELD a 
+FIELD b 
+FIELD c 
+FIELD d 
+FIELD e 
+FIELD f 
+
+METHOD <clinit> ()V
+000000: new-instance v0, Lgu;
+000004: invoke-direct v0, Lgu;-><init>()V
+00000a: sput-object v0, Lgu;->a Lgu;
+00000e: const/16 v0, 16
+000012: new-array v1, v0, [B
+000016: fill-array-data v1, +0000055h
+00001c: const/16 v2, 8
+000020: new-array v3, v2, [B
+000024: fill-array-data v3, +000005ah
+00002a: invoke-static v1, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "first_show_guide"
+000030: move-result-object v1
+000032: sput-object v1, Lgu;->b Ljava/lang/String;
+000036: new-array v1, v2, [B
+00003a: fill-array-data v1, +0000057h
+000040: new-array v3, v2, [B
+000044: fill-array-data v3, +000005ah
+00004a: invoke-static v1, v3, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "all_apps"
+000050: move-result-object v1
+000052: sput-object v1, Lgu;->c Ljava/lang/String;
+000056: new-array v0, v0, [B
+00005a: fill-array-data v0, +0000057h
+000060: new-array v1, v2, [B
+000064: fill-array-data v1, +000005eh
+00006a: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "first_time_niuma"
+000070: move-result-object v0
+000072: sput-object v0, Lgu;->d Ljava/lang/String;
+000076: const/16 v0, 25
+00007a: new-array v0, v0, [B
+00007e: fill-array-data v0, +0000059h
+000084: new-array v1, v2, [B
+000088: fill-array-data v1, +0000066h
+00008e: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "desktop_weather_click_day"
+000094: move-result-object v0
+000096: sput-object v0, Lgu;->e Ljava/lang/String;
+00009a: const/16 v0, 22
+00009e: new-array v0, v0, [B
+0000a2: fill-array-data v0, +0000061h
+0000a8: new-array v1, v2, [B
+0000ac: fill-array-data v1, +000006ch
+0000b2: invoke-static v0, v1, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "key_show_floating_ball"
+0000b8: move-result-object v0
+0000ba: sput-object v0, Lgu;->f Ljava/lang/String;
+0000be: return-void 
+000152: nop 
+000182: nop 
+
+METHOD <init> ()V
+000000: invoke-direct v0, Ljava/lang/Object;-><init>()V
+000006: return-void 
+
+METHOD a ()V
+000000: sget-object v0, Ldb4;->a Ldb4;
+000004: const/16 v1, 16
+000008: new-array v2, v1, [B
+00000c: fill-array-data v2, +0000030h
+000012: const/16 v3, 8
+000016: new-array v4, v3, [B
+00001a: fill-array-data v4, +0000035h
+000020: invoke-static v2, v4, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "first_time_niuma"
+000026: move-result-object v2
+000028: const-wide/16 v4, -1
+00002c: invoke-virtual v0, v2, v4, v5, Ldb4;->c(Ljava/lang/String; J)J
+000032: move-result-wide v4
+000034: const-wide/16 v6, 0
+000038: cmp-long v2, v4, v6
+00003c: if-gez v2, +017h
+000040: new-array v1, v1, [B
+000044: fill-array-data v1, +0000028h
+00004a: new-array v2, v3, [B
+00004e: fill-array-data v2, +000002fh
+000054: invoke-static v1, v2, Lj1d;->a([B [B)Ljava/lang/String;
+    DECODED "first_time_niuma"
+00005a: move-result-object v1
+00005c: invoke-static Ljava/lang/System;->currentTimeMillis()J
+000062: move-result-wide v2
+000064: invoke-virtual v0, v1, v2, v3, Ldb4;->h(Ljava/lang/String; J)V
+00006a: return-void 
+

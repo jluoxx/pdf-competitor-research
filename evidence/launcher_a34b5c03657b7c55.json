@@ -1,0 +1,20 @@
+[
+  {
+    "key": "ads",
+    "url": "https://support.google.com/googleplay/android-developer/answer/9857753?hl=en",
+    "final_url": "https://support.google.com/googleplay/android-developer/answer/9857753?hl=en",
+    "status": 200,
+    "title": "Ads - Play Console Help",
+    "chars": 11680,
+    "time": "2026-11-11T07:24:56.317403+00:00"
+  },
+  {
+    "key": "deceptive",
+    "url": "https://support.google.com/googleplay/android-developer/answer/9888077?hl=en",
+    "final_url": "https://support.google.com/googleplay/android-developer/answer/17006354?hl=en&visit_id=639299786987189163-353410759&rd=2",
+    "status": 200,
+    "title": "Deceptive Behavior - Play Console Help",
+    "chars": 15391,
+    "time": "2026-11-11T07:25:07.156930+00:00"
+  }
+]

@@ -1,0 +1,305 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>q77.txt</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/reading-layout.css"></head><body class="source-body reading-document"><main class="document-content"><article class="prose"><h1>q77.txt</h1><p>证据快照 · 2026-11-11 · 原文保留，不代表真机执行结果。</p><p><a download href="launcher_3d6a5006d35bca7b.txt">下载原文件</a></p><pre>CLASS Lq77;
+FIELD a 
+FIELD b 
+FIELD c 
+FIELD d 
+FIELD e 
+FIELD f 
+FIELD g 
+
+METHOD &lt;clinit&gt; ()V
+000000: new-instance v0, Lq77;
+000004: invoke-direct v0, Lq77;-&gt;&lt;init&gt;()V
+00000a: sput-object v0, Lq77;-&gt;a Lq77;
+00000e: new-instance v0, Lq77$b;
+000012: invoke-direct v0, Lq77$b;-&gt;&lt;init&gt;()V
+000018: sput-object v0, Lq77;-&gt;c Lq77$b;
+00001c: new-instance v0, Lq77$a;
+000020: invoke-direct v0, Lq77$a;-&gt;&lt;init&gt;()V
+000026: sput-object v0, Lq77;-&gt;d Lq77$a;
+00002a: const/4 v0, 0
+00002c: const/4 v1, 1
+00002e: invoke-static v0, v1, v0, Lk5d;-&gt;b(La17; I Ljava/lang/Object;)Lzj1;
+000034: move-result-object v0
+000036: invoke-static Lb13;-&gt;a()Lly1;
+00003c: move-result-object v1
+00003e: invoke-interface v0, v1, Lkotlin/coroutines/CoroutineContext;-&gt;plus(Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
+000044: move-result-object v0
+000046: invoke-static v0, Lvy1;-&gt;a(Lkotlin/coroutines/CoroutineContext;)Luy1;
+00004c: move-result-object v0
+00004e: sput-object v0, Lq77;-&gt;e Luy1;
+000052: const-string v0, &quot;&quot;
+000056: invoke-static v0, Lawc;-&gt;a(Ljava/lang/Object;)Lps8;
+00005c: move-result-object v0
+00005e: sput-object v0, Lq77;-&gt;f Lps8;
+000062: const/16 v0, 8
+000066: sput v0, Lq77;-&gt;g I
+00006a: const/4 v1, 6
+00006c: new-array v1, v1, [B
+000070: fill-array-data v1, +0000010h
+000076: new-array v0, v0, [B
+00007a: fill-array-data v0, +0000013h
+000080: invoke-static v1, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;kntbrg&quot;
+000086: move-result-object v0
+000088: sput-object v0, Lq77;-&gt;b Ljava/lang/String;
+00008c: return-void 
+00008e: nop 
+00009e: nop 
+
+METHOD &lt;init&gt; ()V
+000000: invoke-direct v0, Ljava/lang/Object;-&gt;&lt;init&gt;()V
+000006: return-void 
+
+METHOD a ()Lr75;
+000000: invoke-static Lq77;-&gt;k()Lr75;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD b ()Lr75;
+000000: invoke-static Lq77;-&gt;l()Lr75;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD c (Lyza;)Ljava/lang/CharSequence;
+000000: invoke-static v0, Lq77;-&gt;g(Lyza;)Ljava/lang/CharSequence;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD d ()Ljava/lang/Boolean;
+000000: invoke-static Lq77;-&gt;j()Ljava/lang/Boolean;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD e ()Lps8;
+000000: sget-object v0, Lq77;-&gt;f Lps8;
+000004: return-object v0
+
+METHOD g (Lyza;)Ljava/lang/CharSequence;
+000000: const/4 v0, 2
+000002: new-array v0, v0, [B
+000006: fill-array-data v0, +0000013h
+00000c: const/16 v1, 8
+000010: new-array v1, v1, [B
+000014: fill-array-data v1, +0000012h
+00001a: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;it&quot;
+000020: invoke-virtual v2, Lyza;-&gt;f()Ljava/lang/String;
+000026: move-result-object v2
+000028: return-object v2
+00002a: nop 
+000036: nop 
+
+METHOD j ()Ljava/lang/Boolean;
+000000: invoke-static Lkw7;-&gt;h()Z
+000006: move-result v0
+000008: invoke-static v0, Ljava/lang/Boolean;-&gt;valueOf(Z)Ljava/lang/Boolean;
+00000e: move-result-object v0
+000010: return-object v0
+
+METHOD k ()Lr75;
+000000: invoke-static Lscd;-&gt;e()Lyvc;
+000006: move-result-object v0
+000008: return-object v0
+
+METHOD l ()Lr75;
+000000: sget-object v0, Lq77;-&gt;f Lps8;
+000004: return-object v0
+
+METHOD f ()Ljava/lang/String;
+000000: sget-object v0, Lb87;-&gt;h Lb87$a;
+000004: invoke-virtual v0, Lb87$a;-&gt;b()Lb87;
+00000a: move-result-object v0
+00000c: invoke-virtual v0, Lb87;-&gt;p()Lgae;
+000012: move-result-object v0
+000014: invoke-virtual v0, Lgae;-&gt;h()Ljava/util/Map;
+00001a: move-result-object v0
+00001c: invoke-interface v0, Ljava/util/Map;-&gt;values()Ljava/util/Collection;
+000022: move-result-object v0
+000024: check-cast v0, Ljava/lang/Iterable;
+000028: invoke-static v0, Lkotlin/collections/CollectionsKt;-&gt;e1(Ljava/lang/Iterable;)Ljava/util/List;
+00002e: move-result-object v0
+000030: invoke-interface v0, Ljava/util/List;-&gt;isEmpty()Z
+000036: move-result v1
+000038: const-string v2, &quot;&quot;
+00003c: if-eqz v1, +003h
+000040: return-object v2
+000042: check-cast v0, Ljava/lang/Iterable;
+000046: new-instance v3, Ljava/util/ArrayList;
+00004a: invoke-direct v3, Ljava/util/ArrayList;-&gt;&lt;init&gt;()V
+000050: invoke-interface v0, Ljava/lang/Iterable;-&gt;iterator()Ljava/util/Iterator;
+000056: move-result-object v0
+000058: invoke-interface v0, Ljava/util/Iterator;-&gt;hasNext()Z
+00005e: move-result v1
+000060: if-eqz v1, +01bh
+000064: invoke-interface v0, Ljava/util/Iterator;-&gt;next()Ljava/lang/Object;
+00006a: move-result-object v1
+00006c: move-object v4, v1
+00006e: check-cast v4, Lyza;
+000072: invoke-virtual v4, Lyza;-&gt;d()Z
+000078: move-result v5
+00007a: if-eqz v5, -011h
+00007e: invoke-virtual v4, Lyza;-&gt;g()Lp0b;
+000084: move-result-object v4
+000086: sget-object v5, Lp0b;-&gt;Z Lp0b;
+00008a: if-ne v4, v5, -019h
+00008e: invoke-interface v3, v1, Ljava/util/Collection;-&gt;add(Ljava/lang/Object;)Z
+000094: goto -1eh
+000096: const/4 v0, 1
+000098: new-array v0, v0, [B
+00009c: const/16 v1, -50
+0000a0: const/4 v4, 0
+0000a2: aput-byte v1, v0, v4
+0000a6: const/16 v1, 8
+0000aa: new-array v1, v1, [B
+0000ae: fill-array-data v1, +000001bh
+0000b4: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;,&quot;
+0000ba: move-result-object v4
+0000bc: new-instance v9, Lm77;
+0000c0: invoke-direct v9, Lm77;-&gt;&lt;init&gt;()V
+0000c6: const/16 v10, 30
+0000ca: const/4 v11, 0
+0000cc: const/4 v5, 0
+0000ce: const/4 v6, 0
+0000d0: const/4 v7, 0
+0000d2: const/4 v8, 0
+0000d4: invoke-static/range v3 ... v11, Lkotlin/collections/CollectionsKt;-&gt;A0(Ljava/lang/Iterable; Ljava/lang/CharSequence; Ljava/lang/CharSequence; Ljava/lang/CharSequence; I Ljava/lang/CharSequence; Lkotlin/jvm/functions/Function1; I Ljava/lang/Object;)Ljava/lang/String;
+0000da: move-result-object v0
+0000dc: if-nez v0, +003h
+0000e0: return-object v2
+0000e2: return-object v0
+
+METHOD h ()Lr75;
+000000: sget-object v0, Lb87;-&gt;h Lb87$a;
+000004: invoke-virtual v0, Lb87$a;-&gt;b()Lb87;
+00000a: move-result-object v0
+00000c: invoke-virtual v0, Lb87;-&gt;u()Lr75;
+000012: move-result-object v0
+000014: new-instance v1, Lq77$c;
+000018: invoke-direct v1, v0, Lq77$c;-&gt;&lt;init&gt;(Lr75;)V
+00001e: return-object v1
+
+METHOD i (Landroid/content/Context;)V
+000000: const/4 v0, 6
+000002: const/4 v1, 3
+000004: new-array v1, v1, [B
+000008: fill-array-data v1, +00000e4h
+00000e: const/16 v2, 8
+000012: new-array v3, v2, [B
+000016: fill-array-data v3, +00000e3h
+00001c: invoke-static v1, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;app&quot;
+000022: invoke-static Lkw7;-&gt;h()Z
+000028: move-result v1
+00002a: sget-object v3, Ljh0;-&gt;a Ljh0;
+00002e: new-instance v4, Llh0$a;
+000032: invoke-direct v4, Llh0$a;-&gt;&lt;init&gt;()V
+000038: new-instance v5, Ln77;
+00003c: invoke-direct v5, Ln77;-&gt;&lt;init&gt;()V
+000042: invoke-virtual v4, v5, Llh0$a;-&gt;d(Lzpa;)Llh0$a;
+000048: move-result-object v4
+00004a: new-instance v5, Lq77$d;
+00004e: invoke-direct v5, Lq77$d;-&gt;&lt;init&gt;()V
+000054: invoke-virtual v4, v5, Llh0$a;-&gt;b(Lkh0;)Llh0$a;
+00005a: move-result-object v4
+00005c: sget-object v5, Lh28;-&gt;d Ljava/lang/String;
+000060: const/4 v6, 7
+000062: new-array v6, v6, [B
+000066: fill-array-data v6, +00000c3h
+00006c: new-array v7, v2, [B
+000070: fill-array-data v7, +00000c6h
+000076: invoke-static v6, v7, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;channel&quot;
+00007c: invoke-virtual v4, v5, Llh0$a;-&gt;c(Ljava/lang/String;)Llh0$a;
+000082: move-result-object v4
+000084: invoke-virtual v4, Llh0$a;-&gt;a()Llh0;
+00008a: move-result-object v4
+00008c: invoke-virtual v3, v13, v4, Ljh0;-&gt;E(Landroid/content/Context; Llh0;)V
+000092: sget-object v3, Ldf1;-&gt;a Ldf1;
+000096: instance-of v4, v13, Landroid/app/Application;
+00009a: const/4 v5, 0
+00009c: if-eqz v4, +006h
+0000a0: move-object v4, v13
+0000a2: check-cast v4, Landroid/app/Application;
+0000a6: goto +2h
+0000a8: move-object v4, v5
+0000aa: if-nez v4, +01bh
+0000ae: invoke-virtual v13, Landroid/content/Context;-&gt;getApplicationContext()Landroid/content/Context;
+0000b4: move-result-object v4
+0000b6: const/16 v6, 60
+0000ba: new-array v6, v6, [B
+0000be: fill-array-data v6, +00000a7h
+0000c4: new-array v7, v2, [B
+0000c8: fill-array-data v7, +00000c4h
+0000ce: invoke-static v6, v7, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;null cannot be cast to non-null type android.app.Application&quot;
+0000d4: move-result-object v6
+0000d6: invoke-static v4, v6, Lkotlin/jvm/internal/Intrinsics;-&gt;checkNotNull(Ljava/lang/Object; Ljava/lang/String;)V
+0000dc: check-cast v4, Landroid/app/Application;
+0000e0: new-instance v6, Lcf1$a;
+0000e4: invoke-direct v6, Lcf1$a;-&gt;&lt;init&gt;()V
+0000ea: invoke-virtual v6, v1, Lcf1$a;-&gt;e(Z)Lcf1$a;
+0000f0: move-result-object v1
+0000f2: new-instance v6, Lo77;
+0000f6: invoke-direct v6, Lo77;-&gt;&lt;init&gt;()V
+0000fc: invoke-virtual v1, v6, Lcf1$a;-&gt;g(Lzpa;)Lcf1$a;
+000102: move-result-object v1
+000104: sget-object v6, Lq77;-&gt;d Lq77$a;
+000108: invoke-virtual v1, v6, Lcf1$a;-&gt;b(Laf1;)Lcf1$a;
+00010e: move-result-object v1
+000110: new-instance v6, Lp77;
+000114: invoke-direct v6, Lp77;-&gt;&lt;init&gt;()V
+00011a: invoke-virtual v1, v6, Lcf1$a;-&gt;f(Lzpa;)Lcf1$a;
+000120: move-result-object v1
+000122: invoke-virtual v1, Lcf1$a;-&gt;c()Lcf1;
+000128: move-result-object v1
+00012a: invoke-virtual v3, v4, v1, Ldf1;-&gt;e(Landroid/app/Application; Lcf1;)V
+000130: new-instance v1, Lu77$a;
+000134: invoke-direct v1, Lu77$a;-&gt;&lt;init&gt;()V
+00013a: sget-object v3, Lq77;-&gt;c Lq77$b;
+00013e: invoke-virtual v1, v3, Lu77$a;-&gt;b(Lv77;)Lu77$a;
+000144: move-result-object v1
+000146: invoke-virtual v1, Lu77$a;-&gt;a()Lu77;
+00014c: move-result-object v1
+00014e: sget-object v3, Lb87;-&gt;h Lb87$a;
+000152: invoke-virtual v3, Lb87$a;-&gt;b()Lb87;
+000158: move-result-object v3
+00015a: invoke-virtual v3, v13, v1, Lb87;-&gt;o(Landroid/content/Context; Lu77;)V
+000160: sget-object v6, Lq77;-&gt;e Luy1;
+000164: new-instance v9, Lq77$e;
+000168: invoke-direct v9, v5, Lq77$e;-&gt;&lt;init&gt;(Lgx1;)V
+00016e: const/4 v10, 3
+000170: const/4 v11, 0
+000172: const/4 v7, 0
+000174: const/4 v8, 0
+000176: invoke-static/range v6 ... v11, Lnq0;-&gt;d(Luy1; Lkotlin/coroutines/CoroutineContext; Lyy1; Lkotlin/jvm/functions/Function2; I Ljava/lang/Object;)La17;
+00017c: new-instance v9, Lq77$f;
+000180: invoke-direct v9, v5, Lq77$f;-&gt;&lt;init&gt;(Lgx1;)V
+000186: invoke-static/range v6 ... v11, Lnq0;-&gt;d(Luy1; Lkotlin/coroutines/CoroutineContext; Lyy1; Lkotlin/jvm/functions/Function2; I Ljava/lang/Object;)La17;
+00018c: new-array v13, v0, [B
+000190: fill-array-data v13, +0000068h
+000196: new-array v0, v2, [B
+00019a: fill-array-data v0, +000006bh
+0001a0: invoke-static v13, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;kntbrg&quot;
+0001a6: move-result-object v13
+0001a8: const/16 v0, 11
+0001ac: new-array v0, v0, [B
+0001b0: fill-array-data v0, +0000068h
+0001b6: new-array v1, v2, [B
+0001ba: fill-array-data v1, +000006dh
+0001c0: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;initialized&quot;
+0001c6: move-result-object v0
+0001c8: invoke-static v13, v0, Lkw7;-&gt;d(Ljava/lang/String; Ljava/lang/String;)I
+0001ce: return-void 
+00026e: nop 
+
+METHOD m ()Z
+000000: sget-object v0, Lq77;-&gt;d Lq77$a;
+000004: invoke-virtual v0, Lq77$a;-&gt;b()Z
+00000a: move-result v0
+00000c: return v0
+
+</pre></article></main><script src="../assets/reading-navigation.js"></script></body></html>

@@ -1,0 +1,134 @@
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r16v2 */
+    /* JADX WARN: Type inference failed for: r16v3 */
+    /* JADX WARN: Type inference failed for: r16v5 */
+    /* JADX WARN: Type inference failed for: r20v0, types: [android.content.Context] */
+    /* JADX WARN: Type inference failed for: r20v1 */
+    /* JADX WARN: Type inference failed for: r20v10 */
+    /* JADX WARN: Type inference failed for: r20v2 */
+    /* JADX WARN: Type inference failed for: r20v3 */
+    /* JADX WARN: Type inference failed for: r20v4 */
+    /* JADX WARN: Type inference failed for: r20v5 */
+    /* JADX WARN: Type inference failed for: r20v6 */
+    /* JADX WARN: Type inference failed for: r20v7 */
+    /* JADX WARN: Type inference failed for: r20v8 */
+    /* JADX WARN: Type inference failed for: r20v9 */
+    public final yza d(Context context, Map map, el5 el5Var) {
+        ?? r20;
+        Object objB;
+        ?? r21;
+        Object objN;
+        int i = 16;
+        kw7.d(j1d.a(new byte[]{-97, 18, 112}, new byte[]{-12, 124, 4, Field.TOA, -7, 108, -13, 96}), j1d.a(new byte[]{115, -99, -76, -8, 26, 23, -104, -69, Field.FILLIN}, new byte[]{7, -17, -35, -97, 125, 114, -22, -127}) + getName());
+        boolean zC = c(map);
+        if (el5Var == null) {
+            return new yza(getName(), zC, p0b.e0, j1d.a(new byte[]{Field.HYPERLINK, -121, -75, -48, -17, 56, -23, 0, Field.HYPERLINK, -56, -25, -45, -5, Field.DATA, -24, 10, 82}, new byte[]{Field.AUTONUM, -24, -107, -74, -102, Field.MERGESEQ, -128, 111}), 0L, 16, (DefaultConstructorMarker) null);
+        }
+        String strG = el5Var.g();
+        String strC = el5Var.c();
+        if (el5Var.i()) {
+            return new yza(getName(), zC, p0b.Z, j1d.a(new byte[]{-12, -85, -38, -49, Field.ADDIN, -71, 114, -31, -18, -88, -61, -40, Field.DOCPROPERTY, -67, Field.USERADDRESS, -105}, new byte[]{-99, -57, -74, -86, Field.AUTONUM, -40, 30, -52}) + strG + j1d.a(new byte[]{41, 42}, new byte[]{116, 2, -27, -13, -123, 12, -47, 26}) + el5Var.f() + ')', 0L, 16, (DefaultConstructorMarker) null);
+        }
+        String str = (String) map.get(g28.o0);
+        try {
+            kgb.a aVar = kgb.Y;
+            try {
+                if (str == null || str.length() == 0) {
+                    context = 1;
+                    int i2 = CollectionsKt.a;
+                    objN = m.n();
+                } else {
+                    JSONArray jSONArray = new JSONArray(str);
+                    int length = jSONArray.length();
+                    ArrayList arrayList = new ArrayList(length);
+                    for (int i3 = 0; i3 < length; i3++) {
+                        String strOptString = jSONArray.optString(i3);
+                        j1d.a(new byte[]{Field.FORMTEXT, 74, Field.INCLUDETEXT, 101, 8, 124, 13, -53, 78, 18, 30, 24, 82, Field.FILLIN}, new byte[]{41, 58, 48, Field.AUTONUM, 124, 14, 100, -91});
+                        arrayList.add(StringsKt__StringsKt.u1(strOptString).toString());
+                    }
+                    context = 1;
+                    objN = arrayList;
+                }
+                objB = kgb.b(objN);
+                r21 = context;
+            } catch (Throwable th) {
+                th = th;
+                r20 = context;
+                kgb.a aVar2 = kgb.Y;
+                objB = kgb.b(ngb.a(th));
+                r21 = r20;
+            }
+        } catch (Throwable th2) {
+            th = th2;
+            r20 = 1;
+        }
+        Object obj = null;
+        if (kgb.g(objB)) {
+            objB = null;
+        }
+        List listN = (List) objB;
+        if (listN == null) {
+            int i4 = CollectionsKt.a;
+            listN = m.n();
+        }
+        List list = listN;
+        int i5 = CollectionsKt.a;
+        ArrayList arrayList2 = new ArrayList(n.y(list, 10));
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            String lowerCase = ((String) it.next()).toLowerCase(Locale.ROOT);
+            j1d.a(new byte[]{-125, Field.HYPERLINK, -113, -90, -27, Field.MACROBUTTON, Field.NUMCHARS, -88, -106, Field.INCLUDETEXT, -90, -31, -68, 120, 64, -62}, new byte[]{-9, Field.IMPORT, -61, -55, -110, 86, 110, -21});
+            arrayList2.add(lowerCase);
+        }
+        ArrayList arrayList3 = new ArrayList();
+        int size = arrayList2.size();
+        int i6 = 0;
+        while (i6 < size) {
+            Object obj2 = arrayList2.get(i6);
+            i6++;
+            String str2 = (String) obj2;
+            if (((str2 == null || str2.length() == 0) ? r21 : 0) == 0) {
+                arrayList3.add(obj2);
+            }
+        }
+        if (arrayList3.isEmpty()) {
+            return new yza(getName(), zC, p0b.Y, j1d.a(new byte[]{-120, 97, 42, -1, -16}, new byte[]{-28, 4, 77, -98, -100, 58, Field.ADDRESSBLOCK, 10}), 0L, 16, (DefaultConstructorMarker) null);
+        }
+        int size2 = arrayList3.size();
+        int i7 = 0;
+        while (i7 < size2) {
+            Object obj3 = arrayList3.get(i7);
+            i7++;
+            String lowerCase2 = strC.toLowerCase(Locale.ROOT);
+            byte[] bArr = new byte[i];
+            // fill-array-data instruction
+            bArr[0] = -52;
+            bArr[1] = 64;
+            bArr[2] = 18;
+            bArr[3] = -86;
+            bArr[4] = 6;
+            bArr[5] = 38;
+            bArr[6] = -98;
+            bArr[7] = 37;
+            bArr[8] = -39;
+            bArr[9] = 92;
+            bArr[10] = 59;
+            bArr[11] = -19;
+            bArr[12] = 95;
+            bArr[13] = 109;
+            bArr[14] = -62;
+            bArr[15] = 79;
+            j1d.a(bArr, new byte[]{-72, Field.GLOSSARY, Field.GREETINGLINE, -59, 113, Field.INCLUDEPICTURE, -20, 102});
+            int i8 = StringsKt.a;
+            if (k.Z(lowerCase2, (String) obj3, false, 2, null)) {
+                obj = obj3;
+                break;
+            }
+            i = 16;
+        }
+        if (((String) obj) != null) {
+            return new yza(getName(), zC, p0b.Y, j1d.a(new byte[]{-72, -117, 107, -69, 102, 42, -8, -62, -71, -98}, new byte[]{-44, -18, 12, -38, 10, 7, -101, -93}), 0L, 16, (DefaultConstructorMarker) null);
+        }
+        kw7.w(j1d.a(new byte[]{-127, -73, Field.AUTOTEXTLIST}, new byte[]{-22, -39, Field.DDE, 33, Field.INCLUDETEXT, 17, 63, 19}), j1d.a(new byte[]{112, 77, -125, 44, -58, Field.INCLUDETEXT, Field.HTMLCONTROL, -45, 125, Field.FORMCHECKBOX, -41, 106, -36, Field.FILESIZE, 74, -127, Field.FILESIZE}, new byte[]{30, 34, -9, 12, -75, 43, Field.DDEAUTO, -95}) + strC + ']');
+        return new yza(getName(), zC, p0b.Z, j1d.a(new byte[]{1, 41, -105, 30, Field.NUMCHARS, -53, -72, -96, 11, 36, -106, 11, Field.HTMLCONTROL, -15}, new byte[]{104, Field.FILESIZE, -5, 123, 123, -86, -44, -115}) + strC + j1d.a(new byte[]{Field.NUMCHARS, -67}, new byte[]{Field.SECTION, -107, -23, 15, 113, Field.EQ, 119, 8}) + el5Var.f() + ')', 0L, 16, (DefaultConstructorMarker) null);
+    }

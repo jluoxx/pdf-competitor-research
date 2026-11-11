@@ -1,0 +1,607 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>atb.bytecode.decoded.txt</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/reading-layout.css"></head><body class="source-body reading-document"><main class="document-content"><article class="prose"><h1>atb.bytecode.decoded.txt</h1><p>证据快照 · 2026-11-11 · 原文保留，不代表真机执行结果。</p><p><a download href="launcher_4f28f216a760a108.txt">下载原文件</a></p><pre>CLASS Latb;
+FIELD c
+FIELD d
+FIELD a
+FIELD b
+
+METHOD &lt;clinit&gt; ()V
+000000: new-instance v0, Latb$a;
+000004: const/4 v1, 0
+000006: invoke-direct v0, v1, Latb$a;-&gt;&lt;init&gt;(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+00000c: sput-object v0, Latb;-&gt;c Latb$a;
+000010: const/16 v0, 9
+000014: new-array v0, v0, [B
+000018: fill-array-data v0, +0000012h
+00001e: const/16 v1, 8
+000022: new-array v1, v1, [B
+000026: fill-array-data v1, +0000015h
+00002c: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;colony:sc&quot;
+000032: move-result-object v0
+000034: sput-object v0, Latb;-&gt;d Ljava/lang/String;
+000038: return-void
+00003a: nop
+00003c: fill-array-data-payload b&#x27;eJ\x1a\x06iq\xa9le\x00&#x27; | \x65\x4a\x1a\x06\x69\x71\xa9\x6c\x65\x00
+00004e: nop
+000050: fill-array-data-payload b&#x27;\x06%vi\x07\x08\x93\x1f&#x27; | \x06\x25\x76\x69\x07\x08\x93\x1f
+
+METHOD &lt;init&gt; ()V
+000000: invoke-direct v0, Lysb;-&gt;&lt;init&gt;()V
+000006: return-void
+
+METHOD b (Lezd; Lftb;)Lfzd;
+000000: const/4 v13, 7
+000002: const/4 v0, 5
+000004: new-array v0, v0, [B
+000008: fill-array-data v0, +00003aeh
+00000e: const/16 v1, 11
+000012: const/4 v2, 6
+000014: const/16 v3, 18
+000018: const/16 v4, 8
+00001c: new-array v5, v4, [B
+000020: fill-array-data v5, +00003aah
+000026: invoke-static v0, v5, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;param&quot;
+00002c: const/16 v0, 9
+000030: new-array v5, v0, [B
+000034: fill-array-data v5, +00003a8h
+00003a: new-array v6, v4, [B
+00003e: fill-array-data v6, +00003adh
+000044: invoke-static v5, v6, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;showState&quot;
+00004a: monitor-enter v12
+00004c: iget-object v5, v12, Latb;-&gt;a Lcq7;
+000050: const/4 v6, 0
+000052: if-eqz v5, +00eh
+000056: invoke-virtual v14, Lftb;-&gt;f()Ljava/lang/String;
+00005c: move-result-object v7
+00005e: invoke-virtual v5, v7, Lcq7;-&gt;a(Ljava/lang/String;)Lbq7$b;
+000064: move-result-object v5
+000066: goto +5h
+000068: move-exception v13
+00006a: goto/16 +37bh
+00006e: move-object v5, v6
+000070: monitor-exit v12
+000072: invoke-virtual v12, Latb;-&gt;d()Z
+000078: move-result v7
+00007a: const/16 v8, 93
+00007e: if-eqz v7, +067h
+000082: new-array v7, v0, [B
+000086: fill-array-data v7, +0000391h
+00008c: new-array v9, v4, [B
+000090: fill-array-data v9, +0000396h
+000096: invoke-static v7, v9, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;colony:sc&quot;
+00009c: move-result-object v7
+00009e: new-instance v9, Ljava/lang/StringBuilder;
+0000a2: invoke-direct v9, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+0000a8: new-array v10, v2, [B
+0000ac: fill-array-data v10, +0000390h
+0000b2: new-array v11, v4, [B
+0000b6: fill-array-data v11, +0000393h
+0000bc: invoke-static v10, v11, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;scene[&quot;
+0000c2: move-result-object v10
+0000c4: invoke-virtual v9, v10, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000ca: invoke-virtual v14, Lftb;-&gt;f()Ljava/lang/String;
+0000d0: move-result-object v10
+0000d2: invoke-virtual v9, v10, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000d8: new-array v10, v13, [B
+0000dc: fill-array-data v10, +0000388h
+0000e2: new-array v11, v4, [B
+0000e6: fill-array-data v11, +000038bh
+0000ec: invoke-static v10, v11, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;] show[&quot;
+0000f2: move-result-object v10
+0000f4: invoke-virtual v9, v10, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000fa: invoke-virtual v14, Lftb;-&gt;g()I
+000100: move-result v10
+000102: invoke-virtual v9, v10, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+000108: new-array v10, v4, [B
+00010c: fill-array-data v10, +0000380h
+000112: new-array v11, v4, [B
+000116: fill-array-data v11, +0000383h
+00011c: invoke-static v10, v11, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;] click[&quot;
+000122: move-result-object v10
+000124: invoke-virtual v9, v10, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00012a: invoke-virtual v14, Lftb;-&gt;b()I
+000130: move-result v10
+000132: invoke-virtual v9, v10, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+000138: invoke-virtual v9, v8, Ljava/lang/StringBuilder;-&gt;append(C)Ljava/lang/StringBuilder;
+00013e: invoke-virtual v9, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+000144: move-result-object v9
+000146: invoke-static v7, v9, Lkw7;-&gt;d(Ljava/lang/String; Ljava/lang/String;)I
+00014c: if-eqz v5, +301h
+000150: invoke-virtual v12, Latb;-&gt;d()Z
+000156: move-result v7
+000158: if-eqz v7, +0cdh
+00015c: new-array v7, v0, [B
+000160: fill-array-data v7, +0000366h
+000166: new-array v9, v4, [B
+00016a: fill-array-data v9, +000036bh
+000170: invoke-static v7, v9, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;colony:sc&quot;
+000176: move-result-object v7
+000178: new-instance v9, Ljava/lang/StringBuilder;
+00017c: invoke-direct v9, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+000182: const/16 v10, 26
+000186: new-array v10, v10, [B
+00018a: fill-array-data v10, +0000363h
+000190: new-array v11, v4, [B
+000194: fill-array-data v11, +0000370h
+00019a: invoke-static v10, v11, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;---- checking limit: tmax[&quot;
+0001a0: move-result-object v10
+0001a2: invoke-virtual v9, v10, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0001a8: invoke-virtual v5, Lbq7$b;-&gt;g()I
+0001ae: move-result v10
+0001b0: invoke-virtual v9, v10, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+0001b6: new-array v10, v13, [B
+0001ba: fill-array-data v10, +0000365h
+0001c0: new-array v11, v4, [B
+0001c4: fill-array-data v11, +0000368h
+0001ca: invoke-static v10, v11, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;] dmax[&quot;
+0001d0: move-result-object v10
+0001d2: invoke-virtual v9, v10, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0001d8: invoke-virtual v5, Lbq7$b;-&gt;f()I
+0001de: move-result v10
+0001e0: invoke-virtual v9, v10, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+0001e6: new-array v13, v13, [B
+0001ea: fill-array-data v13, +000035dh
+0001f0: new-array v10, v4, [B
+0001f4: fill-array-data v10, +0000360h
+0001fa: invoke-static v13, v10, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;] cmax[&quot;
+000200: move-result-object v13
+000202: invoke-virtual v9, v13, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000208: invoke-virtual v5, Lbq7$b;-&gt;b()I
+00020e: move-result v13
+000210: invoke-virtual v9, v13, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+000216: new-array v13, v0, [B
+00021a: fill-array-data v13, +0000355h
+000220: new-array v0, v4, [B
+000224: fill-array-data v0, +000035ah
+00022a: invoke-static v13, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;] dclick[&quot;
+000230: move-result-object v13
+000232: invoke-virtual v9, v13, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000238: invoke-virtual v5, Lbq7$b;-&gt;a()I
+00023e: move-result v13
+000240: invoke-virtual v9, v13, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+000246: new-array v13, v1, [B
+00024a: fill-array-data v13, +000034fh
+000250: new-array v0, v4, [B
+000254: fill-array-data v0, +0000354h
+00025a: invoke-static v13, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;] interval[&quot;
+000260: move-result-object v13
+000262: invoke-virtual v9, v13, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000268: invoke-virtual v5, Lbq7$b;-&gt;d()I
+00026e: move-result v13
+000270: invoke-virtual v9, v13, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+000276: const/4 v13, 5
+000278: new-array v13, v13, [B
+00027c: fill-array-data v13, +0000348h
+000282: new-array v0, v4, [B
+000286: fill-array-data v0, +000034bh
+00028c: invoke-static v13, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot; dly[&quot;
+000292: move-result-object v13
+000294: invoke-virtual v9, v13, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00029a: invoke-virtual v5, Lbq7$b;-&gt;c()I
+0002a0: move-result v13
+0002a2: invoke-virtual v9, v13, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+0002a8: const/16 v13, 44
+0002ac: invoke-virtual v9, v13, Ljava/lang/StringBuilder;-&gt;append(C)Ljava/lang/StringBuilder;
+0002b2: invoke-virtual v5, Lbq7$b;-&gt;e()I
+0002b8: move-result v13
+0002ba: invoke-virtual v9, v13, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+0002c0: const/4 v13, 2
+0002c2: new-array v13, v13, [B
+0002c6: fill-array-data v13, +0000333h
+0002cc: new-array v0, v4, [B
+0002d0: fill-array-data v0, +0000334h
+0002d6: invoke-static v13, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;]]&quot;
+0002dc: move-result-object v13
+0002de: invoke-virtual v9, v13, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0002e4: invoke-virtual v9, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+0002ea: move-result-object v13
+0002ec: invoke-static v7, v13, Lkw7;-&gt;d(Ljava/lang/String; Ljava/lang/String;)I
+0002f2: invoke-virtual v5, Lbq7$b;-&gt;g()I
+0002f8: move-result v13
+0002fa: if-lez v13, +039h
+0002fe: invoke-virtual v14, Lftb;-&gt;g()I
+000304: move-result v13
+000306: invoke-virtual v5, Lbq7$b;-&gt;g()I
+00030c: move-result v0
+00030e: if-lt v13, v0, +02fh
+000312: sget-object v13, Lfzd;-&gt;c Lfzd$a;
+000316: new-instance v0, Ljava/lang/StringBuilder;
+00031a: invoke-direct v0, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+000320: const/16 v1, 12
+000324: new-array v1, v1, [B
+000328: fill-array-data v1, +0000310h
+00032e: new-array v2, v4, [B
+000332: fill-array-data v2, +0000315h
+000338: invoke-static v1, v2, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;show limit [&quot;
+00033e: move-result-object v1
+000340: invoke-virtual v0, v1, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000346: invoke-virtual v14, Lftb;-&gt;g()I
+00034c: move-result v14
+00034e: invoke-virtual v0, v14, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+000354: invoke-virtual v0, v8, Ljava/lang/StringBuilder;-&gt;append(C)Ljava/lang/StringBuilder;
+00035a: invoke-virtual v0, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+000360: move-result-object v14
+000362: invoke-virtual v13, v14, Lfzd$a;-&gt;b(Ljava/lang/String;)Lfzd;
+000368: move-result-object v13
+00036a: return-object v13
+00036c: invoke-virtual v5, Lbq7$b;-&gt;f()I
+000372: move-result v13
+000374: if-lez v13, +037h
+000378: invoke-virtual v14, Lftb;-&gt;d()I
+00037e: move-result v13
+000380: invoke-virtual v5, Lbq7$b;-&gt;f()I
+000386: move-result v0
+000388: if-lt v13, v0, +02dh
+00038c: sget-object v13, Lfzd;-&gt;c Lfzd$a;
+000390: new-instance v0, Ljava/lang/StringBuilder;
+000394: invoke-direct v0, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+00039a: new-array v1, v3, [B
+00039e: fill-array-data v1, +00002e7h
+0003a4: new-array v2, v4, [B
+0003a8: fill-array-data v2, +00002f0h
+0003ae: invoke-static v1, v2, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;show daily limit [&quot;
+0003b4: move-result-object v1
+0003b6: invoke-virtual v0, v1, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0003bc: invoke-virtual v14, Lftb;-&gt;d()I
+0003c2: move-result v14
+0003c4: invoke-virtual v0, v14, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+0003ca: invoke-virtual v0, v8, Ljava/lang/StringBuilder;-&gt;append(C)Ljava/lang/StringBuilder;
+0003d0: invoke-virtual v0, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+0003d6: move-result-object v14
+0003d8: invoke-virtual v13, v14, Lfzd$a;-&gt;b(Ljava/lang/String;)Lfzd;
+0003de: move-result-object v13
+0003e0: return-object v13
+0003e2: invoke-virtual v5, Lbq7$b;-&gt;b()I
+0003e8: move-result v13
+0003ea: if-lez v13, +039h
+0003ee: invoke-virtual v14, Lftb;-&gt;b()I
+0003f4: move-result v13
+0003f6: invoke-virtual v5, Lbq7$b;-&gt;b()I
+0003fc: move-result v0
+0003fe: if-lt v13, v0, +02fh
+000402: sget-object v13, Lfzd;-&gt;c Lfzd$a;
+000406: new-instance v0, Ljava/lang/StringBuilder;
+00040a: invoke-direct v0, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+000410: const/16 v1, 13
+000414: new-array v1, v1, [B
+000418: fill-array-data v1, +00002c0h
+00041e: new-array v2, v4, [B
+000422: fill-array-data v2, +00002c7h
+000428: invoke-static v1, v2, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;click limit [&quot;
+00042e: move-result-object v1
+000430: invoke-virtual v0, v1, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000436: invoke-virtual v14, Lftb;-&gt;b()I
+00043c: move-result v14
+00043e: invoke-virtual v0, v14, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+000444: invoke-virtual v0, v8, Ljava/lang/StringBuilder;-&gt;append(C)Ljava/lang/StringBuilder;
+00044a: invoke-virtual v0, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+000450: move-result-object v14
+000452: invoke-virtual v13, v14, Lfzd$a;-&gt;b(Ljava/lang/String;)Lfzd;
+000458: move-result-object v13
+00045a: return-object v13
+00045c: invoke-virtual v5, Lbq7$b;-&gt;a()I
+000462: move-result v13
+000464: if-lez v13, +039h
+000468: invoke-virtual v14, Lftb;-&gt;c()I
+00046e: move-result v13
+000470: invoke-virtual v5, Lbq7$b;-&gt;a()I
+000476: move-result v0
+000478: if-lt v13, v0, +02fh
+00047c: sget-object v13, Lfzd;-&gt;c Lfzd$a;
+000480: new-instance v0, Ljava/lang/StringBuilder;
+000484: invoke-direct v0, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+00048a: const/16 v1, 19
+00048e: new-array v1, v1, [B
+000492: fill-array-data v1, +0000297h
+000498: new-array v2, v4, [B
+00049c: fill-array-data v2, +00002a0h
+0004a2: invoke-static v1, v2, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;click daily limit [&quot;
+0004a8: move-result-object v1
+0004aa: invoke-virtual v0, v1, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0004b0: invoke-virtual v14, Lftb;-&gt;c()I
+0004b6: move-result v14
+0004b8: invoke-virtual v0, v14, Ljava/lang/StringBuilder;-&gt;append(I)Ljava/lang/StringBuilder;
+0004be: invoke-virtual v0, v8, Ljava/lang/StringBuilder;-&gt;append(C)Ljava/lang/StringBuilder;
+0004c4: invoke-virtual v0, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+0004ca: move-result-object v14
+0004cc: invoke-virtual v13, v14, Lfzd$a;-&gt;b(Ljava/lang/String;)Lfzd;
+0004d2: move-result-object v13
+0004d4: return-object v13
+0004d6: invoke-virtual v5, Lbq7$b;-&gt;d()I
+0004dc: move-result v13
+0004de: if-gez v13, +019h
+0004e2: sget-object v13, Lfzd;-&gt;c Lfzd$a;
+0004e6: const/16 v14, 14
+0004ea: new-array v14, v14, [B
+0004ee: fill-array-data v14, +000027fh
+0004f4: new-array v0, v4, [B
+0004f8: fill-array-data v0, +0000286h
+0004fe: invoke-static v14, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;scene disabled&quot;
+000504: move-result-object v14
+000506: invoke-virtual v13, v14, Lfzd$a;-&gt;b(Ljava/lang/String;)Lfzd;
+00050c: move-result-object v13
+00050e: return-object v13
+000510: iget-object v13, v12, Latb;-&gt;b Laf1;
+000514: if-eqz v13, +11ah
+000518: invoke-interface v13, Laf1;-&gt;e()Z
+00051e: move-result v0
+000520: if-eqz v0, +08bh
+000524: invoke-virtual v5, Lbq7$b;-&gt;c()I
+00052a: move-result v0
+00052c: if-gez v0, +085h
+000530: iget-object v0, v12, Latb;-&gt;b Laf1;
+000534: if-eqz v0, +069h
+000538: new-array v1, v4, [B
+00053c: fill-array-data v1, +000026ch
+000542: new-array v3, v4, [B
+000546: fill-array-data v3, +000026fh
+00054c: invoke-static v1, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;sc_limit&quot;
+000552: move-result-object v1
+000554: new-array v3, v2, [B
+000558: fill-array-data v3, +000026eh
+00055e: new-array v5, v4, [B
+000562: fill-array-data v5, +0000271h
+000568: invoke-static v3, v5, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;scenes&quot;
+00056e: move-result-object v3
+000570: invoke-virtual v14, Lftb;-&gt;f()Ljava/lang/String;
+000576: move-result-object v14
+000578: invoke-static v3, v14, Lj5e;-&gt;a(Ljava/lang/Object; Ljava/lang/Object;)Lkotlin/Pair;
+00057e: move-result-object v14
+000580: new-array v2, v2, [B
+000584: fill-array-data v2, +0000268h
+00058a: new-array v3, v4, [B
+00058e: fill-array-data v3, +000026bh
+000594: invoke-static v2, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;reason&quot;
+00059a: move-result-object v2
+00059c: const/16 v3, 13
+0005a0: new-array v3, v3, [B
+0005a4: fill-array-data v3, +0000268h
+0005aa: new-array v5, v4, [B
+0005ae: fill-array-data v5, +000026fh
+0005b4: invoke-static v3, v5, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;newer_disable&quot;
+0005ba: move-result-object v3
+0005bc: invoke-static v2, v3, Lj5e;-&gt;a(Ljava/lang/Object; Ljava/lang/Object;)Lkotlin/Pair;
+0005c2: move-result-object v2
+0005c4: new-array v3, v4, [B
+0005c8: fill-array-data v3, +000026ah
+0005ce: new-array v5, v4, [B
+0005d2: fill-array-data v5, +000026dh
+0005d8: invoke-static v3, v5, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;rk_state&quot;
+0005de: move-result-object v3
+0005e0: invoke-interface v13, Laf1;-&gt;d()Ljava/lang/String;
+0005e6: move-result-object v13
+0005e8: invoke-static v3, v13, Lj5e;-&gt;a(Ljava/lang/Object; Ljava/lang/Object;)Lkotlin/Pair;
+0005ee: move-result-object v13
+0005f0: filled-new-array v14, v2, v13, [Lkotlin/Pair;
+0005f6: move-result-object v13
+0005f8: invoke-static v13, Lkotlin/collections/x;-&gt;n([Lkotlin/Pair;)Ljava/util/Map;
+0005fe: move-result-object v13
+000600: invoke-interface v0, v1, v13, Laf1;-&gt;a(Ljava/lang/String; Ljava/util/Map;)V
+000606: sget-object v13, Lfzd;-&gt;c Lfzd$a;
+00060a: const/16 v14, 14
+00060e: new-array v14, v14, [B
+000612: fill-array-data v14, +0000255h
+000618: new-array v0, v4, [B
+00061c: fill-array-data v0, +000025ch
+000622: invoke-static v14, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;newer disabled&quot;
+000628: move-result-object v14
+00062a: invoke-virtual v13, v14, Lfzd$a;-&gt;b(Ljava/lang/String;)Lfzd;
+000630: move-result-object v6
+000632: goto/16 +08bh
+000636: invoke-interface v13, Laf1;-&gt;b()Z
+00063c: move-result v0
+00063e: if-eqz v0, +085h
+000642: invoke-virtual v5, Lbq7$b;-&gt;e()I
+000648: move-result v0
+00064a: if-gez v0, +07fh
+00064e: iget-object v0, v12, Latb;-&gt;b Laf1;
+000652: if-eqz v0, +067h
+000656: new-array v3, v4, [B
+00065a: fill-array-data v3, +0000245h
+000660: new-array v5, v4, [B
+000664: fill-array-data v5, +0000248h
+00066a: invoke-static v3, v5, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;sc_limit&quot;
+000670: move-result-object v3
+000672: new-array v5, v2, [B
+000676: fill-array-data v5, +0000247h
+00067c: new-array v6, v4, [B
+000680: fill-array-data v6, +000024ah
+000686: invoke-static v5, v6, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;scenes&quot;
+00068c: move-result-object v5
+00068e: invoke-virtual v14, Lftb;-&gt;f()Ljava/lang/String;
+000694: move-result-object v14
+000696: invoke-static v5, v14, Lj5e;-&gt;a(Ljava/lang/Object; Ljava/lang/Object;)Lkotlin/Pair;
+00069c: move-result-object v14
+00069e: new-array v2, v2, [B
+0006a2: fill-array-data v2, +0000241h
+0006a8: new-array v5, v4, [B
+0006ac: fill-array-data v5, +0000244h
+0006b2: invoke-static v2, v5, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;reason&quot;
+0006b8: move-result-object v2
+0006ba: new-array v1, v1, [B
+0006be: fill-array-data v1, +0000243h
+0006c4: new-array v5, v4, [B
+0006c8: fill-array-data v5, +0000248h
+0006ce: invoke-static v1, v5, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;org_disa&quot;
+0006d4: move-result-object v1
+0006d6: invoke-static v2, v1, Lj5e;-&gt;a(Ljava/lang/Object; Ljava/lang/Object;)Lkotlin/Pair;
+0006dc: move-result-object v1
+0006de: new-array v2, v4, [B
+0006e2: fill-array-data v2, +0000243h
+0006e8: new-array v5, v4, [B
+0006ec: fill-array-data v5, +0000246h
+0006f2: invoke-static v2, v5, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;rk_state&quot;
+0006f8: move-result-object v2
+0006fa: invoke-interface v13, Laf1;-&gt;d()Ljava/lang/String;
+000700: move-result-object v13
+000702: invoke-static v2, v13, Lj5e;-&gt;a(Ljava/lang/Object; Ljava/lang/Object;)Lkotlin/Pair;
+000708: move-result-object v13
+00070a: filled-new-array v14, v1, v13, [Lkotlin/Pair;
+000710: move-result-object v13
+000712: invoke-static v13, Lkotlin/collections/x;-&gt;n([Lkotlin/Pair;)Ljava/util/Map;
+000718: move-result-object v13
+00071a: invoke-interface v0, v3, v13, Laf1;-&gt;a(Ljava/lang/String; Ljava/util/Map;)V
+000720: sget-object v13, Lfzd;-&gt;c Lfzd$a;
+000724: const/16 v14, 12
+000728: new-array v14, v14, [B
+00072c: fill-array-data v14, +000022eh
+000732: new-array v0, v4, [B
+000736: fill-array-data v0, +0000233h
+00073c: invoke-static v14, v0, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;org disabled&quot;
+000742: move-result-object v14
+000744: goto/16 -08dh
+000748: if-eqz v6, +003h
+00074c: return-object v6
+00074e: sget-object v13, Lfzd;-&gt;c Lfzd$a;
+000752: const-string v14, &quot;&quot;
+000756: invoke-virtual v13, v14, Lfzd$a;-&gt;a(Ljava/lang/String;)Lfzd;
+00075c: move-result-object v13
+00075e: return-object v13
+000760: monitor-exit v12
+000762: throw v13
+000764: fill-array-data-payload b&#x27; g`$\xfc\x00&#x27; | \x20\x67\x60\x24\xfc\x00
+000772: nop
+000774: fill-array-data-payload b&#x27;P\x06\x12E\x91%\x0b\xb8&#x27; | \x50\x06\x12\x45\x91\x25\x0b\xb8
+000784: fill-array-data-payload b&#x27;\x88Z\xc9\x91\xacR\x95\xe1\x9e\x00&#x27; | \x88\x5a\xc9\x91\xac\x52\x95\xe1\x9e\x00
+000796: nop
+000798: fill-array-data-payload b&#x27;\xfb2\xa6\xe6\xff&amp;\xf4\x95&#x27; | \xfb\x32\xa6\xe6\xff\x26\xf4\x95
+0007a8: fill-array-data-payload b&#x27;?_\xd5%4\x9a\x98g?\x00&#x27; | \x3f\x5f\xd5\x25\x34\x9a\x98\x67\x3f\x00
+0007ba: nop
+0007bc: fill-array-data-payload b&#x27;\\0\xb9JZ\xe3\xa2\x14&#x27; | \x5c\x30\xb9\x4a\x5a\xe3\xa2\x14
+0007cc: fill-array-data-payload b&#x27;\xa4\x0b\xa9D\xb4\x1c&#x27; | \xa4\x0b\xa9\x44\xb4\x1c
+0007da: nop
+0007dc: fill-array-data-payload b&#x27;\xd7h\xcc*\xd1G %&#x27; | \xd7\x68\xcc\x2a\xd1\x47\x20\x25
+0007ec: fill-array-data-payload b&#x27;T\xa8\xc1\x19d\x12\x8d\x00&#x27; | \x54\xa8\xc1\x19\x64\x12\x8d\x00
+0007fc: fill-array-data-payload b&#x27;\t\x88\xb2q\x0be\xd6\xee&#x27; | \x09\x88\xb2\x71\x0b\x65\xd6\xee
+00080c: fill-array-data-payload b&#x27;PHM\xf3\xb8\xa8\x03\xe2&#x27; | \x50\x48\x4d\xf3\xb8\xa8\x03\xe2
+00081c: fill-array-data-payload b&#x27;\rh.\x9f\xd1\xcbh\xb9&#x27; | \x0d\x68\x2e\x9f\xd1\xcb\x68\xb9
+00082c: fill-array-data-payload b&#x27;\xf3\xcb\xad\x95\xfd~3j\xf3\x00&#x27; | \xf3\xcb\xad\x95\xfd\x7e\x33\x6a\xf3\x00
+00083e: nop
+000840: fill-array-data-payload b&#x27;\x90\xa4\xc1\xfa\x93\x07\t\x19&#x27; | \x90\xa4\xc1\xfa\x93\x07\x09\x19
+000850: fill-array-data-payload b&#x27;\xd8X%\x1d\xda\x9b\x16\xd7\x96\x1ea^\x9d\xd8\x12\xdb\x98\x1c|\n\xda\x8c\x13\xd3\x8d.&#x27; | \xd8\x58\x25\x1d\xda\x9b\x16\xd7\x96\x1e\x61\x5e\x9d\xd8\x12\xdb\x98\x1c\x7c\x0a\xda\x8c\x13\xd3\x8d\x2e
+000872: nop
+000874: fill-array-data-payload b&#x27;\xf5u\x080\xfa\xf8~\xb2&#x27; | \xf5\x75\x08\x30\xfa\xf8\x7e\xb2
+000884: fill-array-data-payload b&#x27;\x1b\x1b\xa3\xfe\xf2\x0f\xdf\x00&#x27; | \x1b\x1b\xa3\xfe\xf2\x0f\xdf\x00
+000894: fill-array-data-payload b&#x27;F;\xc7\x93\x93w\x84w&#x27; | \x46\x3b\xc7\x93\x93\x77\x84\x77
+0008a4: fill-array-data-payload b&#x27;\xcd\t;\xae\xd1\x8bd\x00&#x27; | \xcd\x09\x3b\xae\xd1\x8b\x64\x00
+0008b4: fill-array-data-payload b&#x27;\x90)X\xc3\xb0\xf3?\xb2&#x27; | \x90\x29\x58\xc3\xb0\xf3\x3f\xb2
+0008c4: fill-array-data-payload b&#x27;w\xfb\xef1\xa9\xd5V\x15q\x00&#x27; | \x77\xfb\xef\x31\xa9\xd5\x56\x15\x71\x00
+0008d6: nop
+0008d8: fill-array-data-payload b&#x27;*\xdb\x8bR\xc5\xbc5~&#x27; | \x2a\xdb\x8b\x52\xc5\xbc\x35\x7e
+0008e8: fill-array-data-payload b&#x27;P\x97&lt;\x82Iu\n\xael\xdb\x0e\x00&#x27; | \x50\x97\x3c\x82\x49\x75\x0a\xae\x6c\xdb\x0e\x00
+0008fc: fill-array-data-payload b&#x27;\r\xb7U\xec=\x10x\xd8&#x27; | \x0d\xb7\x55\xec\x3d\x10\x78\xd8
+00090c: fill-array-data-payload b&#x27;\x0b?\xb0bz\x00&#x27; | \x0b\x3f\xb0\x62\x7a\x00
+00091a: nop
+00091c: fill-array-data-payload b&#x27;+[\xdc\x1b!\xd7\xcdz&#x27; | \x2b\x5b\xdc\x1b\x21\xd7\xcd\x7a
+00092c: fill-array-data-payload b&#x27;g\xb1&#x27; | \x67\xb1
+000936: nop
+000938: fill-array-data-payload b&#x27;:\xec\x9f\x92\x11\xc2\xae\x0c&#x27; | \x3a\xec\x9f\x92\x11\xc2\xae\x0c
+000948: fill-array-data-payload b&#x27;\xccHFM\x1f\xee\xa4\x16\xd6T\ta&#x27; | \xcc\x48\x46\x4d\x1f\xee\xa4\x16\xd6\x54\x09\x61
+00095c: fill-array-data-payload b&#x27;\xbf ):?\x82\xcd{&#x27; | \xbf\x20\x29\x3a\x3f\x82\xcd\x7b
+00096c: fill-array-data-payload b&#x27;&quot;kkqB\x0e=\x8f=z$j\x0b\x075\x92qX&#x27; | \x22\x6b\x6b\x71\x42\x0e\x3d\x8f\x3d\x7a\x24\x6a\x0b\x07\x35\x92\x71\x58
+000986: nop
+000988: fill-array-data-payload b&#x27;Q\x03\x04\x06bj\\\xe6&#x27; | \x51\x03\x04\x06\x62\x6a\x5c\xe6
+000998: fill-array-data-payload b&#x27;\x02\x97\xab\xaaL\x07&quot;&quot;\x0c\x92\xb6\xe9|\x00&#x27; | \x02\x97\xab\xaa\x4c\x07\x22\x22\x0c\x92\xb6\xe9\x7c\x00
+0009ae: nop
+0009b0: fill-array-data-payload b&quot;a\xfb\xc2\xc9&#x27;&#x27;NK&quot; | \x61\xfb\xc2\xc9\x27\x27\x4e\x4b
+0009c0: fill-array-data-payload b&#x27;Q\x92c6\x1e\xc6t=[\x92su\x19\x8f}5F\xdeQ\x00&#x27; | \x51\x92\x63\x36\x1e\xc6\x74\x3d\x5b\x92\x73\x75\x19\x8f\x7d\x35\x46\xde\x51\x00
+0009dc: fill-array-data-payload b&#x27;2\xfe\nUu\xe6\x10\\&#x27; | \x32\xfe\x0a\x55\x75\xe6\x10\x5c
+0009ec: fill-array-data-payload b&#x27;\x1e\xfb\xf9\x86\xdd6\xf5\x8e\x1e\xf9\xfe\x84\xddr&#x27; | \x1e\xfb\xf9\x86\xdd\x36\xf5\x8e\x1e\xf9\xfe\x84\xdd\x72
+000a02: nop
+000a04: fill-array-data-payload b&#x27;m\x98\x9c\xe8\xb8\x16\x91\xe7&#x27; | \x6d\x98\x9c\xe8\xb8\x16\x91\xe7
+000a14: fill-array-data-payload b&#x27;\xc6\x06W\\\xa8\x05\xd3N&#x27; | \xc6\x06\x57\x5c\xa8\x05\xd3\x4e
+000a24: fill-array-data-payload b&#x27;\xb5e\x080\xc1h\xba:&#x27; | \xb5\x65\x08\x30\xc1\x68\xba\x3a
+000a34: fill-array-data-payload b&#x27;\x15l-\\\xdf\x15&#x27; | \x15\x6c\x2d\x5c\xdf\x15
+000a42: nop
+000a44: fill-array-data-payload b&#x27;f\x0fH2\xbaf!Q&#x27; | \x66\x0f\x48\x32\xba\x66\x21\x51
+000a54: fill-array-data-payload b&#x27;\x8f\xdd\xb86\xe4{&#x27; | \x8f\xdd\xb8\x36\xe4\x7b
+000a62: nop
+000a64: fill-array-data-payload b&#x27;\xfd\xb8\xd9E\x8b\x15Y\x95&#x27; | \xfd\xb8\xd9\x45\x8b\x15\x59\x95
+000a74: fill-array-data-payload b&#x27;{\x1f\x84\x9f\xf1\xcegmf\x1b\x91\x96\xe6\x00&#x27; | \x7b\x1f\x84\x9f\xf1\xce\x67\x6d\x66\x1b\x91\x96\xe6\x00
+000a8a: nop
+000a8c: fill-array-data-payload b&#x27;\x15z\xf3\xfa\x83\x91\x03\x04&#x27; | \x15\x7a\xf3\xfa\x83\x91\x03\x04
+000a9c: fill-array-data-payload b&#x27;`\xdd\x91\x83\x9a\xc7d\xfa&#x27; | \x60\xdd\x91\x83\x9a\xc7\x64\xfa
+000aac: fill-array-data-payload b&#x27;\x12\xb6\xce\xf0\xee\xa6\x10\x9f&#x27; | \x12\xb6\xce\xf0\xee\xa6\x10\x9f
+000abc: fill-array-data-payload b&#x27;S\x1d\x17\xc6g\xb9*\x84N\x19\x02\xcfp\xfd&#x27; | \x53\x1d\x17\xc6\x67\xb9\x2a\x84\x4e\x19\x02\xcf\x70\xfd
+000ad2: nop
+000ad4: fill-array-data-payload b&#x27;=x`\xa3\x15\x99N\xed&#x27; | \x3d\x78\x60\xa3\x15\x99\x4e\xed
+000ae4: fill-array-data-payload b&#x27;\x14\xe4\xbf\n\x86&amp;G\xe6&#x27; | \x14\xe4\xbf\x0a\x86\x26\x47\xe6
+000af4: fill-array-data-payload b&#x27;g\x87\xe0f\xefK.\x92&#x27; | \x67\x87\xe0\x66\xef\x4b\x2e\x92
+000b04: fill-array-data-payload b&#x27;nS\xa4\xdc^K&#x27; | \x6e\x53\xa4\xdc\x5e\x4b
+000b12: nop
+000b14: fill-array-data-payload b&#x27;\x1d0\xc1\xb2;8u&quot;&#x27; | \x1d\x30\xc1\xb2\x3b\x38\x75\x22
+000b24: fill-array-data-payload b&#x27;\xf9\xb4\x18n\x03_&#x27; | \xf9\xb4\x18\x6e\x03\x5f
+000b32: nop
+000b34: fill-array-data-payload b&quot;\x8b\xd1y\x1dl1\x97&#x27;&quot; | \x8b\xd1\x79\x1d\x6c\x31\x97\x27
+000b44: fill-array-data-payload b&quot;\x90&#x27;\xc4\x97:\xafbi\x9d9\xc6\x00&quot; | \x90\x27\xc4\x97\x3a\xaf\x62\x69\x9d\x39\xc6\x00
+000b58: fill-array-data-payload b&#x27;\xffU\xa3\xc8^\xc6\x11\x08&#x27; | \xff\x55\xa3\xc8\x5e\xc6\x11\x08
+000b68: fill-array-data-payload b&#x27;&quot;\x86)IT\xe2\xed\xf9&#x27; | \x22\x86\x29\x49\x54\xe2\xed\xf9
+000b78: fill-array-data-payload b&#x27;P\xedv: \x83\x99\x9c&#x27; | \x50\xed\x76\x3a\x20\x83\x99\x9c
+000b88: fill-array-data-payload b&#x27;\x8e\xb1\x8d\xc0_\xa7hk\x83\xaf\x8f\x84&#x27; | \x8e\xb1\x8d\xc0\x5f\xa7\x68\x6b\x83\xaf\x8f\x84
+000b9c: fill-array-data-payload b&#x27;\xe1\xc3\xea\xe0;\xce\x1b\n&#x27; | \xe1\xc3\xea\xe0\x3b\xce\x1b\x0a
+
+METHOD c ()Laf1;
+000000: iget-object v0, v1, Latb;-&gt;b Laf1;
+000004: return-object v0
+
+METHOD d ()Z
+000000: sget-object v0, Ldf1;-&gt;a Ldf1;
+000004: invoke-virtual v0, Ldf1;-&gt;d()Z
+00000a: move-result v0
+00000c: return v0
+
+METHOD e ()Lcq7;
+000000: iget-object v0, v1, Latb;-&gt;a Lcq7;
+000004: return-object v0
+
+METHOD f (Laf1;)V
+000000: monitor-enter v0
+000002: iput-object v1, v0, Latb;-&gt;b Laf1;
+000006: sget-object v1, Lkotlin/Unit;-&gt;a Lkotlin/Unit;
+00000a: monitor-exit v0
+00000c: return-void
+00000e: move-exception v1
+000010: monitor-exit v0
+000012: throw v1
+
+METHOD g (Lcq7;)V
+000000: monitor-enter v0
+000002: iput-object v1, v0, Latb;-&gt;a Lcq7;
+000006: sget-object v1, Lkotlin/Unit;-&gt;a Lkotlin/Unit;
+00000a: monitor-exit v0
+00000c: return-void
+00000e: move-exception v1
+000010: monitor-exit v0
+000012: throw v1
+</pre></article></main><script src="../assets/reading-navigation.js"></script></body></html>

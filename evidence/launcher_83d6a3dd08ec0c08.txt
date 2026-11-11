@@ -1,0 +1,12 @@
+            public final b a(JSONObject jSONObject) {
+                j1d.a(new byte[]{-113, -95, 24, 106}, new byte[]{-27, -46, 119, 4, -9, -6, -51, -96});
+                b bVar = new b();
+                bVar.n(jSONObject.optInt(j1d.a(new byte[]{-78, 24, -110}, new byte[]{-63, 108, -1, -76, 36, Field.MERGESEQ, Field.HTMLCONTROL, -85}), 0));
+                bVar.m(jSONObject.optInt(j1d.a(new byte[]{113, 108, -61}, new byte[]{2, 8, -82, -5, -104, 14, 23, 108}), 0));
+                bVar.i(jSONObject.optInt(j1d.a(new byte[]{-53, -108, -70}, new byte[]{-88, -32, -41, 99, -63, -100, 1, -61}), 0));
+                bVar.h(jSONObject.optInt(j1d.a(new byte[]{17, -76, -32}, new byte[]{114, -48, -115, 44, -96, 23, -38, -91}), 0));
+                bVar.k(jSONObject.optInt(j1d.a(new byte[]{-62, -80}, new byte[]{-95, -44, Field.HYPERLINK, -94, Field.FILLIN, Field.AUTOTEXTLIST, -62, Field.FORMDROPDOWN}), 0));
+                bVar.j(jSONObject.optInt(j1d.a(new byte[]{-11, -45, -54}, new byte[]{-111, -65, -77, -120, -12, -48, -27, -90})));
+                bVar.l(jSONObject.optInt(j1d.a(new byte[]{-126, -94, 33, -97, 111, -94, -91}, new byte[]{-19, -48, Field.FORMTEXT, -64, 11, -50, -36, Field.AUTONUMLGL})));
+                return bVar;
+            }

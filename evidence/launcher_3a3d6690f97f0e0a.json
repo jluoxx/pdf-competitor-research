@@ -1,0 +1,306 @@
+{
+  "ext": {
+    "stg": "1",
+    "space_request_id": "1788922204"
+  },
+  "spaces": [
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000014",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "21000002",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000015",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000016",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000017",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000018",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000019",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000020",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000022",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000026",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "31000005",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "31000006",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000045",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000023",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000031",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000025",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000024",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000035",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000036",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "23000014-1"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000046",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "n1hdc54l5nn03v"
+        }
+      ],
+      "ad_type": "plaque",
+      "space_id": "23000014-1"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "44000007-1"
+        }
+      ],
+      "ad_type": "msg",
+      "space_id": "44000007",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "44000007-1"
+        }
+      ],
+      "ad_type": "msg",
+      "space_id": "44000008",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "44000007-1"
+        }
+      ],
+      "ad_type": "msg",
+      "space_id": "44000010",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "44000007-1"
+        }
+      ],
+      "ad_type": "msg",
+      "space_id": "44000011",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "44000007-1"
+        }
+      ],
+      "ad_type": "msg",
+      "space_id": "44000012",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "44000007-1"
+        }
+      ],
+      "ad_type": "msg",
+      "space_id": "44000013",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "44000007-1"
+        }
+      ],
+      "ad_type": "msg",
+      "space_id": "44000024",
+      "space_type": "ref"
+    },
+    {
+      "rid": [
+        {
+          "rid_id": "n1hdc54l5no7h9"
+        }
+      ],
+      "ad_type": "msg",
+      "space_id": "44000007-1"
+    }
+  ],
+  "platforms": [
+    {
+      "ak": "aae1554201f9ea1ac46747ec39b29bbd9",
+      "appid": "h6a1fd9df5bd73",
+      "platform_name": "topon"
+    }
+  ],
+  "ab_test": {
+    "ab_match": false
+  }
+}

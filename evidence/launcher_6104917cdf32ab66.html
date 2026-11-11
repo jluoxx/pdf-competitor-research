@@ -1,0 +1,147 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ve$a$a.txt</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/reading-layout.css"></head><body class="source-body reading-document"><main class="document-content"><article class="prose"><h1>ve$a$a.txt</h1><p>证据快照 · 2026-11-11 · 原文保留，不代表真机执行结果。</p><p><a download href="launcher_6104917cdf32ab66.txt">下载原文件</a></p><pre>CLASS Lve$a$a;
+FIELD X 
+FIELD Y 
+FIELD Z 
+FIELD e0 
+
+METHOD &lt;clinit&gt; ()V
+000000: return-void 
+
+METHOD &lt;init&gt; (Lu75; Lve; Landroid/content/Context; Ljava/util/Map;)V
+000000: iput-object v1, v0, Lve$a$a;-&gt;X Lu75;
+000004: iput-object v2, v0, Lve$a$a;-&gt;Y Lve;
+000008: iput-object v3, v0, Lve$a$a;-&gt;Z Landroid/content/Context;
+00000c: iput-object v4, v0, Lve$a$a;-&gt;e0 Ljava/util/Map;
+000010: invoke-direct v0, Ljava/lang/Object;-&gt;&lt;init&gt;()V
+000016: return-void 
+
+METHOD emit (Ljava/lang/Object; Lgx1;)Ljava/lang/Object;
+000000: move-object/from16 v0, v18
+000004: move-object/from16 v1, v20
+000008: const/4 v2, 1
+00000a: const/16 v3, 47
+00000e: const/16 v4, 8
+000012: instance-of v5, v1, Lve$a$a$a;
+000016: if-eqz v5, +011h
+00001a: move-object v5, v1
+00001c: check-cast v5, Lve$a$a$a;
+000020: iget v6, v5, Lve$a$a$a;-&gt;Z I
+000024: const/high16 v7, -2147483648
+000028: and-int v8, v6, v7
+00002c: if-eqz v8, +006h
+000030: sub-int/2addr v6, v7
+000032: iput v6, v5, Lve$a$a$a;-&gt;Z I
+000036: goto +6h
+000038: new-instance v5, Lve$a$a$a;
+00003c: invoke-direct v5, v0, v1, Lve$a$a$a;-&gt;&lt;init&gt;(Lve$a$a; Lgx1;)V
+000042: iget-object v1, v5, Lve$a$a$a;-&gt;Y Ljava/lang/Object;
+000046: invoke-static Lyv6;-&gt;g()Ljava/lang/Object;
+00004c: move-result-object v6
+00004e: iget v7, v5, Lve$a$a$a;-&gt;Z I
+000052: if-eqz v7, +01dh
+000056: if-ne v7, v2, +007h
+00005a: invoke-static v1, Lngb;-&gt;b(Ljava/lang/Object;)V
+000060: goto/16 +0c1h
+000064: new-instance v1, Ljava/lang/IllegalStateException;
+000068: new-array v2, v3, [B
+00006c: fill-array-data v2, +00000beh
+000072: new-array v3, v4, [B
+000076: fill-array-data v3, +00000d5h
+00007c: invoke-static v2, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;call to &#x27;resume&#x27; before &#x27;invoke&#x27; with coroutine&quot;
+000082: move-result-object v2
+000084: invoke-direct v1, v2, Ljava/lang/IllegalStateException;-&gt;&lt;init&gt;(Ljava/lang/String;)V
+00008a: throw v1
+00008c: invoke-static v1, Lngb;-&gt;b(Ljava/lang/Object;)V
+000092: iget-object v1, v0, Lve$a$a;-&gt;X Lu75;
+000096: move-object/from16 v3, v19
+00009a: check-cast v3, Lkotlin/Unit;
+00009e: const/4 v3, 3
+0000a0: new-array v3, v3, [B
+0000a4: fill-array-data v3, +00000c6h
+0000aa: new-array v7, v4, [B
+0000ae: fill-array-data v7, +00000c7h
+0000b4: invoke-static v3, v7, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;knt&quot;
+0000ba: move-result-object v3
+0000bc: new-instance v7, Ljava/lang/StringBuilder;
+0000c0: invoke-direct v7, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+0000c6: const/16 v8, 9
+0000ca: new-array v8, v8, [B
+0000ce: fill-array-data v8, +00000bfh
+0000d4: new-array v9, v4, [B
+0000d8: fill-array-data v9, +00000c4h
+0000de: invoke-static v8, v9, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;trigger: &quot;
+0000e4: move-result-object v8
+0000e6: invoke-virtual v7, v8, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000ec: iget-object v8, v0, Lve$a$a;-&gt;Y Lve;
+0000f0: invoke-virtual v8, Lve;-&gt;getName()Ljava/lang/String;
+0000f6: move-result-object v8
+0000f8: invoke-virtual v7, v8, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0000fe: invoke-virtual v7, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+000104: move-result-object v7
+000106: invoke-static v3, v7, Lkw7;-&gt;d(Ljava/lang/String; Ljava/lang/String;)I
+00010c: iget-object v3, v0, Lve$a$a;-&gt;Z Landroid/content/Context;
+000110: invoke-virtual v3, Landroid/content/Context;-&gt;getContentResolver()Landroid/content/ContentResolver;
+000116: move-result-object v3
+000118: const/16 v7, 11
+00011c: new-array v7, v7, [B
+000120: fill-array-data v7, +00000a8h
+000126: new-array v8, v4, [B
+00012a: fill-array-data v8, +00000adh
+000130: invoke-static v7, v8, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;adb_enabled&quot;
+000136: move-result-object v7
+000138: const/4 v8, 0
+00013a: invoke-static v3, v7, v8, Landroid/provider/Settings$Global;-&gt;getInt(Landroid/content/ContentResolver; Ljava/lang/String; I)I
+000140: move-result v3
+000142: if-ne v3, v2, +003h
+000146: move v8, v2
+000148: if-eqz v8, +006h
+00014c: sget-object v3, Lp0b;-&gt;Z Lp0b;
+000150: move-object v12, v3
+000152: goto +4h
+000154: sget-object v3, Lp0b;-&gt;Y Lp0b;
+000158: goto -4h
+00015a: iget-object v3, v0, Lve$a$a;-&gt;Y Lve;
+00015e: iget-object v7, v0, Lve$a$a;-&gt;e0 Ljava/util/Map;
+000162: invoke-virtual v3, v7, Lve;-&gt;b(Ljava/util/Map;)Z
+000168: move-result v11
+00016a: if-eqz v8, +013h
+00016e: const/4 v3, 7
+000170: new-array v3, v3, [B
+000174: fill-array-data v3, +0000090h
+00017a: new-array v4, v4, [B
+00017e: fill-array-data v4, +0000093h
+000184: invoke-static v3, v4, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;enabled&quot;
+00018a: move-result-object v3
+00018c: move-object v13, v3
+00018e: goto +10h
+000190: new-array v3, v4, [B
+000194: fill-array-data v3, +0000090h
+00019a: new-array v4, v4, [B
+00019e: fill-array-data v4, +0000093h
+0001a4: invoke-static v3, v4, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;disabled&quot;
+0001aa: move-result-object v3
+0001ac: goto -10h
+0001ae: new-instance v9, Lyza;
+0001b2: iget-object v3, v0, Lve$a$a;-&gt;Y Lve;
+0001b6: invoke-virtual v3, Lve;-&gt;getName()Ljava/lang/String;
+0001bc: move-result-object v10
+0001be: const/16 v16, 16
+0001c2: const/16 v17, 0
+0001c6: const-wide/16 v14, 0
+0001ca: invoke-direct/range v9 ... v17, Lyza;-&gt;&lt;init&gt;(Ljava/lang/String; Z Lp0b; Ljava/lang/String; J I Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+0001d0: iput v2, v5, Lve$a$a$a;-&gt;Z I
+0001d4: invoke-interface v1, v9, v5, Lu75;-&gt;emit(Ljava/lang/Object; Lgx1;)Ljava/lang/Object;
+0001da: move-result-object v1
+0001dc: if-ne v1, v6, +003h
+0001e0: return-object v6
+0001e2: sget-object v1, Lkotlin/Unit;-&gt;a Lkotlin/Unit;
+0001e6: return-object v1
+00025e: nop 
+
+</pre></article></main><script src="../assets/reading-navigation.js"></script></body></html>

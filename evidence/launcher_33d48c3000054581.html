@@ -1,0 +1,320 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>q77$a.txt</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/reading-layout.css"></head><body class="source-body reading-document"><main class="document-content"><article class="prose"><h1>q77$a.txt</h1><p>证据快照 · 2026-11-11 · 原文保留，不代表真机执行结果。</p><p><a download href="launcher_33d48c3000054581.txt">下载原文件</a></p><pre>CLASS Lq77$a;
+
+METHOD &lt;clinit&gt; ()V
+000000: return-void 
+
+METHOD &lt;init&gt; ()V
+000000: invoke-direct v0, Ljava/lang/Object;-&gt;&lt;init&gt;()V
+000006: return-void 
+
+METHOD a (Ljava/lang/String; Ljava/util/Map;)V
+000000: const/4 v0, 2
+000002: new-array v0, v0, [B
+000006: fill-array-data v0, +000005fh
+00000c: const/4 v1, 3
+00000e: const/16 v2, 8
+000012: new-array v3, v2, [B
+000016: fill-array-data v3, +000005dh
+00001c: invoke-static v0, v3, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;ev&quot;
+000022: new-array v0, v1, [B
+000026: fill-array-data v0, +000005dh
+00002c: new-array v1, v2, [B
+000030: fill-array-data v1, +000005eh
+000036: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;map&quot;
+00003c: invoke-interface v6, Ljava/util/Map;-&gt;isEmpty()Z
+000042: move-result v0
+000044: if-eqz v0, +007h
+000048: invoke-static Lkotlin/collections/x;-&gt;k()Ljava/util/Map;
+00004e: move-result-object v6
+000050: goto +35h
+000052: new-instance v0, Ljava/util/LinkedHashMap;
+000056: invoke-interface v6, Ljava/util/Map;-&gt;size()I
+00005c: move-result v1
+00005e: invoke-static v1, Lkotlin/collections/w;-&gt;f(I)I
+000064: move-result v1
+000066: invoke-direct v0, v1, Ljava/util/LinkedHashMap;-&gt;&lt;init&gt;(I)V
+00006c: invoke-interface v6, Ljava/util/Map;-&gt;entrySet()Ljava/util/Set;
+000072: move-result-object v6
+000074: check-cast v6, Ljava/lang/Iterable;
+000078: invoke-interface v6, Ljava/lang/Iterable;-&gt;iterator()Ljava/util/Iterator;
+00007e: move-result-object v6
+000080: invoke-interface v6, Ljava/util/Iterator;-&gt;hasNext()Z
+000086: move-result v1
+000088: if-eqz v1, +018h
+00008c: invoke-interface v6, Ljava/util/Iterator;-&gt;next()Ljava/lang/Object;
+000092: move-result-object v1
+000094: check-cast v1, Ljava/util/Map$Entry;
+000098: invoke-interface v1, Ljava/util/Map$Entry;-&gt;getKey()Ljava/lang/Object;
+00009e: move-result-object v2
+0000a0: invoke-interface v1, Ljava/util/Map$Entry;-&gt;getValue()Ljava/lang/Object;
+0000a6: move-result-object v1
+0000a8: invoke-virtual v1, Ljava/lang/Object;-&gt;toString()Ljava/lang/String;
+0000ae: move-result-object v1
+0000b0: invoke-interface v0, v2, v1, Ljava/util/Map;-&gt;put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0000b6: goto -1bh
+0000b8: move-object v6, v0
+0000ba: invoke-static v5, v6, Lscd;-&gt;g(Ljava/lang/String; Ljava/util/Map;)V
+0000c0: return-void 
+0000c2: nop 
+0000ce: nop 
+
+METHOD b ()Z
+000000: const/16 v0, 9
+000004: const/4 v1, 0
+000006: const/4 v2, 6
+000008: const/16 v3, 8
+00000c: sget-object v4, Lb87;-&gt;h Lb87$a;
+000010: invoke-virtual v4, Lb87$a;-&gt;b()Lb87;
+000016: move-result-object v4
+000018: invoke-virtual v4, Lb87;-&gt;p()Lgae;
+00001e: move-result-object v4
+000020: invoke-virtual v4, Lgae;-&gt;h()Ljava/util/Map;
+000026: move-result-object v5
+000028: invoke-interface v5, Ljava/util/Map;-&gt;values()Ljava/util/Collection;
+00002e: move-result-object v5
+000030: check-cast v5, Ljava/lang/Iterable;
+000034: invoke-static v5, Lkotlin/collections/CollectionsKt;-&gt;e1(Ljava/lang/Iterable;)Ljava/util/List;
+00003a: move-result-object v5
+00003c: invoke-interface v5, Ljava/util/List;-&gt;isEmpty()Z
+000042: move-result v6
+000044: const/4 v7, 1
+000046: if-eqz v6, +024h
+00004a: new-array v0, v2, [B
+00004e: fill-array-data v0, +000016bh
+000054: new-array v1, v3, [B
+000058: fill-array-data v1, +000016eh
+00005e: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;kntbrg&quot;
+000064: move-result-object v0
+000066: const/16 v1, 17
+00006a: new-array v1, v1, [B
+00006e: fill-array-data v1, +000016bh
+000074: new-array v2, v3, [B
+000078: fill-array-data v2, +0000174h
+00007e: invoke-static v1, v2, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;cad:org no result&quot;
+000084: move-result-object v1
+000086: invoke-static v0, v1, Lkw7;-&gt;d(Ljava/lang/String; Ljava/lang/String;)I
+00008c: return v7
+00008e: check-cast v5, Ljava/lang/Iterable;
+000092: instance-of v6, v5, Ljava/util/Collection;
+000096: if-eqz v6, +00dh
+00009a: move-object v6, v5
+00009c: check-cast v6, Ljava/util/Collection;
+0000a0: invoke-interface v6, Ljava/util/Collection;-&gt;isEmpty()Z
+0000a6: move-result v6
+0000a8: if-eqz v6, +004h
+0000ac: move v6, v1
+0000ae: goto +1fh
+0000b0: invoke-interface v5, Ljava/lang/Iterable;-&gt;iterator()Ljava/util/Iterator;
+0000b6: move-result-object v5
+0000b8: move v6, v1
+0000ba: invoke-interface v5, Ljava/util/Iterator;-&gt;hasNext()Z
+0000c0: move-result v8
+0000c2: if-eqz v8, +015h
+0000c6: invoke-interface v5, Ljava/util/Iterator;-&gt;next()Ljava/lang/Object;
+0000cc: move-result-object v8
+0000ce: check-cast v8, Lyza;
+0000d2: invoke-virtual v8, Lyza;-&gt;d()Z
+0000d8: move-result v8
+0000da: if-eqz v8, -010h
+0000de: add-int/2addr v6, v7
+0000e0: if-gez v6, -013h
+0000e4: invoke-static Lkotlin/collections/m;-&gt;w()V
+0000ea: goto -18h
+0000ec: if-nez v6, +090h
+0000f0: invoke-virtual v4, Lgae;-&gt;h()Ljava/util/Map;
+0000f6: move-result-object v5
+0000f8: new-array v8, v7, [B
+0000fc: const/16 v9, -85
+000100: aput-byte v9, v8, v1
+000104: new-array v9, v3, [B
+000108: fill-array-data v9, +0000134h
+00010e: invoke-static v8, v9, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+000114: move-result-object v8
+000116: invoke-interface v5, v8, Ljava/util/Map;-&gt;get(Ljava/lang/Object;)Ljava/lang/Object;
+00011c: move-result-object v5
+00011e: check-cast v5, Lyza;
+000122: if-eqz v5, +075h
+000126: invoke-virtual v5, Lyza;-&gt;g()Lp0b;
+00012c: move-result-object v0
+00012e: sget-object v4, Lp0b;-&gt;Y Lp0b;
+000132: if-eq v0, v4, +004h
+000136: move v0, v7
+000138: goto +2h
+00013a: move v0, v1
+00013c: new-array v2, v2, [B
+000140: fill-array-data v2, +0000120h
+000146: new-array v4, v3, [B
+00014a: fill-array-data v4, +0000123h
+000150: invoke-static v2, v4, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;kntbrg&quot;
+000156: move-result-object v2
+000158: invoke-virtual v5, Lyza;-&gt;g()Lp0b;
+00015e: move-result-object v4
+000160: invoke-virtual v4, Ljava/lang/Enum;-&gt;ordinal()I
+000166: move-result v4
+000168: new-instance v5, Ljava/lang/StringBuilder;
+00016c: invoke-direct v5, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+000172: const/16 v6, 23
+000176: new-array v6, v6, [B
+00017a: fill-array-data v6, +0000113h
+000180: new-array v8, v3, [B
+000184: fill-array-data v8, +000011eh
+00018a: invoke-static v6, v8, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;cad:org source only, s:&quot;
+000190: move-result-object v6
+000192: invoke-virtual v5, v6, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000198: invoke-static v4, Ljava/lang/String;-&gt;valueOf(I)Ljava/lang/String;
+00019e: move-result-object v4
+0001a0: invoke-virtual v5, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0001a6: const/4 v4, 3
+0001a8: new-array v4, v4, [B
+0001ac: fill-array-data v4, +0000112h
+0001b2: new-array v6, v3, [B
+0001b6: fill-array-data v6, +0000113h
+0001bc: invoke-static v4, v6, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;, (&quot;
+0001c2: move-result-object v4
+0001c4: invoke-virtual v5, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0001ca: invoke-static v0, Ljava/lang/String;-&gt;valueOf(Z)Ljava/lang/String;
+0001d0: move-result-object v4
+0001d2: invoke-virtual v5, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0001d8: new-array v4, v7, [B
+0001dc: const/16 v6, 43
+0001e0: aput-byte v6, v4, v1
+0001e4: new-array v1, v3, [B
+0001e8: fill-array-data v1, +0000102h
+0001ee: invoke-static v4, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;\u0002&quot;
+0001f4: move-result-object v1
+0001f6: invoke-virtual v5, v1, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0001fc: invoke-virtual v5, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+000202: move-result-object v1
+000204: invoke-static v2, v1, Lkw7;-&gt;d(Ljava/lang/String; Ljava/lang/String;)I
+00020a: return v0
+00020c: invoke-virtual v4, Lgae;-&gt;i()Lp0b;
+000212: move-result-object v5
+000214: sget-object v8, Lp0b;-&gt;Y Lp0b;
+000218: if-eq v5, v8, +004h
+00021c: move v5, v7
+00021e: goto +2h
+000220: move v5, v1
+000222: new-array v2, v2, [B
+000226: fill-array-data v2, +00000ebh
+00022c: new-array v8, v3, [B
+000230: fill-array-data v8, +00000eeh
+000236: invoke-static v2, v8, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;kntbrg&quot;
+00023c: move-result-object v2
+00023e: invoke-virtual v4, Lgae;-&gt;i()Lp0b;
+000244: move-result-object v4
+000246: invoke-virtual v4, Ljava/lang/Enum;-&gt;ordinal()I
+00024c: move-result v4
+00024e: new-instance v8, Ljava/lang/StringBuilder;
+000252: invoke-direct v8, Ljava/lang/StringBuilder;-&gt;&lt;init&gt;()V
+000258: const/16 v9, 12
+00025c: new-array v9, v9, [B
+000260: fill-array-data v9, +00000deh
+000266: new-array v10, v3, [B
+00026a: fill-array-data v10, +00000e3h
+000270: invoke-static v9, v10, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;cad:org rsr:&quot;
+000276: move-result-object v9
+000278: invoke-virtual v8, v9, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00027e: invoke-static v4, Ljava/lang/String;-&gt;valueOf(I)Ljava/lang/String;
+000284: move-result-object v4
+000286: invoke-virtual v8, v4, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+00028c: new-array v0, v0, [B
+000290: fill-array-data v0, +00000d8h
+000296: new-array v4, v3, [B
+00029a: fill-array-data v4, +00000ddh
+0002a0: invoke-static v0, v4, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;, enable:2&quot;
+0002a6: move-result-object v0
+0002a8: invoke-virtual v8, v0, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0002ae: invoke-static v6, Ljava/lang/String;-&gt;valueOf(I)Ljava/lang/String;
+0002b4: move-result-object v0
+0002b6: invoke-virtual v8, v0, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0002bc: const/4 v0, 3
+0002be: new-array v0, v0, [B
+0002c2: fill-array-data v0, +00000d1h
+0002c8: new-array v4, v3, [B
+0002cc: fill-array-data v4, +00000d2h
+0002d2: invoke-static v0, v4, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;, (&quot;
+0002d8: move-result-object v0
+0002da: invoke-virtual v8, v0, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0002e0: invoke-static v5, Ljava/lang/String;-&gt;valueOf(Z)Ljava/lang/String;
+0002e6: move-result-object v0
+0002e8: invoke-virtual v8, v0, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0002ee: new-array v0, v7, [B
+0002f2: const/16 v4, -54
+0002f6: aput-byte v4, v0, v1
+0002fa: new-array v1, v3, [B
+0002fe: fill-array-data v1, +00000c1h
+000304: invoke-static v0, v1, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+00030a: move-result-object v0
+00030c: invoke-virtual v8, v0, Ljava/lang/StringBuilder;-&gt;append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+000312: invoke-virtual v8, Ljava/lang/StringBuilder;-&gt;toString()Ljava/lang/String;
+000318: move-result-object v0
+00031a: invoke-static v2, v0, Lkw7;-&gt;d(Ljava/lang/String; Ljava/lang/String;)I
+000320: return v5
+000322: nop 
+000332: nop 
+00035e: nop 
+00038e: nop 
+00040a: nop 
+000452: nop 
+
+METHOD c ()J
+000000: sget-object v0, Ldb4;-&gt;a Ldb4;
+000004: const/16 v1, 16
+000008: new-array v1, v1, [B
+00000c: fill-array-data v1, +0000016h
+000012: const/16 v2, 8
+000016: new-array v2, v2, [B
+00001a: fill-array-data v2, +000001bh
+000020: invoke-static v1, v2, Lj1d;-&gt;a([B [B)Ljava/lang/String;
+    DECODED &quot;first_time_niuma&quot;
+000026: move-result-object v1
+000028: const-wide/16 v2, 0
+00002c: invoke-virtual v0, v1, v2, v3, Ldb4;-&gt;c(Ljava/lang/String; J)J
+000032: move-result-wide v0
+000034: return-wide v0
+000036: nop 
+
+METHOD d ()Ljava/lang/String;
+000000: sget-object v0, Lq77;-&gt;a Lq77;
+000004: invoke-virtual v0, Lq77;-&gt;f()Ljava/lang/String;
+00000a: move-result-object v0
+00000c: return-object v0
+
+METHOD e ()Z
+000000: invoke-virtual v5, Lq77$a;-&gt;c()J
+000006: move-result-wide v0
+000008: const-wide/16 v2, 1000
+00000c: cmp-long v0, v0, v2
+000010: const/4 v1, 1
+000012: if-gez v0, +003h
+000016: return v1
+000018: invoke-static Ljava/util/Calendar;-&gt;getInstance()Ljava/util/Calendar;
+00001e: move-result-object v0
+000020: invoke-static Ljava/util/Calendar;-&gt;getInstance()Ljava/util/Calendar;
+000026: move-result-object v2
+000028: invoke-virtual v5, Lq77$a;-&gt;c()J
+00002e: move-result-wide v3
+000030: invoke-virtual v2, v3, v4, Ljava/util/Calendar;-&gt;setTimeInMillis(J)V
+000036: const/4 v3, 6
+000038: invoke-virtual v0, v3, Ljava/util/Calendar;-&gt;get(I)I
+00003e: move-result v0
+000040: invoke-virtual v2, v3, Ljava/util/Calendar;-&gt;get(I)I
+000046: move-result v2
+000048: if-ne v0, v2, +003h
+00004c: return v1
+00004e: const/4 v0, 0
+000050: return v0
+
+</pre></article></main><script src="../assets/reading-navigation.js"></script></body></html>
